@@ -1,0 +1,19 @@
+name: Publish Vocabulary
+
+on:
+    pull_request:
+    release:
+        types: [published]
+
+
+jobs:
+    publish-vocabulary:
+        if: github.repository != 'eu-parc/vocabulary-template'
+        uses: eu-parc/voc2skosmos-workflow/.github/workflows/csv2skos.yml@main
+        with:
+            ref: ${{ github.ref }}
+            namespace: http://www.placeholder.com/
+            namespace_label: placeholder
+            mappings_file: rules/mappings.yarrr.yml
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
