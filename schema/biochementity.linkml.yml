@@ -1,0 +1,92 @@
+id: http://www.eirene.eu/BioChemEntity
+name: biochementity-vocabulary
+description: BioChemEntity vocabulary for HBM data.
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  thesoz: http://lod.gesis.org/thesoz/
+  ei: http://www.eirene.eu/BioChemEntity#
+default_prefix: ei
+
+classes:
+  BioChemEntiy:
+    class_uri: skos:Concept
+    mixins:
+      - HasTranslations
+      - HasValidationStatus
+    slots:
+      - id
+      - unique_name
+      - name
+      - current_validation_status
+      - validation_history
+    exact_mappings: schema:BioChemEntity
+
+  HasTranslations:
+    class_uri: thesoz:hasTranslation
+    mixin: true
+    slots:
+      - translations
+  Translation:
+    slots:
+      - property_name
+      - language
+      - translated_value
+  HasValidationStatus:
+    mixin: true
+    slots:
+      - current_validation_status
+      - validation_history
+  ValidationHistoryRecord:
+    slots:
+      - validation_datetime
+      - validation_status
+      - validation_actor
+      - validation_institute
+      - validation_remark
+    
+  Data:
+    tree_root: true
+    attributes:
+      biochementities:
+        multivalued: true
+        inlined_as_list: true
+        range: BioChemEntity
+
+slots:
+  id:
+    identifier: true
+    slot_uri: schema:identifier
+  
+  translations:
+    multivalued: true
+    inlined_as_list: true
+    range: Translation
+  validation_history:
+    multivalued: true
+    inlined_as_list: true
+    range: ValidationHistoryRecord
+  
+  property_name:
+  language:
+  translated_value:
+  validation_datetime
+    range: datetime
+  validation_status:
+    range: ValidationStatus
+  validation_actor:
+  validation_institute:
+  validation_remark:
+
+enums:
+  ValidationStatus:
+    permissible_values:
+      unvalidated:
+      in_progress:
+      validated:
+    
