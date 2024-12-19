@@ -42,7 +42,7 @@ Thanks for taking the time to fill out this addition request!
     - p90 value source:
 
 
-#### Matrix [add link here]()
+#### Matrix (see [matrix-vocabulary](https://github.com/eu-parc/matrix-vocabulary))
 - name:
 
 #### Indicator

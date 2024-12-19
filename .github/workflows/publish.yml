@@ -9,11 +9,12 @@ on:
 jobs:
     publish-vocabulary:
         if: github.repository != 'eu-parc/vocabulary-template'
-        uses: eu-parc/voc2skosmos-workflow/.github/workflows/csv2skos.yml@main
+        uses: eu-parc/voc2skosmos-workflow/.github/workflows/yml2skos.yml@main
         with:
             ref: ${{ github.ref }}
             namespace: http://www.placeholder.com/
             namespace_label: placeholder
-            mappings_file: rules/mappings.yarrr.yml
+            linkml_schema: schema/biochementity.linkml.yml
+            data: data/data.yml
         secrets:
             token: ${{ secrets.GITHUB_TOKEN }}
