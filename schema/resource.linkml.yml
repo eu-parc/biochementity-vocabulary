@@ -1,0 +1,54 @@
+id: ## add
+name: ##add-vocabulary
+description: ##add vocabulary for HBM data.
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  thesoz: http://lod.gesis.org/thesoz/
+  ##: # add own namespace
+default_prefix: ##
+
+classes:
+  ##:
+    class_uri: skos:Concept
+    mixins:
+      - HasTranslations
+    slots:
+      - id
+      - ## add      
+
+  HasTranslations:
+    class_uri: thesoz:hasTranslation
+    mixin: true
+    slots:
+      - translations
+  Translation:
+    slots:
+      - property_name
+      - language
+      - translated_value
+  Data:
+    tree_root: true
+    attributes:
+      ## add
+        multivalued: true
+        inlined_as_list: true
+        range: ##
+
+slots:
+  id:
+    identifier: true
+    slot_uri: schema:identifier
+  
+  translations:
+    multivalued: true
+    inlined_as_list: true
+    range: Translation
+  property_name:
+  language:
+  translated_value:
