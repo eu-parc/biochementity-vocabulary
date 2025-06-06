@@ -2,24 +2,22 @@ biochementities:
 - id: ei:BDNF
   unique_name: BDNF
   name: BDNF
+  label: BDNF
   translations:
   - property_name: name
     language: nl-be
     translated_value: BDNF
-  - property_name: label
-    language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
 - id: ei:Kisspeptine 54
   unique_name: Kisspeptine 54
   name: Kisspeptine 54
+  label: Kisspeptine 54
   translations:
   - property_name: name
     language: nl-be
     translated_value: Kisspeptine 54
-  - property_name: label
-    language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
@@ -177,6 +175,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cotinine
 - id: ei:2,3-Dichloroaniline
   unique_name: 2,3-Dichloroaniline
   name: 2,3-Dichloroaniline
@@ -1585,6 +1584,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Erythrocytes
 - id: ei:Fake B cells
   unique_name: Fake B cells
   name: Fake B cells
@@ -1624,6 +1624,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Hematocrit
 - id: ei:Hemoglobin
   unique_name: Hemoglobin
   name: Hemoglobin
@@ -1650,6 +1651,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Hemoglobin
 - id: ei:Index hemolysis
   unique_name: Index hemolysis
   name: Index hemolysis
@@ -1663,6 +1665,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Index hemolysis
 - id: ei:Index icterie
   unique_name: Index icterie
   name: Index icterie
@@ -1677,6 +1680,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Index icterie
 - id: ei:Index lipemia
   unique_name: Index lipemia
   name: Index lipemia
@@ -1690,6 +1694,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Index lipemia
 - id: ei:Leukocytes
   unique_name: Leukocytes
   name: Leukocytes
@@ -1731,6 +1736,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Mean Corpuscular Hemoglobin
 - id: ei:Mean Corpuscular Hemoglobin Concentration
   unique_name: Mean Corpuscular Hemoglobin Concentration
   name: Mean Corpuscular Hemoglobin Concentration
@@ -1745,6 +1751,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Mean Corpuscular Hemoglobin Concentration
 - id: ei:Mean Corpuscular Volume (average volume of the erythrocytes)
   unique_name: Mean Corpuscular Volume (average volume of the erythrocytes)
   name: Mean Corpuscular Volume (average volume of the erythrocytes)
@@ -1758,6 +1765,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Mean Corpuscular Volume (average volume of the erythrocytes)
 - id: ei:Monocytes
   unique_name: Monocytes
   name: Monocytes
@@ -1785,6 +1793,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Morphology RBC / WBC / PLT
 - id: ei:Natural killer cells
   unique_name: Natural killer cells
   name: Natural killer cells
@@ -1825,6 +1834,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Platelet function test
 - id: ei:Red Cell Distribution Width (Relative distribution width (degree of variation
     in the volume (MCV) of the red blood cells))
   unique_name: Red Cell Distribution Width (Relative distribution width (degree of
@@ -1842,6 +1852,8 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Red Cell Distribution Width (Relative distribution width (degree of variation
+    in the volume (MCV) of the red blood cells))
 - id: ei:Reticulocytes
   unique_name: Reticulocytes
   name: Reticulocytes
@@ -1855,6 +1867,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Reticulocytes
 - id: ei:Segment kernels total
   unique_name: Segment kernels total
   name: Segment kernels total
@@ -1868,6 +1881,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Segment kernels total
 - id: ei:T cells
   unique_name: T cells
   name: T cells
@@ -1922,6 +1936,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Apolipoprotein B
 - id: ei:Apolipoprotein-A1
   unique_name: Apolipoprotein-A1
   name: Apolipoprotein-A1
@@ -1949,6 +1964,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Blood lipid by enzymatic calculation but calculation not specified
 - id: ei:Cholesterol
   unique_name: Cholesterol
   name: Cholesterol
@@ -1988,6 +2004,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Gravimetric fat
 - id: ei:HDL cholesterol
   unique_name: HDL cholesterol
   name: HDL cholesterol
@@ -2000,6 +2017,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: HDL cholesterol
 - id: ei:LDL cholesterol
   unique_name: LDL cholesterol
   name: LDL cholesterol
@@ -2012,6 +2030,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: LDL cholesterol
 - id: ei:Lipoprotein A
   unique_name: Lipoprotein A
   name: Lipoprotein A
@@ -2024,6 +2043,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Lipoprotein A
 - id: ei:Triglycerides
   unique_name: Triglycerides
   name: Triglycerides
@@ -2049,6 +2069,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Triglycerides
 - id: ei:Average black carbon load
   unique_name: Average black carbon load
   name: Average black carbon load
@@ -2085,6 +2106,7 @@ biochementities:
     validation_actor: anthony.purece@vito.be
     validation_institute: VITO
     validation_remark: VITO_Researcher
+  label: Triclocarban (3-(4-Chlorophenyl)-1-(3,4-dichlorophenyl)urea)
 - id: ei:Triclosan
   unique_name: Triclosan
   name: Triclosan
@@ -2110,6 +2132,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Triclosan
 - id: ei:Mitochondrial DNA
   unique_name: Mitochondrial DNA
   name: Mitochondrial DNA
@@ -2125,6 +2148,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Mitochondrial DNA
 - id: ei:Relative telomere length (telomere/nuclear DNA) in blood
   unique_name: Relative telomere length (telomere/nuclear DNA) in blood
   name: Relative telomere length (telomere/nuclear DNA) in blood
@@ -2166,6 +2190,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Carcino Embryonal Antigen
 - id: ei:Prostate Specific Antigen
   unique_name: Prostate Specific Antigen
   name: Prostate Specific Antigen
@@ -2179,6 +2204,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Prostate Specific Antigen
 - id: ei:Tumor suppressor p53
   unique_name: Tumor suppressor p53
   name: Tumor suppressor p53
@@ -2192,6 +2218,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Tumor suppressor p53
 - id: ei:Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester
   unique_name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester
   name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester
@@ -2489,150 +2516,168 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
-- id: ei:'HIstone modification AR (Androgen receptor): normalised expression compared
+- id: ei:'HIstone modification AR (Androgen receptor) normalised expression compared
     to RPLP0'
-  unique_name: 'HIstone modification AR (Androgen receptor): normalised expression
-    compared to RPLP0'
-  name: 'HIstone modification AR (Androgen receptor): normalised expression compared
-    to RPLP0'
+  unique_name: HIstone modification AR (Androgen receptor) normalised expression compared
+    to RPLP0
+  name: HIstone modification AR (Androgen receptor) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie AR (androgeenreceptor): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie AR (androgeenreceptor) genormaliseerde expressie
+      in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification ESR1 (Estrogen receptor alfa): normalised expression compared
-    to RPLP0'
-  unique_name: 'HIstone modification ESR1 (Estrogen receptor alfa): normalised expression
+  label: HIstone modification AR (Androgen receptor) normalised expression compared
+    to RPLP0
+- id: ei:'HIstone modification ESR1 (Estrogen receptor alfa) normalised expression
     compared to RPLP0'
-  name: 'HIstone modification ESR1 (Estrogen receptor alfa): normalised expression
-    compared to RPLP0'
+  unique_name: HIstone modification ESR1 (Estrogen receptor alfa) normalised expression
+    compared to RPLP0
+  name: HIstone modification ESR1 (Estrogen receptor alfa) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie ESR1 (oestrogeenreceptor alfa): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie ESR1 (oestrogeenreceptor alfa) genormaliseerde
+      expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification ESR2 (Estrogen receptor beta): normalised expression compared
-    to RPLP0'
-  unique_name: 'HIstone modification ESR2 (Estrogen receptor beta): normalised expression
+  label: HIstone modification ESR1 (Estrogen receptor alfa) normalised expression
+    compared to RPLP0
+- id: ei:'HIstone modification ESR2 (Estrogen receptor beta) normalised expression
     compared to RPLP0'
-  name: 'HIstone modification ESR2 (Estrogen receptor beta): normalised expression
-    compared to RPLP0'
+  unique_name: HIstone modification ESR2 (Estrogen receptor beta) normalised expression
+    compared to RPLP0
+  name: HIstone modification ESR2 (Estrogen receptor beta) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie ESR2 (oestrogeenreceptor bèta): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie ESR2 (oestrogeenreceptor bèta) genormaliseerde
+      expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
-    receptor): normalised expression compared to RPLP0'
-  unique_name: 'HIstone modification GR (nuclear receptor subfamily 3 group C member
-    1/ glucocorticoid receptor): normalised expression compared to RPLP0'
-  name: 'HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
-    receptor): normalised expression compared to RPLP0'
+  label: HIstone modification ESR2 (Estrogen receptor beta) normalised expression
+    compared to RPLP0
+- id: ei:'HIstone modification GR (nuclear receptor subfamily 3 group C member 1/
+    glucocorticoid receptor) normalised expression compared to RPLP0'
+  unique_name: HIstone modification GR (nuclear receptor subfamily 3 group C member
+    1/ glucocorticoid receptor) normalised expression compared to RPLP0
+  name: HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
+    receptor) normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone modificatie GR (nucleaire receptor subfamilie 3 groep
-      C lid 1/glucocorticoïde receptor): genormaliseerde expressie in vergelijking
-      met RPLP0'
+    translated_value: HIstone modificatie GR (nucleaire receptor subfamilie 3 groep
+      C lid 1/glucocorticoïde receptor) genormaliseerde expressie in vergelijking
+      met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification OGG1 (8-oxoguanine DNA glycosylase): normalised expression
+  label: HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
+    receptor) normalised expression compared to RPLP0
+- id: ei:'HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised expression
     compared to RPLP0'
-  unique_name: 'HIstone modification OGG1 (8-oxoguanine DNA glycosylase): normalised
-    expression compared to RPLP0'
-  name: 'HIstone modification OGG1 (8-oxoguanine DNA glycosylase): normalised expression
-    compared to RPLP0'
+  unique_name: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised
+    expression compared to RPLP0
+  name: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised expression
+    compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone modificatie OGG1 (8-oxoguanine DNA glycosylase): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone modificatie OGG1 (8-oxoguanine DNA glycosylase) genormaliseerde
+      expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification PPARa (peroxisome proliferator activated receptor alpha):
+  label: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised expression
+    compared to RPLP0
+- id: ei:'HIstone modification PPARa (peroxisome proliferator activated receptor alpha)
     normalised expression compared to RPLP0'
-  unique_name: 'HIstone modification PPARa (peroxisome proliferator activated receptor
-    alpha): normalised expression compared to RPLP0'
-  name: 'HIstone modification PPARa (peroxisome proliferator activated receptor alpha):
-    normalised expression compared to RPLP0'
+  unique_name: HIstone modification PPARa (peroxisome proliferator activated receptor
+    alpha) normalised expression compared to RPLP0
+  name: HIstone modification PPARa (peroxisome proliferator activated receptor alpha)
+    normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone modificatie PPARa (peroxisoom proliferator geactiveerde
-      receptor alfa): genormaliseerde expressie in vergelijking met RPLP0'
+    translated_value: HIstone modificatie PPARa (peroxisoom proliferator geactiveerde
+      receptor alfa) genormaliseerde expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification PPARg (peroxisome proliferator activated receptor gamma):
+  label: HIstone modification PPARa (peroxisome proliferator activated receptor alpha)
+    normalised expression compared to RPLP0
+- id: ei:'HIstone modification PPARg (peroxisome proliferator activated receptor gamma)
     normalised expression compared to RPLP0'
-  unique_name: 'HIstone modification PPARg (peroxisome proliferator activated receptor
-    gamma): normalised expression compared to RPLP0'
-  name: 'HIstone modification PPARg (peroxisome proliferator activated receptor gamma):
-    normalised expression compared to RPLP0'
+  unique_name: HIstone modification PPARg (peroxisome proliferator activated receptor
+    gamma) normalised expression compared to RPLP0
+  name: HIstone modification PPARg (peroxisome proliferator activated receptor gamma)
+    normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone modificatie PPARg (peroxisoom proliferator geactiveerde
-      receptor gamma): genormaliseerde expressie in vergelijking met RPLP0'
+    translated_value: HIstone modificatie PPARg (peroxisoom proliferator geactiveerde
+      receptor gamma) genormaliseerde expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase): normalised
-    expression compared to RPLPO'
-  unique_name: 'HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase):
+  label: HIstone modification PPARg (peroxisome proliferator activated receptor gamma)
+    normalised expression compared to RPLP0
+- id: ei:'HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase)
     normalised expression compared to RPLPO'
-  name: 'HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase):
-    normalised expression compared to RPLPO'
+  unique_name: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase)
+    normalised expression compared to RPLPO
+  name: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase) normalised
+    expression compared to RPLPO
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone modificatie SUV39H1 (SUV39H1 histon lysine methyltransferase):
-      genormaliseerde expressie vergeleken met RPLPO'
+    translated_value: HIstone modificatie SUV39H1 (SUV39H1 histon lysine methyltransferase)
+      genormaliseerde expressie vergeleken met RPLPO
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification TERT (Telomerase): normalised expression compared to RPLP0'
-  unique_name: 'HIstone modification TERT (Telomerase): normalised expression compared
-    to RPLP0'
-  name: 'HIstone modification TERT (Telomerase): normalised expression compared to
+  label: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase) normalised
+    expression compared to RPLPO
+- id: ei:'HIstone modification TERT (Telomerase) normalised expression compared to
     RPLP0'
+  unique_name: HIstone modification TERT (Telomerase) normalised expression compared
+    to RPLP0
+  name: HIstone modification TERT (Telomerase) normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie TERT (telomerase): genormaliseerde expressie
-      in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie TERT (telomerase) genormaliseerde expressie
+      in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: HIstone modification TERT (Telomerase) normalised expression compared to
+    RPLP0
 - id: ei:Retroelement LINE L1 copy number variation normalized values to RPLP0 gene
   unique_name: Retroelement LINE L1 copy number variation normalized values to RPLP0
     gene
@@ -2647,6 +2692,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Retroelement LINE L1 copy number variation normalized values to RPLP0 gene
 - id: ei:Ferritine
   unique_name: Ferritine
   name: Ferritine
@@ -2660,6 +2706,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Ferritine
 - id: ei:1,2 bis(2,4,6-tribromophenoxy)ethane
   unique_name: 1,2 bis(2,4,6-tribromophenoxy)ethane
   name: 1,2 bis(2,4,6-tribromophenoxy)ethane
@@ -3131,6 +3178,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 3-hydroxyphenyl diphenyl phosphate
 - id: ei:4-hydroxyphenyl phenyl phosphate
   unique_name: 4-hydroxyphenyl phenyl phosphate
   name: 4-hydroxyphenyl phenyl phosphate
@@ -3518,7 +3566,7 @@ biochementities:
 - id: ei:Di-n-butyl phosphate
   unique_name: Di-n-butyl phosphate
   name: Di-n-butyl phosphate
-  label: DnBP
+  label: DnBPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166473
@@ -4694,6 +4742,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Tri-n-butyl phosphate
 - id: ei:Triphenyl phosphate
   unique_name: Triphenyl phosphate
   name: Triphenyl phosphate
@@ -5087,6 +5136,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Comet assay (DNA damage and repair)
 - id: ei:Comet assay (oxidation of DNA)
   unique_name: Comet assay (oxidation of DNA)
   name: Comet assay (oxidation of DNA)
@@ -5100,6 +5150,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Comet assay (oxidation of DNA)
 - id: ei:Number of micronuclei per 1000 binucleated cells
   unique_name: Number of micronuclei per 1000 binucleated cells
   name: Number of micronuclei per 1000 binucleated cells
@@ -5113,6 +5164,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Number of micronuclei per 1000 binucleated cells
 - id: ei:Number of scored cells in the micronucleus assay
   unique_name: Number of scored cells in the micronucleus assay
   name: Number of scored cells in the micronucleus assay
@@ -5127,6 +5179,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Number of scored cells in the micronucleus assay
 - id: ei:2-(2-methoxyethoxy)acetic acid
   unique_name: 2-(2-methoxyethoxy)acetic acid
   name: 2-(2-methoxyethoxy)acetic acid
@@ -5398,6 +5451,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Iodium
 - id: ei:(RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide
   unique_name: (RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide
   name: (RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide
@@ -5467,6 +5521,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: 2,6-Diethylaniline | C10H15N | CID 11369 - PubChem (nih.gov)
+  label: 2,6 diethyl aniline
 - id: ei:2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide
   unique_name: 2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide
   name: 2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide
@@ -5524,6 +5579,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: 2-hydroxy atrazine
 - id: ei:2-hydroxy simazine
   unique_name: 2-hydroxy simazine
   name: 2-hydroxy simazine
@@ -5552,6 +5608,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: 2-hydroxy simazine
 - id: ei:3-(3,4-dichlorophenyl)-1,1-dimethylurea
   unique_name: 3-(3,4-dichlorophenyl)-1,1-dimethylurea
   name: 3-(3,4-dichlorophenyl)-1,1-dimethylurea
@@ -5638,6 +5695,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 3-(4-Isopropylphenyl)-1,1-dimethylurea
 - id: ei:Alachlor mercapturate
   unique_name: Alachlor mercapturate
   name: Alachlor mercapturate
@@ -5660,6 +5718,7 @@ biochementities:
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: (2R)-2-acetamido-3-[2-[2,6-diethyl-N-(methoxymethyl)anilino]-2-oxoethyl]sulfanylpropanoic
       acid | C19H28N2O5S | CID 131866382 - PubChem (nih.gov)
+  label: Alachlor mercapturate
 - id: ei:Atrazine
   unique_name: Atrazine
   name: Atrazine
@@ -5688,6 +5747,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Atrazine
 - id: ei:Atrazine mercapturate
   unique_name: Atrazine mercapturate
   name: Atrazine mercapturate
@@ -5716,6 +5776,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Atrazine mercapturate
 - id: ei:Desethyl 2-hydroxy atrazine
   unique_name: Desethyl 2-hydroxy atrazine
   name: Desethyl 2-hydroxy atrazine
@@ -5746,6 +5807,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: Desethyl 2-hydroxy atrazine
 - id: ei:Desethyl atrazine
   unique_name: Desethyl atrazine
   name: Desethyl atrazine
@@ -5776,6 +5838,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Desethyl atrazine
 - id: ei:Desethyl desisopropyl 2-hydroxy atrazine
   unique_name: Desethyl desisopropyl 2-hydroxy atrazine
   name: Desethyl desisopropyl 2-hydroxy atrazine
@@ -5794,6 +5857,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Desethyl desisopropyl 2-hydroxy atrazine
 - id: ei:Desethyl desisopropyl atrazine
   unique_name: Desethyl desisopropyl atrazine
   name: Desethyl desisopropyl atrazine
@@ -5825,6 +5889,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: Desethyl desisopropyl atrazine
 - id: ei:Desisopropyl 2-hydroxy atrazine
   unique_name: Desisopropyl 2-hydroxy atrazine
   name: Desisopropyl 2-hydroxy atrazine
@@ -5843,6 +5908,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Desisopropyl 2-hydroxy atrazine
 - id: ei:Desisopropyl atrazine
   unique_name: Desisopropyl atrazine
   name: Desisopropyl atrazine
@@ -5873,6 +5939,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Desisopropyl atrazine
 - id: ei:Simazine
   unique_name: Simazine
   name: Simazine
@@ -5901,6 +5968,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Simazine
 - id: ei:Simazine mercapturate
   unique_name: Simazine mercapturate
   name: Simazine mercapturate
@@ -5929,6 +5997,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Simazine mercapturate
 - id: ei:CRP-US
   unique_name: CRP-US
   name: CRP-US
@@ -5941,6 +6010,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: CRP-US
 - id: ei:FeNO-value
   unique_name: FeNO-value
   name: FeNO-value
@@ -5955,6 +6025,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: FeNO-value
 - id: ei:High-sensitivity reactive protein
   unique_name: High-sensitivity reactive protein
   name: High-sensitivity reactive protein
@@ -5968,6 +6039,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: High-sensitivity reactive protein
 - id: ei:IgA
   unique_name: IgA
   name: IgA
@@ -5993,6 +6065,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: IgA
 - id: ei:IgE
   unique_name: IgE
   name: IgE
@@ -6018,6 +6091,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: IgE
 - id: ei:IgM
   unique_name: IgM
   name: IgM
@@ -6043,6 +6117,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: IgM
 - id: ei:Interleukin 1 beta
   unique_name: Interleukin 1 beta
   name: Interleukin 1 beta
@@ -6056,6 +6131,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Interleukin 1 beta
 - id: ei:Interferon gamma
   unique_name: Interferon gamma
   name: Interferon gamma
@@ -6206,6 +6282,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cortison
 - id: ei:Alpha1-microglobuline
   unique_name: Alpha1-microglobuline
   name: Alpha1-microglobuline
@@ -6218,6 +6295,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Alpha1-microglobuline
 - id: ei:Cystatine-C
   unique_name: Cystatine-C
   name: Cystatine-C
@@ -6244,6 +6322,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Adiponectine
 - id: ei:Glucose
   unique_name: Glucose
   name: Glucose
@@ -6269,6 +6348,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Glucose
 - id: ei:Medium-chain acyl-CoA dehydrogenase deficiency
   unique_name: Medium-chain acyl-CoA dehydrogenase deficiency
   name: Medium-chain acyl-CoA dehydrogenase deficiency
@@ -6282,6 +6362,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Medium-chain acyl-CoA dehydrogenase deficiency
 - id: ei:Multiple acyl CoA dehydrogenase deficiency
   unique_name: Multiple acyl CoA dehydrogenase deficiency
   name: Multiple acyl CoA dehydrogenase deficiency
@@ -6295,6 +6376,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Multiple acyl CoA dehydrogenase deficiency
 - id: ei:Alkaline Phosphatases
   unique_name: Alkaline Phosphatases
   name: Alkaline Phosphatases
@@ -6307,6 +6389,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Alkaline Phosphatases
 - id: ei:Gamma-GT
   unique_name: Gamma-GT
   name: Gamma-GT
@@ -6332,6 +6415,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Gamma-GT
 - id: ei:Transaminase ALT
   unique_name: Transaminase ALT
   name: Transaminase ALT
@@ -6385,6 +6469,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Insulin
 - id: ei:Leptin
   unique_name: Leptin
   name: Leptin
@@ -6410,6 +6495,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Leptin
 - id: ei:Aluminium
   unique_name: Aluminium
   name: Aluminium
@@ -7445,6 +7531,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Selenium
 - id: ei:Strontium
   unique_name: Strontium
   name: Strontium
@@ -7759,6 +7846,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Galaxolide
 - id: ei:Musk ketone
   unique_name: Musk ketone
   name: Musk ketone
@@ -7906,6 +7994,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: AFB1-N7-guanine | C22H17N5O8 | CID 135625225 - PubChem (nih.gov)
+  label: AFB-N7-guanine
 - id: ei:Aflatoxin B1
   unique_name: Aflatoxin B1
   name: Aflatoxin B1
@@ -9062,6 +9151,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Benzylparaben
 - id: ei:Butylparaben
   unique_name: Butylparaben
   name: Butylparaben
@@ -9087,6 +9177,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Butylparaben
 - id: ei:Ethylparaben
   unique_name: Ethylparaben
   name: Ethylparaben
@@ -9198,6 +9289,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Isopropylparaben
 - id: ei:Methylparaben
   unique_name: Methylparaben
   name: Methylparaben
@@ -9227,6 +9319,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Methylparaben
 - id: ei:Pentylparaben
   unique_name: Pentylparaben
   name: Pentylparaben
@@ -9307,6 +9400,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Propylparaben
 - id: ei:Linear + branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
   unique_name: Linear + branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
   name: Linear + branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
@@ -9702,8 +9796,8 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
-- id: ei:Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic acid
-    potassium salt
+- id: ei:Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic
+    acid potassium salt
   unique_name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic
     acid potassium salt
   name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic
@@ -11493,6 +11587,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Dioxin-like PCBs
 - id: ei:Hydroxylated Polychlorinated biphenyl 107
   unique_name: Hydroxylated Polychlorinated biphenyl 107
   name: Hydroxylated Polychlorinated biphenyl 107
@@ -11511,6 +11606,7 @@ biochementities:
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/2_3_6-trichloro-4-_3_4-dichlorophenyl_phenol;
       https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:34418
+  label: Hydroxylated Polychlorinated biphenyl 107
 - id: ei:Hydroxylated Polychlorinated biphenyl 146
   unique_name: Hydroxylated Polychlorinated biphenyl 146
   name: Hydroxylated Polychlorinated biphenyl 146
@@ -11528,6 +11624,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/3050412; https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:34200
+  label: Hydroxylated Polychlorinated biphenyl 146
 - id: ei:Hydroxylated Polychlorinated biphenyl 187
   unique_name: Hydroxylated Polychlorinated biphenyl 187
   name: Hydroxylated Polychlorinated biphenyl 187
@@ -11545,6 +11642,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/178007; https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:34415
+  label: Hydroxylated Polychlorinated biphenyl 187
 - id: ei:Polychlorinated biphenyl 101
   unique_name: Polychlorinated biphenyl 101
   name: Polychlorinated biphenyl 101
@@ -13090,6 +13188,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Trans-nonachlor
 - id: ei:Beta-hexachlorocyclohexane
   unique_name: Beta-hexachlorocyclohexane
   name: Beta-hexachlorocyclohexane
@@ -13203,6 +13302,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/Lindane; https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32888
+  label: Gamma-hexachlorocyclohexane (lindane)
 - id: ei:Oxychlordane
   unique_name: Oxychlordane
   name: Oxychlordane
@@ -13259,6 +13359,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: (3,4-dichlorophenyl)urea
 - id: ei:1-(3,4-dichlorophenyl)-3-methylurea
   unique_name: 1-(3,4-dichlorophenyl)-3-methylurea
   name: 1-(3,4-dichlorophenyl)-3-methylurea
@@ -13288,6 +13389,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 1-(3,4-dichlorophenyl)-3-methylurea
 - id: ei:2,3,4,6-Tetrachlorophenol
   unique_name: 2,3,4,6-Tetrachlorophenol
   name: 2,3,4,6-Tetrachlorophenol
@@ -13398,6 +13500,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 2,4,5-trichlorophenoxyacetic acid
 - id: ei:2,4,6-trichlorophenol
   unique_name: 2,4,6-trichlorophenol
   name: 2,4,6-trichlorophenol
@@ -13487,6 +13590,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 2,4-dichlorophenoxyacetic acid
 - id: ei:2,5-dichlorophenol
   unique_name: 2,5-dichlorophenol
   name: 2,5-dichlorophenol
@@ -13855,6 +13959,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Boscalid
 - id: ei:Chlorpyrifos
   unique_name: Chlorpyrifos
   name: Chlorpyrifos
@@ -14043,6 +14148,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Dialkyl phosphate
 - id: ei:Dibutyltin
   unique_name: Dibutyltin
   name: Dibutyltin
@@ -14108,6 +14214,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Diethyl alkyl phosphates
 - id: ei:Diethyl phosphate
   unique_name: Diethyl phosphate
   name: Diethyl phosphate
@@ -14210,6 +14317,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Di-isopropyl phosphate
 - id: ei:Dimethyl dithiophosphate
   unique_name: Dimethyl dithiophosphate
   name: Dimethyl dithiophosphate
@@ -14245,7 +14353,7 @@ biochementities:
 - id: ei:Dimethyl phosphate
   unique_name: Dimethyl phosphate
   name: Dimethyl phosphate
-  label: DMP
+  label: DMPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166474
@@ -14319,6 +14427,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Dimethylalkylphosphates
 - id: ei:Dioctyltin
   unique_name: Dioctyltin
   name: Dioctyltin
@@ -14451,6 +14560,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Fipronil sulfone
 - id: ei:Glyphosate
   unique_name: Glyphosate
   name: Glyphosate
@@ -14528,6 +14638,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/15559699
+  label: Heptachlor exo-epoxide (cis)
 - id: ei:Heptachlor exo-epoxide (trans)
   unique_name: Heptachlor exo-epoxide (trans)
   name: Heptachlor exo-epoxide (trans)
@@ -14544,6 +14655,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/71317194
+  label: Heptachlor exo-epoxide (trans)
 - id: ei:Monobutyltin
   unique_name: Monobutyltin
   name: Monobutyltin
@@ -14695,6 +14807,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Parathion-ethyl
 - id: ei:Parathion-methyl
   unique_name: Parathion-methyl
   name: Parathion-methyl
@@ -14720,6 +14833,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Parathion-methyl
 - id: ei:Pentachlorophenol
   unique_name: Pentachlorophenol
   name: Pentachlorophenol
@@ -15593,6 +15707,7 @@ biochementities:
     validation_actor: anthony.purece@vito.be, hans.mol@wur.nl
     validation_institute: VITO, Wageningen University & Research
     validation_remark: Pesticides_List
+  label: Pirimiphos-methyl-desmethyl
 - id: ei:N-[(6-chloropyridin-3-yl)methyl]-N'-cyano-N-methylethanimidamide
   unique_name: N-[(6-chloropyridin-3-yl)methyl]-N'-cyano-N-methylethanimidamide
   name: N-[(6-chloropyridin-3-yl)methyl]-N'-cyano-N-methylethanimidamide
@@ -15803,6 +15918,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Fipronil
 - id: ei:Clothianidin desmethyl
   unique_name: Clothianidin desmethyl
   name: Clothianidin desmethyl
@@ -16197,6 +16313,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cis-nonachlor
 - id: ei:Hexachlorobenzene
   unique_name: Hexachlorobenzene
   name: Hexachlorobenzene
@@ -16697,7 +16814,7 @@ biochementities:
 - id: ei:Diethyl phthalate
   unique_name: Diethyl phthalate
   name: Diethyl phthalate
-  label: DEP
+  label: DEPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:34698
@@ -16747,6 +16864,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Diisobutyl phthalate
 - id: ei:Di-n-butyl phthalate
   unique_name: Di-n-butyl phthalate
   name: Di-n-butyl phthalate
@@ -17698,7 +17816,7 @@ biochementities:
 - id: ei:Diphenyl phosphate
   unique_name: Diphenyl phosphate
   name: Diphenyl phosphate
-  label: DPHP
+  label: DPHPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166468
@@ -17751,6 +17869,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Tris(2-butoxyethyl) phosphate
 - id: ei:1,2-DHP
   unique_name: 1,2-DHP
   name: 1,2-DHP
@@ -17763,6 +17882,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: 1,2-DHP
 - id: ei:1,2-Dihydrophenanthrene-1,2-diol
   unique_name: 1,2-Dihydrophenanthrene-1,2-diol
   name: 1,2-Dihydrophenanthrene-1,2-diol
@@ -17825,7 +17945,7 @@ biochementities:
 - id: ei:1,2-Dihydroxyphenanthrene
   unique_name: 1,2-Dihydroxyphenanthrene
   name: 1,2-Dihydroxyphenanthrene
-  label: 1,2-DHP
+  label: 1,2-DHPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:37452
@@ -18578,6 +18698,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: 9,10-DHP
 - id: ei:9,10-Phenanthrenediol
   unique_name: 9,10-Phenanthrenediol
   name: 9,10-Phenanthrenediol
@@ -19486,6 +19607,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Bloodgroup
 - id: ei:Rhesus D
   unique_name: Rhesus D
   name: Rhesus D
@@ -19498,6 +19620,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Rhesus D
 - id: ei:Rhesus Formula
   unique_name: Rhesus Formula
   name: Rhesus Formula
@@ -19510,6 +19633,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Rhesus Formula
 - id: ei:Dry substance
   unique_name: Dry substance
   name: Dry substance
@@ -19522,6 +19646,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Dry substance
 - id: ei:Lutum content (fraction <2µm)
   unique_name: Lutum content (fraction <2µm)
   name: Lutum content (fraction <2µm)
@@ -19534,6 +19659,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Lutum content (fraction <2µm)
 - id: ei:Organic material
   unique_name: Organic material
   name: Organic material
@@ -19546,6 +19672,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Organic material
 - id: ei:PH in 1M KCl
   unique_name: PH in 1M KCl
   name: PH in 1M KCl
@@ -19558,6 +19685,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: PH in 1M KCl
 - id: ei:Total organic carbon
   unique_name: Total organic carbon
   name: Total organic carbon
@@ -19611,6 +19739,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Osmotic concentration of urine of the sample
 - id: ei:Specific gravity
   unique_name: Specific gravity
   name: Specific gravity
@@ -19637,6 +19766,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Urine density of the sample
 - id: ei:Urine void volume per 24h
   unique_name: Urine void volume per 24h
   name: Urine void volume per 24h
@@ -19649,6 +19779,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Urine void volume per 24h
 - id: ei:Urine volume
   unique_name: Urine volume
   name: Urine volume
@@ -19661,6 +19792,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Urine volume
 - id: ei:Percentage of DNA methylation at KISS CpG1
   unique_name: Percentage of DNA methylation at KISS CpG1
   name: Percentage of DNA methylation at KISS CpG1
@@ -19686,6 +19818,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Percentage of DNA methylation at KISS CpG2
 - id: ei:Percentage of DNA methylation at KISS CpG3
   unique_name: Percentage of DNA methylation at KISS CpG3
   name: Percentage of DNA methylation at KISS CpG3
@@ -19698,6 +19831,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Percentage of DNA methylation at KISS CpG3
 - id: ei:Percentage of DNA methylation at KISS CpG4
   unique_name: Percentage of DNA methylation at KISS CpG4
   name: Percentage of DNA methylation at KISS CpG4
@@ -19710,6 +19844,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Percentage of DNA methylation at KISS CpG4
 - id: ei:17beta-oestradiol
   unique_name: 17beta-oestradiol
   name: 17beta-oestradiol
@@ -19736,6 +19871,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 17beta-oestradiol
 - id: ei:17-hydroxyprogesteron
   unique_name: 17-hydroxyprogesteron
   name: 17-hydroxyprogesteron
@@ -19751,6 +19887,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: 17-hydroxyprogesteron
 - id: ei:Aromatase
   unique_name: Aromatase
   name: Aromatase
@@ -19764,6 +19901,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Aromatase
 - id: ei:Bioavailable estradio
   unique_name: Bioavailable estradio
   name: Bioavailable estradio
@@ -19777,6 +19915,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Bioavailable estradio
 - id: ei:Bioavailable testosterone
   unique_name: Bioavailable testosterone
   name: Bioavailable testosterone
@@ -19790,6 +19929,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Bioavailable testosterone
 - id: ei:Estradiol
   unique_name: Estradiol
   name: Estradiol
@@ -19815,6 +19955,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Estradiol
 - id: ei:Follicle-stimulating hormone
   unique_name: Follicle-stimulating hormone
   name: Follicle-stimulating hormone
@@ -19855,6 +19996,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Free 17beta-estradiol
 - id: ei:Free Testosterone
   unique_name: Free Testosterone
   name: Free Testosterone
@@ -19868,6 +20010,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Free Testosterone
 - id: ei:Free Testosterone index
   unique_name: Free Testosterone index
   name: Free Testosterone index
@@ -19880,6 +20023,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Free Testosterone index
 - id: ei:Inhibine B
   unique_name: Inhibine B
   name: Inhibine B
@@ -19893,6 +20037,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Inhibine B
 - id: ei:Luteinizing hormone
   unique_name: Luteinizing hormone
   name: Luteinizing hormone
@@ -19932,6 +20077,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Progesterone
 - id: ei:Sex Hormone Binding Globulin
   unique_name: Sex Hormone Binding Globulin
   name: Sex Hormone Binding Globulin
@@ -19972,6 +20118,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Testosterone
 - id: ei:Cortisol
   unique_name: Cortisol
   name: Cortisol
@@ -19998,6 +20145,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cortisol
 - id: ei:Free thyroxine
   unique_name: Free thyroxine
   name: Free thyroxine
@@ -20028,38 +20176,42 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification THRA (Thyroid receptor alfa): normalised expression compared
-    to RPLP0'
-  unique_name: 'HIstone modification THRA (Thyroid receptor alfa): normalised expression
+- id: ei:'HIstone modification THRA (Thyroid receptor alfa) normalised expression
     compared to RPLP0'
-  name: 'HIstone modification THRA (Thyroid receptor alfa): normalised expression
-    compared to RPLP0'
+  unique_name: HIstone modification THRA (Thyroid receptor alfa) normalised expression
+    compared to RPLP0
+  name: HIstone modification THRA (Thyroid receptor alfa) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie THRA (schildklierreceptor alfa): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie THRA (schildklierreceptor alfa) genormaliseerde
+      expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
-- id: ei:'HIstone modification THRB (Thyroid receptor beta): normalised expression compared
-    to RPLP0'
-  unique_name: 'HIstone modification THRB (Thyroid receptor beta): normalised expression
+  label: HIstone modification THRA (Thyroid receptor alfa) normalised expression compared
+    to RPLP0
+- id: ei:'HIstone modification THRB (Thyroid receptor beta) normalised expression
     compared to RPLP0'
-  name: 'HIstone modification THRB (Thyroid receptor beta): normalised expression
-    compared to RPLP0'
+  unique_name: HIstone modification THRB (Thyroid receptor beta) normalised expression
+    compared to RPLP0
+  name: HIstone modification THRB (Thyroid receptor beta) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
-    translated_value: 'HIstone-modificatie THRB (schildklierreceptor beta): genormaliseerde
-      expressie in vergelijking met RPLP0'
+    translated_value: HIstone-modificatie THRB (schildklierreceptor beta) genormaliseerde
+      expressie in vergelijking met RPLP0
   - property_name: label
     language: nl-be
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: HIstone modification THRB (Thyroid receptor beta) normalised expression compared
+    to RPLP0
 - id: ei:Thyroid-stimulating hormone
   unique_name: Thyroid-stimulating hormone
   name: Thyroid-stimulating hormone
@@ -20086,6 +20238,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Total thyroxine
 - id: ei:Total triiodothyronine
   unique_name: Total triiodothyronine
   name: Total triiodothyronine
@@ -20098,6 +20251,7 @@ biochementities:
   current_validation_status: unvalidated
   validation_history:
   - validation_status: unvalidated
+  label: Total triiodothyronine
 - id: ei:2,3,4 trihydroxybenzophenone
   unique_name: 2,3,4 trihydroxybenzophenone
   name: 2,3,4 trihydroxybenzophenone
@@ -20173,6 +20327,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 2-Ethylhexyl 4-(dimethylamino)benzoate
 - id: ei:3-benzylidene camphor
   unique_name: 3-benzylidene camphor
   name: 3-benzylidene camphor
@@ -20199,6 +20354,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 3-benzylidene camphor
 - id: ei:4-hydroxy-benzophenone
   unique_name: 4-hydroxy-benzophenone
   name: 4-hydroxy-benzophenone
@@ -20285,6 +20441,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 4-methylbenzylidene camphor
 - id: ei:Benzophenone
   unique_name: Benzophenone
   name: Benzophenone
@@ -20561,6 +20718,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Homosalate
 - id: ei:Isoamyl p-methoxycinnamate
   unique_name: Isoamyl p-methoxycinnamate
   name: Isoamyl p-methoxycinnamate
@@ -20587,6 +20745,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Isoamyl p-methoxycinnamate
 - id: ei:Octyl methoxycinnamate
   unique_name: Octyl methoxycinnamate
   name: Octyl methoxycinnamate
@@ -20604,6 +20763,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: API_PubChem
+  label: Octyl methoxycinnamate
 - id: ei:Vitamin A
   unique_name: Vitamin A
   name: Vitamin A
@@ -20784,6 +20944,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: API_PubChem
+  label: Mercapturic acid
 - id: ei:T,t-muconic acid
   unique_name: T,t-muconic acid
   name: T,t-muconic acid
@@ -20812,6 +20973,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: T,t-muconic acid
 - id: ei:Glycidamide
   unique_name: Glycidamide
   name: Glycidamide
@@ -20837,6 +20999,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Glycidamide
 - id: ei:Acrylamide
   unique_name: Acrylamide
   name: Acrylamide
@@ -20862,6 +21025,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Acrylamide
 - id: ei:2,4-Toluenediisocyanate
   unique_name: 2,4-Toluenediisocyanate
   name: 2,4-Toluenediisocyanate
@@ -21630,6 +21794,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Ethyl 4-hydroxybenzoate
 - id: ei:Methyl 4-hydroxybenzoate
   unique_name: Methyl 4-hydroxybenzoate
   name: Methyl 4-hydroxybenzoate
@@ -21655,6 +21820,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Methyl 4-hydroxybenzoate
 - id: ei:Polychlorinated biphenyl
   unique_name: Polychlorinated biphenyl
   name: Polychlorinated biphenyl
@@ -21692,6 +21858,7 @@ biochementities:
   current_validation_status: in_progress
   validation_history:
   - validation_status: in_progress
+  label: Dioxins/furans and related compounds
 - id: ei:Chlordane
   unique_name: Chlordane
   name: Chlordane
@@ -21717,6 +21884,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Chlordane
 - id: ei:Hexachlorocyclohexane
   unique_name: Hexachlorocyclohexane
   name: Hexachlorocyclohexane
@@ -21771,6 +21939,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Diuron
 - id: ei:HCH
   unique_name: HCH
   name: HCH
@@ -21796,6 +21965,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: HCHbis
 - id: ei:1,4-Dichlorobenzene
   unique_name: 1,4-Dichlorobenzene
   name: 1,4-Dichlorobenzene
@@ -21821,6 +21991,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: 1,4-Dichlorobenzene
 - id: ei:Pirimiphos-methyl
   unique_name: Pirimiphos-methyl
   name: Pirimiphos-methyl
@@ -21846,6 +22017,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Pirimiphos-methyl
 - id: ei:Deltamethrin
   unique_name: Deltamethrin
   name: Deltamethrin
@@ -21871,6 +22043,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Deltamethrin
 - id: ei:Pyrimethanil
   unique_name: Pyrimethanil
   name: Pyrimethanil
@@ -21896,6 +22069,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Pyrimethanil
 - id: ei:Parathion
   unique_name: Parathion
   name: Parathion
@@ -21921,6 +22095,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Parathion
 - id: ei:Thiabenadazole
   unique_name: Thiabenadazole
   name: Thiabenadazole
@@ -21937,6 +22112,7 @@ biochementities:
     validation_actor: Adrian.Covaci@uantwerpen.be
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/Thiabendazole; https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:45979
+  label: Thiabenadazole
 - id: ei:Cyprodinil
   unique_name: Cyprodinil
   name: Cyprodinil
@@ -21962,6 +22138,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cyprodinil
 - id: ei:Chlorpyrifos (and other diethyl organophosphate insecticides)
   unique_name: Chlorpyrifos (and other diethyl organophosphate insecticides)
   name: Chlorpyrifos (and other diethyl organophosphate insecticides)
@@ -21987,6 +22164,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: Chlorpyrifos (and other diethyl organophosphate insecticides)
 - id: ei:Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
   unique_name: Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
   name: Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
@@ -22012,6 +22190,7 @@ biochementities:
     validation_actor: liese.gilles@vito.be
     validation_institute: VITO
     validation_remark: VITO_Liese
+  label: Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
 - id: ei:Dimethoate
   unique_name: Dimethoate
   name: Dimethoate
@@ -22037,6 +22216,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Dimethoate
 - id: ei:DDT
   unique_name: DDT
   name: DDT
@@ -22062,6 +22242,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: DDT
 - id: ei:Tebuconazole
   unique_name: Tebuconazole
   name: Tebuconazole
@@ -22087,6 +22268,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Tebuconazole
 - id: ei:1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole
   unique_name: 1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole
   name: 1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole
@@ -22332,6 +22514,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Carbofuran
 - id: ei:Ethylenebisdithiocarbamates
   unique_name: Ethylenebisdithiocarbamates
   name: Ethylenebisdithiocarbamates
@@ -22374,6 +22557,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cyfluthrin
 - id: ei:Cypermethrin
   unique_name: Cypermethrin
   name: Cypermethrin
@@ -22399,6 +22583,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cypermethrin
 - id: ei:Permethrin
   unique_name: Permethrin
   name: Permethrin
@@ -22424,6 +22609,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Permethrin
 - id: ei:Cyhalothrin
   unique_name: Cyhalothrin
   name: Cyhalothrin
@@ -22449,6 +22635,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Cyhalothrin
 - id: ei:Fenpropathrin
   unique_name: Fenpropathrin
   name: Fenpropathrin
@@ -22474,6 +22661,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Fenpropathrin
 - id: ei:Fenvalerate
   unique_name: Fenvalerate
   name: Fenvalerate
@@ -22499,6 +22687,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Fenvalerate
 - id: ei:Esfenvalerate
   unique_name: Esfenvalerate
   name: Esfenvalerate
@@ -22524,6 +22713,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Esfenvalerate
 - id: ei:Bifenthrin
   unique_name: Bifenthrin
   name: Bifenthrin
@@ -22549,6 +22739,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Bifenthrin
 - id: ei:Trans-cyfluthrin
   unique_name: Trans-cyfluthrin
   name: Trans-cyfluthrin
@@ -22566,6 +22757,7 @@ biochementities:
     validation_institute: Toxicological Centre (University of Antwerp)
     validation_remark: https://pubchem.ncbi.nlm.nih.gov/compound/12881581#section=IUPAC-Name;
       https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39312
+  label: Trans-cyfluthrin
 - id: ei:Trans-cypermethrin
   unique_name: Trans-cypermethrin
   name: Trans-cypermethrin
@@ -22591,6 +22783,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Trans-cypermethrin
 - id: ei:Trans-permethrin
   unique_name: Trans-permethrin
   name: Trans-permethrin
@@ -22616,6 +22809,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Trans-permethrin
 - id: ei:Tri-(2-ethylhexyl) trimellitate
   unique_name: Tri-(2-ethylhexyl) trimellitate
   name: Tri-(2-ethylhexyl) trimellitate
@@ -23077,6 +23271,7 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+  label: Benzene
 - id: ei:dehp
   unique_name: dehp
   name: Sum DEHP metabolites
@@ -23093,6 +23288,7 @@ biochementities:
     translated_value: Som DEHP metabolieten
   - property_name: label
     language: nl-be
+  label: dehp
 - id: ei:summinch
   unique_name: summinch
   name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester +
@@ -23142,6 +23338,7 @@ biochementities:
     translated_value: Bloedvet enzymatisch berekend
   - property_name: label
     language: nl-be
+  label: lipid_enz_harm
 - id: ei:lpfhxs_perc
   unique_name: lpfhxs_perc
   name: Percentage Linear Perfluorohexane sulfonic acid
@@ -23188,6 +23385,7 @@ biochementities:
     translated_value: Ratio van MeHg en Hg
   - property_name: label
     language: nl-be
+  label: mhghg
 - id: ei:sumpcb
   unique_name: sumpcb
   name: pcb138 + pcb153 + pcb180
@@ -23204,6 +23402,7 @@ biochementities:
     translated_value: pcb138 + pcb153 + pcb180
   - property_name: label
     language: nl-be
+  label: sumpcb
 - id: ei:sumpfhxspfos
   unique_name: sumpfhxspfos
   name: Linear Perfluorohexane sulfonic acid + Linear Perfluorooctane sulfonic acid
@@ -23250,6 +23449,7 @@ biochementities:
     translated_value: Anthracene + Phenanthrene
   - property_name: label
     language: nl-be
+  label: phean
 - id: ei:ppddtppdde
   unique_name: ppddtppdde
   name: Ratio of p,p'-DDT and p,p'-DDE
@@ -23264,6 +23464,7 @@ biochementities:
     translated_value: Ratio p,p'-DDT p,p'-DDE
   - property_name: label
     language: nl-be
+  label: ppddtppdde
 - id: ei:ratiocd4cd8plus
   unique_name: ratiocd4cd8plus
   name: CD4+ / CD8+
@@ -23467,6 +23668,7 @@ biochementities:
     translated_value: Berekende som van metabolieten voor ftalaten met een laag molecuulgewicht
   - property_name: label
     language: nl-be
+  label: sumlmwphthal
 - id: ei:sumdiohnap
   unique_name: sumdiohnap
   name: 1-hydroxynaphthalene + 2-hydroxynaphthalene + 1-,2-dihydroxynaphthalene
@@ -23513,6 +23715,7 @@ biochementities:
     translated_value: ehphp + ohehdphp
   - property_name: label
     language: nl-be
+  label: sumehdphp
 - id: ei:sumeightphthal
   unique_name: sumeightphthal
   name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
@@ -23643,6 +23846,7 @@ biochementities:
     translated_value: Berekende som van metabolieten voor ftalaten met een hoog molecuulgewicht
   - property_name: label
     language: nl-be
+  label: sumhmwphthal
 - id: ei:sumpba
   unique_name: sumpba
   name: 3-phenoxybenzoic acid + 4-fluoro-3-phenoxybenzoic acid
@@ -23697,6 +23901,7 @@ biochementities:
     translated_value: lbpfoa + lbpfna + lbpfhxs + lbpfos
   - property_name: label
     language: nl-be
+  label: sumlbfourpfas
 - id: ei:sumpfoapfna
   unique_name: sumpfoapfna
   name: Linear Perfluorooctanoic acid + Linear Perfluorononanoic acid
@@ -23900,6 +24105,7 @@ biochementities:
     translated_value: mepfosaa + pfhxs + lbpfoa + pfda + pfunda + lbpfos + pfna
   - property_name: label
     language: nl-be
+  label: sumuslb7pfas
 - id: ei:sdehtm
   unique_name: sdehtm
   name: Measured Sum(twofourdehtm,onefourdehtm)
@@ -23914,10 +24120,11 @@ biochementities:
     translated_value: Gemeten Som(twofourdehtm,onefourdehtm)
   - property_name: label
     language: nl-be
+  label: sdehtm
 - id: ei:sdcca
   unique_name: sdcca
   name: Measured Sum (cis-DCCA, trans-DCCA)
-  label: 'Measured '
+  label: 'sdcca'
   biochementity_links:
   - biochementity_linktype: group_contains
     biochementity: 3-(2,2-dichlorovinyl)-2,2-dimethylycyclopropane carboxylic acid
@@ -24192,6 +24399,7 @@ biochementities:
   - property_name: label
     language: nl-be
     translated_value: APOR
+  label: apor
 - id: ei:lympho
   unique_name: lympho
   name: Total Lymphocytes
@@ -24222,6 +24430,7 @@ biochementities:
     translated_value: Benzo[b]fluoranthene + Benzo[k]fluoranthene
   - property_name: label
     language: nl-be
+  label: bbfabkfa
 - id: ei:sumdcca
   unique_name: sumdcca
   name: Sum (cis-DCCA, trans-DCCA)
@@ -24236,6 +24445,7 @@ biochementities:
     language: nl-be
   - property_name: label
     language: nl-be
+  label: sumdcca
 - id: ei:bpfds
   unique_name: bpfds
   name: Branched Perfluorodecane sulfonic acid

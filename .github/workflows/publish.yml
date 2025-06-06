@@ -1,7 +1,9 @@
 name: Publish Vocabulary
 
+permissions:
+  contents: write
+
 on:
-    pull_request:
     release:
         types: [published]
 
@@ -12,9 +14,9 @@ jobs:
         uses: eu-parc/voc2skosmos-workflow/.github/workflows/yml2skos.yml@main
         with:
             ref: ${{ github.ref }}
-            namespace: http://www.placeholder.com/
-            namespace_label: placeholder
-            linkml_schema: schema/biochementity.linkml.yml
+            namespace: https://w3id.org/peh/terms/
+            namespace_label: pehterms
+            linkml_schema: https://raw.githubusercontent.com/eu-parc/parco-hbm/main/linkml/schema/peh.yaml
             data: data/data.yml
         secrets:
             token: ${{ secrets.GITHUB_TOKEN }}
