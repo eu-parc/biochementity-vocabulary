@@ -3884,7 +3884,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-f993a9fc52
   unique_name: Di-n-butyl phosphate
   name: Di-n-butyl phosphate
-  label: DnBP
+  label: DnBPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166473
@@ -15986,7 +15986,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-12b49183df
   unique_name: Dimethyl phosphate
   name: Dimethyl phosphate
-  label: DMP
+  label: DMPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166474
@@ -18549,7 +18549,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-c1911af20b
   unique_name: Diethyl phthalate
   name: Diethyl phthalate
-  label: DEP
+  label: DEPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:34698
@@ -19707,7 +19707,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-142c68d8df
   unique_name: Diphenyl phosphate
   name: Diphenyl phosphate
-  label: DPHP
+  label: DPHPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:166468
@@ -19846,7 +19846,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-119240f401
   unique_name: 1,2-Dihydroxyphenanthrene
   name: 1,2-Dihydroxyphenanthrene
-  label: 1,2-DHP
+  label: 1,2-DHPbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:37452
@@ -24326,7 +24326,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-3481d765c8
   unique_name: HCH
   name: HCH
-  label: HCH
+  label: HCHbis
   biochemidentifiers:
   - identifier_schema: CHEBI
     identifier_code: CHEBI:24536
@@ -26691,7 +26691,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-5477e6723f
   unique_name: sdcca
   name: Measured Sum (cis-DCCA, trans-DCCA)
-  label: 'Measured '
+  label: Measured cis-DCCA + trans-DCCA
   biochementity_links:
   - biochementity_linktype: group_contains
     biochementity: https://w3id.org/peh/BE-cb1d0aa9f1
@@ -26789,7 +26789,7 @@ biochementities:
 - id: https://w3id.org/peh/BE-90903e80c8
   unique_name: pcb196and203
   name: Measured Sum of pcb196 and pcb203
-  label: 'Measured '
+  label: Measured pcb196 + pcb203
   biochementity_links:
   - biochementity_linktype: group_contains
     biochementity: https://w3id.org/peh/BE-476b61ad5d
