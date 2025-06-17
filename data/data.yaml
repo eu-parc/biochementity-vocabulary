@@ -27211,7 +27211,7 @@ biochementities:
   - property_name: label
     language: nl-be
     translated_value: B-PFTrDA
-- id: 2H-Perfluoro-2-decenoic acid
+- id: https://w3id.org/peh/BE-7f19380095
   unique_name: 2H-Perfluoro-2-decenoic acid
   name: 2H-Perfluoro-2-decenoic acid
   label: 8:2 FTUCA
@@ -27246,8 +27246,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - RIVM Study
-- id: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
-    acid
+- id: https://w3id.org/peh/BE-5cfffb14c8
   unique_name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
     acid
   name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
@@ -27284,7 +27283,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - RIVM Study
-- id: Bisphenol P
+- id: https://w3id.org/peh/BE-223f081885
   unique_name: Bisphenol P
   name: Bisphenol P
   label: BPP total
@@ -27322,7 +27321,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Linear + branched PFBA (Perfluorobutanoic acid)
+- id: https://w3id.org/peh/BE-a85dc0f98d
   unique_name: Linear + branched PFBA (Perfluorobutanoic acid)
   name: Linear + branched PFBA (Perfluorobutanoic acid)
   label: L+B-PFBA
@@ -27335,7 +27334,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: albumin
+- id: https://w3id.org/peh/BE-dff6986f8f
   unique_name: albumin
   name: albumin
   label: albumin
@@ -27348,7 +27347,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Linear + branched MeFOSAA
+- id: https://w3id.org/peh/BE-5cd62abf2c
   unique_name: Linear + branched MeFOSAA
   name: Linear + branched MeFOSAA
   label: L+B-MeFOSAA
@@ -27361,7 +27360,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Linear + branched PFNS
+- id: https://w3id.org/peh/BE-976f77f289
   unique_name: Linear + branched PFNS
   name: Linear + branched PFNS
   label: L+B-PFNS
@@ -27374,7 +27373,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Interleukin 1
+- id: https://w3id.org/peh/BE-a71551a66b
   unique_name: Interleukin 1
   name: Interleukin 1
   label: IL-1
@@ -27387,7 +27386,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
+- id: https://w3id.org/peh/BE-c7b567bf63
   unique_name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
   name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
   label: 4:2 FTSA
@@ -27417,7 +27416,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: (+/-)-cis-Permethrinic acid
+- id: https://w3id.org/peh/BE-b3529f6420
   unique_name: (+/-)-cis-Permethrinic acid
   name: (+/-)-cis-Permethrinic acid
   label: cis-DCCA total
@@ -27447,7 +27446,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Biomarkerlist
-- id: Immunoglobulin G
+- id: https://w3id.org/peh/BE-1ca15dae91
   unique_name: Immunoglobulin G
   name: Immunoglobulin G
   label: IgG
@@ -27460,7 +27459,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
+- id: https://w3id.org/peh/BE-800b22de48
   unique_name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
   name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
   label: 8:2 FTSA
@@ -27490,7 +27489,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Interleukin 1Beta
+- id: https://w3id.org/peh/BE-b723d9ee2b
   unique_name: Interleukin 1Beta
   name: Interleukin 1Beta
   label: IL-1β
@@ -27503,7 +27502,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: kidney injury molecule-1
+- id: https://w3id.org/peh/BE-eeb18819be
   unique_name: kidney injury molecule-1
   name: kidney injury molecule-1
   label: 'Kim-1 '
@@ -27516,7 +27515,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Leukotriene B4
+- id: https://w3id.org/peh/BE-94ba99b53e
   unique_name: Leukotriene B4
   name: Leukotriene B4
   label: LTB4
@@ -27529,7 +27528,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
+- id: https://w3id.org/peh/BE-6d9f0f3058
   unique_name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
   name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
   label: 9CL-PF3ONS
@@ -27559,7 +27558,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Bisphenol E
+- id: https://w3id.org/peh/BE-a79b73b7b9
   unique_name: Bisphenol E
   name: Bisphenol E
   label: BPE total
@@ -27597,7 +27596,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
+- id: https://w3id.org/peh/BE-099e9c98e5
   unique_name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
   name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
   label: cis-DBCA total
@@ -27627,7 +27626,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Biomarkerlist
-- id: Bisphenol AP
+- id: https://w3id.org/peh/BE-f8034a86c7
   unique_name: Bisphenol AP
   name: Bisphenol AP
   label: BPAP total
@@ -27665,7 +27664,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: urine albumin to creatinine ratio
+- id: https://w3id.org/peh/BE-3f42da687b
   unique_name: urine albumin to creatinine ratio
   name: urine albumin to creatinine ratio
   label: uACR
@@ -27678,7 +27677,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
+- id: https://w3id.org/peh/BE-c0d2233fa8
   unique_name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
   name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
   label: 6:2 FTSA
@@ -27708,7 +27707,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: N-acetyl-β-D glucosaminidase
+- id: https://w3id.org/peh/BE-f779ea9ed0
   unique_name: N-acetyl-β-D glucosaminidase
   name: N-acetyl-β-D glucosaminidase
   label: NAG
@@ -27721,7 +27720,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: (+/-)-trans-Permethrinic acid
+- id: https://w3id.org/peh/BE-f72cdc1be8
   unique_name: (+/-)-trans-Permethrinic acid
   name: (+/-)-trans-Permethrinic acid
   label: trans-DCCA total
@@ -27751,7 +27750,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Biomarkerlist
-- id: Mono(2-ethyl-5-carboxypentyl) adipate
+- id: https://w3id.org/peh/BE-b5ff8fb8d1
   unique_name: Mono(2-ethyl-5-carboxypentyl) adipate
   name: Mono(2-ethyl-5-carboxypentyl) adipate
   label: 5cx-MEPA
@@ -27781,7 +27780,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: Retinol-binding protein 4
+- id: https://w3id.org/peh/BE-0a2788662e
   unique_name: Retinol-binding protein 4
   name: Retinol-binding protein 4
   label: 'RBP4  '
@@ -27794,7 +27793,7 @@ biochementities:
     validation_actor: spec.dmt@vito.be
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
-- id: cis-Cyhalothric acid
+- id: https://w3id.org/peh/BE-745e3577e9
   unique_name: cis-Cyhalothric acid
   name: cis-Cyhalothric acid
   label: cis-ClF3CA total
