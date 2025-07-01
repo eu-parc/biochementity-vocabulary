@@ -11113,8 +11113,6 @@ biochementities:
   unique_name: Linear 2-(N-Methylperfluorooctanesulfonamido)acetic acid
   name: Linear 2-(N-Methylperfluorooctanesulfonamido)acetic acid
   label: MeFOSAA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: QNDHIRFIMVNHBN-UHFFFAOYSA-N
@@ -16400,14 +16398,6 @@ biochementities:
   unique_name: Monophenyltin
   name: Monophenyltin
   label: MPhT
-  biochemidentifiers:
-  - identifier_schema: CHEBI
-    validation_history:
-    - validation_datetime: '2023-12-04T00:00:00Z'
-      validation_status: validated
-      validation_actor: dirk.devriendt.ext@vito.be
-      validation_institute: VITO
-      validation_remark: VITO_Researcher
   translations:
   - property_name: name
     language: nl-be
@@ -25839,8 +25829,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Som DEHP metabolieten
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-975f43abab
   unique_name: summinch
   name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester +
@@ -25895,8 +25883,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Bloedvet enzymatisch berekend
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-c25c2c5144
   unique_name: lpfhxs_perc
   name: Percentage Linear Perfluorohexane sulfonic acid
@@ -25942,8 +25928,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Ratio van MeHg en Hg
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-93eca1f8cf
   unique_name: sumpcb
   name: pcb138 + pcb153 + pcb180
@@ -25959,8 +25943,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: pcb138 + pcb153 + pcb180
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-73b6c5c177
   unique_name: sumpfhxspfos
   name: Linear Perfluorohexane sulfonic acid + Linear Perfluorooctane sulfonic acid
@@ -26006,8 +25988,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Anthracene + Phenanthrene
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-667da4ea56
   unique_name: ppddtppdde
   name: Ratio of p,p'-DDT and p,p'-DDE
@@ -26021,8 +26001,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Ratio p,p'-DDT p,p'-DDE
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-80f114cd15
   unique_name: ratiocd4cd8plus
   name: CD4+ / CD8+
@@ -26120,8 +26098,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Hexabroomcyclododecaan alfa + Hexabroomcyclododecaan-gamma
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-460651d7c0
   unique_name: shphe
   name: 1-hydroxyphenanthrene + 2-hydroxyphenanthrene + 3-hydroxyphenanthrene + 4-hydroxyphenanthrene
@@ -26143,8 +26119,6 @@ biochementities:
     language: nl-be
     translated_value: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 3-hydroxyfenantreen
       + 4-hydroxyphenanthrene + 9-hydroxyfenantreen
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-951b6de319
   unique_name: stwoninehphe
   name: 2-hydroxyphenanthrene + 9-hydroxyphenanthrene
@@ -26158,8 +26132,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: 2-hydroxyphenanthrene + 9-hydroxyfenantreen
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-4f8b387697
   unique_name: sumhpheone
   name: 1-hydroxyphenanthrene + 2-hydroxyphenanthrene + 4-hydroxyphenanthrene
@@ -26175,8 +26147,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 4-hydroxyphenanthrene
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-cb5dc92ef4
   unique_name: stwothreehphe
   name: 2-hydroxyphenanthrene + 3-hydroxyphenanthrene
@@ -26230,8 +26200,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Berekende som van metabolieten voor ftalaten met een laag molecuulgewicht
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-a3e6110651
   unique_name: sumdiohnap
   name: 1-hydroxynaphthalene + 2-hydroxynaphthalene + 1-,2-dihydroxynaphthalene
@@ -26247,8 +26215,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: 1-hydroxynaphthaleen + 2-hydroxynaphthaleen + 1-,2-dihydroxynaftaleen
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-78d1acab33
   unique_name: sumdp
   name: Syn-dechlorane plus + Anti-dechlorane plus
@@ -26262,8 +26228,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Syn-dechlorane plus + Anti-dechloraan plus
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-fa8ec0e80a
   unique_name: sumehdphp
   name: ehphp + ohehdphp
@@ -26277,8 +26241,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: ehphp + ohehdphp
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-d68c5d1510
   unique_name: sumeightphthal
   name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
@@ -26387,8 +26349,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: 2-hydroxyfluoreen + 3-hydroxyfluoreen + 9-hydroxyfluoreen
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-34158eb1e7
   unique_name: sumhmwphthal
   name: Calculated sum of metabolites for high molecular weight phthalates
@@ -26408,8 +26368,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Berekende som van metabolieten voor ftalaten met een hoog molecuulgewicht
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-02e861edc8
   unique_name: sumpba
   name: 3-phenoxybenzoic acid + 4-fluoro-3-phenoxybenzoic acid
@@ -26444,8 +26402,6 @@ biochementities:
     language: nl-be
     translated_value: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 3-hydroxyfenantreen
       + 4-hydroxyphenanthrene
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-4b10fd1b22
   unique_name: sumlbfourpfas
   name: lbpfoa + lbpfna + lbpfhxs + lbpfos
@@ -26463,8 +26419,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: lbpfoa + lbpfna + lbpfhxs + lbpfos
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-c77cc00929
   unique_name: sumpfoapfna
   name: Linear Perfluorooctanoic acid + Linear Perfluorononanoic acid
@@ -26666,8 +26620,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: mepfosaa + pfhxs + lbpfoa + pfda + pfunda + lbpfos + pfna
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-cba89e6583
   unique_name: sdehtm
   name: Measured Sum(twofourdehtm,onefourdehtm)
@@ -27051,8 +27003,6 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: Benzo[b]fluoranthene + Benzo[k]fluoranthene
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-7e567be384
   unique_name: sumdcca
   name: Sum (cis-DCCA, trans-DCCA)
@@ -27062,11 +27012,6 @@ biochementities:
     biochementity: https://w3id.org/peh/BE-46d7e42e2c
   - biochementity_linktype: group_contains
     biochementity: https://w3id.org/peh/BE-cb1d0aa9f1
-  translations:
-  - property_name: name
-    language: nl-be
-  - property_name: label
-    language: nl-be
 - id: https://w3id.org/peh/BE-ad4cc5e069
   unique_name: bpfds
   name: Branched Perfluorodecane sulfonic acid
@@ -27215,8 +27160,6 @@ biochementities:
   unique_name: 2H-Perfluoro-2-decenoic acid
   name: 2H-Perfluoro-2-decenoic acid
   label: 8:2 FTUCA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: AJMAYLFJZQYRHN-UHFFFAOYSA-N
@@ -27252,8 +27195,6 @@ biochementities:
   name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
     acid
   label: MeFHxSAA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: YGKAWLSSJSOXNM-UHFFFAOYSA-N
@@ -27287,8 +27228,6 @@ biochementities:
   unique_name: Bisphenol P
   name: Bisphenol P
   label: BPP total
-  grouping_id_list:
-  - Bisphenols
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: GIXXQTYGFOHYPT-UHFFFAOYSA-N
@@ -27325,8 +27264,6 @@ biochementities:
   unique_name: Linear + branched PFBA (Perfluorobutanoic acid)
   name: Linear + branched PFBA (Perfluorobutanoic acid)
   label: L+B-PFBA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27338,8 +27275,6 @@ biochementities:
   unique_name: albumin
   name: albumin
   label: albumin
-  grouping_id_list:
-  - Kidney function
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27351,8 +27286,6 @@ biochementities:
   unique_name: Linear + branched MeFOSAA
   name: Linear + branched MeFOSAA
   label: L+B-MeFOSAA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27364,8 +27297,6 @@ biochementities:
   unique_name: Linear + branched PFNS
   name: Linear + branched PFNS
   label: L+B-PFNS
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27377,8 +27308,6 @@ biochementities:
   unique_name: Interleukin 1
   name: Interleukin 1
   label: IL-1
-  grouping_id_list:
-  - Inflammation and immunity
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27390,8 +27319,6 @@ biochementities:
   unique_name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
   name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
   label: 4:2 FTSA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: TXGIGTRUEITPSC-UHFFFAOYSA-N
@@ -27420,8 +27347,6 @@ biochementities:
   unique_name: (+/-)-cis-Permethrinic acid
   name: (+/-)-cis-Permethrinic acid
   label: cis-DCCA total
-  grouping_id_list:
-  - Pesticides (pyrethroids)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: LLMLSUSAKZVFOA-BNFWCSRPNA-N
@@ -27450,8 +27375,6 @@ biochementities:
   unique_name: Immunoglobulin G
   name: Immunoglobulin G
   label: IgG
-  grouping_id_list:
-  - Inflammation and immunity
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27463,8 +27386,6 @@ biochementities:
   unique_name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
   name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
   label: 8:2 FTSA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: ALVYVCQIFHTIRD-UHFFFAOYSA-N
@@ -27493,8 +27414,6 @@ biochementities:
   unique_name: Interleukin 1Beta
   name: Interleukin 1Beta
   label: IL-1β
-  grouping_id_list:
-  - Inflammation and immunity
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27506,8 +27425,6 @@ biochementities:
   unique_name: kidney injury molecule-1
   name: kidney injury molecule-1
   label: 'Kim-1 '
-  grouping_id_list:
-  - Kidney function
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27519,8 +27436,6 @@ biochementities:
   unique_name: Leukotriene B4
   name: Leukotriene B4
   label: LTB4
-  grouping_id_list:
-  - Inflammation and immunity
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27532,8 +27447,6 @@ biochementities:
   unique_name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
   name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
   label: 9CL-PF3ONS
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: GGOUUEMCWBTDMT-UHFFFAOYSA-N)
@@ -27562,8 +27475,6 @@ biochementities:
   unique_name: Bisphenol E
   name: Bisphenol E
   label: BPE total
-  grouping_id_list:
-  - Bisphenols
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: HCNHNBLSNVSJTJ-UHFFFAOYSA-N
@@ -27600,8 +27511,6 @@ biochementities:
   unique_name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
   name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
   label: cis-DBCA total
-  grouping_id_list:
-  - Pesticides (pyrethroids)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: MDIQXIJPQWLFSD-BNFWCSRPNA-N
@@ -27630,8 +27539,6 @@ biochementities:
   unique_name: Bisphenol AP
   name: Bisphenol AP
   label: BPAP total
-  grouping_id_list:
-  - Bisphenols
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: VOWWYDCFAISREI-UHFFFAOYSA-N
@@ -27668,8 +27575,6 @@ biochementities:
   unique_name: urine albumin to creatinine ratio
   name: urine albumin to creatinine ratio
   label: uACR
-  grouping_id_list:
-  - Kidney function
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27681,8 +27586,6 @@ biochementities:
   unique_name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
   name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
   label: 6:2 FTSA
-  grouping_id_list:
-  - Per-/poly-fluorinated compounds (PFASs)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: VIONGDJUYAYOPU-UHFFFAOYSA-N
@@ -27711,8 +27614,6 @@ biochementities:
   unique_name: N-acetyl-β-D glucosaminidase
   name: N-acetyl-β-D glucosaminidase
   label: NAG
-  grouping_id_list:
-  - Kidney function
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27724,8 +27625,6 @@ biochementities:
   unique_name: (+/-)-trans-Permethrinic acid
   name: (+/-)-trans-Permethrinic acid
   label: trans-DCCA total
-  grouping_id_list:
-  - Pesticides (pyrethroids)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: LLMLSUSAKZVFOA-ODYROLGNNA-N
@@ -27754,8 +27653,6 @@ biochementities:
   unique_name: Mono(2-ethyl-5-carboxypentyl) adipate
   name: Mono(2-ethyl-5-carboxypentyl) adipate
   label: 5cx-MEPA
-  grouping_id_list:
-  - Phthtalates substitutes
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: GSEREAHHKPORII-UHFFFAOYSA-N
@@ -27784,8 +27681,6 @@ biochementities:
   unique_name: Retinol-binding protein 4
   name: Retinol-binding protein 4
   label: 'RBP4  '
-  grouping_id_list:
-  - Kidney function
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2025-06-03T00:00:00Z'
@@ -27797,8 +27692,6 @@ biochementities:
   unique_name: cis-Cyhalothric acid
   name: cis-Cyhalothric acid
   label: cis-ClF3CA total
-  grouping_id_list:
-  - Pesticides (pyrethroids)
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: SPVZAYWHHVLPBN-KRBLUSRYNA-N
