@@ -16,7 +16,7 @@ jobs:
             ref: ${{ github.ref }}
             data: data/data.yaml
             target_name: biochementities
-            preflabel: label
+            preflabel: unique_name
             type_prefix: BE
             namespace: https://w3id.org/peh/
             artefact_name: data-with-id.yaml
