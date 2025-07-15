@@ -2082,8 +2082,8 @@ biochementities:
     variation in the volume (MCV) of the red blood cells))
   name: Red Cell Distribution Width (Relative distribution width (degree of variation
     in the volume (MCV) of the red blood cells))
-  short_name: Red Cell Distribution Width (Relative distribution width (degree of variation
-    in the volume (MCV) of the red blood cells))
+  short_name: Red Cell Distribution Width (Relative distribution width (degree of
+    variation in the volume (MCV) of the red blood cells))
   translations:
   - property_name: name
     language: nl-be
@@ -2903,8 +2903,8 @@ biochementities:
     1/ glucocorticoid receptor) normalised expression compared to RPLP0
   name: HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
     receptor) normalised expression compared to RPLP0
-  short_name: HIstone modification GR (nuclear receptor subfamily 3 group C member 1/ glucocorticoid
-    receptor) normalised expression compared to RPLP0
+  short_name: HIstone modification GR (nuclear receptor subfamily 3 group C member
+    1/ glucocorticoid receptor) normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -2919,8 +2919,8 @@ biochementities:
     expression compared to RPLP0
   name: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised expression
     compared to RPLP0
-  short_name: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised expression
-    compared to RPLP0
+  short_name: HIstone modification OGG1 (8-oxoguanine DNA glycosylase) normalised
+    expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -2934,8 +2934,8 @@ biochementities:
     alpha) normalised expression compared to RPLP0
   name: HIstone modification PPARa (peroxisome proliferator activated receptor alpha)
     normalised expression compared to RPLP0
-  short_name: HIstone modification PPARa (peroxisome proliferator activated receptor alpha)
-    normalised expression compared to RPLP0
+  short_name: HIstone modification PPARa (peroxisome proliferator activated receptor
+    alpha) normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -2949,8 +2949,8 @@ biochementities:
     gamma) normalised expression compared to RPLP0
   name: HIstone modification PPARg (peroxisome proliferator activated receptor gamma)
     normalised expression compared to RPLP0
-  short_name: HIstone modification PPARg (peroxisome proliferator activated receptor gamma)
-    normalised expression compared to RPLP0
+  short_name: HIstone modification PPARg (peroxisome proliferator activated receptor
+    gamma) normalised expression compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -2964,8 +2964,8 @@ biochementities:
     normalised expression compared to RPLPO
   name: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase) normalised
     expression compared to RPLPO
-  short_name: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase) normalised
-    expression compared to RPLPO
+  short_name: HIstone modification SUV39H1 (SUV39H1 histone lysine methyltransferase)
+    normalised expression compared to RPLPO
   translations:
   - property_name: name
     language: nl-be
@@ -2978,8 +2978,8 @@ biochementities:
   unique_name: HIstone modification TERT (Telomerase) normalised expression compared
     to RPLP0
   name: HIstone modification TERT (Telomerase) normalised expression compared to RPLP0
-  short_name: HIstone modification TERT (Telomerase) normalised expression compared to
-    RPLP0
+  short_name: HIstone modification TERT (Telomerase) normalised expression compared
+    to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -2992,7 +2992,8 @@ biochementities:
   unique_name: Retroelement LINE L1 copy number variation normalized values to RPLP0
     gene
   name: Retroelement LINE L1 copy number variation normalized values to RPLP0 gene
-  short_name: Retroelement LINE L1 copy number variation normalized values to RPLP0 gene
+  short_name: Retroelement LINE L1 copy number variation normalized values to RPLP0
+    gene
   translations:
   - property_name: name
     language: nl-be
@@ -22347,8 +22348,8 @@ biochementities:
     compared to RPLP0
   name: HIstone modification THRA (Thyroid receptor alfa) normalised expression compared
     to RPLP0
-  short_name: HIstone modification THRA (Thyroid receptor alfa) normalised expression compared
-    to RPLP0
+  short_name: HIstone modification THRA (Thyroid receptor alfa) normalised expression
+    compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
@@ -22362,8 +22363,8 @@ biochementities:
     compared to RPLP0
   name: HIstone modification THRB (Thyroid receptor beta) normalised expression compared
     to RPLP0
-  short_name: HIstone modification THRB (Thyroid receptor beta) normalised expression compared
-    to RPLP0
+  short_name: HIstone modification THRB (Thyroid receptor beta) normalised expression
+    compared to RPLP0
   translations:
   - property_name: name
     language: nl-be
