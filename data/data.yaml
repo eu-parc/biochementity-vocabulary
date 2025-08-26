@@ -1501,8 +1501,8 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC BIOMARKERLIST
 - id: https://w3id.org/peh/BE-9edf71d857
-  unique_name: Bisphenol A
-  name: Bisphenol A
+  unique_name: Total Bisphenol A
+  name: Total Bisphenol A
   short_name: BPA
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1527,10 +1527,48 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol A
+    translated_value: Totaal Bisfenol A
   - property_name: short_name
     language: nl-be
-    translated_value: BPA
+    translated_value: tBPA
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-c4475929e3
+  unique_name: Free Bisphenol A
+  name: Free Bisphenol A
+  short_name: fBPA
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:33216
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 80-05-7
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-9edf71d857
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol A
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPA
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2023-12-01T00:00:00Z'
@@ -1539,8 +1577,8 @@ biochementities:
     validation_institute: VITO
     validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-9dbcddfe6c
-  unique_name: Bisphenol AF
-  name: Bisphenol AF
+  unique_name: Total Bisphenol AF
+  name: Total Bisphenol AF
   short_name: BPAF
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1565,7 +1603,7 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol AF
+    translated_value: Totaal Bisfenol AF
   - property_name: short_name
     language: nl-be
     translated_value: BPAF
@@ -1576,9 +1614,47 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-d92fddd426
+  unique_name: Free Bisphenol AF
+  name: Free Bisphenol AF
+  short_name: fBPAF
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:72754
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 1478-61-1
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-9dbcddfe6c
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol AF
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPAF
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-83e98a6191
-  unique_name: Bisphenol B
-  name: Bisphenol B
+  unique_name: Total Bisphenol B
+  name: Total Bisphenol B
   short_name: BPB
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1603,7 +1679,7 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol B
+    translated_value: Totaal Bisfenol B
   - property_name: short_name
     language: nl-be
     translated_value: BPB
@@ -1614,9 +1690,47 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-1bbf77be43
+  unique_name: Free Bisphenol B
+  name: Free Bisphenol B
+  short_name: fBPB
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:34581
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 77-40-7
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-83e98a6191
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol B
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPB
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-59d60109ab
-  unique_name: Bisphenol C
-  name: Bisphenol C
+  unique_name: Total Bisphenol C
+  name: Total Bisphenol C
   short_name: BPC
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1641,7 +1755,7 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol C
+    translated_value: Totaal Bisfenol C
   - property_name: short_name
     language: nl-be
     translated_value: BPC
@@ -1652,9 +1766,47 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-0c7490d4ca
+  unique_name: Free Bisphenol C
+  name: Free Bisphenol C
+  short_name: fBPC
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:34030
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 14868-03-2
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-59d60109ab
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol C
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPC
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-2f4e6a5631
-  unique_name: Bisphenol F
-  name: Bisphenol F
+  unique_name: Total Bisphenol F
+  name: Total Bisphenol F
   short_name: BPF
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1679,7 +1831,7 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol F
+    translated_value: Totaal Bisfenol F
   - property_name: short_name
     language: nl-be
     translated_value: BPF
@@ -1690,9 +1842,47 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-2455245a7a
+  unique_name: Free Bisphenol F
+  name: Free Bisphenol F
+  short_name: fBPF
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:34575
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 620-92-8
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-2f4e6a5631
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol F
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPF
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-b9b121fa6f
-  unique_name: Bisphenol S
-  name: Bisphenol S
+  unique_name: Total Bisphenol S
+  name: Total Bisphenol S
   short_name: BPS
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1717,7 +1907,7 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol S
+    translated_value: Totaal Bisfenol S
   - property_name: short_name
     language: nl-be
     translated_value: BPS
@@ -1728,9 +1918,47 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-0b03fd87fc
+  unique_name: Free Bisphenol S
+  name: Free Bisphenol S
+  short_name: fBPS
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:34372
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 80-09-1
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-b9b121fa6f
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol S
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPS
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-77451e1c46
-  unique_name: Bisphenol Z
-  name: Bisphenol Z
+  unique_name: Total Bisphenol Z
+  name: Total Bisphenol Z
   short_name: BPZ
   biochemidentifiers:
   - identifier_schema: CHEBI
@@ -1755,10 +1983,48 @@ biochementities:
   translations:
   - property_name: name
     language: nl-be
-    translated_value: Bisfenol Z
+    translated_value: Totaal Bisfenol Z
   - property_name: short_name
     language: nl-be
     translated_value: BPZ
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-fa4df35096
+  unique_name: Free Bisphenol Z
+  name: Free Bisphenol Z
+  short_name: fBPZ
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:165198
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 843-55-0
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-77451e1c46
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vrij Bisfenol Z
+  - property_name: short_name
+    language: nl-be
+    translated_value: fBPZ
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2023-12-01T00:00:00Z'
@@ -9194,6 +9460,33 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-4934fa2272
+  unique_name: Total Deepoxy-deoxynivalenol
+  name: Total Deepoxy-deoxynivalenol
+  short_name: tDOM-1
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: ZACLXWTWERGCLX-MDUHGFIHSA-N
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-56872ff940
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal Deepoxy-deoxynivalenol
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-56872ff940
   unique_name: Deoxynivalenol
   name: Deoxynivalenol
@@ -9225,6 +9518,44 @@ biochementities:
   - property_name: short_name
     language: nl-be
     translated_value: DON
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-eb4bbc2d8e
+  unique_name: Total Deoxynivalenol
+  name: Total Deoxynivalenol
+  short_name: tDON
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:10022
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 51481-10-8
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-56872ff940
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal Deoxynivalenol
+  - property_name: short_name
+    language: nl-be
+    translated_value: tDON
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2023-12-01T00:00:00Z'
@@ -9672,6 +10003,41 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-09927412a4
+  unique_name: Total Ochratoxin A
+  name: Total Ochratoxin A
+  short_name: tOTA
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:7719
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 303-47-9
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-1087bec7ef
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal Ochratoxine A
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-e6c38d8e40
   unique_name: Ochratoxin-alpha
   name: Ochratoxin-alpha
@@ -9949,6 +10315,41 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-6ba074c240
+  unique_name: Total Zearalenone
+  name: Total Zearalenone
+  short_name: tZEN
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:10106
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 17924-92-4
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-567b9e5017
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal Zearalenon
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-89cf9eeef8
   unique_name: Zearalenone-14-glucuronide
   name: Zearalenone-14-glucuronide
@@ -10082,6 +10483,41 @@ biochementities:
     validation_actor: caio.mescouto@vito.be
     validation_institute: VITO
     validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-49747d00aa
+  unique_name: Total Α-zearalenol
+  name: Total α-zearalenol
+  short_name: tα-ZEL
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:35065
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 36455-72-8
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-567b9e5017
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal α-zearalenol
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
 - id: https://w3id.org/peh/BE-4b8bb58ded
   unique_name: Α-zearalenol-glucuronide
   name: α-zearalenol-glucuronide
@@ -10166,6 +10602,41 @@ biochementities:
   - property_name: name
     language: nl-be
     translated_value: β-zearalenol
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2023-12-01T00:00:00Z'
+    validation_status: validated
+    validation_actor: caio.mescouto@vito.be
+    validation_institute: VITO
+    validation_remark: API_PubChem
+- id: https://w3id.org/peh/BE-6116a8ea90
+  unique_name: Total Β-zearalenol
+  name: Total β-zearalenol
+  short_name: tβ-ZEL
+  biochemidentifiers:
+  - identifier_schema: CHEBI
+    identifier_code: CHEBI:35072
+    validation_history:
+    - validation_datetime: '2023-12-01T00:00:00Z'
+      validation_status: validated
+      validation_actor: caio.mescouto@vito.be
+      validation_institute: VITO
+      validation_remark: API_PubChem
+  - identifier_schema: CAS
+    identifier_code: 71030-11-0
+    validation_history:
+    - validation_datetime: '2024-11-17T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Automated from EBI API
+  biochementity_links:
+  - biochementity_linktype: has_parent_compound
+    biochementity: https://w3id.org/peh/BE-567b9e5017
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Totaal β-zearalenol
   current_validation_status: validated
   validation_history:
   - validation_datetime: '2023-12-01T00:00:00Z'
@@ -27226,9 +27697,45 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - RIVM Study
 - id: https://w3id.org/peh/BE-223f081885
-  unique_name: Bisphenol P
-  name: Bisphenol P
-  short_name: BPP total
+  unique_name: Total Bisphenol P
+  name: Total Bisphenol P
+  short_name: BPP
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: GIXXQTYGFOHYPT-UHFFFAOYSA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CHEBI
+    identifier_code: '165197'
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CAS
+    identifier_code: 2167-51-3
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Aligned Studies
+- id: https://w3id.org/peh/BE-1c54cd4907
+  unique_name: Free Bisphenol P
+  name: Free Bisphenol P
+  short_name: fBPP
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: GIXXQTYGFOHYPT-UHFFFAOYSA-N
@@ -27345,9 +27852,37 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
 - id: https://w3id.org/peh/BE-b3529f6420
-  unique_name: (+/-)-cis-Permethrinic acid
-  name: (+/-)-cis-Permethrinic acid
-  short_name: cis-DCCA total
+  unique_name: Total (+/-)-cis-Permethrinic acid
+  name: Total (+/-)-cis-Permethrinic acid
+  short_name: total cis-DCCA
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: LLMLSUSAKZVFOA-BNFWCSRPNA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  - identifier_schema: CAS
+    identifier_code: 59042-49-8
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+- id: https://w3id.org/peh/BE-c47ed6ac05
+  unique_name: Free (+/-)-cis-Permethrinic acid
+  name: Free (+/-)-cis-Permethrinic acid
+  short_name: free cis-DCCA
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: LLMLSUSAKZVFOA-BNFWCSRPNA-N
@@ -27473,9 +28008,45 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
 - id: https://w3id.org/peh/BE-a79b73b7b9
-  unique_name: Bisphenol E
-  name: Bisphenol E
-  short_name: BPE total
+  unique_name: Total Bisphenol E
+  name: Total Bisphenol E
+  short_name: BPE
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: HCNHNBLSNVSJTJ-UHFFFAOYSA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CHEBI
+    identifier_code: '34029'
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CAS
+    identifier_code: 2081-08-5
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Aligned Studies
+- id: https://w3id.org/peh/BE-c0a4bf8b09
+  unique_name: Free Bisphenol E
+  name: Free Bisphenol E
+  short_name: fBPE
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: HCNHNBLSNVSJTJ-UHFFFAOYSA-N
@@ -27509,9 +28080,39 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
 - id: https://w3id.org/peh/BE-099e9c98e5
-  unique_name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
-  name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
-  short_name: cis-DBCA total
+  unique_name: Total cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic
+    acid
+  name: Total cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
+  short_name: total cis-DBCA
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: MDIQXIJPQWLFSD-BNFWCSRPNA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  - identifier_schema: CAS
+    identifier_code: 63597-73-9
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+- id: https://w3id.org/peh/BE-87a021c932
+  unique_name: Free cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic
+    acid
+  name: Free cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
+  short_name: free cis-DBCA
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: MDIQXIJPQWLFSD-BNFWCSRPNA-N
@@ -27537,9 +28138,45 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Biomarkerlist
 - id: https://w3id.org/peh/BE-f8034a86c7
-  unique_name: Bisphenol AP
-  name: Bisphenol AP
-  short_name: BPAP total
+  unique_name: Total Bisphenol AP
+  name: Total Bisphenol AP
+  short_name: BPAP
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: VOWWYDCFAISREI-UHFFFAOYSA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CHEBI
+    identifier_code: '165234'
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  - identifier_schema: CAS
+    identifier_code: 1571-75-1
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Aligned Studies
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Aligned Studies
+- id: https://w3id.org/peh/BE-6da6c599ad
+  unique_name: Free Bisphenol AP
+  name: Free Bisphenol AP
+  short_name: fBPAP
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: VOWWYDCFAISREI-UHFFFAOYSA-N
@@ -27623,9 +28260,37 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
 - id: https://w3id.org/peh/BE-f72cdc1be8
-  unique_name: (+/-)-trans-Permethrinic acid
-  name: (+/-)-trans-Permethrinic acid
-  short_name: trans-DCCA total
+  unique_name: Total (+/-)-trans-Permethrinic acid
+  name: Total (+/-)-trans-Permethrinic acid
+  short_name: total trans-DCCA
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: LLMLSUSAKZVFOA-ODYROLGNNA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  - identifier_schema: CAS
+    identifier_code: 59042-50-1
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+- id: https://w3id.org/peh/BE-607e271cfe
+  unique_name: Free (+/-)-trans-Permethrinic acid
+  name: Free (+/-)-trans-Permethrinic acid
+  short_name: free trans-DCCA
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: LLMLSUSAKZVFOA-ODYROLGNNA-N
@@ -27690,9 +28355,37 @@ biochementities:
     validation_institute: VITO
     validation_remark: Manual Biomarker Update - PARC Aligned Studies
 - id: https://w3id.org/peh/BE-745e3577e9
-  unique_name: cis-Cyhalothric acid
-  name: cis-Cyhalothric acid
-  short_name: cis-ClF3CA total
+  unique_name: Total cis-Cyhalothric acid
+  name: Total cis-Cyhalothric acid
+  short_name: total cis-ClF3CA
+  biochemidentifiers:
+  - identifier_schema: INCHIKEY
+    identifier_code: SPVZAYWHHVLPBN-KRBLUSRYNA-N
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  - identifier_schema: CAS
+    identifier_code: 68127-59-3
+    validation_history:
+    - validation_datetime: '2025-06-03T00:00:00Z'
+      validation_status: validated
+      validation_actor: spec.dmt@vito.be
+      validation_institute: VITO
+      validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+  current_validation_status: validated
+  validation_history:
+  - validation_datetime: '2025-06-03T00:00:00Z'
+    validation_status: validated
+    validation_actor: spec.dmt@vito.be
+    validation_institute: VITO
+    validation_remark: Manual Biomarker Update - PARC Biomarkerlist
+- id: https://w3id.org/peh/BE-e0d03fc763
+  unique_name: Free cis-Cyhalothric acid
+  name: Free cis-Cyhalothric acid
+  short_name: free cis-ClF3CA
   biochemidentifiers:
   - identifier_schema: INCHIKEY
     identifier_code: SPVZAYWHHVLPBN-KRBLUSRYNA-N
