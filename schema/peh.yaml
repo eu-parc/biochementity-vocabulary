@@ -23,6 +23,8 @@ prefixes:
   qudtqk: http://qudt.org/2.1/vocab/quantitykind
   iop: https://w3id.org/iadopt/ont/
   owl: http://www.w3.org/2002/07/owl#
+  obo: http://purl.obolibrary.org/obo/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
   # DATA PREFIXES
   # P: http://example.org/P/
   # ROR: http://example.org/ror/
@@ -688,7 +690,7 @@ classes:
     slots:
       - id
     close_mappings: 
-      - http://purl.obolibrary.org/obo/chebi_50906
+      - obo:CHEBI_50906
 
 slots:
   id:
@@ -813,6 +815,7 @@ slots:
     range: IndicatorSubClass
     slot_uri: rdfs:subClassOf
   parent_biochementities:
+    multivalued: true
     range: BioChemEntity
     slot_uri: rdfs:subClassOf
   property:
@@ -844,7 +847,7 @@ slots:
     slot_uri: pehterms:isIsomerOf
   has_role:
     multivalued: true
-    slot_uri: http://purl.obolibrary.org/obo/RO_0000087
+    slot_uri: obo:RO_0000087
     range: BioChemRole
     domain: BioChemEntity
 
