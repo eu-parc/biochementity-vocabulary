@@ -1,0 +1,659 @@
+biochementities:
+- id: https://w3id.org/peh/BE-74a6cfa7bb
+  name: Linear Perfluoro 2-ethoxyethane sulfonic acid
+  short_name: PFEESA
+  compoundgroups: []
+  parent_compounds:
+  - https://w3id.org/peh/BE-74a6cfa7bb
+  translations_name_nl_be: Lineair Perfluor 2-ethoxyethaansulfonzuur
+  translations_short_name_nl_be: PFEESA
+  exact_matches:
+  - PUBCHEM:2776108|CAS:113507-82-7|INCHIKEY:RJGUAQKOHAABLK-UHFFFAOYSA-N
+  varname: pfeesa
+- id: https://w3id.org/peh/BE-30a9bbbf26
+  name: Linear Perfluoro-n-decanesulfonamide
+  short_name: PFDSA
+  compoundgroups: []
+  parent_compounds:
+  - https://w3id.org/peh/BE-30a9bbbf26
+  translations_name_nl_be: Lineair Perfluoro-n-decaansulfonamide
+  translations_short_name_nl_be: PFDSA
+  comments: Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Perfluoro-1-decanesulfonamide
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfdsa
+- id: https://w3id.org/peh/BE-d1ded29e4e
+  name: Dioxin-like PCBs
+  short_name: Dioxin-like PCBs
+  compoundgroups: []
+  translations_name_nl_be: Dioxine-achtige PCBs (dl-PCBs) (CALUX)
+  comments: I'm not sure if this can be linked to any key…
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: dlpcb
+- id: https://w3id.org/peh/BE-b924bcaa56
+  name: Total dioxin-like compounds
+  short_name: CALUX
+  compoundgroups: []
+  parent_compounds:
+  - https://w3id.org/peh/BE-c8943e1416
+  translations_name_nl_be: Totaal dioxine-achtige stoffen
+  translations_short_name_nl_be: CALUX
+  comments: '?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: calux
+- id: https://w3id.org/peh/BE-8e2b62a8f8
+  name: Diethyl alkyl phosphates
+  short_name: Diethyl alkyl phosphates
+  compoundgroups: []
+  translations_name_nl_be: Diethylalkylphosphates
+  translations_short_name_nl_be: DEAP
+  comments: '? This seems to be a combination of compounds? Can we link this to any
+    ID?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: deap
+- id: https://w3id.org/peh/BE-7995fa21de
+  name: Di-isopropyl phosphate
+  short_name: Di-isopropyl phosphate
+  compoundgroups: []
+  translations_name_nl_be: Di-isopropylfosfaat
+  exact_matches:
+  - PUBCHEM:74162|INCHIKEY:WZPMZMCZAGFKOC-UHFFFAOYSA-N|CAS:1611-31-0|CHEBI:16785
+  varname: dipp
+- id: https://w3id.org/peh/BE-e86f24d83c
+  name: Dimethylalkylphosphates
+  short_name: Dimethylalkylphosphates
+  compoundgroups: []
+  translations_name_nl_be: Dimethylalkylphosphates
+  translations_short_name_nl_be: DMAP
+  comments: again this seems to be a group of compounds. Can this be linked to any
+    key?
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: dmap
+- id: https://w3id.org/peh/BE-4509930a20
+  name: 9,10-DHP
+  short_name: 9,10-DHP
+  compoundgroups: []
+  translations_name_nl_be: 9,10-DHP
+  comments: 'Can this be 9,10-Dihydrophenanthrene? Please confirm and add keys and
+    name accordingly: https://pubchem.ncbi.nlm.nih.gov/compound/9_10-Dihydrophenanthrene'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: ninetendhp
+- id: https://w3id.org/peh/BE-b960657391
+  name: Sum DEHP metabolites
+  short_name: dehp
+  compoundgroups: []
+  translations_name_nl_be: Som DEHP metabolieten
+  group_compound_members:
+  - https://w3id.org/peh/BE-f45af63d2d|https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-f31f031b8b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: dehp
+- id: https://w3id.org/peh/BE-975f43abab
+  name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester +
+    Cyclohexane-1,2-dicarboxylate-mono-(7-hydroxy-4-methyl)octyl ester
+  short_name: cx-MINCH + OH-MINCH
+  compoundgroups: []
+  translations_name_nl_be: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)
+    heptylester + Cyclohexane-1,2-dicarboxylate-mono-(7-hydroxy-4-methyl)octyl ester
+  translations_short_name_nl_be: cx-MINCH + OH-MINCH
+  group_compound_members:
+  - https://w3id.org/peh/BE-d84be9bac4|https://w3id.org/peh/BE-c1312a879a
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: summinch
+- id: https://w3id.org/peh/BE-e901c42044
+  name: Ratio of MeHg and Hg
+  short_name: mhghg
+  compoundgroups: []
+  translations_name_nl_be: Ratio van MeHg en Hg
+  group_compound_members:
+  - https://w3id.org/peh/BE-e3e9a99654|https://w3id.org/peh/BE-11fc3a0c8f
+  comments: ratio?
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: mhghg
+- id: https://w3id.org/peh/BE-93eca1f8cf
+  name: pcb138 + pcb153 + pcb180
+  short_name: sumpcb
+  compoundgroups: []
+  translations_name_nl_be: pcb138 + pcb153 + pcb180
+  group_compound_members:
+  - https://w3id.org/peh/BE-0deef4b0e8|https://w3id.org/peh/BE-58a93178e4|https://w3id.org/peh/BE-9de1355591
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumpcb
+- id: https://w3id.org/peh/BE-73b6c5c177
+  name: Linear Perfluorohexane sulfonic acid + Linear Perfluorooctane sulfonic acid
+  short_name: L-PFHxS + L-PFOS
+  compoundgroups: []
+  translations_name_nl_be: Lineair Perfluoro-n-hexaansulfonzuur + Lineair Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: PFHxS + L-PFOS
+  group_compound_members:
+  - https://w3id.org/peh/BE-6152b955da|https://w3id.org/peh/BE-7d792870d0
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumpfhxspfos
+- id: https://w3id.org/peh/BE-ff8a8d55e9
+  name: Anthracene + Phenanthrene
+  short_name: phean
+  compoundgroups: []
+  translations_name_nl_be: Anthracene + Phenanthrene
+  group_compound_members:
+  - https://w3id.org/peh/BE-d9681d0586|https://w3id.org/peh/BE-4cda9c8c72
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: phean
+- id: https://w3id.org/peh/BE-667da4ea56
+  name: Ratio of p,p'-DDT and p,p'-DDE
+  short_name: ppddtppdde
+  compoundgroups: []
+  translations_name_nl_be: Ratio p,p'-DDT p,p'-DDE
+  group_compound_members:
+  - https://w3id.org/peh/BE-f19bfb8171|https://w3id.org/peh/BE-4ccf22f8e2
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: ppddtppdde
+- id: https://w3id.org/peh/BE-3aa6ac86eb
+  name: Glyphosate + Aminomethylyphosphonic acid
+  short_name: GLY + AMPA
+  compoundgroups: []
+  translations_name_nl_be: Glyfosaat + Aminomethylfosfoonzuur
+  translations_short_name_nl_be: GLY + AMPA
+  group_compound_members:
+  - https://w3id.org/peh/BE-f8ecd803f9|https://w3id.org/peh/BE-ff8516cc03
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumglyphampa
+- id: https://w3id.org/peh/BE-1014951b37
+  name: Hexabromocyclododecane alpha + Hexabromocyclododecane gamma
+  short_name: HBCDα + HBCDγ
+  compoundgroups: []
+  translations_name_nl_be: Hexabroomcyclododecaan alfa + Hexabroomcyclododecaan-gamma
+  group_compound_members:
+  - https://w3id.org/peh/BE-40d34ba1cb|https://w3id.org/peh/BE-bc35a8f725
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumhbcdag
+- id: https://w3id.org/peh/BE-460651d7c0
+  name: 1-hydroxyphenanthrene + 2-hydroxyphenanthrene + 3-hydroxyphenanthrene + 4-hydroxyphenanthrene
+    + 9-hydroxyphenanthrene
+  short_name: 1-PHEN + 2-PHEN + 3-PHEN + 4-PHEN + 9-PHEN
+  compoundgroups: []
+  translations_name_nl_be: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 3-hydroxyfenantreen
+    + 4-hydroxyphenanthrene + 9-hydroxyfenantreen
+  group_compound_members:
+  - https://w3id.org/peh/BE-c533e897b1|https://w3id.org/peh/BE-f283dd644b|https://w3id.org/peh/BE-e6160988c9|https://w3id.org/peh/BE-052ad23257|https://w3id.org/peh/BE-6ae5d31bea
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: shphe
+- id: https://w3id.org/peh/BE-951b6de319
+  name: 2-hydroxyphenanthrene + 9-hydroxyphenanthrene
+  short_name: 2-PHEN + 9-PHEN
+  compoundgroups: []
+  translations_name_nl_be: 2-hydroxyphenanthrene + 9-hydroxyfenantreen
+  group_compound_members:
+  - https://w3id.org/peh/BE-f283dd644b|https://w3id.org/peh/BE-c533e897b1
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: stwoninehphe
+- id: https://w3id.org/peh/BE-4f8b387697
+  name: 1-hydroxyphenanthrene + 2-hydroxyphenanthrene + 4-hydroxyphenanthrene
+  short_name: 1-PHEN + 2-PHEN + 4-PHEN
+  compoundgroups: []
+  translations_name_nl_be: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 4-hydroxyphenanthrene
+  group_compound_members:
+  - https://w3id.org/peh/BE-052ad23257|https://w3id.org/peh/BE-c533e897b1|https://w3id.org/peh/BE-6ae5d31bea
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumhpheone
+- id: https://w3id.org/peh/BE-568d88bc7f
+  name: Arsenic(III) acid + Arsenic(V) acid + Monomethylarsonic
+  short_name: As(III) + As(V) + MMA
+  compoundgroups: []
+  translations_name_nl_be: Arseen(III)zuur + Arseen(V)zuur + Monomethylarseen
+  translations_short_name_nl_be: As(III) + As(V) + MMA
+  group_compound_members:
+  - https://w3id.org/peh/BE-2e036d0e4a|https://w3id.org/peh/BE-0374745b8a|https://w3id.org/peh/BE-c6dfe4ac2b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumastfmma
+- id: https://w3id.org/peh/BE-5a568a9713
+  name: Calculated sum of metabolites for low molecular weight phthalates
+  short_name: sumlmwphthal
+  compoundgroups: []
+  translations_name_nl_be: Berekende som van metabolieten voor ftalaten met een laag
+    molecuulgewicht
+  group_compound_members:
+  - https://w3id.org/peh/BE-3bbc4c2033|https://w3id.org/peh/BE-d60439fd3f|https://w3id.org/peh/BE-604e243b71
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumlmwphthal
+- id: https://w3id.org/peh/BE-a3e6110651
+  name: 1-hydroxynaphthalene + 2-hydroxynaphthalene + 1-,2-dihydroxynaphthalene
+  short_name: 1-NAPH + 2-NAPH + 1,2-NAPH
+  compoundgroups: []
+  translations_name_nl_be: 1-hydroxynaphthaleen + 2-hydroxynaphthaleen + 1-,2-dihydroxynaftaleen
+  group_compound_members:
+  - https://w3id.org/peh/BE-189141c5d7|https://w3id.org/peh/BE-c530c3b9f9|https://w3id.org/peh/BE-c4fcfc8d3f
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumdiohnap
+- id: https://w3id.org/peh/BE-78d1acab33
+  name: Syn-dechlorane plus + Anti-dechlorane plus
+  short_name: Syn-DP + Anti-DP
+  compoundgroups: []
+  translations_name_nl_be: Syn-dechlorane plus + Anti-dechloraan plus
+  group_compound_members:
+  - https://w3id.org/peh/BE-e853989f12|https://w3id.org/peh/BE-d5a07e5646
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumdp
+- id: https://w3id.org/peh/BE-fa8ec0e80a
+  name: ehphp + ohehdphp
+  short_name: sumehdphp
+  compoundgroups: []
+  translations_name_nl_be: ehphp + ohehdphp
+  group_compound_members:
+  - https://w3id.org/peh/BE-a550d7bb10|https://w3id.org/peh/BE-c5d432e646
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumehdphp
+- id: https://w3id.org/peh/BE-d68c5d1510
+  name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
+    + Mono(2-ethylhexyl) phthalate + Mono(2-ethyl-5-carboxy-pentyl) phthalate + Mono-benzyl
+    phthalate + Mono-isobutyl phthalate + Mono-n-butyl phthalate + Mono-ethyl phthalate
+  short_name: 5oxo-MEHP + 5OH-MEHP + MEHP + 5cx-MEPP + MBzP + MiBP + MnBP + MEP
+  compoundgroups: []
+  translations_name_nl_be: Mono(2-ethyl-5-oxo-hexyl) ftalaat + Mono-(2-ethyl-5-hydroxyhexyl)ftalaat
+    + Mono-2-ethylhexyl ftalaat + Mono(2-ethyl-5-carboxypentyl) ftalaat + Mono-benzyl
+    ftalaat + Mono-isobutyl ftalaat + Mono-butyl ftalaat + Mono-ethyl ftalaat
+  translations_short_name_nl_be: 5oxo-MEHP + 5OH-MEHP + MEHP + 5cx-MEPP + MBzP + MiBP
+    + MnBP + MEP
+  group_compound_members:
+  - https://w3id.org/peh/BE-3bbc4c2033|https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-604e243b71|https://w3id.org/peh/BE-d60439fd3f|https://w3id.org/peh/BE-99a7c707c1|https://w3id.org/peh/BE-3a485ee52c|https://w3id.org/peh/BE-f45af63d2d|https://w3id.org/peh/BE-f31f031b8b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumeightphthal
+- id: https://w3id.org/peh/BE-aecc5d154e
+  name: Linear Perfluorooctanoic acid + Linear Perfluorononanoic acid + Linear Perfluorohexane
+    sulfonic acid + Linear Perfluorooctane sulfonic acid
+  short_name: L-PFOA + PFNA + L-PFHxS + L-PFOS
+  compoundgroups: []
+  translations_name_nl_be: Lineair Perfluoro-n-octaanzuur + Lineair Perfluoro-n-nonaanzuur
+    + Lineair Perfluoro-n-hexaansulfonzuur + Lineair Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: PFOA + PFNA + PFHxS + L-PFOS
+  group_compound_members:
+  - https://w3id.org/peh/BE-6152b955da|https://w3id.org/peh/BE-7d792870d0|https://w3id.org/peh/BE-6bf5209d2b|https://w3id.org/peh/BE-147953fa72
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumfourpfas
+- id: https://w3id.org/peh/BE-f586495289
+  name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
+    + Mono(2-ethylhexyl) phthalate + Mono(2-ethyl-5-carboxy-pentyl) phthalate
+  short_name: 5oxo-MEHP + 5OH-MEHP + MEHP + 5cx-MEPP
+  compoundgroups: []
+  translations_name_nl_be: Mono(2-ethyl-5-oxo-hexyl) ftalaat + Mono-(2-ethyl-5-hydroxyhexyl)ftalaat
+    + Mono-2-ethylhexyl ftalaat + Mono(2-ethyl-5-carboxypentyl) ftalaat
+  translations_short_name_nl_be: 5oxo-MEHP + 5OH-MEHP + MEHP + 5cx-MEPP
+  group_compound_members:
+  - https://w3id.org/peh/BE-f31f031b8b|https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-f45af63d2d|https://w3id.org/peh/BE-3a485ee52c
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumohoxocxmehp
+- id: https://w3id.org/peh/BE-2850e89667
+  name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
+  short_name: 5oxo-MEHP + 5OH-MEHP
+  compoundgroups: []
+  translations_name_nl_be: Mono(2-ethyl-5-oxo-hexyl) ftalaat + Mono-(2-ethyl-5-hydroxyhexyl)ftalaat
+  translations_short_name_nl_be: 5oxo-MEHP + 5OH-MEHP
+  group_compound_members:
+  - https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-f31f031b8b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumohoxomehp
+- id: https://w3id.org/peh/BE-78f4eb6281
+  name: 2-hydroxyfluorene + 3-hydroxyfluorene + 9-hydroxyfluorene
+  short_name: 2-FLUO + 3-FLUO + 9-FLUO
+  compoundgroups: []
+  translations_name_nl_be: 2-hydroxyfluoreen + 3-hydroxyfluoreen + 9-hydroxyfluoreen
+  group_compound_members:
+  - https://w3id.org/peh/BE-464bc16342|https://w3id.org/peh/BE-74c77cd76a|https://w3id.org/peh/BE-fe88c82f92
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumhfluo
+- id: https://w3id.org/peh/BE-34158eb1e7
+  name: Calculated sum of metabolites for high molecular weight phthalates
+  short_name: sumhmwphthal
+  compoundgroups: []
+  translations_name_nl_be: Berekende som van metabolieten voor ftalaten met een hoog
+    molecuulgewicht
+  group_compound_members:
+  - https://w3id.org/peh/BE-f31f031b8b|https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-99a7c707c1|https://w3id.org/peh/BE-3a485ee52c|https://w3id.org/peh/BE-f45af63d2d
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumhmwphthal
+- id: https://w3id.org/peh/BE-02e861edc8
+  name: 3-phenoxybenzoic acid + 4-fluoro-3-phenoxybenzoic acid
+  short_name: 3PBA + F-3-PBA
+  compoundgroups: []
+  translations_name_nl_be: Fenoxybenzoëzuur + 4-fluor-3-fenoxybenzoëzuur
+  translations_short_name_nl_be: 3PBA + F-3-PBA
+  group_compound_members:
+  - https://w3id.org/peh/BE-70b6cd6bfb|https://w3id.org/peh/BE-1bc66900d9
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumpba
+- id: https://w3id.org/peh/BE-1e77613e54
+  name: 1-hydroxyphenanthrene + 2-hydroxyphenanthrene + 3-hydroxyphenanthrene + 4-hydroxyphenanthrene
+  short_name: 1-PHEN + 2-PHEN + 3-PHEN + 4-PHEN
+  compoundgroups: []
+  translations_name_nl_be: 1-hydroxyfenantreen + 2-hydroxyphenanthrene + 3-hydroxyfenantreen
+    + 4-hydroxyphenanthrene
+  group_compound_members:
+  - https://w3id.org/peh/BE-6ae5d31bea|https://w3id.org/peh/BE-e6160988c9|https://w3id.org/peh/BE-c533e897b1|https://w3id.org/peh/BE-052ad23257
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumhphetwo
+- id: https://w3id.org/peh/BE-4b10fd1b22
+  name: lbpfoa + lbpfna + lbpfhxs + lbpfos
+  short_name: sumlbfourpfas
+  compoundgroups: []
+  translations_name_nl_be: lbpfoa + lbpfna + lbpfhxs + lbpfos
+  group_compound_members:
+  - https://w3id.org/peh/BE-dc5d8472b8|https://w3id.org/peh/BE-fb91d8f77d|https://w3id.org/peh/BE-eedc90fa8b|https://w3id.org/peh/BE-f263dca71c
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumlbfourpfas
+- id: https://w3id.org/peh/BE-c77cc00929
+  name: Linear Perfluorooctanoic acid + Linear Perfluorononanoic acid
+  short_name: L-PFOA + PFNA
+  compoundgroups: []
+  translations_name_nl_be: Lineair Perfluoro-n-octaanzuur + Lineair Perfluoro-n-nonaanzuur
+  translations_short_name_nl_be: PFOA + PFNA
+  group_compound_members:
+  - https://w3id.org/peh/BE-147953fa72|https://w3id.org/peh/BE-6bf5209d2b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumpfoapfna
+- id: https://w3id.org/peh/BE-cc316e3eb6
+  name: 6-OH-Mono-propyl-heptyl phthalate (LC-MS/MS method, sum of all C10 metabolites
+    including the DPHP metabolites) + Mono(2,7-methyl-7-carboxy-heptyl) phthalate
+  short_name: OH-MiDP + cx-MiDP
+  compoundgroups: []
+  translations_name_nl_be: 6-OH-monopropylheptylftalaat (LC-MS/MS method, sum of all
+    C10 metabolites including the DPHP metabolites) + Mono(2,7-methyl-7-carboxy-heptyl)ftalaat
+  translations_short_name_nl_be: OH-MiDP + cx-MiDP
+  group_compound_members:
+  - https://w3id.org/peh/BE-8e6da31d45|https://w3id.org/peh/BE-f3a2cb6b3d
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: summidp
+- id: https://w3id.org/peh/BE-df4787ed53
+  name: Arsenic(III) acid + Arsenic(V) acid + Dimethylarsinic + Monomethylarsonic
+  short_name: As(III) + As(V) + DMA + MMA
+  compoundgroups: []
+  translations_name_nl_be: Arseen(III)zuur + Arseen(V)zuur + Dimethylarseen + Monomethylarseen
+  translations_short_name_nl_be: As(III) + As(V) + DMA + MMA
+  group_compound_members:
+  - https://w3id.org/peh/BE-2e036d0e4a|https://w3id.org/peh/BE-c6dfe4ac2b|https://w3id.org/peh/BE-33fd5f6391|https://w3id.org/peh/BE-0374745b8a
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumtra
+- id: https://w3id.org/peh/BE-a14bbed09a
+  name: 7-OH-(Mono-methyl-octyl) phthalate + 7-Carboxy-(mono-methyl-heptyl) phthalate
+  short_name: OH-MiNP + cx-MiNP
+  compoundgroups: []
+  translations_name_nl_be: Mono(7-hydroxy-isononyl) phthalate + 7-Carboxy-(mono-methylheptyl)ftalaat
+  translations_short_name_nl_be: OH-MiNP + cx-MiNP
+  group_compound_members:
+  - https://w3id.org/peh/BE-8a8a483444|https://w3id.org/peh/BE-c8326b55bf
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+- id: https://w3id.org/peh/BE-732a757ccb
+  name: Mono(2-ethyl-5-hydroxy-hexyl) phthalate + Mono(2-ethyl-5-carboxy-pentyl) phthalate
+  short_name: 5OH-MEHP + 5cx-MEPP
+  compoundgroups: []
+  translations_name_nl_be: Mono-(2-ethyl-5-hydroxyhexyl)ftalaat + Mono(2-ethyl-5-carboxypentyl)
+    ftalaat
+  translations_short_name_nl_be: 5OH-MEHP + 5cx-MEPP
+  group_compound_members:
+  - https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-3a485ee52c
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumohcxmehp
+- id: https://w3id.org/peh/BE-0ebdd1b404
+  name: 1-hydroxynaphthalene + 2-hydroxynaphthalene
+  short_name: 1-NAPH + 2-NAPH
+  compoundgroups: []
+  translations_name_nl_be: 1-hydroxynaphthaleen + 2-hydroxynaphthaleen
+  translations_short_name_nl_be: 1-naphtol + 2-naphtol
+  group_compound_members:
+  - https://w3id.org/peh/BE-c4fcfc8d3f|https://w3id.org/peh/BE-189141c5d7
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumohnap
+- id: https://w3id.org/peh/BE-a40ea5391f
+  name: Arsenobetaine + Arsenic(III) acid + Arsenic(V) acid + Dimethylarsinic + Monomethylarsonic
+  short_name: AsB + As(III) + As(V) + DMA + MMA
+  compoundgroups: []
+  translations_name_nl_be: Arsenobetaïne + Arseen(III)zuur + Arseen(V)zuur + Dimethylarseen
+    + Monomethylarseen
+  translations_short_name_nl_be: AsB + As(III) + As(V) + DMA + MMA
+  group_compound_members:
+  - https://w3id.org/peh/BE-f00e1b81df|https://w3id.org/peh/BE-2e036d0e4a|https://w3id.org/peh/BE-0374745b8a|https://w3id.org/peh/BE-c6dfe4ac2b|https://w3id.org/peh/BE-33fd5f6391
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumtas
+- id: https://w3id.org/peh/BE-aed0c6eeca
+  name: Mono(2-ethyl-5-oxo-hexyl) phthalate + Mono(2-ethyl-5-hydroxy-hexyl) phthalate
+    + Mono(2-ethylhexyl) phthalate
+  short_name: 5oxo-MEHP + 5OH-MEHP + MEHP
+  compoundgroups: []
+  translations_name_nl_be: Mono(2-ethyl-5-oxo-hexyl) ftalaat + Mono-(2-ethyl-5-hydroxyhexyl)ftalaat
+    + Mono-2-ethylhexyl ftalaat
+  translations_short_name_nl_be: 5oxo-MEHP + 5OH-MEHP + MEHP
+  group_compound_members:
+  - https://w3id.org/peh/BE-6e7c8aa4e5|https://w3id.org/peh/BE-f45af63d2d|https://w3id.org/peh/BE-f31f031b8b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumohoxomehptwo
+- id: https://w3id.org/peh/BE-178be97cad
+  name: Sum of 1- and 9-hydroxyphenanthrene
+  short_name: 1+9-OH-Phenanthrene
+  compoundgroups: []
+  translations_name_nl_be: Som van 1- and 9-hydroxyphenanthrene
+  translations_short_name_nl_be: 1+9-OH-Phenanthrene
+  group_compound_members:
+  - https://w3id.org/peh/BE-6ae5d31bea|https://w3id.org/peh/BE-f283dd644b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumoneninehphe
+- id: https://w3id.org/peh/BE-72f01dca4b
+  name: Sum of 2- and 3-hydroxyfluorene
+  short_name: 2+3-OH-Fluorene
+  compoundgroups: []
+  translations_name_nl_be: Som van 2- en 3-hydroxyfluorene
+  translations_short_name_nl_be: 2+3-OH-Fluorene
+  group_compound_members:
+  - https://w3id.org/peh/BE-fe88c82f92|https://w3id.org/peh/BE-464bc16342
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumtwothreehfluo
+- id: https://w3id.org/peh/BE-81e034f1e6
+  name: mepfosaa + pfhxs + lbpfoa + pfda + pfunda + lbpfos + pfna
+  short_name: sumuslb7pfas
+  compoundgroups: []
+  translations_name_nl_be: mepfosaa + pfhxs + lbpfoa + pfda + pfunda + lbpfos + pfna
+  group_compound_members:
+  - https://w3id.org/peh/BE-495e6b075f|https://w3id.org/peh/BE-fb91d8f77d|https://w3id.org/peh/BE-6152b955da|https://w3id.org/peh/BE-147953fa72|https://w3id.org/peh/BE-bf6184953a|https://w3id.org/peh/BE-f263dca71c|https://w3id.org/peh/BE-e08ecde299
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumuslb7pfas
+- id: https://w3id.org/peh/BE-35f6b060fb
+  name: Benzo[b]fluoranthene + Benzo[k]fluoranthene
+  short_name: bbfabkfa
+  compoundgroups: []
+  translations_name_nl_be: Benzo[b]fluoranthene + Benzo[k]fluoranthene
+  group_compound_members:
+  - https://w3id.org/peh/BE-c8186f9883|https://w3id.org/peh/BE-b6e3c15b80
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: bbfabkfa
+- id: https://w3id.org/peh/BE-7e567be384
+  name: Sum (cis-DCCA, trans-DCCA)
+  short_name: sumdcca
+  compoundgroups: []
+  group_compound_members:
+  - https://w3id.org/peh/BE-46d7e42e2c|https://w3id.org/peh/BE-cb1d0aa9f1
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: sumdcca
+- id: https://w3id.org/peh/BE-ad4cc5e069
+  name: Branched Perfluorodecane sulfonic acid
+  short_name: B-PFDS
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-decaansulfonzuur
+  translations_short_name_nl_be: B-PFDS 
+  group_compound_members:
+  - https://w3id.org/peh/BE-b62fb34963|https://w3id.org/peh/BE-5c57cd34e3
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: bpfds
+- id: https://w3id.org/peh/BE-659cc1a59b
+  name: Branched Perfluorohexane sulfonic acid
+  short_name: B-PFHxS
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-hexaansulfonzuur
+  translations_short_name_nl_be: B-PFHxS
+  group_compound_members:
+  - https://w3id.org/peh/BE-eedc90fa8b|https://w3id.org/peh/BE-6152b955da
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: bpfhxs
+- id: https://w3id.org/peh/BE-64a7ecd71f
+  name: Percentage Branched Perfluorohexane sulfonic acid
+  short_name: '% B-PFHxS'
+  compoundgroups: []
+  translations_name_nl_be: Percentage Vertakt Perfluoro-n-hexaansulfonzuur
+  translations_short_name_nl_be: '%B-PFHxS'
+  group_compound_members:
+  - https://w3id.org/peh/BE-6152b955da|https://w3id.org/peh/BE-eedc90fa8b
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # not in AS, but to me this is an indicator
+  varname: bpfhxs_perc
+- id: https://w3id.org/peh/BE-b6d4975323
+  name: Branched Perfluorooctanoic acid
+  short_name: B-PFOA
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-octaanzuur
+  translations_short_name_nl_be: B-PFOA
+  group_compound_members:
+  - https://w3id.org/peh/BE-6bf5209d2b|https://w3id.org/peh/BE-fb91d8f77d
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # sylvie, to me brached forms are indicators (linear forms to be kept in this biochem entity list)
+  varname: bpfoa
+- id: https://w3id.org/peh/BE-df336d3284
+  name: Percentage Branched Perfluorooctanoic acid
+  short_name: '%B-PFOA'
+  compoundgroups: []
+  translations_name_nl_be: Percentage Vertakt Perfluoro-n-octaanzuur
+  translations_short_name_nl_be: '%B-PFOA'
+  group_compound_members:
+  - https://w3id.org/peh/BE-6bf5209d2b|https://w3id.org/peh/BE-fb91d8f77d
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # sylvie, to me brached forms are indicators (linear forms to be kept in this biochem entity list
+  varname: bpfoa_perc
+- id: https://w3id.org/peh/BE-d20a3a803c
+  name: Branched Perfluorooctane sulfonic acid
+  short_name: B-PFOS
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: B-PFOS
+  group_compound_members:
+  - https://w3id.org/peh/BE-f263dca71c|https://w3id.org/peh/BE-7d792870d0
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # sylvie, to me brached forms are indicators (linear forms to be kept in this biochem entity list
+  varname: bpfos
+- id: https://w3id.org/peh/BE-8f8f4c0de1
+  name: Percentage Branched Perfluorooctane sulfonic acid
+  short_name: '% B-PFOS'
+  compoundgroups: []
+  translations_name_nl_be: Percentage Vertakt Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: '%B-PFOS'
+  group_compound_members:
+  - https://w3id.org/peh/BE-7d792870d0|https://w3id.org/peh/BE-f263dca71c
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # this is an indicator
+  varname: bpfos_perc
+- id: https://w3id.org/peh/BE-652071698c
+  name: Branched Perfluorotetradecanoic acid
+  short_name: B-PFTeDA
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-tetradecaanzuur
+  translations_short_name_nl_be: B-PFTeDA
+  group_compound_members:
+  - https://w3id.org/peh/BE-5319ebfcbc|https://w3id.org/peh/BE-48f3da1e6e
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # to me brached forms are indicators (linear forms to be kept in this biochem entity list
+  varname: bpfteda
+- id: https://w3id.org/peh/BE-f7baf36f49
+  name: BranchedPerfluorotridecanoic acid
+  short_name: B-PFTrDA
+  compoundgroups: []
+  translations_name_nl_be: Vertakt Perfluoro-n-tridecaanzuur
+  translations_short_name_nl_be: B-PFTrDA
+  group_compound_members:
+  - https://w3id.org/peh/BE-561eee706e|https://w3id.org/peh/BE-df361a1fa4
+  comments: should these be linked to the leys of the linear PFAS?
+  to_check_by_anthony_expert: 'yes' # to me brached forms are indicators (linear forms to be kept in this biochem entity list
+  varname: bpftrda
+- id: https://w3id.org/peh/BE-223f081885
+  name: Total Bisphenol P
+  short_name: BPP
+  compoundgroups: []
+  exact_matches:
+  - INCHIKEY:GIXXQTYGFOHYPT-UHFFFAOYSA-N|CHEBI:165197|CAS:2167-51-3|PUBCHEM:630355
+  comments: I'm treating this as bisphenol P
+- id: https://w3id.org/peh/BE-a85dc0f98d # Sylvie: to me this is an indicator
+  name: Linear + branched PFBA (Perfluorobutanoic acid)
+  short_name: L+B-PFBA
+  compoundgroups: []
+  comments: should we link this compound with the PFAS keys?
+  to_check_by_anthony_expert: 'yes' # Sylvie: to me this is an indicator
+  varname: lbpfba # added sylvie
+- id: https://w3id.org/peh/BE-5cd62abf2c # Sylvie: to me this is an indicator
+  name: Linear + branched MeFOSAA
+  short_name: L+B-MeFOSAA
+  compoundgroups: []
+  comments: should we link this compound with the PFAS keys?
+  to_check_by_anthony_expert: 'yes' # Sylvie: to me this is an indicator
+  varname: lbmefosaa # added Sylvie
+- id: https://w3id.org/peh/BE-976f77f289 # Sylvie: to me this is an indicator
+  name: Linear + branched PFNS
+  short_name: L+B-PFNS
+  compoundgroups: []
+  comments: should we link this compound with the PFAS keys?
+  to_check_by_anthony_expert: 'yes' # Sylvie: to me this is an indicator
+  varname: lbpfns
+- id: https://w3id.org/peh/BE-a79b73b7b9
+  name: Total Bisphenol E
+  short_name: BPE
+  compoundgroups: []
+  exact_matches:
+  - INCHIKEY:HCNHNBLSNVSJTJ-UHFFFAOYSA-N|CHEBI:34029|CAS:2081-08-5|PUBCHEM:608116
+- id: https://w3id.org/peh/BE-f8034a86c7
+  name: Total Bisphenol AP
+  short_name: BPAP
+  compoundgroups: []
+  exact_matches:
+  - INCHIKEY:VOWWYDCFAISREI-UHFFFAOYSA-N|CHEBI:165234|CAS:1571-75-1|PUBCHEM:623849
+- id: https://w3id.org/peh/BE-b5ff8fb8d1
+  name: Mono(2-ethyl-5-carboxypentyl) adipate
+  short_name: 5cx-MEPA
+  compoundgroups: []
+  exact_matches:
+  - INCHIKEY:GSEREAHHKPORII-UHFFFAOYSA-N|CAS:2374216-86-9|PUBCHEM:155898863
+- id: https://w3id.org/peh/BE-745e3577e9
+  name: Total cis-Cyhalothric acid
+  short_name: total cis-ClF3CA
+  compoundgroups: []
+  exact_matches:
+  - INCHIKEY:SPVZAYWHHVLPBN-KRBLUSRYNA-N|CAS:68127-59-3|PUBCHEM:6440474

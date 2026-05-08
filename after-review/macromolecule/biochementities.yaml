@@ -1,0 +1,814 @@
+biochementities:
+- id: https://w3id.org/peh/BE-86823d9b21
+  short_name: BDNF
+  name: Brain-Derived Neurotrophic Factor
+  exact_matches:
+  - MESH:D019208
+  - uniprot:P23560
+  aliases: 
+  - bdnf
+  - BDNF 
+  - ANON2
+  - BULN2
+  - Brain-derived neurotrophic factor 
+  - brain derived neurotrophic factor
+- id: https://w3id.org/peh/BE-cc88737307
+  short_name: KP54
+  name: Kisspeptine 54
+  exact_matches:
+  - CHEBI:80304
+  - UNIPROT:Q15726
+  aliases:
+  - kp54
+  - Metastin
+- id: https://w3id.org/peh/BE-172a9f0c0f
+  short_name: Hemoglobin
+  name: Hemoglobin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Hemoglobine
+  exact_matches:
+  - LOINC:LP14449-0
+  - MESH:D006454
+- id: https://w3id.org/peh/BE-c2657af297
+  short_name: APOA
+  name: Apolipoprotein A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne A
+  exact_matches:
+  - LOINC:LP15410-1
+- id: https://w3id.org/peh/BE-800a7a5069
+  short_name: APOB
+  name: Apolipoprotein B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne B
+  exact_matches:
+  - LOINC:LP15400-2
+- id: https://w3id.org/peh/BE-836956d7ac
+  short_name: APOA1
+  name: Apolipoprotein A-I
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne A-I
+  exact_matches:
+  - LOINC:LP15395-4
+- id: https://w3id.org/peh/BE-114e8d43ec
+  short_name: CHOL
+  name: Cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cholesterol
+  exact_matches:
+  - LOINC:LP15493-7
+  - CHEBI:16113
+  - CAS:57-88-5
+  - PUBCHEM:5997
+- id: https://w3id.org/peh/BE-8a43cb03ae
+  short_name: HDL cholesterol
+  name: HDL cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: HDL cholesterol
+  exact_matches:
+  - CHEBI:47775
+  - LOINC:LP15489-5 
+- id: https://w3id.org/peh/BE-0c2f10e6ae
+  short_name: LDL cholesterol
+  name: LDL cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: LDL cholesterol
+  exact_matches:
+  - CHEBI:47774
+  - LOINC:LP15491-1
+- id: https://w3id.org/peh/BE-5210c7434f
+  short_name: LPa
+  name: Lipoprotein a
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Lipoproteïne a
+  exact_matches:
+  - LOINC:LP14886-3
+- id: https://w3id.org/peh/BE-29144220d7
+  short_name: Triglyceride
+  name: Triglyceride
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Triglyceride
+  exact_matches:
+  - CHEBI:17855
+  - LOINC:LP15275-8
+- id: https://w3id.org/peh/BE-f85b7b3771 ## Biochem ent = OK; Average black carbon load in [matrix] wordt indicator hiervan
+  short_name: BC particles 
+  name: black carbon particles
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Zwarte koolstofdeeltjes
+  exact_matches: 
+  - [] # geen CHEBI/MeSH/LOINC beschikbaar
+- id: ## to be provided; indicator die afgeled wordt --> Comet assay (DNA damage and repair) ; Comet assay (oxidation of DNA)
+  short_name: DNA
+  name: Deoxyribonucleic acid
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Desoxyribonucleïnezuur
+  exact_matches: 
+  - CHEBI:16991
+- id: https://w3id.org/peh/BE-529dd7010a
+  short_name: MTDNA
+  name: Mitochondrial DNA 
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Mitochondriaal DNA
+  exact_matches:
+    - MESH:D004272
+- id: https://w3id.org/peh/BE-e5806eaacc ## Biochem ent = OK; indicator die hiervan wordt afgeleid is: Relative telomere length (telomere/nuclear DNA ratio); Telomere Length (TEL) copy number variations normalized values to RPLP0 gene
+  short_name: Telomere
+  name: Telomere
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Telomeer 
+  exact_matches:
+    - MESH:D016615
+- id: https://w3id.org/peh/BE-4db9597ef3
+  short_name: CEA
+  name: Carcinoembryonic Ag
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Carcino-embryonaal antigen
+  exact_matches: 
+  - LOINC:LP28643-2
+- id: https://w3id.org/peh/BE-880178ac17
+  short_name: PSA
+  name: Prostate specific Ag
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Prostaat Specifiek Antigeen
+  exact_matches:
+  - LOINC:LP18193-0
+- id: https://w3id.org/peh/BE-374936489c
+  short_name: p53 Ab
+  name: p53 Ab
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: p53 Ab
+  exact_matches:
+  - LOINC:LP266571-1
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification AR (Androgen receptor) normalised expression compared to RPLP0 
+  short_name: AR
+  name: androgen receptor
+  exact_matches:
+  - NCBIGene:367
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification ESR1 (estrogen receptor alpha) normalised expression compared to RPLP0 
+  short_name: ESR1
+  name: estrogen receptor alpha
+  exact_matches:
+  - NCBIGene:2099
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification ESRESR2 (estrogen receptor beta) normalised expression compared to RPLP0 
+  short_name: ESR2
+  name: estrogen receptor beta
+  exact_matches:
+  - NCBIGene:2100
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification NR3C1 (glucocorticoid receptor) normalised expression compared to RPLP0 
+  short_name: NR3C1
+  name: glucocorticoid receptor
+  exact_matches:
+  - NCBIGene:2908
+  aliases: 
+  - nuclear receptor subfamily 3, group C, member 1
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification OGG1 (8-Oxoguanine glycosylase) normalised expression compared to RPLP0 
+  short_name: OGG1
+  name: 8-Oxoguanine glycosylase
+  exact_matches:
+  - NCBIGene:4968
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification PPARA (...) normalised expression compared to RPLP0 
+  short_name: PPARA
+  name: Peroxisome proliferator-activated receptor alpha
+  exact_matches:
+  - NCBIGene:5465
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification PPARG (...) normalised expression compared to RPLP0 
+  short_name: PPARG
+  name: Peroxisome proliferator-activated receptor gamma 
+  exact_matches:
+  - NCBIGene:5468
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification SUV39H1 (...) normalised expression compared to RPLP0 
+  short_name: SUV39H1
+  name: Histone-lysine N-methyltransferase
+  exact_matches:
+  - NCBIGene:6839
+- id: # id to be provided; indicator die afgeleid wordt is HIstone modification TERT (...) normalised expression compared to RPLP0 
+  short_name: TERT
+  name: Telomerase reverse transcriptase
+  exact_matches:
+  - NCBIGene:7015
+- id: # id to be provided
+  short_name: RPLP0
+  name: 60S acidic ribosomal protein P0
+  exact_matches:
+  - NCBIGene:6175
+- id: # id to be provided
+  short_name: LINE1
+  name: Long interspersed nuclear element-1
+- id: https://w3id.org/peh/BE-e1421a10bd 
+  short_name: fer
+  name: Ferritine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Ferritine
+  exact_matches:
+  - LOINC:LP15568-6
+- id: https://w3id.org/peh/BE-898fb7162a 
+  short_name: 8-oxo-dG
+  name: 8-hydroxy-2'-deoxyguanosine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 8-Oxo-2'-deoxyguanosine
+  - property_name: short_name
+    language: nl-be
+    translated_value: 8-oxodG
+  exact_matches:
+  - CHEBI:40304
+  - CAS:88847-89-6
+  - PUBCHEM:73318
+  aliases:
+  - DGUA
+- id: https://w3id.org/peh/BE-d20296e515
+  short_name: iod
+  name: Iodine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: jodium
+  exact_matches:
+  - CHEBI:24859
+  - LOINC:LP15157-8
+  - PUBCHEM:807
+- id: https://w3id.org/peh/BE-1559aa234a
+  short_name: CRP
+  name: C reactive protein
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: C reactief proteïne
+  exact_matches:
+  - LOINC:LP15023-2
+- id: # to be provided (indicator linking to this biochem entity would be FeNO-value )
+  short_name: NO
+  name: Nitric oxide
+  biochementity_type: compound
+  exact_matches:
+    - CHEBI:16480
+    - CAS:10102-43-9
+    - PUBCHEM:145068
+  translations:
+    - property_name: name
+      language: nl-be
+      translated_value: stikstofmonoxide
+- id: https://w3id.org/peh/BE-3be3073f25
+  short_name: IgA
+  name: Immunoglobulin A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline A
+  exact_matches:
+  - CHEBI:5883
+  - LOINC:LP14669-3
+- id: https://w3id.org/peh/BE-2615093cbc
+  short_name: IgE
+  name: Immunoglobulin E 
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline E
+  exact_matches:
+  - LOINC:LP14671-9
+- id: https://w3id.org/peh/BE-159a060627
+  short_name: IgM
+  name: Immunoglobulin M
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline M
+  exact_matches:
+  - LOINC:LP14674-3
+- id: https://w3id.org/peh/BE-847b40fff5
+  short_name: IL1B
+  name: Interleukin 1 beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 1 beta
+  exact_matches:
+  - LOINC:LP18509-7
+- id: https://w3id.org/peh/BE-a669eea2f2
+  short_name: IFN-gamma
+  name: Interferon gamma
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interferon gamma
+  exact_matches:
+  - LOINC:LP18171-6
+- id: https://w3id.org/peh/BE-3ba8fb255d
+  short_name: IL10
+  name: Interleukin 10
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 10
+  exact_matches:
+  - LOINC:LP21163-8
+- id: https://w3id.org/peh/BE-26a3eda73a
+  short_name: IL12
+  name: Interleukin 12
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 12
+  exact_matches:
+  - LOINC:LP18174-0
+- id: https://w3id.org/peh/BE-5b93dce3b9
+  short_name: IL2
+  name: Interleukin 2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 2
+  exact_matches:
+  - CHEBI:5940
+  - LOINC:LP16470-4
+- id: https://w3id.org/peh/BE-2276d5cdfb
+  short_name: IL-4
+  name: Interleukin 4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 4
+  exact_matches:
+  - LOINC:LP16472-0
+- id: https://w3id.org/peh/BE-ed2162ba3c
+  short_name: IL6
+  name: Interleukin 6
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 6
+  exact_matches:
+  - LOINC:26881-3
+- id: https://w3id.org/peh/BE-06d1bd67c8
+  short_name: IL8
+  name: Interleukin 8
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 8
+  exact_matches:
+  - LOINC:LP30829-3
+- id: https://w3id.org/peh/BE-8298f2548f
+  short_name: TNF alpha
+  name: Tumor necrosis factor alfa
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tumor necrosis factor alfa
+  exact_matches:
+  - LOINC:LP18480-1
+- id: https://w3id.org/peh/BE-4371321ab9
+  short_name: Cortisone
+  name: Cortisone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cortisone
+  exact_matches:
+  - CHEBI:16962
+  - CAS:53-06-5 # fyi, loinc not found
+- id: https://w3id.org/peh/BE-98dafd8b67
+  short_name: A1 Microglob
+  name: Alpha-1-Microglobulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alfa1-microglobuline
+  exact_matches:
+  - LOINC:LP40499-3
+- id: https://w3id.org/peh/BE-015855cb32
+  short_name: CYSTATC
+  name: Cystatin C
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cystatine C
+  exact_matches:
+  - LOINC:LP31553-8
+- id: https://w3id.org/peh/BE-2aa970c3de
+  short_name: Adiponectin
+  name: Adiponectin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Adiponectine
+  exact_matches:
+  - LOINC:LP61813-9
+  - CHEBI:81572
+- id: https://w3id.org/peh/BE-2c35c1a8a4
+  short_name: Glu
+  name: Glucose
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Glucose
+  exact_matches:
+  - CHEBI:17234
+  - LOINC:LP14635-4
+  - PUBCHEM:5793
+- id: # to be generated (the indicator linked to this biochem entity is Medium-chain acyl-CoA dehydrogenase deficiency)
+  short_name: ACADM
+  name: acyl-CoA dehydrogenase medium chain
+  aliases:
+  - MCAD 
+  - Medium-chain acyl-CoA dehydrogenase
+  exact_matches:
+  - NCBIGene:34
+- id: # to be generated (the indicator linked to this biochem entity is Multiple acyl CoA dehydrogenase deficiency)
+  short_name: ETFA
+  name: electron transfer flavoprotein subunit alpha 
+  exact_matches:
+  - NCBIGene:2108
+- id: # to be generated (the indicator linked to this biochem entity is Multiple acyl CoA dehydrogenase deficiency)
+  short_name: ETFB
+  name: electron transfer flavoprotein subunit beta 
+  exact_matches:
+  - NCBIGene:2109
+- id: # to be generated (the indicator linked to this biochem entity is Multiple acyl CoA dehydrogenase deficiency)
+  short_name: ETFDH
+  name: electron transfer flavoprotein dehydrogenase
+  exact_matches:
+  - NCBIGene:2110
+- id: https://w3id.org/peh/BE-69e65497f0
+  short_name: Alkaline Phosphatase
+  name: Alkaline Phosphatase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alkalische fosfatase
+  exact_matches:
+  - LOINC:LP15346-7
+- id: https://w3id.org/peh/BE-c18f126f50
+  short_name: Gamma-GT
+  name: Gamma glutamyl transferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: gamma-glutamyltransferase
+  exact_matches:
+  - LOINC:LP15590-0
+- id: https://w3id.org/peh/BE-1703f91c5c
+  short_name: GPT
+  name: Alanine aminotransferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alanine aminotransferase
+  aliases:
+  - Transaminase ALT
+  exact_matches:
+  - LOINC:LP15333-5  
+- id: https://w3id.org/peh/BE-f212b94058
+  short_name: GOT
+  name: Aspartate aminotransferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Transaminase AST
+  aliases:
+  - Transaminase AST
+  exact_matches:
+  - LOINC:LP15426-7
+- id: https://w3id.org/peh/BE-38ef854e1e
+  short_name: Insulin
+  name: Insulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Insuline
+  exact_matches:
+  - CHEBI:145810
+  - LOINC:LP14676-8
+- id: https://w3id.org/peh/BE-13b61e33ed
+  short_name: Leptin
+  name: Leptin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Leptine
+  exact_matches:
+  - INCHIKEY:NRYBAZVQPHGZNS-ZSOCWYAHSA-N
+  - LOINC:LP19488-3
+  - CHEBI:81571
+  - PUBCHEM:90470904
+
+- id: # to be generated (the indicator linked to this biochem entity is: Percentage of DNA methylation at KISS CpG1; Percentage of DNA methylation at KISS CpG2; Percentage of DNA methylation at KISS CpG3; Percentage of DNA methylation at KISS CpG4)
+  short_name: KISS1
+  name: KiSS-1 metastasis suppressor   
+  exact_matches: 
+  - NCBIGene:3814
+- id: https://w3id.org/peh/BE-4413ea2050 
+  short_name: Estradiol-17-beta
+  name: Estradiol-17-beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: oestradiol-17-beta
+  exact_matches:
+  - CHEBI:23965
+  - PUBCHEM:5757
+  - LOINC:LP14497-9
+- id: https://w3id.org/peh/BE-e56f7fac35 
+  short_name: 17-Hydroxyprogesterone
+  name: 17-Hydroxyprogesterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 17-hydroxyprogesteron
+  exact_matches:
+  - LOINC:LP14974-7
+  - CHEBI:17252
+- id: https://w3id.org/peh/BE-28ef4246ce ## todo
+  short_name: Aromatase
+  name: Aromatase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Aromatase
+  exact_matches:
+  - UNIPROT:P11511
+- id: https://w3id.org/peh/BE-a300cd6520
+  short_name: Estradiol
+  name: Estradiol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Oestradiol
+  exact_matches:
+  - CHEBI:23965
+  - PUBCHEM:5757
+  - LOINC:LP14497-9
+- id: https://w3id.org/peh/BE-15df4cccba
+  short_name: FSH
+  name: Follicle-stimulating hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Follikelstimulerend hormoon
+  exact_matches:
+  - LOINC:LP14499-5
+  - CHEBI:81569
+  aliases:
+  - Follitropin
+- id: https://w3id.org/peh/BE-b0dfbe5096
+  short_name: Inhibin B
+  name: Inhibin B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Inhibine B
+  exact_matches:
+  - LOINC:LP29072-3
+- id: https://w3id.org/peh/BE-2b9645dc7a
+  short_name: LH
+  name: Luteinizing hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Luteïniserend hormoon
+  exact_matches:
+  - LOINC:LP14683-4
+  - CHEBI:81568
+  aliases:
+  - lutropin
+- id: https://w3id.org/peh/BE-0414e57c6a
+  short_name: Progesterone
+  name: Progesterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Progesteron
+  exact_matches:
+  - CHEBI:17026
+  - PUBCHEM:5994
+  - LOINC:LP14041-5
+- id: https://w3id.org/peh/BE-3227a87369
+  short_name: SHBG
+  name: Sex hormone binding globulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: geslachtshormoonbindend globuline
+  exact_matches:
+  - LOINC:LP15863-1
+- id: https://w3id.org/peh/BE-33d7480557 
+  short_name: Testosterone
+  name: Testosterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Testosteron
+  exact_matches:
+  - CHEBI:17347
+  - CAS:58-22-0
+- id: https://w3id.org/peh/BE-a10038c486
+  short_name: Cortisol
+  name: Cortisol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cortisol
+  exact_matches:
+  - CHEBI:17650
+  - PUBCHEM:5754
+  - LOINC:LP14161-1
+- id: ## new one to create
+  short_name: THRA
+  name: Thyroid hormone receptor alpha
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroid hormone receptor alpha
+  exact_matches:
+  - UNIPROT:P10827
+  - MESH:D037021
+- id: ## new one to create
+  short_name: THRB
+  name: Thyroid hormone receptor beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroid hormone receptor beta
+  exact_matches:
+  - UNIPROT:P10828
+  - MESH:D037042
+- id: https://w3id.org/peh/BE-fd77cfa3ba
+  short_name: TSH
+  name: Thyroid-stimulating hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroïd stimulerend hormoon
+  aliases:
+  - Thyrotropin
+  exact_matches:
+  - LOINC:LP14487-0
+- id: https://w3id.org/peh/BE-fea12ccdd3
+  short_name: Thyroxine
+  name: Thyroxine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: thyroxine
+  aliases: 
+  - Total Thyroxine
+  exact_matches:
+  - LOINC:LP15900-1
+- id: https://w3id.org/peh/BE-e2c63c8320
+  short_name: Triiodothyronine
+  name: Triiodothyronine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Trijoodthyronine
+  aliases:
+  - total triiodothyronine
+  exact_matches:
+  - LOINC:LP15922-5
+- id: https://w3id.org/peh/BE-ec7b99591e
+  short_name: VitA
+  name: Vitamin A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vitamine A
+  exact_matches:
+  - CHEBI:12777
+- id: https://w3id.org/peh/BE-1329d0ec01
+  short_name: VitB
+  name: Vitamin B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vitamine B
+  exact_matches:
+  - MESH:D014803
+- id: https://w3id.org/peh/BE-59c72babd3
+  short_name: VitB12
+  name: Active Vitamin B12
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Actief vitamine B12
+  exact_matches:
+  - LOINC:LP156140-8
+  aliases:
+  - Holo-transcobalamin II
+- id: https://w3id.org/peh/BE-2b75edef33
+  short_name: VitD
+  name: 25-hydroxyvitamin D3
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 25-hydroxyvitamine D3
+  exact_matches:
+  - LOINC:LP15455-6
+  aliases:
+  - calcidiol
+- id: https://w3id.org/peh/BE-681c9ff0f5
+  short_name: VitE
+  name: Alpha tocopherol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alpha tocopherol
+  exact_matches:
+  - LOINC:LP15369-9
+  aliases:
+  - vitamin E
+- id: https://w3id.org/peh/BE-dff6986f8f 
+  short_name: albumin
+  name: albumin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: albumine
+  exact_matches:
+  - LOINC:LP6118-6
+- id: https://w3id.org/peh/BE-a71551a66b
+  short_name: IL1
+  name: Interleukin 1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: interleukine 1
+  exact_matches: 
+  - LOINC:LP16469-6
+- id: https://w3id.org/peh/BE-1ca15dae91
+  short_name: IgG
+  name: Immunoglobulin G
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline Gamma
+  exact_matches:
+  - LOINC:LP14672-7
+- id: https://w3id.org/peh/BE-eeb18819be
+  short_name: Kim-1
+  name: kidney injury molecule 1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: kidney injury molecule 1
+  aliases:
+  - Hepatitis A virus cellular receptor 1
+  exact_matches:
+  - UNIPROT:Q96D42
+- id: https://w3id.org/peh/BE-94ba99b53e
+  short_name: LTB4
+  name: Leukotriene B4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Leukotrieen B4
+  exact_matches:
+  - LOINC:LP440922-5
+- id: https://w3id.org/peh/BE-f779ea9ed0 ## todo
+  short_name: NAG
+  name: N-acetyl-β-D glucosaminidase
+- id: https://w3id.org/peh/BE-0a2788662e
+  short_name: RBP4
+  name: Retinol-binding protein 4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Retinol-binding protein 4
+  exact_matches:
+  - UNIPROT:P02753

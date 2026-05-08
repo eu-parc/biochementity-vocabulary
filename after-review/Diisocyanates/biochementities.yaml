@@ -1,0 +1,65 @@
+biochementities:
+- id: https://w3id.org/peh/BE-00bd658f08
+  name: 4-Methyl-m-phenylenediamine
+  short_name: PDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-00bd658f08
+  translations_name_nl_be: 4-Methyl-m-fenyleendiamine
+  exact_matches:
+  - CHEBI:34237|CAS:95-80-7
+  comments: '* The CAS number here is associated with the compound in PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Diaminotoluene
+    -->  Depositor-Supplied Synonyms here the name in this list appears, but to be
+    double checked. And if the same, I would add 2,4-Diaminotoluene as name and 4-Methyl-m-phenylenediamine
+    as aliases.
+
+    * In the CHEBI Database, this CHEBI is associated with: https://www.ebi.ac.uk/chebi/CHEBI:34237
+    (In this website, the CAS nr does match)
+
+    '
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pda
+- id: https://w3id.org/peh/BE-9698c97367
+  name: 2,4-toluenediamine
+  short_name: 2,4 TDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9698c97367|https://w3id.org/peh/BE-bc4362a23f
+  translations_name_nl_be: 2,4-tolueendiamine
+  exact_matches:
+  - CHEBI:34237|CAS:95-80-7|PUBCHEM:7261|INCHIKEY:VOZKAJLKRJDJLL-UHFFFAOYSA-N
+  aliases:
+  - 2,4-Diaminotoluene
+  varname: fourtda
+- id: https://w3id.org/peh/BE-6765536c59
+  name: 2,6-toluenediamine
+  short_name: 2,6 TDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6765536c59|https://w3id.org/peh/BE-3252916ed9
+  translations_name_nl_be: 2,6-tolueendiamine
+  exact_matches:
+  - CHEBI:76288|CAS:823-40-5|PUBCHEM:13205|INCHIKEY:RLYCRLGLCUXUPO-UHFFFAOYSA-N
+  aliases:
+  - 2,6-Diaminotoluene
+  varname: sixdtda
+- id: https://w3id.org/peh/BE-101817e233
+  name: 4,4'-methylenedianiline
+  short_name: MDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-101817e233|https://w3id.org/peh/BE-9114e1d5c8
+  translations_name_nl_be: 4,4'-methyleendianiline
+  exact_matches:
+  - CHEBI:32506|CAS:101-77-9|PUBCHEM:7577|INCHIKEY:YBRVSVVVWCFQMG-UHFFFAOYSA-N
+  aliases:
+  - 4,4-Diaminodiphenylmethane
+  varname: mda

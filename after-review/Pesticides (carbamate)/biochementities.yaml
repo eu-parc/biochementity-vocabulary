@@ -1,0 +1,42 @@
+biochementities:
+- id: https://w3id.org/peh/BE-9ea6a9e2ba
+  name: 2-Isopropoxyphenol
+  short_name: IPP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  translations_name_nl_be: 2-Isopropoxyfenol
+  exact_matches:
+  - CHEBI:38547|CAS:4812-20-8|CAS:28801-34-5|PUBCHEM:20949|INCHIKEY:ZNCUUYCDKVNVJH-UHFFFAOYSA-N
+  varname: ipp
+- id: https://w3id.org/peh/BE-fad7f62e17
+  name: Carbofuran-phenol
+  short_name: carbofuran-phenol
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_compounds:
+  - https://w3id.org/peh/BE-577cbf15f3
+  translations_name_nl_be: Carbofuran-fenol
+  exact_matches:
+  - CHEBI:38474|CAS:1563-38-8|PUBCHEM:15278|INCHIKEY:WJGPNUBJBMCRQH-UHFFFAOYSA-N
+  varname: carphe
+- id: https://w3id.org/peh/BE-bda1ebe5ab
+  name: Ethylenethiourea
+  short_name: ETU
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_compounds:
+  - https://w3id.org/peh/BE-bee2bcd631
+  translations_name_nl_be: Ethyleenthioureum
+  translations_short_name_nl_be: ETU
+  exact_matches:
+  - CHEBI:34750|CAS:96-45-7|PUBCHEM:2723650|INCHIKEY:PDQAZBWRQCGBEV-UHFFFAOYSA-N
+  varname: etu
+- id: https://w3id.org/peh/BE-a746b47bf4
+  name: Propoxur
+  short_name: Propoxur
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  translations_name_nl_be: Propoxur
+  exact_matches:
+  - CHEBI:34938|CAS:114-26-1|PUBCHEM:4944|INCHIKEY:ISRUGXGCCGIOQO-UHFFFAOYSA-N
+  varname: propoxur

@@ -1,0 +1,417 @@
+biochementities:
+- id: https://w3id.org/peh/BE-43041f798d
+  name: 2,3-Dichloroaniline
+  short_name: 2,3DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-43041f798d
+  translations_name_nl_be: 2,3-dichlooraniline
+  exact_matches:
+  - CHEBI:46636|CAS:608-27-5|PUBCHEM:11844|INCHIKEY:BRPSAOUFIJSKOT-UHFFFAOYSA-N
+  varname: twothreedcha
+- id: https://w3id.org/peh/BE-ebdeb64284
+  name: 2,4-Dichloroaniline
+  short_name: 2,4DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ebdeb64284
+  translations_name_nl_be: 2,4-dichlooraniline
+  exact_matches:
+  - CHEBI:46635|PUBCHEM:11123|INCHIKEY:KQCMTOWTPBNWDB-UHFFFAOYSA-N|CAS:554-00-7
+  varname: twofourdcha
+- id: https://w3id.org/peh/BE-40cd75dbad
+  name: 2,5-Dichloroaniline
+  short_name: 2,5DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-40cd75dbad
+  translations_name_nl_be: 2,5-dichlooraniline
+  exact_matches:
+  - CHEBI:34245|CAS:95-82-9|PUBCHEM:7262|INCHIKEY:AVYGCQXNNJPXSS-UHFFFAOYSA-N
+  varname: twofivedcha
+- id: https://w3id.org/peh/BE-42f650764e
+  name: 2,6-Dichloroaniline
+  short_name: 2,6DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-42f650764e
+  translations_name_nl_be: 2,6-dichlooraniline
+  exact_matches:
+  - CHEBI:46630|CAS:608-31-1|PUBCHEM:11846|INCHIKEY:JDMFXJULNGEPOI-UHFFFAOYSA-N
+  comments: The Short name structure was not consistent with other 3, so removed the
+    space
+  varname: twosixdcha
+- id: https://w3id.org/peh/BE-b8ea0abb8e
+  name: 2,6-Diisopropylaniline
+  short_name: DIPA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-b8ea0abb8e
+  translations_name_nl_be: 2,6-diisopropylaniline
+  exact_matches:
+  - INCHIKEY:WKBALTUBRZPIPZ-UHFFFAOYSA-N|PUBCHEM:32484|CAS:24544-04-5
+  aliases:
+  - Diisopropylaniline
+  varname: dipa
+- id: https://w3id.org/peh/BE-f41f34e1b2
+  name: 3-Aminobiphenyl
+  short_name: 3ABPH
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-f41f34e1b2
+  translations_name_nl_be: 3-Aminobifenyl
+  exact_matches:
+  - INCHIKEY:MUNOBADFTHUUFG-UHFFFAOYSA-N|PUBCHEM:16717|CAS:2243-47-2|CAS:41674-04-8
+  comments: '* This one has two CAS numbers according to PUBCHEM --> How to handle
+    this?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: threeabph
+- id: https://w3id.org/peh/BE-47c082ca6e
+  name: 3-Trifluormethoxyaniline
+  short_name: 3TFMA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-47c082ca6e
+  translations_name_nl_be: 3-Trifluormethoxyaniline
+  comments: '* I do not find any info about this compound. Maybe is this one? https://de.hsp-pharma.com/apis-and-intermediates/3-trifluoromethoxyaniline-cas-1535-73-5.html#:~:text=Wir%20sind%20professionelle%203%2DTrifluormethoxyaniline%20cas%201535%2D73%2D5%20Hersteller,China%2C%20spezialisiert%20auf%20die%20Bereitstellung%20von%20qualitativ'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: threetfma
+- id: https://w3id.org/peh/BE-68147ef282
+  name: 3,3'-Dichloro-4,4'-Diaminodiphenylmethane
+  aliases:
+  - 4,4'-methyleenbis(2-chloroaniline)
+  short_name: MOCA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-68147ef282
+  translations_name_nl_be: 4,4'-methyleenbis(2-chlooraniline)
+  exact_matches:
+  - CHEBI:28124|CAS:101-14-4|CAS:25928-85-2|PUBCHEM:7543|INCHIKEY:IBOFVQJTBBUKMU-UHFFFAOYSA-N
+  aliases:
+  - 4,4'-methylenebis(2-chloroaniline)
+- id: https://w3id.org/peh/BE-9e63a88ba8
+  name: 4-Aminobiphenyl
+  short_name: 4ABPH
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9e63a88ba8
+  translations_name_nl_be: 4-Aminobifenyl
+  exact_matches:
+  - CHEBI:1784|CAS:92-67-1|PUBCHEM:7102|INCHIKEY:DMVOXQPQNTYEKQ-UHFFFAOYSA-N
+  varname: fourabph
+- id: https://w3id.org/peh/BE-4d170bf4af
+  name: 4-Ethylaniline
+  short_name: EtA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4d170bf4af
+  translations_name_nl_be: 4-Ethylaniline
+  exact_matches:
+  - INCHIKEY:HRXZRAXKKNUKRF-UHFFFAOYSA-N|PUBCHEM:11504|CAS:589-16-2
+  varname: eta
+- id: https://w3id.org/peh/BE-c3f8cba8b0
+  name: 4-Isopropylaniline
+  short_name: IPA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c3f8cba8b0
+  translations_name_nl_be: 4-isopropylaniline
+  exact_matches:
+  - CHEBI:43405|CAS:99-88-7|PUBCHEM:7464|INCHIKEY:LRTFPLFDLJYEKT-UHFFFAOYSA-N
+  varname: ipa
+- id: https://w3id.org/peh/BE-00bd658f08
+  name: 4-Methyl-m-phenylenediamine
+  short_name: PDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-00bd658f08
+  translations_name_nl_be: 4-Methyl-m-fenyleendiamine
+  exact_matches:
+  - CHEBI:34237|CAS:95-80-7
+  comments: '* The CAS number here is associated with the compound in PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Diaminotoluene
+    -->  Depositor-Supplied Synonyms here the name in this list appears, but to be
+    double checked. And if the same, I would add 2,4-Diaminotoluene as name and 4-Methyl-m-phenylenediamine
+    as aliases.
+
+    * In the CHEBI Database, this CHEBI is associated with: https://www.ebi.ac.uk/chebi/CHEBI:34237
+    (In this website, the CAS nr does match)
+
+    '
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pda
+- id: https://w3id.org/peh/BE-f6b530ff21
+  name: 4-(Trifluoromethoxy)aniline
+  short_name: 4TFMA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-f6b530ff21
+  translations_name_nl_be: 4-Trifluormethoxyaniline
+  exact_matches:
+  - PUBCHEM:600848|CAS:461-82-5|INCHIKEY:XUJFOSLZQITUOI-UHFFFAOYSA-N
+- id: https://w3id.org/peh/BE-fffcf97ccb
+  name: Aniline
+  short_name: Aniline
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fffcf97ccb
+  translations_name_nl_be: Aniline
+  exact_matches:
+  - CHEBI:17296|CAS:62-53-3|PUBCHEM:6115|INCHIKEY:PAYRUJLWNCNPSJ-UHFFFAOYSA-N
+  varname: aniline
+- id: https://w3id.org/peh/BE-81b815dd4d
+  name: Meta-Chloroaniline
+  short_name: meta-Cha
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-81b815dd4d
+  translations_name_nl_be: Meta-Chlooraniline
+  exact_matches:
+  - INCHIKEY:PNPCRKVUWYDDST-UHFFFAOYSA-N|PUBCHEM:7932|CAS:108-42-9|CHEBI:229245
+  aliases:
+  - 3-Chloroaniline
+  varname: mcha
+- id: https://w3id.org/peh/BE-c07fa32624
+  name: Meta-Fluoroaniline
+  short_name: meta-FA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c07fa32624
+  translations_name_nl_be: Meta-fluoraniline
+  exact_matches:
+  - CHEBI:27873|CAS:372-19-0|PUBCHEM:9742|INCHIKEY:QZVQQUVWFIZUBQ-UHFFFAOYSA-N
+  aliases:
+  - 3-Fluoroaniline
+  varname: mfa
+- id: https://w3id.org/peh/BE-a30fa5dd93
+  name: N-acetyl 4,4'-methylenebis (2-chloroaniline)
+  short_name: acetyl-MOCA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-68147ef282
+  translations_name_nl_be: N-acetyl 4,4'-methylenebis (2-chloroaniline)
+  exact_matches:
+  - PUBCHEM:https://pubchem.ncbi.nlm.nih.gov/compound/56272|CAS:91575-28-9|INCHIKEY:JCHPXNSTFVJJLN-UHFFFAOYSA-N
+  aliases:
+  - N-(4-((4-Amino-3-chlorophenyl)methyl)-2-chlorophenyl)acetamide
+  source: https://pubmed.ncbi.nlm.nih.gov/18008389/
+  comments: '* Parent compound seems to be MOCA
+
+    * In PUBCHEM it seems to be this compound: https://pubchem.ncbi.nlm.nih.gov/compound/56272
+    --> so adding this info. To double check by Anthony'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: amoca
+- id: https://w3id.org/peh/BE-f3b09fd987
+  name: N-acetyl-2-aminophenol
+  short_name: NA2AP
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fffcf97ccb
+  translations_name_nl_be: N-acetyl-2-aminofenol
+  exact_matches:
+  - CHEBI:143107|CAS:614-80-2|PUBCHEM:11972|INCHIKEY:ADVGKWPZRIDURE-UHFFFAOYSA-N
+  aliases:
+  - 2-Acetamidophenol
+  varname: natwoap
+- id: https://w3id.org/peh/BE-67c597f688
+  name: N-acetyl-4-aminophenol
+  short_name: NA4AP
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fffcf97ccb
+  translations_name_nl_be: N-acetyl-4-aminofenol
+  exact_matches:
+  - CHEBI:46195|CAS:103-90-2|INCHIKEY:RZVAJINKPMORJF-UHFFFAOYSA-N|PUBCHEM:https://pubchem.ncbi.nlm.nih.gov/compound/1983
+  aliases:
+  - Paracetamol|N-(4-hydroxyphenyl)acetamide
+  source: https://www.sciencedirect.com/science/article/abs/pii/S1438463913001557
+  comments: '* Is this just not paracetamol?
+
+    * PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/1983'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: nafourap
+- id: https://w3id.org/peh/BE-fb258af26e
+  name: N-Phenylacetamide
+  short_name: ACA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fb258af26e
+  translations_name_nl_be: N-Phenylacetamide
+  exact_matches:
+  - CHEBI:28884|CAS:103-84-4|PUBCHEM:904|INCHIKEY:FZERHIULMFGESH-UHFFFAOYSA-N
+  aliases:
+  - Acetanilide
+  varname: aca
+- id: https://w3id.org/peh/BE-2f54aca417
+  name: Ortho-Chloroaniline
+  short_name: ortho-ChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-2f54aca417
+  translations_name_nl_be: Ortho-Chlooraniline
+  comments: '* Can it be this one? https://pubchem.ncbi.nlm.nih.gov/compound/2-Chloroaniline'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: ocha
+- id: https://w3id.org/peh/BE-3ee366213e
+  name: Ortho-Fluoroaniline
+  short_name: ortho-FA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-3ee366213e
+  translations_name_nl_be: Ortho-fluoraniline
+  exact_matches:
+  - CHEBI:27526|CAS:348-54-9
+  comments: '* Can it be this one? https://pubchem.ncbi.nlm.nih.gov/compound/2-Fluoroaniline'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: ofa
+- id: https://w3id.org/peh/BE-9ccef332cc
+  name: Ortho-toluidine
+  short_name: o-toluidine
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9ccef332cc
+  translations_name_nl_be: Ortho-toluïdine
+  exact_matches:
+  - CHEBI:66892|CAS:95-53-4|PUBCHEM:7242|INCHIKEY:RNVCVTLRINQCPJ-UHFFFAOYSA-N
+  varname: otldn
+- id: https://w3id.org/peh/BE-8f6629176f
+  name: P-aminophenol
+  short_name: p-aminophenol
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fffcf97ccb
+  translations_name_nl_be: P-aminofenol
+  exact_matches:
+  - CHEBI:17602|CAS:123-30-8|PUBCHEM:403|INCHIKEY:PLIKAWJENQZMHA-UHFFFAOYSA-N
+  aliases:
+  - 4-Aminophenol
+  varname: pami
+- id: https://w3id.org/peh/BE-65249050a5
+  name: Para-Chloroaniline
+  short_name: para-Cha
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-65249050a5
+  translations_name_nl_be: Para-Chlooraniline
+  exact_matches:
+  - CHEBI:20331|CAS:106-47-8|PUBCHEM:7812|INCHIKEY:QSNSCYSYFYORTR-UHFFFAOYSA-N
+  aliases:
+  - 4-Chloroaniline
+  varname: pcha
+- id: https://w3id.org/peh/BE-6d39ef56c8
+  name: Para-Fluoroaniline
+  short_name: para-FA
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6d39ef56c8
+  translations_name_nl_be: Para-fluoraniline
+  exact_matches:
+  - CHEBI:28546|CAS:371-40-4|PUBCHEM:9731|INCHIKEY:KRZCOLNOCZKSDF-UHFFFAOYSA-N
+  aliases:
+  - 4-Fluoroaniline
+  varname: pfa
+- id: https://w3id.org/peh/BE-670d1a3c65
+  name: Para-toluidine
+  short_name: p-toluidine
+  compoundgroups:
+  - "Anilines and MOCA"
+  parent_compounds:
+  - https://w3id.org/peh/BE-670d1a3c65
+  translations_name_nl_be: Para-toluïdine
+  exact_matches:
+  - CHEBI:37825|CAS:106-49-0|PUBCHEM:7813|INCHIKEY:RZXMPPFPUUCRFN-UHFFFAOYSA-N
+  varname: ptldn
+- id: https://w3id.org/peh/BE-9698c97367
+  name: 2,4-toluenediamine
+  short_name: 2,4 TDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9698c97367|https://w3id.org/peh/BE-bc4362a23f
+  translations_name_nl_be: 2,4-tolueendiamine
+  exact_matches:
+  - CHEBI:34237|CAS:95-80-7|PUBCHEM:7261|INCHIKEY:VOZKAJLKRJDJLL-UHFFFAOYSA-N
+  aliases:
+  - 2,4-Diaminotoluene
+  varname: fourtda
+- id: https://w3id.org/peh/BE-6765536c59
+  name: 2,6-toluenediamine
+  short_name: 2,6 TDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6765536c59|https://w3id.org/peh/BE-3252916ed9
+  translations_name_nl_be: 2,6-tolueendiamine
+  exact_matches:
+  - CHEBI:76288|CAS:823-40-5|PUBCHEM:13205|INCHIKEY:RLYCRLGLCUXUPO-UHFFFAOYSA-N
+  aliases:
+  - 2,6-Diaminotoluene
+  varname: sixdtda
+- id: https://w3id.org/peh/BE-101817e233
+  name: 4,4'-methylenedianiline
+  short_name: MDA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Diisocyanates"
+  parent_compounds:
+  - https://w3id.org/peh/BE-101817e233|https://w3id.org/peh/BE-9114e1d5c8
+  translations_name_nl_be: 4,4'-methyleendianiline
+  exact_matches:
+  - CHEBI:32506|CAS:101-77-9|PUBCHEM:7577|INCHIKEY:YBRVSVVVWCFQMG-UHFFFAOYSA-N
+  aliases:
+  - 4,4-Diaminodiphenylmethane
+  varname: mda
+- id: https://w3id.org/peh/BE-d693c43c33
+  name: 3,4-Dichloroaniline
+  short_name: 3,4DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d693c43c33
+  translations_name_nl_be: 3,4-Dichlooraniline
+  translations_short_name_nl_be: 3,4-DCA
+  exact_matches:
+  - CHEBI:16767|CAS:95-76-1|PUBCHEM:7257|INCHIKEY:SDYWXFYBZPNOFX-UHFFFAOYSA-N
+  varname: threefourdcha
+- id: https://w3id.org/peh/BE-5f07230f0c
+  name: 3,5-Dichloroaniline
+  short_name: 3,5DChA
+  compoundgroups:
+  - "Anilines and MOCA"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-5f07230f0c
+  translations_name_nl_be: 3,5-Dichloroaniline
+  translations_short_name_nl_be: 3,5-DCA
+  exact_matches:
+  - CHEBI:19904|CAS:626-43-7|PUBCHEM:12281|INCHIKEY:UQRLKWGPEVNVHT-UHFFFAOYSA-N
+  varname: threefivedcha

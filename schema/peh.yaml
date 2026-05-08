@@ -1,0 +1,1417 @@
+id: https://w3id.org/peh/peh-model
+name: PEH-Model
+description: |-
+  Entity and relation ontology and datamodel for Personal Exposure and Health data
+
+version: 0.5.3
+
+imports:
+  - linkml:types
+
+prefixes:
+  pehterms: https://w3id.org/peh/terms/
+  peh: https://w3id.org/peh/
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  wikidata: https://www.wikidata.org/wiki/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  skos: http://www.w3.org/2004/02/skos/core#
+  prov: http://www.w3.org/ns/prov#
+  qudt: https://qudt.org/schema/qudt/
+  qudtunit: https://qudt.org/vocab/unit/
+  qudtqk: http://qudt.org/2.1/vocab/quantitykind
+  iop: https://w3id.org/iadopt/ont/
+  owl: http://www.w3.org/2002/07/owl#
+  # DATA PREFIXES
+  # P: http://example.org/P/
+  # ROR: http://example.org/ror/
+  # CODE: http://example.org/code/
+  # GEO: http://example.org/geoloc/
+  #_base: https://w3id.org/peh/terms/
+
+default_prefix: pehterms
+default_range: string
+
+classes:
+  EntityList:
+    tree_root: true
+    description: >-
+      A generic top level object for collecting named entities under one root entity
+    slots:
+      - metadata_fields
+      - groupings
+      - observable_properties
+      - stakeholders
+      - projects
+      - studies
+      - study_entities
+      - physical_entities
+      - observation_groups
+      - observations
+      - derived_observations
+      - observation_designs
+      - observation_results
+      - observed_values
+      - layouts
+      - import_configs
+      - data_requests
+      # subclass templates
+      - matrix_subclasses
+      - biochementity_subclasses
+      - indicator_subclasses
+  
+  NamedThing:
+    abstract: true
+    description: >-
+      An abstract model for any of the identifiable entities
+    slots:
+      - id
+      - short_name
+      - name
+      - ui_label
+      - description
+      - remark
+      - exact_matches
+    close_mappings:
+     - schema:Thing
+     - prov:Entity
+
+  Grouping:
+    description: >-
+      A generic grouping entity that allows categorising entities in a hierarchical structure
+    is_a: NamedThing
+    mixins:
+      - HasContextAliases
+      - HasTranslations
+    slots:
+      - parent_grouping_id_list
+
+  HasValidationStatus:
+    description: >-
+      The capacity of including both a current validation status and a history of validation records
+    mixin: true
+    slots:
+      - current_validation_status
+      - validation_history
+  ValidationHistoryRecord:
+    description: >-
+      A list of events representing a historical record on the entity validation status
+    slots:
+      - validation_datetime
+      - validation_status
+      - validation_actor
+      - validation_institute
+      - validation_remark
+
+  HasAliases:
+    description: >-
+      The capacity of including one or more alternative naming terms (without qualifying the usage context)
+    mixin: true
+    slots:
+      - aliases
+  HasContextAliases:
+    description: >-
+      The capacity of including a list of terms being used in known scopes or contexts
+    mixin: true
+    slots:
+      - context_aliases
+  ContextAlias:
+    description: >-
+      An alternative term as it is used in a known scope or context (e.g. a community, project or study) for any of the entities and its properties
+    slots:
+      - property_name
+      - context
+      - alias
+  HasTranslations:
+    description: >-
+      The capacity of including a list of translated terms for one or more entity properties and languages
+    mixin: true
+    slots:
+      - translations
+  Translation:
+    description: >-
+      A translation for any of the entity properties, defining the property, the language and the translated term
+    slots:
+      - property_name
+      - language
+      - translated_value
+  
+  BioChemEntity:
+    class_uri:
+      schema:BioChemEntity
+    description: >-
+      A biological, chemical or biochemical entity that is relevant to the Personal Exposure and Health domain
+    is_a: NamedThing
+    mixins:
+      - HasAliases
+      - HasContextAliases
+      - HasTranslations
+      - HasValidationStatus
+  
+  BioChemEntitySubClass:
+    class_uri: owl:Class
+    description: Template class used to generate OWL Classes.
+    is_a: NamedThing
+    mixins:
+      - HasAliases
+      - HasContextAliases
+      - HasTranslations
+      - HasValidationStatus
+    slots:
+      - grouping_id_list
+      - molweight_grampermol
+      - has_role
+      - is_metabolite_of
+      - is_isomer_of
+      - parent_biochementities
+  
+  Matrix:
+    class_uri: wikidata:Q685816
+    description: >-
+      The physical medium or biological substrate from which a biomarker, or other analyte is quantified in observational studies
+    is_a: NamedThing
+    mixins:
+      - HasContextAliases
+      - HasTranslations
+
+  MatrixSubClass:
+    class_uri: owl:Class
+    is_a: NamedThing
+    mixins:
+      - HasTranslations
+      - HasContextAliases
+    description: >
+      Template class used to generate OWL Classes.
+    slots:
+      - parent_matrix
+
+  Indicator:
+    class_uri: wikidata:Q937228
+    description: >-
+      Any measurable or observable variable that can describe data or context in the Personal Exposure and Health domain
+    close_mappings:
+      - iop:Variable
+    is_a: NamedThing
+
+  IndicatorSubClass:
+    class_uri: owl:Class
+    description: >-
+      Template class used to generate OWL Classes
+    is_a: NamedThing
+    mixins:
+      - HasContextAliases
+      - HasTranslations
+    slots:
+      - indicator_type
+      - property
+      - quantity_kind
+      - matrix
+      - constraints
+      - grouping_id_list
+      - relevant_observable_entity_types
+      - biochementity
+      - parent_indicator
+
+  QUDTUnit:
+    class_uri: qudt:Unit
+    slots:
+      - id
+  QUDTQuantityKind:
+    class_uri: qudt:QuantityKind
+    slots:
+      - id
+
+  PhysicalEntity:
+    description: >-
+      A digital placeholder for a physical entity as it exists in the real world, 
+    abstract: true
+    is_a: NamedThing
+    slots:
+      - physical_entity_links
+  PhysicalEntityLink:
+    description: >-
+      A relational property that allows creating qualified links to physical entities
+    slots:
+      - linktype
+      - physical_entity
+  Sample:
+    description: >-
+      A portion of a measurement matrix collected from a subject or environment for the purpose of lab analysis
+    is_a: PhysicalEntity
+    slots:
+      - matrix
+      - constraints
+      - sampled_in_project
+      - physical_label
+      - collection_date
+  Person:
+    description: >-
+      A human subject or stakeholder in Personal Exposure and Health research
+    is_a: PhysicalEntity
+    slots:
+      - recruited_in_project
+  Geolocation:
+    description: >-
+      A geographic location relevant to the Personal Exposure and Health projects or studies
+    is_a: PhysicalEntity
+    slots:
+      - location
+  Environment:
+    description: >-
+      An environment relevant to the research, typically related to the exposure of a person
+    is_a: PhysicalEntity
+  HomeEnvironment:
+    description: >-
+      A home environment relevant to the research, typically related to the at-home exposure of a person
+    is_a: Environment
+  WorkEnvironment:
+    description: >-
+      A work environment relevant to the research, typically related to the at-work or commute exposure of a person
+    is_a: Environment
+
+  ObservableProperty:
+    description: >-
+      A fully defined variable that allows registering an observation about any of the entities relevant to Personal Exposure and Health research
+    is_a: NamedThing
+    mixins:
+      - HasTranslations
+      - HasContextAliases
+    slots:
+      - value_type
+      - categorical
+      - multivalued
+      - value_options
+      - value_metadata
+      - quantity_kind
+      - unit
+      - required
+      - zeroallowed
+      - min_value
+      - max_value
+      - significantdecimals
+      - immutable
+      - grouping_id_list
+      - observation_result_type
+      - relevant_observable_entity_types
+      - relevant_observation_types
+      - calculation_design
+      - validation_designs
+      - has_iadopt_variable
+      - has_observable_property_type
+  
+  ObservablePropertyValueOption:
+    description: >-
+      Potential selection choices for Observable Properties that are categorical variables
+    mixins:
+      - HasContextAliases
+    slots:
+      - key
+      - value
+      - label
+  ObservablePropertyMetadataElement:
+    description: >-
+      Key-value element that adds contextual metadata to an Observable Property instance
+    slots:
+      - field
+      - value
+  ObservablePropertyMetadataField:
+    description: >-
+      Predefined contextual qualifier for Observable Property metadata
+    is_a: NamedThing
+    slots:
+      - value_type
+  CalculationDesign:
+    description: >-
+      Definition of a calculation method for deriving an observational value from other variables and/or contexts
+    slots:
+      - calculation_name
+      - calculation_implementation_as_json
+      - calculation_implementation
+      - conditional
+  CalculationImplementation:
+    description: >-
+      Reference and parameters mapping to the implementation that can perform the intended calculation
+    slots:
+      - function_name
+      - function_kwargs
+      - function_results
+  CalculationKeywordArgument:
+    description: >-
+      The definition of a named argument used in the calculation, including the information needed to pick it from the project or study data structure
+    slots:
+      - mapping_name
+      - process_state
+      - imputation_state
+      - value_type
+      - unit
+      - observable_property
+      - value
+      - contextual_field_reference
+    exactly_one_of:
+      - slot_conditions:
+          value:
+            required: true
+      - slot_conditions:
+          contextual_field_reference:
+            required: true
+
+  CalculationResult:
+    description: >-
+      The definition for the output the calculation, optionally including mapping information
+    slots:
+      - mapping_name
+      - value_type
+      - unit
+      - round_decimals
+      - scale_factor
+      - observable_property
+      - contextual_field_reference
+  ValidationDesign:
+    description: >-
+      Definition of a validation rule for automatically imposing business logic constraints
+    slots:
+      - validation_name
+      - validation_expression
+      - validation_error_level
+      - validation_error_message_template
+      - conditional
+  ValidationExpression:
+    description: >-
+      A logical expression, allowing for combining arguments into more complex validation rules
+    slots:
+      - validation_subject_contextual_field_references
+      - validation_condition_expression
+      - validation_command
+      - validation_arg_values
+      - validation_arg_contextual_field_references
+      - validation_arg_expressions
+  ContextualFieldReference:
+    description: >-
+      A two-level reference, identifying a field or column in a named series of two-dimensional datasets
+    slots:
+      - dataset_label
+      - field_label
+  Contact:
+    description: >-
+      A stakeholder having a contact role in the research process
+    mixins:
+      - HasContextAliases
+    slots:
+      - name
+      - orcid
+      - contact_roles
+      - contact_email
+      - contact_phone
+  Stakeholder:
+    description: >-
+      Any organisation involved in the research process
+    is_a: NamedThing
+    mixins:
+      - HasTranslations
+    slots:
+      - rorid
+      - geographic_scope
+  Project:
+    description: >-
+      A collaborative effort in the Personal Exposure and Health research domain
+    is_a: StudyEntity
+    mixins:
+      - HasTranslations
+      - HasContextAliases
+    slots:
+      - default_language
+      - project_stakeholders
+      - start_date
+      - end_date
+      - study_id_list
+  ProjectStakeholder:
+    description: >-
+      An organisation collaborating in a Personal Exposure and Health research project
+    slots:
+      - stakeholder
+      - project_roles
+      - contacts
+    mixins:
+      - HasTranslations
+  StudyEntity:
+    description: >-
+      Any entity carrying data or context relevant to a Personal Exposure and Health research project or study
+    abstract: true
+    is_a: NamedThing
+    slots:
+      - physical_entity
+      - study_entity_links
+  StudyEntityLink:
+    description: >-
+      A relational property that allows creating qualified links to study entities
+    slots:
+      - linktype
+      - study_entity
+  Study:
+    description: >-
+      A structured, goal-directed observational investigation designed to collect and analyze data on human subjects and their environments
+    is_a: StudyEntity
+    mixins:
+      - HasTranslations
+      - HasContextAliases
+    slots:
+      - default_language
+      - study_stakeholders
+      - start_date
+      - end_date
+      - observation_group_id_list
+      - study_entity_id_list
+      - project_id_list
+  StudyStakeholder:
+    description: >-
+      An organisation collaborating in a Personal Exposure and Health research study
+    slots:
+      - stakeholder
+      - study_roles
+      - contacts
+  ObservationGroup:
+    description: >-
+      A grouped collection of observations, intended and/or executed, as part of a Personal Exposure and Health research study
+    is_a: StudyEntity
+    slots:
+      - start_date
+      - end_date
+      - observation_id_list
+  StudyPopulation:
+    description: >-
+      A group of study entities that is itself also a study entity that observations can be recorded for
+    is_a: StudyEntity
+    slots:
+      - research_population_type
+      - member_id_list
+  SampleCollection:
+    description: >-
+      A collection of samples that is itself also a study entity that observations can be recorded for
+    is_a: StudyEntity
+    slots:
+      - matrix
+      - constraints
+      - sample_id_list
+  StudySubject:
+    description: >-
+      A study entity that is a main subject for the study
+    is_a: StudyEntity
+  StudySubjectGroup:
+    description: >-
+      A group of study subjects that is itself also a study entity that observations can be recorded for
+    is_a: StudyEntity
+  Observation:
+    description: >-
+      The registration of the intent to perform a set of observations as well as the resulting observed values
+    is_a: NamedThing
+    slots:
+      - observation_type
+      - observation_design
+      - observation_result_id_list
+  DerivedObservation:
+    description: >-
+      An observation in which all observed values are derived from a prior observation through analytical or statistical processing.
+    is_a: Observation
+    slots:
+    - was_derived_from
+  ObservationDesign:
+    description: >-
+      The setup of the observation, listing the study entity type being observed (and -optionally- the entities), as well as the the properties being recorded
+    is_a: NamedThing
+    slots:
+      - observation_result_type
+      - observable_entity_type
+      - observable_entity_id_list
+      - observable_property_specifications
+  ObservablePropertySpecification:
+    description: >-
+      For an observable property being recorded, lists its categorisation and processing rules
+    slots:
+    - observable_property
+    - specification_category
+    - calculation_design
+    - validation_designs
+  ObservationResult:
+    description: >-
+      The result of an observational effort in Personal Exposure and Health research
+    abstract: true
+    is_a: NamedThing
+    slots:
+      - observation_result_type
+      - observation_start_date
+      - observation_end_date
+      - observed_values
+  ObservedValue:
+    description: >-
+      A single observational result value registering a specific property for a specific entity at a specific moment
+    slots:
+      - observable_entity
+      - observable_property
+      - raw_value
+      - raw_unit
+      - imputed_value
+      - imputed_unit
+      - normalised_value
+      - normalised_unit
+      - value
+      - unit
+      - value_as_string
+      - quality_data
+      - provenance_data
+  QualityData:
+    description: >-
+      Quality metadata, adding context to an Observed Value
+    slots:
+      - quality_context_key
+      - quality_value
+  ProvenanceData:
+    description: >-
+      Provenance metadata, adding context to an Observed Value
+    slots:
+      - provenance_context_key
+      - provenance_value
+
+  DataLayout:
+    description: >-
+      Layout, allowing the definition of templating sections for combining layout and data elements
+    is_a: NamedThing
+    slots:
+      - sections
+  DataLayoutSection:
+    description: >-
+      Definition for an individual layout or data section, as part of a full layout. Each section contains the information on a single observation.
+    is_a: NamedThing
+    slots:
+      - section_type
+      - observable_entity_type
+      - elements
+      - validation_designs
+  DataLayoutElement:
+    description: >-
+      Definition for an individual layout or data element, as part of a layout section
+    slots:
+      - label
+      - element_type
+      - element_style
+      - observable_property
+      - is_observable_entity_key
+      - foreign_key_link
+  DataLayoutElementLink:
+    description: >-
+      Configuration that refers to an element in a layout section
+    slots:
+      - section
+      - label
+
+  DataImportConfig:
+    description: >-
+      Configuration for incoming data, defining the expected DataLayout and the Observation(s) the data will be added to
+    is_a: NamedThing
+    slots:
+      - layout
+      - section_mapping
+  DataImportSectionMapping:
+    description: >-
+      Configuration for mapping structured data from a known layout to one or more study observations
+    slots:
+      - section_mapping_links
+  DataImportSectionMappingLink:
+    description: >-
+      Configuration that links a data layout section to one or more observations
+    slots:
+      - section
+      - observation_id_list
+
+  DataRequest:
+    description: >-
+      Registration of a request for data by a data user
+    is_a: NamedThing
+    slots:
+      - contacts
+      - request_properties
+      - data_stakeholders
+      - research_objectives
+      - processing_actions
+      - processing_steps
+      - remark_on_content
+      - remark_on_methodology
+      - observed_entity_properties
+      - observation_design_id_list
+  ObservedEntityProperty:
+    description: >-
+      Conceptual definition of the observation of a certain property for a certain entity in a study
+    slots:
+      - observable_entity
+      - observable_property
+  DataStakeholder:
+    description: >-
+      An organisation participating in a data process in Personal Exposure and Health research
+    is_a: NamedThing
+    slots:
+      - stakeholder
+      - data_roles
+      - contacts
+      - processing_description
+  ResearchObjective:
+    description: >-
+      A research objective communicated in the request and used to evaluate if the request is valid and appropriate
+    is_a: NamedThing
+    slots:
+      - objective_type
+      - authors
+  ProcessingAction:
+    description: >-
+      One action in the data request and processing flow
+    is_a: NamedThing
+  ProcessingStep:
+    description: >-
+      One step in the data request and processing flow
+    is_a: NamedThing
+    slots:
+      - start_date
+      - delivery_date
+  DataExtract:
+    description: >-
+      A set of Observed Values, combined into a data extract
+    slots:
+      - observed_values
+
+  IAdoptVariable:
+    description: >-
+      Placeholder class for actual IAdoptVariable
+    slots:
+      - id
+  BioChemRole:
+    description: >- 
+      A role is particular behaviour which a material entity may exhibit.
+    slots:
+      - id
+    close_mappings: 
+      - http://purl.obolibrary.org/obo/chebi_50906
+
+slots:
+  id:
+    identifier: true
+    slot_uri: schema:identifier
+    description: >-
+      Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Persistent, Resolvable Identifier).
+    range: uriorcurie
+  short_name:
+    slot_uri: schema:alternateName
+    description: >-
+      Shortened name or code, preferrably unique within the context the entity is (typically) used in.
+    exact_mappings:
+    - skos:altLabel
+  name:
+    slot_uri: rdfs:label
+    exact_mappings:
+    - schema:name
+    - skos:prefLabel
+    description: >-
+      Common human readable name
+  description:
+    slot_uri: schema:description
+    exact_mappings:
+    - skos:definition
+    description: >-
+      Long form description or definition for the entity.
+  ui_label:
+    # restricted to internal use
+    description: >-
+      Human readable label, to be used in user interactions through forms or documents.
+  remark:
+    slot_uri: schema:comment
+    exact_mappings:
+    - skos:note
+    description: >-
+      Additional comment, note or remark providing context on the use of an entity or the interpretation of its properties.
+  was_derived_from:
+    slot_uri: prov:wasDerivedFrom
+    range: NamedThing
+    domain: NamedThing
+  orcid:
+    slot_uri: schema:identifier
+  rorid:
+    slot_uri: schema:identifier
+  label:
+  alias:
+  aliases:
+    multivalued: true
+    inlined_as_list: true
+  context_aliases:
+    multivalued: true
+    inlined_as_list: true
+    range: ContextAlias
+  exact_matches:
+    multivalued: true
+    range: uriorcurie
+    slot_uri: skos:exactMatch
+  context:
+    range: NamedThing
+    inlined: false
+  translations:
+    multivalued: true
+    inlined_as_list: true
+    range: Translation
+  property_name:
+    slot_uri: schema:identifier
+  language:
+  translated_value:
+
+  validation_history:
+    multivalued: true
+    inlined_as_list: true
+    range: ValidationHistoryRecord
+  quantity_kind:
+    slot_uri: qudt:hasQuantityKind
+    range: QUDTQuantityKind
+    annotations:
+      rdf_type: qudt:QuantityKind
+  groupings:
+    multivalued: true
+    inlined_as_list: true
+    range: Grouping
+  grouping_id_list:
+    multivalued: true
+    range: Grouping
+    slot_uri: skos:broader
+  parent_grouping_id_list:
+    multivalued: true
+    range: Grouping
+    slot_uri: rdfs:subClassOf
+
+  current_validation_status:
+    range: ValidationStatus
+  validation_datetime:
+    range: datetime
+  validation_status:
+    range: ValidationStatus
+  validation_actor:
+  validation_institute:
+  validation_remark:
+
+  matrix_subclasses:
+    multivalued: true
+    inlined_as_list: true
+    range: MatrixSubClass
+  biochementity_subclasses:
+    multivalued: true
+    inlined_as_list: true
+    range: BioChemEntitySubClass
+  indicator_subclasses:
+    multivalued: true
+    inlined_as_list: true
+    range: IndicatorSubClass
+
+  parent_matrix:
+    range: MatrixSubClass
+    slot_uri: rdfs:subClassOf
+  indicator_type:
+    range: IndicatorType
+  parent_indicator:
+    range: IndicatorSubClass
+    slot_uri: rdfs:subClassOf
+  parent_biochementities:
+    range: BioChemEntity
+    slot_uri: rdfs:subClassOf
+  property:
+  matrix:
+    range: Matrix
+  constraints:
+    multivalued: true
+  relevant_observable_entity_types:
+    multivalued: true
+    range: ObservableEntityType
+  biochementity:
+    range: BioChemEntity
+    inlined: false
+
+  molweight_grampermol:
+    range: decimal
+    description: The molecular weight of the chemical entity in g/mol
+    unit:
+      ucum_code: "g/mol"
+  is_metabolite_of:
+    description: Indicates that this molecular entity is a metabolite of another molecular entity
+    range: BioChemEntity
+    multivalued: true
+    slot_uri: pehterms:isMetaboliteOf
+  is_isomer_of:
+    description: Indicates that this molecular entity is an isomer of another molecular entity
+    range: BioChemEntity
+    multivalued: true
+    slot_uri: pehterms:isIsomerOf
+  has_role:
+    multivalued: true
+    slot_uri: http://purl.obolibrary.org/obo/RO_0000087
+    range: BioChemRole
+    domain: BioChemEntity
+
+  categorical:
+    range: boolean
+  multivalued:
+    range: boolean
+  value_type:
+  value_metadata:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservablePropertyMetadataElement
+  value_options:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservablePropertyValueOption
+  required:
+    range: boolean
+  zeroallowed:
+    range: boolean
+  min_value:
+    description: String representation of the expected lower bound in observations, usable for data validation
+  max_value:
+    description: String representation of the expected upper bound in observations, usable for data validation
+  significantdecimals:
+    description: Variable precision indication, expressed as the number of significant decimals
+    range: integer
+  immutable:
+    description: Variable values are not expected to change over time (e.g. birthdate of a person)
+    range: boolean
+  relevant_observation_types:
+    multivalued: true
+    range: ObservationType
+  has_observable_property_type:
+    slot_uri: rdf:type
+    multivalued: true
+    range: IndicatorSubClass
+  has_iadopt_variable:
+    slot_uri: pehterms:hasVariable
+    range: IAdoptVariable
+    domain: ObservableProperty
+  calculation_design:
+    range: CalculationDesign
+  calculation_name:
+  conditional:
+  calculation_implementation_as_json:
+  calculation_implementation:
+    range: CalculationImplementation
+  function_name:
+  function_kwargs:
+    multivalued: true
+    inlined_as_list: true
+    range: CalculationKeywordArgument
+  function_results:
+    multivalued: true
+    inlined_as_list: true
+    range: CalculationResult
+  
+  validation_designs:
+    multivalued: true
+    inlined_as_list: true
+    range: ValidationDesign
+  validation_name:
+  validation_expression:
+    range: ValidationExpression
+  validation_condition_expression:
+    range: ValidationExpression
+  validation_error_level:
+    range: ValidationErrorLevel
+  validation_error_message_template:
+  validation_subject_contextual_field_references:
+    multivalued: true
+    inlined_as_list: true
+    range: ContextualFieldReference
+  validation_command:
+    range: ValidationCommand
+  validation_arg_values:
+    multivalued: true
+  validation_arg_contextual_field_references:
+    multivalued: true
+    inlined_as_list: true
+    range: ContextualFieldReference
+  validation_arg_expressions:
+    multivalued: true
+    inlined_as_list: true
+    range: ValidationExpression
+  contextual_field_reference:
+    range: ContextualFieldReference
+  dataset_label:
+  field_label:
+
+  process_state:
+  imputation_state:
+  mapping_name:
+  round_decimals:
+    range: integer
+  scale_factor:
+    range: decimal
+  field:
+    range: ObservablePropertyMetadataField
+    inlined: false
+  key:
+  value:
+    description: String representation of a measured or configured value, to be parsed according to the corresponding value type
+  metadata_fields:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservablePropertyMetadataField
+
+  stakeholders:
+    multivalued: true
+    inlined_as_list: true
+    range: Stakeholder
+  project_id_list:
+    multivalued: true
+    range: Project
+  study_id_list:
+    multivalued: true
+    range: Study
+  observation_group_id_list:
+    multivalued: true
+    range: ObservationGroup
+  observation_id_list:
+    multivalued: true
+    range: Observation
+  member_id_list:
+    multivalued: true
+    range: StudyEntity
+  sample_id_list:
+    multivalued: true
+    range: Sample
+  projects:
+    multivalued: true
+    inlined_as_list: true
+    range: Project
+  geographic_scope:
+  #project: ## unused
+  #  slot_uri: schema:ResearchProject
+  default_language:
+  stakeholder:
+    range: Stakeholder
+  project_stakeholders:
+    multivalued: true
+    inlined_as_list: true
+    range: ProjectStakeholder
+  studies:
+    multivalued: true
+    inlined_as_list: true
+    range: Study
+  project_roles:
+    multivalued: true
+    range: ProjectRole
+  study_stakeholders:
+    multivalued: true
+    inlined_as_list: true
+    range: StudyStakeholder
+  research_population_type:
+    range: ResearchPopulationType
+  study_roles:
+    multivalued: true
+    range: StudyRole
+  observation_groups:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservationGroup
+  observations:
+    multivalued: true
+    inlined_as_list: true
+    range: Observation
+  derived_observations:
+    multivalued: true
+    inlined_as_list: true
+    range: DerivedObservation
+  linktype:
+    range: LinkType
+  physical_entities:
+    multivalued: true
+    inlined_as_list: true
+    range: PhysicalEntity
+  physical_entity_links:
+    multivalued: true
+    inlined_as_list: true
+    range: PhysicalEntityLink
+  physical_entity:
+    range: PhysicalEntity
+    inlined: false
+  study_entities:
+    multivalued: true
+    inlined_as_list: true
+    range: StudyEntity
+  study_entity_id_list:
+    multivalued: true
+    range: StudyEntity
+  study_entity_links:
+    multivalued: true
+    inlined_as_list: true
+    range: StudyEntityLink
+  study_entity:
+    range: StudyEntity
+    inlined: false
+  recruited_in_project:
+    range: Project
+    inlined: false
+  sampled_in_project:
+    range: Project
+    inlined: false
+  physical_label:
+  location:
+  observation:
+    range: Observation
+    inlined: false
+  observation_type:
+    range: ObservationType
+  observation_design:
+    range: ObservationDesign
+    inlined: false
+  observation_designs:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservationDesign
+  observation_design_id_list:
+    multivalued: true
+    range: ObservationDesign
+  observation_result_type:
+    range: ObservationResultType
+  observable_property_specifications:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservablePropertySpecification
+  specification_category:
+    range: ObservablePropertySpecificationCategory
+  observation_results:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservationResult
+  observation_result_id_list:
+    multivalued: true
+    range: ObservationResult
+  observable_entity_type:
+    range: ObservableEntityType
+  observable_entity_id_list:
+    multivalued: true
+    range: StudyEntity
+  observable_entity:
+    range: StudyEntity
+  observable_properties:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservableProperty
+  observable_property:
+    range: ObservableProperty
+    inlined: false
+  observed_values:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservedValue
+  unit:
+    slot_uri: qudt:hasUnit
+    range: QUDTUnit
+    annotations:
+      rdf_type: qudt:Unit
+  raw_value:
+  raw_unit:
+    range: QUDTUnit
+    annotations:
+      rdf_type: qudt:Unit
+  imputed_value:
+  imputed_unit:
+    range: QUDTUnit
+    annotations:
+      rdf_type: qudt:Unit
+  normalised_value:
+  normalised_unit:
+    range: QUDTUnit
+    annotations:
+      rdf_type: qudt:Unit
+  value_as_string:
+  quality_data:
+    multivalued: true
+    inlined_as_list: true
+    range: QualityData
+  quality_context_key:
+  quality_value:
+  provenance_data:
+    multivalued: true
+    inlined_as_list: true
+    range: ProvenanceData
+  provenance_context_key:
+  provenance_value:
+  
+  layout:
+    range: DataLayout
+    inlined: false
+  layouts:
+    multivalued: true
+    inlined_as_list: true
+    range: DataLayout
+  section:
+    range: DataLayoutSection
+    inlined: false
+  sections:
+    multivalued: true
+    inlined_as_list: true
+    range: DataLayoutSection
+  section_type:
+    range: DataLayoutSectionType
+  elements:
+    multivalued: true
+    inlined_as_list: true
+    range: DataLayoutElement
+  element_type:
+    range: DataLayoutElementType
+  element_style:
+    range: DataLayoutElementStyle
+  is_observable_entity_key:
+    range: boolean
+  foreign_key_link:
+    range: DataLayoutElementLink
+  import_configs:
+    multivalued: true
+    inlined_as_list: true
+    range: DataImportConfig
+  section_mapping:
+    range: DataImportSectionMapping
+  section_mapping_links:
+    multivalued: true
+    inlined_as_list: true
+    range: DataImportSectionMappingLink
+
+  data_requests:
+    multivalued: true
+    inlined_as_list: true
+    range: DataRequest
+
+  data_roles:
+    multivalued: true
+    range: DataRole
+  contacts:
+    multivalued: true
+    inlined_as_list: true
+    range: Contact
+  contact_roles:
+    multivalued: true
+    range: ContactRole
+  contact_email:
+  contact_phone:
+  request_properties:
+  data_stakeholders:
+    multivalued: true
+    range: DataStakeholder
+  research_objectives:
+    multivalued: true
+    range: ResearchObjective
+  processing_actions:
+    multivalued: true
+    range: ProcessingAction
+  processing_steps:
+    multivalued: true
+    range: ProcessingStep
+  remark_on_content:
+  remark_on_methodology:
+  observed_entity_properties:
+    multivalued: true
+    range: ObservedEntityProperty
+  processing_description:
+  objective_type:
+    range: ObjectiveType
+  authors:
+    multivalued: true
+  start_date:
+    range: date
+  end_date:
+    range: date
+  delivery_date:
+    range: date
+  observation_start_date:
+    range: date
+  observation_end_date:
+    range: date
+  collection_date:
+    range: date
+
+enums:
+  ValidationStatus:
+    permissible_values:
+      unvalidated:
+      in_progress:
+      validated:
+      deprecated:
+  ValidationCommand:
+    permissible_values:
+      is_equal_to:
+      is_equal_to_or_both_missing:
+      is_greater_than_or_equal_to:
+      is_greater_than:
+      is_less_than_or_equal_to:
+      is_less_than:
+      is_not_equal_to:
+      is_not_equal_to_and_not_both_missing:
+      is_unique:
+      is_duplicated:
+      is_in:
+      is_null:
+      is_not_null:
+      conjunction:
+      disjunction:
+  ValidationErrorLevel:
+    permissible_values:
+      info:
+      warning:
+      error:
+      fatal:
+  DataLayoutElementStyle:
+    permissible_values:
+      standard:
+      main_title:
+      section_title:
+      sub_title:
+      comment:
+      warning:
+      alert:
+  # Types
+  IndicatorType:
+    permissible_values:
+      effectmarker:
+      exposuremarker:
+      geomarker:
+      observation:
+  ResearchPopulationType:
+    permissible_values:
+      general_population:
+      person:
+      newborn:
+      adolescent:
+      mother:
+      parent:
+      pregnant_person:
+      household:
+  ObservableEntityType:
+    permissible_values:
+      project:
+        exact_mappings:
+        - schema:Project
+        - wikidata:Q170584
+      organisation:
+        exact_mappings:
+        - schema:Organization
+        - wikidata:Q43229
+      study:
+        exact_mappings:
+        - schema:study
+        - wikidata:Q124222085 #scientific study
+      environment:
+        exact_mappings:
+        - wikidata:Q2249676
+      location:
+        exact_mappings:
+        - schema:location
+        - wikidata:Q2221906 #geographic location
+      persongroup:
+        exact_mappings:
+        - wikidata:Q134601727
+        broad_mappings:
+        - schema:Collection
+        - wikidata:Q2668072
+      person:
+        exact_mappings:
+        - schema:Person
+        - wikidata:Q215627
+      samplegroup:
+        broad_mappings:
+        - schema:Collection
+        - wikidata:Q2668072
+      sample:
+        exact_mappings:
+        - wikidata:Q485146
+      dataset:
+        exact_mappings:
+        - schema:Dataset
+        - wikidata:Q1172284
+      collection_process:
+        exact_mappings:
+        - wikidata:Q104595226 #sample collection
+      lab_analysis_process:
+        exact_mappings:
+        - wikidata:Q9150363 #chemical analysis
+      model_execution_process:
+        exact_mappings:
+        - wikidata:Q1077724 #execution
+      data_process:
+        exact_mappings:
+        - wikidata:Q6661985 #data processing
+  ObservationType:
+    permissible_values:
+      sampling:
+      questionnaire:
+      fieldwork:
+      geospatial:
+      metadata:
+  ObservablePropertySpecificationCategory:
+    permissible_values:
+      identifying:
+        description: Used to uniquely identify the ObservableEntity
+      required:
+        description: Must be provided for the observation to be valid
+      optional:
+        description: May be provided but not required
+      derived:
+        description: Is calculated from other ObservableProperties
+  ObservationResultType:
+    permissible_values:
+      measurement:
+      control:
+      calculation:
+      simulation:
+  DataLayoutSectionType:
+    permissible_values:
+      data_form:
+      data_table:
+      property_table:
+  DataLayoutElementType:
+    permissible_values:
+      text:
+      spacer:
+      data_field:
+  ObjectiveType:
+    permissible_values:
+      research_objective:
+      project_result:
+      publication:
+  LinkType:
+    permissible_values:
+      is_about:
+      is_same_as:
+      is_part_of:
+      is_located_at:
+  # Roles
+  ContactRole:
+    permissible_values:
+      administrative:
+      data:
+      general:
+      lead:
+      legal:
+      technical:
+  ProjectRole:
+    permissible_values:
+      member:
+      partner:
+      funding_partner:
+      principal_investigator:
+      data_governance:
+      data_controller:
+      data_processor:
+      data_user:
+      lab:
+  StudyRole:
+    permissible_values:
+      funding_partner:
+      principal_investigator:
+      data_controller:
+      data_processor:
+      data_user:
+      lab:
+  DataRole:
+    permissible_values:
+      main_stakeholder:
+      supplying_data_controller:
+      receiving_data_controller:
+      external_data_controller:

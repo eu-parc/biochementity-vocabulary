@@ -1,0 +1,13 @@
+[project]
+name = "biochementity-vocabulary"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pubmate",
+    "linkml",
+]
+
+[tool.uv.sources]
+pubmate = { git = "https://github.com/eu-parc/pubmate.git", tag = "v0.0.1a4" }

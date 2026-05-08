@@ -1,0 +1,121 @@
+biochementities:
+- id: https://w3id.org/peh/BE-7e265bfda1
+  name: 2-(2-methoxyethoxy)acetic acid
+  short_name: MEAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d2fc6259e9|https://w3id.org/peh/BE-71058d448e
+  translations_name_nl_be: 2-(2-methoxyethoxy)azijnzuur
+  exact_matches:
+  - INCHIKEY:CLLLODNOQBVIMS-UHFFFAOYSA-N|PUBCHEM:27642|CAS:16024-56-9
+  aliases:
+  - (2-Methoxyethoxy)acetic
+  - acid
+  varname: meaa
+- id: https://w3id.org/peh/BE-cd280a85ef
+  name: 2-butoxyacetic acid
+  short_name: BAA
+  compoundgroups:
+  - "Glycol ethers"
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-baa2725345|https://w3id.org/peh/BE-b79179d3f5|https://w3id.org/peh/BE-c04f597186
+  translations_name_nl_be: 2-butoxyazijnzuur
+  exact_matches:
+  - CHEBI:173542|CAS:2516-93-0|PUBCHEM:41958|INCHIKEY:AJQOASGWDCBKCJ-UHFFFAOYSA-N
+  aliases:
+  - Butoxyacetic
+  - acid
+  varname: baac
+- id: https://w3id.org/peh/BE-0c0cac86cf
+  name: 2-ethoxyacetic acid
+  short_name: EAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-50ac96755a|https://w3id.org/peh/BE-b2d3899435|https://w3id.org/peh/BE-58c26eef1f|https://w3id.org/peh/BE-764622386d|https://w3id.org/peh/BE-104717eaee
+  translations_name_nl_be: 2-ethoxyazijnzuur
+  exact_matches:
+  - CHEBI:173365|CAS:627-03-2|PUBCHEM:12301|INCHIKEY:YZGQDNOIGFBYKF-UHFFFAOYSA-N
+  aliases:
+  - Ethoxyacetic
+  - acid
+  varname: eaa
+- id: https://w3id.org/peh/BE-cc2464bb73
+  name: 2-methoxyacetic acid
+  short_name: MAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cd063cf309|https://w3id.org/peh/BE-77e6d24101|https://w3id.org/peh/BE-d2fc6259e9|https://w3id.org/peh/BE-71058d448e|https://w3id.org/peh/BE-b6ce6ae047|https://w3id.org/peh/BE-38ed851d16
+  translations_name_nl_be: 2-methoxyazijnzuur
+  exact_matches:
+  - CHEBI:132098|CAS:625-45-6|PUBCHEM:12251|INCHIKEY:RMIODHQZRUFFFF-UHFFFAOYSA-N
+  aliases:
+  - Methoxyacetic
+  - Acid
+  varname: maa
+- id: https://w3id.org/peh/BE-9733cfc1fc
+  name: 2-phenoxyacetic acid
+  short_name: PhAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e6bc9a1d56
+  translations_name_nl_be: 2-fenoxyazijnzuur
+  exact_matches:
+  - CHEBI:8075|CAS:122-59-8|PUBCHEM:19188|INCHIKEY:LCPDWSOZIOUXRV-UHFFFAOYSA-N
+  aliases:
+  - Phenoxyacetic
+  - Acid
+  varname: phaa
+- id: https://w3id.org/peh/BE-8ff944a148
+  name: 2-propoxyacetic acid
+  short_name: PAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cae62f7bd4
+  translations_name_nl_be: 2-propoxyazijnzuur
+  exact_matches:
+  - INCHIKEY:SGUYGLMQEOSQTH-UHFFFAOYSA-N|PUBCHEM:100383|CAS:54497-00-6
+  varname: paa
+- id: https://w3id.org/peh/BE-eb27dc6b28
+  name: Ethoxyethoxyacetic acid
+  short_name: EEAA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-58c26eef1f
+  translations_name_nl_be: Ethoxyethoxyazijnzuur
+  exact_matches:
+  - CHEBI:131424|CAS:7743-94-4|PUBCHEM:192850|INCHIKEY:LVLQKFRSMSHJIE-UHFFFAOYSA-N
+  aliases:
+  - 2-(2-Ethoxyethoxy)acetic
+  - acid
+  varname: eeaa
+- id: https://w3id.org/peh/BE-6cb4dc0831
+  name: Methoxyproprionic acid
+  short_name: MPA
+  compoundgroups:
+  - "Glycol ethers"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e781452263
+  translations_name_nl_be: Methoxypropionzuur
+  comments: '* I do not find this anywhere'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: mpa
+- id: https://w3id.org/peh/BE-6699c81fb5
+  name: Benz[a]anthracene
+  short_name: BaA
+  compoundgroups:
+  - "Glycol ethers"
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6699c81fb5
+  translations_name_nl_be: Benz[a]antraceen
+  translations_short_name_nl_be: BaA
+  exact_matches:
+  - CHEBI:51348|PUBCHEM:5954|INCHIKEY:DXBHBZVCASKNBY-UHFFFAOYSA-N|CAS:56-55-3
+  varname: baa

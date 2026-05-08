@@ -1,0 +1,176 @@
+biochementities:
+- id: https://w3id.org/peh/BE-a8b1a4dbdf
+  short_name: CD3+CD8+ (T8 suppressor) cells
+  name: CD3+CD8+ (T8 suppressor) cells
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cytotoxische T lymfocyten
+  aliases:
+  - cd8plus
+  - T8 suppressor cells
+  - Cytotoxic T lymphocytes
+  - CD8+ T lymphocytes
+  exact_matches: 
+  - LOINC:LP445144-1
+  - MESH:D013602 
+- id: https://w3id.org/peh/BE-dfe0b5b032
+  short_name: CD3+CD4+ (T4 helper) cells
+  name: CD3+CD4+ (T4 helper) cells
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: T helper lymfocyten
+  aliases:
+  - cd4plus
+  - CD4+ T lymphocyte
+  - T helper lymphocytes
+  - T4 helper cells
+  exact_matches:
+  - LOINC:LP14441-7
+  - MESH:D006377
+- id: https://w3id.org/peh/BE-eabd346728
+  short_name: Basophils
+  name: Basophils
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Basofielen
+  aliases:
+  - baso
+  - White blood cell differentiation: Basophils 
+  - Leukocytes differential count: Basophils 
+  - Leukocytes differential count: Basophil granulocytes
+  exact_matches:
+  - MESH:D001491
+  - LOINC:LP14328-6
+- id: https://w3id.org/peh/BE-b2e8cbb25d
+  short_name: Eosino
+  name: Eosinophils
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Eosinofielen
+  aliases:
+  - eosino
+  - White blood cell differentiation: Eosinophils 
+  - Leukocytes differential count: Eosinophils
+  - Leukocytes differential count: Eosinophil granulocytes
+  exact_matches:
+  - MESH:D004804
+  - LOINC:LP14539-8
+- id: https://w3id.org/peh/BE-d1ba76b44e
+  short_name: RBC
+  name: Erythrocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Erytrocyten
+  aliases:
+  - eryth
+  - Red Blood Cells
+  - RBC
+  exact_matches:
+  - LOINC:LP14304-7
+  - MESH:D004912
+- id: https://w3id.org/peh/BE-6b56ea3026
+  short_name: CD19+
+  name: CD19 cells
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: CD19 cellen
+  exact_matches:
+  - LOINC:LP17749-0
+- id: https://w3id.org/peh/BE-6afb9ecec3
+  short_name: Leuko
+  name: Leukocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Leukocyten
+  exact_matches:
+  - LOINC:LP14419-3
+  aliases: 
+  - White blood cells
+- id: https://w3id.org/peh/BE-5064d77e91
+  short_name: Lympho
+  name: Lymphocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Lymfocyten
+  exact_matches:
+  - LOINC:LP14540-6
+- id: https://w3id.org/peh/BE-79bfae9e18
+  short_name: Monocy
+  name: Monocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Monocyten
+  exact_matches:
+  - LOINC:LP14313-8
+- id: https://w3id.org/peh/BE-32716fdc1e
+  short_name: CD3-CD16+CD56+ 
+  name: Natural killer cells
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Natural killer cellen
+  exact_matches:
+  - LOINC:LP17742-5
+- id: https://w3id.org/peh/BE-f01d92b548
+  short_name: Neutro
+  name: Segmented neutrophils
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: gesegmenteerde neutrofielen
+  exact_matches:
+  - LOINC:LP29151-5
+- id: https://w3id.org/peh/BE-b9a985ada1
+  short_name: Reticulocytes
+  name: Reticulocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Reticulocyten
+  exact_matches:
+  - LOINC:LP16487-8
+- id: https://w3id.org/peh/BE-8a467bb50e
+  short_name: Segmented neutrophils
+  name: Segmented neutrophils
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Gesegmenteerde neutrofielen
+  exact_matches:
+  - LOINC:LP428136-8
+- id: https://w3id.org/peh/BE-208c5a9325
+  short_name: CD3+
+  name: CD3 cells
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value:  CD3 cellen
+  exact_matches:
+  - LOINC:LP14442-5
+  aliases:
+  - T cells
+- id: https://w3id.org/peh/BE-156dcdc091
+  short_name: Thrombo
+  name: Thrombocytes
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Trombocyten
+  exact_matches:
+  - LOINC:LP14597-6
+  aliases:
+  - Platelets
+- id: ## to be provided; indicator die afgeled wordt --> Number of micronuclei per 1000 binucleated cells; Number of scored cells in the micronucleus assay
+  short_name: micronucleus
+  name: micronucleus
+  exact_matches:
+  - GO:0031040

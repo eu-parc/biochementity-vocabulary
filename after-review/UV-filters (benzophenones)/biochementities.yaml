@@ -1,0 +1,227 @@
+biochementities:
+- id: https://w3id.org/peh/BE-2835f7b907
+  name: 2,3,4 trihydroxybenzophenone
+  short_name: THB
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-96d4cdff8e
+  translations_name_nl_be: 2,3,4 trihydroxybenzofenon
+  exact_matches:
+  - CHEBI:176813|CAS:1143-72-2|PUBCHEM:70837|INCHIKEY:HTQNYBBTZSBWKL-UHFFFAOYSA-N
+  aliases:
+  - alizarin
+  - yellow
+  - A
+  varname: thb
+- id: https://w3id.org/peh/BE-2bd60f44db
+  name: 2,4-dihydroxybenzophenone
+  short_name: DHB
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-1d33716ea1
+  translations_name_nl_be: 2,4-dihydroxybenzofenon
+  varname: dhb
+- id: https://w3id.org/peh/BE-b4df89f991
+  name: 2-Ethylhexyl 4-(dimethylamino)benzoate
+  short_name: 2-Ethylhexyl 4-(dimethylamino)benzoate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: Octyl dimethyl PABA
+  translations_short_name_nl_be: DABI
+  exact_matches:
+  - CHEBI:135932|CAS:21245-02-3|PUBCHEM:30541|INCHIKEY:WYWZRNAHINYAEF-UHFFFAOYSA-N
+  aliases:
+  - padimate-O
+  varname: dabi
+- id: https://w3id.org/peh/BE-80d84ddde6
+  name: 3-benzylidene camphor
+  short_name: 3-benzylidene camphor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: 3-benzylidene camfor
+  translations_short_name_nl_be: 3-BC
+  exact_matches:
+  - INCHIKEY:OIQXFRANQVWXJF-ACCUITESSA-N|PUBCHEM:5901612|CAS:15087-24-8|CAS:36275-29-3
+  varname: threebc
+- id: https://w3id.org/peh/BE-4da419e712
+  name: 4-hydroxy-benzophenone
+  short_name: 4OH-BP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-4da419e712
+  translations_name_nl_be: 4-hydroxybenzofenon
+  exact_matches:
+  - CHEBI:34421|CAS:1137-42-4|PUBCHEM:14347|INCHIKEY:NPFYZDNDJHZQKY-UHFFFAOYSA-N
+  varname: fourhbp
+- id: https://w3id.org/peh/BE-6e137790dc
+  name: 4-methyl-benzophenone
+  short_name: 4-MBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-6e137790dc
+  translations_name_nl_be: 4-methyl-benzofenon
+  exact_matches:
+  - INCHIKEY:WXPWZZHELZEVPO-UHFFFAOYSA-N|PUBCHEM:8652|CAS:134-84-9
+  varname: fourmbp
+- id: https://w3id.org/peh/BE-819dcc44c6
+  name: 4-methylbenzylidene camphor
+  short_name: 4-methylbenzylidene camphor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: 4-methylbenzylidene camfor
+  translations_short_name_nl_be: 4-MBC
+  exact_matches:
+  - CHEBI:135937|CAS:36861-47-9|CAS:1782069-81-1|PUBCHEM:6434217|INCHIKEY:HEOCBCNFKCOKBX-SDNWHVSQSA-N
+  aliases:
+  - Enzacamene
+  varname: enzacamene
+- id: https://w3id.org/peh/BE-96d4cdff8e
+  name: Benzophenone
+  short_name: BP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-96d4cdff8e
+  translations_name_nl_be: Benzofenon
+  exact_matches:
+  - CHEBI:41308|PUBCHEM:3102|INCHIKEY:RWCCWEUUXYIKHB-UHFFFAOYSA-N|CAS:119-61-9
+  varname: bp
+- id: https://w3id.org/peh/BE-b83a156631
+  name: Benzophenone 1
+  short_name: BP-1
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-b83a156631|https://w3id.org/peh/BE-1d33716ea1
+  translations_name_nl_be: Benzofenon 1
+  translations_short_name_nl_be: BP-1
+  exact_matches:
+  - CHEBI:34240|CAS:131-56-6|INCHIKEY:ZXDDPOHVAMWLBH-UHFFFAOYSA-N|PUBCHEM:8572
+  aliases:
+  - 2,4-Dihydroxybenzophenone
+  comments: 'The CAS and CHEBI in our DB direct me to this pubchem compound. https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Dihydroxybenzophenone
+
+    Also, from this EC doc (https://health.ec.europa.eu/publications/sccs-opinion-benzophenone-1-cas-no-131-56-6-ec-no-205-029-4_en#:~:text=The%20SCCS%20consider%20Benzophenone%2D1%20safe%20when%20used,up%20to%20a%20maximum%20concentration%20of%202%25.)
+    --> but please double check that this is correct'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: bpone
+- id: https://w3id.org/peh/BE-e65f135c61
+  name: Benzophenone 2
+  short_name: BP-2
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-e65f135c61
+  translations_name_nl_be: Benzofenon 2
+  translations_short_name_nl_be: BP-2
+  exact_matches:
+  - INCHIKEY:WXNRYSGJLQFHBR-UHFFFAOYSA-N|PUBCHEM:8571|CAS:131-55-5
+  aliases:
+  - 2,2',4,4'-Tetrahydroxybenzophenone
+  comments: According to this ECHA doc (https://health.ec.europa.eu/latest-updates/sccs-preliminary-opinion-benzophenone-2-bp-2-and-benzophenone-5-bp-5-deadline-comments-17-june-2025-2025-04-22_en)
+    BP-2 corresponds to compound https://pubchem.ncbi.nlm.nih.gov/compound/2_2_4_4_-Tetrahydroxybenzophenone.
+    I have added all information accordingly but please double check that it is correct!
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: bptwo
+- id: https://w3id.org/peh/BE-1d33716ea1
+  name: Benzophenone 3
+  short_name: BP-3
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-1d33716ea1
+  translations_name_nl_be: Benzofenon 3
+  translations_short_name_nl_be: BP-3
+  exact_matches:
+  - CHEBI:34283|CAS:131-57-7|PUBCHEM:4632|INCHIKEY:DXGLGDHPHMLXJC-UHFFFAOYSA-N
+  aliases:
+  - 2-Hydroxy-4-methoxybenzophenone
+  varname: bpthree
+- id: https://w3id.org/peh/BE-f73c422f8c
+  name: Benzophenone 4
+  short_name: BP-4
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-f73c422f8c
+  translations_name_nl_be: Benzofenon 4
+  translations_short_name_nl_be: BP-4
+  exact_matches:
+  - CHEBI:135312|CAS:4065-45-6|PUBCHEM:19988|INCHIKEY:CXVGEDCSTKKODG-UHFFFAOYSA-N
+  aliases:
+  - Sulisobenzone
+  varname: bpfour
+- id: https://w3id.org/peh/BE-1a17edee80
+  name: Benzophenone 6
+  short_name: BP-6
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-1a17edee80
+  translations_name_nl_be: Benzofenon 6
+  translations_short_name_nl_be: BP-6
+  exact_matches:
+  - INCHIKEY:SODJJEXAWOSSON-UHFFFAOYSA-N|PUBCHEM:8570|CAS:131-54-4|CHEBI:229993
+  varname: bpsix
+- id: https://w3id.org/peh/BE-b2d01864e2
+  name: Benzophenone 7
+  short_name: BP-7
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-b2d01864e2
+  translations_name_nl_be: Benzofenon 7
+  translations_short_name_nl_be: BP-7
+  exact_matches:
+  - INCHIKEY:OMWSZDODENFLSV-UHFFFAOYSA-N|CAS:85-19-8
+  varname: bpseven
+- id: https://w3id.org/peh/BE-5e0484e089
+  name: Benzophenone 8
+  short_name: BP-8
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  parent_compounds:
+  - https://w3id.org/peh/BE-1d33716ea1
+  translations_name_nl_be: Benzofenon 8
+  translations_short_name_nl_be: BP-8
+  exact_matches:
+  - 'CHEBI:'
+  - 34208|PUBCHEM:8569|INCHIKEY:MEZZCSHVIGVWFI-UHFFFAOYSA-N|CAS:131-53-3
+  source: 2,2'-Dihydroxy-4-methoxybenzophenone
+  varname: dhmb
+- id: https://w3id.org/peh/BE-f98e90d185
+  name: Homosalate
+  short_name: Homosalate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: Homosalate
+  translations_short_name_nl_be: HMS
+  exact_matches:
+  - CHEBI:91642|CAS:118-56-9|PUBCHEM:8362|INCHIKEY:WSSJONWNBBTCMG-UHFFFAOYSA-N
+  varname: hosa
+- id: https://w3id.org/peh/BE-a3690c90a0
+  name: Isoamyl p-methoxycinnamate
+  short_name: Isoamyl p-methoxycinnamate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: Isoamyl p-methoxycinnamaat
+  translations_short_name_nl_be: IMZ
+  exact_matches:
+  - CHEBI:135982|CAS:71617-10-2|PUBCHEM:92386|INCHIKEY:UBNYRXMKIIGMKK-UHFFFAOYSA-N
+  varname: imz
+- id: https://w3id.org/peh/BE-a4a3369787
+  name: Octyl methoxycinnamate
+  short_name: Octyl methoxycinnamate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  translations_name_nl_be: Octyl methoxycinnamaat
+  translations_short_name_nl_be: OMC
+  exact_matches:
+  - CHEBI:88667|CHEBI:134750|PUBCHEM:5355130|INCHIKEY:YBGZDTIWKVFICR-JLHYYAGUSA-N
+  aliases:
+  - Octinoxate
+  varname: omc

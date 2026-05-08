@@ -1,0 +1,42 @@
+biochementities:
+- id: https://w3id.org/peh/BE-0396bdbbf3
+  name: 2,3,5,6-tetrabromo-p-xylene
+  short_name: TBX
+  compoundgroups:
+  - "Flame retardants"
+  - "Volatile Organic Compounds (VOCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-0396bdbbf3
+  translations_name_nl_be: 2,3,5,6-tetrabroom-p-xyleen
+  exact_matches:
+  - INCHIKEY:RXKOKVQKECXYOT-UHFFFAOYSA-N|PUBCHEM:31952|CAS:23488-38-2
+  aliases:
+  - Benzene,
+  - 1,2,4,5-tetrabromo-3,6-dimethyl-
+  varname: tbx
+- id: https://w3id.org/peh/BE-b33a87a4d2
+  name: Mercapturic acid
+  short_name: Mercapturic acid
+  compoundgroups:
+  - "Volatile Organic Compounds (VOCs)"
+  translations_name_nl_be: Mercaptuurzuur
+  exact_matches:
+  - CHEBI:28939,
+  - CHEBI:22198
+  comments: "CHEBI keys in our DB refer to N-acetyl-L-cysteine https://www.ebi.ac.uk/chebi/CHEBI:28939.\
+    \ I think it's not 100% correct? \nAccording to this article https://pubmed.ncbi.nlm.nih.gov/31944156/#:~:text=Mercapturic%20acids%20(N%2Dacetyl%2D,%2Dconjugates%2C%20and%20mercapturic%20acids;\
+    \ --> there is not a single  Mercapturic acid so I don't think we can link this\
+    \ to a key? Is this a sum parameter?"
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: ma
+- id: https://w3id.org/peh/BE-c790960115
+  name: T,t-muconic acid
+  short_name: T,t-muconic acid
+  compoundgroups:
+  - "Volatile Organic Compounds (VOCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-0981a60c78
+  translations_name_nl_be: T,t’-muconzuur
+  exact_matches:
+  - CHEBI:38407|CAS:3588-17-8|PUBCHEM:5356793|INCHIKEY:TXXHDPDFNKHHGW-ZPUQHVIOSA-N|CAS:505-70-4
+  varname: ttmca

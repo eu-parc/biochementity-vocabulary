@@ -1,0 +1,11 @@
+biochementities:
+- id: https://w3id.org/peh/BE-9f1664dccf
+  name: Cotinine
+  short_name: Cotinine
+  compoundgroups:
+  - "Alkaloid"
+  translations_name_nl_be: Cotinine
+  translations_short_name_nl_be: Cotinine
+  exact_matches:
+  - CHEBI:68641|CAS:486-56-6|PUBCHEM:854019|INCHIKEY:UIKROCXWUNQSPJ-VIFPVBQESA-N
+  varname: cot

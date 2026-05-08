@@ -1,0 +1,778 @@
+biochementities:
+- id: https://w3id.org/peh/BE-cd280a85ef
+  name: 2-butoxyacetic acid
+  short_name: BAA
+  compoundgroups:
+  - "Glycol ethers"
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-baa2725345|https://w3id.org/peh/BE-b79179d3f5|https://w3id.org/peh/BE-c04f597186
+  translations_name_nl_be: 2-butoxyazijnzuur
+  exact_matches:
+  - CHEBI:173542|CAS:2516-93-0|PUBCHEM:41958|INCHIKEY:AJQOASGWDCBKCJ-UHFFFAOYSA-N
+  aliases:
+  - Butoxyacetic
+  - acid
+  varname: baac
+- id: https://w3id.org/peh/BE-e8001cfbae
+  name: 1,2-DHP
+  short_name: 1,2-DHP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: 1,2-DHP
+  comments: '?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: onetwodhp
+- id: https://w3id.org/peh/BE-6a456b9b40
+  name: 1,2-Dihydrophenanthrene-1,2-diol
+  short_name: 1,2-DiPHEdiol
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 1,2-dihydrofenantreen-1,2-diol
+  exact_matches:
+  - 'CHEBI:37475|INCHIKEY:'
+  - FZOALBNXOKAOEW-UHFFFAOYSA-N
+  varname: dihphediol
+- id: https://w3id.org/peh/BE-c530c3b9f9
+  name: 1-,2-dihydroxynaphthalene
+  short_name: 1,2-NAPH
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 1-,2-dihydroxynaftaleen
+  exact_matches:
+  - INCHIKEY:NXPPAOGUKPJVDI-UHFFFAOYSA-N|PUBCHEM:11318|CAS:574-00-5|CHEBI:17435
+  varname: diohnap
+- id: https://w3id.org/peh/BE-119240f401
+  name: 1,2-Dihydroxyphenanthrene
+  short_name: 1,2-DHPbis
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 1,2-Dihydroxyfenantreen
+  exact_matches:
+  - CHEBI:37452|PUBCHEM:9543118|INCHIKEY:HNMUTKMLCMUDSB-UHFFFAOYSA-N|CAS:19551-04-3
+  varname: onetwohphe
+- id: https://w3id.org/peh/BE-e4ad93fddd
+  name: 1-hydroxybenz[a]anthracene
+  short_name: 1-BaA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6699c81fb5
+  translations_name_nl_be: 1-hydroxybenz[a]antraceen
+  exact_matches:
+  - CHEBI:132369|CAS:69847-26-3|INCHIKEY:PBPCCBLJHAAYFD-UHFFFAOYSA-N|PUBCHEM:135458
+  varname: hbaa
+- id: https://w3id.org/peh/BE-8d4d7019cc
+  name: 3-hydroxybenz[a]anthracene
+  short_name: 3-BaA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6699c81fb5
+  translations_name_nl_be: 3-hydroxybenz[a]antraceen
+  exact_matches:
+  - INCHIKEY:MRRWKFVZIOCJBS-UHFFFAOYSA-N|PUBCHEM:115265|CAS:4834-35-9
+  varname: hbaa3
+- id: https://w3id.org/peh/BE-11f614c530
+  name: 9-hydroxybenz[a]anthracene
+  short_name: 9-BaA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6699c81fb5
+  translations_name_nl_be: 9-hydroxybenz[a]antraceen
+  exact_matches:
+  - INCHIKEY:RSPOTBWXQUBAQH-UHFFFAOYSA-N|CAS:34570-62-2
+  comments: I don't think the INCHIKEY is correct. I don't find online an INCHIKEY
+    Associated with this compound
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: hbaa9
+- id: https://w3id.org/peh/BE-6de2d63587
+  name: 1-hydroxychrysene
+  short_name: 1-CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-a56aaf8752
+  translations_name_nl_be: 1-hydroxychryseen
+  exact_matches:
+  - CHEBI:132391|CAS:63019-38-5|PUBCHEM:44284|INCHIKEY:ISHBWEUQYFEVES-UHFFFAOYSA-N
+  aliases:
+  - 1-Chrysenol
+  varname: onehcry
+- id: https://w3id.org/peh/BE-c4fcfc8d3f
+  name: 1-hydroxynaphthalene
+  short_name: 1-NAPH
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 1-hydroxynaphthaleen
+  translations_short_name_nl_be: 1-naphtol
+  exact_matches:
+  - CHEBI:10319|CAS:90-15-3|CAS:1321-67-1|PUBCHEM:7005|INCHIKEY:KJCVRFUGPWSIIH-UHFFFAOYSA-N
+  aliases:
+  - 1-Naphthol
+  varname: oneohnap
+- id: https://w3id.org/peh/BE-6ae5d31bea
+  name: 1-hydroxyphenanthrene
+  short_name: 1-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 1-hydroxyfenantreen
+  exact_matches:
+  - CHEBI:27528|CAS:2433-56-9|CAS:30774-95-9|PUBCHEM:98490|INCHIKEY:GTBXZWADMKOZQJ-UHFFFAOYSA-N
+  varname: onehphe
+- id: https://w3id.org/peh/BE-d68119a435
+  name: 1-hydroxypyrene
+  short_name: 1-PYR
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7136ed297b
+  translations_name_nl_be: 1-hydroxypyreen
+  translations_short_name_nl_be: 1-OH pyreen
+  exact_matches:
+  - CHEBI:34093|CAS:5315-79-7|CAS:63021-84-1|PUBCHEM:21387|INCHIKEY:BIJNHUAPTJVVNQ-UHFFFAOYSA-N
+  varname: ohpyr
+- id: https://w3id.org/peh/BE-5876e1a3e0
+  name: 1-methylnaphthalene
+  short_name: 1-MN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 1-methylnaftaleen
+  exact_matches:
+  - CHEBI:50717|CAS:90-12-0|CAS:1321-94-4|PUBCHEM:7002|INCHIKEY:QPUYECUOLPXSFR-UHFFFAOYSA-N
+  varname: mnap
+- id: https://w3id.org/peh/BE-aad9ae3e39
+  name: 1-methylphenanthrene
+  short_name: 1-MP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 1-methylfenantreen
+  exact_matches:
+  - CHEBI:35860|CAS:832-69-9|PUBCHEM:13257|INCHIKEY:DOWJXOHBNXRUOD-UHFFFAOYSA-N
+  varname: mphe
+- id: https://w3id.org/peh/BE-58416d1062
+  name: 2,3,5-trimethylnaphthalene
+  short_name: 2,3,5-TMN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 2,3,5-trimethylnaftaleen
+  exact_matches:
+  - CHEBI:89809
+  comments: 'CHEBI in our DB refers to this pubchem compound: https://pubchem.ncbi.nlm.nih.gov/compound/16732
+
+    However, the name coincides with this source: https://www.tcichemicals.com/OP/en/p/T0772
+
+    Are those the same? Which keys should we use?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: tmnap
+- id: https://w3id.org/peh/BE-cce1717df9
+  name: 2-,6-dimethylnaphthalene
+  short_name: 2-,6-DMN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 2-,6-dimethylnaftaleen
+  exact_matches:
+  - PUBCHEM:11387|INCHIKEY:YGYNBBAUIYTWBF-UHFFFAOYSA-N|CAS:581-42-0|CAS:96789-56-9|CHEBI:34251
+  varname: dmnap
+- id: https://w3id.org/peh/BE-5c5564bdb8
+  name: 2-Hydroxyanthracene
+  short_name: 2-ANT
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d9681d0586
+  translations_name_nl_be: 2-Hydroxyantraceen
+  exact_matches:
+  - PUBCHEM:99503|INCHIKEY:BQBWUVWMUXGILF-UHFFFAOYSA-N|CAS:613-14-9|CHEBI:37091
+  aliases:
+  - 2-Anthrol
+  comments: "I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503\
+    \ \nPlease expert double check"
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: ohan
+- id: https://w3id.org/peh/BE-fe88c82f92
+  name: 2-hydroxyfluorene
+  short_name: 2-FLUO
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-463f0f2df8
+  translations_name_nl_be: 2-hydroxyfluoreen
+  exact_matches:
+  - CHEBI:34289|CAS:2443-58-5|PUBCHEM:75547|INCHIKEY:ZDOIAPGLORMKTR-UHFFFAOYSA-N
+  varname: twohfluo
+- id: https://w3id.org/peh/BE-189141c5d7
+  name: 2-hydroxynaphthalene
+  short_name: 2-NAPH
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 2-hydroxynaphthaleen
+  translations_short_name_nl_be: 2-naphtol
+  exact_matches:
+  - CHEBI:10432|CAS:135-19-3|CAS:1321-67-1|PUBCHEM:8663|INCHIKEY:JWAZRIHNYRIHIV-UHFFFAOYSA-N
+  aliases:
+  - 2-Naphthol
+  varname: twoohnap
+- id: https://w3id.org/peh/BE-c533e897b1
+  name: 2-hydroxyphenanthrene
+  short_name: 2-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 2-hydroxyphenanthrene
+  exact_matches:
+  - CHEBI:19760|PUBCHEM:69061|INCHIKEY:YPWLZGITFNGGKW-UHFFFAOYSA-N|CAS:605-55-0
+  varname: twohphe
+- id: https://w3id.org/peh/BE-e7f6c89aad
+  name: 2-methylnaphthalene
+  short_name: 2-MN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: 2-methylnaftaleen
+  exact_matches:
+  - CHEBI:50720|CAS:91-57-6|CAS:7419-61-6|PUBCHEM:7055|INCHIKEY:QIMMUPPBPVKWKM-UHFFFAOYSA-N
+  varname: twomnap
+- id: https://w3id.org/peh/BE-521377746c
+  name: 3-hydroxybenzo(a)pyrene
+  short_name: 3-hydroxyBaP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ce4c35ea2c
+  translations_name_nl_be: 3-hydroxybenzo(a)pyreen
+  exact_matches:
+  - CHEBI:34337|CAS:13345-21-6|PUBCHEM:25890|INCHIKEY:SPUUWWRWIAEPDB-UHFFFAOYSA-N
+  varname: ohbap
+- id: https://w3id.org/peh/BE-d639bc9d1f
+  name: 3-hydroxybenzo[c]-phenanthrene
+  short_name: 3-BCP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4499fc0a0d
+  translations_name_nl_be: 3-hydroxybenzo[c]-fenantreen
+  exact_matches:
+  - CHEBI:132445|CAS:22717-95-9|INCHIKEY:QFFZIWXRRBPSQE-UHFFFAOYSA-N
+  - QFFZIWXRRBPSQE-UHFFFAOYSA-N
+  aliases:
+  - Benzo[c]phenanthren-3-ol
+  varname: hbcp
+- id: https://w3id.org/peh/BE-3552fcecf0
+  name: 3-Hydroxyfluoranthène
+  short_name: 3-OHFA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: 3-Hydroxyfluorantheen
+  exact_matches:
+  - INCHIKEY:PQWYZWVBXAOHOU-UHFFFAOYSA-N|PUBCHEM:176953|CAS:17798-09-3
+  aliases:
+  - Fluoranthen-3-ol
+  varname: threeohfa
+- id: https://w3id.org/peh/BE-464bc16342
+  name: 3-hydroxyfluorene
+  short_name: 3-FLUO
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-463f0f2df8
+  translations_name_nl_be: 3-hydroxyfluoreen
+  exact_matches:
+  - CHEBI:89645|PUBCHEM:96088|INCHIKEY:PVUBSZGNXLNTLX-UHFFFAOYSA-N|CAS:6344-67-8
+  varname: threehfluo
+- id: https://w3id.org/peh/BE-e6160988c9
+  name: 3-hydroxyphenanthrene
+  short_name: 3-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 3-hydroxyfenantreen
+  exact_matches:
+  - CHEBI:20184|CAS:605-87-8|PUBCHEM:95724|INCHIKEY:NGPOABOEXMDQBT-UHFFFAOYSA-N
+  aliases:
+  - 3-Phenanthrol
+  varname: threehphe
+- id: https://w3id.org/peh/BE-052ad23257
+  name: 4-hydroxyphenanthrene
+  short_name: 4-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 4-hydroxyphenanthrene
+  exact_matches:
+  - CHEBI:20469|CAS:7651-86-7|PUBCHEM:82105|INCHIKEY:SIMYIUXARJLHEA-UHFFFAOYSA-N
+  varname: fourhphe
+- id: https://w3id.org/peh/BE-80fb311e41
+  name: 5-Methylchrysene
+  short_name: 5-MCH
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: 5-Methylchryseen
+  exact_matches:
+  - CHEBI:82342|CAS:3697-24-3|PUBCHEM:19427|INCHIKEY:GOHBXWHNJHENRX-UHFFFAOYSA-N
+  varname: fivemch
+- id: https://w3id.org/peh/BE-273014cab7
+  name: 6-hydroxychrysene
+  short_name: 6-CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-a56aaf8752
+  translations_name_nl_be: 6-hydroxychryseen
+  exact_matches:
+  - CHEBI:132407|CAS:37515-51-8|PUBCHEM:37766|INCHIKEY:VXFDOYXVHRYCGS-UHFFFAOYSA-N
+  varname: sixhcry
+- id: https://w3id.org/peh/BE-13a5308d18
+  name: 7,12-Dimethylbenz(a)anthracene
+  short_name: DMBA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-13a5308d18
+  translations_name_nl_be: 7,12-Dimethylbenz(a)antraceen
+  exact_matches:
+  - CHEBI:254496|CAS:57-97-6|PUBCHEM:6001|INCHIKEY:ARSRBNBHOADGJU-UHFFFAOYSA-N
+  varname: dmba
+- id: https://w3id.org/peh/BE-f139ff0659
+  name: 9,10-Phenanthrenediol
+  short_name: 9,10-PHEdiol
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 9,10-fenantreendiol
+  exact_matches:
+  - CHEBI:20814|CAS:604-84-2|PUBCHEM:123074|INCHIKEY:ODUSUXJNDWKJKH-UHFFFAOYSA-N
+  varname: phediol
+- id: https://w3id.org/peh/BE-74c77cd76a
+  name: 9-hydroxyfluorene
+  short_name: 9-FLUO
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-463f0f2df8
+  translations_name_nl_be: 9-hydroxyfluoreen
+  exact_matches:
+  - CHEBI:16904|CAS:1689-64-1|PUBCHEM:74318|INCHIKEY:AFMVESZOYKHDBJ-UHFFFAOYSA-N
+  aliases:
+  - Fluoren-9-ol
+  varname: ninehfluo
+- id: https://w3id.org/peh/BE-f283dd644b
+  name: 9-hydroxyphenanthrene
+  short_name: 9-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: 9-hydroxyfenantreen
+  exact_matches:
+  - CHEBI:28820|CAS:484-17-3|PUBCHEM:10229|INCHIKEY:DZKIUEHLEXLYKM-UHFFFAOYSA-N
+  aliases:
+  - 9-Phenanthrol
+  varname: ninehphe
+- id: https://w3id.org/peh/BE-757f4749ae
+  name: Acenaphthene
+  short_name: ACE
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-757f4749ae
+  translations_name_nl_be: Acenafteen
+  translations_short_name_nl_be: ACE
+  exact_matches:
+  - CHEBI:22154|CAS:83-32-9|PUBCHEM:6734|INCHIKEY:CWRYPZZKDGJXCA-UHFFFAOYSA-N
+  varname: ace
+- id: https://w3id.org/peh/BE-70f06ee9bc
+  name: Acenaphthylene
+  short_name: ACY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-70f06ee9bc
+  translations_name_nl_be: Acenaftyleen
+  translations_short_name_nl_be: ACY
+  exact_matches:
+  - CHEBI:33081|CAS:208-96-8|CAS:34493-60-2|PUBCHEM:9161|INCHIKEY:HXGDTGSAIMULJN-UHFFFAOYSA-N
+  varname: acy
+- id: https://w3id.org/peh/BE-d9681d0586
+  name: Anthracene
+  short_name: AN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d9681d0586
+  translations_name_nl_be: Antraceen
+  exact_matches:
+  - CHEBI:35298|PUBCHEM:8418|INCHIKEY:MWPLVEDNUUSJAV-UHFFFAOYSA-N|CAS:120-12-7|CAS:54261-80-2
+  varname: an
+- id: https://w3id.org/peh/BE-6699c81fb5
+  name: Benz[a]anthracene
+  short_name: BaA
+  compoundgroups:
+  - "Glycol ethers"
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6699c81fb5
+  translations_name_nl_be: Benz[a]antraceen
+  translations_short_name_nl_be: BaA
+  exact_matches:
+  - CHEBI:51348|PUBCHEM:5954|INCHIKEY:DXBHBZVCASKNBY-UHFFFAOYSA-N|CAS:56-55-3
+  varname: baa
+- id: https://w3id.org/peh/BE-ce4c35ea2c
+  name: Benzo[a]pyrene
+  short_name: BaP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ce4c35ea2c
+  translations_name_nl_be: Benzo[a]pyreen
+  translations_short_name_nl_be: BaP
+  exact_matches:
+  - CHEBI:29865|CAS:50-32-8|CAS:6699-27-0|PUBCHEM:2336|INCHIKEY:FMMWHPNWAFZXNH-UHFFFAOYSA-N
+  varname: bap
+- id: https://w3id.org/peh/BE-c8186f9883
+  name: Benzo[b]fluoranthene
+  short_name: BbFA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c8186f9883
+  translations_name_nl_be: Benzo[b]fluorantheen
+  exact_matches:
+  - CHEBI:34565|CAS:205-99-2|CAS:1397206-82-4|PUBCHEM:9153|INCHIKEY:FTOVXSOBNPWTSH-UHFFFAOYSA-N
+  varname: bbfa
+- id: https://w3id.org/peh/BE-589d193f84
+  name: Benzo[c]fluorene
+  short_name: BcFL
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-589d193f84
+  translations_name_nl_be: Benzo[c]fluoreen
+  exact_matches:
+  - CHEBI:82403|CAS:205-12-9|CAS:30777-20-9|PUBCHEM:9150|INCHIKEY:FRIJWEQBTIZQMD-UHFFFAOYSA-N
+  aliases:
+  - 7H-Benzo(c)fluorene
+  varname: bcfl
+- id: https://w3id.org/peh/BE-4499fc0a0d
+  name: Benzo[c]phenanthrene
+  short_name: BcPh
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4499fc0a0d
+  translations_name_nl_be: Benzo[c]fenantreen
+  exact_matches:
+  - CHEBI:82292|CAS:195-19-7|PUBCHEM:9136|INCHIKEY:TUAHORSUHVUKBD-UHFFFAOYSA-N
+  varname: bcph
+- id: https://w3id.org/peh/BE-7e1bfa411b
+  name: Benzo[e]pyrene
+  short_name: BeP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7e1bfa411b
+  translations_name_nl_be: Benzo[e]pyreen
+  exact_matches:
+  - CHEBI:34567|CAS:192-97-2|CAS:73467-76-2|PUBCHEM:9128|INCHIKEY:TXVHTIQJNYSSKO-UHFFFAOYSA-N
+  varname: bep
+- id: https://w3id.org/peh/BE-fdc18aaa33
+  name: Benzo[g,h,i]perylene
+  short_name: BghiP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-fdc18aaa33
+  translations_name_nl_be: Benzo[g,h,i]peryleen
+  translations_short_name_nl_be: BghiP
+  exact_matches:
+  - CHEBI:34568|CAS:191-24-2|PUBCHEM:9117|INCHIKEY:GYFAGKUZYNFMBN-UHFFFAOYSA-N
+  varname: bghip
+- id: https://w3id.org/peh/BE-8ad6b4917b
+  name: Benzo[j]fluoranthene
+  short_name: BjFA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8ad6b4917b
+  translations_name_nl_be: Benzo[j]fluorantheen
+  exact_matches:
+  - CHEBI:82291|CAS:205-82-3|PUBCHEM:9152|INCHIKEY:KHNYNFUTFKJLDD-UHFFFAOYSA-N
+  varname: bjfa
+- id: https://w3id.org/peh/BE-b6e3c15b80
+  name: Benzo[k]fluoranthene
+  short_name: BkFA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-b6e3c15b80
+  translations_name_nl_be: Benzo[k]fluorantheen
+  exact_matches:
+  - CHEBI:34569|CAS:207-08-9|PUBCHEM:9158|INCHIKEY:HAXBIWFMXWRORI-UHFFFAOYSA-N
+  varname: bkfa
+- id: https://w3id.org/peh/BE-cca7e28fd2
+  name: Chrysen-2-ol
+  short_name: 2-CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Chrysen-2-ol
+  exact_matches:
+  - CHEBI:132404|CAS:65945-06-4|PUBCHEM:47782|INCHIKEY:RSBSTIBFPNNSTH-UHFFFAOYSA-N
+  aliases:
+  - 2-Hydroxychrysene
+  varname: twocry
+- id: https://w3id.org/peh/BE-3dabbdc415
+  name: Chrysen-3-ol
+  short_name: 3-CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Chrysen-3-ol
+  exact_matches:
+  - CHEBI:132405|CAS:63019-39-6|INCHIKEY:PULKTNQKGZNFNB-UHFFFAOYSA-N|PUBCHEM:44285
+  aliases:
+  - 3-Hydroxychrysene
+  varname: threecry
+- id: https://w3id.org/peh/BE-7acaafb7a6
+  name: Chrysen-4-ol
+  short_name: 4-CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Chrysen-4-ol
+  exact_matches:
+  - CHEBI:132406|CAS:63019-40-9|PUBCHEM:44286|INCHIKEY:CZCGRCFUEPALNV-UHFFFAOYSA-N
+  aliases:
+  - 4-Hydroxychrysene
+  varname: fourcry
+- id: https://w3id.org/peh/BE-a56aaf8752
+  name: Chrysene
+  short_name: CRY
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-a56aaf8752
+  translations_name_nl_be: Chryseen
+  translations_short_name_nl_be: PAK_CHR
+  exact_matches:
+  - CHEBI:51687|PUBCHEM:9171|INCHIKEY:WDECIBYCCFPHNR-UHFFFAOYSA-N|CAS:218-01-9|CAS:65777-08-4
+  varname: cry
+- id: https://w3id.org/peh/BE-4c162442ef
+  name: Cyclopenta[c,d]pyrene
+  short_name: CPP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4c162442ef
+  translations_name_nl_be: Cyclopenta[c,d]pyreen
+  exact_matches:
+  - PUBCHEM:33743|INCHIKEY:BZCXQYVNASLLQO-UHFFFAOYSA-N|CAS:27208-37-3|CHEBI:82279
+  varname: cpp
+- id: https://w3id.org/peh/BE-c680dbf538
+  name: Dibenzo[a,e]pyrene
+  short_name: DBaeP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c680dbf538
+  translations_name_nl_be: Dibenzo[a,e]pyreen
+  exact_matches:
+  - CHEBI:82442|CAS:192-65-4|PUBCHEM:9126|INCHIKEY:KGHMWBNEMFNJFZ-UHFFFAOYSA-N
+  varname: dbaep
+- id: https://w3id.org/peh/BE-152fd1a7b9
+  name: Dibenzo[a,h]anthracene
+  short_name: DBahA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-152fd1a7b9
+  translations_name_nl_be: Dibenzo[a,h]antraceen
+  translations_short_name_nl_be: PAK_DAHA
+  exact_matches:
+  - CHEBI:35299|CAS:53-70-3|PUBCHEM:5889|INCHIKEY:LHRCREOYAASXPZ-UHFFFAOYSA-N
+  varname: dbaha
+- id: https://w3id.org/peh/BE-2f2285ce6d
+  name: Dibenzo[a,i]pyrene
+  short_name: DBaiP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-2f2285ce6d
+  translations_name_nl_be: Dibenzo[a,i]pyreen
+  exact_matches:
+  - CHEBI:82314|CAS:189-55-9|PUBCHEM:9106|INCHIKEY:TUGYIJVAYAHHHM-UHFFFAOYSA-N
+  varname: dbaip
+- id: https://w3id.org/peh/BE-7b1bc2941e
+  name: Dibenzo[a,l]pyrene
+  short_name: DBalP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7b1bc2941e
+  translations_name_nl_be: Dibenzo[a,l]pyreen
+  exact_matches:
+  - CHEBI:35861|CAS:191-30-0|PUBCHEM:9119|INCHIKEY:JNTHRSHGARDABO-UHFFFAOYSA-N
+  varname: dbalp
+- id: https://w3id.org/peh/BE-f6b667b969
+  name: Fluoranthene
+  short_name: FLA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-f6b667b969
+  translations_name_nl_be: Fluorantheen
+  translations_short_name_nl_be: PAK_FLT
+  exact_matches:
+  - CHEBI:33083|CAS:206-44-0|CAS:76774-50-0|PUBCHEM:9154|INCHIKEY:GVEPBJHOBDJJJI-UHFFFAOYSA-N
+  varname: fla
+- id: https://w3id.org/peh/BE-463f0f2df8
+  name: Fluorene
+  short_name: FLUO
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-463f0f2df8
+  translations_name_nl_be: Fluoreen
+  translations_short_name_nl_be: PAK_FLU
+  exact_matches:
+  - CHEBI:28266|CAS:86-73-7|PUBCHEM:6853|INCHIKEY:NIHNNTQXNPWCJQ-UHFFFAOYSA-N
+  varname: fluo
+- id: https://w3id.org/peh/BE-a12a3079e1
+  name: Indeno[1,2,3-cd]pyrene
+  short_name: IP
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-a12a3079e1
+  translations_name_nl_be: Indeno[1,2,3-cd]pyreen
+  translations_short_name_nl_be: PAK_IP
+  exact_matches:
+  - CHEBI:82335|CAS:193-39-5|PUBCHEM:9131|INCHIKEY:SXQBHARYMNFBPS-UHFFFAOYSA-N
+  varname: ip
+- id: https://w3id.org/peh/BE-8237ef77e3
+  name: Naphthalene
+  short_name: NAPH
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8237ef77e3
+  translations_name_nl_be: Naftaleen
+  exact_matches:
+  - CHEBI:16482|CAS:91-20-3|PUBCHEM:931|INCHIKEY:UFWIBTONFRDIAS-UHFFFAOYSA-N
+  varname: naph
+- id: https://w3id.org/peh/BE-4cda9c8c72
+  name: Phenanthrene
+  short_name: PHE
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: Fenantreen
+  exact_matches:
+  - CHEBI:28851|CAS:85-01-8|PUBCHEM:995|INCHIKEY:YNPNZTXNASCQKK-UHFFFAOYSA-N
+  varname: phe
+- id: https://w3id.org/peh/BE-a4e305ae33
+  name: Phenanthrene-1,2,3,4-tetrol
+  short_name: PHE-tetrol
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4cda9c8c72
+  translations_name_nl_be: Fenantreen-1,2,3,4-tetrol
+  exact_matches:
+  - INCHIKEY:MTKRZWWQDYNZRK-UHFFFAOYSA-N|PUBCHEM:23056179
+  varname: phetetrol
+- id: https://w3id.org/peh/BE-7136ed297b
+  name: Pyrene
+  short_name: PYR
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7136ed297b
+  translations_name_nl_be: Pyreen
+  translations_short_name_nl_be: PAK_PYR
+  exact_matches:
+  - CHEBI:39106|PUBCHEM:31423|INCHIKEY:BBEAQIROQSPTKN-UHFFFAOYSA-N|CAS:129-00-0
+  varname: pyr
+- id: https://w3id.org/peh/BE-cb5dc92ef4
+  name: 2-hydroxyphenanthrene + 3-hydroxyphenanthrene
+  short_name: 2-PHEN + 3-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: 2-hydroxyphenanthrene + 3-hydroxyfenantreen
+  group_compound_members:
+  - https://w3id.org/peh/BE-c533e897b1|https://w3id.org/peh/BE-e6160988c9
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: stwothreehphe
+- id: https://w3id.org/peh/BE-d5f841e041
+  name: Measured Sum of 1- and 9-hydroxyphenanthrene
+  short_name: Measured 1+9-OH-Phenanthrene
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Gemeten Som van 1- and 9-hydroxyphenanthrene
+  translations_short_name_nl_be: Gemeten 1+9-OH-Phenanthrene
+  group_compound_members:
+  - https://w3id.org/peh/BE-6ae5d31bea|https://w3id.org/peh/BE-f283dd644b
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: oneninehphe
+- id: https://w3id.org/peh/BE-4371f3d519
+  name: Measured Sum of 2- and 3-hydroxyfluorene
+  short_name: Measured 2+3-OH-Fluorene
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Gemeten Som van 2- en 3-hydroxyfluorene
+  translations_short_name_nl_be: Gemeten 2+3-OH-Fluorene
+  group_compound_members:
+  - https://w3id.org/peh/BE-464bc16342|https://w3id.org/peh/BE-fe88c82f92
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: stwothreehfluo
+- id: https://w3id.org/peh/BE-5b0d3fafd1
+  name: Measured Sum of 1-, 2-, 3-, 4- and 9- hydroxyphenanthrenes
+  short_name: Measured 1 + 2 + 3 + 4 + 9-PHEN
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Gemeten Som van 1-, 2-, 3-, 4- en 9-hydroxyfenantreen
+  translations_short_name_nl_be: Gemeten 1 + 2 + 3 + 4 + 9-PHEN
+  group_compound_members:
+  - https://w3id.org/peh/BE-f283dd644b|https://w3id.org/peh/BE-c533e897b1|https://w3id.org/peh/BE-6ae5d31bea|https://w3id.org/peh/BE-052ad23257|https://w3id.org/peh/BE-e6160988c9
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: fivehphe
+- id: https://w3id.org/peh/BE-48f317adad
+  name: Measured Sum of 3- and 9- hydroxybenz[a]anthracene
+  short_name: Measured 3-BaA + 9-BaA
+  compoundgroups:
+  - "Polycyclic Aromatic Hydrocarbons (PAHs)"
+  translations_name_nl_be: Gemeten Som van 3- en 9-hydroxybenz[a]antraceen
+  translations_short_name_nl_be: Gemeten 3-BaA + 9-BaA
+  group_compound_members:
+  - https://w3id.org/peh/BE-11f614c530|https://w3id.org/peh/BE-8d4d7019cc
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: threeninebaa

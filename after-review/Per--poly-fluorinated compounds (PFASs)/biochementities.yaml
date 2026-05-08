@@ -1,0 +1,1150 @@
+biochementities:
+- id: https://w3id.org/peh/BE-63264f2ef3
+  name: Linear + branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
+  short_name: L+B MePFOSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt 2-(n-methylperfluorooctaansulfonamido)
+    azijnzuur
+  translations_short_name_nl_be: L+B MePFOSAA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' #  not in AS, but to me this is an indicator
+  varname: lbnmepfosaa
+- id: https://w3id.org/peh/BE-978fee0ba0
+  name: Linear + branched N-Ethylperfluoro-1-octanesulphonamide
+  short_name: L+B EtPFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt 2-(n-ethylperfluoro-octaansulfonamide)
+  translations_short_name_nl_be: L+B EtPFOSA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # not in AS, but to me this is an indicator
+  varname: lbnetpfosa
+- id: https://w3id.org/peh/BE-ffd07c9c23 # Sylvie, to me this is an indicator
+  name: Linear + branched N-ethyl-perfluorooctane sulfonamidoacetate
+  short_name: L+B EtPFOSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt 2-(n-ethylperfluorooctaansulfonamido)
+    azijnzuur
+  translations_short_name_nl_be: L+B EtPFOSAA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbetpfosaa
+- id: https://w3id.org/peh/BE-4c6875ff23
+  name: Linear + branched N-Methylperfluoro-1 octanesulphonamide
+  short_name: L+B MePFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt N-methylperfluor-n-octaansulfonamide
+  translations_short_name_nl_be: L+B MePFOSA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # not in AS; but to me this is an indicator
+  varname: lbnmepfosa
+- id: https://w3id.org/peh/BE-7edcb804fb
+  name: Linear + branched Perfluoro-1-octaperfluoro-1-octanesulphonamide
+  short_name: L+B PFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-octaansulfonamide
+  translations_short_name_nl_be: L+B PFOSA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # not in AS; but to me this is an indicator
+  varname: lbpfosa
+- id: https://w3id.org/peh/BE-ce1337f8d5
+  name: Linear + branched Perfluorobutane sulfonic acid
+  short_name: L+B PFBS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-butaansulfonzuur
+  translations_short_name_nl_be: L+B PFBS
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfbs
+- id: https://w3id.org/peh/BE-b62fb34963
+  name: Linear + branched Perfluorodecane sulfonic acid
+  short_name: L+B PFDS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-decaansulfonzuur
+  translations_short_name_nl_be: L+B PFDS
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # not in AS, but to me this is an indicator
+  varname: lbpfds
+- id: https://w3id.org/peh/BE-d6f3655454
+  name: Linear + branched Perfluorodecanoic acid
+  short_name: L+B PFDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-decaanzuur
+  translations_short_name_nl_be: L+B PFDA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfda
+- id: https://w3id.org/peh/BE-44fff4fd08
+  name: Linear + branched Perfluorododecanoic acid
+  short_name: L+B PFDoDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-dodecaanzuur
+  translations_short_name_nl_be: L+B PFDoA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfdoda
+- id: https://w3id.org/peh/BE-7d2168ffbf
+  name: Linear + branched Perfluoroheptane sulfonic acid
+  short_name: L+B PFHpS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-heptaansulfonzuur
+  translations_short_name_nl_be: L+B PFHpS
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfhps
+- id: https://w3id.org/peh/BE-4910c0fa4c
+  name: Linear + branched Perfluoroheptanoic acid
+  short_name: L+B PFHpA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-heptaanzuur
+  translations_short_name_nl_be: L+B PFHpA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfhpa
+- id: https://w3id.org/peh/BE-eedc90fa8b
+  name: Linear + branched Perfluorohexane sulfonic acid
+  short_name: L+B PFHxS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-hexaansulfonzuur
+  translations_short_name_nl_be: L+B PFHxS
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfhxs
+- id: https://w3id.org/peh/BE-8e6df03f40
+  name: Linear + branched Perfluorohexanoic acid
+  short_name: L+B PFHxA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-hexaanzuur
+  translations_short_name_nl_be: L+B PFHxA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfhxa
+- id: https://w3id.org/peh/BE-dc5d8472b8
+  name: Linear + branched Perfluorononanoic acid
+  short_name: L+B PFNA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-nonaanzuur
+  translations_short_name_nl_be: L+B PFNA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfna
+- id: https://w3id.org/peh/BE-f263dca71c
+  name: Linear + branched Perfluorooctane sulfonic acid
+  short_name: L+B PFOS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: L+B PFOS
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfos
+- id: https://w3id.org/peh/BE-fb91d8f77d
+  name: Linear + branched Perfluorooctanoic acid
+  short_name: L+B PFOA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-octaanzuur
+  translations_short_name_nl_be: L+B PFOA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfoa
+- id: https://w3id.org/peh/BE-bde5b0162d
+  name: Linear + branched Perfluoropentanoic acid
+  short_name: L+B PFPeA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-pentaanzuur
+  translations_short_name_nl_be: L+B PFPeA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfpea
+- id: https://w3id.org/peh/BE-48f3da1e6e
+  name: Linear + branched Perfluorotetradecanoic acid
+  short_name: L+B PFTeDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-tetradecaanzuur
+  translations_short_name_nl_be: L+B PFTeDA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfteda
+- id: https://w3id.org/peh/BE-df361a1fa4
+  name: Linear + branched Perfluorotridecanoic acid
+  short_name: L+B PFTrDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-tridecaanzuur
+  translations_short_name_nl_be: L+B PFTrDA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpftrda
+- id: https://w3id.org/peh/BE-ee7d09db6d
+  name: Linear + branched Perfluoroundecanoic acid
+  short_name: L+B PFUnDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Lineair + vertakt Perfluoro-n-undecaanzuur
+  translations_short_name_nl_be: L+B PFUnA
+  comments: Anthony, do you think I can link all this linear+branched PFAS to the
+    general PFAS Cas nr, inchi etc? (according to chatGPT no, but it also mentions
+    that linear + branched forms don't get their own keys… so not sure how to proceed
+    with these)
+  to_check_by_anthony_expert: 'yes' # Sylvie, to me this is an indicator
+  varname: lbpfunda
+- id: https://w3id.org/peh/BE-b5e016a224
+  name: Linear 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid
+  short_name: 11Cl-PF3OUdS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-b5e016a224
+  translations_name_nl_be: Lineair 11-chlooreicosafluor-3-oxaundecaan-1-sulfonzuur
+  translations_short_name_nl_be: 11Cl-PF3OUdS
+  exact_matches:
+  - INCHIKEY:SZVGIJOITCPDPM-UHFFFAOYSA-N|CAS:763051-92-9
+  comments: 'CAS and INCHI Direct to this: https://pubchem.ncbi.nlm.nih.gov/compound/11-Chloroperfluoro-3-oxaundecanesulfonic-acid
+    --> Anthony, correct?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfouds
+- id: https://w3id.org/peh/BE-80e242b0ef
+  name: Linear 1H,1H,2H,2H-Perfluorodecanesulfonic acid
+  short_name: 8:2 FTS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-80e242b0ef
+  translations_name_nl_be: Lineair 8:2 fluortelomeersulfonzuur
+  translations_short_name_nl_be: 8:2 FTS
+  exact_matches:
+  - INCHIKEY:ALVYVCQIFHTIRD-UHFFFAOYSA-N|PUBCHEM:3016044|CAS:39108-34-4
+  varname: eightfts
+- id: https://w3id.org/peh/BE-c2c62fef8c
+  name: Linear 1H,1H,2H,2H-Perfluorohexanesulfonic acid
+  short_name: 4:2 FTS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c2c62fef8c
+  translations_name_nl_be: Lineair 4:2 fluortelomeersulfonzuur
+  translations_short_name_nl_be: 4:2 FTS
+  exact_matches:
+  - INCHIKEY:TXGIGTRUEITPSC-UHFFFAOYSA-N|PUBCHEM:20734543|CAS:757124-72-4
+  aliases:
+  - '4:2'
+  - Fluorotelomer
+  - sulfonic
+  - acid
+  varname: fourfts
+- id: https://w3id.org/peh/BE-af8a91dae1
+  name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic
+    acid potassium salt
+  short_name: 6:2 Cl-PFESA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-af8a91dae1
+  translations_name_nl_be: Lineair 2-(6-chloordodecafluorhexyloxy)-1,1,2,2-tetrafluorethaansulfonzuur
+    kaliumzout
+  translations_short_name_nl_be: 6:2 Cl-PFESA
+  exact_matches:
+  - INCHIKEY:OWQCHLFKOGVODW-UHFFFAOYSA-M|PUBCHEM:25210512|CAS:73606-19-6
+  aliases:
+  - Potassium
+  - 9-chlorohexadecafluoro-3-oxanonane-1-sulfonate
+  varname: pfesa
+- id: https://w3id.org/peh/BE-495e6b075f
+  name: Linear 2-(N-Methylperfluorooctanesulfonamido)acetic acid
+  short_name: MeFOSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:QNDHIRFIMVNHBN-UHFFFAOYSA-N|CHEBI:83506|CAS:2355-31-9|PUBCHEM:22286931
+  varname: mepfosaa
+- id: https://w3id.org/peh/BE-644aaf16e7
+  name: Linear 2,2,3-trifluoro-3-[1,1,2,2,3,3-hexafluoro-3-(trifluoromethoxy)propoxy]propanoic
+    acid
+  short_name: ADONA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-644aaf16e7
+  translations_name_nl_be: Lineair 4,8-dioxa-3H-perfluornonaanzuur
+  translations_short_name_nl_be: ADONA
+  exact_matches:
+  - INCHIKEY:AFDRCEOKCOUICI-UHFFFAOYSA-N|CAS:919005-14-4|PUBCHEM:52915299
+  aliases:
+  - adona
+  varname: dona
+- id: https://w3id.org/peh/BE-e933133f9f
+  name: Linear 3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctanesulphonic acid
+  short_name: 6:2 FTS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e933133f9f
+  translations_name_nl_be: Lineair 6:2 fluortelomeersulfonzuur
+  translations_short_name_nl_be: 6:2 FTS
+  exact_matches:
+  - INCHIKEY:VIONGDJUYAYOPU-UHFFFAOYSA-N|PUBCHEM:119688|CAS:27619-97-2
+  aliases:
+  - '6:2'
+  - FTSA
+  varname: sixfts
+- id: https://w3id.org/peh/BE-d03f886e1c
+  name: Linear 6:2 polyfluoroalkyl phosphoric acid diesters
+  short_name: 6:2 diPAP
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d03f886e1c
+  translations_name_nl_be: Lineair 6:2 fluortelomeerfosfaat diester
+  translations_short_name_nl_be: 6:2 diPAP
+  exact_matches:
+  - INCHIKEY:ZDYYWMSLMLTXDM-UHFFFAOYSA-N|PUBCHEM:14550408|CAS:57677-95-9|CHEBI:83539
+  varname: sixdipap
+- id: https://w3id.org/peh/BE-8bf1d3333e
+  name: Linear 6:2 polyfluoroalkyl phosphoric acid monoesters
+  short_name: 6:2 monoPAP
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8bf1d3333e
+  translations_name_nl_be: Lineair 6:2 fluortelomeerfosfaat monoester
+  translations_short_name_nl_be: 6:2 monoPAP
+  exact_matches:
+  - INCHIKEY:FZTRDYSPWWJCOF-UHFFFAOYSA-N|PUBCHEM:14250578|CAS:57678-01-0|CHEBI:83508
+  aliases:
+  - 3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl
+  - dihydrogen
+  - phosphate
+  varname: sixmonopap
+- id: https://w3id.org/peh/BE-c4d8ded8f0
+  name: Linear 6:2/8:2 Fluorotelomer phosphate diester
+  short_name: 6:2/8:2 diPAP
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c4d8ded8f0
+  translations_name_nl_be: Lineair 6:2/8:2 fluortelomeerfosfaat diester
+  translations_short_name_nl_be: 6:2/8:2 diPAP
+  exact_matches:
+  - INCHIKEY:KHLRYLUKBJEYFH-UHFFFAOYSA-N|PUBCHEM:101536705|CAS:943913-15-3
+  aliases:
+  - (Perfluorohexyl)ethyl
+  - (perfluorooctyl)ethyl
+  - hydrogen
+  - phosphate
+  varname: sixeightdipap
+- id: https://w3id.org/peh/BE-b3a6b0c457
+  name: Linear 8:2 polyfluoroalkyl phosphoric acid diesters
+  short_name: 8:2 diPAP
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-b3a6b0c457
+  translations_name_nl_be: Lineair 8:2 fluortelomeerfosfaat diester
+  translations_short_name_nl_be: 8:2 diPAP
+  exact_matches:
+  - INCHIKEY:AFWOYEYXUDHGHF-UHFFFAOYSA-N|PUBCHEM:3022253|CAS:678-41-1|CHEBI:83540
+  aliases:
+  - '8:2'
+  - Fluorotelomer
+  - phosphate
+  - diester
+  varname: eightdipap
+- id: https://w3id.org/peh/BE-681e462cde
+  name: Linear 8:2 polyfluoroalkyl phosphoric acid monoesters
+  short_name: 8:2 monoPAP
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-681e462cde
+  translations_name_nl_be: Lineair 8:2 fluortelomeerfosfaat monoester
+  translations_short_name_nl_be: 8:2 monoPAP
+  exact_matches:
+  - INCHIKEY:MIABSAQIFYEDJP-UHFFFAOYSA-N|PUBCHEM:10143739|CAS:57678-03-2|CHEBI:83541
+  aliases:
+  - '8:2'
+  - Fluorotelomer
+  - phosphate
+  - monoester
+  varname: eightmonopap
+- id: https://w3id.org/peh/BE-857d191948
+  name: Linear 9-chlorohexadecafluoro-3-oxanone-1-sulfonic acid
+  short_name: 9Cl-PF3ONS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-857d191948
+  translations_name_nl_be: Lineair 9-chloorhexadecafluor-3-oxanon-1-sulfonzuur
+  translations_short_name_nl_be: 9Cl-PF3ONS
+  exact_matches:
+  - INCHIKEY:GGOUUEMCWBTDMT-UHFFFAOYSA-N|CAS:756426-58-1|PUBCHEM:22568738
+  aliases:
+  - 2-((6-Chloro-1,1,2,2,3,3,4,4,5,5,6,6-dodecafluorohexyl)oxy)-1,1,2,2-tetrafluoroethanesulfonic
+  - acid
+  varname: pfons
+- id: https://w3id.org/peh/BE-59caec02e4
+  name: Linear Fluorotelomer sulfonic acid 10:2
+  short_name: 10:2 FTS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-59caec02e4
+  translations_name_nl_be: Lineair 10:2 fluortelomeersulfonzuur
+  translations_short_name_nl_be: 10:2 FTS
+  exact_matches:
+  - INCHIKEY:AJMAYLFJZQYRHN-UHFFFAOYSA-N|CAS:120226-60-0|PUBCHEM:23136180
+  varname: tenfts
+- id: https://w3id.org/peh/BE-ee343f8ea7
+  name: Linear Hexafluoropropylene Oxide Dimer Acid
+  short_name: HFPO-DA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ee343f8ea7
+  translations_name_nl_be: Lineair Perfluor-2-propoxypropaanzuur
+  translations_short_name_nl_be: HFPO-DA
+  exact_matches:
+  - CHEBI:143205|CAS:13252-13-6|PUBCHEM:114481|INCHIKEY:CSEBNABAWMZWIF-UHFFFAOYSA-N
+  aliases:
+  - 2,3,3,3-Tetrafluoro-2-(heptafluoropropoxy)propionic
+  - acid
+  varname: hfpoda
+- id: https://w3id.org/peh/BE-f3e26964a5
+  name: Linear N-(Methyl)nonafluorobutanesulfonamide
+  short_name: MePFBSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-f3e26964a5
+  translations_name_nl_be: Lineair N-methylperfluor-n-butaansulfonamide
+  translations_short_name_nl_be: MePFBSA
+  exact_matches:
+  - INCHIKEY:GFZPUWKGPNHWHD-UHFFFAOYSA-N|PUBCHEM:109968|CAS:68298-12-4
+  aliases:
+  - 1,1,2,2,3,3,4,4,4-nonafluoro-N-methylbutane-1-sulfonamide
+  varname: mepfbsa
+- id: https://w3id.org/peh/BE-a21a9e0c8a
+  name: Linear N-Ethylperfluoro-1-octanesulphonamide
+  short_name: EtPFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-a21a9e0c8a
+  translations_name_nl_be: Lineair N-ethylperfluor-1-octaansulfonamide
+  translations_short_name_nl_be: EtPFOSA
+  exact_matches:
+  - INCHIKEY:CCEKAJIANROZEO-UHFFFAOYSA-N|PUBCHEM:77797|CAS:4151-50-2|CHEBI:81945
+  aliases:
+  - volcano|N-ethyl-1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctane-1-sulfonamide
+  varname: netfosa
+- id: https://w3id.org/peh/BE-e704234a7e
+  name: Linear N-ethyl-perfluorooctane sulfonamidoacetate
+  short_name: EtPFOSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e704234a7e
+  translations_name_nl_be: Lineair 2-(n-ethylperfluorooctaansulfonamido) azijnzuur
+  translations_short_name_nl_be: EtPFOSAA
+  exact_matches:
+  - INCHIKEY:CKRXVVGETMYFIO-UHFFFAOYSA-N
+  - CHEBI:83507 
+  - CAS:2991‑50‑6
+  - PUBCHEM:18134
+  comments: 'The INCHIKEY refers me to this CHEBI: https://www.ebi.ac.uk/chebi/CHEBI:83507,
+    which then refers me to this compound in PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/N-ethylperfluorooctanesulfonamidoacetic-acid
+    --> which then doesn''t have the same INCHIKEY... So I need help here :D' # sylvie: InChIKey CKRXVVGETMYFIO-UHFFFAOYSA-N consistently matches CHEBI:83507, CAS:2991-50-6 and PubChem CID 18134. aliases were added to avoid further confusion
+  to_check_by_anthony_expert: 'yes' # edited Sylvie, OK
+  varname: etfosaa
+  aliases:
+  - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid # added 
+- id: https://w3id.org/peh/BE-565e2a70bf
+  name: Linear N-Ethyl-perfluorooctane sulphonamidoethanol
+  short_name: EtPFOSE
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-565e2a70bf
+  translations_name_nl_be: Lineair N-ethylperfluorooctaansulfonamido-ethanol
+  translations_short_name_nl_be: EtPFOSE
+  exact_matches:
+  - INCHIKEY:HUFHNYZNTFSKCT-UHFFFAOYSA-N|PUBCHEM:74322|CAS:1691-99-2
+  aliases:
+  - 2-(N-ethylperfluorooctanesulfonamido)ethyl
+  - alcohol
+  varname: etfose
+- id: https://w3id.org/peh/BE-200c241cc2
+  name: Linear N-Methylperfluoro-1 octanesulphonamide
+  short_name: MePFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-200c241cc2
+  translations_name_nl_be: Lineair N-methylperfluor-1-octaansulfonamide
+  translations_short_name_nl_be: MePFOSA
+  exact_matches:
+  - INCHIKEY:SRMWNTGHXHOWBT-UHFFFAOYSA-N|PUBCHEM:3034468|CAS:31506-32-8
+  aliases:
+  - N-Methylperfluorooctanesulfonamide
+  varname: nmefosa
+- id: https://w3id.org/peh/BE-8ab2ebd7cc
+  name: Linear Perfluorbutanesulfonylamide(N-methyl)acetate
+  short_name: MePFBSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8ab2ebd7cc
+  translations_name_nl_be: Lineair N-methylperfluor-n-butaansulfonylamide azijnzuur
+  translations_short_name_nl_be: MePFBSAA
+  exact_matches:
+  - INCHIKEY:SKGBGOQHXBAKKO-UHFFFAOYSA-N|CAS:159381-10-9|PUBCHEM:22286935
+  aliases:
+  - N-Methyl-N-((perfluorobutyl)sulfonyl)glycine
+  varname: mepfbsaa
+- id: https://w3id.org/peh/BE-4dc39ce2fc
+  name: Linear Perfluoro-1-octaperfluoro-1-octanesulphonamide
+  short_name: PFOSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4dc39ce2fc
+  translations_name_nl_be: Lineair Perfluoro-n-octaansulfonamide
+  translations_short_name_nl_be: PFOSA
+  exact_matches:
+  - INCHIKEY:RRRXPPIDPYTNJG-UHFFFAOYSA-N|PUBCHEM:69785|CAS:754-91-6|CHEBI:138089
+  aliases:
+  - Perfluorooctanesulfonamide
+  varname: fosa
+- id: https://w3id.org/peh/BE-cf887b1508
+  name: Linear Perfluoro-3,6-dioxaheptanoic acid
+  short_name: NFDHA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cf887b1508
+  translations_name_nl_be: Lineair Perfluor-3,6-dioxaheptaanzuur
+  translations_short_name_nl_be: NFDHA
+  exact_matches:
+  - INCHIKEY:PPWRLPJIHGWGFH-UHFFFAOYSA-N|PUBCHEM:2782393|CAS:151772-58-6
+  varname: nfdha
+- id: https://w3id.org/peh/BE-d98a08d508
+  name: Linear Perfluoro-4-ethylcyclohexane sulfonic acid
+  short_name: PFECHS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d98a08d508
+  translations_name_nl_be: Lineair Perfluor-4-ethylcyclohexaansulfonzuur
+  translations_short_name_nl_be: PFECHS
+  exact_matches:
+  - INCHIKEY:ICKAEAFPESRWOT-UHFFFAOYSA-N|PUBCHEM:101650|CAS:646-83-3
+  aliases:
+  - Perfluoro-4-ethylcyclohexane
+  varname: pfechs
+- id: https://w3id.org/peh/BE-c5635811ab
+  name: Linear Perfluoro-4-methoxypropanoic acid
+  short_name: PFMPA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c5635811ab
+  translations_name_nl_be: Lineair Perfluor-4-methoxypropaanzuur (ook PF4OPeA)
+  translations_short_name_nl_be: PFMPA
+  exact_matches:
+  - INCHIKEY:AGIMOOYNBDLMJV-UHFFFAOYSA-N
+  comments: Not sure the INCHI Key is correct as it directs me to this (https://pubchem.ncbi.nlm.nih.gov/compound/Perfluoro-3-methoxypropanoic-acid)
+    but I cannot find Perfluoro-4-methoxypropanoic acid online…
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfmpa
+- id: https://w3id.org/peh/BE-277d8f6dd9
+  name: Linear Perfluoro-5-methoxybutanoic acid
+  short_name: PFMBA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-277d8f6dd9
+  translations_name_nl_be: Lineair Perfluor-5-methoxybutaanzuur
+  translations_short_name_nl_be: PFMBA
+  exact_matches:
+  - INCHIKEY:CZTBTZZANBJSLY-UHFFFAOYSA-N
+  comments: 'INCHIKEY directs me to this: https://pubchem.ncbi.nlm.nih.gov/compound/863090-89-5
+    (Perfluoro-4-methoxybutanoic acid), is it the same compound?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfmba
+- id: https://w3id.org/peh/BE-f08cb129c7
+  name: Linear Perfluorobutane sulfonic acid
+  short_name: PFBS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-f08cb129c7
+  translations_name_nl_be: Lineair Perfluoro-n-butaansulfonzuur
+  translations_short_name_nl_be: PFBS
+  exact_matches:
+  - CHEBI:132446|CAS:375-73-5|CAS:59933-66-3|PUBCHEM:67815|INCHIKEY:JGTNAGYHADQMCM-UHFFFAOYSA-N
+  varname: pfbs
+- id: https://w3id.org/peh/BE-63e119fc83
+  name: Linear Perfluorobutanoic acid
+  short_name: PFBA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-63e119fc83
+  translations_name_nl_be: Lineair Perfluoro-n-butaanzuur
+  translations_short_name_nl_be: PFBA
+  exact_matches:
+  - CHEBI:39426|CAS:375-22-4|PUBCHEM:9777|INCHIKEY:YPJUNDFVDDCYIH-UHFFFAOYSA-N
+  aliases:
+  - Heptafluorobutyric
+  - acid
+  varname: pfba
+- id: https://w3id.org/peh/BE-796cb71129
+  name: Linear Perfluorobutylsulphonamide
+  short_name: PFBSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-796cb71129
+  translations_name_nl_be: Lineair Perfluoro-n-butaansulfonamide
+  translations_short_name_nl_be: PFBSA
+  exact_matches:
+  - INCHIKEY:FUVKFLJWBHVMHX-UHFFFAOYSA-N|PUBCHEM:10958205|CAS:30334-69-1
+  aliases:
+  - Perfluorobutane
+  - sulfonamide
+  varname: pfbsa
+- id: https://w3id.org/peh/BE-5c57cd34e3
+  name: Linear Perfluorodecane sulfonic acid
+  short_name: PFDS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-5c57cd34e3
+  translations_name_nl_be: Lineair Perfluoro-n-decaansulfonzuur
+  translations_short_name_nl_be: PFDS
+  exact_matches:
+  - INCHIKEY:HYWZIAVPBSTISZ-UHFFFAOYSA-N|PUBCHEM:67636|CAS:335-77-3
+  varname: pfds
+- id: https://w3id.org/peh/BE-bf6184953a
+  name: Linear Perfluorodecanoic acid
+  short_name: PFDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-bf6184953a
+  translations_name_nl_be: Lineair Perfluoro-n-decaanzuur
+  translations_short_name_nl_be: PFDA
+  exact_matches:
+  - CHEBI:35546|CAS:335-76-2|PUBCHEM:9555|INCHIKEY:PCIUEQPBYFRTEM-UHFFFAOYSA-N
+  varname: pfda
+- id: https://w3id.org/peh/BE-5aed9ac397
+  name: Linear Perfluorodecylphosphonic acid
+  short_name: PFDPA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-5aed9ac397
+  translations_name_nl_be: Lineair perfluordecylfosfonzuur
+  translations_short_name_nl_be: PFDPA
+  exact_matches:
+  - INCHIKEY:CTGNCBOZEMOASL-UHFFFAOYSA-N|PUBCHEM:85828788|CAS:52299-26-0
+  varname: pfdpa
+- id: https://w3id.org/peh/BE-0b23a5127a
+  name: Linear Perfluorododecane sulfonic acid
+  short_name: PFDoDS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-0b23a5127a
+  translations_name_nl_be: Lineair Perfluoro-n-dodecaansulfonzuur
+  translations_short_name_nl_be: PFDoDS
+  exact_matches:
+  - INCHIKEY:CFCRODHVHXGTPC-UHFFFAOYSA-N|PUBCHEM:3018866|CAS:79780-39-5
+  varname: pfdods
+- id: https://w3id.org/peh/BE-259a095494
+  name: Linear Perfluorododecanoic acid
+  short_name: PFDoDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-259a095494
+  translations_name_nl_be: Lineair Perfluoro-n-dodecaanzuur
+  translations_short_name_nl_be: PFDoA
+  exact_matches:
+  - CHEBI:90633|CAS:307-55-1|PUBCHEM:67545|INCHIKEY:CXGONMQFMIYUJR-UHFFFAOYSA-N
+  varname: pfdoda
+- id: https://w3id.org/peh/BE-058fafe48c
+  name: Linear Perfluoroheptane sulfonic acid
+  short_name: PFHpS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-058fafe48c
+  translations_name_nl_be: Lineair Perfluoro-n-heptaansulfonzuur
+  translations_short_name_nl_be: PFHpS
+  exact_matches:
+  - INCHIKEY:OYGQVDSRYXATEL-UHFFFAOYSA-N|PUBCHEM:67820|CAS:375-92-8
+  varname: pfhps
+- id: https://w3id.org/peh/BE-d93ebf3e87
+  name: Linear Perfluoroheptanoic acid
+  short_name: PFHpA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d93ebf3e87
+  translations_name_nl_be: Lineair Perfluoro-n-heptaanzuur
+  translations_short_name_nl_be: PFHpA
+  exact_matches:
+  - CHEBI:35547|CAS:375-85-9|PUBCHEM:67818|INCHIKEY:ZWBAMYVPMDSJGQ-UHFFFAOYSA-N
+  varname: pfhpa
+- id: https://w3id.org/peh/BE-e97d5c58b6
+  name: Linear Perfluorohexadecanoic acid
+  short_name: PFHxDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e97d5c58b6
+  translations_name_nl_be: Lineair Perfluoro-n-hexadecaanzuur
+  translations_short_name_nl_be: PFHxDA
+  exact_matches:
+  - INCHIKEY:OJMBMWRMTMHMSZ-UHFFFAOYSA-N|PUBCHEM:106027|CAS:67905-19-5
+  varname: pfhxda
+- id: https://w3id.org/peh/BE-6152b955da
+  name: Linear Perfluorohexane sulfonic acid
+  short_name: L-PFHxS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6152b955da
+  translations_name_nl_be: Lineair Perfluoro-n-hexaansulfonzuur
+  translations_short_name_nl_be: PFHxS
+  exact_matches:
+  - CHEBI:132448|CAS:355-46-4|INCHIKEY:QZHDEAJFRJCDMF-UHFFFAOYSA-N|PUBCHEM:67734
+  aliases:
+  - Perfluorohexanesulfonic
+  - Acid
+  varname: pfhxs
+- id: https://w3id.org/peh/BE-391bfe09ba
+  name: Linear Perfluorohexanesulfonamide
+  short_name: PFHxSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-391bfe09ba
+  translations_name_nl_be: Lineair Perfluoro-n-hexaansulfonamide
+  translations_short_name_nl_be: PFHxSA
+  exact_matches:
+  - INCHIKEY:WDZLGCSJJWEQJO-UHFFFAOYSA-N|PUBCHEM:11603678|CAS:41997-13-1
+  varname: pfhxsa
+- id: https://w3id.org/peh/BE-ae3d790b36
+  name: Linear Perfluorohexanoic acid
+  short_name: PFHxA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ae3d790b36
+  translations_name_nl_be: Lineair Perfluoro-n-hexaanzuur
+  translations_short_name_nl_be: PFHxA
+  exact_matches:
+  - CHEBI:83492|CAS:307-24-4|PUBCHEM:67542|INCHIKEY:PXUULQAPEKKVAH-UHFFFAOYSA-N
+  varname: pfhxa
+- id: https://w3id.org/peh/BE-668c27e0fe
+  name: Linear Perfluorohexylphosphonic acid
+  short_name: PFHxPA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-668c27e0fe
+  translations_name_nl_be: Lineair perfluorhexylfosfonzuur
+  translations_short_name_nl_be: PFHxPA
+  exact_matches:
+  - INCHIKEY:AGCUFKNHQDVTAD-UHFFFAOYSA-N|PUBCHEM:15930820|CAS:68412-68-0|CAS:40143-76-8
+  aliases:
+  - Phosphonic
+  - acid,
+  - perfluoro-C6-12-alkyl
+  - derivs.
+  varname: pfhxpa
+- id: https://w3id.org/peh/BE-e3155711ce
+  name: Linear Perfluorononanesulfonic acid
+  short_name: PFNS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e3155711ce
+  translations_name_nl_be: Lineair Perfluoro-n-nonaansulfonzuur
+  translations_short_name_nl_be: PFNS
+  exact_matches:
+  - INCHIKEY:MNEXVZFQQPKDHC-UHFFFAOYSA-N|PUBCHEM:86998|CAS:68259-12-1
+  varname: pfns
+- id: https://w3id.org/peh/BE-147953fa72
+  name: Linear Perfluorononanoic acid
+  short_name: PFNA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-147953fa72
+  translations_name_nl_be: Lineair Perfluoro-n-nonaanzuur
+  translations_short_name_nl_be: PFNA
+  exact_matches:
+  - CHEBI:38397|CAS:375-95-1|PUBCHEM:67821|INCHIKEY:UZUFPBIDKMEQEQ-UHFFFAOYSA-N
+  varname: pfna
+- id: https://w3id.org/peh/BE-7ebcc3663e
+  name: Linear Perfluoro-n-propanesulfonic acid
+  short_name: PFPrS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7ebcc3663e
+  translations_name_nl_be: Lineair Perfluoro-n-propaansulfonzuur
+  translations_short_name_nl_be: PFPrS
+  exact_matches:
+  - INCHIKEY:XBWQFDNGNOOMDZ-UHFFFAOYSA-N|PUBCHEM:9859771|CAS:423-41-6
+  aliases:
+  - Perfluoropropanesulfonic
+  - acid
+  varname: pfprs
+- id: https://w3id.org/peh/BE-5e7385dd4b
+  name: Linear Perfluoro-n-propanoic acid
+  short_name: PFPrA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-5e7385dd4b
+  translations_name_nl_be: Lineair Perfluoro-n-propaanzuur
+  translations_short_name_nl_be: PFPrA
+  exact_matches:
+  - INCHIKEY:CVNLJCBQMJOXDW-UHFFFAOYSA-N
+  comments: 'I don''t find the INCHI key anywhere. The abbreviation in wikipedia refers
+    to this: https://en.wikipedia.org/wiki/Perfluoropropionic_acid --> which in pubchem:
+    https://pubchem.ncbi.nlm.nih.gov/compound/62356  @Anthony can you confirm that
+    the pubchem one is the correct marker?'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfpra
+- id: https://w3id.org/peh/BE-ef842d0cbf
+  name: Linear Perfluorooctadecanoic acid
+  short_name: PFODA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-ef842d0cbf
+  translations_name_nl_be: Lineair Perfluoro-n-octadecaanzuur
+  translations_short_name_nl_be: PFODA
+  exact_matches:
+  - INCHIKEY:ZTSDOGSKTICNPQ-UHFFFAOYSA-N|PUBCHEM:167547|CAS:16517-11-6|CAS:798556-82-8
+  varname: pfoda
+- id: https://w3id.org/peh/BE-7d792870d0
+  name: Linear Perfluorooctane sulfonic acid
+  short_name: L-PFOS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-7d792870d0
+  translations_name_nl_be: Lineair Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: L-PFOS
+  exact_matches:
+  - CHEBI:39421|CAS:1763-23-1|CAS:2795-39-3|PUBCHEM:74483|INCHIKEY:YFSUTJLHUFNCNZ-UHFFFAOYSA-N
+  varname: pfos
+- id: https://w3id.org/peh/BE-85b799af56
+  name: Linear Perfluorooctanesulfonamido acetic acid
+  short_name: PFOSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-85b799af56
+  translations_name_nl_be: Lineair Perfluoro-n-octaansulfonamidoazijnzuur
+  translations_short_name_nl_be: PFOSAA
+  exact_matches:
+  - INCHIKEY:AYLOUUCBACYHAB-UHFFFAOYSA-N|PUBCHEM:10507011|CAS:2806-24-8|CHEBI:83505
+  varname: pfosaa
+- id: https://w3id.org/peh/BE-6bf5209d2b
+  name: Linear Perfluorooctanoic acid
+  short_name: L-PFOA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-6bf5209d2b
+  translations_name_nl_be: Lineair Perfluoro-n-octaanzuur
+  translations_short_name_nl_be: PFOA
+  exact_matches:
+  - CHEBI:35549|CAS:335-67-1|PUBCHEM:9554|INCHIKEY:SNGREZUHAYWORS-UHFFFAOYSA-N
+  varname: pfoa
+- id: https://w3id.org/peh/BE-607be8cb17
+  name: Linear Perfluorooctylphosphonic acid
+  short_name: PFOPA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-607be8cb17
+  translations_name_nl_be: Lineair perfluoroctylfosfonzuur
+  translations_short_name_nl_be: PFOPA
+  exact_matches:
+  - INCHIKEY:PCEKSCOIHGIBSA-UHFFFAOYSA-M
+  comments: Maybe is this compound? https://pubchem.ncbi.nlm.nih.gov/compound/13528037
+    --> But INCHI does not correspond @Anthony?
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: pfopa
+- id: https://w3id.org/peh/BE-3bf70c4497
+  name: Linear Perfluoropentadecanoic acid
+  short_name: PFPeDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-3bf70c4497
+  translations_name_nl_be: Lineair Perfluoro-n-pentadecaanzuur
+  translations_short_name_nl_be: PFPeDA
+  exact_matches:
+  - INCHIKEY:BJNCSIWIMCWIMS-UHFFFAOYSA-N|PUBCHEM:12731198|CAS:141074-63-7
+  varname: pfpeda
+- id: https://w3id.org/peh/BE-c2c9e40d4b
+  name: Linear Perfluoropentane sulfonate
+  short_name: PFPeS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-c2c9e40d4b
+  translations_name_nl_be: Lineair Perfluoro-n-pentaansulfonzuur
+  translations_short_name_nl_be: PFPeS
+  exact_matches:
+  - INCHIKEY:ACEKLXZRZOWKRY-UHFFFAOYSA-M|PUBCHEM:22721493|CAS:175905-36-9
+  varname: pfpes
+- id: https://w3id.org/peh/BE-1da88279a2
+  name: Linear Perfluoropentanoic acid
+  short_name: PFPeA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-1da88279a2
+  translations_name_nl_be: Lineair Perfluoro-n-pentaanzuur
+  translations_short_name_nl_be: PFPeA
+  exact_matches:
+  - CHEBI:83491|CAS:2706-90-3|PUBCHEM:75921|INCHIKEY:CXZGQIAOTKWCDB-UHFFFAOYSA-N
+  varname: pfpea
+- id: https://w3id.org/peh/BE-5319ebfcbc
+  name: Linear Perfluorotetradecanoic acid
+  short_name: PFTeDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-5319ebfcbc
+  translations_name_nl_be: Lineair Perfluoro-n-tetradecaanzuur
+  translations_short_name_nl_be: PFTeDA
+  exact_matches:
+  - INCHIKEY:RUDINRUXCKIXAJ-UHFFFAOYSA-N|PUBCHEM:67822|CAS:376-06-7
+  varname: pfteda
+- id: https://w3id.org/peh/BE-4ab84d5104
+  name: Linear Perfluorotridecanesulfonic acid
+  short_name: PFTrDS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4ab84d5104
+  translations_name_nl_be: Lineair Perfluoro-n-tridecaansulfonzuur
+  translations_short_name_nl_be: PFTrDS
+  exact_matches:
+  - INCHIKEY:JMIXTHMPTMXARZ-UHFFFAOYSA-N|PUBCHEM:21964789|CAS:791563-89-8
+  varname: pftrds
+- id: https://w3id.org/peh/BE-561eee706e
+  name: Linear Perfluorotridecanoic acid
+  short_name: PFTrDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-561eee706e
+  translations_name_nl_be: Lineair Perfluoro-n-tridecaanzuur
+  translations_short_name_nl_be: PFTrDA
+  exact_matches:
+  - INCHIKEY:LVDGGZAZAYHXEY-UHFFFAOYSA-N|PUBCHEM:3018355|CAS:72629-94-8
+  varname: pftrda
+- id: https://w3id.org/peh/BE-8787d4c7c9
+  name: Linear Perfluoroundecanesulfonic acid
+  short_name: PFUnDS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-8787d4c7c9
+  translations_name_nl_be: Lineair Perfluoro-n-undecaansulfonzuur
+  translations_short_name_nl_be: PFUnDS
+  exact_matches:
+  - INCHIKEY:UKHUPOMCGUFNAP-UHFFFAOYSA-N|PUBCHEM:22141518|CAS:749786-16-1
+  varname: pfunds
+- id: https://w3id.org/peh/BE-e08ecde299
+  name: Linear Perfluoroundecanoic acid
+  short_name: PFUnDA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-e08ecde299
+  translations_name_nl_be: Lineair Perfluoro-n-undecaanzuur
+  translations_short_name_nl_be: PFUnA
+  exact_matches:
+  - CHEBI:83493|CAS:2058-94-8|PUBCHEM:77222|INCHIKEY:SIDINRCMMRKXGQ-UHFFFAOYSA-N
+  varname: pfunda
+- id: https://w3id.org/peh/BE-61bca12cd7
+  name: Linear Trifluoroacetic acid
+  short_name: TFA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-61bca12cd7
+  translations_name_nl_be: Lineair Trifluoro azijnzuur
+  translations_short_name_nl_be: TFA
+  exact_matches:
+  - CHEBI:45892|PUBCHEM:6422|INCHIKEY:DTQVDTLACAAQTR-UHFFFAOYSA-N|CAS:76-05-1|CAS:599-00-8
+  varname: tfa
+- id: https://w3id.org/peh/BE-c25c2c5144
+  name: Percentage Linear Perfluorohexane sulfonic acid
+  short_name: '%L-PFHxS'
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Percentage Lineair Perfluoro-n-hexaansulfonzuur
+  translations_short_name_nl_be: '%PFHxS'
+  group_compound_members:
+  - https://w3id.org/peh/BE-6152b955da|https://w3id.org/peh/BE-eedc90fa8b
+  comments: percentage?
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: lpfhxs_perc
+- id: https://w3id.org/peh/BE-14a072fa22
+  name: Percentage Linear Perfluorooctanoic acid
+  short_name: '% L-PFOA'
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Percentage Lineair Perfluoro-n-octaanzuur
+  translations_short_name_nl_be: '%PFOA'
+  group_compound_members:
+  - https://w3id.org/peh/BE-fb91d8f77d|https://w3id.org/peh/BE-6bf5209d2b
+  comments: percentage?
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: lpfoa_perc
+- id: https://w3id.org/peh/BE-700cc68337
+  name: Percentage Linear Perfluorooctane sulfonic acid
+  short_name: '%L-PFOS'
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  translations_name_nl_be: Percentage Lineair Perfluoro-n-octaansulfonzuur
+  translations_short_name_nl_be: '%L-PFOS'
+  group_compound_members:
+  - https://w3id.org/peh/BE-7d792870d0|https://w3id.org/peh/BE-f263dca71c
+  comments: percentage?
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: lpfos_perc
+- id: https://w3id.org/peh/BE-7f19380095
+  name: 2H-Perfluoro-2-decenoic acid
+  short_name: 8:2 FTUCA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:WHZXTVOEGZRRJM-UHFFFAOYSA-N|CAS:70887-84-2|PUBCHEM:71404795
+- id: https://w3id.org/peh/BE-5cfffb14c8
+  name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
+    acid
+  short_name: MeFHxSAA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:YGKAWLSSJSOXNM-UHFFFAOYSA-N|CAS:715646-50-7|PUBCHEM:87481295
+- id: https://w3id.org/peh/BE-c7b567bf63
+  name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
+  short_name: 4:2 FTSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:TXGIGTRUEITPSC-UHFFFAOYSA-N|CAS:757124-72-4|PUBCHEM:20734543
+  aliases:
+  - '4:2'
+  - Fluorotelomer
+  - sulfonic
+  - acid
+- id: https://w3id.org/peh/BE-800b22de48
+  name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
+  short_name: 8:2 FTSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:ALVYVCQIFHTIRD-UHFFFAOYSA-N|CAS:39108-34-4|PUBCHEM:3016044
+- id: https://w3id.org/peh/BE-6d9f0f3058
+  name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
+  short_name: 9CL-PF3ONS
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:GGOUUEMCWBTDMT-UHFFFAOYSA-N|CAS:756426-58-1|PUBCHEM:22568738
+- id: https://w3id.org/peh/BE-c0d2233fa8
+  name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
+  short_name: 6:2 FTSA
+  compoundgroups:
+  - "Per-/poly-fluorinated compounds (PFASs)"
+  exact_matches:
+  - INCHIKEY:VIONGDJUYAYOPU-UHFFFAOYSA-N|CAS:27619-97-2|PUBCHEM:119688

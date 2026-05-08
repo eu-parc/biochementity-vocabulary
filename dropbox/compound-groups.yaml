@@ -1,0 +1,127 @@
+biochementity_subclasses:
+- id: null
+  name: acrylamide
+  exact_matches:
+  - CHEBI:28619
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: alkaloid
+  exact_matches:
+  - CHEBI:22315
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: analines
+  exact_matches:
+  - CHEBI:22562
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: chloroanaline
+  exact_matches: 
+  - CHEBI:23130
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: aprotic solvents
+  exact_matches:
+  - CHEBI:48357
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: benzophenones
+  exact_matches:
+  - CHEBI:22726
+  parent_biochementities:
+  - pehterms:BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+- id: null
+  name: carbamate
+  exact_matches:
+  - CHEBI:23003
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: 1,2-cyclohexane dicarboxylic acid diisononyl ester
+  short_name: DINCH
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: diisocyanates
+  exact_matches:
+  - CHEBI:53213
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: dioxins
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: furans
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: glycol ethers
+  exact_matches:
+  - CHEBI:172390
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: metals
+  exact_matches:
+  - CHEBI:33521
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: musks
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: organochlorine compounds 
+  short_name: OCs
+  exact_matches:
+  - CHEBI:36683
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: parabens
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: per-/poly-fluorinated compounds 
+  short_name: PFASs
+  exact_matches:
+  - CHEBI:172397
+  - CHEBI:172406
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: phthalates
+  exact_matches:
+  - CHEBI:35484
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: pyrethroids
+  parent_biochementities:
+  - pehterms:BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+- id: null
+  name: polycyclic aromatic hydrocarbons 
+  short_name: PAHs
+  exact_matches:
+  - CHEBI:33848
+  parent_biochementities:
+  - pehterms:BioChemEntity
+- id: null
+  name: volatile organic compounds
+  short_name: VOCs
+  exact_matches:
+  - CHEBI:134179
+  parent_biochementities:
+  - pehterms:BioChemEntity

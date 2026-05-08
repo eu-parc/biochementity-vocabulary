@@ -1,0 +1,76 @@
+biochementities:
+- id: https://w3id.org/peh/BE-c1312a879a
+  name: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester
+  short_name: cx-MINCH
+  compoundgroups:
+  - "DINCH"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cac83ffadf
+  translations_name_nl_be: Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)
+    heptylester
+  translations_short_name_nl_be: cx-MINCH
+  exact_matches:
+  - INCHIKEY:HGYNPCSGHWFMTB-UHFFFAOYSA-N|PUBCHEM:102105764|CAS:1637562-51-6
+  aliases:
+  - 1,2-Cyclohexanedicarboxylic
+  - Acid
+  - Mono
+  - 4-Methyl-7-carboxy-heptyl
+  - Ester
+  varname: mcoch
+- id: https://w3id.org/peh/BE-d84be9bac4
+  name: Cyclohexane-1,2-dicarboxylate-mono-(7-hydroxy-4-methyl)octyl ester
+  short_name: OH-MINCH
+  compoundgroups:
+  - "DINCH"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cac83ffadf # comment Sylvie: kan deze id niet terugvinden in de huidige lijst? DINCH > MINCH > OH-MINCH
+  translations_name_nl_be: Cyclohexane-1,2-dicarboxylate-mono-(7-hydroxy-4-methyl)octyl
+    ester
+  translations_short_name_nl_be: OH-MINCH
+  comments: '* Could not find this anywhere. Could it be this? https://pubchem.ncbi.nlm.nih.gov/compound/155898868'
+  to_check_by_anthony_expert: 'yes' # edited Sylvie, done
+  feedback_epi_team: "Chebi: 166460\nInchikey: WPTRTTWYMWWUTQ-UHFFFAOYSA-N\thttps://pubchem.ncbi.nlm.nih.gov/compound/102105765\n\
+    This info was validated by Adrian Covaci before. \n"
+  varname: mhnch
+  exact_matches: 
+  - INCHIKEY:RFNYHMLLEAVKHD-UHFFFAOYSA-N # added sylvie based on excel input covaci (24/04/2024)
+  - PUBCHEM:102105765 # added sylvie based on excel input covaci (24/04/2024)
+  - CHEBI:166460 # added sylvie based on excel input covaci (24/04/2024)
+  - CAS:1637562-52-7 # added sylvie based on excel input covaci (24/04/2024)
+  aliases:
+  - 2-(7-Hydroxy-4-methyloctoxy)carbonylcyclohexane-1-carboxylic acid # added Sylvie based on pubchem 
+- id: https://w3id.org/peh/BE-ca3c7021c9
+  name: Cyclohexane-1,2-dicarboxylate-mono-(7-oxo-4-methyl)octyl ester
+  short_name: oxo-MINCH
+  compoundgroups:
+  - "DINCH"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cac83ffadf # comment Sylvie: kan deze id niet terugvinden in de huidige lijst? DINCH > MINCH > oxo-MINCH
+  translations_name_nl_be: Cyclohexane-1,2-dicarboxylate-mono-(oxo-isononyl) ester
+  translations_short_name_nl_be: oxo-MINCH
+  exact_matches: # no CHEBI available, ased on excel input covaci (24/04/2024)
+  - INCHIKEY:GDOQGHAKQNDFFH-UHFFFAOYSA-N
+  - PUBCHEM:102105766 # added sylvie based on excel input covaci (24/04/2024)
+  comments: '* INCHIKEY --> when I look for it online, I only see references to VITO
+
+    * Could it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/169443862'
+  to_check_by_anthony_expert: 'yes' # edited Sylvie, done
+  feedback_epi_team: 'Inchikey: GDOQGHAKQNDFFH-UHFFFAOYSA-N
+
+    https://pubchem.ncbi.nlm.nih.gov/compound/102105766
+
+    This info was validated by Adrian Covaci before. '
+  varname: monch
+- id: https://w3id.org/peh/BE-8c0e040259
+  name: Cyclohexane-1,2-dicarboxylic acid mono-isononyl ester
+  short_name: MINCH
+  compoundgroups:
+  - "DINCH"
+  parent_compounds:
+  - https://w3id.org/peh/BE-cac83ffadf
+  translations_name_nl_be: Cyclohexane-1,2-dicarboxylate-mono-4-methyloctyl ester
+  translations_short_name_nl_be: MINCH
+  exact_matches:
+  - INCHIKEY:HQEIYBJWBXYUOH-UHFFFAOYSA-N|PUBCHEM:129853628
+  varname: minch

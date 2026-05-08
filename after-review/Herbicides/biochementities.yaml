@@ -1,0 +1,238 @@
+biochementities:
+- id: https://w3id.org/peh/BE-6c0f7f5751
+  name: (RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide
+  short_name: Dimetachlor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-6c0f7f5751
+  translations_name_nl_be: (RS)-2-chloor-N-(2-ethyl-6-methyl-fenyl)-N-(1-methoxypropaan-2-yl)aceetamide
+  comments: '* can it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Metolachlor'
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: dimetachlor
+- id: https://w3id.org/peh/BE-ad20474bc3
+  name: 1-(4-Isopropylphenyl)-3-methylurea
+  short_name: IPPMU
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  translations_name_nl_be: 1-(4-isopropylfenyl)-3-methylureum
+  exact_matches:
+  - CHEBI:83468|CAS:34123-57-4|PUBCHEM:182167|INCHIKEY:DOULWWSSZVEPIN-UHFFFAOYSA-N
+  aliases:
+  - Monodesmethylisoproturon
+  varname: ippmu
+- id: https://w3id.org/peh/BE-771a9d8e58
+  name: 2,6 diethyl aniline
+  short_name: 2,6 diethyl aniline
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-bc1b3bb2fb
+  translations_name_nl_be: 2,6 diethylaniline
+  exact_matches:
+  - INCHIKEY:FOYHNROGBXVLLX-UHFFFAOYSA-N|PUBCHEM:11369|CAS:579-66-8
+  varname: da26
+- id: https://w3id.org/peh/BE-bc1b3bb2fb
+  name: 2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide
+  short_name: Alachlor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-bc1b3bb2fb
+  translations_name_nl_be: 2-Chloor-N-(2,6-diethylfenyl)-N-(methoxymethyl)aceetamide
+  exact_matches:
+  - CHEBI:2533|CAS:15972-60-8|PUBCHEM:2078|INCHIKEY:XCSGPAVHZFQHGE-UHFFFAOYSA-N
+  aliases:
+  - Alachlor
+  varname: alchlor
+- id: https://w3id.org/peh/BE-0f3cacf8fc
+  name: 2-hydroxy atrazine
+  short_name: 2-hydroxy atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: 2-hydroxyatrazine
+  exact_matches:
+  - INCHIKEY:NFMIMWNQWAWNDW-UHFFFAOYSA-N|PUBCHEM:135398733|CAS:2163-68-0|CHEBI:18316
+  varname: ha2
+- id: https://w3id.org/peh/BE-de97aa05bb
+  name: 2-hydroxy simazine
+  short_name: 2-hydroxy simazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-ddc69d562e
+  translations_name_nl_be: 2-hydroxysimazine
+  exact_matches:
+  - CHEBI:83476|CAS:2599-11-3|PUBCHEM:135408659|INCHIKEY:YQIXRXMOJFQVBV-UHFFFAOYSA-N
+  aliases:
+  - Hydroxysimazine
+  varname: hs2
+- id: https://w3id.org/peh/BE-a563e4c620
+  name: 3-(3,4-dichlorophenyl)-1,1-dimethylurea
+  short_name: DCMU
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  - "Pesticides"
+  translations_name_nl_be: 3-(3,4-dichloorfenyl)-1,1-dimethylureum
+  exact_matches:
+  - CHEBI:116509|CAS:330-54-1|PUBCHEM:3120|INCHIKEY:XMTQQYYKAHVGBJ-UHFFFAOYSA-N
+  aliases:
+  - Diuron
+  varname: diuron
+- id: https://w3id.org/peh/BE-4668caba7a
+  name: 3-(3-Chloro-4-methylphenyl)-1,1-dimethylurea
+  short_name: Chlortoluron
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-4668caba7a
+  translations_name_nl_be: 3-(3-chloor-4-methylfenyl)-1,1-dimethylureum
+  exact_matches:
+  - CHEBI:81981|CAS:15545-48-9|PUBCHEM:27375|INCHIKEY:JXCGFZXSOMJFOA-UHFFFAOYSA-N
+  aliases:
+  - Chlortoluron
+  varname: chltr
+- id: https://w3id.org/peh/BE-a5f71f8aaa
+  name: 3-(4-Isopropylphenyl)-1,1-dimethylurea
+  short_name: Isoproturon
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  translations_name_nl_be: 3-(4-isopropylfenyl)-1,1-dimethylureum
+  exact_matches:
+  - CHEBI:6049|CAS:34123-59-6|PUBCHEM:36679|INCHIKEY:PUIYMUZLKQOUOZ-UHFFFAOYSA-N
+  aliases:
+  - Isoproturon
+  varname: isoproturon
+- id: https://w3id.org/peh/BE-dd0c196d1e
+  name: Alachlor mercapturate
+  short_name: Alachlor mercapturate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-bc1b3bb2fb
+  translations_name_nl_be: Alachlor mercapturate
+  exact_matches:
+  - INCHIKEY:RFZSQTJRFQHGIJ-INIZCTEOSA-N|PUBCHEM:131866382|CAS:116482-92-9
+  varname: almer
+- id: https://w3id.org/peh/BE-0df789fdea
+  name: Atrazine
+  short_name: Atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Atrazine
+  exact_matches:
+  - CHEBI:15930|CAS:1912-24-9|PUBCHEM:2256|INCHIKEY:MXWJVTOOROXGIU-UHFFFAOYSA-N
+  varname: atrz
+- id: https://w3id.org/peh/BE-3d95c541ae
+  name: Atrazine mercapturate
+  short_name: Atrazine mercapturate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Atrazine-mercapturaat
+  exact_matches:
+  - INCHIKEY:JYBXBVCDDNBLJW-VIFPVBQESA-N|PUBCHEM:178512|CAS:138722-96-0
+  varname: atmer
+- id: https://w3id.org/peh/BE-dcc8b40dec
+  name: Desethyl 2-hydroxy atrazine
+  short_name: Desethyl 2-hydroxy atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desethyl 2-hydroxyatrazine
+  exact_matches:
+  - CHEBI:83463|PUBCHEM:135510207|INCHIKEY:GCKLGRUZDXSATG-UHFFFAOYSA-N|CAS:19988-24-0
+  aliases:
+  - 6-amino-4-(propan-2-ylamino)-1H-1,3,5-triazin-2-one
+  varname: des2hyat
+- id: https://w3id.org/peh/BE-466598c5fb
+  name: Desethyl atrazine
+  short_name: Desethyl atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desethylatrazine
+  exact_matches:
+  - CHEBI:28212|CAS:6190-65-4|PUBCHEM:22563|INCHIKEY:DFWFIQKMSFGDCQ-UHFFFAOYSA-N
+  aliases:
+  - Deethylatrazine
+  varname: desat
+- id: https://w3id.org/peh/BE-9a39c85791
+  name: Desethyl desisopropyl 2-hydroxy atrazine
+  short_name: Desethyl desisopropyl 2-hydroxy atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desethyl desisopropyl 2-hydroxyatrazine
+  comments: I don't find this compound anywhere butt according to google AI is this
+    compound? https://pubchem.ncbi.nlm.nih.gov/compound/hydroxyatrazine#section=3D-Conformer
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: desdesiso2hyat
+- id: https://w3id.org/peh/BE-37340efd2b
+  name: Desethyl desisopropyl atrazine
+  short_name: Desethyl desisopropyl atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desethyl desisopropyl atrazine
+  exact_matches:
+  - INCHIKEY:FVFVNNKYKYZTJU-UHFFFAOYSA-N
+  comments: "The INCHIKEY in our DB directed me to https://pubchem.ncbi.nlm.nih.gov/compound/2%2C4-diamino-6-chloro-s-triazine\
+    \ --> to double check that it is the same compound? \nAlso found this: https://pubchem.ncbi.nlm.nih.gov/substance/363592869#section=Source"
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: desdesisoat
+- id: https://w3id.org/peh/BE-220b42015e
+  name: Desisopropyl 2-hydroxy atrazine
+  short_name: Desisopropyl 2-hydroxy atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desisopropyl 2-hydroxyatrazine
+  comments: Can it be this? https://pubchem.ncbi.nlm.nih.gov/compound/Deisopropylhydroxyatrazine
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: desiso2hyat
+- id: https://w3id.org/peh/BE-40a856a10f
+  name: Desisopropyl atrazine
+  short_name: Desisopropyl atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-0df789fdea
+  translations_name_nl_be: Desisopropylatrazine
+  exact_matches:
+  - CHEBI:27399|CAS:1007-28-9|PUBCHEM:13878|INCHIKEY:IVENSCMCQBJAKW-UHFFFAOYSA-N
+  aliases:
+  - Deisopropylatrazine
+  varname: desisoat
+- id: https://w3id.org/peh/BE-ddc69d562e
+  name: Simazine
+  short_name: Simazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-ddc69d562e
+  translations_name_nl_be: Simazine
+  exact_matches:
+  - CHEBI:27496|CAS:122-34-9|PUBCHEM:5216|INCHIKEY:ODCWYMIRDDJXKW-UHFFFAOYSA-N
+  varname: simz
+- id: https://w3id.org/peh/BE-883d2e64a0
+  name: Simazine mercapturate
+  short_name: Simazine mercapturate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_compounds:
+  - https://w3id.org/peh/BE-ddc69d562e
+  translations_name_nl_be: Simazine-mercapturaat
+  exact_matches:
+  - INCHIKEY:CSQCJPSBEYLCBK-UHFFFAOYSA-N|PUBCHEM:86196119
+  varname: simzmerc

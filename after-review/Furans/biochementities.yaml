@@ -1,0 +1,88 @@
+biochementities:
+- id: https://w3id.org/peh/BE-4476deaf19
+  name: 1,2,3,4,6,7,8-Heptachlorodibenzofuran
+  short_name: 1,2,3,4,6,7,8-HpCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,4,6,7,8-heptatachloordibenzofuran
+  exact_matches:
+  - CHEBI:81513|CAS:67562-39-4|PUBCHEM:38199|INCHIKEY:WDMKCPIVJOGHBF-UHFFFAOYSA-N
+  varname: pcdf131
+- id: https://w3id.org/peh/BE-5520bafb1a
+  name: 1,2,3,4,7,8,9-Heptachlorodibenzofuran
+  short_name: 1,2,3,4,7,8,9-HpCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,4,7,8,9-heptatachloordibenzofuran
+  exact_matches:
+  - 'CHEBI:'
+  - 81514|PUBCHEM:41510|INCHIKEY:VEZCTZWLJYWARH-UHFFFAOYSA-N|CAS:55673-89-7
+  varname: pcdf134
+- id: https://w3id.org/peh/BE-0da0c9f330
+  name: 1,2,3,4,7,8-Hexachlorodibenzofuran
+  short_name: 1,2,3,4,7,8-HxCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,4,7,8-hexatachloordibenzofuran
+  exact_matches:
+  - CHEBI:81509|CAS:70648-26-9|PUBCHEM:51130|INCHIKEY:LVYBAQIVPKCOEE-UHFFFAOYSA-N
+- id: https://w3id.org/peh/BE-8e6a268281
+  name: 1,2,3,6,7,8-Hexachlorodibenzofuran
+  short_name: 1,2,3,6,7,8-HxCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,6,7,8-hexatachloordibenzofuran
+  exact_matches:
+  - CHEBI:81511|CAS:57117-44-9|PUBCHEM:42140|INCHIKEY:JEYJJJXOFWNEHN-UHFFFAOYSA-N
+- id: https://w3id.org/peh/BE-c9e91fd609
+  name: 1,2,3,7,8,9-Hexachlorodibenzofuran
+  short_name: 1,2,3,7,8,9-HxCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,7,8,9-hexatachloordibenzofuran
+  exact_matches:
+  - CHEBI:81510|CAS:72918-21-9|PUBCHEM:51720|INCHIKEY:PYUSJFJVDVSXIU-UHFFFAOYSA-N
+- id: https://w3id.org/peh/BE-26ffac3ab8
+  name: 1,2,3,7,8-Pentachlorodibenzofuran
+  short_name: 1,2,3,7,8-PeCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 1,2,3,7,8-pentachloordibenzofuran
+  exact_matches:
+  - CHEBI:81507|CAS:57117-41-6|PUBCHEM:42138|INCHIKEY:SBMIVUVRFPGOEB-UHFFFAOYSA-N
+  varname: pcdf94
+- id: https://w3id.org/peh/BE-f859c7f090
+  name: 2,3,4,6,7,8-Hexachlorodibenzofuran
+  short_name: 2,3,4,6,7,8-HxCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 2,3,4,6,7,8-hexatachloordibenzofuran
+  exact_matches:
+  - CHEBI:81512|CAS:60851-34-5|PUBCHEM:43495|INCHIKEY:XTAHLACQOVXINQ-UHFFFAOYSA-N
+- id: https://w3id.org/peh/BE-af557057c5
+  name: 2,3,4,7,8-Pentachlorodibenzofuran
+  short_name: 2,3,4,7,8-PeCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 2,3,4,7,8-pentachloordibenzofuran
+  exact_matches:
+  - CHEBI:81508|CAS:57117-31-4|PUBCHEM:42128|INCHIKEY:OGBQILNBLMPPDP-UHFFFAOYSA-N
+  varname: pcdf114
+- id: https://w3id.org/peh/BE-36a201f240
+  name: 2,3,7,8-Tetrachlorodibenzofuran
+  short_name: 2,3,7,8-TCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: 2,3,7,8-tetrachloordibenzofuran
+  exact_matches:
+  - CHEBI:81506|CAS:51207-31-9|PUBCHEM:39929|INCHIKEY:KSMVNVHUTQZITP-UHFFFAOYSA-N
+  varname: pcdf83
+- id: https://w3id.org/peh/BE-e5def96649
+  name: Octachlorodibenzofuran
+  short_name: OCDF
+  compoundgroups:
+  - "Furans"
+  translations_name_nl_be: Octachloordibenzofuran
+  exact_matches:
+  - CHEBI:81515|CAS:39001-02-0|PUBCHEM:38200|INCHIKEY:RHIROFAGUQOFLU-UHFFFAOYSA-N
+  varname: pcdf135

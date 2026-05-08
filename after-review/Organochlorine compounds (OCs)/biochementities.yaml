@@ -1,0 +1,865 @@
+biochementities:
+- id: https://w3id.org/peh/BE-876786f433
+  name: 1,2,3,4,6,7,8-Heptachlorodibenzo-p-dioxin
+  short_name: 1,2,3,4,6,7,8-HpCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 1,2,3,4,6,7,8-heptachloordibenzo-p-dioxine
+  exact_matches:
+  - CHEBI:81505|CAS:35822-46-9|PUBCHEM:37270|INCHIKEY:WCLNVRQZUKYVAI-UHFFFAOYSA-N
+  varname: hpcdd
+- id: https://w3id.org/peh/BE-680e7b0897
+  name: 1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,6,7,8-HxCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 1,2,3,6,7,8-hexachloordibenzo-p-dioxine
+  exact_matches:
+  - CHEBI:81503|CAS:57653-85-7|PUBCHEM:42540|INCHIKEY:YCLUIPQDHHPDJJ-UHFFFAOYSA-N
+  varname: pcdd67
+- id: https://w3id.org/peh/BE-452ad83535
+  name: 1,2,3,4,7,8-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,4,7,8-HxCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 1,2,3,4,7,8-hexachloordibenzo-p-dioxine
+  exact_matches:
+  - CHEBI:81502|CAS:39227-28-6|PUBCHEM:38251|INCHIKEY:WCYYQNSQJHPVMG-UHFFFAOYSA-N
+  varname: pcdd66
+- id: https://w3id.org/peh/BE-fc0a50d1d2
+  name: 1,2,3,7,8,9-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,7,8,9-HxCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 1,2,3,7,8,9-hexachloordibenzo-p-dioxine
+  exact_matches:
+  - CHEBI:81504|CAS:19408-74-3|PUBCHEM:29575|INCHIKEY:LGIRBUBHIWTVCK-UHFFFAOYSA-N
+  varname: pcdd70
+- id: https://w3id.org/peh/BE-36f707ca77
+  name: 1,2,3,7,8-Pentachlorodibenzo-p-dioxin
+  short_name: 1,2,3,7,8-PeCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 1,2,3,7,8-pentachloordibenzo-p-dioxine
+  exact_matches:
+  - CHEBI:81501|CAS:40321-76-4|PUBCHEM:38439|INCHIKEY:FSPZPQQWDODWAU-UHFFFAOYSA-N
+  varname: pecdd
+- id: https://w3id.org/peh/BE-87792d963e
+  name: 2,3,7,8-tetrachlorodibenzodioxin
+  short_name: 2,3,7,8-TCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: 2,3,7,8-tetrachloordibenzo-p-dioxine
+  translations_short_name_nl_be: 2,3,7,8-TCDD
+  exact_matches:
+  - CHEBI:28119|CAS:1746-01-6|PUBCHEM:15625|INCHIKEY:HGUFODBRKLSHSI-UHFFFAOYSA-N
+  aliases:
+  - 2,3,7,8-Tetrachlorodibenzo-P-Dioxin
+  varname: tcbd
+- id: https://w3id.org/peh/BE-2596246b6d
+  name: Octachlorodibenzodioxin
+  short_name: OCDD
+  compoundgroups:
+  - "Dioxins"
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: Octachloordibenzodioxine
+  exact_matches:
+  - CHEBI:81566|CAS:3268-87-9|PUBCHEM:18636|INCHIKEY:FOIBFBMSLDGNHL-UHFFFAOYSA-N
+  aliases:
+  - Octachlorodibenzo-P-dioxin
+  varname: ocdd
+- id: https://w3id.org/peh/BE-1b7991f1c3
+  name: Hydroxylated Polychlorinated biphenyl 107
+  short_name: Hydroxylated Polychlorinated biphenyl 107
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: CB107
+  translations_short_name_nl_be: CB107
+  comments: Can it be this compound? http://exposome-explorer.iarc.fr/compounds/1306
+    --> although the INCHI KEY in that website refers me to this compound in pubchem…
+    https://pubchem.ncbi.nlm.nih.gov/compound/2_3_6-trichloro-4-_3_4-dichlorophenyl_phenol
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: hocb107
+- id: https://w3id.org/peh/BE-86bfac18f4
+  name: Hydroxylated Polychlorinated biphenyl 146
+  short_name: Hydroxylated Polychlorinated biphenyl 146
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: CB146
+  translations_short_name_nl_be: CB146
+  comments: can it be this compound? http://exposome-explorer.iarc.fr/compounds/1307
+    // no pubchem reference though
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: hocb146
+- id: https://w3id.org/peh/BE-8cda17a2c5
+  name: Hydroxylated Polychlorinated biphenyl 187
+  short_name: Hydroxylated Polychlorinated biphenyl 187
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: CB187
+  translations_short_name_nl_be: CB187
+  comments: Can it be this compound? http://exposome-explorer.iarc.fr/compounds/1308  -->
+    the IUPAC name appears to be a synonym of https://pubchem.ncbi.nlm.nih.gov/compound/178007
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: hocb187
+- id: https://w3id.org/peh/BE-03b82ab588
+  name: Polychlorinated biphenyl 101
+  short_name: PCB 101
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 101
+  translations_short_name_nl_be: PCB 101
+  exact_matches:
+  - INCHIKEY:LAHWLEDBADHJGA-UHFFFAOYSA-N|PUBCHEM:37807|CAS:37680-73-2|CHEBI:233349
+  varname: pcb101
+- id: https://w3id.org/peh/BE-e03dfb6241
+  name: Polychlorinated biphenyl 105
+  short_name: PCB 105
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 105
+  translations_short_name_nl_be: PCB 105
+  exact_matches:
+  - INCHIKEY:WIDHRBRBACOVOY-UHFFFAOYSA-N|PUBCHEM:36188|CAS:32598-14-4|CHEBI:81518
+  varname: pcb105
+- id: https://w3id.org/peh/BE-f7d23be617
+  name: Polychlorinated biphenyl 110
+  short_name: PCB 110
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 110
+  translations_short_name_nl_be: PCB 110
+  exact_matches:
+  - INCHIKEY:ARXHIJMGSIYYRZ-UHFFFAOYSA-N|PUBCHEM:38015|CAS:38380-03-9
+  varname: pcb110
+- id: https://w3id.org/peh/BE-50d8c05fc2
+  name: Polychlorinated biphenyl 114
+  short_name: PCB 114
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 114
+  translations_short_name_nl_be: PCB 114
+  exact_matches:
+  - INCHIKEY:SXZSFWHOSHAKMN-UHFFFAOYSA-N|PUBCHEM:53036|CAS:74472-37-0|CHEBI:81519
+  varname: pcb114
+- id: https://w3id.org/peh/BE-d76928986c
+  name: Polychlorinated biphenyl 118
+  short_name: PCB 118
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 118
+  translations_short_name_nl_be: PCB 118
+  exact_matches:
+  - INCHIKEY:IUTPYMGCWINGEY-UHFFFAOYSA-N|PUBCHEM:35823|CAS:31508-00-6|CHEBI:81520
+  aliases:
+  - 2,3',4,4',5-Pentachlorobiphenyl
+  varname: pcb118
+- id: https://w3id.org/peh/BE-eead966943
+  name: Polychlorinated biphenyl 123
+  short_name: PCB 123
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 123
+  translations_short_name_nl_be: PCB 123
+  exact_matches:
+  - INCHIKEY:YAHNWSSFXMVPOU-UHFFFAOYSA-N|PUBCHEM:47650|CAS:65510-44-3|CHEBI:81521
+  aliases:
+  - 2',3,4,4',5-Pentachlorobiphenyl
+  varname: pcb123
+- id: https://w3id.org/peh/BE-e55dee887e
+  name: Polychlorinated biphenyl 126
+  short_name: PCB 126
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 126
+  translations_short_name_nl_be: PCB 126
+  exact_matches:
+  - INCHIKEY:REHONNLQRWTIFF-UHFFFAOYSA-N|PUBCHEM:63090|CAS:57465-28-8|CHEBI:34317
+  varname: pcb126
+- id: https://w3id.org/peh/BE-7925828630
+  name: Polychlorinated biphenyl 128
+  short_name: PCB 128
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 128
+  translations_short_name_nl_be: PCB 128
+  exact_matches:
+  - INCHIKEY:BTAGRXWGMYTPBY-UHFFFAOYSA-N|PUBCHEM:38018|CAS:11096-82-5|CAS:38380-07-3
+  varname: pcb128
+- id: https://w3id.org/peh/BE-0deef4b0e8
+  name: Polychlorinated biphenyl 138
+  short_name: PCB 138
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 138
+  translations_short_name_nl_be: PCB 138
+  exact_matches:
+  - INCHIKEY:RPUMZMSNLZHIGZ-UHFFFAOYSA-N|PUBCHEM:37035|CAS:35065-28-2|CHEBI:165219
+  varname: pcb138
+- id: https://w3id.org/peh/BE-1867446046
+  name: Polychlorinated biphenyl 146
+  short_name: PCB 146
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 146
+  translations_short_name_nl_be: PCB 146
+  exact_matches:
+  - INCHIKEY:BQHCQAQLTCQFJZ-UHFFFAOYSA-N|PUBCHEM:40172|CAS:51908-16-8
+  varname: pcb146
+- id: https://w3id.org/peh/BE-38a1e828a9
+  name: Polychlorinated biphenyl 149
+  short_name: PCB 149
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 149
+  translations_short_name_nl_be: PCB 149
+  exact_matches:
+  - INCHIKEY:LKHLFUVHHXCNJH-UHFFFAOYSA-N|PUBCHEM:38016|CAS:38380-04-0
+  varname: pcb149
+- id: https://w3id.org/peh/BE-a7056fc9f0
+  name: Polychlorinated biphenyl 151
+  short_name: PCB 151
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 151
+  translations_short_name_nl_be: PCB 151
+  exact_matches:
+  - INCHIKEY:UHCLFIWDCYOTOL-UHFFFAOYSA-N|PUBCHEM:40471|CAS:52663-63-5
+  varname: pcb151
+- id: https://w3id.org/peh/BE-58a93178e4
+  name: Polychlorinated biphenyl 153
+  short_name: PCB 153
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 153
+  translations_short_name_nl_be: PCB 153
+  exact_matches:
+  - INCHIKEY:MVWHGTYKUMDIHL-UHFFFAOYSA-N|PUBCHEM:37034|CAS:35065-27-1|CHEBI:34202
+  varname: pcb153
+- id: https://w3id.org/peh/BE-0a6082d19f
+  name: Polychlorinated biphenyl 156
+  short_name: PCB 156
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 156
+  translations_short_name_nl_be: PCB 156
+  exact_matches:
+  - INCHIKEY:LCXMEXLGMKFLQO-UHFFFAOYSA-N|PUBCHEM:38019|CAS:38380-08-4|CHEBI:81522
+  aliases:
+  - 2,3,3',4,4',5-Hexachlorobiphenyl
+  varname: pcb156
+- id: https://w3id.org/peh/BE-eb2857b3ec
+  name: Polychlorinated biphenyl 157
+  short_name: PCB 157
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 157
+  translations_short_name_nl_be: PCB 157
+  exact_matches:
+  - INCHIKEY:YTWXDQVNPCIEOX-UHFFFAOYSA-N|PUBCHEM:50891|CAS:69782-90-7|CHEBI:81523
+  aliases:
+  - 2,3,3',4,4',5'-Hexachlorobiphenyl
+  varname: pcb157
+- id: https://w3id.org/peh/BE-023edce4f6
+  name: Polychlorinated biphenyl 158
+  short_name: PCB 158
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 158
+  translations_short_name_nl_be: PCB 158
+  exact_matches:
+  - INCHIKEY:ZQUPQXINXTWCQR-UHFFFAOYSA-N|PUBCHEM:63072|CAS:74472-42-7
+  aliases:
+  - 2,3,3',4,4',6-Hexachlorobiphenyl
+  varname: pcb158
+- id: https://w3id.org/peh/BE-61b0fc3cdd
+  name: Polychlorinated biphenyl 167
+  short_name: PCB 167
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 167
+  translations_short_name_nl_be: PCB 167
+  exact_matches:
+  - INCHIKEY:AZXHAWRMEPZSSV-UHFFFAOYSA-N|PUBCHEM:40479|CAS:52663-72-6|CHEBI:81524
+  aliases:
+  - 2,3',4,4',5,5'-Hexachlorobiphenyl
+  varname: pcb167
+- id: https://w3id.org/peh/BE-e4c0e13662
+  name: Polychlorinated biphenyl 169
+  short_name: PCB 169
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 169
+  translations_short_name_nl_be: PCB 169
+  exact_matches:
+  - INCHIKEY:ZHLICBPIXDOFFG-UHFFFAOYSA-N|PUBCHEM:36231|CAS:32774-16-6|CHEBI:81517
+  aliases:
+  - 3,3',4,4',5,5'-Hexachlorobiphenyl
+  varname: pcb169
+- id: https://w3id.org/peh/BE-a615c46076
+  name: Polychlorinated biphenyl 170
+  short_name: PCB 170
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 170
+  translations_short_name_nl_be: PCB 170
+  exact_matches:
+  - INCHIKEY:RMPWIIKNWPVWNG-UHFFFAOYSA-N|PUBCHEM:37037|CAS:35065-30-6
+  varname: pcb170
+- id: https://w3id.org/peh/BE-6133f5488f
+  name: Polychlorinated biphenyl 171
+  short_name: PCB 171
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 171
+  translations_short_name_nl_be: PCB 171
+  exact_matches:
+  - INCHIKEY:TZMHVHLTPWKZCI-UHFFFAOYSA-N|PUBCHEM:40478|CAS:52663-71-5
+  aliases:
+  - 2,2',3,3',4,4',6-Heptachlorobiphenyl
+  varname: pcb171
+- id: https://w3id.org/peh/BE-8d6e1a506f
+  name: Polychlorinated biphenyl 172
+  short_name: PCB 172
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 172
+  translations_short_name_nl_be: PCB 172
+  exact_matches:
+  - INCHIKEY:HOPMUCXYRNOABF-UHFFFAOYSA-N|PUBCHEM:40481|CAS:52663-74-8
+  aliases:
+  - 2,2',3,3',4,5,5'-Heptachlorobiphenyl
+  varname: pcb172
+- id: https://w3id.org/peh/BE-e384a3cba0
+  name: Polychlorinated biphenyl 174
+  short_name: PCB 174
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 174
+  translations_short_name_nl_be: PCB 174
+  exact_matches:
+  - INCHIKEY:ZDLMBNHYTPHDLF-UHFFFAOYSA-N|PUBCHEM:38025|CAS:38411-25-5
+  varname: pcb174
+- id: https://w3id.org/peh/BE-f7f00aef09
+  name: Polychlorinated biphenyl 177
+  short_name: PCB 177
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 177
+  translations_short_name_nl_be: PCB 177
+  exact_matches:
+  - INCHIKEY:CXOYNJAHPUASHN-UHFFFAOYSA-N|PUBCHEM:40477|CAS:52663-70-4
+  varname: pcb177
+- id: https://w3id.org/peh/BE-d75060a0ad
+  name: Polychlorinated biphenyl 178
+  short_name: PCB 178
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 178
+  translations_short_name_nl_be: PCB 178
+  exact_matches:
+  - INCHIKEY:WCIBKXHMIXUQHK-UHFFFAOYSA-N|PUBCHEM:40474|CAS:52663-67-9
+  aliases:
+  - 2,2',3,3',5,5',6-Heptachlorobiphenyl
+  varname: pcb178
+- id: https://w3id.org/peh/BE-fea83e7f07
+  name: Polychlorinated biphenyl 18
+  short_name: PCB 18
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 18
+  translations_short_name_nl_be: PCB 18
+  exact_matches:
+  - INCHIKEY:DCMURXAZTZQAFB-UHFFFAOYSA-N|PUBCHEM:37803|CAS:37680-65-2
+  aliases:
+  - 2,2',5-Trichlorobiphenyl
+  varname: pcb18
+- id: https://w3id.org/peh/BE-9de1355591
+  name: Polychlorinated biphenyl 180
+  short_name: PCB 180
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 180
+  translations_short_name_nl_be: PCB 180
+  exact_matches:
+  - INCHIKEY:WBHQEUPUMONIKF-UHFFFAOYSA-N|PUBCHEM:37036|CAS:35065-29-3|CHEBI:165220
+  varname: pcb180
+- id: https://w3id.org/peh/BE-840e962eb5
+  name: Polychlorinated biphenyl 183
+  short_name: PCB 183
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 183
+  translations_short_name_nl_be: PCB 183
+  exact_matches:
+  - INCHIKEY:KQBFUDNJKCZEDQ-UHFFFAOYSA-N|PUBCHEM:40476|CAS:52663-69-1
+  aliases:
+  - 2,2',3,4,4',5',6-Heptachlorobiphenyl
+  varname: pcb183
+- id: https://w3id.org/peh/BE-00fb5fbc05
+  name: Polychlorinated biphenyl 187
+  short_name: PCB 187
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 187
+  translations_short_name_nl_be: PCB 187
+  exact_matches:
+  - INCHIKEY:UDMZPLROONOSEF-UHFFFAOYSA-N|PUBCHEM:40475|CAS:52663-68-0
+  varname: pcb187
+- id: https://w3id.org/peh/BE-f588f3a3d7
+  name: Polychlorinated biphenyl 189
+  short_name: PCB 189
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 189
+  translations_short_name_nl_be: PCB 189
+  exact_matches:
+  - INCHIKEY:XUAWBXBYHDRROL-UHFFFAOYSA-N|PUBCHEM:38306|CAS:39635-31-9|CHEBI:81525
+  varname: pcb189
+- id: https://w3id.org/peh/BE-564dbf63d6
+  name: Polychlorinated biphenyl 194
+  short_name: PCB 194
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 194
+  translations_short_name_nl_be: PCB 194
+  exact_matches:
+  - INCHIKEY:DTMRKGRREZAYAP-UHFFFAOYSA-N|PUBCHEM:37251|CAS:35694-08-7
+  aliases:
+  - 2,2',3,3',4,4',5,5'-Octachlorobiphenyl
+  varname: pcb194
+- id: https://w3id.org/peh/BE-4b6b61cc8f
+  name: Polychlorinated biphenyl 195
+  short_name: PCB 195
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 195
+  translations_short_name_nl_be: PCB 195
+  exact_matches:
+  - INCHIKEY:JAHJITLFJSDRCG-UHFFFAOYSA-N|PUBCHEM:40485|CAS:52663-78-2|CAS:31472-83-0
+  aliases:
+  - 2,2',3,3',4,4',5,6-Octachlorobiphenyl
+  varname: pcb195
+- id: https://w3id.org/peh/BE-476b61ad5d
+  name: Polychlorinated biphenyl 196
+  short_name: PCB 196
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 196
+  translations_short_name_nl_be: PCB 196
+  exact_matches:
+  - INCHIKEY:BQFCCUSDZLKBJG-UHFFFAOYSA-N|PUBCHEM:39253|CAS:42740-50-1
+  aliases:
+  - 2,2',3,3',4,4',5,6'-Octachlorobiphenyl
+  varname: pcb196
+- id: https://w3id.org/peh/BE-7a6e2827a2
+  name: Polychlorinated biphenyl 199
+  short_name: PCB 199
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 199
+  translations_short_name_nl_be: PCB 199
+  exact_matches:
+  - INCHIKEY:HJBYDWKNARZTMJ-UHFFFAOYSA-N|PUBCHEM:40482|CAS:52663-75-9
+  aliases:
+  - 2,2',3,3',4,5,5',6'-Octachlorobiphenyl
+  varname: pcb199
+- id: https://w3id.org/peh/BE-cb4446dffa
+  name: Polychlorinated biphenyl 201
+  short_name: PCB 201
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 201
+  translations_short_name_nl_be: PCB 201
+  exact_matches:
+  - INCHIKEY:LJQOBQLZTUSEJA-UHFFFAOYSA-N|PUBCHEM:38410|CAS:40186-71-8
+  aliases:
+  - 2,2',3,3',4,5',6,6'-Octachlorobiphenyl
+  varname: pcb201
+- id: https://w3id.org/peh/BE-b7d7fd953f
+  name: Polychlorinated biphenyl 203
+  short_name: PCB 203
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 203
+  translations_short_name_nl_be: PCB 203
+  exact_matches:
+  - INCHIKEY:DCPDZFRGNJDWPP-UHFFFAOYSA-N|PUBCHEM:40483|CAS:52663-76-0
+  aliases:
+  - 2,2',3,4,4',5,5',6-Octachlorobiphenyl
+  varname: pcb203
+- id: https://w3id.org/peh/BE-88ccff6f7a
+  name: Polychlorinated biphenyl 206
+  short_name: PCB 206
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 206
+  translations_short_name_nl_be: PCB 206
+  exact_matches:
+  - INCHIKEY:JFIMDKGRGPNPRQ-UHFFFAOYSA-N|PUBCHEM:38411|CAS:40186-72-9|CAS:53742-07-7
+  aliases:
+  - 2,2',3,3',4,4',5,5',6-Nonachlorobiphenyl
+  varname: pcb206
+- id: https://w3id.org/peh/BE-b2745e3b3f
+  name: Polychlorinated biphenyl 209
+  short_name: PCB 209
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 209
+  translations_short_name_nl_be: PCB 209
+  exact_matches:
+  - INCHIKEY:ONXPZLFXDMAPRO-UHFFFAOYSA-N|PUBCHEM:16318|CAS:2051-24-3|CHEBI:34666
+  aliases:
+  - Decachlorobiphenyl
+  varname: pcb209
+- id: https://w3id.org/peh/BE-380ec69af4
+  name: Polychlorinated biphenyl 28
+  short_name: PCB 28
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 28
+  translations_short_name_nl_be: PCB 28
+  exact_matches:
+  - INCHIKEY:BZTYNSQSZHARAZ-UHFFFAOYSA-N|PUBCHEM:23448|CAS:7012-37-5|CHEBI:233161
+  aliases:
+  - 2,4,4'-Trichlorobiphenyl
+  varname: pcb28
+- id: https://w3id.org/peh/BE-f28a9dc8c7
+  name: Polychlorinated biphenyl 44
+  short_name: PCB 44
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 44
+  translations_short_name_nl_be: PCB 44
+  exact_matches:
+  - INCHIKEY:ALDJIKXAHSDLLB-UHFFFAOYSA-N|PUBCHEM:38875|CAS:41464-39-5
+  aliases:
+  - 2,2',3,5'-Tetrachlorobiphenyl
+  varname: pcb44
+- id: https://w3id.org/peh/BE-29ac39621a
+  name: Polychlorinated biphenyl 49
+  short_name: PCB 49
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 49
+  translations_short_name_nl_be: PCB 49
+  exact_matches:
+  - INCHIKEY:ZWPVHELAQPIZHO-UHFFFAOYSA-N|PUBCHEM:38876|CAS:41464-40-8
+  varname: pcb49
+- id: https://w3id.org/peh/BE-ebd6942505
+  name: Polychlorinated biphenyl 52
+  short_name: PCB 52
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 52
+  translations_short_name_nl_be: PCB 52
+  exact_matches:
+  - INCHIKEY:HCWZEPKLWVAEOV-UHFFFAOYSA-N|PUBCHEM:37248|CAS:35693-99-3|CHEBI:34206
+  aliases:
+  - 2,2',5,5'-Tetrachlorobiphenyl
+  varname: pcb52
+- id: https://w3id.org/peh/BE-e1761963c9
+  name: Polychlorinated biphenyl 66
+  short_name: PCB 66
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 66
+  translations_short_name_nl_be: PCB 66
+  exact_matches:
+  - INCHIKEY:RKLLTEAEZIJBAU-UHFFFAOYSA-N|PUBCHEM:36185|CAS:32598-10-0
+  aliases:
+  - 2,3',4,4'-Tetrachlorobiphenyl
+  varname: pcb66
+- id: https://w3id.org/peh/BE-f63f01f6cb
+  name: Polychlorinated biphenyl 74
+  short_name: PCB 74
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 74
+  translations_short_name_nl_be: PCB 74
+  exact_matches:
+  - INCHIKEY:TULCXSBAPHCWCF-UHFFFAOYSA-N|PUBCHEM:36218|CAS:32690-93-0
+  varname: pcb74
+- id: https://w3id.org/peh/BE-08345a473c
+  name: Polychlorinated biphenyl 77
+  short_name: PCB 77
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 77
+  translations_short_name_nl_be: PCB 77
+  exact_matches:
+  - INCHIKEY:UQMGJOKDKOLIDP-UHFFFAOYSA-N|PUBCHEM:36187|CAS:32598-13-3|CAS:80333-65-9|CHEBI:1367
+  varname: pcb77
+- id: https://w3id.org/peh/BE-2825b69076
+  name: Polychlorinated biphenyl 81
+  short_name: PCB 81
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 81
+  translations_short_name_nl_be: PCB 81
+  exact_matches:
+  - INCHIKEY:BHWVLZJTVIYLIV-UHFFFAOYSA-N|PUBCHEM:51043|CAS:70362-50-4|CHEBI:81516
+  aliases:
+  - 3,4,4',5-Tetrachlorobiphenyl
+  varname: pcb81
+- id: https://w3id.org/peh/BE-61f937b1f3
+  name: Polychlorinated biphenyl 87
+  short_name: PCB 87
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 87
+  translations_short_name_nl_be: PCB 87
+  exact_matches:
+  - INCHIKEY:OPKYDBFRKPQCBS-UHFFFAOYSA-N|PUBCHEM:38014|CAS:38380-02-8
+  aliases:
+  - 2,2',3,4,5'-Pentachlorobiphenyl
+  varname: pcb87
+- id: https://w3id.org/peh/BE-b7a143fe05
+  name: Polychlorinated biphenyl 99
+  short_name: PCB 99
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  parent_compounds:
+  - https://w3id.org/peh/BE-9c34ebdc76
+  translations_name_nl_be: Polychloorbifenyl 99
+  translations_short_name_nl_be: PCB 99
+  exact_matches:
+  - INCHIKEY:LMQJBFRGXHMNOX-UHFFFAOYSA-N|PUBCHEM:38013|CAS:38380-01-7
+  varname: pcb99
+- id: https://w3id.org/peh/BE-7b6391b449
+  name: Trans-nonachlor
+  short_name: Trans-nonachlor
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d17f057449
+  translations_name_nl_be: Trans-nonachloor
+  exact_matches:
+  - CHEBI:81540|CAS:39765-80-5|CAS:5103-73-1|PUBCHEM:12313421|INCHIKEY:OCHOKXCPKDPNQU-FLVMBEMLSA-N
+  aliases:
+  - Npc328442
+  comments: Anthony, can you double check if this one is correct? Because in synonyms
+    we have both cis and trans nonachlor  (https://pubchem.ncbi.nlm.nih.gov/compound/trans-Nonachlor)
+  to_check_by_anthony_expert: 'yes' # not in AS
+  varname: tnona
+- id: https://w3id.org/peh/BE-f479979650
+  name: Beta-hexachlorocyclohexane
+  short_name: bHCH
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-38b9eb4712
+  translations_name_nl_be: Beta hexachlorocyclohexaan
+  translations_short_name_nl_be: bHCH
+  exact_matches:
+  - CHEBI:28428|CAS:319-85-7|PUBCHEM:483937258|INCHIKEY:JLYXXMFPNIAWKQ-CDRYSYESSA-N
+  varname: bhch
+- id: https://w3id.org/peh/BE-f19bfb8171
+  name: Dichlorodiphenyldichloroethylene
+  short_name: p,p'-DDE
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4ccf22f8e2
+  translations_name_nl_be: Dichlorodiphenyldichloroethyleen
+  translations_short_name_nl_be: p,p'-DDE
+  exact_matches:
+  - CHEBI:16598|CAS:72-55-9|CAS:68679-99-2|PUBCHEM:3035|INCHIKEY:UCNVFOCBFJOQAL-UHFFFAOYSA-N
+  varname: ppdde
+- id: https://w3id.org/peh/BE-4ccf22f8e2
+  name: Dichlorodiphenyltrichloroethane
+  short_name: p,p'-DDT
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-4ccf22f8e2
+  translations_name_nl_be: Dichloordifenyltrichloorethaan
+  translations_short_name_nl_be: p,p'-DDT
+  exact_matches:
+  - CHEBI:16130|CAS:50-29-3|PUBCHEM:505853810
+  varname: ppddt
+- id: https://w3id.org/peh/BE-1a1d2eea80
+  name: Gamma-hexachlorocyclohexane
+  short_name: lindane
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-38b9eb4712
+  translations_name_nl_be: Gamma hexachlororcyclohexaan
+  translations_short_name_nl_be: gHCH
+  exact_matches:
+  - PUBCHEM:483925796
+  aliases:
+  - lindane
+  varname: ghch
+- id: https://w3id.org/peh/BE-7ac4b971f0
+  name: Oxychlordane
+  short_name: OXC
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  translations_name_nl_be: Oxychlordaan
+  translations_short_name_nl_be: OXC
+  exact_matches:
+  - CHEBI:81541|CAS:27304-13-8|PUBCHEM:13785700|INCHIKEY:VWGNQYSIWFHEQU-KGEUUOKHSA-N
+  varname: oxc
+- id: https://w3id.org/peh/BE-8ef76a2b2e
+  name: Cis-chlordane
+  short_name: α-chlordane
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  translations_name_nl_be: Cis-chlordane
+  exact_matches:
+  - CHEBI:39068|CAS:5103-71-9|PUBCHEM:12303035|INCHIKEY:BIWJNBZANLAXMG-IDTQJTQFSA-N
+  aliases:
+  - alpha-chlordane
+  varname: achlor
+- id: https://w3id.org/peh/BE-354482cd50
+  name: Trans-chlordane
+  short_name: γ-chlordane
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  translations_name_nl_be: Trans-chloordaan
+  exact_matches:
+  - CHEBI:39069|CAS:5103-74-2|PUBCHEM:12303036|INCHIKEY:BIWJNBZANLAXMG-OESJLNMISA-N
+  varname: ychlor
+- id: https://w3id.org/peh/BE-8a785d544e
+  name: Cis-nonachlor
+  short_name: Cis-nonachlor
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  parent_compounds:
+  - https://w3id.org/peh/BE-d17f057449
+  translations_name_nl_be: Cis-nonachloor
+  exact_matches:
+  - CAS:5103-73-1|PUBCHEM:12313426|INCHIKEY:OCHOKXCPKDPNQU-MSFPVELZSA-N
+  varname: cisnonac
+- id: https://w3id.org/peh/BE-cdd86cd306
+  name: Hexachlorobenzene
+  short_name: HCB
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  - "Pesticides"
+  translations_name_nl_be: Hexachlorobenzeen
+  translations_short_name_nl_be: HCB
+  exact_matches:
+  - CHEBI:5692|CAS:118-74-1|PUBCHEM:8370|INCHIKEY:CKAPSXZOOQJIBF-UHFFFAOYSA-N
+  varname: hcb
+- id: https://w3id.org/peh/BE-90903e80c8
+  name: Measured Sum of pcb196 and pcb203
+  short_name: Measured pcb196 + pcb203
+  compoundgroups:
+  - "Organochlorine compounds (OCs)"
+  translations_name_nl_be: Gemeten Som van pcb196 en pcb203
+  translations_short_name_nl_be: 'Gemeten '
+  group_compound_members:
+  - https://w3id.org/peh/BE-476b61ad5d|https://w3id.org/peh/BE-b7d7fd953f
+  comments: sumparameter
+  to_check_by_anthony_expert: 'yes' # not checked, this is an indicator
+  varname: pcb196and203
