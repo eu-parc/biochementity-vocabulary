@@ -1,0 +1,28 @@
+name: Validate vocabulary pipeline
+
+on:
+  pull_request:
+    paths:
+      - "dropbox/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run pipeline
+        run: make validate-pipeline
+
+      - name: Validate expected processing effects
+        run: |
+          test -f build/combined.yaml || (echo "Expected build/combined.yaml to exist" && exit 1)
+          grep -q "http://w3id.org/peh/biochementities/" build/combined.yaml || (echo "Expected build/combined.yaml to contain minted biochementity URIs" && exit 1)
+          test -f build/biochementities.ttl || (echo "Expected build/biochementities.ttl to exist" && exit 1)
+          find unpublished -maxdepth 1 -name "*.ttl" | grep -q . || (echo "Expected unpublished to contain generated assertions" && exit 1)
