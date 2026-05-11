@@ -1,0 +1,70 @@
+name: Publish nanopublications
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - "*" # any tag triggers dry-run
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Publish mode"
+        required: true
+        default: "dry-run"
+        type: choice
+        options:
+          - dry-run
+          - publish
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Set publish mode
+        id: mode
+        run: |
+          if [[ "${{ github.event_name }}" == "release" ]]; then
+            echo "dryrun=" >> $GITHUB_OUTPUT
+            echo "mode_label=release-publish" >> $GITHUB_OUTPUT
+            echo "commit_move=false" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.mode }}" == "publish" ]]; then
+            echo "dryrun=" >> $GITHUB_OUTPUT
+            echo "mode_label=manual-publish" >> $GITHUB_OUTPUT
+            echo "commit_move=true" >> $GITHUB_OUTPUT
+          else
+            echo "dryrun=--dry-run" >> $GITHUB_OUTPUT
+            echo "mode_label=dry-run" >> $GITHUB_OUTPUT
+            echo "commit_move=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish nanopublications and update repository folders
+        env:
+          NANOPUB_PRIVATE_KEY: ${{ secrets.NANOPUB_PRIVATE_KEY }}
+          NANOPUB_PUBLIC_KEY: ${{ secrets.NANOPUB_PUBLIC_KEY }}
+          INTRO_NANOPUB_URI: ${{ secrets.INTRO_NANOPUB_URI }}
+        run: |
+          make publish-pipeline DRY="${{ steps.mode.outputs.dryrun }}"
+
+      - name: Commit published move (manual real publish only)
+        if: steps.mode.outputs.commit_move == 'true'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add -A unpublished published redirect
+          git commit -m "Move published assertions and add redirect mappings" || echo "No changes to commit"
+          git push || echo "No changes to push"

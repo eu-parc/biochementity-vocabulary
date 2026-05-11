@@ -1,0 +1,12 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/peh/biochementities/01KRB098NDBZ8PG03P2AYKBZCV> a owl:Class ;
+    rdfs:label "benzophenones" ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+    rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
+    skos:exactMatch "CHEBI:22726"^^xsd:anyURI .
+
