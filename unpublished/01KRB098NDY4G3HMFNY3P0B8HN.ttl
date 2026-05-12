@@ -4,7 +4,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://w3id.org/peh/biochementities/01KRB098NDY4G3HMFNY3P0B8HN> a owl:Class ;
+<https://w3id.org/peh/biochementities/01KRB098NDY4G3HMFNY3P0B8HN> a owl:Class ;
     rdfs:label "per-/poly-fluorinated compounds" ;
     ns1:alternateName "PFASs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;

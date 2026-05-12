@@ -4,7 +4,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://w3id.org/peh/biochementities/01KRB098ND5AJTGD3JWZWY3230> a owl:Class ;
+<https://w3id.org/peh/biochementities/01KRB098ND5AJTGD3JWZWY3230> a owl:Class ;
     rdfs:label "volatile organic compounds" ;
     ns1:alternateName "VOCs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
