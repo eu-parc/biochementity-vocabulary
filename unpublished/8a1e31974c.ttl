@@ -1,0 +1,17 @@
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/8a1e31974c> a owl:Class ;
+    rdfs:label "N-acetyl-S-(2-carbamoyl-ethyl)-L-cysteine-sulfoxide" ;
+    ns2:alternateName "AAMA-sulf" ;
+    rdfs:subClassOf ns1:BioChemEntity ;
+    skos:exactMatch "https://identifiers.org/inchikey:MIZMPWFZMWDOPJ-AIUXZDRISA-N"^^xsd:anyURI ;
+    ns1:hasContextAlias [ ] ;
+    ns1:hasTranslation [ ],
+        [ ] ;
+    ns1:isMetaboliteOf <https://w3id.org/peh/biochementities/01KRB098NDXZ88795XY92JR78Y> .
+

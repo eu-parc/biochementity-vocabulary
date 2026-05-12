@@ -1,0 +1,18 @@
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/0071a0804e> a owl:Class ;
+    rdfs:label "N-acetyl-S-(2-carbamoyl-ethyl)cysteine" ;
+    ns1:alternateName "AAMA" ;
+    ns1:comment "comments: * I found this source for the INCHIKEY but the name does not correspond 100%: https://www.smolecule.com/products/s774818#:~:text=Description-,N%2DAcetyl%2DS%2D(2%2Dcarbamoylethyl)%2DL%2D,detoxification%20and%20antioxidant%20defense%20mechanisms%20. *However, the INCHIKEY in PUBCHEM belongs to this other compound: https://pubchem.ncbi.nlm.nih.gov/compound/N-Acetyl-S-_propionamide_cysteine#section=IUPAC-Name --> I think the INCHIKEY is not correct source: https://www.sciencedirect.com/science/article/pii/S0048969713003616" ;
+    rdfs:subClassOf ns2:BioChemEntity ;
+    skos:exactMatch "https://identifiers.org/inchikey:GGBCHNJZQQEQRX-LURJTMIESA-N"^^xsd:anyURI ;
+    ns2:hasContextAlias [ ] ;
+    ns2:hasTranslation [ ],
+        [ ] ;
+    ns2:isMetaboliteOf <https://w3id.org/peh/biochementities/01KRB098NDXZ88795XY92JR78Y> .
+

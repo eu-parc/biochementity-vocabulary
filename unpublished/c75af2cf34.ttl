@@ -1,0 +1,15 @@
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/peh/biochementities/c75af2cf34> a owl:Class ;
+    rdfs:label "N-(2-Carbamoyl-2-hydroxyethyl)valine" ;
+    ns2:alternateName "GAVal" ;
+    ns2:comment "comments: Should parent compound not be acrylamide? feedback_epi team: Yes assigning Acrylamide as parent compound seems correct to me. Because Acrylamide is the substance a human is exposed to, and we can measure GAVAL and AAVAL to reflect that exposure. GA‑Val (GAVAL) and AA‑Val (AAVAL) — are both well‑established biomarkers of exposure to acrylamide and its metabolite glycidamide. These adducts form when the reactive compounds bind to the N‑terminal valine of hemoglobin. Core attribution - AAVAL (N‑(2‑carbamoylethyl)valine) reflects exposure to acrylamide, the parent compound. - GAVAL (N‑(2‑carbamoyl‑2‑hydroxyethyl)valine) reflects exposure to glycidamide, which is the epoxide metabolite formed when acrylamide is metabolized via CYP2E1. This relationship is well documented: acrylamide is converted to glycidamide, and both acrylamide and glycidamide form hemoglobin adducts that can be used to reconstruct exposure. source: https://pmc.ncbi.nlm.nih.gov/articles/PMC5696489/ Moreover, AA and GA react with plasma and other proteins, such as hemoglobin (Hb). Covalent binding to the N-terminal valine (Val) residue of Hb results in formation of N-(2-carbamoylethyl)valine (AAVal) and N-(2-carbamoyl-2-hydroxyethyl)valine (GAVal) Hb adducts that can be specifically cleaved off and derivatized to serve as biomarkers for long-term exposure monitoring (Bergmark et al. 1993; EFSA 2015; Fennell et al. 2005)." ;
+    rdfs:subClassOf ns1:BioChemEntity ;
+    ns1:hasContextAlias [ ] ;
+    ns1:hasTranslation [ ],
+        [ ] ;
+    ns1:isMetaboliteOf <https://w3id.org/peh/biochementities/01KRB098NDXZ88795XY92JR78Y> .
+
