@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/f6b530ff21> a owl:Class ;
+    rdfs:label "4-(Trifluoromethoxy)aniline",
+        "4-Trifluormethoxyaniline"@nl-be ;
+    schema1:alternateName "4TFMA" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch "https://identifiers.org/cas:461-82-5"^^xsd:anyURI,
+        "https://identifiers.org/inchikey:XUJFOSLZQITUOI-UHFFFAOYSA-N"^^xsd:anyURI,
+        "https://identifiers.org/pubchem.compound:600848"^^xsd:anyURI .
+

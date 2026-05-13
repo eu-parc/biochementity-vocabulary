@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/68147ef282> a owl:Class ;
+    rdfs:label "3,3'-Dichloro-4,4'-Diaminodiphenylmethane",
+        "4,4'-methyleenbis(2-chlooraniline)"@nl-be ;
+    schema1:alternateName "4,4'-methylenebis(2-chloroaniline)",
+        "MOCA" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch "https://identifiers.org/CHEBI:28124"^^xsd:anyURI,
+        "https://identifiers.org/cas:101-14-4"^^xsd:anyURI,
+        "https://identifiers.org/cas:25928-85-2"^^xsd:anyURI,
+        "https://identifiers.org/inchikey:IBOFVQJTBBUKMU-UHFFFAOYSA-N"^^xsd:anyURI,
+        "https://identifiers.org/pubchem.compound:7543"^^xsd:anyURI .
+

@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/6d39ef56c8> a owl:Class ;
+    rdfs:label "Para-Fluoroaniline",
+        "Para-fluoraniline"@nl-be ;
+    schema1:alternateName "4-Fluoroaniline",
+        "para-FA" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch "https://identifiers.org/CHEBI:28546"^^xsd:anyURI,
+        "https://identifiers.org/cas:371-40-4"^^xsd:anyURI,
+        "https://identifiers.org/inchikey:KRZCOLNOCZKSDF-UHFFFAOYSA-N"^^xsd:anyURI,
+        "https://identifiers.org/pubchem.compound:9731"^^xsd:anyURI ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] .
+

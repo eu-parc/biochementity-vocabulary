@@ -75,7 +75,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: twosixdcha
-  remark: 'comments: The Short name structure was not consistent with other 3, so removed the space'
+  remark: 'comments: The Short name structure was not consistent with other 3, so
+    removed the space'
 - id: https://w3id.org/peh/biochementities/b8ea0abb8e
   name: 2,6-Diisopropylaniline
   short_name: DIPA
@@ -115,7 +116,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: threeabph
-  remark: 'comments: * This one has two CAS numbers according to PUBCHEM --> How to handle this?'
+  remark: 'comments: * This one has two CAS numbers according to PUBCHEM --> How to
+    handle this?'
 - id: https://w3id.org/peh/biochementities/47c082ca6e
   name: 3-Trifluormethoxyaniline
   short_name: 3TFMA
@@ -130,7 +132,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: threetfma
-  remark: 'comments: * I do not find any info about this compound. Maybe is this one? https://de.hsp-pharma.com/apis-and-intermediates/3-trifluoromethoxyaniline-cas-1535-73-5.html#:~:text=Wir%20sind%20professionelle%203%2DTrifluormethoxyaniline%20cas%201535%2D73%2D5%20Hersteller,China%2C%20spezialisiert%20auf%20die%20Bereitstellung%20von%20qualitativ'
+  remark: 'comments: * I do not find any info about this compound. Maybe is this one?
+    https://de.hsp-pharma.com/apis-and-intermediates/3-trifluoromethoxyaniline-cas-1535-73-5.html#:~:text=Wir%20sind%20professionelle%203%2DTrifluormethoxyaniline%20cas%201535%2D73%2D5%20Hersteller,China%2C%20spezialisiert%20auf%20die%20Bereitstellung%20von%20qualitativ'
 - id: https://w3id.org/peh/biochementities/68147ef282
   name: 3,3'-Dichloro-4,4'-Diaminodiphenylmethane
   aliases:
@@ -222,9 +225,14 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: pda
-  remark: 'comments: * The CAS number here is associated with the compound in PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Diaminotoluene -->  Depositor-Supplied Synonyms here the name in this list appears, but to be double checked. And if the same, I would add 2,4-Diaminotoluene as name and 4-Methyl-m-phenylenediamine as aliases.
+  remark: 'comments: * The CAS number here is associated with the compound in PUBCHEM:
+    https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Diaminotoluene -->  Depositor-Supplied
+    Synonyms here the name in this list appears, but to be double checked. And if
+    the same, I would add 2,4-Diaminotoluene as name and 4-Methyl-m-phenylenediamine
+    as aliases.
 
-    * In the CHEBI Database, this CHEBI is associated with: https://www.ebi.ac.uk/chebi/CHEBI:34237 (In this website, the CAS nr does match)'
+    * In the CHEBI Database, this CHEBI is associated with: https://www.ebi.ac.uk/chebi/CHEBI:34237
+    (In this website, the CAS nr does match)'
 - id: https://w3id.org/peh/biochementities/f6b530ff21
   name: 4-(Trifluoromethoxy)aniline
   short_name: 4TFMA
@@ -322,7 +330,8 @@ biochementity_subclasses:
     alias: amoca
   remark: 'comments: * Parent compound seems to be MOCA
 
-    * In PUBCHEM it seems to be this compound: https://pubchem.ncbi.nlm.nih.gov/compound/56272 --> so adding this info. To double check by Anthony
+    * In PUBCHEM it seems to be this compound: https://pubchem.ncbi.nlm.nih.gov/compound/56272
+    --> so adding this info. To double check by Anthony
 
     source: https://pubmed.ncbi.nlm.nih.gov/18008389/'
 - id: https://w3id.org/peh/biochementities/f3b09fd987
