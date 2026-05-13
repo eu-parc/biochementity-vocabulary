@@ -6,5 +6,5 @@
 <https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS> a owl:Class ;
     rdfs:label "phthalates" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:35484"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:35484"^^xsd:anyURI .
 

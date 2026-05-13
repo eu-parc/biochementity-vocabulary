@@ -6,5 +6,5 @@
 <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB> a owl:Class ;
     rdfs:label "analines" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:22562"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:22562"^^xsd:anyURI .
 

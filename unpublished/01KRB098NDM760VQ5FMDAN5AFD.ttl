@@ -8,5 +8,5 @@
     rdfs:label "organochlorine compounds" ;
     ns1:alternateName "OCs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:36683"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:36683"^^xsd:anyURI .
 

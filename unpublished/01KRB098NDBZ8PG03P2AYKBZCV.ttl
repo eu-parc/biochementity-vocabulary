@@ -8,5 +8,5 @@
     rdfs:label "benzophenones" ;
     ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:22726"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:22726"^^xsd:anyURI .
 

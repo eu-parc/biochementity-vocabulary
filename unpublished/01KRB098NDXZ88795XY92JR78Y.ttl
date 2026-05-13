@@ -6,5 +6,5 @@
 <https://w3id.org/peh/biochementities/01KRB098NDXZ88795XY92JR78Y> a owl:Class ;
     rdfs:label "acrylamide" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:28619"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:28619"^^xsd:anyURI .
 

@@ -8,6 +8,6 @@
     rdfs:label "per-/poly-fluorinated compounds" ;
     ns1:alternateName "PFASs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:172397"^^xsd:anyURI,
-        "CHEBI:172406"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:172397"^^xsd:anyURI,
+        "https://identifiers.org/CHEBI:172406"^^xsd:anyURI .
 

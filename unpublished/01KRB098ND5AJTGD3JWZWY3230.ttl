@@ -8,5 +8,5 @@
     rdfs:label "volatile organic compounds" ;
     ns1:alternateName "VOCs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:134179"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:134179"^^xsd:anyURI .
 

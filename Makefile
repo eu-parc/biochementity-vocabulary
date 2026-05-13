@@ -15,6 +15,7 @@ TARGET_CLASS ?= biochementity_subclasses
 BASE_NAMESPACE ?= https://w3id.org/peh/terms/
 TERM_PARENT_CLASS ?= https://w3id.org/peh/terms/BioChemEntity
 MINT_NAMESPACE ?= https://w3id.org/peh/biochementities/
+ENTITY_LIST_PREDICATE ?= https://w3id.org/peh/terms/hasBioChemEntitySubclass
 COMBINED_DATA ?= $(OUT_FOLDER)/combined.yaml
 DRY ?=
 
@@ -95,7 +96,7 @@ graph2assertions: build
 			--input-ontology-path $(OUT_FOLDER)/$(ONTOLOGY_LABEL) \
 			--base-namespace $(BASE_NAMESPACE) \
 			--term-output-path $(UNPUBLISHED_FOLDER) \
-			--term-parent-class $(TERM_PARENT_CLASS); \
+			--subjects-from-predicate $(ENTITY_LIST_PREDICATE); \
 	fi
 
 validate-pipeline: graph2assertions
