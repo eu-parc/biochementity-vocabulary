@@ -8,5 +8,5 @@
     rdfs:label "carbamate" ;
     ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:23003"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:23003"^^xsd:anyURI .
 

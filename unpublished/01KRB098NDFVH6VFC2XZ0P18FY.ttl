@@ -8,5 +8,5 @@
     rdfs:label "polycyclic aromatic hydrocarbons" ;
     ns1:alternateName "PAHs" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:33848"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:33848"^^xsd:anyURI .
 

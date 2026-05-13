@@ -6,5 +6,5 @@
 <https://w3id.org/peh/biochementities/01KRB098ND5RB830Z5MCV0356V> a owl:Class ;
     rdfs:label "chloroanaline" ;
     rdfs:subClassOf <https://w3id.org/peh/terms/BioChemEntity> ;
-    skos:exactMatch "CHEBI:23130"^^xsd:anyURI .
+    skos:exactMatch "https://identifiers.org/CHEBI:23130"^^xsd:anyURI .
 
