@@ -12,6 +12,8 @@ biochementity_subclasses:
   name: "environmental biochementity"
   description: All abiotic environmental compartments in which chemicals can be measured
   parent_biochementity: https://w3id.org/peh/terms/biochementity
+  group_labels:
+    - 'pesticides'
 - id: bioticbiochementity
   name: "biotic biochementity"
   description: All biological organisms and their tissues
