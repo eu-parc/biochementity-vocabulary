@@ -1,0 +1,745 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/43041f798d
+  name: 2,3-Dichloroaniline
+  short_name: 2,3DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:46636
+  - https://identifiers.org/cas:608-27-5
+  - https://identifiers.org/pubchem.compound:11844
+  - https://identifiers.org/inchikey:BRPSAOUFIJSKOT-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3-dichlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twothreedcha
+- id: https://w3id.org/peh/biochementities/ebdeb64284
+  name: 2,4-Dichloroaniline
+  short_name: 2,4DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:46635
+  - https://identifiers.org/pubchem.compound:11123
+  - https://identifiers.org/inchikey:KQCMTOWTPBNWDB-UHFFFAOYSA-N
+  - https://identifiers.org/cas:554-00-7
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-dichlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twofourdcha
+- id: https://w3id.org/peh/biochementities/40cd75dbad
+  name: 2,5-Dichloroaniline
+  short_name: 2,5DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34245
+  - https://identifiers.org/cas:95-82-9
+  - https://identifiers.org/pubchem.compound:7262
+  - https://identifiers.org/inchikey:AVYGCQXNNJPXSS-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,5-dichlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twofivedcha
+- id: https://w3id.org/peh/biochementities/42f650764e
+  name: 2,6-Dichloroaniline
+  short_name: 2,6DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:46630
+  - https://identifiers.org/cas:608-31-1
+  - https://identifiers.org/pubchem.compound:11846
+  - https://identifiers.org/inchikey:JDMFXJULNGEPOI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,6-dichlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twosixdcha
+  remark: 'comments: The Short name structure was not consistent with other 3, so
+    removed the space'
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3252916ed9
+- id: https://w3id.org/peh/biochementities/b8ea0abb8e
+  name: 2,6-Diisopropylaniline
+  short_name: DIPA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/inchikey:WKBALTUBRZPIPZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:32484
+  - https://identifiers.org/cas:24544-04-5
+  aliases:
+  - Diisopropylaniline
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,6-diisopropylaniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dipa
+- id: https://w3id.org/peh/biochementities/f41f34e1b2
+  name: 3-Aminobiphenyl
+  short_name: 3ABPH
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/inchikey:MUNOBADFTHUUFG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:16717
+  - https://identifiers.org/cas:2243-47-2
+  - https://identifiers.org/cas:41674-04-8
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-Aminobifenyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threeabph
+  remark: 'comments: * This one has two CAS numbers according to PUBCHEM --> How to
+    handle this?'
+- id: https://w3id.org/peh/biochementities/47c082ca6e
+  name: 3-Trifluormethoxyaniline
+  short_name: 3TFMA
+  group_labels:
+  - anilines and MOCA
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-Trifluormethoxyaniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threetfma
+  remark: 'comments: * I do not find any info about this compound. Maybe is this one?
+    https://de.hsp-pharma.com/apis-and-intermediates/3-trifluoromethoxyaniline-cas-1535-73-5.html#:~:text=Wir%20sind%20professionelle%203%2DTrifluormethoxyaniline%20cas%201535%2D73%2D5%20Hersteller,China%2C%20spezialisiert%20auf%20die%20Bereitstellung%20von%20qualitativ'
+- id: https://w3id.org/peh/biochementities/68147ef282
+  name: 3,3'-Dichloro-4,4'-Diaminodiphenylmethane
+  aliases:
+  - 4,4'-methylenebis(2-chloroaniline)
+  short_name: MOCA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:28124
+  - https://identifiers.org/cas:101-14-4
+  - https://identifiers.org/cas:25928-85-2
+  - https://identifiers.org/pubchem.compound:7543
+  - https://identifiers.org/inchikey:IBOFVQJTBBUKMU-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4,4'-methyleenbis(2-chlooraniline)
+- id: https://w3id.org/peh/biochementities/9e63a88ba8
+  name: 4-Aminobiphenyl
+  short_name: 4ABPH
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:1784
+  - https://identifiers.org/cas:92-67-1
+  - https://identifiers.org/pubchem.compound:7102
+  - https://identifiers.org/inchikey:DMVOXQPQNTYEKQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Aminobifenyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourabph
+- id: https://w3id.org/peh/biochementities/4d170bf4af
+  name: 4-Ethylaniline
+  short_name: EtA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/inchikey:HRXZRAXKKNUKRF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11504
+  - https://identifiers.org/cas:589-16-2
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Ethylaniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eta
+- id: https://w3id.org/peh/biochementities/c3f8cba8b0
+  name: 4-Isopropylaniline
+  short_name: IPA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:43405
+  - https://identifiers.org/cas:99-88-7
+  - https://identifiers.org/pubchem.compound:7464
+  - https://identifiers.org/inchikey:LRTFPLFDLJYEKT-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-isopropylaniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ipa
+- id: https://w3id.org/peh/biochementities/00bd658f08
+  name: 4-Methyl-m-phenylenediamine
+  short_name: PDA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34237
+  - https://identifiers.org/cas:95-80-7
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Methyl-m-fenyleendiamine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pda
+  remark: 'comments: * The CAS number here is associated with the compound in PUBCHEM:
+    https://pubchem.ncbi.nlm.nih.gov/compound/2_4-Diaminotoluene -->  Depositor-Supplied
+    Synonyms here the name in this list appears, but to be double checked. And if
+    the same, I would add 2,4-Diaminotoluene as name and 4-Methyl-m-phenylenediamine
+    as aliases.
+
+    * In the CHEBI Database, this CHEBI is associated with: https://www.ebi.ac.uk/chebi/CHEBI:34237
+    (In this website, the CAS nr does match)'
+- id: https://w3id.org/peh/biochementities/f6b530ff21
+  name: 4-(Trifluoromethoxy)aniline
+  short_name: 4TFMA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:600848
+  - https://identifiers.org/cas:461-82-5
+  - https://identifiers.org/inchikey:XUJFOSLZQITUOI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Trifluormethoxyaniline
+- id: https://w3id.org/peh/biochementities/fffcf97ccb
+  name: Aniline
+  short_name: Aniline
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:17296
+  - https://identifiers.org/cas:62-53-3
+  - https://identifiers.org/pubchem.compound:6115
+  - https://identifiers.org/inchikey:PAYRUJLWNCNPSJ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Aniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: aniline
+- id: https://w3id.org/peh/biochementities/81b815dd4d
+  name: Meta-Chloroaniline
+  short_name: meta-Cha
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/inchikey:PNPCRKVUWYDDST-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:7932
+  - https://identifiers.org/cas:108-42-9
+  - https://identifiers.org/CHEBI:229245
+  aliases:
+  - 3-Chloroaniline
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Meta-Chlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mcha
+- id: https://w3id.org/peh/biochementities/c07fa32624
+  name: Meta-Fluoroaniline
+  short_name: meta-FA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:27873
+  - https://identifiers.org/cas:372-19-0
+  - https://identifiers.org/pubchem.compound:9742
+  - https://identifiers.org/inchikey:QZVQQUVWFIZUBQ-UHFFFAOYSA-N
+  aliases:
+  - 3-Fluoroaniline
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Meta-fluoraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mfa
+- id: https://w3id.org/peh/biochementities/a30fa5dd93
+  name: N-acetyl 4,4'-methylenebis (2-chloroaniline)
+  short_name: acetyl-MOCA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/56272
+  - https://identifiers.org/cas:91575-28-9
+  - https://identifiers.org/inchikey:JCHPXNSTFVJJLN-UHFFFAOYSA-N
+  aliases:
+  - N-(4-((4-Amino-3-chlorophenyl)methyl)-2-chlorophenyl)acetamide
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-acetyl 4,4'-methylenebis (2-chloroaniline)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: amoca
+  remark: 'comments: * Parent compound seems to be MOCA
+
+    * In PUBCHEM it seems to be this compound: https://pubchem.ncbi.nlm.nih.gov/compound/56272
+    --> so adding this info. To double check by Anthony
+
+    source: https://pubmed.ncbi.nlm.nih.gov/18008389/'
+- id: https://w3id.org/peh/biochementities/f3b09fd987
+  name: N-acetyl-2-aminophenol
+  short_name: NA2AP
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:143107
+  - https://identifiers.org/cas:614-80-2
+  - https://identifiers.org/pubchem.compound:11972
+  - https://identifiers.org/inchikey:ADVGKWPZRIDURE-UHFFFAOYSA-N
+  aliases:
+  - 2-Acetamidophenol
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-acetyl-2-aminofenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: natwoap
+- id: https://w3id.org/peh/biochementities/67c597f688
+  name: N-acetyl-4-aminophenol
+  short_name: NA4AP
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:46195
+  - https://identifiers.org/cas:103-90-2
+  - https://identifiers.org/inchikey:RZVAJINKPMORJF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/1983
+  aliases:
+  - Paracetamol|N-(4-hydroxyphenyl)acetamide
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-acetyl-4-aminofenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: nafourap
+  remark: 'comments: * Is this just not paracetamol?
+
+    * PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/1983
+
+    source: https://www.sciencedirect.com/science/article/abs/pii/S1438463913001557'
+- id: https://w3id.org/peh/biochementities/fb258af26e
+  name: N-Phenylacetamide
+  short_name: ACA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:28884
+  - https://identifiers.org/cas:103-84-4
+  - https://identifiers.org/pubchem.compound:904
+  - https://identifiers.org/inchikey:FZERHIULMFGESH-UHFFFAOYSA-N
+  aliases:
+  - Acetanilide
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-Phenylacetamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: aca
+- id: https://w3id.org/peh/biochementities/2f54aca417
+  name: Ortho-Chloroaniline
+  short_name: ortho-ChA
+  group_labels:
+  - anilines and MOCA
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ortho-Chlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ocha
+  remark: 'comments: * Can it be this one? https://pubchem.ncbi.nlm.nih.gov/compound/2-Chloroaniline'
+- id: https://w3id.org/peh/biochementities/3ee366213e
+  name: Ortho-Fluoroaniline
+  short_name: ortho-FA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:27526
+  - https://identifiers.org/cas:348-54-9
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ortho-fluoraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ofa
+  remark: 'comments: * Can it be this one? https://pubchem.ncbi.nlm.nih.gov/compound/2-Fluoroaniline'
+- id: https://w3id.org/peh/biochementities/9ccef332cc
+  name: Ortho-toluidine
+  short_name: o-toluidine
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:66892
+  - https://identifiers.org/cas:95-53-4
+  - https://identifiers.org/pubchem.compound:7242
+  - https://identifiers.org/inchikey:RNVCVTLRINQCPJ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ortho-toluïdine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: otldn
+- id: https://w3id.org/peh/biochementities/8f6629176f
+  name: P-aminophenol
+  short_name: p-aminophenol
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:17602
+  - https://identifiers.org/cas:123-30-8
+  - https://identifiers.org/pubchem.compound:403
+  - https://identifiers.org/inchikey:PLIKAWJENQZMHA-UHFFFAOYSA-N
+  aliases:
+  - 4-Aminophenol
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: P-aminofenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pami
+- id: https://w3id.org/peh/biochementities/65249050a5
+  name: Para-Chloroaniline
+  short_name: para-Cha
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:20331
+  - https://identifiers.org/cas:106-47-8
+  - https://identifiers.org/pubchem.compound:7812
+  - https://identifiers.org/inchikey:QSNSCYSYFYORTR-UHFFFAOYSA-N
+  aliases:
+  - 4-Chloroaniline
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Para-Chlooraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcha
+- id: https://w3id.org/peh/biochementities/6d39ef56c8
+  name: Para-Fluoroaniline
+  short_name: para-FA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:28546
+  - https://identifiers.org/cas:371-40-4
+  - https://identifiers.org/pubchem.compound:9731
+  - https://identifiers.org/inchikey:KRZCOLNOCZKSDF-UHFFFAOYSA-N
+  aliases:
+  - 4-Fluoroaniline
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Para-fluoraniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfa
+- id: https://w3id.org/peh/biochementities/670d1a3c65
+  name: Para-toluidine
+  short_name: p-toluidine
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:37825
+  - https://identifiers.org/cas:106-49-0
+  - https://identifiers.org/pubchem.compound:7813
+  - https://identifiers.org/inchikey:RZXMPPFPUUCRFN-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Para-toluïdine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ptldn
+- id: https://w3id.org/peh/biochementities/9698c97367
+  name: 2,4-toluenediamine
+  short_name: 2,4 TDA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34237
+  - https://identifiers.org/cas:95-80-7
+  - https://identifiers.org/pubchem.compound:7261
+  - https://identifiers.org/inchikey:VOZKAJLKRJDJLL-UHFFFAOYSA-N
+  aliases:
+  - 2,4-Diaminotoluene
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-tolueendiamine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourtda
+- id: https://w3id.org/peh/biochementities/6765536c59
+  name: 2,6-toluenediamine
+  short_name: 2,6 TDA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:76288
+  - https://identifiers.org/cas:823-40-5
+  - https://identifiers.org/pubchem.compound:13205
+  - https://identifiers.org/inchikey:RLYCRLGLCUXUPO-UHFFFAOYSA-N
+  aliases:
+  - 2,6-Diaminotoluene
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,6-tolueendiamine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixdtda
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/bc4362a23f
+- id: https://w3id.org/peh/biochementities/101817e233
+  name: 4,4'-methylenedianiline
+  short_name: MDA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:32506
+  - https://identifiers.org/cas:101-77-9
+  - https://identifiers.org/pubchem.compound:7577
+  - https://identifiers.org/inchikey:YBRVSVVVWCFQMG-UHFFFAOYSA-N
+  aliases:
+  - 4,4-Diaminodiphenylmethane
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4,4'-methyleendianiline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mda
+- id: https://w3id.org/peh/biochementities/d693c43c33
+  name: 3,4-Dichloroaniline
+  short_name: 3,4DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:16767
+  - https://identifiers.org/cas:95-76-1
+  - https://identifiers.org/pubchem.compound:7257
+  - https://identifiers.org/inchikey:SDYWXFYBZPNOFX-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3,4-Dichlooraniline
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3,4-DCA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threefourdcha
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+- id: https://w3id.org/peh/biochementities/5f07230f0c
+  name: 3,5-Dichloroaniline
+  short_name: 3,5DChA
+  group_labels:
+  - anilines and MOCA
+  exact_matches:
+  - https://identifiers.org/CHEBI:19904
+  - https://identifiers.org/cas:626-43-7
+  - https://identifiers.org/pubchem.compound:12281
+  - https://identifiers.org/inchikey:UQRLKWGPEVNVHT-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3,5-Dichloroaniline
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3,5-DCA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threefivedcha
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+- id: https://w3id.org/peh/biochementities/bc4362a23f
+  name: 2,4-Toluenediisocyanate
+  short_name: 2,4TDI
+  exact_matches:
+  - https://identifiers.org/CHEBI:53556
+  - https://identifiers.org/cas:584-84-9
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-Tolueendiisocyanaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - diisocyanates
+  - anilines and MOCA
+- id: https://w3id.org/peh/biochementities/3252916ed9
+  name: 2,6-Toluenediisocyanate
+  short_name: 2,6TDI
+  exact_matches:
+  - https://identifiers.org/CHEBI:53557
+  - https://identifiers.org/cas:91-08-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2,6-Tolueendiisocyanaat
+  group_labels:
+  - diisocyanates
+  - anilines and MOCA
