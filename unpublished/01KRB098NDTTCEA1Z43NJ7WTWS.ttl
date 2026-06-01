@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KRB098NDTTCEA1Z43NJ7WTWS> a owl:Class ;
+    rdfs:label "1,2-cyclohexane dicarboxylic acid diisononyl ester" ;
+    schema1:alternateName "DINCH" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasGroupLabel "DINCH" .
+
