@@ -5,30 +5,24 @@ biochementity_subclasses:
   - CHEBI:28619
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "acrylamide"
 - id: https://w3id.org/peh/biochementities/01KRB098ND363JBS1N385ZEE1Z
   name: alkaloid
   exact_matches:
   - CHEBI:22315
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "alkaloid"
 - id: https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB
-  name: analines
+  name: anilines
   exact_matches:
   - CHEBI:22562
   parent_biochementities:
   - pehterms:BioChemEntity
-- id: https://w3id.org/peh/biochementities/01KRB098ND5RB830Z5MCV0356V
-  name: chloroanaline
-  exact_matches:
-  - CHEBI:23130
-  parent_biochementities:
-  - pehterms:BioChemEntity
-- id: https://w3id.org/peh/biochementities/01KRB098ND4SEG2NVSEXFNHWBS
-  name: aprotic solvents
-  exact_matches:
-  - CHEBI:48357
-  parent_biochementities:
-  - pehterms:BioChemEntity
+  group_labels:
+  - "anilines and MOCA"
 - id: https://w3id.org/peh/biochementities/01KRB098NDBZ8PG03P2AYKBZCV
   name: benzophenones
   exact_matches:
@@ -37,6 +31,8 @@ biochementity_subclasses:
   - pehterms:BioChemEntity
   has_role:
   - https://purl.obolibrary.org/obo/CHEBI_73335
+  group_labels:
+  - "uv-filters benzophenones"
 - id: https://w3id.org/peh/biochementities/01KRB098NDAQY9HFW96RR8WCR5
   name: carbamate
   exact_matches:
@@ -45,41 +41,51 @@ biochementity_subclasses:
   - https://purl.obolibrary.org/obo/CHEBI_25944
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "pesticides carbamate"
 - id: https://w3id.org/peh/biochementities/01KRB098NDTTCEA1Z43NJ7WTWS
   name: 1,2-cyclohexane dicarboxylic acid diisononyl ester
   short_name: DINCH
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "DINCH"
 - id: https://w3id.org/peh/biochementities/01KRB098NDFEYSXBN5RNW03PTA
   name: diisocyanates
   exact_matches:
   - CHEBI:53213
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "diisocyanates"
 - id: https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
   name: dioxins
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "dioxins"
 - id: https://w3id.org/peh/biochementities/01KRB098NDBXH7TCWP6YBKNXG8
   name: furans
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "furans"
 - id: https://w3id.org/peh/biochementities/01KRB098NDJAH1DKFKERXG672W
   name: glycol ethers
   exact_matches:
   - CHEBI:172390
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "glycol ethers"
 - id: https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
   name: metals
   exact_matches:
   - CHEBI:33521
   parent_biochementities:
   - pehterms:BioChemEntity
-- id: https://w3id.org/peh/biochementities/01KRB098NDJXDF957BNQDMPY74
-  name: musks
-  parent_biochementities:
-  - pehterms:BioChemEntity
+  group_labels:
+  - "metals"
 - id: https://w3id.org/peh/biochementities/01KRB098NDM760VQ5FMDAN5AFD
   name: organochlorine compounds
   short_name: OCs
@@ -87,10 +93,14 @@ biochementity_subclasses:
   - CHEBI:36683
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "organochlorine compounds"
 - id: https://w3id.org/peh/biochementities/01KRB098ND6Q9907FMD4GPNFWX
   name: parabens
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "parabens"
 - id: https://w3id.org/peh/biochementities/01KRB098NDY4G3HMFNY3P0B8HN
   name: per-/poly-fluorinated compounds
   short_name: PFASs
@@ -99,18 +109,24 @@ biochementity_subclasses:
   - CHEBI:172406
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "per-/poly-fluorinated compounds"
 - id: https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
   name: phthalates
   exact_matches:
   - CHEBI:35484
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "phthalates"
 - id: https://w3id.org/peh/biochementities/01KRB098ND7HP2194QYCP2PRC1
   name: pyrethroids
   parent_biochementities:
   - pehterms:BioChemEntity
   has_role:
   - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - "pesticides pyrethroids"
 - id: https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
   name: polycyclic aromatic hydrocarbons
   short_name: PAHs
@@ -118,6 +134,8 @@ biochementity_subclasses:
   - CHEBI:33848
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "polycyclic aromatic hydrocarbons"
 - id: https://w3id.org/peh/biochementities/01KRB098ND5AJTGD3JWZWY3230
   name: volatile organic compounds
   short_name: VOCs
@@ -125,3 +143,5 @@ biochementity_subclasses:
   - CHEBI:134179
   parent_biochementities:
   - pehterms:BioChemEntity
+  group_labels:
+  - "volatile organic compounds"

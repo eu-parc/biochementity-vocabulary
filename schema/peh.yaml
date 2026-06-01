@@ -160,6 +160,7 @@ classes:
       - HasValidationStatus
     slots:
       - grouping_id_list
+      - group_labels
       - molweight_grampermol
       - has_role
       - is_metabolite_of
@@ -787,6 +788,10 @@ slots:
     multivalued: true
     range: Grouping
     slot_uri: skos:broader
+  group_labels:
+    multivalued: true
+    range: string
+    slot_uri: pehterms:hasGroupLabel
   parent_grouping_id_list:
     multivalued: true
     range: Grouping
