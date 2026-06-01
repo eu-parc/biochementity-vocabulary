@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/9e63a88ba8> a owl:Class ;
+    rdfs:label "4-Aminobiphenyl",
+        "4-Aminobifenyl"@nl-be ;
+    schema1:alternateName "4ABPH" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:1784>,
+        <https://identifiers.org/cas:92-67-1>,
+        <https://identifiers.org/inchikey:DMVOXQPQNTYEKQ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:7102> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "fourabph" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "anilines and MOCA" .
+

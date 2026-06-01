@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d54ea27f86> a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)cysteine",
+        "N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)cysteïne"@nl-be ;
+    schema1:alternateName "GAMA",
+        "GAMA"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:137698-08-9>,
+        <https://identifiers.org/inchikey:GFVUOIIZUCFXSF-ZBHICJROSA-N>,
+        <https://identifiers.org/pubchem.compound:53836228> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "gama" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "acrylamide" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9b3ecc3bed> .
+

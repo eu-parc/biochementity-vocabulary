@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/42f650764e> a owl:Class ;
+    rdfs:label "2,6-Dichloroaniline",
+        "2,6-dichlooraniline"@nl-be ;
+    schema1:alternateName "2,6DChA" ;
+    schema1:comment "comments: The Short name structure was not consistent with other 3, so removed the space" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:46630>,
+        <https://identifiers.org/cas:608-31-1>,
+        <https://identifiers.org/inchikey:JDMFXJULNGEPOI-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:11846> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "twosixdcha" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "anilines and MOCA" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/3252916ed9> .
+

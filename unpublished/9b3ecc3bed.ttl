@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/9b3ecc3bed> a owl:Class ;
+    rdfs:label "glycidamide" ;
+    skos:exactMatch <https://identifiers.org/inchikey:FMAZQSYXRGRESX-UHFFFAOYSA-N> ;
+    pehterms:hasGroupLabel "acrylamide" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/01KRB098NDXZ88795XY92JR78Y> .
+

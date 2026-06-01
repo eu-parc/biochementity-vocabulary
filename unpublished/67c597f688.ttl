@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/67c597f688> a owl:Class ;
+    rdfs:label "N-acetyl-4-aminophenol",
+        "N-acetyl-4-aminofenol"@nl-be ;
+    schema1:alternateName "NA4AP",
+        "Paracetamol|N-(4-hydroxyphenyl)acetamide" ;
+    schema1:comment """comments: * Is this just not paracetamol?
+* PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/1983
+source: https://www.sciencedirect.com/science/article/abs/pii/S1438463913001557""" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3BTCXN6EEBJ8TRXB>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:46195>,
+        <https://identifiers.org/cas:103-90-2>,
+        <https://identifiers.org/inchikey:RZVAJINKPMORJF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/1983> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "nafourap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "anilines and MOCA" .
+
