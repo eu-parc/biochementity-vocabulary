@@ -781,6 +781,7 @@ biochementity_subclasses:
   short_name: 2,4 TDA
   group_labels:
   - anilines and MOCA
+  - diisocyanates
   exact_matches:
   - https://identifiers.org/CHEBI:34237
   - https://identifiers.org/cas:95-80-7
@@ -799,11 +800,14 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: fourtda
+  is_metabolite_of:
+    - https://w3id.org/peh/biochementities/bc4362a23f
 - id: https://w3id.org/peh/biochementities/6765536c59
   name: 2,6-toluenediamine
   short_name: 2,6 TDA
   group_labels:
   - anilines and MOCA
+  - diisocyanates
   exact_matches:
   - https://identifiers.org/CHEBI:76288
   - https://identifiers.org/cas:823-40-5

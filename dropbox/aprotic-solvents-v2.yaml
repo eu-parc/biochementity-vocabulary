@@ -1,0 +1,279 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/9ae1ba9a05
+  name: 2-hydroxy-N-ethylsuccinimide
+  short_name: 2-HESI
+  exact_matches:
+  - https://identifiers.org/inchikey:CTDCWBUTXCPHAM-UHFFFAOYSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1037dff372
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxy-N-ethylsuccinimide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hesi
+  remark: 'comments: * Can it be this compound (eventhough the INCHIKEY does not match) ?: https://pubchem.ncbi.nlm.nih.gov/compound/N-_2-Hydroxyethyl_succinimide
+
+    * The INCHIKEY directs me to this: https://pubchem.ncbi.nlm.nih.gov/compound/Mono-3-hydroxybutyl-phthalate --> incorrect?'
+- id: https://w3id.org/peh/biochementities/35b3de8da7
+  name: 2-hydroxy-N-methylsuccinimide
+  short_name: 2-HMSI
+  exact_matches:
+  - https://identifiers.org/inchikey:NLKACWKSCREJEL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:260809
+  - https://identifiers.org/cas:19948-27-7
+  - https://identifiers.org/CHEBI:231083
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/c8e3ed6f17
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxy-N-methylsuccinimide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hmsi
+- id: https://w3id.org/peh/biochementities/c620896c8d
+  name: 5-hydroxy-N-ethyl-2-pyrrolidone
+  short_name: 5-HNEP
+  exact_matches:
+  - https://identifiers.org/inchikey:RIOOHZIYIQTLNP-UHFFFAOYSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1037dff372
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 5-hydroxy-N-ethyl-2-pyrrolidon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hnep
+  remark: 'comments: * The INCHIKEY takes me to this pubchem link:https://pubchem.ncbi.nlm.nih.gov/compound/1-Ethyl-5-hydroxy-2-pyrrolidinone, but I''m not sure it is the same compound?'
+- id: https://w3id.org/peh/biochementities/9bfdd62f19
+  name: 5-hydroxy-N-methyl-2-pyrrolidone
+  short_name: 5-HNMP
+  exact_matches:
+  - https://identifiers.org/inchikey:RMBHYULORNYSOB-UHFFFAOYSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/c8e3ed6f17
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 5-hydroxy-N-methyl-2-pyrrolidon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hnmp
+  remark: 'comments: * Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/5-Hydroxy-1-methylpyrrolidin-2-one'
+- id: https://w3id.org/peh/biochementities/de072e62ea
+  name: N-Acetyl-S-(N-methylcarbamoyl)cysteine
+  short_name: AMCC
+  exact_matches:
+  - https://identifiers.org/CHEBI:2355
+  - https://identifiers.org/cas:103974-29-4
+  - https://identifiers.org/pubchem.compound:108218
+  - https://identifiers.org/inchikey:MXRPNYMMDLFYDL-YFKPBYRVSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f4a9ff583d
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-Acetyl-S-(N-methylcarbamoyl)cysteine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: amcc
+- id: https://w3id.org/peh/biochementities/0639136006
+  name: N-hydroxymethyl-N-methylacetamide
+  short_name: DMAC-OH
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cf5512dcc0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-hydroxymethyl-N-methylacetamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmacoh
+  remark: 'comments: * Is it maybe this  compound? https://pubchem.ncbi.nlm.nih.gov/compound/N-_4-_Hydroxymethyl_phenyl_-N-methylacetamide'
+- id: https://w3id.org/peh/biochementities/7baf069e78
+  name: N-methylacetamide
+  short_name: NMAC
+  exact_matches:
+  - https://identifiers.org/CHEBI:87321
+  - https://identifiers.org/cas:79-16-3
+  - https://identifiers.org/pubchem.compound:6582
+  - https://identifiers.org/inchikey:OHLUUHNLEMFGTQ-UHFFFAOYSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cf5512dcc0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-methylacetamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: nmac
+- id: https://w3id.org/peh/biochementities/6069da7e4b
+  name: N-methylformamide
+  short_name: NMF
+  exact_matches:
+  - https://identifiers.org/CHEBI:7438
+  - https://identifiers.org/cas:123-39-7
+  - https://identifiers.org/pubchem.compound:31254
+  - INCHIKEYLATHHXGZTWNVVOU-UHFFFAOYSA-N
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f4a9ff583d
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-methylformamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: nmf
+- id: https://w3id.org/peh/biochementities/6cb2167799
+  name: S-(acetamidomethyl) mercapturic acid
+  short_name: AMMA
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cf5512dcc0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: S-(acetamidomethyl) mercapturic acid
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: amma
+  remark: 'comments: * I did not find anything except the source for this compound…
+
+    source: https://www.sciencedirect.com/science/article/abs/pii/S1570023210002710'
+- id: https://w3id.org/peh/biochementities/e41dd99fdf
+  name: 3-OH-Mono-n-butyl phthalate
+  short_name: OH-MnBP
+  exact_matches:
+  - https://identifiers.org/inchikey:CTDCWBUTXCPHAM-UHFFFAOYSA-N
+  aliases:
+  - Mono-hydroxy-n-butyl
+  - phthalate|2-[(3-hydroxybutoxy)carbonyl]benzoic
+  - acid
+  group_labels:
+  - aprotic solvents
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ca6f875372
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-OH-mono-n-butylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmnbp
+  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1507'
+- id: https://w3id.org/peh/biochementities/1037dff372
+  name: N-ethyl-2-pyrrolidone
+  short_name: NEP
+  exact_matches:
+  - https://identifiers.org/CHEBI:173690
+  - https://identifiers.org/cas:2687-91-4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: N-ethyl-2-pyrrolidon
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48357
+  group_labels:
+  - aprotic solvents
+parent_compounds:
+- id: https://w3id.org/peh/biochementities/c8e3ed6f17
+  unique_name: N-methyl-2-pyrrolidone
+  name: N-methyl-2-pyrrolidone
+  short_name: NMP
+  biochemidentifiers:
+  - https://identifiers.org/CHEBI:7307
+  - https://identifiers.org/cas:872-50-4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: N-methyl-2-pyrrolidon
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - aprotic solvents
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48357
+- id: https://w3id.org/peh/biochementities/f4a9ff583d
+  unique_name: N,N-Dimethylformamide
+  name: N,N-Dimethylformamide
+  short_name: DMF
+  exact_matches:
+  - identifier_code: https://identifiers.org/CHEBI:17741
+  - https://identifiers.org/cas:68-12-2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: N,N-dimethylformamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - aprotic solvents
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48357
+- id: https://w3id.org/peh/biochementities/cf5512dcc0
+  name: N,N-Dimethylacetamide
+  short_name: DMAc
+  exact_matches:
+  - https://identifiers.org/CHEBI:84254
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: N,N-dimethylaceetamide
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48357 
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - aprotic solvents
