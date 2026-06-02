@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/35b3de8da7> a owl:Class ;
+    rdfs:label "2-hydroxy-N-methylsuccinimide",
+        "2-hydroxy-N-methylsuccinimide"@nl-be ;
+    schema1:alternateName "2-HMSI" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:231083>,
+        <https://identifiers.org/cas:19948-27-7>,
+        <https://identifiers.org/inchikey:NLKACWKSCREJEL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:260809> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hmsi" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "aprotic solvents" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/c8e3ed6f17> .
+

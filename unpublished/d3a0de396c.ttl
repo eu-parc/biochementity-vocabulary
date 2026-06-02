@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d3a0de396c> a owl:Class ;
+    rdfs:label "3-hydroxyphenyl diphenyl phosphate",
+        "3-hydroxyphenyl diphenyl phosphate"@nl-be ;
+    schema1:alternateName "3-hydroxyphenyl diphenyl phosphate",
+        "3-HO-TPHP"@nl-be ;
+    schema1:comment "comments: * Did not find anything for this" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:AWYVETCHVQGXMB-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohtphp3" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/0b5bee3208> .
+

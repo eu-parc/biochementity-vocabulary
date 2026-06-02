@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c9e91fd609> a owl:Class ;
+    rdfs:label "1,2,3,7,8,9-Hexachlorodibenzofuran",
+        "1,2,3,7,8,9-hexatachloordibenzofuran"@nl-be ;
+    schema1:alternateName "1,2,3,7,8,9-HxCDF" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDBXH7TCWP6YBKNXG8>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81510>,
+        <https://identifiers.org/cas:72918-21-9>,
+        <https://identifiers.org/inchikey:PYUSJFJVDVSXIU-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:51720> ;
+    pehterms:hasGroupLabel "furans" .
+

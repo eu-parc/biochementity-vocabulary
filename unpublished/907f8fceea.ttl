@@ -1,0 +1,20 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/907f8fceea> a owl:Class ;
+    rdfs:label "Hexabromobiphenyl",
+        "Hexabroombifenyl"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "PBB-153",
+        "Pbb '153'" ;
+    schema1:comment "comments: * Since there are no identifying keys in our DB.  Is this compound?https://pubchem.ncbi.nlm.nih.gov/compound/42948" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pbb153" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+

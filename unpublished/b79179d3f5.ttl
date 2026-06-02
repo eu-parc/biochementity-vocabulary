@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/b79179d3f5> a owl:Class ;
+    rdfs:label "2-(2-butoxyethoxy)ethanol",
+        "2-(2-butoxyethoxy)ethanol"@nl-be ;
+    schema1:alternateName "DEGBE" ;
+    skos:exactMatch <https://identifiers.org/CHEBI:195270> ;
+    pehterms:hasGroupLabel "glycol ethers" .
+

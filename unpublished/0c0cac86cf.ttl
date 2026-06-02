@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0c0cac86cf> a owl:Class ;
+    rdfs:label "2-ethoxyacetic acid",
+        "2-ethoxyazijnzuur"@nl-be ;
+    schema1:alternateName "EAA",
+        "Ethoxyacetic acid" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:173365>,
+        <https://identifiers.org/cas:627-03-2>,
+        <https://identifiers.org/inchikey:YZGQDNOIGFBYKF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:12301> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "eaa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "glycol ethers" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/104717eaee>,
+        <https://w3id.org/peh/biochementities/50ac96755a>,
+        <https://w3id.org/peh/biochementities/58c26eef1f>,
+        <https://w3id.org/peh/biochementities/764622386d>,
+        <https://w3id.org/peh/biochementities/b2d3899435> .
+

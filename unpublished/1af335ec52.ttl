@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/1af335ec52> a owl:Class ;
+    rdfs:label "Polybrominated diphenylether 33",
+        "Polybroomdifenylether 33"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "BDE-33",
+        "bde 33",
+        "bde-33",
+        "bde33" ;
+    schema1:comment "comments: * Since there are no identifiers in our db, is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/tribromodiphenyl%20ether" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bde33" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+

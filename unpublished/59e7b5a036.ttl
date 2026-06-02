@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/59e7b5a036> a owl:Class ;
+    rdfs:label "1,3,5-Tribromo-2-(2,3-dibromopropyl)benzene",
+        "1,3,5-tribroom-2-(2,3-dibroompropyl)benzeen"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "DPTE" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:35109-60-5>,
+        <https://identifiers.org/inchikey:QXWYPAKUEHGJSG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:118216> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dpte" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+

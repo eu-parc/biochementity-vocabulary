@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/cac83ffadf> a owl:Class ;
+    rdfs:label "Di-isononyl cyclohexane-1,2-dicarboxylate",
+        "Diisononylcyclohexaan-1,2-dicarboxylaat"@nl-be ;
+    schema1:alternateName "DINCH" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:HORIEOQXBKUKGQ-UHFFFAOYSA-N> ;
+    pehterms:hasGroupLabel "DINCH" .
+

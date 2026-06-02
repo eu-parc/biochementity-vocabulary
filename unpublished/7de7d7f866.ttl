@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/7de7d7f866> a owl:Class ;
+    rdfs:label "Polybrominated diphenylether 15",
+        "Polybroomdifenylether 15"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "BDE-15",
+        "bde-15",
+        "bde15" ;
+    schema1:comment "comments: * The inchikey in our DB directs me to this pubchem link: https://pubchem.ncbi.nlm.nih.gov/compound/4_4_-Dibromodiphenyl-ether --> but better to double check that it is indeed the same compound?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:YAWIAFUBXXPJMQ-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bde15" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+

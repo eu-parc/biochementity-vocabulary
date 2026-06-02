@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/680e7b0897> a owl:Class ;
+    rdfs:label "1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin",
+        "1,2,3,6,7,8-hexachloordibenzo-p-dioxine"@nl-be ;
+    schema1:alternateName "1,2,3,6,7,8-HxCDD" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81503>,
+        <https://identifiers.org/cas:57653-85-7>,
+        <https://identifiers.org/inchikey:YCLUIPQDHHPDJJ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:42540> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcdd67" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "dioxins" .
+

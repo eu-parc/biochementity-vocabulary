@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f993a9fc52> a owl:Class ;
+    rdfs:label "Di-n-butyl phosphate",
+        "Di-n-butyl phosphate"@nl-be ;
+    schema1:alternateName "Dibutyl phosphate",
+        "DnBPbis",
+        "DnBP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:166473>,
+        <https://identifiers.org/cas:107-66-4>,
+        <https://identifiers.org/inchikey:JYFHYPJRHGVZDY-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:7881> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dnbphr" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/dcb0bf8cc7> .
+

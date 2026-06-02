@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/5a4ed41401> a owl:Class ;
+    rdfs:label "Bis(2-butoxyethyl) 3-hydroxy-2-butoxyethyl phosphate",
+        "Bis(2-butoxyethyl) 3-hydroxy-2-butoxyethylfosfaat"@nl-be ;
+    schema1:alternateName "3-HO-TBOEP",
+        "Bis(2-butoxyethyl) 2-(3-hydroxybutoxy)ethyl phosphate",
+        "3-HO-TBOEP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:1477494-87-3>,
+        <https://identifiers.org/inchikey:ZYWDPVGRFHQPGL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:134818028> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohtboep" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/0fecddb08c> .
+

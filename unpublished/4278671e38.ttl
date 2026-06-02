@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/4278671e38> a owl:Class ;
+    rdfs:label "2,3,4,5-tetrabromobenzoic acid",
+        "2,3,4,5-tetrabroombenzoëzuur"@nl-be ;
+    schema1:alternateName "TBBA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:165216>,
+        <https://identifiers.org/cas:27581-13-1>,
+        <https://identifiers.org/inchikey:KVILQONZZZERSG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:15709948> ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4e28e3a448> .
+

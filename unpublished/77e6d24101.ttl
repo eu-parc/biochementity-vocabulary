@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/77e6d24101> a owl:Class ;
+    rdfs:label "1,2-dimethoxyethane",
+        "1,2-dimethoxyethaan"@nl-be ;
+    schema1:alternateName "EGDME" ;
+    skos:exactMatch <https://identifiers.org/CHEBI:42263>,
+        <https://identifiers.org/cas:110-71-4> ;
+    pehterms:hasGroupLabel "glycol ethers" .
+

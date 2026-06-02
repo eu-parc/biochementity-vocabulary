@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/8c0e040259> a owl:Class ;
+    rdfs:label "Cyclohexane-1,2-dicarboxylic acid mono-isononyl ester",
+        "Cyclohexane-1,2-dicarboxylate-mono-4-methyloctyl ester"@nl-be ;
+    schema1:alternateName "MINCH",
+        "MINCH"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:HQEIYBJWBXYUOH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:129853628> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "minch" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "DINCH" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cac83ffadf> .
+

@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/9bfdd62f19> a owl:Class ;
+    rdfs:label "5-hydroxy-N-methyl-2-pyrrolidone",
+        "5-hydroxy-N-methyl-2-pyrrolidon"@nl-be ;
+    schema1:alternateName "5-HNMP" ;
+    schema1:comment "comments: * Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/5-Hydroxy-1-methylpyrrolidin-2-one" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:RMBHYULORNYSOB-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hnmp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "aprotic solvents" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/c8e3ed6f17> .
+

@@ -1,0 +1,29 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0eb9d30f1e> a owl:Class ;
+    rdfs:label "Polybrominated diphenylether 99",
+        "2,2',4,4',5-penta-bromodiphenyl ether"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "2,2',4,4',5-Pentabromodiphenyl ether",
+        "BDE-99",
+        "Pentabromodiphenyl ethers",
+        "bde 99",
+        "bde-99",
+        "bde99",
+        "BDE-99"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81582>,
+        <https://identifiers.org/cas:60348-60-9>,
+        <https://identifiers.org/inchikey:WHPVYXDFIXRKLN-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:36159> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bdec" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+

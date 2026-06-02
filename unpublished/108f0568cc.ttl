@@ -1,0 +1,19 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/108f0568cc> a owl:Class ;
+    rdfs:label "Bis(2-ethylhexyl) tetrabromophthalate",
+        "Bis(2-ethylhexyl)-3,4,5,6-tetrabroomftalaat"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "BEH-TEBP",
+        "Bis(2-ethylhexyl)-3,4,5,6-tetrabromophthalate" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:26040-51-7>,
+        <https://identifiers.org/inchikey:UUEDINPOVKWVAZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:117291> ;
+    pehterms:hasGroupLabel "flame retardants" .
+

@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/4476deaf19> a owl:Class ;
+    rdfs:label "1,2,3,4,6,7,8-Heptachlorodibenzofuran",
+        "1,2,3,4,6,7,8-heptatachloordibenzofuran"@nl-be ;
+    schema1:alternateName "1,2,3,4,6,7,8-HpCDF" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDBXH7TCWP6YBKNXG8>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81513>,
+        <https://identifiers.org/cas:67562-39-4>,
+        <https://identifiers.org/inchikey:WDMKCPIVJOGHBF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:38199> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcdf131" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "furans" .
+

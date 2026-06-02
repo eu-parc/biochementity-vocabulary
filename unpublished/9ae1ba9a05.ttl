@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/9ae1ba9a05> a owl:Class ;
+    rdfs:label "2-hydroxy-N-ethylsuccinimide",
+        "2-hydroxy-N-ethylsuccinimide"@nl-be ;
+    schema1:alternateName "2-HESI" ;
+    schema1:comment """comments: * Can it be this compound (eventhough the INCHIKEY does not match) ?: https://pubchem.ncbi.nlm.nih.gov/compound/N-_2-Hydroxyethyl_succinimide
+* The INCHIKEY directs me to this: https://pubchem.ncbi.nlm.nih.gov/compound/Mono-3-hydroxybutyl-phthalate --> incorrect?""" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:CTDCWBUTXCPHAM-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hesi" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "aprotic solvents" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/1037dff372> .
+

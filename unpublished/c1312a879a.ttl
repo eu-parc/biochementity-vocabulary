@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c1312a879a> a owl:Class ;
+    rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester",
+        "Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl) heptylester"@nl-be ;
+    schema1:alternateName "1,2-Cyclohexanedicarboxylic Acid Mono 4-Methyl-7-carboxy-heptyl Ester",
+        "cx-MINCH",
+        "cx-MINCH"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:1637562-51-6>,
+        <https://identifiers.org/inchikey:HGYNPCSGHWFMTB-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:102105764> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mcoch" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "DINCH" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cac83ffadf> .
+

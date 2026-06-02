@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/ca3c7021c9> a owl:Class ;
+    rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(7-oxo-4-methyl)octyl ester",
+        "Cyclohexane-1,2-dicarboxylate-mono-(oxo-isononyl) ester"@nl-be ;
+    schema1:alternateName "oxo-MINCH",
+        "oxo-MINCH"@nl-be ;
+    schema1:comment """comments: * INCHIKEY --> when I look for it online, I only see references to VITO
+* Could it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/169443862
+feedback_epi team: Inchikey: GDOQGHAKQNDFFH-UHFFFAOYSA-N
+https://pubchem.ncbi.nlm.nih.gov/compound/102105766
+This info was validated by Adrian Covaci before.""" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:GDOQGHAKQNDFFH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:102105766> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "monch" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "DINCH" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cac83ffadf> .
+

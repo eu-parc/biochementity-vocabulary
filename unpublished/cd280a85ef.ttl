@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/cd280a85ef> a owl:Class ;
+    rdfs:label "2-butoxyacetic acid",
+        "2-butoxyazijnzuur"@nl-be ;
+    schema1:alternateName "BAA",
+        "Butoxyacetic acid" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:173542>,
+        <https://identifiers.org/cas:2516-93-0>,
+        <https://identifiers.org/inchikey:AJQOASGWDCBKCJ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:41958> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "baac" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "glycol ethers" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/b79179d3f5>,
+        <https://w3id.org/peh/biochementities/baa2725345>,
+        <https://w3id.org/peh/biochementities/c04f597186> .
+

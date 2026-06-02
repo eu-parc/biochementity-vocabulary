@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/1ca9ac4070> a owl:Class ;
+    rdfs:label "Bis(2-ethylhexyl) phosphate",
+        "Bis(2-ethylhexyl)fosfaat"@nl-be ;
+    schema1:alternateName "BEHP",
+        "BEHP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:298-07-7>,
+        <https://identifiers.org/inchikey:SEGLCEQVOFDUPX-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:9275> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "behp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/a3db6bd6e2> .
+

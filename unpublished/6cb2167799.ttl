@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/6cb2167799> a owl:Class ;
+    rdfs:label "S-(acetamidomethyl) mercapturic acid",
+        "S-(acetamidomethyl) mercapturic acid"@nl-be ;
+    schema1:alternateName "AMMA" ;
+    schema1:comment """comments: * I did not find anything except the source for this compound…
+source: https://www.sciencedirect.com/science/article/abs/pii/S1570023210002710""" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "amma" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "aprotic solvents" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cf5512dcc0> .
+

@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c5d432e646> a owl:Class ;
+    rdfs:label "2-ethylhexyl phenyl phosphate",
+        "2-ethylhexylfenylfosfaat"@nl-be ;
+    schema1:alternateName "EHPHP",
+        "EHPHP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:20403-99-0>,
+        <https://identifiers.org/inchikey:UGIWGFXQNPWKPR-UHFFFAOYSA-M>,
+        <https://identifiers.org/pubchem.compound:18761893> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ehphp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/f420a67b3a> .
+

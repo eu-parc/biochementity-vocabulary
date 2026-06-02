@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0fecddb08c> a owl:Class ;
+    rdfs:label "Tris(2-butoxyethyl) phosphate",
+        "Tris(2-butoxyethyl) phosphate"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "Tris(2-butoxyethyl) phosphate",
+        "TBOEP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:35038>,
+        <https://identifiers.org/cas:78-51-3>,
+        <https://identifiers.org/inchikey:WTLBZVNBAKMVDP-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:6540> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "tboep" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants",
+        "phthalates" .
+

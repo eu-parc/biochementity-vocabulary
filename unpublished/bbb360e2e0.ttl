@@ -1,0 +1,24 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/bbb360e2e0> a owl:Class ;
+    rdfs:label "2,2',3,3',4,4',6,6'-Octabromodiphenyl ether",
+        "2,2',3,3',4,4',6,6'-octabroomdifenylether"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+    schema1:alternateName "BDE-197",
+        "BDE-197"@nl-be ;
+    schema1:comment """comments: * For the INCHIKEY I found this: https://pubchemlite.lcsb.uni.lu/e/compound/11967214
+* For the name, I found this: https://www.lgcstandards.com/CZ/en/2-2-3-3-4-4-6-6-Octabromodiphenyl-ether-13C12-99-BDE-197-50-g-mL-in-Nonane/p/CIL-EO-5337?queryID=487f5e5abfc7286f80bce48183dfe452
+feedback_epi team: BDE-197 does not have a parent compound, the compound you are exposed to externally is BDE-197 and it doesn't metabolize to anything elso so we still measure BDE-196 in HBM. so it would have itself as parent compound.""" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:AAFUUKPTSPVXJH-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bde197" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "flame retardants" .
+
