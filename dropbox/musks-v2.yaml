@@ -1,0 +1,100 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/18ef735faa
+  name: Galaxolide
+  short_name: Galaxolide
+  exact_matches:
+  - https://identifiers.org/CHEBI:83784
+  - https://identifiers.org/cas:1222-05-5
+  - https://identifiers.org/pubchem.compound:91497
+  - https://identifiers.org/inchikey:ONKNPOPIGWHAQC-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+    - https://purl.obolibrary.org/obo/CHEBI_48318
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Galaxolide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: galax
+  group_labels:
+  - musks
+- id: https://w3id.org/peh/biochementities/fbd1e7ba95
+  name: Musk ketone
+  short_name: MK
+  exact_matches:
+  - https://identifiers.org/CHEBI:174791
+  - https://identifiers.org/cas:81-14-1
+  - https://identifiers.org/pubchem.compound:6669
+  - https://identifiers.org/inchikey:WXCMHFPAUCOJIG-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+    - https://purl.obolibrary.org/obo/CHEBI_48318
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Musk ketone
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MK
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mk
+  group_labels:
+  - musks
+- id: https://w3id.org/peh/biochementities/0b98720dcb
+  name: Musk xylene
+  short_name: MX
+  exact_matches:
+  - https://identifiers.org/CHEBI:77320
+  - https://identifiers.org/cas:81-15-2
+  - https://identifiers.org/pubchem.compound:62329
+  - https://identifiers.org/inchikey:XMWRWTSZNLOZFN-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48318
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Musk xyleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MX
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mx
+  group_labels:
+  - musks
+- id: https://w3id.org/peh/biochementities/eecf196ccb
+  name: Tonalide
+  short_name: AHTN
+  exact_matches:
+  - https://identifiers.org/CHEBI:88666
+  - https://identifiers.org/pubchem.compound:89440
+  - https://identifiers.org/inchikey:DNRJTBAOUJJKDY-UHFFFAOYSA-N
+  - https://identifiers.org/cas:21145-77-7
+  - https://identifiers.org/cas:1506-02-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tonalide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: AHTN
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ahtn
+  group_labels:
+  - musks
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_48318
+
