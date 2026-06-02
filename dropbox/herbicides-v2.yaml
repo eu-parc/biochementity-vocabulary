@@ -1,0 +1,442 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/6c0f7f5751
+  name: (RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide
+  short_name: Dimetachlor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: (RS)-2-chloor-N-(2-ethyl-6-methyl-fenyl)-N-(1-methoxypropaan-2-yl)aceetamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dimetachlor
+  remark: 'comments: * can it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Metolachlor'
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/ad20474bc3
+  name: 1-(4-Isopropylphenyl)-3-methylurea
+  short_name: IPPMU
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:83468
+  - https://identifiers.org/cas:34123-57-4
+  - https://identifiers.org/pubchem.compound:182167
+  - https://identifiers.org/inchikey:DOULWWSSZVEPIN-UHFFFAOYSA-N
+  aliases:
+  - Monodesmethylisoproturon
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-(4-isopropylfenyl)-3-methylureum
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ippmu
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/771a9d8e58
+  name: 2,6 diethyl aniline
+  short_name: 2,6 diethyl aniline
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/inchikey:FOYHNROGBXVLLX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11369
+  - https://identifiers.org/cas:579-66-8
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/bc1b3bb2fb
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,6 diethylaniline
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: da26
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/bc1b3bb2fb
+  name: 2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide
+  short_name: Alachlor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:2533
+  - https://identifiers.org/cas:15972-60-8
+  - https://identifiers.org/pubchem.compound:2078
+  - https://identifiers.org/inchikey:XCSGPAVHZFQHGE-UHFFFAOYSA-N
+  aliases:
+  - Alachlor
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-Chloor-N-(2,6-diethylfenyl)-N-(methoxymethyl)aceetamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: alchlor
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/0f3cacf8fc
+  name: 2-hydroxy atrazine
+  short_name: 2-hydroxy atrazine
+  exact_matches:
+  - https://identifiers.org/inchikey:NFMIMWNQWAWNDW-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:135398733
+  - https://identifiers.org/cas:2163-68-0
+  - https://identifiers.org/CHEBI:18316
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxyatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ha2
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/de97aa05bb
+  name: 2-hydroxy simazine
+  short_name: 2-hydroxy simazine
+  exact_matches:
+  - https://identifiers.org/CHEBI:83476
+  - https://identifiers.org/cas:2599-11-3
+  - https://identifiers.org/pubchem.compound:135408659
+  - https://identifiers.org/inchikey:YQIXRXMOJFQVBV-UHFFFAOYSA-N
+  aliases:
+  - Hydroxysimazine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ddc69d562e
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxysimazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hs2
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/a563e4c620
+  name: 3-(3,4-dichlorophenyl)-1,1-dimethylurea
+  short_name: DCMU
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:116509
+  - https://identifiers.org/cas:330-54-1
+  - https://identifiers.org/pubchem.compound:3120
+  - https://identifiers.org/inchikey:XMTQQYYKAHVGBJ-UHFFFAOYSA-N
+  aliases:
+  - Diuron
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-(3,4-dichloorfenyl)-1,1-dimethylureum
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: diuron
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/4668caba7a
+  name: 3-(3-Chloro-4-methylphenyl)-1,1-dimethylurea
+  short_name: Chlortoluron
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:81981
+  - https://identifiers.org/cas:15545-48-9
+  - https://identifiers.org/pubchem.compound:27375
+  - https://identifiers.org/inchikey:JXCGFZXSOMJFOA-UHFFFAOYSA-N
+  aliases:
+  - Chlortoluron
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-(3-chloor-4-methylfenyl)-1,1-dimethylureum
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chltr
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/a5f71f8aaa
+  name: 3-(4-Isopropylphenyl)-1,1-dimethylurea
+  short_name: Isoproturon
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:6049
+  - https://identifiers.org/cas:34123-59-6
+  - https://identifiers.org/pubchem.compound:36679
+  - https://identifiers.org/inchikey:PUIYMUZLKQOUOZ-UHFFFAOYSA-N
+  aliases:
+  - Isoproturon
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-(4-isopropylfenyl)-1,1-dimethylureum
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: isoproturon
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/dd0c196d1e
+  name: Alachlor mercapturate
+  short_name: Alachlor mercapturate
+  exact_matches:
+  - https://identifiers.org/inchikey:RFZSQTJRFQHGIJ-INIZCTEOSA-N
+  - https://identifiers.org/pubchem.compound:131866382
+  - https://identifiers.org/cas:116482-92-9
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/bc1b3bb2fb
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Alachlor mercapturate
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: almer
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/0df789fdea
+  name: Atrazine
+  short_name: Atrazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:15930
+  - https://identifiers.org/cas:1912-24-9
+  - https://identifiers.org/pubchem.compound:2256
+  - https://identifiers.org/inchikey:MXWJVTOOROXGIU-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Atrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: atrz
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/3d95c541ae
+  name: Atrazine mercapturate
+  short_name: Atrazine mercapturate
+  exact_matches:
+  - https://identifiers.org/inchikey:JYBXBVCDDNBLJW-VIFPVBQESA-N
+  - https://identifiers.org/pubchem.compound:178512
+  - https://identifiers.org/cas:138722-96-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Atrazine-mercapturaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: atmer
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/dcc8b40dec
+  name: Desethyl 2-hydroxy atrazine
+  short_name: Desethyl 2-hydroxy atrazine
+  exact_matches:
+  - https://identifiers.org/CHEBI:83463
+  - https://identifiers.org/pubchem.compound:135510207
+  - https://identifiers.org/inchikey:GCKLGRUZDXSATG-UHFFFAOYSA-N
+  - https://identifiers.org/cas:19988-24-0
+  aliases:
+  - 6-amino-4-(propan-2-ylamino)-1H-1,3,5-triazin-2-one
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desethyl 2-hydroxyatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: des2hyat
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/466598c5fb
+  name: Desethyl atrazine
+  short_name: Desethyl atrazine
+  exact_matches:
+  - https://identifiers.org/CHEBI:28212
+  - https://identifiers.org/cas:6190-65-4
+  - https://identifiers.org/pubchem.compound:22563
+  - https://identifiers.org/inchikey:DFWFIQKMSFGDCQ-UHFFFAOYSA-N
+  aliases:
+  - Deethylatrazine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desethylatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desat
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/9a39c85791
+  name: Desethyl desisopropyl 2-hydroxy atrazine
+  short_name: Desethyl desisopropyl 2-hydroxy atrazine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desethyl desisopropyl 2-hydroxyatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desdesiso2hyat
+  remark: 'comments: I don''t find this compound anywhere butt according to google AI is this compound? https://pubchem.ncbi.nlm.nih.gov/compound/hydroxyatrazine#section=3D-Conformer'
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/37340efd2b
+  name: Desethyl desisopropyl atrazine
+  short_name: Desethyl desisopropyl atrazine
+  exact_matches:
+  - https://identifiers.org/inchikey:FVFVNNKYKYZTJU-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desethyl desisopropyl atrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desdesisoat
+  remark: "comments: The INCHIKEY in our DB directed me to https://pubchem.ncbi.nlm.nih.gov/compound/2%2C4-diamino-6-chloro-s-triazine --> to double check that it is the same compound? \nAlso found this: https://pubchem.ncbi.nlm.nih.gov/substance/363592869#section=Source"
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/220b42015e
+  name: Desisopropyl 2-hydroxy atrazine
+  short_name: Desisopropyl 2-hydroxy atrazine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desisopropyl 2-hydroxyatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desiso2hyat
+  remark: 'comments: Can it be this? https://pubchem.ncbi.nlm.nih.gov/compound/Deisopropylhydroxyatrazine'
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/40a856a10f
+  name: Desisopropyl atrazine
+  short_name: Desisopropyl atrazine
+  exact_matches:
+  - https://identifiers.org/CHEBI:27399
+  - https://identifiers.org/cas:1007-28-9
+  - https://identifiers.org/pubchem.compound:13878
+  - https://identifiers.org/inchikey:IVENSCMCQBJAKW-UHFFFAOYSA-N
+  aliases:
+  - Deisopropylatrazine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0df789fdea
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desisopropylatrazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desisoat
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/ddc69d562e
+  name: Simazine
+  short_name: Simazine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_24527
+  exact_matches:
+  - https://identifiers.org/CHEBI:27496
+  - https://identifiers.org/cas:122-34-9
+  - https://identifiers.org/pubchem.compound:5216
+  - https://identifiers.org/inchikey:ODCWYMIRDDJXKW-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Simazine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: simz
+  group_labels:
+  - herbicides
+- id: https://w3id.org/peh/biochementities/883d2e64a0
+  name: Simazine mercapturate
+  short_name: Simazine mercapturate
+  exact_matches:
+  - https://identifiers.org/inchikey:CSQCJPSBEYLCBK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:86196119
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ddc69d562e
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Simazine-mercapturaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: simzmerc
+  group_labels:
+  - herbicides
