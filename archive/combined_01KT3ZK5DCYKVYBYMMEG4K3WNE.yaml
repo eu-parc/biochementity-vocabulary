@@ -10,7 +10,7 @@ biochementity_subclasses:
   parent_biochementities:
   - https://w3id.org/peh/terms/BioChemEntity
   has_role:
-    - https://purl.obolibrary.org/obo/CHEBI_48318
+  - https://purl.obolibrary.org/obo/CHEBI_48318
   translations:
   - property_name: name
     language: nl-BE
@@ -32,7 +32,7 @@ biochementity_subclasses:
   parent_biochementities:
   - https://w3id.org/peh/terms/BioChemEntity
   has_role:
-    - https://purl.obolibrary.org/obo/CHEBI_48318
+  - https://purl.obolibrary.org/obo/CHEBI_48318
   translations:
   - property_name: name
     language: nl-BE
@@ -97,4 +97,3 @@ biochementity_subclasses:
   - musks
   has_role:
   - https://purl.obolibrary.org/obo/CHEBI_48318
-
