@@ -1,0 +1,1184 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/197cdcc53f
+  name: Aluminium
+  short_name: Al
+  exact_matches:
+  - https://identifiers.org/CHEBI:33629
+  - https://identifiers.org/cas:7429-90-5
+  - https://identifiers.org/cas:91728-14-2
+  - https://identifiers.org/pubchem.compound:5359268
+  - https://identifiers.org/inchikey:XAGFODPZIPBFFR-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Aluminium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Al
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: al
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/da16f2cb03
+  name: Antimony
+  short_name: Sb
+  exact_matches:
+  - https://identifiers.org/CHEBI:30513
+  - https://identifiers.org/pubchem.compound:5354495
+  - https://identifiers.org/inchikey:WATWJIUSRGPENY-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7440-36-0
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Antimoon
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Antimoon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sb
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/13dd5366ed
+  name: Argentum
+  short_name: Ag
+  exact_matches:
+  - https://identifiers.org/CHEBI:30512
+  - https://identifiers.org/cas:7440-22-4
+  - https://identifiers.org/pubchem.compound:23954
+  - https://identifiers.org/inchikey:BQCADISMDOOEFD-UHFFFAOYSA-N
+  - https://identifiers.org/cas:15046-91-0
+  - https://identifiers.org/CHEBI:9141
+  aliases:
+  - silver
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Zilver
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ag
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ag
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/2e036d0e4a
+  name: Arsenic(III) acid
+  short_name: As(III)
+  exact_matches:
+  - https://identifiers.org/CHEBI:35828
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/27baf79af9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Arseen(III)zuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: As(III)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: asthree
+  remark: 'comments: * I don''t think the CAS nr in our DB is correct
+
+    * For the CHEBI key --> this is the link: https://www.ebi.ac.uk/chebi/CHEBI:35828
+
+    * I did not find anything in PUBCHEM?'
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/c6dfe4ac2b
+  name: Arsenic(V) acid
+  short_name: As(V)
+  exact_matches:
+  - https://identifiers.org/CHEBI:35829
+  - https://identifiers.org/pubchem.compound:104737
+  - https://identifiers.org/inchikey:HAYXDMNJJFVXCI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:17428-41-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/27baf79af9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Arseen(V)zuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: As(V)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: asfive
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/f00e1b81df
+  name: Arsenobetaine
+  short_name: AsB
+  exact_matches:
+  - https://identifiers.org/CHEBI:82392
+  - https://identifiers.org/cas:64436-13-1
+  - https://identifiers.org/pubchem.compound:47364
+  - https://identifiers.org/inchikey:SPTHHTGLGVZZRH-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/27baf79af9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Arsenobetaïne
+  - property_name: short_name
+    language: nl-BE
+    translated_value: AsB
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: asb
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/27baf79af9
+  name: Arsenic
+  short_name: As
+  exact_matches:
+  - https://identifiers.org/CHEBI:27563
+  - https://identifiers.org/cas:7440-38-2
+  - https://identifiers.org/pubchem.compound:5359596
+  - https://identifiers.org/inchikey:RQNWIZPPADIBDY-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7784-42-1
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Arseen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: as
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/b5ca4406a7
+  name: Barium
+  short_name: Ba
+  exact_matches:
+  - https://identifiers.org/CHEBI:32594
+  - https://identifiers.org/CHEBI:32595
+  - https://identifiers.org/pubchem.compound:5355457
+  - https://identifiers.org/inchikey:DSAJWYNOEDNPEQ-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7440-39-3
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Barium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ba
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ba
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/3c9547d2fc
+  name: Berylium
+  short_name: Be
+  exact_matches:
+  - https://identifiers.org/inchikey:ATBAMAFKBVZNFJ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:5460467
+  - https://identifiers.org/cas:7440-41-7
+  - https://identifiers.org/cas:13597-97-2
+  - https://identifiers.org/CHEBI:30501
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Berylium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Be
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: be
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/38523a3dcb
+  name: Bismuth
+  short_name: Bi
+  exact_matches:
+  - https://identifiers.org/CHEBI:33301
+  - https://identifiers.org/cas:7440-69-9
+  - https://identifiers.org/pubchem.compound:5359367
+  - https://identifiers.org/inchikey:JCXGWMGPZLAOME-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bismut
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Bi
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bi
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/9d5ed678fe
+  name: Boron
+  short_name: B
+  exact_matches:
+  - https://identifiers.org/CHEBI:27560
+  - https://identifiers.org/cas:7440-42-8
+  - https://identifiers.org/cas:13766-26-2
+  - https://identifiers.org/pubchem.compound:5462311
+  - https://identifiers.org/inchikey:ZOXJGFHDIHLPTG-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Boor
+  - property_name: short_name
+    language: nl-BE
+    translated_value: B
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: b
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/1261c406eb
+  name: Cadmium
+  short_name: Cd
+  exact_matches:
+  - https://identifiers.org/CHEBI:22977
+  - https://identifiers.org/cas:7440-43-9
+  - https://identifiers.org/cas:72172-64-6
+  - https://identifiers.org/pubchem.compound:23973
+  - https://identifiers.org/inchikey:BDOSMKKIYDKNTQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cadmium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Cadmium
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cd
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/346dd877a9
+  name: Calcium
+  short_name: Ca
+  exact_matches:
+  - https://identifiers.org/CHEBI:22984
+  - https://identifiers.org/cas:7440-70-2
+  - https://identifiers.org/pubchem.compound:5460341
+  - https://identifiers.org/inchikey:OYPRJOBELJOOCE-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Calcium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ca
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ca
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/3cc3b8d3e6
+  name: Cerium
+  short_name: Ce
+  exact_matches:
+  - https://identifiers.org/CHEBI:33369
+  - https://identifiers.org/cas:7440-45-1
+  - https://identifiers.org/cas:13864-02-3
+  - https://identifiers.org/pubchem.compound:23974
+  - https://identifiers.org/inchikey:GWXLDORMOJMVQZ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cerium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ce
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ce
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/8b847cfae4
+  name: Cesium
+  short_name: Cs
+  exact_matches:
+  - https://identifiers.org/CHEBI:30514
+  - https://identifiers.org/cas:7440-46-2
+  - https://identifiers.org/pubchem.compound:5354618
+  - https://identifiers.org/inchikey:TVFDJXOCXUVLDH-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cesium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Cs
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cs
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/46ce6eed09
+  name: Chromium
+  short_name: Cr
+  exact_matches:
+  - https://identifiers.org/CHEBI:28073
+  - https://identifiers.org/cas:7440-47-3
+  - https://identifiers.org/cas:16065-83-1
+  - https://identifiers.org/pubchem.compound:23976
+  - https://identifiers.org/inchikey:VYZAMTAEIAYCRO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chroom
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Cr
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/6bc2d2565e
+  name: Cobalt
+  short_name: Co
+  exact_matches:
+  - https://identifiers.org/CHEBI:27638
+  - https://identifiers.org/cas:7440-48-4
+  - https://identifiers.org/cas:16610-75-6
+  - https://identifiers.org/pubchem.compound:104730
+  - https://identifiers.org/inchikey:GUTLYIVDDKVIGB-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Kobalt
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Co
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: co
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/a78dd5e841
+  name: Copper
+  short_name: Cu
+  exact_matches:
+  - https://identifiers.org/CHEBI:28694
+  - https://identifiers.org/pubchem.compound:23978
+  - https://identifiers.org/inchikey:RYGMFSIKBFXOCR-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7440-50-8
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Koper
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Cu
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cu
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/33fd5f6391
+  name: Dimethylarsinic
+  short_name: DMA
+  exact_matches:
+  - https://identifiers.org/inchikey:OGGXGZAMXPVRFZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:2513
+  - https://identifiers.org/cas:75-60-5
+  - https://identifiers.org/cas:917-76-0
+  - https://identifiers.org/CHEBI:48765
+  aliases:
+  - dimethylarsinic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/27baf79af9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dimethylarseen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DMA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dma
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/e78cf88595
+  name: Gallium
+  short_name: Ga
+  exact_matches:
+  - https://identifiers.org/CHEBI:49631
+  - https://identifiers.org/pubchem.compound:5360835
+  - https://identifiers.org/inchikey:GYHNNYVSQQEPJS-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7440-55-3
+  - https://identifiers.org/cas:15091-79-9
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Gallium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ga
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ga
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/515322af1e
+  name: Gold
+  short_name: Au
+  exact_matches:
+  - https://identifiers.org/CHEBI:29287
+  - https://identifiers.org/CHEBI:30050
+  - https://identifiers.org/cas:7440-57-5
+  - https://identifiers.org/cas:15456-07-2
+  - https://identifiers.org/pubchem.compound:23985
+  - https://identifiers.org/inchikey:PCHJSUWPFVWCPO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Goud
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Au
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: au
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/54abca5435
+  name: Hafnium
+  short_name: Hf
+  exact_matches:
+  - https://identifiers.org/CHEBI:33343
+  - https://identifiers.org/cas:7440-58-6
+  - https://identifiers.org/pubchem.compound:23986
+  - https://identifiers.org/inchikey:VBJZVLUMGGDVMO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hafnium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Hf
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hf
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/43f0b623a2
+  name: Hexavalent chromium
+  short_name: Cr VI
+  exact_matches:
+  - https://identifiers.org/CHEBI:33007
+  - https://identifiers.org/cas:18540-29-9
+  - https://identifiers.org/pubchem.compound:29131
+  - https://identifiers.org/inchikey:JOPOVCBBYLSVDA-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/46ce6eed09
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Zeswaardig chroom
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: crsix
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/a114df8227
+  name: Iridium
+  short_name: Ir
+  exact_matches:
+  - https://identifiers.org/CHEBI:49666
+  - https://identifiers.org/pubchem.compound:23924
+  - https://identifiers.org/cas:7439-88-5
+  - https://identifiers.org/cas:22542-08-1
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Iridium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ir
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ir
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/d684f8322b
+  name: Iron
+  short_name: Fe
+  exact_matches:
+  - https://identifiers.org/CHEBI:18248
+  - https://identifiers.org/cas:7439-89-6
+  - https://identifiers.org/cas:33485-98-2
+  - https://identifiers.org/pubchem.compound:23925
+  - https://identifiers.org/inchikey:XEEYBQQBJWHFJM-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ijzer
+  - property_name: short_name
+    language: nl-BE
+    translated_value: FE
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fe
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/0789e06064
+  name: Lead
+  short_name: Pb
+  exact_matches:
+  - https://identifiers.org/CHEBI:25016
+  - https://identifiers.org/CHEBI:27889
+  - https://identifiers.org/pubchem.compound:5352425
+  - https://identifiers.org/inchikey:WABPQHHGFIMREM-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7439-92-1
+  - https://identifiers.org/cas:14701-27-0
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lood
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Pb
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pb
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/8640d08847
+  name: Lithium
+  short_name: Li
+  exact_matches:
+  - https://identifiers.org/CHEBI:30145
+  - https://identifiers.org/cas:7439-93-2
+  - https://identifiers.org/pubchem.compound:3028194
+  - https://identifiers.org/inchikey:WHXSMMKQMYFTQS-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lithium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Li
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: li
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/af6cdb852a
+  name: Magnesium
+  short_name: Mg
+  exact_matches:
+  - https://identifiers.org/CHEBI:25107
+  - https://identifiers.org/cas:7439-95-4
+  - https://identifiers.org/pubchem.compound:5462224
+  - https://identifiers.org/inchikey:FYYHWMGAXLPEAU-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Magnesium
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mg
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/6659d586c5
+  name: Manganese
+  short_name: Mn
+  exact_matches:
+  - https://identifiers.org/CHEBI:18291
+  - https://identifiers.org/cas:7439-96-5
+  - https://identifiers.org/cas:19768-33-3
+  - https://identifiers.org/pubchem.compound:23930
+  - https://identifiers.org/inchikey:PWHULOQIROXLJO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mangaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Mangaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mn
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/11fc3a0c8f
+  name: Mercury
+  short_name: Hg
+  exact_matches:
+  - https://identifiers.org/CHEBI:25195
+  - https://identifiers.org/CHEBI:16170
+  - https://identifiers.org/cas:7439-97-6
+  - https://identifiers.org/pubchem.compound:23931
+  - https://identifiers.org/inchikey:QSHDDOUJBYECFT-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Kwik
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Hg
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hg
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/e3e9a99654
+  name: Methyl mercury
+  short_name: MeHg
+  exact_matches:
+  - https://identifiers.org/CHEBI:30785
+  - https://identifiers.org/cas:16056-34-1
+  - https://identifiers.org/pubchem.compound:7906
+  - https://identifiers.org/inchikey:JJWSNOOGIUMOEE-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Methylkwik
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MeHg
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mhg
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/c08df9bb5f
+  name: Molybdenum
+  short_name: Mo
+  exact_matches:
+  - https://identifiers.org/CHEBI:28685
+  - https://identifiers.org/cas:7439-98-7
+  - https://identifiers.org/cas:16065-87-5
+  - https://identifiers.org/pubchem.compound:23932
+  - https://identifiers.org/inchikey:ZOKXTWBITQBERF-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Molybdeen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Mo
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mo
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/0374745b8a
+  name: Monomethylarsonic
+  short_name: MMA
+  exact_matches:
+  - https://identifiers.org/CHEBI:29852
+  - https://identifiers.org/cas:124-58-3
+  - https://identifiers.org/pubchem.compound:8948
+  - https://identifiers.org/inchikey:QYPPRTNMGCREIM-UHFFFAOYSA-N
+  aliases:
+  - Methylarsonic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/27baf79af9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monomethylarseen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MMA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mma
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/a26e174e33
+  name: Nickel
+  short_name: Ni
+  exact_matches:
+  - https://identifiers.org/CHEBI:28112
+  - https://identifiers.org/cas:7440-02-0
+  - https://identifiers.org/cas:14903-34-5
+  - https://identifiers.org/pubchem.compound:935
+  - https://identifiers.org/inchikey:PXHVJJICTQNCMI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Nikkel
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ni
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ni
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/70c62818a3
+  name: Palladium
+  short_name: Pd
+  exact_matches:
+  - https://identifiers.org/CHEBI:33363
+  - https://identifiers.org/cas:7440-05-3
+  - https://identifiers.org/pubchem.compound:23938
+  - https://identifiers.org/inchikey:KDLHZDBZIXYQEI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Palladium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Pd
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pd
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/999edda143
+  name: Platinum
+  short_name: Pt
+  exact_matches:
+  - https://identifiers.org/CHEBI:33364
+  - https://identifiers.org/cas:7440-06-4
+  - https://identifiers.org/pubchem.compound:23939
+  - https://identifiers.org/inchikey:BASFCYQUMIYNBI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Platina
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Pt
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pt
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/c49dfb55f0
+  name: Selenium
+  short_name: Selenium
+  exact_matches:
+  - https://identifiers.org/CHEBI:27568
+  - https://identifiers.org/cas:7782-49-2
+  - https://identifiers.org/cas:7783-07-5
+  - https://identifiers.org/pubchem.compound:6326970
+  - https://identifiers.org/inchikey:BUGBHKTXTAQXES-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Selenium
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: se
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/8aed7b1350
+  name: Strontium
+  short_name: Sr
+  exact_matches:
+  - https://identifiers.org/CHEBI:33324
+  - https://identifiers.org/cas:7440-24-6
+  - https://identifiers.org/cas:14158-27-1
+  - https://identifiers.org/pubchem.compound:5359327
+  - https://identifiers.org/inchikey:CIOAGBVUUVVLOB-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Strontium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Sr
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sr
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/2408730ad2
+  name: Tellurium
+  short_name: Te
+  exact_matches:
+  - https://identifiers.org/CHEBI:30452
+  - https://identifiers.org/cas:13494-80-9
+  - https://identifiers.org/cas:7783-09-7
+  - https://identifiers.org/pubchem.compound:6327182
+  - https://identifiers.org/inchikey:PORWMNRCUJJQNO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tellurium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Te
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: te
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/0de3ba0118
+  name: Thallium
+  short_name: Tl
+  exact_matches:
+  - https://identifiers.org/CHEBI:30440
+  - https://identifiers.org/cas:7440-28-0
+  - https://identifiers.org/pubchem.compound:5359464
+  - https://identifiers.org/inchikey:BKVIYDNLLOSFOA-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Thallium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Tl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tl
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/eeeb9a8eb4
+  name: Thorium
+  short_name: Th
+  exact_matches:
+  - https://identifiers.org/CHEBI:33385
+  - https://identifiers.org/cas:7440-29-1
+  - https://identifiers.org/pubchem.compound:23960
+  - https://identifiers.org/inchikey:ZSLUVFAKFWKJRC-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Thorium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Th
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: th
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/6cb321460d
+  name: Tin
+  short_name: Sn
+  exact_matches:
+  - https://identifiers.org/CHEBI:27007
+  - https://identifiers.org/cas:7440-31-5
+  - https://identifiers.org/cas:191744-28-2
+  - https://identifiers.org/pubchem.compound:5352426
+  - https://identifiers.org/inchikey:ATJFFYVFTNAWJD-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tin
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Sn
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sn
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/5bcf1228cc
+  name: Titanium
+  short_name: Ti
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:23963
+  - https://identifiers.org/inchikey:RTAQQCXQSZGOHL-UHFFFAOYSA-N
+  - https://identifiers.org/cas:7440-32-6
+  - https://identifiers.org/cas:14902-91-1
+  - https://identifiers.org/CHEBI:33341
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Titanium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ti
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ti
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/68782c8acb
+  name: Trivalent chromium
+  short_name: Cr III
+  exact_matches:
+  - https://identifiers.org/CHEBI:49544
+  - https://identifiers.org/pubchem.compound:27668
+  - https://identifiers.org/inchikey:BFGKITSFLPAWGI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:16065-83-1
+  - https://identifiers.org/cas:7440-47-3
+  aliases:
+  - chromic cation
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/46ce6eed09
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Driewaardig chroom
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: crthree
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/61e9c06ea9
+  name: Tungsten
+  short_name: W
+  exact_matches:
+  - https://identifiers.org/CHEBI:27998
+  - https://identifiers.org/cas:7440-33-7
+  - https://identifiers.org/cas:22541-27-1
+  - https://identifiers.org/pubchem.compound:23964
+  - https://identifiers.org/inchikey:WFKWXMTUELFFGS-UHFFFAOYSA-N
+  aliases:
+  - Wolfram
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Wolfraam
+  - property_name: short_name
+    language: nl-BE
+    translated_value: W
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: w
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/4c614360da
+  name: Uranium
+  short_name: U
+  exact_matches:
+  - https://identifiers.org/CHEBI:27214
+  - https://identifiers.org/CHEBI:49936
+  - https://identifiers.org/cas:7440-61-1
+  - https://identifiers.org/cas:13598-56-6
+  - https://identifiers.org/pubchem.compound:23989
+  - https://identifiers.org/inchikey:JFALSRSLKYAFGM-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Uranium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: U
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: u
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/5206560a30
+  name: Vanadium
+  short_name: V
+  exact_matches:
+  - https://identifiers.org/CHEBI:27698
+  - https://identifiers.org/cas:7440-62-2
+  - https://identifiers.org/cas:14782-33-3
+  - https://identifiers.org/pubchem.compound:23990
+  - https://identifiers.org/inchikey:LEONUFNNVUYDNQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Vanadium
+  - property_name: short_name
+    language: nl-BE
+    translated_value: V
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: v
+  group_labels:
+  - metals
+- id: https://w3id.org/peh/biochementities/61c25728f9
+  name: Zinc
+  short_name: Zn
+  exact_matches:
+  - https://identifiers.org/CHEBI:27363
+  - https://identifiers.org/cas:7440-66-6
+  - https://identifiers.org/cas:15176-26-8
+  - https://identifiers.org/pubchem.compound:23994
+  - https://identifiers.org/inchikey:HCHKCACWOHOZIP-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Zinc
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: zn
+  group_labels:
+  - metals
