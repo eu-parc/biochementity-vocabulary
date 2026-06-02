@@ -1,0 +1,400 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/7e265bfda1
+  name: 2-(2-methoxyethoxy)acetic acid
+  short_name: MEAA
+  exact_matches:
+  - https://identifiers.org/inchikey:CLLLODNOQBVIMS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:27642
+  - https://identifiers.org/cas:16024-56-9
+  aliases:
+  - (2-Methoxyethoxy)acetic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d2fc6259e9
+  - https://w3id.org/peh/biochementities/71058d448e
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-(2-methoxyethoxy)azijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: meaa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/cd280a85ef
+  name: 2-butoxyacetic acid
+  short_name: BAA
+  exact_matches:
+  - https://identifiers.org/CHEBI:173542
+  - https://identifiers.org/cas:2516-93-0
+  - https://identifiers.org/pubchem.compound:41958
+  - https://identifiers.org/inchikey:AJQOASGWDCBKCJ-UHFFFAOYSA-N
+  aliases:
+  - Butoxyacetic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/baa2725345
+  - https://w3id.org/peh/biochementities/b79179d3f5
+  - https://w3id.org/peh/biochementities/c04f597186
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-butoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: baac
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/0c0cac86cf
+  name: 2-ethoxyacetic acid
+  short_name: EAA
+  exact_matches:
+  - https://identifiers.org/CHEBI:173365
+  - https://identifiers.org/cas:627-03-2
+  - https://identifiers.org/pubchem.compound:12301
+  - https://identifiers.org/inchikey:YZGQDNOIGFBYKF-UHFFFAOYSA-N
+  aliases:
+  - Ethoxyacetic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/50ac96755a
+  - https://w3id.org/peh/biochementities/b2d3899435
+  - https://w3id.org/peh/biochementities/58c26eef1f
+  - https://w3id.org/peh/biochementities/764622386d
+  - https://w3id.org/peh/biochementities/104717eaee
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-ethoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eaa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/cc2464bb73
+  name: 2-methoxyacetic acid
+  short_name: MAA
+  exact_matches:
+  - https://identifiers.org/CHEBI:132098
+  - https://identifiers.org/cas:625-45-6
+  - https://identifiers.org/pubchem.compound:12251
+  - https://identifiers.org/inchikey:RMIODHQZRUFFFF-UHFFFAOYSA-N
+  aliases:
+  - Methoxyacetic Acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cd063cf309
+  - https://w3id.org/peh/biochementities/77e6d24101
+  - https://w3id.org/peh/biochementities/d2fc6259e9
+  - https://w3id.org/peh/biochementities/71058d448e
+  - https://w3id.org/peh/biochementities/b6ce6ae047
+  - https://w3id.org/peh/biochementities/38ed851d16
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-methoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: maa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/9733cfc1fc
+  name: 2-phenoxyacetic acid
+  short_name: PhAA
+  exact_matches:
+  - https://identifiers.org/CHEBI:8075
+  - https://identifiers.org/cas:122-59-8
+  - https://identifiers.org/pubchem.compound:19188
+  - https://identifiers.org/inchikey:LCPDWSOZIOUXRV-UHFFFAOYSA-N
+  aliases:
+  - Phenoxyacetic Acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/e6bc9a1d56
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-fenoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: phaa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/8ff944a148
+  name: 2-propoxyacetic acid
+  short_name: PAA
+  exact_matches:
+  - https://identifiers.org/inchikey:SGUYGLMQEOSQTH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:100383
+  - https://identifiers.org/cas:54497-00-6
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cae62f7bd4
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-propoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: paa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/eb27dc6b28
+  name: Ethoxyethoxyacetic acid
+  short_name: EEAA
+  exact_matches:
+  - https://identifiers.org/CHEBI:131424
+  - https://identifiers.org/cas:7743-94-4
+  - https://identifiers.org/pubchem.compound:192850
+  - https://identifiers.org/inchikey:LVLQKFRSMSHJIE-UHFFFAOYSA-N
+  aliases:
+  - 2-(2-Ethoxyethoxy)acetic acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/58c26eef1f
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ethoxyethoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eeaa
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/6cb4dc0831
+  name: Methoxyproprionic acid
+  short_name: MPA
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/e781452263
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Methoxypropionzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mpa
+  remark: 'comments: * I do not find this anywhere'
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/e6bc9a1d56
+  name: 2-phenoxyethanol
+  short_name: EGPhE
+  exact_matches:
+  - https://identifiers.org/CHEBI:64275
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-fenoxyethanol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/cae62f7bd4
+  name: 2-(propyloxy)ethanol
+  short_name: EGnPE
+  exact_matches:
+  - https://identifiers.org/inchikey:YEYKMVJDLWJFOA-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(propyloxy)ethanol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/58c26eef1f
+  name: 2-(2-ethoxyethoxy)ethanol
+  short_name: DEGEE
+  exact_matches:
+  - https://identifiers.org/CHEBI:40572
+  - https://identifiers.org/cas:111-90-0
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-ethoxyethoxy)ethanol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/e781452263
+  name: 2-methoxypropanol
+  short_name: 1PG2ME
+  exact_matches:
+  - https://identifiers.org/inchikey:YTTFFPATQICAQN-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-methoxypropanol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/71058d448e
+  name: 2-(2-methoxyethoxy)ethanol
+  short_name: DEGME
+  exact_matches:
+  - https://identifiers.org/CHEBI:44836
+  - https://identifiers.org/cas:111-77-3
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-methoxyethoxy)ethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/baa2725345
+  name: 2-(2-(2-butoxyethoxy)ethoxy)ethanol
+  short_name: TEGBE
+  exact_matches:
+  - https://identifiers.org/inchikey:COBPKKZHLDDMTB-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-(2-butoxyethoxy)ethoxy)ethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/b79179d3f5
+  name: 2-(2-butoxyethoxy)ethanol
+  short_name: DEGBE
+  exact_matches:
+  - https://identifiers.org/CHEBI:195270
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-butoxyethoxy)ethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/d2fc6259e9
+  name: 2-(2-(2-methoxyethoxy)ethoxy)ethanol
+  short_name: TEGME
+  exact_matches:
+  - https://identifiers.org/CHEBI:84233
+  - https://identifiers.org/cas:112-35-6
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-(2-methoxyethoxy)ethoxy)ethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/c04f597186
+  name: 2-butoxyethanol
+  short_name: EGBE
+  exact_matches:
+  - https://identifiers.org/CHEBI:63921
+  - https://identifiers.org/cas:111-76-2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-butoxyethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/50ac96755a
+  name: 1,2-diethoxyethane
+  short_name: EGDEE
+  exact_matches:
+  - https://identifiers.org/incikey:LZDKZFUFMNSQCJ-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 1,2-diethoxyethaan
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/b2d3899435
+  name: 2-(2-(2-ethoxyethoxy)ethoxy)ethanol
+  short_name: TEGEE
+  exact_matches:
+  - https://identifiers.org/inchikey:WFSMVVDJSNMRAR-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(2-(2-ethoxyethoxy)ethoxy)ethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/764622386d
+  name: 2-ethoxyethanol
+  short_name: EGEE
+  exact_matches:
+  - https://identifiers.org/CHEBI:46788
+  - https://identifiers.org/cas:110-80-5
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-ethoxyethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/104717eaee
+  name: Bis(2-ethoxyethyl) ether
+  short_name: DEGDEE
+  exact_matches:
+  - https://identifiers.org/CHEBI:44664
+  - https://identifiers.org/cas:112-36-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Bis(2-ethoxyethyl)ether
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/cd063cf309
+  name: 1,2-bis(2-methoxyethoxy)ethane
+  short_name: TEGDME
+  exact_matches:
+  - https://identifiers.org/CHEBI:44842
+  - https://identifiers.org/cas:112-49-2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 1,2-bis(2-methoxyethoxy)ethaan
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/77e6d24101
+  name: 1,2-dimethoxyethane
+  short_name: EGDME
+  exact_matches:
+  - https://identifiers.org/CHEBI:42263
+  - https://identifiers.org/cas:110-71-4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 1,2-dimethoxyethaan
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/b6ce6ae047
+  name: 2-methoxyethanol
+  short_name: EGME
+  exact_matches:
+  - https://identifiers.org/CHEBI:46790
+  - https://identifiers.org/cas:109-86-4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-methoxyethanol
+  group_labels:
+  - glycol ethers
+- id: https://w3id.org/peh/biochementities/38ed851d16
+  name: Bis(2-methoxyethyl) ether
+  short_name: DEGDME
+  exact_matches:
+  - https://identifiers.org/CHEBI:46784
+  - https://identifiers.org/cas:111-96-6
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Bis(2-methoxyethyl)ether
+  group_labels:
+  - glycol ethers

@@ -1,0 +1,1887 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/79a64a503c
+  name: 1,2 bis(2,4,6-tribromophenoxy)ethane
+  short_name: BTBPE
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:YATIGPZCMOYEGE-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37840
+  - https://identifiers.org/cas:37853-59-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2-bis(2,4,6-tribroomfenoxy)ethaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: btbpe
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/32f53f989a
+  name: 1,2,2,2-tetrabromoethylcyclohexane
+  short_name: 1,2,2,2-TBECH
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:20472541
+  - https://identifiers.org/inchikey:RSNWTYLUIPARFX-UHFFFAOYSA-N
+  aliases:
+  - Tetrabromoethylcyclohexane
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/2ff036d40b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,2,2-tetrabroomethylcyclohexaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbmch
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/47a867ff31
+  name: 1,2,5,6-tetrabromocyclooctane
+  short_name: TBCO
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RZLXIANUDLLFHN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:296646
+  - https://identifiers.org/cas:3194-57-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,5,6-tetrabroomcyclooctaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbco
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/59e7b5a036
+  name: 1,3,5-Tribromo-2-(2,3-dibromopropyl)benzene
+  short_name: DPTE
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:QXWYPAKUEHGJSG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:118216
+  - https://identifiers.org/cas:35109-60-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,3,5-tribroom-2-(2,3-dibroompropyl)benzeen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dpte
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f7159763ec
+  name: 1-hydroxy-2propyl bis (1-chloro-2-propyl) phosphate
+  short_name: BCIPHIPP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:AUUWEOBTRZWTTC-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/31c3508afe
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis-2-chloroisopropyl-fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BCIPHIPP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bciphipp
+  remark: 'comments: * Is this the same compound? INCHIKEY takes me here but not 100% sure"https://pubchem.ncbi.nlm.nih.gov/compound/132967160'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/89e01c9f44
+  name: 2,2',3,3',4,4',5,6'-Octabromodiphenyl ether
+  short_name: BDE-196
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:IEWFKOVTVJNWFF-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',3,3',4,4',5,6'-octabroomdifenylether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-196
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde196
+  remark: 'comments: * Don''t find this
+
+    feedback_epi team: BDE-196 does not have a parent compound, the compound you are exposed to externally is BDE-196 and it doesn''t metabolize to anything elso so we still measure BDE-196 in HBM. so it would have itself as parent compound.'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/bbb360e2e0
+  name: 2,2',3,3',4,4',6,6'-Octabromodiphenyl ether
+  short_name: BDE-197
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:AAFUUKPTSPVXJH-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',3,3',4,4',6,6'-octabroomdifenylether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-197
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde197
+  remark: 'comments: * For the INCHIKEY I found this: https://pubchemlite.lcsb.uni.lu/e/compound/11967214
+
+    * For the name, I found this: https://www.lgcstandards.com/CZ/en/2-2-3-3-4-4-6-6-Octabromodiphenyl-ether-13C12-99-BDE-197-50-g-mL-in-Nonane/p/CIL-EO-5337?queryID=487f5e5abfc7286f80bce48183dfe452
+
+    feedback_epi team: BDE-197 does not have a parent compound, the compound you are exposed to externally is BDE-197 and it doesn''t metabolize to anything elso so we still measure BDE-196 in HBM. so it would have itself as parent compound.'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/74ecd4fe6f
+  name: 2,2',3,4,4',5,5',6-Octabromodiphenyl ether
+  short_name: BDE-203
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RTUZOQFRIPIWPS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36160
+  - https://identifiers.org/cas:337513-72-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',3,4,4',5,5',6-Octabroomdifenylether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-203
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde203
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/4278671e38
+  name: 2,3,4,5-tetrabromobenzoic acid
+  short_name: TBBA
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:15709948
+  - https://identifiers.org/inchikey:KVILQONZZZERSG-UHFFFAOYSA-N
+  - https://identifiers.org/cas:27581-13-1
+  - https://identifiers.org/CHEBI:165216
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4e28e3a448
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,4,5-tetrabroombenzoëzuur
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/0396bdbbf3
+  name: 2,3,5,6-tetrabromo-p-xylene
+  short_name: TBX
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RXKOKVQKECXYOT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:31952
+  - https://identifiers.org/cas:23488-38-2
+  aliases:
+  - 1,2,4,5-tetrabromo-3,6-dimethyl-Benzene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,5,6-tetrabroom-p-xyleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbx
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/dd0b7a8b05
+  name: 2,4,6-Tribromophenol
+  short_name: 2,4,6-TBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:47696
+  - https://identifiers.org/cas:118-79-6
+  - https://identifiers.org/pubchem.compound:1483
+  - https://identifiers.org/inchikey:BSWWXRFVMJHFBN-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4,6-tribroomfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbph
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/d1f76d1915
+  name: 2,4-Dibromophenol
+  short_name: 2,4-DBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:34238
+  - https://identifiers.org/cas:615-58-7
+  - https://identifiers.org/pubchem.compound:12005
+  - https://identifiers.org/inchikey:FAXWFCTVSHEODL-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-dibroomfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbph
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/a550d7bb10
+  name: (2-Ethyl-5-hydroxyhexyl) diphenyl phosphate
+  short_name: 5-HO-EHDPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:PZMFWNXABLTZRN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:134818005
+  - https://identifiers.org/cas:2173149-33-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f420a67b3a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-ethyl-5-hydroxyhexyldifenylfosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 5-HO-EHDPHP
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/c5d432e646
+  name: 2-ethylhexyl phenyl phosphate
+  short_name: EHPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:UGIWGFXQNPWKPR-UHFFFAOYSA-M
+  - https://identifiers.org/pubchem.compound:18761893
+  - https://identifiers.org/cas:20403-99-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f420a67b3a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-ethylhexylfenylfosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: EHPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ehphp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/4e28e3a448
+  name: 2-ethylhexyl-2,3,4,5-tetrabromobenzoate
+  short_name: EH-TBB
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:HVDXCGSGEQKWGB-UHFFFAOYSA-N
+  - PUBCHEN:71316600
+  - https://identifiers.org/cas:183658-27-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-ethylhexyl-2,3,4,5-tetrabroombenzoaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ehtbb
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/fcaf489ae6
+  name: 2-hydroxyethyl bis(2-butoxyethyl) phosphate
+  short_name: BBOEHEP
+  exact_matches:
+  - https://identifiers.org/inchikey:UQSRKBXTCXVEJL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:132967161
+  - https://identifiers.org/cas:1477494-86-2
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0fecddb08c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(2-butoxyethyl)-(2-hydroxyethyl) fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BBOEHEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bboehep
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/d3a0de396c
+  name: 3-hydroxyphenyl diphenyl phosphate
+  short_name: 3-hydroxyphenyl diphenyl phosphate
+  exact_matches:
+  - https://identifiers.org/inchikey:AWYVETCHVQGXMB-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0b5bee3208
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxyphenyl diphenyl phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3-HO-TPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohtphp3
+  remark: 'comments: * Did not find anything for this'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/ea4f6cda93
+  name: 4-hydroxyphenyl phenyl phosphate
+  short_name: 4-HO-DPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:TUBVQVOADJADLU-UHFFFAOYSA-M
+  - https://identifiers.org/pubchem.compound:21410666
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0b5bee3208
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-hydroxyphenyl phenyl phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 4-HO-DPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourohdphp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/d5a07e5646
+  name: Anti-dechlorane plus
+  short_name: Anti-DP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:UGQQAJOWXNCOPY-VBCJEVMVSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Anti-dechloraan plus
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: adp
+  remark: 'comments: * Found this link: https://www.lgcstandards.com/PL/en/Anti-Dechlorane-plus/p/TRC-D226635 that directs me to a CAS number that directs me to this PUBCHEM link: https://pubchem.ncbi.nlm.nih.gov/compound/Dechlorane-Plus --> however this does not match the INCHYKEY already in our DB (for which I found nothing online...)'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/b35e5cf20d
+  name: Bis(1,3-dichloro-2-propyl) phosphate
+  short_name: BDCIPP
+  exact_matches:
+  - https://identifiers.org/CHEBI:166469
+  - https://identifiers.org/cas:72236-72-7
+  - https://identifiers.org/pubchem.compound:188119
+  - https://identifiers.org/inchikey:NNKRUBFJSSBFSS-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/c77a930ecd
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis-1,3-dichloro-2-propyl-fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDCIPP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdcippms
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/97c92a9da2
+  name: Bis(1-chloro-2-propyl) phosphate
+  short_name: BCIPP
+  exact_matches:
+  - https://identifiers.org/CHEBI:166470
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/31c3508afe
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(1-chloro-2-propyl) phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BCIPP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bcippms
+  remark: 'comments: * THE CHEBI directs me to this pubchem compound: https://pubchem.ncbi.nlm.nih.gov/compound/Bis_2-chloro-1-methylethyl_-hydrogen-phosphate'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/5a4ed41401
+  name: Bis(2-butoxyethyl) 3-hydroxy-2-butoxyethyl phosphate
+  short_name: 3-HO-TBOEP
+  exact_matches:
+  - https://identifiers.org/inchikey:ZYWDPVGRFHQPGL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:134818028
+  - https://identifiers.org/cas:1477494-87-3
+  aliases:
+  - Bis(2-butoxyethyl) 2-(3-hydroxybutoxy)ethyl phosphate
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0fecddb08c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(2-butoxyethyl) 3-hydroxy-2-butoxyethylfosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3-HO-TBOEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohtboep
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/ffb9dabb67
+  name: Bis(2-butoxyethyl) phosphate
+  short_name: BBOEP
+  exact_matches:
+  - https://identifiers.org/inchikey:NNXWIPHZHATIFE-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0fecddb08c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis-2-butoxyethyl-fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BBOEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bboephr
+  remark: 'comments: * The INCHIKEY in our DB directs me to this pubchem link: https://pubchem.ncbi.nlm.nih.gov/compound/84299'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/4cbce9de11
+  name: Bis(2-chloroethyl) phosphate
+  short_name: BCEP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:166471
+  - https://identifiers.org/cas:3040-56-0
+  - https://identifiers.org/pubchem.compound:76438
+  - https://identifiers.org/inchikey:PMGHIGLOERPWGC-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(2-chloorethyl)fosfaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bcepms
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/1ca9ac4070
+  name: Bis(2-ethylhexyl) phosphate
+  short_name: BEHP
+  exact_matches:
+  - https://identifiers.org/inchikey:SEGLCEQVOFDUPX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:9275
+  - https://identifiers.org/cas:298-07-7
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/a3db6bd6e2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(2-ethylhexyl)fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BEHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: behp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/108f0568cc
+  name: Bis(2-ethylhexyl) tetrabromophthalate
+  short_name: BEH-TEBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:UUEDINPOVKWVAZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:117291
+  - https://identifiers.org/cas:26040-51-7
+  aliases:
+  - Bis(2-ethylhexyl)-3,4,5,6-tetrabromophthalate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Bis(2-ethylhexyl)-3,4,5,6-tetrabroomftalaat
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/441f2aafed
+  name: Decabromodiphenylethane
+  short_name: DBDPE
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:BZQKBFHEWDPQHD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:10985889
+  - https://identifiers.org/cas:84852-53-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Decabroomdifenylethaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbdpe
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f1e3636258
+  name: Dechlorane 602
+  short_name: Dec602
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:CDBKZZACXQLFMK-DSCPOPHVSA-N
+  - https://identifiers.org/pubchem.compound:131877552
+  - https://identifiers.org/cas:31107-44-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dechloraan 602
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dectwo
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/ca2fdaf82e
+  name: Dechlorane 603
+  short_name: Dec603
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:UMNZVNMWVZXNBM-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:44152444
+  - https://identifiers.org/cas:13560-92-4
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dechloraan 603
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: decthree
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/056af0ae8b
+  name: Dechlorane 604
+  short_name: Dec604
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:PHYHWKJTYWPNCS-PDPXOMPHSA-N
+  - https://identifiers.org/pubchem.compound:97944743
+  - https://identifiers.org/cas:71245-27-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dechloraan 604
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: decfour
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f993a9fc52
+  name: Di-n-butyl phosphate
+  short_name: DnBPbis
+  exact_matches:
+  - https://identifiers.org/CHEBI:166473
+  - https://identifiers.org/cas:107-66-4
+  - https://identifiers.org/pubchem.compound:7881
+  - https://identifiers.org/inchikey:JYFHYPJRHGVZDY-UHFFFAOYSA-N
+  aliases:
+  - Dibutyl phosphate
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/dcb0bf8cc7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Di-n-butyl phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DnBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dnbphr
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f5d8ea58d9
+  name: Hexabromobenzene
+  short_name: HBB
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:CAYGQBVSOZLICD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:6905
+  - https://identifiers.org/cas:87-82-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabroombenzeen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbb
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/907f8fceea
+  name: Hexabromobiphenyl
+  short_name: PBB-153
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  aliases:
+  - Pbb '153'
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabroombifenyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pbb153
+  remark: 'comments: * Since there are no identifying keys in our DB.  Is this compound?https://pubchem.ncbi.nlm.nih.gov/compound/42948'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/40d34ba1cb
+  name: Hexabromocyclododecane alpha
+  short_name: HBCDα
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:DEIGXXQKDWULML-PQTSNVLCSA-N
+  - https://identifiers.org/pubchem.compound:11763618
+  - https://identifiers.org/cas:134237-50-6
+  aliases:
+  - alpha-Hexabromocyclododecane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabroomcyclododecaan alfa
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbcda
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/1a0b83a758
+  name: Hexabromocyclododecane beta
+  short_name: HBCDβ
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:DEIGXXQKDWULML-UFVWWTPHSA-N
+  - '13040187'
+  - https://identifiers.org/cas:134237-51-7
+  aliases:
+  - beta-Hexabromocyclododecane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabroomcyclododecaan beta
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbcdb
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/bc35a8f725
+  name: Hexabromocyclododecane gamma
+  short_name: HBCDγ
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:DEIGXXQKDWULML-MOCCIAMBSA-N
+  - https://identifiers.org/pubchem.compound:11377211
+  - https://identifiers.org/cas:134237-52-8
+  aliases:
+  - gamma-Hexabromocyclododecane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabroomcyclododecaan-gamma
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbcdg
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/680b24de37
+  name: Hexachlorocyclopentadienyl-dibromocyclooctane
+  short_name: HCDBCO
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:OZQOUGTVRWVFRK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:129845854
+  - https://identifiers.org/cas:2180931-30-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexachloorcyclopentadienyl-dibroomcyclooctaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hcdbco
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/35259dcac3
+  name: Hydroxyphenyl diphenyl phosphate
+  short_name: HO-TPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:NOPNBQOZUKISRP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:57058026
+  - https://identifiers.org/cas:56806-74-7
+  aliases:
+  - 4-Hydroxyphenyl diphenyl phosphate
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0b5bee3208
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-hydroxyphenyl diphenyl phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 4-HO-TPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohtphp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/dbbcfa2db3
+  name: Octabromotrimethylphenylindane
+  short_name: OBIND
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:SNKXRWQAVFAAGH-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Octabroomtrimethylfenylindaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: obind
+  remark: 'comments: * Did not find the name or the inchi key'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/2755586db9
+  name: Pentabromoethylbenzene
+  short_name: PBEB
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:FIAXCDIQXHJNIX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:6800
+  - https://identifiers.org/cas:85-22-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pentabroomethylbenzeen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pbeb
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/60112c02fc
+  name: Pentabromophenol
+  short_name: PBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:SVHOVVJFOWGYJO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11852
+  - https://identifiers.org/cas:608-71-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pentabroomfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pbph
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/802287401d
+  name: Pentabromotoluene
+  short_name: PBT
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:OZHJEQVYCBTHJT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:6906
+  - https://identifiers.org/cas:87-83-2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pentabroomtolueen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pbt
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/d2af08891c
+  name: Perchloropentacyclodecane
+  short_name: mirex
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:34852
+  - https://identifiers.org/cas:2385-85-5
+  - https://identifiers.org/pubchem.compound:16945
+  - https://identifiers.org/inchikey:GVYLCNUFSHDAAW-UHFFFAOYSA-N
+  aliases:
+  - mirex
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Perchloorpentacyclodecaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mirex
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/4abbca5ec2
+  name: Polybrominated diphenylether 100
+  short_name: BDE-100
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:NSKIRYMHNFTRLR-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:154083
+  - https://identifiers.org/cas:189084-64-8
+  - https://identifiers.org/CHEBI:138065
+  aliases:
+  - bde 100
+  - bde100
+  - bde-100
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',4,4',6-penta-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-100
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bded
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/8c8d01f1f9
+  name: Polybrominated diphenylether 119
+  short_name: BDE-119
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:KXEOYBYEJCRPGB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509897
+  - https://identifiers.org/cas:189084-66-0
+  aliases:
+  - bde 119
+  - bde119
+  - bde-119
+  - pbde-199
+  - 2,3',4,4',6-Pentabromodiphenyl Ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 119
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bden
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/1b15468ce7
+  name: Polybrominated diphenylether 138
+  short_name: BDE-138
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:IZFQCEZFGCMHOM-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15254861
+  - https://identifiers.org/cas:182677-30-1
+  aliases:
+  - bde 138
+  - bde138
+  - bde-138
+  - 2,2',3,4,4',5'-Hexabromodiphenyl Ether
+  - pbde-138
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 138
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdeo
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/7de7d7f866
+  name: Polybrominated diphenylether 15
+  short_name: BDE-15
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:YAWIAFUBXXPJMQ-UHFFFAOYSA-N
+  aliases:
+  - bde15
+  - bde15
+  - bde-15
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 15
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde15
+  remark: 'comments: * The inchikey in our DB directs me to this pubchem link: https://pubchem.ncbi.nlm.nih.gov/compound/4_4_-Dibromodiphenyl-ether --> but better to double check that it is indeed the same compound?'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/01ffada75a
+  name: Polybrominated diphenylether 153
+  short_name: BDE-153
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RZXIRSKYBISPGF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:155166
+  - https://identifiers.org/cas:68631-49-2
+  - https://identifiers.org/CHEBI:81534
+  aliases:
+  - bde 153
+  - bde153
+  - bde-153
+  - 1,2,4-tribromo-5-(2,4,5-tribromophenoxy)benzene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',4,4',5,5'-hexa-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-153
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdee
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/caab28faae
+  name: Polybrominated diphenylether 154
+  short_name: BDE-154
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:VHNPZYZQKWIWOD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509898
+  - https://identifiers.org/cas:207122-15-4
+  - https://identifiers.org/CHEBI:81535
+  aliases:
+  - bde 154
+  - bde154
+  - bde-154
+  - pbde-154
+  - 2,2',4,4',5,6'-Hexabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',4,4',5,6'-hexa-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-154
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdef
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/065f7833a2
+  name: Polybrominated diphenylether 17
+  short_name: BDE-17
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:VYBFILXLBMWOLI-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14274807
+  - https://identifiers.org/cas:147217-75-2
+  - '138001'
+  aliases:
+  - bde 17
+  - bde17
+  - bde-17
+  - 2,2',4-Tribromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 17
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde17
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/b52d0e2219
+  name: Polybrominated diphenylether 183
+  short_name: BDE-183
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:ILPSCQCLBHQUEM-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509899
+  - https://identifiers.org/cas:207122-16-5
+  - https://identifiers.org/CHEBI:81537
+  aliases:
+  - bde 183
+  - bde183
+  - bde-183
+  - 2,2',3,4,4',5',6-Heptabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',3,4,4',5',6-hepta-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-183
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdeg
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/fe526f94fe
+  name: Polybrominated diphenylether 190
+  short_name: BDE-190
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:OUEYHQIMJGHOQN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:12110099
+  - https://identifiers.org/cas:189084-68-2
+  aliases:
+  - bde 190
+  - bde190
+  - bde-190
+  - 2,3,3',4,4',5,6-Heptabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 190
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdep
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/d1e66eabfb
+  name: Polybrominated diphenylether 209
+  short_name: BDE-209
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:WHHGLZMJPXIBIX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14410
+  - https://identifiers.org/cas:1163-19-5
+  - https://identifiers.org/CHEBI:82436
+  aliases:
+  - bde 209
+  - bde209
+  - bde-209
+  - Decabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Deca bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-209
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdeh
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/03d7808662
+  name: Polybrominated diphenylether 25
+  short_name: BDE-25
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:AURKEOPYVUYTLO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:21604827
+  - https://identifiers.org/cas:147217-77-4
+  aliases:
+  - bde 25
+  - bde25
+  - bde-25
+  - 2,3',4-Tribromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 25
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde25
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/5c338b8147
+  name: Polybrominated diphenylether 28
+  short_name: BDE-28
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:UPNBETHEXPIWQX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:12110098
+  - https://identifiers.org/cas:41318-75-6
+  - '138036'
+  aliases:
+  - bde 28
+  - bde28
+  - bde-28
+  - 2,4,4'-Tribromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4,4'-Tribromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-28
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdea
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/1af335ec52
+  name: Polybrominated diphenylether 33
+  short_name: BDE-33
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  aliases:
+  - bde 33
+  - bde33
+  - bde-33
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 33
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bde33
+  remark: 'comments: * Since there are no identifiers in our db, is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/tribromodiphenyl%20ether'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/8f209bd86d
+  name: Polybrominated diphenylether 47
+  short_name: BDE-47
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:XYBSIYMGXVUVGY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:95170
+  - https://identifiers.org/cas:5436-43-1
+  - https://identifiers.org/CHEBI:81584
+  aliases:
+  - bde 47
+  - bde47
+  - bde-47
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',4,4'-tetra-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-47
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdeb
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/c3aeba684b
+  name: Polybrominated diphenylether 66
+  short_name: BDE-66
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:DHUMTYRHKMCVAG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509893
+  - https://identifiers.org/cas:189084-61-5
+  - https://identifiers.org/CHEBI:138038
+  aliases:
+  - bde 66
+  - bde66
+  - bde-66
+  - 2,3',4,4'-Tetrabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 66
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdei
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/84d9644228
+  name: Polybrominated diphenylether 71
+  short_name: BDE-71
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:COPAGYRSCJVION-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509894
+  - https://identifiers.org/cas:189084-62-6
+  aliases:
+  - bde 71
+  - bde71
+  - bde-71
+  - 2,3',4',6-Tetrabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 71
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdej
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/670864265d
+  name: Polybrominated diphenylether 75
+  short_name: BDE-75
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:BWCNKMFFUGBFGB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15509895
+  - https://identifiers.org/cas:189084-63-7
+  aliases:
+  - bde 75
+  - bde75
+  - bde-75
+  - 1,3,5-Tribromo-2-(4-bromophenoxy)benzene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 75
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdek
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/941d7c6537
+  name: Polybrominated diphenylether 77
+  short_name: BDE-77
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RYGLOWMCGZHYRQ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:13283771
+  - https://identifiers.org/cas:93703-48-1
+  aliases:
+  - bde 77
+  - bde77
+  - bde-77
+  - 3,3',4,4'-Tetrabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 77
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdel
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/bebc232548
+  name: Polybrominated diphenylether 85
+  short_name: BDE-85
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:DMLQSUZPTTUUDP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:177368
+  - https://identifiers.org/cas:182346-21-0
+  - https://identifiers.org/CHEBI:138064
+  aliases:
+  - bde 85
+  - bde85
+  - bde-85
+  - 2,2',3,4,4'-Pentabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polybroomdifenylether 85
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdem
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/0eb9d30f1e
+  name: Polybrominated diphenylether 99
+  short_name: BDE-99
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:WHPVYXDFIXRKLN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36159
+  - https://identifiers.org/cas:60348-60-9
+  - https://identifiers.org/CHEBI:81582
+  aliases:
+  - bde 99
+  - bde99
+  - bde-99
+  - Pentabromodiphenyl ethers
+  - 2,2',4,4',5-Pentabromodiphenyl ether
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,2',4,4',5-penta-bromodiphenyl ether
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BDE-99
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bdec
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/e853989f12
+  name: Syn-dechlorane plus
+  short_name: Syn-DP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:UGQQAJOWXNCOPY-MXYLTYEXSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Syn-dechlorane plus
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sdp
+  remark: 'comments: * According to google, the INCHIKEY in our DB corresponds to Anti dechlorane plues.'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/040f61380f
+  name: Tetrabromobisphenol A
+  short_name: TBBPA
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:33217
+  - https://identifiers.org/cas:79-94-7
+  - https://identifiers.org/pubchem.compound:6618
+  - https://identifiers.org/inchikey:VEORPZCZECFIRK-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tetrabromobisphenol A
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TBBPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbbpa
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f5aa3b6ca3
+  name: Tetrabromobisphenol A bis(2,3-dibromopropyl ether)
+  short_name: TBBPA-DBPE
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:LXIZRZRTWSDLKK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:62753
+  - https://identifiers.org/cas:21850-44-2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tetrabroombisfenol A-bis(2,3-dibroompropylether)
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TBBPA-DBPE
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbbpadbpe
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/2ff036d40b
+  name: Tetrabromoethylcyclohexane
+  short_name: TBECH
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:RSNWTYLUIPARFX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:20472541
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tetrabroomethylcyclohexaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbech
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/1145018bfb
+  name: Total Hexabromocyclododecane
+  short_name: total HBCD
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:134063
+  - https://identifiers.org/cas:3194-55-6
+  - https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/Hexabromocyclododecane
+  - https://identifiers.org/inchikey:LEOCKULGXOQRTQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexabromocyclododecaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: total HBCD
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbcd
+  remark: 'comments: *For the CHEBI Key in our DB, I get the link to this compound, but I''m not sure it is the same? https://www.ebi.ac.uk/chebi/CHEBI:134063'
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/544d61831c
+  name: Tricresyl phosphate
+  short_name: TMPP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/inchikey:BOSMZFBHAYFUBJ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:6529
+  - https://identifiers.org/cas:78-30-8
+  aliases:
+  - Tri-p-cresyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tricresylfosfaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tmpp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/dcb0bf8cc7
+  name: Tri-n-butyl phosphate
+  short_name: Tri-n-butyl phosphate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:35019
+  - https://identifiers.org/cas:126-73-8
+  - https://identifiers.org/pubchem.compound:31357
+  aliases:
+  - Tributyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tri-n-butyl-fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DNBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tnbp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/0b5bee3208
+  name: Triphenyl phosphate
+  short_name: TPHP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:35033
+  - https://identifiers.org/cas:115-86-6
+  - https://identifiers.org/pubchem.compound:8289
+  - https://identifiers.org/inchikey:XZZNDPSIHUTMOC-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Trifenyl fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tphp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/e93b7aaa49
+  name: Tris(2,3-dibromopropyl) phosphate
+  short_name: TDBPP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:82282
+  - https://identifiers.org/cas:126-72-7
+  - https://identifiers.org/pubchem.compound:31356
+  - https://identifiers.org/inchikey:PQYJRMFWJJONBO-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tris(2,3-dibroompropyl)fosfaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tdbpp
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/b69f12f1c6
+  name: Tris(chloroethyl) phosphate
+  short_name: TCEP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:35037
+  - https://identifiers.org/cas:115-96-8
+  - https://identifiers.org/pubchem.compound:8295
+  - https://identifiers.org/inchikey:HQUQLFOMPYWACS-UHFFFAOYSA-N
+  aliases:
+  - Tris(2-chloroethyl) phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tris-chloroethyl-fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TCEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcep
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/ca6f875372
+  name: Di-n-butyl phthalate
+  short_name: DnBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:34687
+  - https://identifiers.org/cas:84-74-2
+  - https://identifiers.org/pubchem.compound:3026
+  - https://identifiers.org/inchikey:DOIRQSBPFJWKBE-UHFFFAOYSA-N
+  aliases:
+  - Dibutyl phthalate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Di-n-butyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DnBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dnbpht
+  group_labels:
+  - flame retardants
+  - phthalates
+- id: https://w3id.org/peh/biochementities/142c68d8df
+  name: Diphenyl phosphate
+  short_name: DPHPbis
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:166468
+  - https://identifiers.org/cas:838-85-7
+  - https://identifiers.org/pubchem.compound:13282
+  - https://identifiers.org/inchikey:ASMQGLCHMVWBQR-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/0b5bee3208
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Diphenyl phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dphpms
+  group_labels:
+  - flame retardants
+  - phthalates
+- id: https://w3id.org/peh/biochementities/0fecddb08c
+  name: Tris(2-butoxyethyl) phosphate
+  short_name: Tris(2-butoxyethyl) phosphate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_79314
+  exact_matches:
+  - https://identifiers.org/CHEBI:35038
+  - https://identifiers.org/cas:78-51-3
+  - https://identifiers.org/pubchem.compound:6540
+  - https://identifiers.org/inchikey:WTLBZVNBAKMVDP-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tris(2-butoxyethyl) phosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TBOEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tboep
+  group_labels:
+  - flame retardants
+  - phthalates
+- id: https://w3id.org/peh/biochementities/31c3508afe
+  name: Tris(2chloroisopropyl)phosphate
+  short_name: TCIPP
+  exact_matches:
+  - https://identifiers.org/inchikey:KVMPUXDNESXNOH-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tris(2chloorisopropyl)fosfaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/f420a67b3a
+  name: 2-ethylhexyl diphenyl phosphate
+  short_name: EHDPHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:188855
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-ethylhexyldifenylfosfaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - flame retardants
+- id: https://w3id.org/peh/biochementities/c77a930ecd
+  name: Tris(1,3-dichloro-2-propyl) phosphate
+  short_name: TDCIPP
+  exact_matches:
+  - https://identifiers.org/CHEBI:143729
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tris(1,3-dichloor-2-propyl)fosfaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/a3db6bd6e2
+  name: Tri-(2-ethylhexyl) phosphate
+  short_name: TEHP
+  exact_matches:
+  - https://identifiers.org/inchikey:GTVWRXDRKAHEAD-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tri-(2-ethylhexyl)fosfaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - flame retardants
