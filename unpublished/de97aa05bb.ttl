@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/de97aa05bb> a owl:Class ;
+    rdfs:label "2-hydroxy simazine",
+        "2-hydroxysimazine"@nl-be ;
+    schema1:alternateName "2-hydroxy simazine",
+        "Hydroxysimazine" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83476>,
+        <https://identifiers.org/cas:2599-11-3>,
+        <https://identifiers.org/inchikey:YQIXRXMOJFQVBV-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:135408659> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hs2" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/ddc69d562e> .
+

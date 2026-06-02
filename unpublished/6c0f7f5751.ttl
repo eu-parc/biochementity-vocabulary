@@ -1,0 +1,19 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/6c0f7f5751> a owl:Class ;
+    rdfs:label "(RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide",
+        "(RS)-2-chloor-N-(2-ethyl-6-methyl-fenyl)-N-(1-methoxypropaan-2-yl)aceetamide"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+    schema1:alternateName "Dimetachlor" ;
+    schema1:comment "comments: * can it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Metolachlor" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dimetachlor" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" .
+

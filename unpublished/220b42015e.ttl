@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/220b42015e> a owl:Class ;
+    rdfs:label "Desisopropyl 2-hydroxy atrazine",
+        "Desisopropyl 2-hydroxyatrazine"@nl-be ;
+    schema1:alternateName "Desisopropyl 2-hydroxy atrazine" ;
+    schema1:comment "comments: Can it be this? https://pubchem.ncbi.nlm.nih.gov/compound/Deisopropylhydroxyatrazine" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "desiso2hyat" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/0df789fdea> .
+

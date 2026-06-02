@@ -333,7 +333,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: desdesiso2hyat
-  remark: 'comments: I don''t find this compound anywhere butt according to google AI is this compound? https://pubchem.ncbi.nlm.nih.gov/compound/hydroxyatrazine#section=3D-Conformer'
+  remark: 'comments: I don''t find this compound anywhere butt according to google
+    AI is this compound? https://pubchem.ncbi.nlm.nih.gov/compound/hydroxyatrazine#section=3D-Conformer'
   group_labels:
   - herbicides
 - id: https://w3id.org/peh/biochementities/37340efd2b
@@ -353,7 +354,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: desdesisoat
-  remark: "comments: The INCHIKEY in our DB directed me to https://pubchem.ncbi.nlm.nih.gov/compound/2%2C4-diamino-6-chloro-s-triazine --> to double check that it is the same compound? \nAlso found this: https://pubchem.ncbi.nlm.nih.gov/substance/363592869#section=Source"
+  remark: "comments: The INCHIKEY in our DB directed me to https://pubchem.ncbi.nlm.nih.gov/compound/2%2C4-diamino-6-chloro-s-triazine\
+    \ --> to double check that it is the same compound? \nAlso found this: https://pubchem.ncbi.nlm.nih.gov/substance/363592869#section=Source"
   group_labels:
   - herbicides
 - id: https://w3id.org/peh/biochementities/220b42015e

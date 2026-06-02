@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/dd0c196d1e> a owl:Class ;
+    rdfs:label "Alachlor mercapturate",
+        "Alachlor mercapturate"@nl-be ;
+    schema1:alternateName "Alachlor mercapturate" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:116482-92-9>,
+        <https://identifiers.org/inchikey:RFZSQTJRFQHGIJ-INIZCTEOSA-N>,
+        <https://identifiers.org/pubchem.compound:131866382> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "almer" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/bc1b3bb2fb> .
+

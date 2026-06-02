@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/771a9d8e58> a owl:Class ;
+    rdfs:label "2,6 diethyl aniline",
+        "2,6 diethylaniline"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+    schema1:alternateName "2,6 diethyl aniline" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:579-66-8>,
+        <https://identifiers.org/inchikey:FOYHNROGBXVLLX-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:11369> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "da26" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/bc1b3bb2fb> .
+

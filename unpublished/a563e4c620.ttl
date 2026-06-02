@@ -1,0 +1,24 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/a563e4c620> a owl:Class ;
+    rdfs:label "3-(3,4-dichlorophenyl)-1,1-dimethylurea",
+        "3-(3,4-dichloorfenyl)-1,1-dimethylureum"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+    schema1:alternateName "DCMU",
+        "Diuron" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:116509>,
+        <https://identifiers.org/cas:330-54-1>,
+        <https://identifiers.org/inchikey:XMTQQYYKAHVGBJ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:3120> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "diuron" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "herbicides" .
+
