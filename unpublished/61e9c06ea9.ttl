@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/61e9c06ea9> a owl:Class ;
+    rdfs:label "Tungsten",
+        "Wolfraam"@nl-be ;
+    schema1:alternateName "W",
+        "Wolfram",
+        "W"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:27998>,
+        <https://identifiers.org/cas:22541-27-1>,
+        <https://identifiers.org/cas:7440-33-7>,
+        <https://identifiers.org/inchikey:WFKWXMTUELFFGS-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:23964> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "w" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" .
+

@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/46ce6eed09> a owl:Class ;
+    rdfs:label "Chromium",
+        "Chroom"@nl-be ;
+    schema1:alternateName "Cr",
+        "Cr"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:28073>,
+        <https://identifiers.org/cas:16065-83-1>,
+        <https://identifiers.org/cas:7440-47-3>,
+        <https://identifiers.org/inchikey:VYZAMTAEIAYCRO-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:23976> ;
+    pehterms:hasGroupLabel "metals" .
+

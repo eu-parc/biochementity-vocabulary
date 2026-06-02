@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/197cdcc53f> a owl:Class ;
+    rdfs:label "Aluminium",
+        "Aluminium"@nl-be ;
+    schema1:alternateName "Al",
+        "Al"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:33629>,
+        <https://identifiers.org/cas:7429-90-5>,
+        <https://identifiers.org/cas:91728-14-2>,
+        <https://identifiers.org/inchikey:XAGFODPZIPBFFR-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:5359268> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "al" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" .
+

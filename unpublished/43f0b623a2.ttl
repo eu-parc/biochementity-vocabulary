@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/43f0b623a2> a owl:Class ;
+    rdfs:label "Hexavalent chromium",
+        "Zeswaardig chroom"@nl-be ;
+    schema1:alternateName "Cr VI" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:33007>,
+        <https://identifiers.org/cas:18540-29-9>,
+        <https://identifiers.org/inchikey:JOPOVCBBYLSVDA-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:29131> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "crsix" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/46ce6eed09> .
+

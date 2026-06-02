@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/a78dd5e841> a owl:Class ;
+    rdfs:label "Copper",
+        "Koper"@nl-be ;
+    schema1:alternateName "Cu",
+        "Cu"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:28694>,
+        <https://identifiers.org/cas:7440-50-8>,
+        <https://identifiers.org/inchikey:RYGMFSIKBFXOCR-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:23978> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cu" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" .
+

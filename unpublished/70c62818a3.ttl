@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/70c62818a3> a owl:Class ;
+    rdfs:label "Palladium",
+        "Palladium"@nl-be ;
+    schema1:alternateName "Pd",
+        "Pd"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:33363>,
+        <https://identifiers.org/cas:7440-05-3>,
+        <https://identifiers.org/inchikey:KDLHZDBZIXYQEI-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:23938> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pd" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" .
+

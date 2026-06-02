@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c6dfe4ac2b> a owl:Class ;
+    rdfs:label "Arsenic(V) acid",
+        "Arseen(V)zuur"@nl-be ;
+    schema1:alternateName "As(V)",
+        "As(V)"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:35829>,
+        <https://identifiers.org/cas:17428-41-0>,
+        <https://identifiers.org/inchikey:HAYXDMNJJFVXCI-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:104737> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "asfive" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/27baf79af9> .
+

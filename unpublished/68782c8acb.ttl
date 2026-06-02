@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/68782c8acb> a owl:Class ;
+    rdfs:label "Trivalent chromium",
+        "Driewaardig chroom"@nl-be ;
+    schema1:alternateName "Cr III",
+        "chromic cation" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND4E5V1PY6CGZC1PB9>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:49544>,
+        <https://identifiers.org/cas:16065-83-1>,
+        <https://identifiers.org/cas:7440-47-3>,
+        <https://identifiers.org/inchikey:BFGKITSFLPAWGI-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:27668> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "crthree" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "metals" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/46ce6eed09> .
+
