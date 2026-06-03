@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e3155711ce> a owl:Class ;
+    rdfs:label "Linear Perfluorononanesulfonic acid",
+        "Lineair Perfluoro-n-nonaansulfonzuur"@nl-be ;
+    schema1:alternateName "PFNS",
+        "PFNS"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:68259-12-1>,
+        <https://identifiers.org/inchikey:MNEXVZFQQPKDHC-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:86998> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfns" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

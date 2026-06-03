@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c0d2233fa8> a owl:Class ;
+    rdfs:label "1H,1H,2H,2H-Perfluorooctanesulphonic acid" ;
+    schema1:alternateName "6:2 FTSA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:27619-97-2>,
+        <https://identifiers.org/inchikey:VIONGDJUYAYOPU-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:119688> ;
+    pehterms:hasGroupLabel "PFAS" .
+

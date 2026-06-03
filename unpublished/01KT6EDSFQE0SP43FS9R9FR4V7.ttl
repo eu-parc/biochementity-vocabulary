@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQE0SP43FS9R9FR4V7> a owl:Class ;
+    rdfs:label "Branched Perfluorohexane sulfonic acid" ;
+    schema1:alternateName "bpfhxs" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/eedc90fa8b> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/6152b955da> .
+

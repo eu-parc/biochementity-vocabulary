@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e704234a7e> a owl:Class ;
+    rdfs:label "Linear N-ethyl-perfluorooctane sulfonamidoacetate",
+        "Lineair 2-(n-ethylperfluorooctaansulfonamido) azijnzuur"@nl-be ;
+    schema1:alternateName "2-(N-Ethylperfluorooctanesulfonamido)acetic acid",
+        "letpfosaa",
+        "EtPFOSAA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/ffd07c9c23>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83507>,
+        <https://identifiers.org/cas:2991-50-6>,
+        <https://identifiers.org/inchikey:CKRXVVGETMYFIO-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:18134> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "etfosaa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQ8RZZQ0H3DVMWS64N> .
+

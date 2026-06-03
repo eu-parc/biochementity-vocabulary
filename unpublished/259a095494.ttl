@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/259a095494> a owl:Class ;
+    rdfs:label "Linear Perfluorododecanoic acid",
+        "Lineair Perfluoro-n-dodecaanzuur"@nl-be ;
+    schema1:alternateName "lpfdoda",
+        "PFDoA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/44fff4fd08>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:90633>,
+        <https://identifiers.org/cas:307-55-1>,
+        <https://identifiers.org/inchikey:CXGONMQFMIYUJR-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:67545> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfdoda" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQ6PYJ6FDG5GVBPP81> .
+

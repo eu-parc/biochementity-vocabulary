@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQVZ83R8HY1WHNZ1Z6> a owl:Class ;
+    rdfs:label "Branched N-Methylperfluoro-1 octanesulphonamide" ;
+    schema1:alternateName "bmepfosa" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/4c6875ff23> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/200c241cc2> .
+

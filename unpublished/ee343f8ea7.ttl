@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/ee343f8ea7> a owl:Class ;
+    rdfs:label "Linear Hexafluoropropylene Oxide Dimer Acid",
+        "Lineair Perfluor-2-propoxypropaanzuur"@nl-be ;
+    schema1:alternateName "2,3,3,3-Tetrafluoro-2-(heptafluoropropoxy)propionic acid",
+        "HFPO-DA",
+        "HFPO-DA"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:143205>,
+        <https://identifiers.org/cas:13252-13-6>,
+        <https://identifiers.org/inchikey:CSEBNABAWMZWIF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:114481> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hfpoda" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

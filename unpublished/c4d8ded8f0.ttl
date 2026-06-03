@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c4d8ded8f0> a owl:Class ;
+    rdfs:label "Linear 6:2/8:2 Fluorotelomer phosphate diester",
+        "Lineair 6:2/8:2 fluortelomeerfosfaat diester"@nl-be ;
+    schema1:alternateName "(Perfluorohexyl)ethyl (perfluorooctyl)ethyl hydrogenphosphate",
+        "6:2/8:2 diPAP",
+        "6:2/8:2 diPAP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:943913-15-3>,
+        <https://identifiers.org/inchikey:KHLRYLUKBJEYFH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:101536705> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "sixeightdipap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

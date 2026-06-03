@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/80e242b0ef> a owl:Class ;
+    rdfs:label "Linear 1H,1H,2H,2H-Perfluorodecanesulfonic acid",
+        "Lineair 8:2 fluortelomeersulfonzuur"@nl-be ;
+    schema1:alternateName "8:2 FTS",
+        "8:2 FTS"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:39108-34-4>,
+        <https://identifiers.org/inchikey:ALVYVCQIFHTIRD-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:3016044> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "eightfts" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

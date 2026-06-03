@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/565e2a70bf> a owl:Class ;
+    rdfs:label "Linear N-Ethyl-perfluorooctane sulphonamidoethanol",
+        "Lineair N-ethylperfluorooctaansulfonamido-ethanol"@nl-be ;
+    schema1:alternateName "2-(N-ethylperfluorooctanesulfonamido)ethyl alcohol",
+        "EtPFOSE",
+        "EtPFOSE"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:1691-99-2>,
+        <https://identifiers.org/inchikey:HUFHNYZNTFSKCT-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:74322> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "etfose" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

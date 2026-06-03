@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/af8a91dae1> a owl:Class ;
+    rdfs:label "Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic acid potassium salt",
+        "Lineair 2-(6-chloordodecafluorhexyloxy)-1,1,2,2-tetrafluorethaansulfonzuur kaliumzout"@nl-be ;
+    schema1:alternateName "6:2 Cl-PFESA",
+        "Potassium 9-chlorohexadecafluoro-3-oxanonane-1-sulfonate",
+        "6:2 Cl-PFESA"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:73606-19-6>,
+        <https://identifiers.org/inchikey:OWQCHLFKOGVODW-UHFFFAOYSA-M>,
+        <https://identifiers.org/pubchem.compound:25210512> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfesa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

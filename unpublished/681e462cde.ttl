@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/681e462cde> a owl:Class ;
+    rdfs:label "Linear 8:2 polyfluoroalkyl phosphoric acid monoesters",
+        "Lineair 8:2 fluortelomeerfosfaat monoester"@nl-be ;
+    schema1:alternateName "8:2 Fluorotelomer phosphate monoester",
+        "8:2 monoPAP",
+        "8:2 monoPAP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83541>,
+        <https://identifiers.org/cas:57678-03-2>,
+        <https://identifiers.org/inchikey:MIABSAQIFYEDJP-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:10143739> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "eightmonopap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

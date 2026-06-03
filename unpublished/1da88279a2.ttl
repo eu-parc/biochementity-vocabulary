@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/1da88279a2> a owl:Class ;
+    rdfs:label "Linear Perfluoropentanoic acid",
+        "Lineair Perfluoro-n-pentaanzuur"@nl-be ;
+    schema1:alternateName "lpfpea",
+        "PFPeA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/bde5b0162d>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83491>,
+        <https://identifiers.org/cas:2706-90-3>,
+        <https://identifiers.org/inchikey:CXZGQIAOTKWCDB-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:75921> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfpea" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQ1V23PH8E1YBSS6GY> .
+

@@ -427,7 +427,8 @@ biochementity_subclasses:
   group_labels:
   - PFAS
 - id: https://w3id.org/peh/biochementities/af8a91dae1
-  name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic acid potassium salt
+  name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic
+    acid potassium salt
   short_name: 6:2 Cl-PFESA
   exact_matches:
   - https://identifiers.org/inchikey:OWQCHLFKOGVODW-UHFFFAOYSA-M
@@ -440,7 +441,8 @@ biochementity_subclasses:
   translations:
   - property_name: name
     language: nl-BE
-    translated_value: Lineair 2-(6-chloordodecafluorhexyloxy)-1,1,2,2-tetrafluorethaansulfonzuur kaliumzout
+    translated_value: Lineair 2-(6-chloordodecafluorhexyloxy)-1,1,2,2-tetrafluorethaansulfonzuur
+      kaliumzout
   - property_name: short_name
     language: nl-BE
     translated_value: 6:2 Cl-PFESA
@@ -477,7 +479,8 @@ biochementity_subclasses:
   is_isomer_of:
   - https://w3id.org/peh/biochementities/495e6b075f
 - id: https://w3id.org/peh/biochementities/644aaf16e7
-  name: Linear 2,2,3-trifluoro-3-[1,1,2,2,3,3-hexafluoro-3-(trifluoromethoxy)propoxy]propanoic acid
+  name: Linear 2,2,3-trifluoro-3-[1,1,2,2,3,3-hexafluoro-3-(trifluoromethoxy)propoxy]propanoic
+    acid
   short_name: ADONA
   exact_matches:
   - https://identifiers.org/inchikey:AFDRCEOKCOUICI-UHFFFAOYSA-N
@@ -654,7 +657,8 @@ biochementity_subclasses:
   - https://identifiers.org/cas:756426-58-1
   - https://identifiers.org/pubchem.compound:22568738
   aliases:
-  - 2-((6-Chloro-1,1,2,2,3,3,4,4,5,5,6,6-dodecafluorohexyl)oxy)-1,1,2,2-tetrafluoroethanesulfonic acid
+  - 2-((6-Chloro-1,1,2,2,3,3,4,4,5,5,6,6-dodecafluorohexyl)oxy)-1,1,2,2-tetrafluoroethanesulfonic
+    acid
   parent_biochementities:
   - https://w3id.org/peh/terms/BioChemEntity
   translations:
@@ -1928,7 +1932,8 @@ biochementity_subclasses:
   group_labels:
   - PFAS
 - id: https://w3id.org/peh/biochementities/5cfffb14c8
-  name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic acid
+  name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic
+    acid
   short_name: MeFHxSAA
   exact_matches:
   - https://identifiers.org/inchikey:YGKAWLSSJSOXNM-UHFFFAOYSA-N

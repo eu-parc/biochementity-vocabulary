@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e08ecde299> a owl:Class ;
+    rdfs:label "Linear Perfluoroundecanoic acid",
+        "Lineair Perfluoro-n-undecaanzuur"@nl-be ;
+    schema1:alternateName "lpfunda",
+        "PFUnA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/ee7d09db6d>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83493>,
+        <https://identifiers.org/cas:2058-94-8>,
+        <https://identifiers.org/inchikey:SIDINRCMMRKXGQ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:77222> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfunda" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQV1BKBQWP03GA5BFK> .
+

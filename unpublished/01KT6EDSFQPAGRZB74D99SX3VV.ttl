@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQPAGRZB74D99SX3VV> a owl:Class ;
+    rdfs:label "Branched Perfluorononanoic acid" ;
+    schema1:alternateName "bpfna" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/dc5d8472b8> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/147953fa72> .
+

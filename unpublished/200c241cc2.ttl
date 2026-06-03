@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/200c241cc2> a owl:Class ;
+    rdfs:label "Linear N-Methylperfluoro-1 octanesulphonamide",
+        "Lineair N-methylperfluor-1-octaansulfonamide"@nl-be ;
+    schema1:alternateName "N-Methylperfluorooctanesulfonamide",
+        "lmepfosa",
+        "MePFOSA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/4c6875ff23>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:31506-32-8>,
+        <https://identifiers.org/inchikey:SRMWNTGHXHOWBT-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:3034468> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "nmefosa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQVZ83R8HY1WHNZ1Z6> .
+

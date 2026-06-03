@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/ae3d790b36> a owl:Class ;
+    rdfs:label "Linear Perfluorohexanoic acid",
+        "Lineair Perfluoro-n-hexaanzuur"@nl-be ;
+    schema1:alternateName "lpfhxa",
+        "PFHxA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/8e6df03f40>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83492>,
+        <https://identifiers.org/cas:307-24-4>,
+        <https://identifiers.org/inchikey:PXUULQAPEKKVAH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:67542> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfhxa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQ1NDHT47C0CJ1AZ2V> .
+

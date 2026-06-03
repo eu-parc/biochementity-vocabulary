@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d03f886e1c> a owl:Class ;
+    rdfs:label "Linear 6:2 polyfluoroalkyl phosphoric acid diesters",
+        "Lineair 6:2 fluortelomeerfosfaat diester"@nl-be ;
+    schema1:alternateName "6:2 diPAP",
+        "6:2 diPAP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83539>,
+        <https://identifiers.org/cas:57677-95-9>,
+        <https://identifiers.org/inchikey:ZDYYWMSLMLTXDM-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:14550408> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "sixdipap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" .
+

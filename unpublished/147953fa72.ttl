@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/147953fa72> a owl:Class ;
+    rdfs:label "Linear Perfluorononanoic acid",
+        "Lineair Perfluoro-n-nonaanzuur"@nl-be ;
+    schema1:alternateName "lpfna",
+        "PFNA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/dc5d8472b8>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:38397>,
+        <https://identifiers.org/cas:375-95-1>,
+        <https://identifiers.org/inchikey:UZUFPBIDKMEQEQ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:67821> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfna" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQPAGRZB74D99SX3VV> .
+

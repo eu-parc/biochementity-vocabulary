@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/7f19380095> a owl:Class ;
+    rdfs:label "2H-Perfluoro-2-decenoic acid" ;
+    schema1:alternateName "8:2 FTUCA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:70887-84-2>,
+        <https://identifiers.org/inchikey:WHZXTVOEGZRRJM-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:71404795> ;
+    pehterms:hasGroupLabel "PFAS" .
+

@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/6152b955da> a owl:Class ;
+    rdfs:label "Linear Perfluorohexane sulfonic acid",
+        "Lineair Perfluoro-n-hexaansulfonzuur"@nl-be ;
+    schema1:alternateName "Perfluorohexanesulfonic Acid",
+        "lpfhxs",
+        "PFHxS"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/eedc90fa8b>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132448>,
+        <https://identifiers.org/cas:355-46-4>,
+        <https://identifiers.org/inchikey:QZHDEAJFRJCDMF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:67734> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfhxs" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/01KT6EDSFQE0SP43FS9R9FR4V7> .
+

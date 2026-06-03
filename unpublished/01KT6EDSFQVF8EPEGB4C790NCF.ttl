@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQVF8EPEGB4C790NCF> a owl:Class ;
+    rdfs:label "Branched Perfluoro-1-octaperfluoro-1-octanesulphonamide" ;
+    schema1:alternateName "bpfosa" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/7edcb804fb> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/4dc39ce2fc> .
+

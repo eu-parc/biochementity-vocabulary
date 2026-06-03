@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/6d9f0f3058> a owl:Class ;
+    rdfs:label "Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)" ;
+    schema1:alternateName "9CL-PF3ONS" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:756426-58-1>,
+        <https://identifiers.org/inchikey:GGOUUEMCWBTDMT-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:22568738> ;
+    pehterms:hasGroupLabel "PFAS" .
+

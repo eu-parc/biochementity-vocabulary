@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQ1DYV9HZKKG4MRRR5> a owl:Class ;
+    rdfs:label "Branched N-Ethylperfluoro-1-octanesulphonamide" ;
+    schema1:alternateName "betpfosa" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/978fee0ba0> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/a21a9e0c8a> .
+

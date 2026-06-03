@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQ8RZZQ0H3DVMWS64N> a owl:Class ;
+    rdfs:label "Branched N-ethyl-perfluorooctane sulfonamidoacetate" ;
+    schema1:alternateName "betpfosaa" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/ffd07c9c23> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/e704234a7e> .
+

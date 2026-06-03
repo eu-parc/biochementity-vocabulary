@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/01KT6EDSFQGNCA3YZCECPAP8ZC> a owl:Class ;
+    rdfs:label "Branched Perfluorotridecanoic acid" ;
+    schema1:alternateName "bpftrda" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/df361a1fa4> ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/561eee706e> .
+
