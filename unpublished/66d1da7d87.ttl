@@ -13,5 +13,6 @@
     rdfs:subClassOf pehterms:BioChemEntity ;
     skos:exactMatch <https://identifiers.org/CHEBI:4388>,
         <https://identifiers.org/cas:52918-63-5> ;
-    pehterms:hasGroupLabel "pesticides" .
+    pehterms:hasGroupLabel "pesticides", 
+        "carbamate pesticides" .
 

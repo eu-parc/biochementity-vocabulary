@@ -1,0 +1,235 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/1bc66900d9
+  name: 3-phenoxybenzoic acid
+  short_name: 3PBA
+  exact_matches:
+  - https://identifiers.org/CHEBI:72631
+  - https://identifiers.org/cas:3739-38-6
+  - https://identifiers.org/pubchem.compound:19539
+  - https://identifiers.org/inchikey:NXTDJHZGHOFSQG-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/262083d9ef
+  - https://w3id.org/peh/biochementities/18031c15c9
+  - https://w3id.org/peh/biochementities/66d1da7d87
+  - https://w3id.org/peh/biochementities/c8f604e8f0
+  - https://w3id.org/peh/biochementities/6c4eee9eae
+  - https://w3id.org/peh/biochementities/4d8f49f24e
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fenoxybenzoëzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3PBA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threepba
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/88c4fbd9f6
+  name: 4-chloro-alpha-isopropyl benzene acetic acid
+  short_name: CPBA
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/db8a787bd3
+  - https://w3id.org/peh/biochementities/6c4eee9eae
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-chloor-alfa-isopropylbenzeenazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cpba
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/70b6cd6bfb
+  name: 4-fluoro-3-phenoxybenzoic acid
+  short_name: F-3-PBA
+  exact_matches:
+  - https://identifiers.org/CHEBI:165196
+  - https://identifiers.org/cas:77279-89-1
+  - https://identifiers.org/pubchem.compound:157032
+  - https://identifiers.org/inchikey:VLXNXMTVRWIUJZ-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/68cb3faf20
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-fluor-3-fenoxybenzoëzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: F-3-PBA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fpba
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/5477e6723f
+  name: Permethrinic acid
+  short_name: DCCA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sdcca
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/b3529f6420
+  name: cis-Permethrinic acid (racemic)
+  short_name: cis-DCCA (rac)
+  aliases:
+  - (+/-)-cis-Permethrinic acid
+  - rac-cis-Permethrinic acid
+  - cis-DCCA
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/f72cdc1be8
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:41507
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/5477e6723f
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cdcca
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/099e9c98e5
+  name: cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid
+  short_name: cis-DBCA
+  exact_matches:
+  - https://identifiers.org/inchikey:MDIQXIJPQWLFSD-INEUFUBQSA-N
+  - https://identifiers.org/cas:63597-73-9
+  - https://identifiers.org/pubchem.compound:12525241
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f72cdc1be8
+  name: trans-Permethrinic acid (racemic)
+  short_name: trans-DCCA (rac)
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/b3529f6420
+  aliases:
+  - (+/-)-trans-Permethrinic acid
+  - rac-trans-Permethrinic acid
+  - trans-DCCA
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:41539
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/5477e6723f
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tdcca
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+
+- id: https://w3id.org/peh/biochementities/262083d9ef
+  name: Cyhalothrin
+  short_name: Cyhalothrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:4035
+  - https://identifiers.org/cas:68085-85-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/18031c15c9
+  name: Cypermethrin
+  short_name: Cypermethrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:4042
+  - https://identifiers.org/cas:52315-07-8
+  translations:
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/c8f604e8f0
+  name: Fenpropathrin
+  short_name: Fenpropathrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:39353
+  - https://identifiers.org/cas:39515-41-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/6c4eee9eae
+  name: Fenvalerate
+  short_name: Fenvalerate
+  exact_matches:
+  - https://identifiers.org/CHEBI:5014
+  - https://identifiers.org/cas:51630-58-1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Fenvaleraat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4d8f49f24e
+  name: Permethrin
+  short_name: Permethrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:34911
+  - https://identifiers.org/cas:52645-53-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/db8a787bd3
+  name: Esfenvalerate
+  short_name: Esfenvalerate
+  exact_matches:
+  - https://identifiers.org/CHEBI:39346
+  - https://identifiers.org/cas:66230-04-4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Esfenvaleraat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
+- id: https://w3id.org/peh/biochementities/68cb3faf20
+  name: Cyfluthrin
+  short_name: Cyfluthrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:4034
+  - https://identifiers.org/cas:68359-37-5
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cyfluthrine
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pyrethroid pesticides
+  - pesticides
