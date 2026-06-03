@@ -1,0 +1,17 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/08fec04d11> a owl:Class ;
+    rdfs:label "[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate",
+        "[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "Spirotetramat",
+        "Spirotetramat"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:CLSVJBIHYWPGQY-UHFFFAOYSA-N> ;
+    pehterms:hasGroupLabel "pesticides" .
+

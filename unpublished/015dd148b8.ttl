@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/015dd148b8> a owl:Class ;
+    rdfs:label "Chlorpropham-4-hydroxy-O-sulfonic acid",
+        "Chlorpropham-4-hydroxy-O-sulfonic acid"@nl-be ;
+    schema1:alternateName "4-HSA",
+        "4-HSA"@nl-be ;
+    schema1:comment "comments: I found the CAS number herE: https://www.carlroth.com/be/en/antimicrobials/chlorpropham-4-hydroxy-o-sulfonic-acid/p/2ayt.5,  but the INCHIKEY that we had in our DB I don't find anywhere. Also the short_name I don't find anywhere" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:28705-88-6>,
+        <https://identifiers.org/inchikey:ZEAREOZFWMROEI-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "fourhsa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/ed74dc16b8> .
+

@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/a72ec9c8e4> a owl:Class ;
+    rdfs:label "Diethyl phosphate",
+        "Diethylphosphate"@nl-be ;
+    schema1:alternateName "DEP",
+        "DEP"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:27708>,
+        <https://identifiers.org/cas:53397-17-4>,
+        <https://identifiers.org/cas:598-02-7>,
+        <https://identifiers.org/inchikey:UCQFCFPECQILOL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:654> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dep" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d98d8688ed> .
+

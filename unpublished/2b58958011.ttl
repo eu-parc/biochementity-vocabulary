@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/2b58958011> a owl:Class ;
+    rdfs:label "Dimethoate",
+        "Dimethoaat"@nl-be ;
+    schema1:alternateName "Dimethoate" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:34714>,
+        <https://identifiers.org/cas:60-51-5> ;
+    pehterms:hasGroupLabel "pesticides" .
+

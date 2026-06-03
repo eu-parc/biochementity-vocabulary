@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/663ab4c26e> a owl:Class ;
+    rdfs:label "Pirimiphos-methyl-desmethyl",
+        "Pirimiphos-methyl-desmethyl"@nl-be ;
+    schema1:alternateName "Pirimiphos-methyl-desmethyl" ;
+    schema1:comment "comments: I don't find anything corresponding the INCHIKEY and the name in google does not give any result. Is the name correctly written? Because google tries to correct it to Pirimiphos-methyl-desethyl. The only thing I found is this website https://www.hpc-standards.com/productgroups/pirimiphos-methyl-desmethyl+tma+salt__1096/" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:VXMVXXWWOFEVKJ-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pyrimiphosmetdes" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/b3b817da36> .
+

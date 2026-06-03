@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/122c095902> a owl:Class ;
+    rdfs:label "2,4-dichlorophenol",
+        "2,4-dichloorfenol"@nl-be ;
+    schema1:alternateName "2,4-DCP",
+        "2,4-DCP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:16738>,
+        <https://identifiers.org/cas:120-83-2>,
+        <https://identifiers.org/inchikey:HFZWRUODUSTPEG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:8449> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dcp24" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/616d17aa41> .
+

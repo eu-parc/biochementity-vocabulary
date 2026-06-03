@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/11d94bcf00> a owl:Class ;
+    rdfs:label "Fluopyram benzamide",
+        "Fluopyram benzamide"@nl-be ;
+    schema1:alternateName "2-(Trifluoromethyl)benzamide",
+        "2-Trifluoromethylbenzamide",
+        "Fluopyram benzamide",
+        "Fluopyram benzamide"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:360-64-5>,
+        <https://identifiers.org/inchikey:QBAYIBZITZBSFO-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:67759> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "fluopyramben" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d1aa66a1ff> .
+

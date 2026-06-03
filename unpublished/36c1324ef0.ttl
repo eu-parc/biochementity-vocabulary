@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/36c1324ef0> a owl:Class ;
+    rdfs:label "Difenoconazole CGA205374",
+        "Difenoconazole CGA205374"@nl-be ;
+    schema1:alternateName "1-(2-Chloro-4-(4-chlorophenoxy)phenyl)-2-(1H-1,2,4-triazol-1-yl)ethanone",
+        "Difenoconazole CGA-205374",
+        "Difenoconazole CGA-205374"@nl-be ;
+    schema1:comment "comments: This is a metabolite of Difenoconazole. Parent compound correctly identified?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:136815-80-0>,
+        <https://identifiers.org/inchikey:HCYKJGWQCCFTNV-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:15753778> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "difenoconcga" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/6f2dce44e1> .
+

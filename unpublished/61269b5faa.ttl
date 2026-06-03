@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/61269b5faa> a owl:Class ;
+    rdfs:label "Myclobutanil hydroxide",
+        "Myclobutanil hydroxide"@nl-be ;
+    schema1:alternateName "Myclobutanil-OH",
+        "Myclobutanil-OH"@nl-be ;
+    schema1:comment "comments: This is a metabolite of Myclobutanil. Parent compound correctly identified?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:116928-93-9>,
+        <https://identifiers.org/inchikey:HIUOATAFAFIXAL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:189447> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "myclobutaniloh" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/1107439fef> .
+

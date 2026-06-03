@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/7c9bad530e> a owl:Class ;
+    rdfs:label "Trifloxystrobin acid",
+        "Trifloxystrobin acid"@nl-be ;
+    schema1:alternateName "(2E)-2-methoxyimino-2-[2-[[(E)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetic",
+        "Trifloxystrobin CGA-321114",
+        "acid",
+        "Trifloxystrobin CGA-321114"@nl-be ;
+    schema1:comment "comments: I think the short name is not correct. Can someone double check?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:252913-85-2>,
+        <https://identifiers.org/inchikey:ISZQNKFXNXQTTF-NACSPRHISA-N>,
+        <https://identifiers.org/pubchem.compound:22899348> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "trifloxystrobincga" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9d00f6d76f> .
+

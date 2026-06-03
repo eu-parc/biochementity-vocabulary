@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f04be75ff6> a owl:Class ;
+    rdfs:label "Acetamiprid-N-desmethyl",
+        "Acetamiprid-N-desmethyl"@nl-be ;
+    schema1:alternateName "(E)-N-((6-chloropyridin-3-yl)methyl)-N'-cyanoethanimidamide",
+        "Acetamiprid-N-desmethyl",
+        "Acetamiprid-N-desmethyl"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:190604-92-3>,
+        <https://identifiers.org/inchikey:AYEAUPRZTZWBBF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:11344811> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "acetamipridndes" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/b9d5318304> .
+

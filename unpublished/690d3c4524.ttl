@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/690d3c4524> a owl:Class ;
+    rdfs:label "Fipronil sulfone",
+        "Fipronil sulfon"@nl-be ;
+    schema1:alternateName "Fipronil sulfone" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:83487>,
+        <https://identifiers.org/cas:120068-36-2>,
+        <https://identifiers.org/inchikey:LGHZJDKSVUTELU-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:3078139> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "fipsul" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4637c1e173> .
+

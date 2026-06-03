@@ -1,0 +1,24 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/8c8f620ffb> a owl:Class ;
+    rdfs:label "2,3,4,6-Tetrachlorophenol",
+        "2,3,4,6-tetrachloorfenol"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "2,3,4,6-TeCP" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132359>,
+        <https://identifiers.org/cas:12698-64-5>,
+        <https://identifiers.org/cas:58-90-2>,
+        <https://identifiers.org/inchikey:VGVRPFIJEJYOFN-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:6028> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "tecp2346" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" .
+

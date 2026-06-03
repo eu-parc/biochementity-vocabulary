@@ -305,7 +305,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: dbca
-  remark: 'comments: I think it''s this compound but not 100% sure. Someone confirm? https://pubchem.ncbi.nlm.nih.gov/compound/181248'
+  remark: 'comments: I think it''s this compound but not 100% sure. Someone confirm?
+    https://pubchem.ncbi.nlm.nih.gov/compound/181248'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/144d5095b5
@@ -663,7 +664,10 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: dbt
-  remark: "comments: This one is a bit weird. The inchikey in our db directs me here: https://pubchem.ncbi.nlm.nih.gov/compound/6484 but if I then search for \t\nDibutyl-stannane then I go to this pubchem reference https://pubchem.ncbi.nlm.nih.gov/compound/Dibutylstannane. So, which one is the correct one?"
+  remark: "comments: This one is a bit weird. The inchikey in our db directs me here:\
+    \ https://pubchem.ncbi.nlm.nih.gov/compound/6484 but if I then search for \t\n\
+    Dibutyl-stannane then I go to this pubchem reference https://pubchem.ncbi.nlm.nih.gov/compound/Dibutylstannane.\
+    \ So, which one is the correct one?"
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/4c223db9b5
@@ -784,7 +788,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: dmdtp
-  remark: 'comments: I''m not sure if this is this compound https://pubchem.ncbi.nlm.nih.gov/compound/S_S-Dimethyl-hydrogen-phosphorodithioate#section=DSSTox-Substance-ID or this one:https://pubchem.ncbi.nlm.nih.gov/compound/dimethyldithiophosphate'
+  remark: 'comments: I''m not sure if this is this compound https://pubchem.ncbi.nlm.nih.gov/compound/S_S-Dimethyl-hydrogen-phosphorodithioate#section=DSSTox-Substance-ID
+    or this one:https://pubchem.ncbi.nlm.nih.gov/compound/dimethyldithiophosphate'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/12b49183df
@@ -925,7 +930,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: tpht
-  remark: 'comments: I don''t think our inchikey is correct and I don''t find this compound online'
+  remark: 'comments: I don''t think our inchikey is correct and I don''t find this
+    compound online'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/690d3c4524
@@ -1022,7 +1028,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: cishepexepo
-  remark: 'comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%'
+  remark: 'comments: Just need somone to double check that pubchem id is correct,
+    since name does not correspond 100%'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/0a5bd57d78
@@ -1049,7 +1056,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: transhepexepo
-  remark: 'comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%'
+  remark: 'comments: Just need somone to double check that pubchem id is correct,
+    since name does not correspond 100%'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/f8bf79a72f
@@ -1090,7 +1098,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: mot
-  remark: 'comments: INCHI KEY in our DB refers to this compound (https://pubchem.ncbi.nlm.nih.gov/compound/Octyltin-trichloride) but I don''t think it''s exactly the same?'
+  remark: 'comments: INCHI KEY in our DB refers to this compound (https://pubchem.ncbi.nlm.nih.gov/compound/Octyltin-trichloride)
+    but I don''t think it''s exactly the same?'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/7a66e2ca4a
@@ -1241,7 +1250,9 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: tebuconazoleoh
-  remark: 'comments: It seems to be a metabolite of this compound https://pubchem.ncbi.nlm.nih.gov/compound/Tebuconazole and this company seems to have a CAS number for it: https://www.schd-shimadzu.com/en/metabolites/2726-167445-Hydroxy-tebuconazole.html but then I also find that CAS number for this other company''s compound https://www.lgcstandards.com/LB/en/search?text=212267-64-6'
+  remark: 'comments: It seems to be a metabolite of this compound https://pubchem.ncbi.nlm.nih.gov/compound/Tebuconazole
+    and this company seems to have a CAS number for it: https://www.schd-shimadzu.com/en/metabolites/2726-167445-Hydroxy-tebuconazole.html
+    but then I also find that CAS number for this other company''s compound https://www.lgcstandards.com/LB/en/search?text=212267-64-6'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/9c0ed7b3fe
@@ -1266,7 +1277,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: tbt
-  remark: 'comments: Please confirm that Tributylstannanyl and TBT are the same compound, I think they are'
+  remark: 'comments: Please confirm that Tributylstannanyl and TBT are the same compound,
+    I think they are'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/87a09e5516
@@ -1382,7 +1394,8 @@ biochementity_subclasses:
   translations:
   - property_name: name
     language: nl-BE
-    translated_value: 2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid
+    translated_value: 2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic
+      acid
   - property_name: short_name
     language: nl-BE
     translated_value: Haloxyfop
@@ -1416,7 +1429,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: difenoconcga
-  remark: 'comments: This is a metabolite of Difenoconazole. Parent compound correctly identified?'
+  remark: 'comments: This is a metabolite of Difenoconazole. Parent compound correctly
+    identified?'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/61269b5faa
@@ -1441,7 +1455,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: myclobutaniloh
-  remark: 'comments: This is a metabolite of Myclobutanil. Parent compound correctly identified?'
+  remark: 'comments: This is a metabolite of Myclobutanil. Parent compound correctly
+    identified?'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/042a4b6b7d
@@ -1626,7 +1641,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: difenoconazolecga
-  remark: 'comments: I added the exact matches and the aliases but still not 100% sure that it is the correct compound…'
+  remark: 'comments: I added the exact matches and the aliases but still not 100%
+    sure that it is the correct compound…'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/4337d7a1af
@@ -1896,7 +1912,10 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: pyrimiphosmetdes
-  remark: 'comments: I don''t find anything corresponding the INCHIKEY and the name in google does not give any result. Is the name correctly written? Because google tries to correct it to Pirimiphos-methyl-desethyl. The only thing I found is this website https://www.hpc-standards.com/productgroups/pirimiphos-methyl-desmethyl+tma+salt__1096/'
+  remark: 'comments: I don''t find anything corresponding the INCHIKEY and the name
+    in google does not give any result. Is the name correctly written? Because google
+    tries to correct it to Pirimiphos-methyl-desethyl. The only thing I found is this
+    website https://www.hpc-standards.com/productgroups/pirimiphos-methyl-desmethyl+tma+salt__1096/'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/b9d5318304
@@ -2043,7 +2062,9 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: fourhsa
-  remark: 'comments: I found the CAS number herE: https://www.carlroth.com/be/en/antimicrobials/chlorpropham-4-hydroxy-o-sulfonic-acid/p/2ayt.5,  but the INCHIKEY that we had in our DB I don''t find anywhere. Also the short_name I don''t find anywhere'
+  remark: 'comments: I found the CAS number herE: https://www.carlroth.com/be/en/antimicrobials/chlorpropham-4-hydroxy-o-sulfonic-acid/p/2ayt.5,  but
+    the INCHIKEY that we had in our DB I don''t find anywhere. Also the short_name
+    I don''t find anywhere'
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/4637c1e173
@@ -2304,14 +2325,16 @@ biochementity_subclasses:
   group_labels:
   - pesticides
 - id: https://w3id.org/peh/biochementities/08fec04d11
-  name: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate'
+  name: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl
+    carbonate'
   short_name: Spirotetramat
   exact_matches:
   - https://identifiers.org/inchikey:CLSVJBIHYWPGQY-UHFFFAOYSA-N
   translations:
   - property_name: name
     language: nl-be
-    translated_value: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate'
+    translated_value: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl]
+      ethyl carbonate'
   - property_name: short_name
     language: nl-be
     translated_value: Spirotetramat

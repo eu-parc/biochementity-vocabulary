@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e44a1bc3ce> a owl:Class ;
+    rdfs:label "Heptachlor exo-epoxide (cis)",
+        "Heptachloor exo-epoxide (cis)"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "Epoxide",
+        "Heptachlor",
+        "Heptachlor exo-epoxide (cis)" ;
+    schema1:comment "comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:1024-57-3>,
+        <https://identifiers.org/inchikey:ZXFXBSWRVIQKOD-UOFFAGTMSA-N>,
+        <https://identifiers.org/pubchem.compound:15559699> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cishepexepo" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" .
+

@@ -1,0 +1,21 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/247abbe5ee> a owl:Class ;
+    rdfs:label "Clothianidin",
+        "1-[(2-chloro-1,3-thiazol-5-yl)methyl]-3-methyl-2-nitroguanidine"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "1-[(2-chloro-1,3-thiazol-5-yl)methyl]-3-methyl-2-nitroguanidine",
+        "Clothianidin",
+        "Clothianidin"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:39177>,
+        <https://identifiers.org/cas:210880-92-5>,
+        <https://identifiers.org/inchikey:PGOOBECODWQEAB-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:86287519> ;
+    pehterms:hasGroupLabel "pesticides" .
+

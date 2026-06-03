@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/8322b134cc> a owl:Class ;
+    rdfs:label "3-(2,2-dibromovinyl)-2,2-dimethylcyclopropane carboxylic acid",
+        "3-(2,2-dibroomvinyl)-2,2-dimethylcyclopropaancarbonzuur"@nl-be ;
+    schema1:alternateName "DBCA" ;
+    schema1:comment "comments: I think it's this compound but not 100% sure. Someone confirm? https://pubchem.ncbi.nlm.nih.gov/compound/181248" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dbca" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/66d1da7d87> .
+

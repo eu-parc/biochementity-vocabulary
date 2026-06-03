@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/5e24ab5cda> a owl:Class ;
+    rdfs:label "Diethyldithiophosphate",
+        "Diethyldithiophosphate"@nl-be ;
+    schema1:alternateName "DEDTP",
+        "DEDTP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:166464>,
+        <https://identifiers.org/inchikey:OILHDBLLQZLFFI-UHFFFAOYSA-M>,
+        <https://identifiers.org/pubchem.compound:53249491> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dedtp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d98d8688ed> .
+

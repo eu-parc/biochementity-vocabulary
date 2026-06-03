@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/61a47d5be3> a owl:Class ;
+    rdfs:label "Imidacloprid desnitro",
+        "Imidacloprid desnitro"@nl-be ;
+    schema1:alternateName "Imidacloprid desnitro",
+        "Imidacloprid desnitro"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:232298>,
+        <https://identifiers.org/cas:115970-17-7>,
+        <https://identifiers.org/inchikey:UEQZFAGVRGWPDK-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:10130527> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "desnitroimidacloprid" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/5a8e126c1b> .
+

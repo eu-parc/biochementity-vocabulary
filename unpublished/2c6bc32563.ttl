@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/2c6bc32563> a owl:Class ;
+    rdfs:label "Difenoconazole CGA205375",
+        "Difenoconazole CGA205375"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "Difenoconazole CGA-205375",
+        "Difenoconazole-alcohol",
+        "Difenoconazole CGA-205375"@nl-be ;
+    schema1:comment "comments: I added the exact matches and the aliases but still not 100% sure that it is the correct compound…" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:117018-19-6>,
+        <https://identifiers.org/inchikey:NBYSKMWDHCZSIP-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:20070433> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "difenoconazolecga" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides" .
+

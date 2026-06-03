@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/eefc75e961> a owl:Class ;
+    rdfs:label "Propamocarb",
+        "Propyl N-[3-(dimethylamino)propyl]carbamate"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "N-[3-(dimethylamino)propyl]carbamate",
+        "Propamocarb",
+        "Propyl",
+        "Propamocarb"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDAQY9HFW96RR8WCR5>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:82033>,
+        <https://identifiers.org/cas:24579-73-5>,
+        <https://identifiers.org/inchikey:WZZLDXDUQPOXNW-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:32490> ;
+    pehterms:hasGroupLabel "pesticides" .
+
