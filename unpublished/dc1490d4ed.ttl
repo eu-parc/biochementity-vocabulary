@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/dc1490d4ed> a owl:Class ;
+    rdfs:label "Citrinin",
+        "Citrinine"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+    schema1:alternateName "CIT" ;
+    schema1:comment "comments: Anthony can you double check that the CHEBI is correct? https://www.ebi.ac.uk/chebi/CHEBI:48707" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:48707>,
+        <https://identifiers.org/cas:518-75-2>,
+        <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/Citrinin> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cit" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "mycotoxins" .
+

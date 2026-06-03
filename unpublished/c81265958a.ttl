@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c81265958a> a owl:Class ;
+    rdfs:label "Deoxynivalenol-3-glucuronide",
+        "Deoxynivalenol-3-glucuronide"@nl-be ;
+    schema1:alternateName "DON-3-GlcA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:1000000-13-4>,
+        <https://identifiers.org/inchikey:GRFAWUZMBBQEMX-IJNZYEPRSA-N>,
+        <https://identifiers.org/pubchem.compound:102202100> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dontglca" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "mycotoxins" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/56872ff940> .
+

@@ -18,5 +18,6 @@
             schema1:alternateName "pcdd70" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "dioxins" .
+    pehterms:hasGroupLabel "dioxins",
+        "organochlorine compounds" .
 

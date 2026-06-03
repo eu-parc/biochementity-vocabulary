@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f7d23be617> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 110",
+        "Polychloorbifenyl 110"@nl-be ;
+    schema1:alternateName "PCB 110",
+        "PCB 110"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:38380-03-9>,
+        <https://identifiers.org/inchikey:ARXHIJMGSIYYRZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:38015> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb110" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+

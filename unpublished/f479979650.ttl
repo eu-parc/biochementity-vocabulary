@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f479979650> a owl:Class ;
+    rdfs:label "Beta-hexachlorocyclohexane",
+        "Beta hexachlorocyclohexaan"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "bHCH",
+        "bHCH"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:28428>,
+        <https://identifiers.org/cas:319-85-7>,
+        <https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-CDRYSYESSA-N>,
+        <https://identifiers.org/pubchem.compound:483937258> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bhch" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/38b9eb4712> .
+

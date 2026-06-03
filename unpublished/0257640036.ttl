@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0257640036> a owl:Class ;
+    rdfs:label "P-hydroxybenzoic acid",
+        "P-hydroxybenzoëzuur"@nl-be ;
+    schema1:alternateName "4-Hydroxybenzoic Acid",
+        "HBA",
+        "HBA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND6Q9907FMD4GPNFWX>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:30763>,
+        <https://identifiers.org/cas:99-96-7>,
+        <https://identifiers.org/inchikey:FJKROLUGYXJWQN-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:135> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "phba" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "parabens" .
+

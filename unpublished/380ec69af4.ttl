@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/380ec69af4> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 28",
+        "Polychloorbifenyl 28"@nl-be ;
+    schema1:alternateName "2,4,4'-Trichlorobiphenyl",
+        "PCB 28",
+        "PCB 28"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:233161>,
+        <https://identifiers.org/cas:7012-37-5>,
+        <https://identifiers.org/inchikey:BZTYNSQSZHARAZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:23448> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb28" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+

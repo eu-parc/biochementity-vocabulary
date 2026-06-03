@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e55dee887e> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 126",
+        "Polychloorbifenyl 126"@nl-be ;
+    schema1:alternateName "PCB 126",
+        "PCB 126"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:34317>,
+        <https://identifiers.org/cas:57465-28-8>,
+        <https://identifiers.org/inchikey:REHONNLQRWTIFF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:63090> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb126" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+

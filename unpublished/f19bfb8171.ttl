@@ -1,0 +1,26 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f19bfb8171> a owl:Class ;
+    rdfs:label "Dichlorodiphenyldichloroethylene",
+        "Dichlorodiphenyldichloroethyleen"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "p,p'-DDE",
+        "p,p'-DDE"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:16598>,
+        <https://identifiers.org/cas:68679-99-2>,
+        <https://identifiers.org/cas:72-55-9>,
+        <https://identifiers.org/inchikey:UCNVFOCBFJOQAL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:3035> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ppdde" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4ccf22f8e2> .
+

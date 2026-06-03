@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/476b61ad5d> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 196",
+        "Polychloorbifenyl 196"@nl-be ;
+    schema1:alternateName "2,2',3,3',4,4',5,6'-Octachlorobiphenyl",
+        "PCB 196",
+        "PCB 196"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:42740-50-1>,
+        <https://identifiers.org/inchikey:BQFCCUSDZLKBJG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:39253> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb196" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+

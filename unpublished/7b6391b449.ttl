@@ -1,0 +1,27 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/7b6391b449> a owl:Class ;
+    rdfs:label "Trans-nonachlor",
+        "Trans-nonachloor"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+    schema1:alternateName "Npc328442",
+        "Trans-nonachlor" ;
+    schema1:comment "comments: Anthony, can you double check if this one is correct? Because in synonyms we have both cis and trans nonachlor  (https://pubchem.ncbi.nlm.nih.gov/compound/trans-Nonachlor)" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81540>,
+        <https://identifiers.org/cas:39765-80-5>,
+        <https://identifiers.org/cas:5103-73-1>,
+        <https://identifiers.org/inchikey:OCHOKXCPKDPNQU-FLVMBEMLSA-N>,
+        <https://identifiers.org/pubchem.compound:12313421> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "tnona" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d17f057449> .
+

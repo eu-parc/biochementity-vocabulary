@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/5c683ce9f0> a owl:Class ;
+    rdfs:label "α-zearalanol",
+        "α-zearalanol"@nl-be ;
+    schema1:alternateName "alpha zearalanol",
+        "α-ZAL" ;
+    schema1:comment "comments: The CHEBI and the CAS refer me to this other pubchem compound: https://pubchem.ncbi.nlm.nih.gov/compound/Zeranol --> Anthony to check which one is the correct one??" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:35064>,
+        <https://identifiers.org/cas:26538-44-3>,
+        <https://identifiers.org/inchikey:DWTTZBARDOXEAM-TZMCWYRMSA-N>,
+        <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/7048820> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "azal" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "mycotoxins" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/567b9e5017> .
+

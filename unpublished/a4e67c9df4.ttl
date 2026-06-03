@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/a4e67c9df4> a owl:Class ;
+    rdfs:label "Iso-butylparaben",
+        "Iso-butylparabeen"@nl-be ;
+    schema1:alternateName "isobutylP" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND6Q9907FMD4GPNFWX>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:178256>,
+        <https://identifiers.org/cas:4247-02-3>,
+        <https://identifiers.org/inchikey:XPJVKCRENWUEJH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:20240> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "isobip" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "parabens" .
+

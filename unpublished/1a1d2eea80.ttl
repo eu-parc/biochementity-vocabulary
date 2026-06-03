@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/1a1d2eea80> a owl:Class ;
+    rdfs:label "Gamma-hexachlorocyclohexane",
+        "Gamma hexachlororcyclohexaan"@nl-be ;
+    schema1:alternateName "lindane",
+        "gHCH"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/pubchem.compound:483925796> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ghch" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds",
+        "pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/38b9eb4712> .
+

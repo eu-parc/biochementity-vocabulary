@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0deef4b0e8> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 138",
+        "Polychloorbifenyl 138"@nl-be ;
+    schema1:alternateName "PCB 138",
+        "PCB 138"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:165219>,
+        <https://identifiers.org/cas:35065-28-2>,
+        <https://identifiers.org/inchikey:RPUMZMSNLZHIGZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:37035> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb138" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+

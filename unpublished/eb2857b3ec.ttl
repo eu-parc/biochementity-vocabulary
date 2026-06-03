@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/eb2857b3ec> a owl:Class ;
+    rdfs:label "Polychlorinated biphenyl 157",
+        "Polychloorbifenyl 157"@nl-be ;
+    schema1:alternateName "2,3,3',4,4',5'-Hexachlorobiphenyl",
+        "PCB 157",
+        "PCB 157"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81523>,
+        <https://identifiers.org/cas:69782-90-7>,
+        <https://identifiers.org/inchikey:YTWXDQVNPCIEOX-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:50891> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pcb157" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/9c34ebdc76> .
+
