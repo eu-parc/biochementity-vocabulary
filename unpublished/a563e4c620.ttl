@@ -20,5 +20,5 @@
             schema1:alternateName "diuron" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "herbicides" .
-
+    pehterms:hasGroupLabel "herbicides",
+        "pesticides" .

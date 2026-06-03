@@ -1,0 +1,2455 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/20abdc4aa8
+  name: (3,4-dichlorophenyl)urea
+  short_name: (3,4-dichlorophenyl)urea
+  exact_matches:
+  - https://identifiers.org/CHEBI:83464
+  - https://identifiers.org/cas:2327-02-8
+  - https://identifiers.org/pubchem.compound:16854
+  - https://identifiers.org/inchikey:CYESCLHCWJKRKM-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/2a8b755edb
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3,4-dichlorophenylurea fungiciden
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DCPU
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcpu
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/22e7b47169
+  name: 1-(3,4-dichlorophenyl)-3-methylurea
+  short_name: 1-(3,4-dichlorophenyl)-3-methylurea
+  exact_matches:
+  - https://identifiers.org/CHEBI:83466
+  - https://identifiers.org/cas:3567-62-2
+  - https://identifiers.org/pubchem.compound:19113
+  - https://identifiers.org/inchikey:IDQHRQQSSQDLTR-UHFFFAOYSA-N
+  aliases:
+  - Monomethyldiuron
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/2a8b755edb
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-(3,4-dichlorophenyl)-3-methylurea , desmethyl diuron
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DCPMU
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcpmu
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8c8f620ffb
+  name: 2,3,4,6-Tetrachlorophenol
+  short_name: 2,3,4,6-TeCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132359
+  - https://identifiers.org/cas:58-90-2
+  - https://identifiers.org/pubchem.compound:6028
+  - https://identifiers.org/cas:12698-64-5
+  - https://identifiers.org/inchikey:VGVRPFIJEJYOFN-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,4,6-tetrachloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tecp2346
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/559cc3285a
+  name: 2,3,4-Trichlorophenol
+  short_name: 2,3,4-TCP
+  exact_matches:
+  - https://identifiers.org/inchikey:HSQFVBWFPBKHEB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:27582
+  - https://identifiers.org/cas:15950-66-0
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,4-trichloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcp234
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/703d8040d6
+  name: 2,4,5-trichlorophenol
+  short_name: 2,4,5-TCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:28520
+  - https://identifiers.org/cas:95-95-4
+  - https://identifiers.org/pubchem.compound:7271
+  - https://identifiers.org/inchikey:LHJGJYXLEPZJPM-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3481d765c8
+  - https://w3id.org/peh/biochementities/cdd86cd306
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4,5-trichloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcp245
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/a4ec5f23f0
+  name: 2,4,5-trichlorophenoxyacetic acid
+  short_name: 2,4,5-trichlorophenoxyacetic acid
+  exact_matches:
+  - https://identifiers.org/CHEBI:27903
+  - https://identifiers.org/cas:93-76-5
+  - https://identifiers.org/pubchem.compound:1480
+  - https://identifiers.org/inchikey:SMYMJHWAQXWPDB-UHFFFAOYSA-N
+  aliases:
+  - Trichlorophenoxyacetic
+  - acid
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4,5-trichloorfenoxyazijnzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcpa
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/db3e73ef85
+  name: 2,4,6-trichlorophenol
+  short_name: 2,4,6-TCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:28755
+  - https://identifiers.org/cas:88-06-2
+  - https://identifiers.org/pubchem.compound:6914
+  - https://identifiers.org/inchikey:LINPIYWFGCPVIE-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3481d765c8
+  - https://w3id.org/peh/biochementities/cdd86cd306
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4,6-trichloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcp246
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/122c095902
+  name: 2,4-dichlorophenol
+  short_name: 2,4-DCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:16738
+  - https://identifiers.org/cas:120-83-2
+  - https://identifiers.org/pubchem.compound:8449
+  - https://identifiers.org/inchikey:HFZWRUODUSTPEG-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/616d17aa41
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-dichloorfenol
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2,4-DCP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcp24
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/7d1aadcab2
+  name: 2,4-dichlorophenoxyacetic acid
+  short_name: 2,4-dichlorophenoxyacetic acid
+  exact_matches:
+  - https://identifiers.org/CHEBI:28854
+  - https://identifiers.org/cas:94-75-7
+  - https://identifiers.org/pubchem.compound:1486
+  - https://identifiers.org/inchikey:OVSKIKFHRZPJSS-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-dichloorfenoxyazijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2,4-D
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcpa
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/0ad797cdf5
+  name: 2,5-dichlorophenol
+  short_name: 2,5-DCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:27929
+  - https://identifiers.org/cas:583-78-8
+  - https://identifiers.org/pubchem.compound:66
+  - https://identifiers.org/inchikey:RANCECPPZPIPNO-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/616d17aa41
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,5-Dichlorophenol
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2,5-DCP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/105fb7bc9b
+  name: 2,6-dichlorophenol
+  short_name: 2,6-DCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:28457
+  - https://identifiers.org/cas:87-65-0
+  - https://identifiers.org/pubchem.compound:6899
+  - https://identifiers.org/inchikey:HOLHYSJJBXSLMV-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/616d17aa41
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,6-dichloorfenol
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2,6-DCP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dcp26
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/d9e11796be
+  name: 2-Diethylamino-6-hydroxy-4-methylpyrimidine
+  short_name: DEAMPY
+  exact_matches:
+  - https://identifiers.org/CHEBI:38844
+  - https://identifiers.org/cas:42487-72-9
+  - https://identifiers.org/pubchem.compound:135448147
+  - https://identifiers.org/inchikey:NQCPECCCWDWTJJ-UHFFFAOYSA-N
+  aliases:
+  - 2-(diethylamino)-6-methyl-1H-pyrimidin-4-one
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/b3b817da36
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-Diethylamino-6-hydroxy-4-methylpyrimidine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: deampy
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8322b134cc
+  name: 3-(2,2-dibromovinyl)-2,2-dimethylcyclopropane carboxylic acid
+  short_name: DBCA
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/66d1da7d87
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-(2,2-dibroomvinyl)-2,2-dimethylcyclopropaancarbonzuur
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbca
+  remark: 'comments: I think it''s this compound but not 100% sure. Someone confirm? https://pubchem.ncbi.nlm.nih.gov/compound/181248'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/144d5095b5
+  name: 3,5,6-trichloro-2-pyridinol
+  short_name: TCPy
+  exact_matches:
+  - https://identifiers.org/CHEBI:143794
+  - https://identifiers.org/cas:6515-38-4
+  - https://identifiers.org/pubchem.compound:23017
+  - https://identifiers.org/inchikey:WCYYAQFQZQEUEN-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f83e02d6a8
+  - https://w3id.org/peh/biochementities/b8b6e0c612
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3,5,6-trichloor-2-pyridino
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TCPy
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcpy
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/1eba3b0d76
+  name: 4-chlorophenol
+  short_name: 4-MCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:28078
+  - https://identifiers.org/cas:106-48-9
+  - https://identifiers.org/pubchem.compound:4684
+  - https://identifiers.org/inchikey:WXNZTHHGJRFXKQ-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-chloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mcp4
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/ca6dad0ad1
+  name: 4'-Hydroxypyrimethanil
+  short_name: 4OH-PYRIMETHANYL
+  exact_matches:
+  - https://identifiers.org/inchikey:NUWWAHKTVOVTNC-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:741703
+  - https://identifiers.org/cas:81261-84-9
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8e7db11927
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4'-Hydroxypyrimethanil
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourohpyrimeth
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/c7a71a5742
+  name: 4-Nitrophenol
+  short_name: 4-nitrophenol
+  exact_matches:
+  - https://identifiers.org/CHEBI:16836
+  - https://identifiers.org/cas:100-02-7
+  - https://identifiers.org/pubchem.compound:980
+  - https://identifiers.org/inchikey:BTJIUGUIPKRLHP-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/7814b59232
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Nitrofenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: niphen
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/9e864f3f3f
+  name: 5-OH-thiabendazole
+  short_name: 5OH-THIABENDAZOLE
+  exact_matches:
+  - https://identifiers.org/inchikey:VNENJHUOPQAPAT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:108227
+  - https://identifiers.org/cas:948-71-0
+  aliases:
+  - 5-Hydroxythiabendazole
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/45a9b996df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 5-OH-thiabendazool
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fiveohthiabendazole
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4da3e66543
+  name: Aldrin
+  short_name: Aldrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:2564
+  - https://identifiers.org/cas:309-00-2
+  - https://identifiers.org/pubchem.compound:12310947
+  - https://identifiers.org/inchikey:QBYJBZPUGVGKQQ-SJJAEHHWSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Aldrin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: aldrin
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/814a72777e
+  name: Alpha-hexachlorocyclohexane
+  short_name: α-HCH
+  exact_matches:
+  - https://identifiers.org/CHEBI:39096
+  - https://identifiers.org/cas:319-84-6
+  - https://identifiers.org/pubchem.compound:483937256
+  - https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-SHFUYGGZSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Alpha-hexachlorocyclohexane
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ahch
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/ff8516cc03
+  name: Aminomethylyphosphonic acid
+  short_name: AMPA
+  exact_matches:
+  - https://identifiers.org/CHEBI:28812
+  - https://identifiers.org/cas:1066-51-9
+  - https://identifiers.org/pubchem.compound:14017
+  - https://identifiers.org/inchikey:MGRVRXRGTBOSHW-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/f8ecd803f9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Aminomethylfosfoonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: AMPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ampa
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/5c0a4c4091
+  name: Boscalid
+  short_name: Boscalid
+  exact_matches:
+  - https://identifiers.org/CHEBI:81822
+  - https://identifiers.org/cas:188425-85-6
+  - https://identifiers.org/pubchem.compound:213013
+  - https://identifiers.org/inchikey:WYEMLYFITZORAB-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Boscalid
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: boscalid
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f83e02d6a8
+  name: Chlorpyrifos
+  short_name: chlorpyrifos
+  exact_matches:
+  - https://identifiers.org/CHEBI:34631
+  - https://identifiers.org/cas:2921-88-2
+  - https://identifiers.org/pubchem.compound:2730
+  - https://identifiers.org/inchikey:SBPBAQFWLVIOKP-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chloorpyrifos
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlorpyr
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/b8b6e0c612
+  name: Chlorpyrifos-methyl
+  short_name: chlorpyrifos-methyl
+  exact_matches:
+  - https://identifiers.org/CHEBI:34632
+  - https://identifiers.org/cas:5598-13-0
+  - https://identifiers.org/pubchem.compound:21803
+  - https://identifiers.org/inchikey:HRBKVYFZANMGRE-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chloorpyrifos-methyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlormet
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/6c84cb415a
+  name: Chlorpyrifos-methyl-oxon
+  short_name: chlorpyrifos-methyl-oxon
+  exact_matches:
+  - https://identifiers.org/inchikey:XCBOKUAJQWDYNI-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:21805
+  - https://identifiers.org/cas:5598-52-7
+  aliases:
+  - Fospirate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chloorpyrifos-methyl-oxon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlormetox
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4dce6cc59d
+  name: Chlorpyrifos-oxon
+  short_name: chlorpyrifos-oxon
+  exact_matches:
+  - https://identifiers.org/inchikey:OTMOUPHCTWPNSL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:21804
+  - https://identifiers.org/cas:5598-15-2
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chloorpyrifos-oxon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlorox
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e328ae40e1
+  name: Cyprodinil-OH (hydroxycyprodinil)
+  short_name: OH-CYPRODINIL
+  exact_matches:
+  - https://identifiers.org/inchikey:LBDZGKRFRHHISM-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:85745672
+  - https://identifiers.org/cas:195157-66-5
+  aliases:
+  - 4-[(4-cyclopropyl-6-methylpyrimidin-2-yl)amino]phenol
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/74dfea1679
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cyprodinil-OH (hydroxycyprodinil)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cyprodiniloh
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e650b92d56
+  name: Dialkyl phosphate
+  short_name: Dialkyl phosphate
+  exact_matches:
+  - https://identifiers.org/CHEBI:16648
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dialkyl fosfaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dap
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8ce941e0e9
+  name: Dibutyltin
+  short_name: DBT
+  exact_matches:
+  - https://identifiers.org/inchikey:AYOHIQLKSOJJQH-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dibutyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbt
+  remark: "comments: This one is a bit weird. The inchikey in our db directs me here: https://pubchem.ncbi.nlm.nih.gov/compound/6484 but if I then search for \t\nDibutyl-stannane then I go to this pubchem reference https://pubchem.ncbi.nlm.nih.gov/compound/Dibutylstannane. So, which one is the correct one?"
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4c223db9b5
+  name: Dieldrin
+  short_name: dieldrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:34696
+  - https://identifiers.org/cas:60-57-1
+  - https://identifiers.org/pubchem.compound:969491
+  - https://identifiers.org/inchikey:DFBKLUNHFCTMDC-PICURKEMSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dieldrin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dieldrin
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/a72ec9c8e4
+  name: Diethyl phosphate
+  short_name: DEP
+  exact_matches:
+  - https://identifiers.org/CHEBI:27708
+  - https://identifiers.org/cas:598-02-7
+  - https://identifiers.org/cas:53397-17-4
+  - https://identifiers.org/pubchem.compound:654
+  - https://identifiers.org/inchikey:UCQFCFPECQILOL-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d98d8688ed
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Diethylphosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dep
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/9fa0bb2168
+  name: Diethyl thiophosphate
+  short_name: DETP
+  exact_matches:
+  - https://identifiers.org/CHEBI:156216
+  - https://identifiers.org/pubchem.compound:3683036
+  - https://identifiers.org/inchikey:PKUWKAXTAVNIJR-UHFFFAOYSA-M
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d98d8688ed
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Diethylthiophosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DETP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: detp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/5e24ab5cda
+  name: Diethyldithiophosphate
+  short_name: DEDTP
+  exact_matches:
+  - https://identifiers.org/CHEBI:166464
+  - https://identifiers.org/pubchem.compound:53249491
+  - https://identifiers.org/inchikey:OILHDBLLQZLFFI-UHFFFAOYSA-M
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d98d8688ed
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Diethyldithiophosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DEDTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dedtp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/c337d566af
+  name: Dimethyl dithiophosphate
+  short_name: DMDTP
+  exact_matches:
+  - https://identifiers.org/CHEBI:189748
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d87edc1c36
+  - https://w3id.org/peh/biochementities/2b58958011
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dimethyldithiophosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DMDTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmdtp
+  remark: 'comments: I''m not sure if this is this compound https://pubchem.ncbi.nlm.nih.gov/compound/S_S-Dimethyl-hydrogen-phosphorodithioate#section=DSSTox-Substance-ID or this one:https://pubchem.ncbi.nlm.nih.gov/compound/dimethyldithiophosphate'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/12b49183df
+  name: Dimethyl phosphate
+  short_name: DMPbis
+  exact_matches:
+  - https://identifiers.org/CHEBI:166474
+  - https://identifiers.org/cas:813-78-5
+  - https://identifiers.org/cas:53396-59-1
+  - https://identifiers.org/pubchem.compound:13134
+  - https://identifiers.org/inchikey:KKUKTXOBAWVSHC-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d87edc1c36
+  - https://w3id.org/peh/biochementities/2b58958011
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dimethylphosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DMP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/ae61fbb5be
+  name: Dimethyl thiophosphate
+  short_name: DMTP
+  exact_matches:
+  - https://identifiers.org/inchikey:WWJJVKAEQGGYHJ-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d87edc1c36
+  - https://w3id.org/peh/biochementities/2b58958011
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dimethylthiophosphate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DMTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmtp
+  remark: 'comments: Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/168140'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/40679521b5
+  name: Dioctyltin
+  short_name: DOT
+  exact_matches:
+  - https://identifiers.org/inchikey:HGQSXVKHVMGQRG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:27681
+  - https://identifiers.org/cas:15231-44-4
+  - https://identifiers.org/cas:94410-05-6
+  aliases:
+  - Dioctylstannane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dioctyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dot
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e7e5320e60
+  name: Diphenyltin
+  short_name: DPhT
+  exact_matches:
+  - https://identifiers.org/inchikey:KUCPUSUXIGWHFB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:70535
+  - https://identifiers.org/cas:1011-95-6
+  - https://identifiers.org/cas:6381-06-2
+  aliases:
+  - Diphenylstannane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Difenyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dpht
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f2ddac373e
+  name: Endrin
+  short_name: endrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:81526
+  - https://identifiers.org/cas:72-20-8
+  - https://identifiers.org/pubchem.compound:12358480
+  - https://identifiers.org/inchikey::DFBKLUNHFCTMDC-GKRDHZSOSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Endrin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: endrin
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/c689eba7d1
+  name: Ethyltriphenyltin
+  short_name: TPhT
+  exact_matches:
+  - https://identifiers.org/inchikey:IAJWDDOJYUXIHE-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ethyltrifenyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tpht
+  remark: 'comments: I don''t think our inchikey is correct and I don''t find this compound online'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/690d3c4524
+  name: Fipronil sulfone
+  short_name: Fipronil sulfone
+  exact_matches:
+  - https://identifiers.org/CHEBI:83487
+  - https://identifiers.org/cas:120068-36-2
+  - https://identifiers.org/pubchem.compound:3078139
+  - https://identifiers.org/inchikey:LGHZJDKSVUTELU-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4637c1e173
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fipronil sulfon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fipsul
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f8ecd803f9
+  name: Glyphosate
+  short_name: GLY
+  exact_matches:
+  - https://identifiers.org/CHEBI:27744
+  - https://identifiers.org/cas:1071-83-6
+  - https://identifiers.org/pubchem.compound:3496
+  - https://identifiers.org/inchikey:XDDAORKBJWWYJS-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Glyfosaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: GLY
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: glyp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/5cbdcd2a02
+  name: Heptachlor
+  short_name: HEPTACHLOR
+  exact_matches:
+  - https://identifiers.org/CHEBI:34785
+  - https://identifiers.org/cas:76-44-8
+  - https://identifiers.org/pubchem.compound:3589
+  - https://identifiers.org/inchikey:FRCCEHPWNOQAEU-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Heptachloor
+  - property_name: short_name
+    language: nl-BE
+    translated_value: HEPTACHLOR
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: heptachlor
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e44a1bc3ce
+  name: Heptachlor exo-epoxide (cis)
+  short_name: Heptachlor exo-epoxide (cis)
+  exact_matches:
+  - https://identifiers.org/inchikey:ZXFXBSWRVIQKOD-UOFFAGTMSA-N
+  - https://identifiers.org/cas:1024-57-3
+  - https://identifiers.org/pubchem.compound:15559699
+  aliases:
+  - Heptachlor
+  - Epoxide
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Heptachloor exo-epoxide (cis)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cishepexepo
+  remark: 'comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/0a5bd57d78
+  name: Heptachlor exo-epoxide (trans)
+  short_name: Heptachlor exo-epoxide (trans)
+  exact_matches:
+  - https://identifiers.org/inchikey:ZXFXBSWRVIQKOD-WOBUKFROSA-N
+  - https://identifiers.org/pubchem.compound:71317194
+  - https://identifiers.org/cas:28044-83-9
+  - https://identifiers.org/cas:145213-12-3
+  aliases:
+  - Heptachlor
+  - Epoxide
+  - A
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Heptachloor exo-epoxide (trans)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: transhepexepo
+  remark: 'comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f8bf79a72f
+  name: Monobutyltin
+  short_name: MBT
+  exact_matches:
+  - https://identifiers.org/inchikey:NPAIMXWXWPJRES-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:54267
+  - https://identifiers.org/cas:78763-54-9
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monobutyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mbt
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/189c7cc859
+  name: Monooctyltin
+  short_name: MOT
+  exact_matches:
+  - https://identifiers.org/inchikey:INTLMJZQCBRQAT-UHFFFAOYSA-K
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monooctyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mot
+  remark: 'comments: INCHI KEY in our DB refers to this compound (https://pubchem.ncbi.nlm.nih.gov/compound/Octyltin-trichloride) but I don''t think it''s exactly the same?'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/7a66e2ca4a
+  name: Monophenyltin
+  short_name: MPhT
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monofenyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mpht
+  remark: 'comments: yes
+
+    source: can it be this? https://pubchem.ncbi.nlm.nih.gov/compound/Monophenyltin-ion'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/ba0d8c2284
+  name: O,p'-Dichlorodiphenyldichloroethylene
+  short_name: o,p'-DDE
+  exact_matches:
+  - https://identifiers.org/CHEBI:34211
+  - https://identifiers.org/cas:3424-82-6
+  - https://identifiers.org/pubchem.compound:246598
+  - https://identifiers.org/inchikey:ZDYJWDIWLRZXDB-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/2889f869e8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: O,p'-dichloordifenyldichloorethyleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: opdde
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/34db3eacb9
+  name: O,p'-dichlorodiphenyltrichloroethane
+  short_name: o,p'-DDT
+  exact_matches:
+  - https://identifiers.org/CHEBI:34027
+  - https://identifiers.org/cas:789-02-6
+  - https://identifiers.org/pubchem.compound:13089
+  - https://identifiers.org/inchikey:CVUGPAFCQJIYDT-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/2889f869e8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: O,p'-dichloordifenyltrichloorethaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: opddt
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/437281e4b7
+  name: Parathion-ethyl
+  short_name: Parathion-ethyl
+  exact_matches:
+  - https://identifiers.org/CHEBI:27928
+  - https://identifiers.org/cas:56-38-2
+  - https://identifiers.org/pubchem.compound:991
+  - https://identifiers.org/inchikey:LCCNCVORNKJIRZ-UHFFFAOYSA-N
+  aliases:
+  - Parathion
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Parathion-ethyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: paret
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/62d2cfa385
+  name: Parathion-methyl
+  short_name: Parathion-methyl
+  exact_matches:
+  - https://identifiers.org/CHEBI:38746
+  - https://identifiers.org/cas:298-00-0
+  - https://identifiers.org/pubchem.compound:4130
+  - https://identifiers.org/inchikey:RLBIQVVOMOPOHC-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Parathion-methyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: parmet
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/118521dac9
+  name: Pentachlorophenol
+  short_name: PCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:17642
+  - https://identifiers.org/cas:87-86-5
+  - https://identifiers.org/cas:6338-69-8
+  - https://identifiers.org/pubchem.compound:992
+  - https://identifiers.org/inchikey:IZUPBVBPLAPZRR-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pentachloorfenol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcp
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/49f6df1ab9
+  name: Tebuconazole-OH (hydroxytebuconazole)
+  short_name: OH-TEBUCONAZOLE
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3755d13c91
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tebuconazool-OH (hydroxytebuconazool)
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tebuconazoleoh
+  remark: 'comments: It seems to be a metabolite of this compound https://pubchem.ncbi.nlm.nih.gov/compound/Tebuconazole and this company seems to have a CAS number for it: https://www.schd-shimadzu.com/en/metabolites/2726-167445-Hydroxy-tebuconazole.html but then I also find that CAS number for this other company''s compound https://www.lgcstandards.com/LB/en/search?text=212267-64-6'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/9c0ed7b3fe
+  name: Tributyltin
+  short_name: TBT
+  exact_matches:
+  - https://identifiers.org/inchikey:PIILXFBHQILWPS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3032732
+  - https://identifiers.org/cas:688-73-3
+  - https://identifiers.org/cas:20763-88-6
+  aliases:
+  - Tributylstannanyl
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Tributyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tbt
+  remark: 'comments: Please confirm that Tributylstannanyl and TBT are the same compound, I think they are'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/87a09e5516
+  name: Trioctyltin
+  short_name: TOT
+  exact_matches:
+  - https://identifiers.org/inchikey:XMHKTINRBAKEDS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:5360423
+  - https://identifiers.org/cas:869-59-0
+  aliases:
+  - Tri-N-octyltin
+  - hydride
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Trioctyltin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tot
+  remark: 'comments: Please confirm that Tri-N-octyltin hydride and TOT are the same'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/f04be75ff6
+  name: Acetamiprid-N-desmethyl
+  short_name: Acetamiprid-N-desmethyl
+  exact_matches:
+  - https://identifiers.org/inchikey:AYEAUPRZTZWBBF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11344811
+  - https://identifiers.org/cas:190604-92-3
+  aliases:
+  - (E)-N-((6-chloropyridin-3-yl)methyl)-N'-cyanoethanimidamide
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/b9d5318304
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Acetamiprid-N-desmethyl
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Acetamiprid-N-desmethyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: acetamipridndes
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/d2a9c81fb7
+  name: Chlorpyrifos-methyl-desmethyl
+  short_name: Chlorpyrifos-methyl-desmethyl
+  exact_matches:
+  - https://identifiers.org/inchikey:DYESOQMZDNCQNZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:85859588
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/b8b6e0c612
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chlorpyrifos-methyl-desmethyl
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Chlorpyrifos-methyl-desmethyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlormetdes
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8166f8cc40
+  name: Boscalid-5-hydroxy
+  short_name: Boscalid-5-OH
+  exact_matches:
+  - https://identifiers.org/inchikey:GLTMLPGXPMAIOI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:661463-87-2
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/5c0a4c4091
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Boscalid-5-hydroxy
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Boscalid-5-OH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: boscalid5oh
+  remark: 'comments: I don''t find the INCHI key anywhere online - can someone confirm?'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e1286b5796
+  name: 2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid
+  short_name: Haloxyfop
+  exact_matches:
+  - https://identifiers.org/inchikey:GOCUAJYOYBLQRH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:50895
+  - https://identifiers.org/cas:69806-34-4
+  - https://identifiers.org/CHEBI:136694
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Haloxyfop
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: haloxyfop
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/36c1324ef0
+  name: Difenoconazole CGA205374
+  short_name: Difenoconazole CGA-205374
+  exact_matches:
+  - https://identifiers.org/inchikey:HCYKJGWQCCFTNV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15753778
+  - https://identifiers.org/cas:136815-80-0
+  aliases:
+  - 1-(2-Chloro-4-(4-chlorophenoxy)phenyl)-2-(1H-1,2,4-triazol-1-yl)ethanone
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/6f2dce44e1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Difenoconazole CGA205374
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Difenoconazole CGA-205374
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: difenoconcga
+  remark: 'comments: This is a metabolite of Difenoconazole. Parent compound correctly identified?'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/61269b5faa
+  name: Myclobutanil hydroxide
+  short_name: Myclobutanil-OH
+  exact_matches:
+  - https://identifiers.org/inchikey:HIUOATAFAFIXAL-UHFFFAOYSA-N
+  - https://identifiers.org/cas:116928-93-9
+  - https://identifiers.org/pubchem.compound:189447
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1107439fef
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Myclobutanil hydroxide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Myclobutanil-OH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: myclobutaniloh
+  remark: 'comments: This is a metabolite of Myclobutanil. Parent compound correctly identified?'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/042a4b6b7d
+  name: Spirotetramat enol
+  short_name: Spirotetramat enol
+  exact_matches:
+  - https://identifiers.org/inchikey:IDJJHEIUIYGFDX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:54708610
+  - https://identifiers.org/cas:382608-09-5
+  - https://identifiers.org/cas:203312-38-3
+  aliases:
+  - 3-(2,5-Dimethylphenyl)-4-hydroxy-8-methoxy-1-azaspiro(4.5)dec-3-en-2-one
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/08fec04d11
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Spirotetramat enol
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Spirotetramat enol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: spirotetramatenol
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/7c9bad530e
+  name: Trifloxystrobin acid
+  short_name: Trifloxystrobin CGA-321114
+  exact_matches:
+  - https://identifiers.org/inchikey:ISZQNKFXNXQTTF-NACSPRHISA-N
+  - https://identifiers.org/pubchem.compound:22899348
+  - https://identifiers.org/cas:252913-85-2
+  aliases:
+  - (2E)-2-methoxyimino-2-[2-[[(E)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetic
+  - acid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9d00f6d76f
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Trifloxystrobin acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Trifloxystrobin CGA-321114
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: trifloxystrobincga
+  remark: 'comments: I think the short name is not correct. Can someone double check?'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/66cbf701b7
+  name: Desnitro-thiamethoxam
+  short_name: Thiamethoxam-desnitro
+  exact_matches:
+  - https://identifiers.org/inchikey:JDTUGRDKAOPKRI-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:89351742
+  - https://identifiers.org/cas:868542-26-1
+  aliases:
+  - 3-[(2-Chloro-5-thiazolyl)methyl]tetrahydro-5-methyl-4H-1,3,5-oxadiazin-4-imine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4337d7a1af
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Desnitro-thiamethoxam
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Thiamethoxam-desnitro
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: thiamethdesnitro
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/9282fd4a19
+  name: Imidacloprid-5-OH
+  short_name: Imidacloprid-5-OH
+  exact_matches:
+  - https://identifiers.org/inchikey:MATMQDMQFSFQHB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:136241533
+  aliases:
+  - 5-Hydroxyimidacloprid
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/5a8e126c1b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Imidacloprid-5-OH
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Imidacloprid-5-OH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: imidacloprid5oh
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/1a76b85fcd
+  name: 4-Hydroxy Chlorothalonil
+  short_name: Chlorothalonil-4OH
+  exact_matches:
+  - https://identifiers.org/inchikey:MDQKYGOECVSPIW-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:34217
+  - https://identifiers.org/cas:28343-61-5
+  - https://identifiers.org/CHEBI:133542
+  aliases:
+  - 4-Hydroxy-2,5,6-trichloroisophthalonitrile
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/67688d7538
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-Hydroxy Chlorothalonil
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Chlorothalonil-4OH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: chlor4oh
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/cd4bee8c9b
+  name: 2-(4-amino-3,5-dichloro-6-fluoropyridin-2-yl)oxyacetic acid
+  short_name: Fluroxypyr
+  exact_matches:
+  - https://identifiers.org/inchikey:MEFQWPUMEMWTJP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:50465
+  - https://identifiers.org/cas:69377-81-7
+  - https://identifiers.org/CHEBI:82017
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-(4-amino-3,5-dichloro-6-fluoropyridin-2-yl)oxyacetic acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Fluroxypyr
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fluroxypyr
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/2c6bc32563
+  name: Difenoconazole CGA205375
+  short_name: Difenoconazole CGA-205375
+  exact_matches:
+  - https://identifiers.org/inchikey:NBYSKMWDHCZSIP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:20070433
+  - https://identifiers.org/cas:117018-19-6
+  aliases:
+  - Difenoconazole-alcohol
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Difenoconazole CGA205375
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Difenoconazole CGA-205375
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: difenoconazolecga
+  remark: 'comments: I added the exact matches and the aliases but still not 100% sure that it is the correct compound…'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4337d7a1af
+  name: (NE)-N-[3-[(2-chloro-1,3-thiazol-5-yl)methyl]-5-methyl-1,3,5-oxadiazinan-4-ylidene]nitramide
+  short_name: Thiamethoxam
+  exact_matches:
+  - https://identifiers.org/inchikey:NWWZPOKUUAIXIW-DHZHZOJOSA-N
+  - https://identifiers.org/pubchem.compound:5821911
+  - https://identifiers.org/cas:153719-23-4
+  - https://identifiers.org/CHEBI:39186
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: (NE)-N-[3-[(2-chloro-1,3-thiazol-5-yl)methyl]-5-methyl-1,3,5-oxadiazinan-4-ylidene]nitramide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Thiamethoxam
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: thiamethoxam
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/247abbe5ee
+  name: Clothianidin
+  short_name: Clothianidin
+  exact_matches:
+  - https://identifiers.org/inchikey:PGOOBECODWQEAB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:86287519
+  - https://identifiers.org/cas:210880-92-5
+  - https://identifiers.org/CHEBI:39177
+  aliases:
+  - 1-[(2-chloro-1,3-thiazol-5-yl)methyl]-3-methyl-2-nitroguanidine
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-[(2-chloro-1,3-thiazol-5-yl)methyl]-3-methyl-2-nitroguanidine
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Clothianidin
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/11ffb39632
+  name: Imazalil
+  short_name: Imazalil
+  exact_matches:
+  - https://identifiers.org/inchikey:PZBPKYOVPCNPJY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37175
+  - https://identifiers.org/cas:35554-44-0
+  - https://identifiers.org/cas:73790-28-0
+  - https://identifiers.org/CHEBI:83829
+  aliases:
+  - 1-[2-(2,4-dichlorophenyl)-2-prop-2-enoxyethyl]imidazole
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-[2-(2,4-dichlorophenyl)-2-prop-2-enoxyethyl]imidazole
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Imazalil
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/11d94bcf00
+  name: Fluopyram benzamide
+  short_name: Fluopyram benzamide
+  exact_matches:
+  - https://identifiers.org/inchikey:QBAYIBZITZBSFO-UHFFFAOYSA-N
+  - https://identifiers.org/cas:360-64-5
+  - https://identifiers.org/pubchem.compound:67759
+  aliases:
+  - 2-(Trifluoromethyl)benzamide
+  - 2-Trifluoromethylbenzamide
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d1aa66a1ff
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fluopyram benzamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Fluopyram benzamide
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fluopyramben
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/47488538bc
+  name: 3-[(6-chloropyridin-3-yl)methyl-(2,2-difluoroethyl)amino]-2H-furan-5-one
+  short_name: Flupyradifurone
+  exact_matches:
+  - https://identifiers.org/inchikey:QOIYTRGFOFZNKF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:16752772
+  - https://identifiers.org/cas:951659-40-8
+  - https://identifiers.org/CHEBI:133997
+  aliases:
+  - 3-[(6-chloropyridin-3-yl)methyl-(2,2-difluoroethyl)amino]-2H-furan-5-one
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-[(6-chloropyridin-3-yl)methyl-(2,2-difluoroethyl)amino]-2H-furan-5-one
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Flupyradifurone
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: flupyradifurone
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/cf6db0dc02
+  name: Flonicamid
+  short_name: Flonicamid
+  exact_matches:
+  - https://identifiers.org/inchikey:RLQJEEJISHYWON-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:9834513
+  - https://identifiers.org/cas:158062-67-0
+  - https://identifiers.org/CHEBI:39291
+  aliases:
+  - N-(cyanomethyl)-4-(trifluoromethyl)pyridine-3-carboxamide
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-(cyanomethyl)-4-(trifluoromethyl)pyridine-3-carboxamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Flonicamid
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4210476638
+  name: Ametoctradin Metabolite M650F01
+  short_name: Ametoctradin-M650F01
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:137628707
+  - https://identifiers.org/inchikey:VVAZPPQNZMIUFP-UHFFFAOYSA-N
+  - https://identifiers.org/cas:2421146-55-4
+  aliases:
+  - 4-(7-Amino-5-ethyl-(1,2,4)triazolo(1,5-a)pyrimidin-6-yl)butanoic
+  - acid
+  - hydrochloride
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/50d62c9176
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Ametoctradin Metabolite M650F01
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Ametoctradin-M650F01
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: m650f01
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/806d5c7064
+  name: Imidacloprid olefin
+  short_name: Imidacloprid olefin
+  exact_matches:
+  - https://identifiers.org/inchikey:TYLCDJYHUVCRBH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14626249
+  - https://identifiers.org/cas:115086-54-9
+  - https://identifiers.org/CHEBI:233429
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/5a8e126c1b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Imidacloprid olefin
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Imidacloprid olefin
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: imidaclopridolefin
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/61a47d5be3
+  name: Imidacloprid desnitro
+  short_name: Imidacloprid desnitro
+  exact_matches:
+  - https://identifiers.org/inchikey:UEQZFAGVRGWPDK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:10130527
+  - https://identifiers.org/cas:115970-17-7
+  - https://identifiers.org/CHEBI:232298
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/5a8e126c1b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Imidacloprid desnitro
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Imidacloprid desnitro
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: desnitroimidacloprid
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/b205c0a741
+  name: Bromoxynil
+  short_name: Bromoxynil
+  exact_matches:
+  - https://identifiers.org/inchikey:UPMXNNIRAGDFEH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15531
+  - https://identifiers.org/cas:1689-84-5
+  - https://identifiers.org/CHEBI:17192
+  aliases:
+  - 3,5-dibromo-4-hydroxybenzonitrile
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3,5-dibromo-4-hydroxybenzonitrile
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Bromoxynil
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/663ab4c26e
+  name: Pirimiphos-methyl-desmethyl
+  short_name: Pirimiphos-methyl-desmethyl
+  exact_matches:
+  - https://identifiers.org/inchikey:VXMVXXWWOFEVKJ-UHFFFAOYSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/b3b817da36
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pirimiphos-methyl-desmethyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pyrimiphosmetdes
+  remark: 'comments: I don''t find anything corresponding the INCHIKEY and the name in google does not give any result. Is the name correctly written? Because google tries to correct it to Pirimiphos-methyl-desethyl. The only thing I found is this website https://www.hpc-standards.com/productgroups/pirimiphos-methyl-desmethyl+tma+salt__1096/'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/b9d5318304
+  name: Acetamiprid
+  short_name: Acetamiprid
+  exact_matches:
+  - https://identifiers.org/inchikey:WCXDHFDTOYPNIE-UHFFFAOYSA-N
+  - https://identifiers.org/cas:160430-64-8
+  - https://identifiers.org/cas:135410-20-7
+  - https://identifiers.org/pubchem.compound:213021
+  aliases:
+  - N-[(6-chloropyridin-3-yl)methyl]-N'-cyano-N-methylethanimidamide
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: N-[(6-chloropyridin-3-yl)methyl]-N'-cyano-N-methylethanimidamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Acetamiprid
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/292b4342a5
+  name: 2-(4-chloro-2-methylphenoxy)acetic acid
+  short_name: MCPA
+  exact_matches:
+  - https://identifiers.org/inchikey:WHKUVVPPKQRRBV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:7204
+  - https://identifiers.org/cas:94-74-6
+  - https://identifiers.org/CHEBI:50099
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-(4-chloro-2-methylphenoxy)acetic acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MCPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mcpa
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/eefc75e961
+  name: Propamocarb
+  short_name: Propamocarb
+  exact_matches:
+  - https://identifiers.org/inchikey:WZZLDXDUQPOXNW-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:32490
+  - https://identifiers.org/cas:24579-73-5
+  - https://identifiers.org/CHEBI:82033
+  aliases:
+  - Propyl
+  - N-[3-(dimethylamino)propyl]carbamate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098NDAQY9HFW96RR8WCR5
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Propyl N-[3-(dimethylamino)propyl]carbamate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Propamocarb
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4a0cd45dd2
+  name: Fluazifop
+  short_name: Fluazifop
+  exact_matches:
+  - https://identifiers.org/inchikey:YUVKUEAFAVKILW-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:91701
+  - https://identifiers.org/cas:69335-91-7
+  - https://identifiers.org/CHEBI:83598
+  aliases:
+  - 2-[4-[5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic
+  - acid
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-[4-[5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Fluazifop
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/5a8e126c1b
+  name: Imidacloprid
+  short_name: Imidacloprid
+  exact_matches:
+  - https://identifiers.org/inchikey:YWTYJOPNNQFBPC-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:86287518
+  - https://identifiers.org/cas:138261-41-3
+  - https://identifiers.org/cas:105827-78-9
+  - https://identifiers.org/CHEBI:39168
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Imidacloprid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Imidacloprid
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: imidacloprid
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/015dd148b8
+  name: Chlorpropham-4-hydroxy-O-sulfonic acid
+  short_name: 4-HSA
+  exact_matches:
+  - https://identifiers.org/inchikey:ZEAREOZFWMROEI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:28705-88-6
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ed74dc16b8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chlorpropham-4-hydroxy-O-sulfonic acid
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 4-HSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourhsa
+  remark: 'comments: I found the CAS number herE: https://www.carlroth.com/be/en/antimicrobials/chlorpropham-4-hydroxy-o-sulfonic-acid/p/2ayt.5,  but the INCHIKEY that we had in our DB I don''t find anywhere. Also the short_name I don''t find anywhere'
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/4637c1e173
+  name: Fipronil
+  short_name: Fipronil
+  exact_matches:
+  - https://identifiers.org/CHEBI:5063
+  - https://identifiers.org/pubchem.compound:3352
+  - https://identifiers.org/inchikey:ZOCSXAVNDGMNBV-UHFFFAOYSA-N
+  - https://identifiers.org/cas:120068-37-3
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fipronil
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fipronil
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/e43cea9f74
+  name: Clothianidin desmethyl
+  short_name: Clothianidin desmethyl
+  exact_matches:
+  - https://identifiers.org/inchikey:ZTLCLYBKONTDBT-UHFFFAOYSA-N
+  - https://identifiers.org/cas:135018-15-4
+  aliases:
+  - N-[(2-Chloro-5-thiazolyl)methyl]-N'-nitroguanidine
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/247abbe5ee
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Clothianidin desmethyl
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Clothianidin desmethyl
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: clothdes
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/2a8b755edb
+  name: Diuron
+  short_name: Diuron
+  exact_matches:
+  - https://identifiers.org/CHEBI:116509
+  - https://identifiers.org/cas:330-54-1
+  aliases:
+  - N-dimethylurea
+  - N-(3, 4-dichlorophenyl)-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Diuron
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/616d17aa41
+  name: 1,4-Dichlorobenzene
+  short_name: 1,4-Dichlorobenzene
+  exact_matches:
+  - https://identifiers.org/CHEBI:28618
+  - https://identifiers.org/cas:106-46-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 1,4-dichloorbenzeen
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/b3b817da36
+  name: Pirimiphos-methyl
+  short_name: Pirimiphos-methyl
+  exact_matches:
+  - https://identifiers.org/CHEBI:38843
+  - https://identifiers.org/cas:29232-93-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Pirimifos-methyl
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/66d1da7d87
+  name: Deltamethrin
+  short_name: Deltamethrin
+  exact_matches:
+  - https://identifiers.org/CHEBI:4388
+  - https://identifiers.org/cas:52918-63-5
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Deltamethrin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8e7db11927
+  name: Pyrimethanil
+  short_name: Pyrimethanil
+  exact_matches:
+  - https://identifiers.org/CHEBI:8674
+  - https://identifiers.org/cas:53112-28-0
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Pyrimethanil
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/7814b59232
+  name: Parathion
+  short_name: Parathion
+  exact_matches:
+  - https://identifiers.org/CHEBI:27928
+  - https://identifiers.org/cas:56-38-2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Parathion
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/45a9b996df
+  name: Thiabenadazole
+  short_name: Thiabenadazole
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thiabenadazool
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/74dfea1679
+  name: Cyprodinil
+  short_name: Cyprodinil
+  exact_matches:
+  - https://identifiers.org/CHEBI:4045
+  - https://identifiers.org/cas:121552-61-2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cyprodinil
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/d98d8688ed
+  name: Chlorpyrifos (and other diethyl organophosphate insecticides)
+  short_name: Chlorpyrifos (and other diethyl organophosphate insecticides)
+  exact_matches:
+  - https://identifiers.org/inchikey:SBPBAQFWLVIOKP-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Chloorpyrifos (en andere diethylorganofosfaatinsecticiden)
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/2889f869e8
+  name: DDT
+  short_name: DDT
+  exact_matches:
+  - https://identifiers.org/CHEBI:16130
+  - https://identifiers.org/cas:50-29-3
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: DDT
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/3755d13c91
+  name: Tebuconazole
+  short_name: Tebuconazole
+  exact_matches:
+  - https://identifiers.org/CHEBI:81781
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tebuconazol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/6f2dce44e1
+  name: 1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole
+  short_name: Difenoconazole
+  exact_matches:
+  - https://identifiers.org/inchikey:BQYJATMQXGBDHF-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole
+  - property_name: short_name
+    language: nl-be
+    translated_value: Difenoconazole
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/1107439fef
+  name: 2-(4-chlorophenyl)-2-(1,2,4-triazol-1-ylmethyl)hexanenitrile
+  short_name: Myclobutanil
+  exact_matches:
+  - https://identifiers.org/inchikey:HZJKXKUJVSEEFU-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2-(4-chlorophenyl)-2-(1,2,4-triazol-1-ylmethyl)hexanenitrile
+  - property_name: short_name
+    language: nl-be
+    translated_value: Myclobutanil
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/08fec04d11
+  name: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate'
+  short_name: Spirotetramat
+  exact_matches:
+  - https://identifiers.org/inchikey:CLSVJBIHYWPGQY-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: '[3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl] ethyl carbonate'
+  - property_name: short_name
+    language: nl-be
+    translated_value: Spirotetramat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/9d00f6d76f
+  name: Methyl (2Z)-2-methoxyimino-2-[2-[[(Z)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetate
+  short_name: Trifloxystrobin
+  exact_matches:
+  - https://identifiers.org/inchikey:ONCZDRURRATYFI-JCLPZYRYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Methyl (2Z)-2-methoxyimino-2-[2-[[(Z)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetate
+  - property_name: short_name
+    language: nl-be
+    translated_value: Trifloxystrobin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/67688d7538
+  name: 2,4,5,6-tetrachlorobenzene-1,3-dicarbonitrile
+  short_name: Chlorothalonil
+  exact_matches:
+  - https://identifiers.org/inchikey:CRQQGFGUEAVUIL-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 2,4,5,6-tetrachlorobenzene-1,3-dicarbonitrile
+  - property_name: short_name
+    language: nl-be
+    translated_value: Chlorothalonil
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/d1aa66a1ff
+  name: N-[2-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]ethyl]-2-(trifluoromethyl)benzamide
+  short_name: Fluopyram
+  exact_matches:
+  - https://identifiers.org/inchikey:KVDJTXBXMWJJEF-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: N-[2-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]ethyl]-2-(trifluoromethyl)benzamide
+  - property_name: short_name
+    language: nl-be
+    translated_value: Fluopyram
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/50d62c9176
+  name: 5-ethyl-6-octyl-[1,2,4]triazolo[1,5-a]pyrimidin-7-amine
+  short_name: Ametoctradin
+  exact_matches:
+  - https://identifiers.org/inchikey:GGKQIOFASHYUJZ-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 5-ethyl-6-octyl-[1,2,4]triazolo[1,5-a]pyrimidin-7-amine
+  - property_name: short_name
+    language: nl-be
+    translated_value: Ametoctradin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/ed74dc16b8
+  name: Propan-2-yl N-(3-chlorophenyl)carbamate
+  short_name: Chlorpropham
+  exact_matches:
+  - https://identifiers.org/inchikey:CWJSHJJYOPWUGX-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Propan-2-yl N-(3-chlorophenyl)carbamate
+  - property_name: short_name
+    language: nl-be
+    translated_value: Chlorpropham
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098NDAQY9HFW96RR8WCR5
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  group_labels:
+  - pesticides
+- id: https://w3id.org/peh/biochementities/3481d765c8
+  name: HCH
+  short_name: HCHbis
+  exact_matches:
+  - https://identifiers.org/CHEBI:24536
+  - https://identifiers.org/cas:608-73-1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: HCH
+  group_labels:
+  - pesticides
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2b58958011
+  name: Dimethoate
+  short_name: Dimethoate
+  exact_matches:
+  - https://identifiers.org/CHEBI:34714
+  - https://identifiers.org/cas:60-51-5
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Dimethoaat
+  group_labels:
+  - pesticides
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/d87edc1c36
+  name: Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
+  short_name: Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)
+  exact_matches:
+  - https://identifiers.org/inchikey:HRBKVYFZANMGRE-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Chloorpyrifos-methyl (en andere dimethylorganofosfaatinsecticiden)
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity

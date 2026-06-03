@@ -22,6 +22,6 @@
             schema1:alternateName "tnona" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "organochlorine compounds" ;
+    pehterms:hasGroupLabel "organochlorine compounds",
+        "pesticides" ;
     pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d17f057449> .
-
