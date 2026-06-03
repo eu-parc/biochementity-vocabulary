@@ -1,0 +1,1986 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/63264f2ef3
+  name: 2-(N-Methylperfluorooctanesulfonamido)acetic acid
+  short_name: MePFOSAA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt 2-(n-methylperfluorooctaansulfonamido) azijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B MePFOSAA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbnmepfosaa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/978fee0ba0
+  name: N-Ethylperfluoro-1-octanesulphonamide
+  short_name: EtPFOSA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt 2-(n-ethylperfluoro-octaansulfonamide)
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B EtPFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbnetpfosa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ffd07c9c23
+  name: N-ethyl-perfluorooctane sulfonamidoacetate
+  short_name: EtPFOSAA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt 2-(n-ethylperfluorooctaansulfonamido) azijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B EtPFOSAA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbetpfosaa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/4c6875ff23
+  name: N-Methylperfluoro-1 octanesulphonamide
+  short_name: MePFOSA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt N-methylperfluor-n-octaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B MePFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbnmepfosa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/7edcb804fb
+  name: Perfluoro-1-octaperfluoro-1-octanesulphonamide
+  short_name: PFOSA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-octaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfosa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ce1337f8d5
+  name: Perfluorobutane sulfonic acid
+  short_name: PFBS
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-butaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFBS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfbs
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/b62fb34963
+  name: Perfluorodecane sulfonic acid
+  short_name: PFDS
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-decaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFDS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfds
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/d6f3655454
+  name: Perfluorodecanoic acid
+  short_name: PFDA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-decaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/44fff4fd08
+  name: Perfluorododecanoic acid
+  short_name: PFDoDA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-dodecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFDoA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfdoda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/7d2168ffbf
+  name: Perfluoroheptane sulfonic acid
+  short_name: PFHpS
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-heptaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFHpS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfhps
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/4910c0fa4c
+  name: Perfluoroheptanoic acid
+  short_name: PFHpA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-heptaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFHpA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfhpa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/eedc90fa8b
+  name: Perfluorohexane sulfonic acid
+  short_name: PFHxS
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-hexaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFHxS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfhxs
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/8e6df03f40
+  name: Perfluorohexanoic acid
+  short_name: PFHxA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-hexaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFHxA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfhxa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/dc5d8472b8
+  name: Perfluorononanoic acid
+  short_name: PFNA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-nonaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFNA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfna
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/f263dca71c
+  name: Perfluorooctane sulfonic acid
+  short_name: PFOS
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-octaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFOS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfos
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/fb91d8f77d
+  name: Perfluorooctanoic acid
+  short_name: PFOA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-octaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFOA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfoa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/bde5b0162d
+  name: Perfluoropentanoic acid
+  short_name: PFPeA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-pentaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFPeA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfpea
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/48f3da1e6e
+  name: Perfluorotetradecanoic acid
+  short_name: PFTeDA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-tetradecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFTeDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfteda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/df361a1fa4
+  name: Perfluorotridecanoic acid
+  short_name: PFTrDA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-tridecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFTrDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpftrda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ee7d09db6d
+  name: Perfluoroundecanoic acid
+  short_name: PFUnDA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair + vertakt Perfluoro-n-undecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L+B PFUnA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: lbpfunda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/b5e016a224
+  name: Linear 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid
+  short_name: 11Cl-PF3OUdS
+  exact_matches:
+  - https://identifiers.org/inchikey:SZVGIJOITCPDPM-UHFFFAOYSA-N
+  - https://identifiers.org/cas:763051-92-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 11-chlooreicosafluor-3-oxaundecaan-1-sulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 11Cl-PF3OUdS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfouds
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/80e242b0ef
+  name: Linear 1H,1H,2H,2H-Perfluorodecanesulfonic acid
+  short_name: 8:2 FTS
+  exact_matches:
+  - https://identifiers.org/inchikey:ALVYVCQIFHTIRD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3016044
+  - https://identifiers.org/cas:39108-34-4
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 8:2 fluortelomeersulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 8:2 FTS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eightfts
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c2c62fef8c
+  name: Linear 1H,1H,2H,2H-Perfluorohexanesulfonic acid
+  short_name: 4:2 FTS
+  exact_matches:
+  - https://identifiers.org/inchikey:TXGIGTRUEITPSC-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:20734543
+  - https://identifiers.org/cas:757124-72-4
+  aliases:
+  - 4:2 Fluorotelomer sulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 4:2 fluortelomeersulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 4:2 FTS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourfts
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/af8a91dae1
+  name: Linear 2-(6-Chlorododecafluorohexyloxy)-1,1,2,2-tetrafluoroethanesulfonic acid potassium salt
+  short_name: 6:2 Cl-PFESA
+  exact_matches:
+  - https://identifiers.org/inchikey:OWQCHLFKOGVODW-UHFFFAOYSA-M
+  - https://identifiers.org/pubchem.compound:25210512
+  - https://identifiers.org/cas:73606-19-6
+  aliases:
+  - Potassium 9-chlorohexadecafluoro-3-oxanonane-1-sulfonate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 2-(6-chloordodecafluorhexyloxy)-1,1,2,2-tetrafluorethaansulfonzuur kaliumzout
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6:2 Cl-PFESA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfesa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/495e6b075f
+  name: Linear 2-(N-Methylperfluorooctanesulfonamido)acetic acid
+  short_name: lmepfosaa
+  exact_matches:
+  - https://identifiers.org/inchikey:QNDHIRFIMVNHBN-UHFFFAOYSA-N
+  - https://identifiers.org/CHEBI:83506
+  - https://identifiers.org/cas:2355-31-9
+  - https://identifiers.org/pubchem.compound:22286931
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/63264f2ef3
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mepfosaa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFPBG3EDHAS50KS71MP
+- id: https://w3id.org/peh/biochementities/01KT6EDSFPBG3EDHAS50KS71MP
+  name: Branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
+  short_name: bmepfosaa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/63264f2ef3
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/495e6b075f
+- id: https://w3id.org/peh/biochementities/644aaf16e7
+  name: Linear 2,2,3-trifluoro-3-[1,1,2,2,3,3-hexafluoro-3-(trifluoromethoxy)propoxy]propanoic acid
+  short_name: ADONA
+  exact_matches:
+  - https://identifiers.org/inchikey:AFDRCEOKCOUICI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:919005-14-4
+  - https://identifiers.org/pubchem.compound:52915299
+  aliases:
+  - adona
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 4,8-dioxa-3H-perfluornonaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: ADONA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dona
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/e933133f9f
+  name: Linear 3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctanesulphonic acid
+  short_name: 6:2 FTS
+  exact_matches:
+  - https://identifiers.org/inchikey:VIONGDJUYAYOPU-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:119688
+  - https://identifiers.org/cas:27619-97-2
+  aliases:
+  - 6:2 FTSA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 6:2 fluortelomeersulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6:2 FTS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixfts
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/d03f886e1c
+  name: Linear 6:2 polyfluoroalkyl phosphoric acid diesters
+  short_name: 6:2 diPAP
+  exact_matches:
+  - https://identifiers.org/inchikey:ZDYYWMSLMLTXDM-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14550408
+  - https://identifiers.org/cas:57677-95-9
+  - https://identifiers.org/CHEBI:83539
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 6:2 fluortelomeerfosfaat diester
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6:2 diPAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixdipap
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/8bf1d3333e
+  name: Linear 6:2 polyfluoroalkyl phosphoric acid monoesters
+  short_name: 6:2 monoPAP
+  exact_matches:
+  - https://identifiers.org/inchikey:FZTRDYSPWWJCOF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14250578
+  - https://identifiers.org/cas:57678-01-0
+  - https://identifiers.org/CHEBI:83508
+  aliases:
+  - 3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl dihydrogen phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 6:2 fluortelomeerfosfaat monoester
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6:2 monoPAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixmonopap
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c4d8ded8f0
+  name: Linear 6:2/8:2 Fluorotelomer phosphate diester
+  short_name: 6:2/8:2 diPAP
+  exact_matches:
+  - https://identifiers.org/inchikey:KHLRYLUKBJEYFH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:101536705
+  - https://identifiers.org/cas:943913-15-3
+  aliases:
+  - (Perfluorohexyl)ethyl (perfluorooctyl)ethyl hydrogenphosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 6:2/8:2 fluortelomeerfosfaat diester
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6:2/8:2 diPAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixeightdipap
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/b3a6b0c457
+  name: Linear 8:2 polyfluoroalkyl phosphoric acid diesters
+  short_name: 8:2 diPAP
+  exact_matches:
+  - https://identifiers.org/inchikey:AFWOYEYXUDHGHF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3022253
+  - https://identifiers.org/cas:678-41-1
+  - https://identifiers.org/CHEBI:83540
+  aliases:
+  - 8:2 Fluorotelomer phosphate diester
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 8:2 fluortelomeerfosfaat diester
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 8:2 diPAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eightdipap
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/681e462cde
+  name: Linear 8:2 polyfluoroalkyl phosphoric acid monoesters
+  short_name: 8:2 monoPAP
+  exact_matches:
+  - https://identifiers.org/inchikey:MIABSAQIFYEDJP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:10143739
+  - https://identifiers.org/cas:57678-03-2
+  - https://identifiers.org/CHEBI:83541
+  aliases:
+  - 8:2 Fluorotelomer phosphate monoester
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 8:2 fluortelomeerfosfaat monoester
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 8:2 monoPAP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: eightmonopap
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/857d191948
+  name: Linear 9-chlorohexadecafluoro-3-oxanone-1-sulfonic acid
+  short_name: 9Cl-PF3ONS
+  exact_matches:
+  - https://identifiers.org/inchikey:GGOUUEMCWBTDMT-UHFFFAOYSA-N
+  - https://identifiers.org/cas:756426-58-1
+  - https://identifiers.org/pubchem.compound:22568738
+  aliases:
+  - 2-((6-Chloro-1,1,2,2,3,3,4,4,5,5,6,6-dodecafluorohexyl)oxy)-1,1,2,2-tetrafluoroethanesulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 9-chloorhexadecafluor-3-oxanon-1-sulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 9Cl-PF3ONS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfons
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/59caec02e4
+  name: Linear Fluorotelomer sulfonic acid 10:2
+  short_name: 10:2 FTS
+  exact_matches:
+  - https://identifiers.org/inchikey:AJMAYLFJZQYRHN-UHFFFAOYSA-N
+  - https://identifiers.org/cas:120226-60-0
+  - https://identifiers.org/pubchem.compound:23136180
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 10:2 fluortelomeersulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 10:2 FTS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tenfts
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ee343f8ea7
+  name: Linear Hexafluoropropylene Oxide Dimer Acid
+  short_name: HFPO-DA
+  exact_matches:
+  - https://identifiers.org/CHEBI:143205
+  - https://identifiers.org/cas:13252-13-6
+  - https://identifiers.org/pubchem.compound:114481
+  - https://identifiers.org/inchikey:CSEBNABAWMZWIF-UHFFFAOYSA-N
+  aliases:
+  - 2,3,3,3-Tetrafluoro-2-(heptafluoropropoxy)propionic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluor-2-propoxypropaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: HFPO-DA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hfpoda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/f3e26964a5
+  name: Linear N-(Methyl)nonafluorobutanesulfonamide
+  short_name: MePFBSA
+  exact_matches:
+  - https://identifiers.org/inchikey:GFZPUWKGPNHWHD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:109968
+  - https://identifiers.org/cas:68298-12-4
+  aliases:
+  - 1,1,2,2,3,3,4,4,4-nonafluoro-N-methylbutane-1-sulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair N-methylperfluor-n-butaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MePFBSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mepfbsa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/a21a9e0c8a
+  name: Linear N-Ethylperfluoro-1-octanesulphonamide
+  short_name: letpfosa
+  exact_matches:
+  - https://identifiers.org/inchikey:CCEKAJIANROZEO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:77797
+  - https://identifiers.org/cas:4151-50-2
+  - https://identifiers.org/CHEBI:81945
+  aliases:
+  - volcano|N-ethyl-1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctane-1-sulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/978fee0ba0
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair N-ethylperfluor-1-octaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: EtPFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: netfosa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ1DYV9HZKKG4MRRR5
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ1DYV9HZKKG4MRRR5
+  name: Branched N-Ethylperfluoro-1-octanesulphonamide
+  short_name: betpfosa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/978fee0ba0
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/a21a9e0c8a
+- id: https://w3id.org/peh/biochementities/e704234a7e
+  name: Linear N-ethyl-perfluorooctane sulfonamidoacetate
+  short_name: letpfosaa
+  exact_matches:
+  - https://identifiers.org/inchikey:CKRXVVGETMYFIO-UHFFFAOYSA-N
+  - https://identifiers.org/CHEBI:83507
+  - https://identifiers.org/cas:2991-50-6
+  - https://identifiers.org/pubchem.compound:18134
+  aliases:
+  - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/ffd07c9c23
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair 2-(n-ethylperfluorooctaansulfonamido) azijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: EtPFOSAA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: etfosaa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ8RZZQ0H3DVMWS64N
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ8RZZQ0H3DVMWS64N
+  name: Branched N-ethyl-perfluorooctane sulfonamidoacetate
+  short_name: betpfosaa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/ffd07c9c23
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/e704234a7e
+- id: https://w3id.org/peh/biochementities/565e2a70bf
+  name: Linear N-Ethyl-perfluorooctane sulphonamidoethanol
+  short_name: EtPFOSE
+  exact_matches:
+  - https://identifiers.org/inchikey:HUFHNYZNTFSKCT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:74322
+  - https://identifiers.org/cas:1691-99-2
+  aliases:
+  - 2-(N-ethylperfluorooctanesulfonamido)ethyl alcohol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair N-ethylperfluorooctaansulfonamido-ethanol
+  - property_name: short_name
+    language: nl-BE
+    translated_value: EtPFOSE
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: etfose
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/200c241cc2
+  name: Linear N-Methylperfluoro-1 octanesulphonamide
+  short_name: lmepfosa
+  exact_matches:
+  - https://identifiers.org/inchikey:SRMWNTGHXHOWBT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3034468
+  - https://identifiers.org/cas:31506-32-8
+  aliases:
+  - N-Methylperfluorooctanesulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/4c6875ff23
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair N-methylperfluor-1-octaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MePFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: nmefosa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQVZ83R8HY1WHNZ1Z6
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQVZ83R8HY1WHNZ1Z6
+  name: Branched N-Methylperfluoro-1 octanesulphonamide
+  short_name: bmepfosa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/4c6875ff23
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/200c241cc2
+- id: https://w3id.org/peh/biochementities/8ab2ebd7cc
+  name: Linear Perfluorbutanesulfonylamide(N-methyl)acetate
+  short_name: MePFBSAA
+  exact_matches:
+  - https://identifiers.org/inchikey:SKGBGOQHXBAKKO-UHFFFAOYSA-N
+  - https://identifiers.org/cas:159381-10-9
+  - https://identifiers.org/pubchem.compound:22286935
+  aliases:
+  - N-Methyl-N-((perfluorobutyl)sulfonyl)glycine
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair N-methylperfluor-n-butaansulfonylamide azijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MePFBSAA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mepfbsaa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/4dc39ce2fc
+  name: Linear Perfluoro-1-octaperfluoro-1-octanesulphonamide
+  short_name: lpfosa
+  exact_matches:
+  - https://identifiers.org/inchikey:RRRXPPIDPYTNJG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:69785
+  - https://identifiers.org/cas:754-91-6
+  - https://identifiers.org/CHEBI:138089
+  aliases:
+  - Perfluorooctanesulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/7edcb804fb
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-octaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFOSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fosa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQVF8EPEGB4C790NCF
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQVF8EPEGB4C790NCF
+  name: Branched Perfluoro-1-octaperfluoro-1-octanesulphonamide
+  short_name: bpfosa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/7edcb804fb
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/4dc39ce2fc
+- id: https://w3id.org/peh/biochementities/cf887b1508
+  name: Linear Perfluoro-3,6-dioxaheptanoic acid
+  short_name: NFDHA
+  exact_matches:
+  - https://identifiers.org/inchikey:PPWRLPJIHGWGFH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:2782393
+  - https://identifiers.org/cas:151772-58-6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluor-3,6-dioxaheptaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: NFDHA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: nfdha
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/d98a08d508
+  name: Linear Perfluoro-4-ethylcyclohexane sulfonic acid
+  short_name: PFECHS
+  exact_matches:
+  - https://identifiers.org/inchikey:ICKAEAFPESRWOT-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:101650
+  - https://identifiers.org/cas:646-83-3
+  aliases:
+  - Perfluoro-4-ethylcyclohexane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluor-4-ethylcyclohexaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFECHS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfechs
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c5635811ab
+  name: Linear Perfluoro-4-methoxypropanoic acid
+  short_name: PFMPA
+  exact_matches:
+  - https://identifiers.org/inchikey:AGIMOOYNBDLMJV-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluor-4-methoxypropaanzuur (ook PF4OPeA)
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFMPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfmpa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/277d8f6dd9
+  name: Linear Perfluoro-5-methoxybutanoic acid
+  short_name: PFMBA
+  exact_matches:
+  - https://identifiers.org/inchikey:CZTBTZZANBJSLY-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluor-5-methoxybutaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFMBA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfmba
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/f08cb129c7
+  name: Linear Perfluorobutane sulfonic acid
+  short_name: lpfbs
+  exact_matches:
+  - https://identifiers.org/CHEBI:132446
+  - https://identifiers.org/cas:375-73-5
+  - https://identifiers.org/cas:59933-66-3
+  - https://identifiers.org/pubchem.compound:67815
+  - https://identifiers.org/inchikey:JGTNAGYHADQMCM-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/ce1337f8d5
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-butaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFBS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfbs
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQB1MNZ8X4KMN9F59B
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQB1MNZ8X4KMN9F59B
+  name: Branched Perfluorobutane sulfonic acid
+  short_name: bpfbs
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/ce1337f8d5
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/f08cb129c7
+- id: https://w3id.org/peh/biochementities/63e119fc83
+  name: Linear Perfluorobutanoic acid
+  short_name: PFBA
+  exact_matches:
+  - https://identifiers.org/CHEBI:39426
+  - https://identifiers.org/cas:375-22-4
+  - https://identifiers.org/pubchem.compound:9777
+  - https://identifiers.org/inchikey:YPJUNDFVDDCYIH-UHFFFAOYSA-N
+  aliases:
+  - Heptafluorobutyric acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-butaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFBA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfba
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/796cb71129
+  name: Linear Perfluorobutylsulphonamide
+  short_name: PFBSA
+  exact_matches:
+  - https://identifiers.org/inchikey:FUVKFLJWBHVMHX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:10958205
+  - https://identifiers.org/cas:30334-69-1
+  aliases:
+  - Perfluorobutane
+  - sulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-butaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFBSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfbsa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/5c57cd34e3
+  name: Linear Perfluorodecane sulfonic acid
+  short_name: lpfds
+  exact_matches:
+  - https://identifiers.org/inchikey:HYWZIAVPBSTISZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:67636
+  - https://identifiers.org/cas:335-77-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/b62fb34963
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-decaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFDS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfds
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQAFEDGAK4C6C1VR27
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQAFEDGAK4C6C1VR27
+  name: Branched Perfluorodecane sulfonic acid
+  short_name: bpfds
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/b62fb34963
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/5c57cd34e3
+- id: https://w3id.org/peh/biochementities/bf6184953a
+  name: Linear Perfluorodecanoic acid
+  short_name: lpfda
+  exact_matches:
+  - https://identifiers.org/CHEBI:35546
+  - https://identifiers.org/cas:335-76-2
+  - https://identifiers.org/pubchem.compound:9555
+  - https://identifiers.org/inchikey:PCIUEQPBYFRTEM-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/d6f3655454
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-decaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfda
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQTM8JMKBVAERP9DTJ
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQTM8JMKBVAERP9DTJ
+  name: Branched Perfluorodecanoic acid
+  short_name: bpfda
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/d6f3655454
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/bf6184953a
+- id: https://w3id.org/peh/biochementities/5aed9ac397
+  name: Linear Perfluorodecylphosphonic acid
+  short_name: PFDPA
+  exact_matches:
+  - https://identifiers.org/inchikey:CTGNCBOZEMOASL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:85828788
+  - https://identifiers.org/cas:52299-26-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair perfluordecylfosfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFDPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfdpa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/0b23a5127a
+  name: Linear Perfluorododecane sulfonic acid
+  short_name: PFDoDS
+  exact_matches:
+  - https://identifiers.org/inchikey:CFCRODHVHXGTPC-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3018866
+  - https://identifiers.org/cas:79780-39-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-dodecaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFDoDS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfdods
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/259a095494
+  name: Linear Perfluorododecanoic acid
+  short_name: lpfdoda
+  exact_matches:
+  - https://identifiers.org/CHEBI:90633
+  - https://identifiers.org/cas:307-55-1
+  - https://identifiers.org/pubchem.compound:67545
+  - https://identifiers.org/inchikey:CXGONMQFMIYUJR-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/44fff4fd08
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-dodecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFDoA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfdoda
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ6PYJ6FDG5GVBPP81
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ6PYJ6FDG5GVBPP81
+  name: Branched Perfluorododecanoic acid
+  short_name: bpfdoda
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/44fff4fd08
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/259a095494
+- id: https://w3id.org/peh/biochementities/058fafe48c
+  name: Linear Perfluoroheptane sulfonic acid
+  short_name: lpfhps
+  exact_matches:
+  - https://identifiers.org/inchikey:OYGQVDSRYXATEL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:67820
+  - https://identifiers.org/cas:375-92-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/7d2168ffbf
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-heptaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHpS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhps
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQE31M7JS8E0CEPAJY
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQE31M7JS8E0CEPAJY
+  name: Branched Perfluoroheptane sulfonic acid
+  short_name: bpfhps
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/7d2168ffbf
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/058fafe48c
+- id: https://w3id.org/peh/biochementities/d93ebf3e87
+  name: Linear Perfluoroheptanoic acid
+  short_name: lpfhpa
+  exact_matches:
+  - https://identifiers.org/CHEBI:35547
+  - https://identifiers.org/cas:375-85-9
+  - https://identifiers.org/pubchem.compound:67818
+  - https://identifiers.org/inchikey:ZWBAMYVPMDSJGQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/4910c0fa4c
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-heptaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHpA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhpa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQYE9VRHZQAN5SW39T
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQYE9VRHZQAN5SW39T
+  name: Branched Perfluoroheptanoic acid
+  short_name: bpfhpa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/4910c0fa4c
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/d93ebf3e87
+- id: https://w3id.org/peh/biochementities/e97d5c58b6
+  name: Linear Perfluorohexadecanoic acid
+  short_name: PFHxDA
+  exact_matches:
+  - https://identifiers.org/inchikey:OJMBMWRMTMHMSZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:106027
+  - https://identifiers.org/cas:67905-19-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-hexadecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHxDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhxda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/6152b955da
+  name: Linear Perfluorohexane sulfonic acid
+  short_name: lpfhxs
+  exact_matches:
+  - https://identifiers.org/CHEBI:132448
+  - https://identifiers.org/cas:355-46-4
+  - https://identifiers.org/inchikey:QZHDEAJFRJCDMF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:67734
+  aliases:
+  - Perfluorohexanesulfonic Acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/eedc90fa8b
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-hexaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHxS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhxs
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQE0SP43FS9R9FR4V7
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQE0SP43FS9R9FR4V7
+  name: Branched Perfluorohexane sulfonic acid
+  short_name: bpfhxs
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/eedc90fa8b
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/6152b955da
+- id: https://w3id.org/peh/biochementities/391bfe09ba
+  name: Linear Perfluorohexanesulfonamide
+  short_name: PFHxSA
+  exact_matches:
+  - https://identifiers.org/inchikey:WDZLGCSJJWEQJO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11603678
+  - https://identifiers.org/cas:41997-13-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-hexaansulfonamide
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHxSA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhxsa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ae3d790b36
+  name: Linear Perfluorohexanoic acid
+  short_name: lpfhxa
+  exact_matches:
+  - https://identifiers.org/CHEBI:83492
+  - https://identifiers.org/cas:307-24-4
+  - https://identifiers.org/pubchem.compound:67542
+  - https://identifiers.org/inchikey:PXUULQAPEKKVAH-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/8e6df03f40
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-hexaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHxA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhxa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ1NDHT47C0CJ1AZ2V
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ1NDHT47C0CJ1AZ2V
+  name: Branched Perfluorohexanoic acid
+  short_name: bpfhxa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/8e6df03f40
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/ae3d790b36
+- id: https://w3id.org/peh/biochementities/668c27e0fe
+  name: Linear Perfluorohexylphosphonic acid
+  short_name: PFHxPA
+  exact_matches:
+  - https://identifiers.org/inchikey:AGCUFKNHQDVTAD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:15930820
+  - https://identifiers.org/cas:68412-68-0
+  - https://identifiers.org/cas:40143-76-8
+  aliases:
+  - Phosphonic acid perfluoro-C6-12-alkyl derivs.
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair perfluorhexylfosfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFHxPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfhxpa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/e3155711ce
+  name: Linear Perfluorononanesulfonic acid
+  short_name: PFNS
+  exact_matches:
+  - https://identifiers.org/inchikey:MNEXVZFQQPKDHC-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:86998
+  - https://identifiers.org/cas:68259-12-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-nonaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFNS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfns
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/147953fa72
+  name: Linear Perfluorononanoic acid
+  short_name: lpfna
+  exact_matches:
+  - https://identifiers.org/CHEBI:38397
+  - https://identifiers.org/cas:375-95-1
+  - https://identifiers.org/pubchem.compound:67821
+  - https://identifiers.org/inchikey:UZUFPBIDKMEQEQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/dc5d8472b8
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-nonaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFNA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfna
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQPAGRZB74D99SX3VV
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQPAGRZB74D99SX3VV
+  name: Branched Perfluorononanoic acid
+  short_name: bpfna
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/dc5d8472b8
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/147953fa72
+- id: https://w3id.org/peh/biochementities/7ebcc3663e
+  name: Linear Perfluoro-n-propanesulfonic acid
+  short_name: PFPrS
+  exact_matches:
+  - https://identifiers.org/inchikey:XBWQFDNGNOOMDZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:9859771
+  - https://identifiers.org/cas:423-41-6
+  aliases:
+  - Perfluoropropanesulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-propaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFPrS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfprs
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/5e7385dd4b
+  name: Linear Perfluoro-n-propanoic acid
+  short_name: PFPrA
+  exact_matches:
+  - https://identifiers.org/inchikey:CVNLJCBQMJOXDW-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-propaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFPrA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfpra
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/ef842d0cbf
+  name: Linear Perfluorooctadecanoic acid
+  short_name: PFODA
+  exact_matches:
+  - https://identifiers.org/inchikey:ZTSDOGSKTICNPQ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:167547
+  - https://identifiers.org/cas:16517-11-6
+  - https://identifiers.org/cas:798556-82-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-octadecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFODA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfoda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/7d792870d0
+  name: Linear Perfluorooctane sulfonic acid
+  short_name: lpfos
+  exact_matches:
+  - https://identifiers.org/CHEBI:39421
+  - https://identifiers.org/cas:1763-23-1
+  - https://identifiers.org/cas:2795-39-3
+  - https://identifiers.org/pubchem.compound:74483
+  - https://identifiers.org/inchikey:YFSUTJLHUFNCNZ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/f263dca71c
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-octaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: L-PFOS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfos
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQGR84WPZDJXJXT546
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQGR84WPZDJXJXT546
+  name: Branched Perfluorooctane sulfonic acid
+  short_name: bpfos
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/f263dca71c
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/7d792870d0
+- id: https://w3id.org/peh/biochementities/85b799af56
+  name: Linear Perfluorooctanesulfonamido acetic acid
+  short_name: PFOSAA
+  exact_matches:
+  - https://identifiers.org/inchikey:AYLOUUCBACYHAB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:10507011
+  - https://identifiers.org/cas:2806-24-8
+  - https://identifiers.org/CHEBI:83505
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-octaansulfonamidoazijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFOSAA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfosaa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/6bf5209d2b
+  name: Linear Perfluorooctanoic acid
+  short_name: lpfoa
+  exact_matches:
+  - https://identifiers.org/CHEBI:35549
+  - https://identifiers.org/cas:335-67-1
+  - https://identifiers.org/pubchem.compound:9554
+  - https://identifiers.org/inchikey:SNGREZUHAYWORS-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/fb91d8f77d
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-octaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFOA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfoa
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ79JXYPS0NAEQXQH4
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ79JXYPS0NAEQXQH4
+  name: Branched Perfluorooctanoic acid
+  short_name: bpfoa
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/fb91d8f77d
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/6bf5209d2b
+- id: https://w3id.org/peh/biochementities/607be8cb17
+  name: Linear Perfluorooctylphosphonic acid
+  short_name: PFOPA
+  exact_matches:
+  - https://identifiers.org/inchikey:PCEKSCOIHGIBSA-UHFFFAOYSA-M
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair perfluoroctylfosfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFOPA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfopa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/3bf70c4497
+  name: Linear Perfluoropentadecanoic acid
+  short_name: PFPeDA
+  exact_matches:
+  - https://identifiers.org/inchikey:BJNCSIWIMCWIMS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:12731198
+  - https://identifiers.org/cas:141074-63-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-pentadecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFPeDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfpeda
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c2c9e40d4b
+  name: Linear Perfluoropentane sulfonate
+  short_name: PFPeS
+  exact_matches:
+  - https://identifiers.org/inchikey:ACEKLXZRZOWKRY-UHFFFAOYSA-M
+  - https://identifiers.org/pubchem.compound:22721493
+  - https://identifiers.org/cas:175905-36-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-pentaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFPeS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfpes
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/1da88279a2
+  name: Linear Perfluoropentanoic acid
+  short_name: lpfpea
+  exact_matches:
+  - https://identifiers.org/CHEBI:83491
+  - https://identifiers.org/cas:2706-90-3
+  - https://identifiers.org/pubchem.compound:75921
+  - https://identifiers.org/inchikey:CXZGQIAOTKWCDB-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/bde5b0162d
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-pentaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFPeA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfpea
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQ1V23PH8E1YBSS6GY
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQ1V23PH8E1YBSS6GY
+  name: Branched Perfluoropentanoic acid
+  short_name: bpfpea
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/bde5b0162d
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/1da88279a2
+- id: https://w3id.org/peh/biochementities/5319ebfcbc
+  name: Linear Perfluorotetradecanoic acid
+  short_name: lpfteda
+  exact_matches:
+  - https://identifiers.org/inchikey:RUDINRUXCKIXAJ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:67822
+  - https://identifiers.org/cas:376-06-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/48f3da1e6e
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-tetradecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFTeDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfteda
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQTR417N1HNCXDET27
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQTR417N1HNCXDET27
+  name: Branched Perfluorotetradecanoic acid
+  short_name: bpfteda
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/48f3da1e6e
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/5319ebfcbc
+- id: https://w3id.org/peh/biochementities/4ab84d5104
+  name: Linear Perfluorotridecanesulfonic acid
+  short_name: PFTrDS
+  exact_matches:
+  - https://identifiers.org/inchikey:JMIXTHMPTMXARZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:21964789
+  - https://identifiers.org/cas:791563-89-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-tridecaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFTrDS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pftrds
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/561eee706e
+  name: Linear Perfluorotridecanoic acid
+  short_name: lpftrda
+  exact_matches:
+  - https://identifiers.org/inchikey:LVDGGZAZAYHXEY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:3018355
+  - https://identifiers.org/cas:72629-94-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/df361a1fa4
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-tridecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFTrDA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pftrda
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQGNCA3YZCECPAP8ZC
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQGNCA3YZCECPAP8ZC
+  name: Branched Perfluorotridecanoic acid
+  short_name: bpftrda
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/df361a1fa4
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/561eee706e
+- id: https://w3id.org/peh/biochementities/8787d4c7c9
+  name: Linear Perfluoroundecanesulfonic acid
+  short_name: PFUnDS
+  exact_matches:
+  - https://identifiers.org/inchikey:UKHUPOMCGUFNAP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:22141518
+  - https://identifiers.org/cas:749786-16-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-undecaansulfonzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFUnDS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfunds
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/e08ecde299
+  name: Linear Perfluoroundecanoic acid
+  short_name: lpfunda
+  exact_matches:
+  - https://identifiers.org/CHEBI:83493
+  - https://identifiers.org/cas:2058-94-8
+  - https://identifiers.org/pubchem.compound:77222
+  - https://identifiers.org/inchikey:SIDINRCMMRKXGQ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/ee7d09db6d
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Perfluoro-n-undecaanzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PFUnA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pfunda
+  group_labels:
+  - PFAS
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/01KT6EDSFQV1BKBQWP03GA5BFK
+- id: https://w3id.org/peh/biochementities/01KT6EDSFQV1BKBQWP03GA5BFK
+  name: Branched Perfluoroundecanoic acid
+  short_name: bpfunda
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/ee7d09db6d
+  is_isomer_of:
+  - https://w3id.org/peh/biochementities/e08ecde299
+- id: https://w3id.org/peh/biochementities/61bca12cd7
+  name: Linear Trifluoroacetic acid
+  short_name: TFA
+  exact_matches:
+  - https://identifiers.org/CHEBI:45892
+  - https://identifiers.org/pubchem.compound:6422
+  - https://identifiers.org/inchikey:DTQVDTLACAAQTR-UHFFFAOYSA-N
+  - https://identifiers.org/cas:76-05-1
+  - https://identifiers.org/cas:599-00-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Lineair Trifluoro azijnzuur
+  - property_name: short_name
+    language: nl-BE
+    translated_value: TFA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tfa
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/7f19380095
+  name: 2H-Perfluoro-2-decenoic acid
+  short_name: 8:2 FTUCA
+  exact_matches:
+  - https://identifiers.org/inchikey:WHZXTVOEGZRRJM-UHFFFAOYSA-N
+  - https://identifiers.org/cas:70887-84-2
+  - https://identifiers.org/pubchem.compound:71404795
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/5cfffb14c8
+  name: 2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic acid
+  short_name: MeFHxSAA
+  exact_matches:
+  - https://identifiers.org/inchikey:YGKAWLSSJSOXNM-UHFFFAOYSA-N
+  - https://identifiers.org/cas:715646-50-7
+  - https://identifiers.org/pubchem.compound:87481295
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c7b567bf63
+  name: 1H,1H,2H,2H-Perfluorohexanesulphonic acid
+  short_name: 4:2 FTSA
+  exact_matches:
+  - https://identifiers.org/inchikey:TXGIGTRUEITPSC-UHFFFAOYSA-N
+  - https://identifiers.org/cas:757124-72-4
+  - https://identifiers.org/pubchem.compound:20734543
+  aliases:
+  - 4:2 Fluorotelomer sulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/800b22de48
+  name: 1H,1H,2H,2H-Perfluorodecanesulfonic Acid
+  short_name: 8:2 FTSA
+  exact_matches:
+  - https://identifiers.org/inchikey:ALVYVCQIFHTIRD-UHFFFAOYSA-N
+  - https://identifiers.org/cas:39108-34-4
+  - https://identifiers.org/pubchem.compound:3016044
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/6d9f0f3058
+  name: Perfluoro(2-((6-chlorohexyl)oxy)ethanesulfonic acid)
+  short_name: 9CL-PF3ONS
+  exact_matches:
+  - https://identifiers.org/inchikey:GGOUUEMCWBTDMT-UHFFFAOYSA-N
+  - https://identifiers.org/cas:756426-58-1
+  - https://identifiers.org/pubchem.compound:22568738
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
+- id: https://w3id.org/peh/biochementities/c0d2233fa8
+  name: 1H,1H,2H,2H-Perfluorooctanesulphonic acid
+  short_name: 6:2 FTSA
+  exact_matches:
+  - https://identifiers.org/inchikey:VIONGDJUYAYOPU-UHFFFAOYSA-N
+  - https://identifiers.org/cas:27619-97-2
+  - https://identifiers.org/pubchem.compound:119688
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - PFAS
