@@ -1,0 +1,1726 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/876786f433
+  name: 1,2,3,4,6,7,8-Heptachlorodibenzo-p-dioxin
+  short_name: 1,2,3,4,6,7,8-HpCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81505
+  - https://identifiers.org/cas:35822-46-9
+  - https://identifiers.org/pubchem.compound:37270
+  - https://identifiers.org/inchikey:WCLNVRQZUKYVAI-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,3,4,6,7,8-heptachloordibenzo-p-dioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hpcdd
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/680e7b0897
+  name: 1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,6,7,8-HxCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81503
+  - https://identifiers.org/cas:57653-85-7
+  - https://identifiers.org/pubchem.compound:42540
+  - https://identifiers.org/inchikey:YCLUIPQDHHPDJJ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,3,6,7,8-hexachloordibenzo-p-dioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcdd67
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/452ad83535
+  name: 1,2,3,4,7,8-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,4,7,8-HxCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81502
+  - https://identifiers.org/cas:39227-28-6
+  - https://identifiers.org/pubchem.compound:38251
+  - https://identifiers.org/inchikey:WCYYQNSQJHPVMG-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,3,4,7,8-hexachloordibenzo-p-dioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcdd66
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/fc0a50d1d2
+  name: 1,2,3,7,8,9-Hexachlorodibenzo-p-dioxin
+  short_name: 1,2,3,7,8,9-HxCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81504
+  - https://identifiers.org/cas:19408-74-3
+  - https://identifiers.org/pubchem.compound:29575
+  - https://identifiers.org/inchikey:LGIRBUBHIWTVCK-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,3,7,8,9-hexachloordibenzo-p-dioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcdd70
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/36f707ca77
+  name: 1,2,3,7,8-Pentachlorodibenzo-p-dioxin
+  short_name: 1,2,3,7,8-PeCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81501
+  - https://identifiers.org/cas:40321-76-4
+  - https://identifiers.org/pubchem.compound:38439
+  - https://identifiers.org/inchikey:FSPZPQQWDODWAU-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2,3,7,8-pentachloordibenzo-p-dioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pecdd
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/87792d963e
+  name: 2,3,7,8-tetrachlorodibenzodioxin
+  short_name: 2,3,7,8-TCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:28119
+  - https://identifiers.org/cas:1746-01-6
+  - https://identifiers.org/pubchem.compound:15625
+  - https://identifiers.org/inchikey:HGUFODBRKLSHSI-UHFFFAOYSA-N
+  aliases:
+  - 2,3,7,8-Tetrachlorodibenzo-P-Dioxin
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,7,8-tetrachloordibenzo-p-dioxine
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2,3,7,8-TCDD
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tcbd
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/2596246b6d
+  name: Octachlorodibenzodioxin
+  short_name: OCDD
+  exact_matches:
+  - https://identifiers.org/CHEBI:81566
+  - https://identifiers.org/cas:3268-87-9
+  - https://identifiers.org/pubchem.compound:18636
+  - https://identifiers.org/inchikey:FOIBFBMSLDGNHL-UHFFFAOYSA-N
+  aliases:
+  - Octachlorodibenzo-P-dioxin
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND0MXJ7J2ZSF49KSFN
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Octachloordibenzodioxine
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ocdd
+  group_labels:
+  - organochlorine compounds
+  - dioxins
+- id: https://w3id.org/peh/biochementities/1b7991f1c3
+  name: Hydroxylated Polychlorinated biphenyl 107
+  short_name: Hydroxylated Polychlorinated biphenyl 107
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: CB107
+  - property_name: short_name
+    language: nl-BE
+    translated_value: CB107
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hocb107
+  remark: 'comments: Can it be this compound? http://exposome-explorer.iarc.fr/compounds/1306 --> although the INCHI KEY in that website refers me to this compound in pubchem… https://pubchem.ncbi.nlm.nih.gov/compound/2_3_6-trichloro-4-_3_4-dichlorophenyl_phenol'
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/86bfac18f4
+  name: Hydroxylated Polychlorinated biphenyl 146
+  short_name: Hydroxylated Polychlorinated biphenyl 146
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: CB146
+  - property_name: short_name
+    language: nl-BE
+    translated_value: CB146
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hocb146
+  remark: 'comments: can it be this compound? http://exposome-explorer.iarc.fr/compounds/1307 // no pubchem reference though'
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/8cda17a2c5
+  name: Hydroxylated Polychlorinated biphenyl 187
+  short_name: Hydroxylated Polychlorinated biphenyl 187
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: CB187
+  - property_name: short_name
+    language: nl-BE
+    translated_value: CB187
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hocb187
+  remark: 'comments: Can it be this compound? http://exposome-explorer.iarc.fr/compounds/1308  --> the IUPAC name appears to be a synonym of https://pubchem.ncbi.nlm.nih.gov/compound/178007'
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/03b82ab588
+  name: Polychlorinated biphenyl 101
+  short_name: PCB 101
+  exact_matches:
+  - https://identifiers.org/inchikey:LAHWLEDBADHJGA-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37807
+  - https://identifiers.org/cas:37680-73-2
+  - https://identifiers.org/CHEBI:233349
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 101
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 101
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb101
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/e03dfb6241
+  name: Polychlorinated biphenyl 105
+  short_name: PCB 105
+  exact_matches:
+  - https://identifiers.org/inchikey:WIDHRBRBACOVOY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36188
+  - https://identifiers.org/cas:32598-14-4
+  - https://identifiers.org/CHEBI:81518
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 105
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 105
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb105
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f7d23be617
+  name: Polychlorinated biphenyl 110
+  short_name: PCB 110
+  exact_matches:
+  - https://identifiers.org/inchikey:ARXHIJMGSIYYRZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38015
+  - https://identifiers.org/cas:38380-03-9
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 110
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 110
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb110
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/50d8c05fc2
+  name: Polychlorinated biphenyl 114
+  short_name: PCB 114
+  exact_matches:
+  - https://identifiers.org/inchikey:SXZSFWHOSHAKMN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:53036
+  - https://identifiers.org/cas:74472-37-0
+  - https://identifiers.org/CHEBI:81519
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 114
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 114
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb114
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/d76928986c
+  name: Polychlorinated biphenyl 118
+  short_name: PCB 118
+  exact_matches:
+  - https://identifiers.org/inchikey:IUTPYMGCWINGEY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:35823
+  - https://identifiers.org/cas:31508-00-6
+  - https://identifiers.org/CHEBI:81520
+  aliases:
+  - 2,3',4,4',5-Pentachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 118
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 118
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb118
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/eead966943
+  name: Polychlorinated biphenyl 123
+  short_name: PCB 123
+  exact_matches:
+  - https://identifiers.org/inchikey:YAHNWSSFXMVPOU-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:47650
+  - https://identifiers.org/cas:65510-44-3
+  - https://identifiers.org/CHEBI:81521
+  aliases:
+  - 2',3,4,4',5-Pentachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 123
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 123
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb123
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/e55dee887e
+  name: Polychlorinated biphenyl 126
+  short_name: PCB 126
+  exact_matches:
+  - https://identifiers.org/inchikey:REHONNLQRWTIFF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:63090
+  - https://identifiers.org/cas:57465-28-8
+  - https://identifiers.org/CHEBI:34317
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 126
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 126
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb126
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/7925828630
+  name: Polychlorinated biphenyl 128
+  short_name: PCB 128
+  exact_matches:
+  - https://identifiers.org/inchikey:BTAGRXWGMYTPBY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38018
+  - https://identifiers.org/cas:11096-82-5
+  - https://identifiers.org/cas:38380-07-3
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 128
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 128
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb128
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/0deef4b0e8
+  name: Polychlorinated biphenyl 138
+  short_name: PCB 138
+  exact_matches:
+  - https://identifiers.org/inchikey:RPUMZMSNLZHIGZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37035
+  - https://identifiers.org/cas:35065-28-2
+  - https://identifiers.org/CHEBI:165219
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 138
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 138
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb138
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/1867446046
+  name: Polychlorinated biphenyl 146
+  short_name: PCB 146
+  exact_matches:
+  - https://identifiers.org/inchikey:BQHCQAQLTCQFJZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40172
+  - https://identifiers.org/cas:51908-16-8
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 146
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 146
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb146
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/38a1e828a9
+  name: Polychlorinated biphenyl 149
+  short_name: PCB 149
+  exact_matches:
+  - https://identifiers.org/inchikey:LKHLFUVHHXCNJH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38016
+  - https://identifiers.org/cas:38380-04-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 149
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 149
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb149
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/a7056fc9f0
+  name: Polychlorinated biphenyl 151
+  short_name: PCB 151
+  exact_matches:
+  - https://identifiers.org/inchikey:UHCLFIWDCYOTOL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40471
+  - https://identifiers.org/cas:52663-63-5
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 151
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 151
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb151
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/58a93178e4
+  name: Polychlorinated biphenyl 153
+  short_name: PCB 153
+  exact_matches:
+  - https://identifiers.org/inchikey:MVWHGTYKUMDIHL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37034
+  - https://identifiers.org/cas:35065-27-1
+  - https://identifiers.org/CHEBI:34202
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 153
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 153
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb153
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/0a6082d19f
+  name: Polychlorinated biphenyl 156
+  short_name: PCB 156
+  exact_matches:
+  - https://identifiers.org/inchikey:LCXMEXLGMKFLQO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38019
+  - https://identifiers.org/cas:38380-08-4
+  - https://identifiers.org/CHEBI:81522
+  aliases:
+  - 2,3,3',4,4',5-Hexachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 156
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 156
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb156
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/eb2857b3ec
+  name: Polychlorinated biphenyl 157
+  short_name: PCB 157
+  exact_matches:
+  - https://identifiers.org/inchikey:YTWXDQVNPCIEOX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:50891
+  - https://identifiers.org/cas:69782-90-7
+  - https://identifiers.org/CHEBI:81523
+  aliases:
+  - 2,3,3',4,4',5'-Hexachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 157
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 157
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb157
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/023edce4f6
+  name: Polychlorinated biphenyl 158
+  short_name: PCB 158
+  exact_matches:
+  - https://identifiers.org/inchikey:ZQUPQXINXTWCQR-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:63072
+  - https://identifiers.org/cas:74472-42-7
+  aliases:
+  - 2,3,3',4,4',6-Hexachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 158
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 158
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb158
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/61b0fc3cdd
+  name: Polychlorinated biphenyl 167
+  short_name: PCB 167
+  exact_matches:
+  - https://identifiers.org/inchikey:AZXHAWRMEPZSSV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40479
+  - https://identifiers.org/cas:52663-72-6
+  - https://identifiers.org/CHEBI:81524
+  aliases:
+  - 2,3',4,4',5,5'-Hexachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 167
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 167
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb167
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/e4c0e13662
+  name: Polychlorinated biphenyl 169
+  short_name: PCB 169
+  exact_matches:
+  - https://identifiers.org/inchikey:ZHLICBPIXDOFFG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36231
+  - https://identifiers.org/cas:32774-16-6
+  - https://identifiers.org/CHEBI:81517
+  aliases:
+  - 3,3',4,4',5,5'-Hexachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 169
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 169
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb169
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/a615c46076
+  name: Polychlorinated biphenyl 170
+  short_name: PCB 170
+  exact_matches:
+  - https://identifiers.org/inchikey:RMPWIIKNWPVWNG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37037
+  - https://identifiers.org/cas:35065-30-6
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 170
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 170
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb170
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/6133f5488f
+  name: Polychlorinated biphenyl 171
+  short_name: PCB 171
+  exact_matches:
+  - https://identifiers.org/inchikey:TZMHVHLTPWKZCI-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40478
+  - https://identifiers.org/cas:52663-71-5
+  aliases:
+  - 2,2',3,3',4,4',6-Heptachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 171
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 171
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb171
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/8d6e1a506f
+  name: Polychlorinated biphenyl 172
+  short_name: PCB 172
+  exact_matches:
+  - https://identifiers.org/inchikey:HOPMUCXYRNOABF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40481
+  - https://identifiers.org/cas:52663-74-8
+  aliases:
+  - 2,2',3,3',4,5,5'-Heptachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 172
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 172
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb172
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/e384a3cba0
+  name: Polychlorinated biphenyl 174
+  short_name: PCB 174
+  exact_matches:
+  - https://identifiers.org/inchikey:ZDLMBNHYTPHDLF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38025
+  - https://identifiers.org/cas:38411-25-5
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 174
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 174
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb174
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f7f00aef09
+  name: Polychlorinated biphenyl 177
+  short_name: PCB 177
+  exact_matches:
+  - https://identifiers.org/inchikey:CXOYNJAHPUASHN-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40477
+  - https://identifiers.org/cas:52663-70-4
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 177
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 177
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb177
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/d75060a0ad
+  name: Polychlorinated biphenyl 178
+  short_name: PCB 178
+  exact_matches:
+  - https://identifiers.org/inchikey:WCIBKXHMIXUQHK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40474
+  - https://identifiers.org/cas:52663-67-9
+  aliases:
+  - 2,2',3,3',5,5',6-Heptachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 178
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 178
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb178
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/fea83e7f07
+  name: Polychlorinated biphenyl 18
+  short_name: PCB 18
+  exact_matches:
+  - https://identifiers.org/inchikey:DCMURXAZTZQAFB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37803
+  - https://identifiers.org/cas:37680-65-2
+  aliases:
+  - 2,2',5-Trichlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 18
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 18
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb18
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/9de1355591
+  name: Polychlorinated biphenyl 180
+  short_name: PCB 180
+  exact_matches:
+  - https://identifiers.org/inchikey:WBHQEUPUMONIKF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37036
+  - https://identifiers.org/cas:35065-29-3
+  - https://identifiers.org/CHEBI:165220
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 180
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 180
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb180
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/840e962eb5
+  name: Polychlorinated biphenyl 183
+  short_name: PCB 183
+  exact_matches:
+  - https://identifiers.org/inchikey:KQBFUDNJKCZEDQ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40476
+  - https://identifiers.org/cas:52663-69-1
+  aliases:
+  - 2,2',3,4,4',5',6-Heptachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 183
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 183
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb183
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/00fb5fbc05
+  name: Polychlorinated biphenyl 187
+  short_name: PCB 187
+  exact_matches:
+  - https://identifiers.org/inchikey:UDMZPLROONOSEF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40475
+  - https://identifiers.org/cas:52663-68-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 187
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 187
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb187
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f588f3a3d7
+  name: Polychlorinated biphenyl 189
+  short_name: PCB 189
+  exact_matches:
+  - https://identifiers.org/inchikey:XUAWBXBYHDRROL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38306
+  - https://identifiers.org/cas:39635-31-9
+  - https://identifiers.org/CHEBI:81525
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 189
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 189
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb189
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/564dbf63d6
+  name: Polychlorinated biphenyl 194
+  short_name: PCB 194
+  exact_matches:
+  - https://identifiers.org/inchikey:DTMRKGRREZAYAP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37251
+  - https://identifiers.org/cas:35694-08-7
+  aliases:
+  - 2,2',3,3',4,4',5,5'-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 194
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 194
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb194
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/4b6b61cc8f
+  name: Polychlorinated biphenyl 195
+  short_name: PCB 195
+  exact_matches:
+  - https://identifiers.org/inchikey:JAHJITLFJSDRCG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40485
+  - https://identifiers.org/cas:52663-78-2
+  - https://identifiers.org/cas:31472-83-0
+  aliases:
+  - 2,2',3,3',4,4',5,6-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 195
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 195
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb195
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/476b61ad5d
+  name: Polychlorinated biphenyl 196
+  short_name: PCB 196
+  exact_matches:
+  - https://identifiers.org/inchikey:BQFCCUSDZLKBJG-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:39253
+  - https://identifiers.org/cas:42740-50-1
+  aliases:
+  - 2,2',3,3',4,4',5,6'-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 196
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 196
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb196
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/7a6e2827a2
+  name: Polychlorinated biphenyl 199
+  short_name: PCB 199
+  exact_matches:
+  - https://identifiers.org/inchikey:HJBYDWKNARZTMJ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40482
+  - https://identifiers.org/cas:52663-75-9
+  aliases:
+  - 2,2',3,3',4,5,5',6'-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 199
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 199
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb199
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/cb4446dffa
+  name: Polychlorinated biphenyl 201
+  short_name: PCB 201
+  exact_matches:
+  - https://identifiers.org/inchikey:LJQOBQLZTUSEJA-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38410
+  - https://identifiers.org/cas:40186-71-8
+  aliases:
+  - 2,2',3,3',4,5',6,6'-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 201
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 201
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb201
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/b7d7fd953f
+  name: Polychlorinated biphenyl 203
+  short_name: PCB 203
+  exact_matches:
+  - https://identifiers.org/inchikey:DCPDZFRGNJDWPP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:40483
+  - https://identifiers.org/cas:52663-76-0
+  aliases:
+  - 2,2',3,4,4',5,5',6-Octachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 203
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 203
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb203
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/88ccff6f7a
+  name: Polychlorinated biphenyl 206
+  short_name: PCB 206
+  exact_matches:
+  - https://identifiers.org/inchikey:JFIMDKGRGPNPRQ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38411
+  - https://identifiers.org/cas:40186-72-9
+  - https://identifiers.org/cas:53742-07-7
+  aliases:
+  - 2,2',3,3',4,4',5,5',6-Nonachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 206
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 206
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb206
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/b2745e3b3f
+  name: Polychlorinated biphenyl 209
+  short_name: PCB 209
+  exact_matches:
+  - https://identifiers.org/inchikey:ONXPZLFXDMAPRO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:16318
+  - https://identifiers.org/cas:2051-24-3
+  - https://identifiers.org/CHEBI:34666
+  aliases:
+  - Decachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 209
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 209
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb209
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/380ec69af4
+  name: Polychlorinated biphenyl 28
+  short_name: PCB 28
+  exact_matches:
+  - https://identifiers.org/inchikey:BZTYNSQSZHARAZ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:23448
+  - https://identifiers.org/cas:7012-37-5
+  - https://identifiers.org/CHEBI:233161
+  aliases:
+  - 2,4,4'-Trichlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 28
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 28
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb28
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f28a9dc8c7
+  name: Polychlorinated biphenyl 44
+  short_name: PCB 44
+  exact_matches:
+  - https://identifiers.org/inchikey:ALDJIKXAHSDLLB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38875
+  - https://identifiers.org/cas:41464-39-5
+  aliases:
+  - 2,2',3,5'-Tetrachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 44
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 44
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb44
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/29ac39621a
+  name: Polychlorinated biphenyl 49
+  short_name: PCB 49
+  exact_matches:
+  - https://identifiers.org/inchikey:ZWPVHELAQPIZHO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38876
+  - https://identifiers.org/cas:41464-40-8
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 49
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 49
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb49
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/ebd6942505
+  name: Polychlorinated biphenyl 52
+  short_name: PCB 52
+  exact_matches:
+  - https://identifiers.org/inchikey:HCWZEPKLWVAEOV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:37248
+  - https://identifiers.org/cas:35693-99-3
+  - https://identifiers.org/CHEBI:34206
+  aliases:
+  - 2,2',5,5'-Tetrachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 52
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 52
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb52
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/e1761963c9
+  name: Polychlorinated biphenyl 66
+  short_name: PCB 66
+  exact_matches:
+  - https://identifiers.org/inchikey:RKLLTEAEZIJBAU-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36185
+  - https://identifiers.org/cas:32598-10-0
+  aliases:
+  - 2,3',4,4'-Tetrachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 66
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 66
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb66
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f63f01f6cb
+  name: Polychlorinated biphenyl 74
+  short_name: PCB 74
+  exact_matches:
+  - https://identifiers.org/inchikey:TULCXSBAPHCWCF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36218
+  - https://identifiers.org/cas:32690-93-0
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 74
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 74
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb74
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/08345a473c
+  name: Polychlorinated biphenyl 77
+  short_name: PCB 77
+  exact_matches:
+  - https://identifiers.org/inchikey:UQMGJOKDKOLIDP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:36187
+  - https://identifiers.org/cas:32598-13-3
+  - https://identifiers.org/cas:80333-65-9
+  - https://identifiers.org/CHEBI:1367
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 77
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 77
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb77
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/2825b69076
+  name: Polychlorinated biphenyl 81
+  short_name: PCB 81
+  exact_matches:
+  - https://identifiers.org/inchikey:BHWVLZJTVIYLIV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:51043
+  - https://identifiers.org/cas:70362-50-4
+  - https://identifiers.org/CHEBI:81516
+  aliases:
+  - 3,4,4',5-Tetrachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 81
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 81
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb81
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/61f937b1f3
+  name: Polychlorinated biphenyl 87
+  short_name: PCB 87
+  exact_matches:
+  - https://identifiers.org/inchikey:OPKYDBFRKPQCBS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38014
+  - https://identifiers.org/cas:38380-02-8
+  aliases:
+  - 2,2',3,4,5'-Pentachlorobiphenyl
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 87
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 87
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb87
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/b7a143fe05
+  name: Polychlorinated biphenyl 99
+  short_name: PCB 99
+  exact_matches:
+  - https://identifiers.org/inchikey:LMQJBFRGXHMNOX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:38013
+  - https://identifiers.org/cas:38380-01-7
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9c34ebdc76
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Polychloorbifenyl 99
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PCB 99
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pcb99
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/7b6391b449
+  name: Trans-nonachlor
+  short_name: Trans-nonachlor
+  exact_matches:
+  - https://identifiers.org/CHEBI:81540
+  - https://identifiers.org/cas:39765-80-5
+  - https://identifiers.org/cas:5103-73-1
+  - https://identifiers.org/pubchem.compound:12313421
+  - https://identifiers.org/inchikey:OCHOKXCPKDPNQU-FLVMBEMLSA-N
+  aliases:
+  - Npc328442
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d17f057449
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Trans-nonachloor
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tnona
+  remark: 'comments: Anthony, can you double check if this one is correct? Because in synonyms we have both cis and trans nonachlor  (https://pubchem.ncbi.nlm.nih.gov/compound/trans-Nonachlor)'
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f479979650
+  name: Beta-hexachlorocyclohexane
+  short_name: bHCH
+  exact_matches:
+  - https://identifiers.org/CHEBI:28428
+  - https://identifiers.org/cas:319-85-7
+  - https://identifiers.org/pubchem.compound:483937258
+  - https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-CDRYSYESSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/38b9eb4712
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Beta hexachlorocyclohexaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: bHCH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bhch
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/f19bfb8171
+  name: Dichlorodiphenyldichloroethylene
+  short_name: p,p'-DDE
+  exact_matches:
+  - https://identifiers.org/CHEBI:16598
+  - https://identifiers.org/cas:72-55-9
+  - https://identifiers.org/cas:68679-99-2
+  - https://identifiers.org/pubchem.compound:3035
+  - https://identifiers.org/inchikey:UCNVFOCBFJOQAL-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4ccf22f8e2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dichlorodiphenyldichloroethyleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: p,p'-DDE
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ppdde
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/4ccf22f8e2
+  name: Dichlorodiphenyltrichloroethane
+  short_name: p,p'-DDT
+  exact_matches:
+  - https://identifiers.org/CHEBI:16130
+  - https://identifiers.org/cas:50-29-3
+  - https://identifiers.org/pubchem.compound:505853810
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dichloordifenyltrichloorethaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: p,p'-DDT
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ppddt
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/1a1d2eea80
+  name: Gamma-hexachlorocyclohexane
+  short_name: lindane
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:483925796
+  aliases:
+  - lindane
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/38b9eb4712
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Gamma hexachlororcyclohexaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: gHCH
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ghch
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+- id: https://w3id.org/peh/biochementities/7ac4b971f0
+  name: Oxychlordane
+  short_name: OXC
+  exact_matches:
+  - https://identifiers.org/CHEBI:81541
+  - https://identifiers.org/cas:27304-13-8
+  - https://identifiers.org/pubchem.compound:13785700
+  - https://identifiers.org/inchikey:VWGNQYSIWFHEQU-KGEUUOKHSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Oxychlordaan
+  - property_name: short_name
+    language: nl-BE
+    translated_value: OXC
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxc
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8ef76a2b2e
+  name: Cis-chlordane
+  short_name: α-chlordane
+  exact_matches:
+  - https://identifiers.org/CHEBI:39068
+  - https://identifiers.org/cas:5103-71-9
+  - https://identifiers.org/pubchem.compound:12303035
+  - https://identifiers.org/inchikey:BIWJNBZANLAXMG-IDTQJTQFSA-N
+  aliases:
+  - alpha-chlordane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cis-chlordane
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: achlor
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+- id: https://w3id.org/peh/biochementities/354482cd50
+  name: Trans-chlordane
+  short_name: γ-chlordane
+  exact_matches:
+  - https://identifiers.org/CHEBI:39069
+  - https://identifiers.org/cas:5103-74-2
+  - https://identifiers.org/pubchem.compound:12303036
+  - https://identifiers.org/inchikey:BIWJNBZANLAXMG-OESJLNMISA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Trans-chloordaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ychlor
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+- id: https://w3id.org/peh/biochementities/8a785d544e
+  name: Cis-nonachlor
+  short_name: Cis-nonachlor
+  exact_matches:
+  - https://identifiers.org/cas:5103-73-1
+  - https://identifiers.org/pubchem.compound:12313426
+  - https://identifiers.org/inchikey:OCHOKXCPKDPNQU-MSFPVELZSA-N
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d17f057449
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cis-nonachloor
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cisnonac
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+- id: https://w3id.org/peh/biochementities/cdd86cd306
+  name: Hexachlorobenzene
+  short_name: HCB
+  exact_matches:
+  - https://identifiers.org/CHEBI:5692
+  - https://identifiers.org/cas:118-74-1
+  - https://identifiers.org/pubchem.compound:8370
+  - https://identifiers.org/inchikey:CKAPSXZOOQJIBF-UHFFFAOYSA-N
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Hexachlorobenzeen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: HCB
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hcb
+  group_labels:
+  - organochlorine compounds
+  - pesticides
+
+- id: https://w3id.org/peh/biochementities/9c34ebdc76
+  name: Polychlorinated biphenyl
+  short_name: PCB
+  exact_matches:
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Polychlorinated biphenyl
+  - property_name: short_name
+    language: nl-be
+    translated_value: PCB
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - organochlorine compounds
+- id: https://w3id.org/peh/biochementities/d17f057449
+  name: Chlordane
+  short_name: Chlordane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
+  exact_matches:
+  - https://identifiers.org/CHEBI:34623
+  - https://identifiers.org/cas:57-74-9
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Chloordaan
+  group_labels:
+  - pesticides
+  - organochlorine compounds
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/38b9eb4712
+  name: Hexachlorocyclohexane
+  short_name: HCH
+  exact_matches:
+  - https://identifiers.org/CHEBI:24536
+  - https://identifiers.org/cas:608-73-1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Hexachloorcyclohexaan
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  group_labels:
+  - pesticides
+  - organochlorine compounds
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_25944
