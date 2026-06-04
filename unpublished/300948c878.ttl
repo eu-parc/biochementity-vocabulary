@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/300948c878> a owl:Class ;
+    rdfs:label "Mono(2-propyl-6-oxoheptyl) phthalate",
+        "Mono(2-propyl-6-oxoheptyl)ftalaat"@nl-be ;
+    schema1:alternateName "oxo-MPrHpP" ;
+    schema1:comment "comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "oxomprhpp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/527f5ba7b6> .
+

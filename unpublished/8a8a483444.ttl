@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/8a8a483444> a owl:Class ;
+    rdfs:label "7-Carboxy-(mono-methyl-heptyl) phthalate",
+        "7-Carboxy-(mono-methylheptyl)ftalaat"@nl-be ;
+    schema1:alternateName "cx-MiNP",
+        "cx-MiNP"@nl-be ;
+    schema1:comment "source: http://exposome-explorer.iarc.fr/compounds/1465" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <INCHIKEY:>,
+        <file:///home/runner/work/biochementity-vocabulary/biochementity-vocabulary/build/IGGGGTKTEAEHSG-UHFFFAOYSA-N> ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/015aee8b1a> .
+

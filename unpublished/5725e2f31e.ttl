@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/5725e2f31e> a owl:Class ;
+    rdfs:label "1-mono-(2-ethyl-5-oxo-hexyl) benzene-1,4-dicarboxylate",
+        "1-mono-(2-ethyl-5-oxo-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+    schema1:alternateName "5oxo-MEHTP" ;
+    schema1:comment "comments: same as the previous ones, to ask UBA? https://www.umweltprobenbank.de/en/documents/profiles/analytes/27748#:~:text=1%2Dmono%2D(2%2Dethyl%2D5%2Doxo%2Dhexyl)%20benzene%2D1%2C4%2Ddicarboxylate%20is%20a%20metabolite%20of%20DEHTP." ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "oxomehtp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cbcefcf7df> .
+

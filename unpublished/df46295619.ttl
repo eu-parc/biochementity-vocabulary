@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/df46295619> a owl:Class ;
+    rdfs:label "1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate",
+        "1-mono-(2-ethyl-5-hydroxy-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+    schema1:alternateName "5OH-MEHTP",
+        "Mono‑2‑ethylHydroxyhexyl Terephthalate",
+        "5OH-MEHTP"@nl-be ;
+    schema1:comment "comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867 --> but the compound doesn't seem to be the same. The short_name seems to come from german studies (see source column) --> maybe we can ask UBA for the keys?. source: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27749" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:ODRKAFOVPBFSIN-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:155898867> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohmehtp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cbcefcf7df> .
+

@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/d08cd35574> a owl:Class ;
+    rdfs:label "Mono-(2-propyl-6-carboxyhexyl) phthalate",
+        "Mono(2,7-methyl-7- carboxy-heptyl) ftalaat"@nl-be ;
+    schema1:alternateName "cx-MPHP",
+        "cx-MPHP"@nl-be ;
+    schema1:comment "comments: The name is incorrect (is the same name as Cx-MPHxP) or do we have this twice with two short names??)) This should be checked carefully!!" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cxmphp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/527f5ba7b6> .
+

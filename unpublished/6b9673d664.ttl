@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/6b9673d664> a owl:Class ;
+    rdfs:label "Mono-methyl-octyl phthalate",
+        "Monomethyloctylftalaat"@nl-be ;
+    schema1:alternateName "MiNP" ;
+    schema1:comment "a group of metabolic breakdown products formed in the human body after exposure to Di-isononyl phthalate (DINP)" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "minp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/015aee8b1a> .
+

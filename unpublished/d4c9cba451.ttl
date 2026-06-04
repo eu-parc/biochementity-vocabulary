@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d4c9cba451> a owl:Class ;
+    rdfs:label "3-carboxyl-mono-propyl phthalate",
+        "3-carboxyl-monopropylftalaat"@nl-be ;
+    schema1:alternateName "3cx-MPP",
+        "Mono(3-carboxypropyl) phthalate",
+        "3cx-MPP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132872>,
+        <https://identifiers.org/cas:66851-46-5>,
+        <https://identifiers.org/inchikey:IYTPMLIWBZMBSL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:53435015> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cxmpp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/ca6f875372> .
+

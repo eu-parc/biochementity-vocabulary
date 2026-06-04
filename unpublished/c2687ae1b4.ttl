@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c2687ae1b4> a owl:Class ;
+    rdfs:label "Mono-n-heptyl phthalate",
+        "Mono-n-heptylftalaat"@nl-be ;
+    schema1:alternateName "MnHpP" ;
+    schema1:comment "comments: According to chatGPT, this is an isomer of https://pubchem.ncbi.nlm.nih.gov/compound/Mono-2-heptyl-phthalate --> which is also the INCHIKEY in our DB. But is it the same compound?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:NTIWNFLUZQSLDR-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mnhpp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/3924979385> .
+

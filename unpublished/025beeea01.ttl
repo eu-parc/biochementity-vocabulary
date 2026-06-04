@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/025beeea01> a owl:Class ;
+    rdfs:label "1-mono-(2-carboxyl-methyl-hexyl) benzene-1,4-dicarboxylate",
+        "1-mono-(2-carboxyl-methyl-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+    schema1:alternateName "2cx-MMHTP",
+        "2cx-MMHTP"@nl-be ;
+    schema1:comment "comments: The INCHIKEY in our DB directs me back to our biomarker list only, so not sure if it is correct. I found nothing online other than: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27750 --> so I gueess this comes from one of the german studies. to contact UBA?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "cxmmhtp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/cbcefcf7df> .
+

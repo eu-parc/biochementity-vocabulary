@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/3b70545c92> a owl:Class ;
+    rdfs:label "Di-isodecyl phthalate (all C10 phthalates including DPHP)",
+        "Di-isodecylftalaat (alle C10-ftalaten inclusief DPHP)"@nl-be ;
+    schema1:alternateName "DiDP" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:34709>,
+        <https://identifiers.org/cas:26761-40-0> ;
+    pehterms:hasGroupLabel "phthalates" .
+

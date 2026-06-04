@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/8f0a006a01> a owl:Class ;
+    rdfs:label "Mono-(7-carboxy-n-hexyl) phthalate",
+        "Mono-(7-carboxy-n-hexyl)ftalaat"@nl-be ;
+    schema1:alternateName "MCHxP" ;
+    schema1:comment "comments: I cannot find this compound anywhere online" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mchxp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/3924979385> .
+

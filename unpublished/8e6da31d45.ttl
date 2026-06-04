@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/8e6da31d45> a owl:Class ;
+    rdfs:label "C10 hydroxy phthalate metabolites" ;
+    schema1:alternateName "OH-MiDP" ;
+    schema1:comment "comments: Operationally defined LC-MS/MS sum parameter covering multiple C10 hydroxy phthalate metabolites (MiDP), including the DPHP-derived OH-MPHP." ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohmidp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/3b70545c92> .
+

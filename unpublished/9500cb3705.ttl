@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/9500cb3705> a owl:Class ;
+    rdfs:label "Di-isopentyl phthalate",
+        "Di-isopentylftalaat"@nl-be ;
+    schema1:alternateName "DiPeP" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/inchikey:JANBFCARANRIKJ-UHFFFAOYSA-N> ;
+    pehterms:hasGroupLabel "phthalates" .
+

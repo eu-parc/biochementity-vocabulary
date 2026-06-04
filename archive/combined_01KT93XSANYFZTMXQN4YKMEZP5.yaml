@@ -36,7 +36,9 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: cxmmhtp
-  remark: 'comments: The INCHIKEY in our DB directs me back to our biomarker list only, so not sure if it is correct. I found nothing online other than: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27750 --> so I gueess this comes from one of the german studies. to contact UBA?'
+  remark: 'comments: The INCHIKEY in our DB directs me back to our biomarker list
+    only, so not sure if it is correct. I found nothing online other than: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27750
+    --> so I gueess this comes from one of the german studies. to contact UBA?'
 - id: https://w3id.org/peh/biochementities/9c547d664a
   name: 1-mono-(2-ethyl-5-carboxyl-pentyl) benzene-1,4-dicarboxylate
   short_name: 5cx-MEPTP
@@ -61,7 +63,11 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: cxmeptp
-  remark: 'comments: Can someone check if the long name is correct? The short name directs me to this publication https://pubmed.ncbi.nlm.nih.gov/28407489/ --> and then if I look for the name used there mono(2-ethyl-5-carboxypentyl) terephthalate (which now I put in aliases) then it directs me to the compound I added the exact_matches for. So that needs to be verified'
+  remark: 'comments: Can someone check if the long name is correct? The short name
+    directs me to this publication https://pubmed.ncbi.nlm.nih.gov/28407489/ --> and
+    then if I look for the name used there mono(2-ethyl-5-carboxypentyl) terephthalate
+    (which now I put in aliases) then it directs me to the compound I added the exact_matches
+    for. So that needs to be verified'
 - id: https://w3id.org/peh/biochementities/df46295619
   name: 1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate
   short_name: 5OH-MEHTP
@@ -87,7 +93,9 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ohmehtp
-  remark: 'comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867 --> but the compound doesn''t seem to be the same. The short_name seems to come from german studies (see source column) --> maybe we can ask UBA for the keys?.
+  remark: 'comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867
+    --> but the compound doesn''t seem to be the same. The short_name seems to come
+    from german studies (see source column) --> maybe we can ask UBA for the keys?.
     source: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27749'
 - id: https://w3id.org/peh/biochementities/5725e2f31e
   name: 1-mono-(2-ethyl-5-oxo-hexyl) benzene-1,4-dicarboxylate
@@ -225,7 +233,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ohmphp
-  remark: 'comments: Structurally defined hydroxy metabolite (6-OH-mono-propyl-heptyl phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
+  remark: 'comments: Structurally defined hydroxy metabolite (6-OH-mono-propyl-heptyl
+    phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
 - id: https://w3id.org/peh/biochementities/8e6da31d45
   name: C10 hydroxy phthalate metabolites
   short_name: OH-MiDP
@@ -239,7 +248,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ohmidp
-  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple C10 hydroxy phthalate metabolites (MiDP), including the DPHP-derived OH-MPHP.'
+  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple
+    C10 hydroxy phthalate metabolites (MiDP), including the DPHP-derived OH-MPHP.'
 - id: https://w3id.org/peh/biochementities/0689d2fc42
   name: 6-Oxo-mono-propyl-heptyl phthalate
   short_name: oxo-MPHP
@@ -255,7 +265,8 @@ biochementity_subclasses:
   translations:
   - property_name: name
     language: nl-BE
-    translated_value: 6-Oxo-Mono-propyl-heptyl ftalaat (GC-HRMS method, only DPHP metabolites)
+    translated_value: 6-Oxo-Mono-propyl-heptyl ftalaat (GC-HRMS method, only DPHP
+      metabolites)
   - property_name: short_name
     language: nl-BE
     translated_value: 6-oxo-MPHP
@@ -263,7 +274,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: oxomphp
-  remark: 'comments: Structurally defined oxo metabolite (6-oxo-mono-propyl-heptyl phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
+  remark: 'comments: Structurally defined oxo metabolite (6-oxo-mono-propyl-heptyl
+    phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
 - id: https://w3id.org/peh/biochementities/14303a1670
   name: C10 oxo mono-phtalate metabolites
   short_name: oxo-MiDP
@@ -277,7 +289,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: oxomidp
-  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple C10 oxo mono-phthalate metabolites (MiDP), including the DPHP-derived oxo-MPHP.'
+  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple
+    C10 oxo mono-phthalate metabolites (MiDP), including the DPHP-derived oxo-MPHP.'
 - id: https://w3id.org/peh/biochementities/8a8a483444
   name: 7-Carboxy-(mono-methyl-heptyl) phthalate
   short_name: cx-MiNP
@@ -679,7 +692,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: cxmphp
-  remark: 'comments: The name is incorrect (is the same name as Cx-MPHxP) or do we have this twice with two short names??)) This should be checked carefully!!'
+  remark: 'comments: The name is incorrect (is the same name as Cx-MPHxP) or do we
+    have this twice with two short names??)) This should be checked carefully!!'
 - id: https://w3id.org/peh/biochementities/826cf27cba
   name: Mono(2-propyl-6-hydroxyheptyl) phthalate
   short_name: OH-MPrHpP
@@ -697,7 +711,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ohmprhpp
-  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers'
+  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602)
+    --> to ask him about identifiers'
 - id: https://w3id.org/peh/biochementities/300948c878
   name: Mono(2-propyl-6-oxoheptyl) phthalate
   short_name: oxo-MPrHpP
@@ -715,7 +730,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: oxomprhpp
-  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers'
+  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602)
+    --> to ask him about identifiers'
 - id: https://w3id.org/peh/biochementities/440b1000aa
   name: Mono(2-propylheptyl) phthalate
   short_name: MPHP
@@ -1012,7 +1028,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: minp
-  remark: a group of metabolic breakdown products formed in the human body after exposure to Di-isononyl phthalate (DINP)
+  remark: a group of metabolic breakdown products formed in the human body after exposure
+    to Di-isononyl phthalate (DINP)
 - id: https://w3id.org/peh/biochementities/604e243b71
   name: Mono-n-butyl phthalate
   short_name: MnBP
@@ -1057,7 +1074,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: mnhpp
-  remark: 'comments: According to chatGPT, this is an isomer of https://pubchem.ncbi.nlm.nih.gov/compound/Mono-2-heptyl-phthalate --> which is also the INCHIKEY in our DB. But is it the same compound?'
+  remark: 'comments: According to chatGPT, this is an isomer of https://pubchem.ncbi.nlm.nih.gov/compound/Mono-2-heptyl-phthalate
+    --> which is also the INCHIKEY in our DB. But is it the same compound?'
 - id: https://w3id.org/peh/biochementities/7af197e8a2
   name: Mono-n-hexyl phthalate
   short_name: MnHxP
@@ -1166,8 +1184,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: midp
-
-# FROM HERE PARENT COMPOUNDS
 - id: https://w3id.org/peh/biochementities/ebf3797809
   name: Tri-(2-ethylhexyl) trimellitate
   short_name: TOTM

@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/7af197e8a2> a owl:Class ;
+    rdfs:label "Mono-n-hexyl phthalate",
+        "Mono-n-hexylftalaat"@nl-be ;
+    schema1:alternateName "MnHxP" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132604>,
+        <https://identifiers.org/cas:24539-57-9>,
+        <https://identifiers.org/inchikey:XOSNGXNHDRYFEF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:90532> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mnhxp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/129871092c> .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/55e4e1b391> a owl:Class ;
+    rdfs:label "Dimethyl phthalate",
+        "Dimethyl ftalaat"@nl-be ;
+    schema1:alternateName "DMP" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:4609>,
+        <https://identifiers.org/cas:131-11-3> ;
+    pehterms:hasGroupLabel "phthalates" .
+

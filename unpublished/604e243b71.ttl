@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/604e243b71> a owl:Class ;
+    rdfs:label "Mono-n-butyl phthalate",
+        "Mono-butyl ftalaat"@nl-be ;
+    schema1:alternateName "MnBP",
+        "MnBP"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:88522>,
+        <https://identifiers.org/cas:131-70-4>,
+        <https://identifiers.org/inchikey:YZBOVSFWWNVKRJ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:8575> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mnbp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/ca6f875372> .
+
