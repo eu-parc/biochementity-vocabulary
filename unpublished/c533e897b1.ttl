@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c533e897b1> a owl:Class ;
+    rdfs:label "2-hydroxyphenanthrene",
+        "2-hydroxyphenanthrene"@nl-be ;
+    schema1:alternateName "2-PHEN" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:19760>,
+        <https://identifiers.org/cas:605-55-0>,
+        <https://identifiers.org/inchikey:YPWLZGITFNGGKW-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:69061> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "twohphe" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4cda9c8c72> .
+

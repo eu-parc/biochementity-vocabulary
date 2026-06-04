@@ -355,7 +355,8 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ohan
-  remark: "comments: I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503 \nPlease expert double check"
+  remark: "comments: I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503\
+    \ \nPlease expert double check"
 - id: https://w3id.org/peh/biochementities/fe88c82f92
   name: 2-hydroxyfluorene
   short_name: 2-FLUO

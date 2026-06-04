@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/13a5308d18> a owl:Class ;
+    rdfs:label "7,12-Dimethylbenz(a)anthracene",
+        "7,12-Dimethylbenz(a)antraceen"@nl-be ;
+    schema1:alternateName "DMBA" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:254496>,
+        <https://identifiers.org/cas:57-97-6>,
+        <https://identifiers.org/inchikey:ARSRBNBHOADGJU-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:6001> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dmba" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+

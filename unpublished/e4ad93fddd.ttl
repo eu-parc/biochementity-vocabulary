@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e4ad93fddd> a owl:Class ;
+    rdfs:label "1-hydroxybenz[a]anthracene",
+        "1-hydroxybenz[a]antraceen"@nl-be ;
+    schema1:alternateName "1-BaA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132369>,
+        <https://identifiers.org/cas:69847-26-3>,
+        <https://identifiers.org/inchikey:PBPCCBLJHAAYFD-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:135458> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hbaa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/6699c81fb5> .
+

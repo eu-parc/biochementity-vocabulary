@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/3dabbdc415> a owl:Class ;
+    rdfs:label "Chrysen-3-ol",
+        "Chrysen-3-ol"@nl-be ;
+    schema1:alternateName "3-CRY",
+        "3-Hydroxychrysene" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132405>,
+        <https://identifiers.org/cas:63019-39-6>,
+        <https://identifiers.org/inchikey:PULKTNQKGZNFNB-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:44285> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "threecry" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+

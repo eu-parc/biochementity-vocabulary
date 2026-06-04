@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d68119a435> a owl:Class ;
+    rdfs:label "1-hydroxypyrene",
+        "1-hydroxypyreen"@nl-be ;
+    schema1:alternateName "1-PYR",
+        "1-OH pyreen"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:34093>,
+        <https://identifiers.org/cas:5315-79-7>,
+        <https://identifiers.org/cas:63021-84-1>,
+        <https://identifiers.org/inchikey:BIJNHUAPTJVVNQ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:21387> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohpyr" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/7136ed297b> .
+

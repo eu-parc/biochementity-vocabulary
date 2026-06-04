@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/d639bc9d1f> a owl:Class ;
+    rdfs:label "3-hydroxybenzo[c]-phenanthrene",
+        "3-hydroxybenzo[c]-fenantreen"@nl-be ;
+    schema1:alternateName "3-BCP",
+        "Benzo[c]phenanthren-3-ol" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:132445>,
+        <https://identifiers.org/cas:22717-95-9>,
+        <https://identifiers.org/inchikey:QFFZIWXRRBPSQE-UHFFFAOYSA-N> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hbcp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4499fc0a0d> .
+

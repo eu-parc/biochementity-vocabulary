@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/5c5564bdb8> a owl:Class ;
+    rdfs:label "2-Hydroxyanthracene",
+        "2-Hydroxyantraceen"@nl-be ;
+    schema1:alternateName "2-ANT",
+        "2-Anthrol" ;
+    schema1:comment """comments: I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503 
+Please expert double check""" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:37091>,
+        <https://identifiers.org/cas:613-14-9>,
+        <https://identifiers.org/inchikey:BQBWUVWMUXGILF-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:99503> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ohan" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d9681d0586> .
+

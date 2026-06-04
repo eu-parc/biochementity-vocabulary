@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/152fd1a7b9> a owl:Class ;
+    rdfs:label "Dibenzo[a,h]anthracene",
+        "Dibenzo[a,h]antraceen"@nl-be ;
+    schema1:alternateName "DBahA",
+        "PAK_DAHA"@nl-be ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:35299>,
+        <https://identifiers.org/cas:53-70-3>,
+        <https://identifiers.org/inchikey:LHRCREOYAASXPZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:5889> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dbaha" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+

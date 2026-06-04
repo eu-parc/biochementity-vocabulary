@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/5876e1a3e0> a owl:Class ;
+    rdfs:label "1-methylnaphthalene",
+        "1-methylnaftaleen"@nl-be ;
+    schema1:alternateName "1-MN" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:50717>,
+        <https://identifiers.org/cas:1321-94-4>,
+        <https://identifiers.org/cas:90-12-0>,
+        <https://identifiers.org/inchikey:QPUYECUOLPXSFR-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:7002> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "mnap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/8237ef77e3> .
+

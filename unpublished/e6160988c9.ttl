@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e6160988c9> a owl:Class ;
+    rdfs:label "3-hydroxyphenanthrene",
+        "3-hydroxyfenantreen"@nl-be ;
+    schema1:alternateName "3-PHEN",
+        "3-Phenanthrol" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:20184>,
+        <https://identifiers.org/cas:605-87-8>,
+        <https://identifiers.org/inchikey:NGPOABOEXMDQBT-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:95724> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "threehphe" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/4cda9c8c72> .
+

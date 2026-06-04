@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/c4fcfc8d3f> a owl:Class ;
+    rdfs:label "1-hydroxynaphthalene",
+        "1-hydroxynaphthaleen"@nl-be ;
+    schema1:alternateName "1-NAPH",
+        "1-Naphthol",
+        "1-naphtol"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:10319>,
+        <https://identifiers.org/cas:1321-67-1>,
+        <https://identifiers.org/cas:90-15-3>,
+        <https://identifiers.org/inchikey:KJCVRFUGPWSIIH-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:7005> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "oneohnap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/8237ef77e3> .
+
