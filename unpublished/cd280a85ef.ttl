@@ -18,7 +18,8 @@
             schema1:alternateName "baac" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "glycol ethers" ;
+    pehterms:hasGroupLabel "glycol ethers",
+        "polycyclic aromatic hydrocarbons" ;
     pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/b79179d3f5>,
         <https://w3id.org/peh/biochementities/baa2725345>,
         <https://w3id.org/peh/biochementities/c04f597186> .

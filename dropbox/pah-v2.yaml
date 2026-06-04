@@ -1,0 +1,1355 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/e8001cfbae
+  name: 1,2-DHP
+  short_name: 1,2-DHP
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2-DHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: onetwodhp
+  remark: 'comments: ?'
+- id: https://w3id.org/peh/biochementities/6a456b9b40
+  name: 1,2-Dihydrophenanthrene-1,2-diol
+  short_name: 1,2-DiPHEdiol
+  exact_matches:
+  - https://identifiers.org/CHEBI:37475
+  - https://identifiers.org/inchikey:FZOALBNXOKAOEW-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2-dihydrofenantreen-1,2-diol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dihphediol
+- id: https://w3id.org/peh/biochementities/c530c3b9f9
+  name: 1-,2-dihydroxynaphthalene
+  short_name: 1,2-NAPH
+  exact_matches:
+  - https://identifiers.org/inchikey:NXPPAOGUKPJVDI-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:11318
+  - https://identifiers.org/cas:574-00-5
+  - https://identifiers.org/CHEBI:17435
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-,2-dihydroxynaftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: diohnap
+- id: https://w3id.org/peh/biochementities/119240f401
+  name: 1,2-Dihydroxyphenanthrene
+  short_name: 1,2-DHPbis
+  exact_matches:
+  - https://identifiers.org/CHEBI:37452
+  - https://identifiers.org/pubchem.compound:9543118
+  - https://identifiers.org/inchikey:HNMUTKMLCMUDSB-UHFFFAOYSA-N
+  - https://identifiers.org/cas:19551-04-3
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,2-Dihydroxyfenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: onetwohphe
+- id: https://w3id.org/peh/biochementities/e4ad93fddd
+  name: 1-hydroxybenz[a]anthracene
+  short_name: 1-BaA
+  exact_matches:
+  - https://identifiers.org/CHEBI:132369
+  - https://identifiers.org/cas:69847-26-3
+  - https://identifiers.org/inchikey:PBPCCBLJHAAYFD-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:135458
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/6699c81fb5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-hydroxybenz[a]antraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbaa
+- id: https://w3id.org/peh/biochementities/8d4d7019cc
+  name: 3-hydroxybenz[a]anthracene
+  short_name: 3-BaA
+  exact_matches:
+  - https://identifiers.org/inchikey:MRRWKFVZIOCJBS-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:115265
+  - https://identifiers.org/cas:4834-35-9
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/6699c81fb5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxybenz[a]antraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbaa3
+- id: https://w3id.org/peh/biochementities/11f614c530
+  name: 9-hydroxybenz[a]anthracene
+  short_name: 9-BaA
+  exact_matches:
+  - https://identifiers.org/inchikey:RSPOTBWXQUBAQH-UHFFFAOYSA-N
+  - https://identifiers.org/cas:34570-62-2
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/6699c81fb5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 9-hydroxybenz[a]antraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbaa9
+- id: https://w3id.org/peh/biochementities/6de2d63587
+  name: 1-hydroxychrysene
+  short_name: 1-CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:132391
+  - https://identifiers.org/cas:63019-38-5
+  - https://identifiers.org/pubchem.compound:44284
+  - https://identifiers.org/inchikey:ISHBWEUQYFEVES-UHFFFAOYSA-N
+  aliases:
+  - 1-Chrysenol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/a56aaf8752
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-hydroxychryseen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: onehcry
+- id: https://w3id.org/peh/biochementities/c4fcfc8d3f
+  name: 1-hydroxynaphthalene
+  short_name: 1-NAPH
+  exact_matches:
+  - https://identifiers.org/CHEBI:10319
+  - https://identifiers.org/cas:90-15-3
+  - https://identifiers.org/cas:1321-67-1
+  - https://identifiers.org/pubchem.compound:7005
+  - https://identifiers.org/inchikey:KJCVRFUGPWSIIH-UHFFFAOYSA-N
+  aliases:
+  - 1-Naphthol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-hydroxynaphthaleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 1-naphtol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oneohnap
+- id: https://w3id.org/peh/biochementities/6ae5d31bea
+  name: 1-hydroxyphenanthrene
+  short_name: 1-PHEN
+  exact_matches:
+  - https://identifiers.org/CHEBI:27528
+  - https://identifiers.org/cas:2433-56-9
+  - https://identifiers.org/cas:30774-95-9
+  - https://identifiers.org/pubchem.compound:98490
+  - https://identifiers.org/inchikey:GTBXZWADMKOZQJ-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-hydroxyfenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: onehphe
+- id: https://w3id.org/peh/biochementities/d68119a435
+  name: 1-hydroxypyrene
+  short_name: 1-PYR
+  exact_matches:
+  - https://identifiers.org/CHEBI:34093
+  - https://identifiers.org/cas:5315-79-7
+  - https://identifiers.org/cas:63021-84-1
+  - https://identifiers.org/pubchem.compound:21387
+  - https://identifiers.org/inchikey:BIJNHUAPTJVVNQ-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/7136ed297b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-hydroxypyreen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 1-OH pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohpyr
+- id: https://w3id.org/peh/biochementities/5876e1a3e0
+  name: 1-methylnaphthalene
+  short_name: 1-MN
+  exact_matches:
+  - https://identifiers.org/CHEBI:50717
+  - https://identifiers.org/cas:90-12-0
+  - https://identifiers.org/cas:1321-94-4
+  - https://identifiers.org/pubchem.compound:7002
+  - https://identifiers.org/inchikey:QPUYECUOLPXSFR-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-methylnaftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mnap
+- id: https://w3id.org/peh/biochementities/aad9ae3e39
+  name: 1-methylphenanthrene
+  short_name: 1-MP
+  exact_matches:
+  - https://identifiers.org/CHEBI:35860
+  - https://identifiers.org/cas:832-69-9
+  - https://identifiers.org/pubchem.compound:13257
+  - https://identifiers.org/inchikey:DOWJXOHBNXRUOD-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-methylfenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mphe
+- id: https://w3id.org/peh/biochementities/58416d1062
+  name: 2,3,5-trimethylnaphthalene
+  short_name: 2,3,5-TMN
+  exact_matches:
+  - https://identifiers.org/cas:2245-38-7
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,5-trimethylnaftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: tmnap
+- id: https://w3id.org/peh/biochementities/cce1717df9
+  name: 2-,6-dimethylnaphthalene
+  short_name: 2-,6-DMN
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:11387
+  - https://identifiers.org/inchikey:YGYNBBAUIYTWBF-UHFFFAOYSA-N
+  - https://identifiers.org/cas:581-42-0
+  - https://identifiers.org/cas:96789-56-9
+  - https://identifiers.org/CHEBI:34251
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-,6-dimethylnaftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmnap
+- id: https://w3id.org/peh/biochementities/5c5564bdb8
+  name: 2-Hydroxyanthracene
+  short_name: 2-ANT
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:99503
+  - https://identifiers.org/inchikey:BQBWUVWMUXGILF-UHFFFAOYSA-N
+  - https://identifiers.org/cas:613-14-9
+  - https://identifiers.org/CHEBI:37091
+  aliases:
+  - 2-Anthrol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/d9681d0586
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-Hydroxyantraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohan
+  remark: "comments: I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503 \nPlease expert double check"
+- id: https://w3id.org/peh/biochementities/fe88c82f92
+  name: 2-hydroxyfluorene
+  short_name: 2-FLUO
+  exact_matches:
+  - https://identifiers.org/CHEBI:34289
+  - https://identifiers.org/cas:2443-58-5
+  - https://identifiers.org/pubchem.compound:75547
+  - https://identifiers.org/inchikey:ZDOIAPGLORMKTR-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/463f0f2df8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxyfluoreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twohfluo
+- id: https://w3id.org/peh/biochementities/189141c5d7
+  name: 2-hydroxynaphthalene
+  short_name: 2-NAPH
+  exact_matches:
+  - https://identifiers.org/CHEBI:10432
+  - https://identifiers.org/cas:135-19-3
+  - https://identifiers.org/cas:1321-67-1
+  - https://identifiers.org/pubchem.compound:8663
+  - https://identifiers.org/inchikey:JWAZRIHNYRIHIV-UHFFFAOYSA-N
+  aliases:
+  - 2-Naphthol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxynaphthaleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2-naphtol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twoohnap
+- id: https://w3id.org/peh/biochementities/c533e897b1
+  name: 2-hydroxyphenanthrene
+  short_name: 2-PHEN
+  exact_matches:
+  - https://identifiers.org/CHEBI:19760
+  - https://identifiers.org/pubchem.compound:69061
+  - https://identifiers.org/inchikey:YPWLZGITFNGGKW-UHFFFAOYSA-N
+  - https://identifiers.org/cas:605-55-0
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-hydroxyphenanthrene
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twohphe
+- id: https://w3id.org/peh/biochementities/e7f6c89aad
+  name: 2-methylnaphthalene
+  short_name: 2-MN
+  exact_matches:
+  - https://identifiers.org/CHEBI:50720
+  - https://identifiers.org/cas:91-57-6
+  - https://identifiers.org/cas:7419-61-6
+  - https://identifiers.org/pubchem.compound:7055
+  - https://identifiers.org/inchikey:QIMMUPPBPVKWKM-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/8237ef77e3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-methylnaftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twomnap
+- id: https://w3id.org/peh/biochementities/521377746c
+  name: 3-hydroxybenzo(a)pyrene
+  short_name: 3-hydroxyBaP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34337
+  - https://identifiers.org/cas:13345-21-6
+  - https://identifiers.org/pubchem.compound:25890
+  - https://identifiers.org/inchikey:SPUUWWRWIAEPDB-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ce4c35ea2c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxybenzo(a)pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohbap
+- id: https://w3id.org/peh/biochementities/d639bc9d1f
+  name: 3-hydroxybenzo[c]-phenanthrene
+  short_name: 3-BCP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132445
+  - https://identifiers.org/cas:22717-95-9
+  - https://identifiers.org/inchikey:QFFZIWXRRBPSQE-UHFFFAOYSA-N
+  aliases:
+  - Benzo[c]phenanthren-3-ol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4499fc0a0d
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxybenzo[c]-fenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hbcp
+- id: https://w3id.org/peh/biochementities/3552fcecf0
+  name: 3-Hydroxyfluoranthène
+  short_name: 3-OHFA
+  exact_matches:
+  - https://identifiers.org/inchikey:PQWYZWVBXAOHOU-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:176953
+  - https://identifiers.org/cas:17798-09-3
+  aliases:
+  - Fluoranthen-3-ol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-Hydroxyfluorantheen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threeohfa
+- id: https://w3id.org/peh/biochementities/464bc16342
+  name: 3-hydroxyfluorene
+  short_name: 3-FLUO
+  exact_matches:
+  - https://identifiers.org/CHEBI:89645
+  - https://identifiers.org/pubchem.compound:96088
+  - https://identifiers.org/inchikey:PVUBSZGNXLNTLX-UHFFFAOYSA-N
+  - https://identifiers.org/cas:6344-67-8
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/463f0f2df8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxyfluoreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threehfluo
+- id: https://w3id.org/peh/biochementities/e6160988c9
+  name: 3-hydroxyphenanthrene
+  short_name: 3-PHEN
+  exact_matches:
+  - https://identifiers.org/CHEBI:20184
+  - https://identifiers.org/cas:605-87-8
+  - https://identifiers.org/pubchem.compound:95724
+  - https://identifiers.org/inchikey:NGPOABOEXMDQBT-UHFFFAOYSA-N
+  aliases:
+  - 3-Phenanthrol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-hydroxyfenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threehphe
+- id: https://w3id.org/peh/biochementities/052ad23257
+  name: 4-hydroxyphenanthrene
+  short_name: 4-PHEN
+  exact_matches:
+  - https://identifiers.org/CHEBI:20469
+  - https://identifiers.org/cas:7651-86-7
+  - https://identifiers.org/pubchem.compound:82105
+  - https://identifiers.org/inchikey:SIMYIUXARJLHEA-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-hydroxyphenanthrene
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourhphe
+- id: https://w3id.org/peh/biochementities/80fb311e41
+  name: 5-Methylchrysene
+  short_name: 5-MCH
+  exact_matches:
+  - https://identifiers.org/CHEBI:82342
+  - https://identifiers.org/cas:3697-24-3
+  - https://identifiers.org/pubchem.compound:19427
+  - https://identifiers.org/inchikey:GOHBXWHNJHENRX-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 5-Methylchryseen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fivemch
+- id: https://w3id.org/peh/biochementities/273014cab7
+  name: 6-hydroxychrysene
+  short_name: 6-CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:132407
+  - https://identifiers.org/cas:37515-51-8
+  - https://identifiers.org/pubchem.compound:37766
+  - https://identifiers.org/inchikey:VXFDOYXVHRYCGS-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/a56aaf8752
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 6-hydroxychryseen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sixhcry
+- id: https://w3id.org/peh/biochementities/13a5308d18
+  name: 7,12-Dimethylbenz(a)anthracene
+  short_name: DMBA
+  exact_matches:
+  - https://identifiers.org/CHEBI:254496
+  - https://identifiers.org/cas:57-97-6
+  - https://identifiers.org/pubchem.compound:6001
+  - https://identifiers.org/inchikey:ARSRBNBHOADGJU-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 7,12-Dimethylbenz(a)antraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dmba
+- id: https://w3id.org/peh/biochementities/f139ff0659
+  name: 9,10-Phenanthrenediol
+  short_name: 9,10-PHEdiol
+  exact_matches:
+  - https://identifiers.org/CHEBI:20814
+  - https://identifiers.org/cas:604-84-2
+  - https://identifiers.org/pubchem.compound:123074
+  - https://identifiers.org/inchikey:ODUSUXJNDWKJKH-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 9,10-fenantreendiol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: phediol
+- id: https://w3id.org/peh/biochementities/74c77cd76a
+  name: 9-hydroxyfluorene
+  short_name: 9-FLUO
+  exact_matches:
+  - https://identifiers.org/CHEBI:16904
+  - https://identifiers.org/cas:1689-64-1
+  - https://identifiers.org/pubchem.compound:74318
+  - https://identifiers.org/inchikey:AFMVESZOYKHDBJ-UHFFFAOYSA-N
+  aliases:
+  - Fluoren-9-ol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/463f0f2df8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 9-hydroxyfluoreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ninehfluo
+- id: https://w3id.org/peh/biochementities/f283dd644b
+  name: 9-hydroxyphenanthrene
+  short_name: 9-PHEN
+  exact_matches:
+  - https://identifiers.org/CHEBI:28820
+  - https://identifiers.org/cas:484-17-3
+  - https://identifiers.org/pubchem.compound:10229
+  - https://identifiers.org/inchikey:DZKIUEHLEXLYKM-UHFFFAOYSA-N
+  aliases:
+  - 9-Phenanthrol
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 9-hydroxyfenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ninehphe
+- id: https://w3id.org/peh/biochementities/757f4749ae
+  name: Acenaphthene
+  short_name: ACE
+  exact_matches:
+  - https://identifiers.org/CHEBI:22154
+  - https://identifiers.org/cas:83-32-9
+  - https://identifiers.org/pubchem.compound:6734
+  - https://identifiers.org/inchikey:CWRYPZZKDGJXCA-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Acenafteen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: ACE
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ace
+- id: https://w3id.org/peh/biochementities/70f06ee9bc
+  name: Acenaphthylene
+  short_name: ACY
+  exact_matches:
+  - https://identifiers.org/CHEBI:33081
+  - https://identifiers.org/cas:208-96-8
+  - https://identifiers.org/pubchem.compound:9161
+  - https://identifiers.org/inchikey:HXGDTGSAIMULJN-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Acenaftyleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: ACY
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: acy
+- id: https://w3id.org/peh/biochementities/d9681d0586
+  name: Anthracene
+  short_name: AN
+  exact_matches:
+  - https://identifiers.org/CHEBI:35298
+  - https://identifiers.org/pubchem.compound:8418
+  - https://identifiers.org/inchikey:MWPLVEDNUUSJAV-UHFFFAOYSA-N
+  - https://identifiers.org/cas:120-12-7
+  - https://identifiers.org/cas:54261-80-2
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Antraceen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: an
+- id: https://w3id.org/peh/biochementities/6699c81fb5
+  name: Benz[a]anthracene
+  short_name: BaA
+  exact_matches:
+  - https://identifiers.org/CHEBI:51348
+  - https://identifiers.org/pubchem.compound:5954
+  - https://identifiers.org/inchikey:DXBHBZVCASKNBY-UHFFFAOYSA-N
+  - https://identifiers.org/cas:56-55-3
+  group_labels:
+  - glycol ethers
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benz[a]antraceen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BaA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: baa
+- id: https://w3id.org/peh/biochementities/ce4c35ea2c
+  name: Benzo[a]pyrene
+  short_name: BaP
+  exact_matches:
+  - https://identifiers.org/CHEBI:29865
+  - https://identifiers.org/cas:50-32-8
+  - https://identifiers.org/cas:6699-27-0
+  - https://identifiers.org/pubchem.compound:2336
+  - https://identifiers.org/inchikey:FMMWHPNWAFZXNH-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[a]pyreen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BaP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bap
+- id: https://w3id.org/peh/biochementities/c8186f9883
+  name: Benzo[b]fluoranthene
+  short_name: BbFA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34565
+  - https://identifiers.org/cas:205-99-2
+  - https://identifiers.org/cas:1397206-82-4
+  - https://identifiers.org/pubchem.compound:9153
+  - https://identifiers.org/inchikey:FTOVXSOBNPWTSH-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[b]fluorantheen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bbfa
+- id: https://w3id.org/peh/biochementities/589d193f84
+  name: Benzo[c]fluorene
+  short_name: BcFL
+  exact_matches:
+  - https://identifiers.org/CHEBI:82403
+  - https://identifiers.org/cas:205-12-9
+  - https://identifiers.org/cas:30777-20-9
+  - https://identifiers.org/pubchem.compound:9150
+  - https://identifiers.org/inchikey:FRIJWEQBTIZQMD-UHFFFAOYSA-N
+  aliases:
+  - 7H-Benzo(c)fluorene
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[c]fluoreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bcfl
+- id: https://w3id.org/peh/biochementities/4499fc0a0d
+  name: Benzo[c]phenanthrene
+  short_name: BcPh
+  exact_matches:
+  - https://identifiers.org/CHEBI:82292
+  - https://identifiers.org/cas:195-19-7
+  - https://identifiers.org/pubchem.compound:9136
+  - https://identifiers.org/inchikey:TUAHORSUHVUKBD-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[c]fenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bcph
+- id: https://w3id.org/peh/biochementities/7e1bfa411b
+  name: Benzo[e]pyrene
+  short_name: BeP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34567
+  - https://identifiers.org/cas:192-97-2
+  - https://identifiers.org/cas:73467-76-2
+  - https://identifiers.org/pubchem.compound:9128
+  - https://identifiers.org/inchikey:TXVHTIQJNYSSKO-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[e]pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bep
+- id: https://w3id.org/peh/biochementities/fdc18aaa33
+  name: Benzo[g,h,i]perylene
+  short_name: BghiP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34568
+  - https://identifiers.org/cas:191-24-2
+  - https://identifiers.org/pubchem.compound:9117
+  - https://identifiers.org/inchikey:GYFAGKUZYNFMBN-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[g,h,i]peryleen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BghiP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bghip
+- id: https://w3id.org/peh/biochementities/8ad6b4917b
+  name: Benzo[j]fluoranthene
+  short_name: BjFA
+  exact_matches:
+  - https://identifiers.org/CHEBI:82291
+  - https://identifiers.org/cas:205-82-3
+  - https://identifiers.org/pubchem.compound:9152
+  - https://identifiers.org/inchikey:KHNYNFUTFKJLDD-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[j]fluorantheen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bjfa
+- id: https://w3id.org/peh/biochementities/b6e3c15b80
+  name: Benzo[k]fluoranthene
+  short_name: BkFA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34569
+  - https://identifiers.org/cas:207-08-9
+  - https://identifiers.org/pubchem.compound:9158
+  - https://identifiers.org/inchikey:HAXBIWFMXWRORI-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzo[k]fluorantheen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bkfa
+- id: https://w3id.org/peh/biochementities/cca7e28fd2
+  name: Chrysen-2-ol
+  short_name: 2-CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:132404
+  - https://identifiers.org/cas:65945-06-4
+  - https://identifiers.org/pubchem.compound:47782
+  - https://identifiers.org/inchikey:RSBSTIBFPNNSTH-UHFFFAOYSA-N
+  aliases:
+  - 2-Hydroxychrysene
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chrysen-2-ol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twocry
+- id: https://w3id.org/peh/biochementities/3dabbdc415
+  name: Chrysen-3-ol
+  short_name: 3-CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:132405
+  - https://identifiers.org/cas:63019-39-6
+  - https://identifiers.org/inchikey:PULKTNQKGZNFNB-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:44285
+  aliases:
+  - 3-Hydroxychrysene
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chrysen-3-ol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threecry
+- id: https://w3id.org/peh/biochementities/7acaafb7a6
+  name: Chrysen-4-ol
+  short_name: 4-CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:132406
+  - https://identifiers.org/cas:63019-40-9
+  - https://identifiers.org/pubchem.compound:44286
+  - https://identifiers.org/inchikey:CZCGRCFUEPALNV-UHFFFAOYSA-N
+  aliases:
+  - 4-Hydroxychrysene
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chrysen-4-ol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourcry
+- id: https://w3id.org/peh/biochementities/a56aaf8752
+  name: Chrysene
+  short_name: CRY
+  exact_matches:
+  - https://identifiers.org/CHEBI:51687
+  - https://identifiers.org/pubchem.compound:9171
+  - https://identifiers.org/inchikey:WDECIBYCCFPHNR-UHFFFAOYSA-N
+  - https://identifiers.org/cas:218-01-9
+  - https://identifiers.org/cas:65777-08-4
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Chryseen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_CHR
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cry
+- id: https://w3id.org/peh/biochementities/4c162442ef
+  name: Cyclopenta[c,d]pyrene
+  short_name: CPP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:33743
+  - https://identifiers.org/inchikey:BZCXQYVNASLLQO-UHFFFAOYSA-N
+  - https://identifiers.org/cas:27208-37-3
+  - https://identifiers.org/CHEBI:82279
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Cyclopenta[c,d]pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cpp
+- id: https://w3id.org/peh/biochementities/c680dbf538
+  name: Dibenzo[a,e]pyrene
+  short_name: DBaeP
+  exact_matches:
+  - https://identifiers.org/CHEBI:82442
+  - https://identifiers.org/cas:192-65-4
+  - https://identifiers.org/pubchem.compound:9126
+  - https://identifiers.org/inchikey:KGHMWBNEMFNJFZ-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dibenzo[a,e]pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbaep
+- id: https://w3id.org/peh/biochementities/152fd1a7b9
+  name: Dibenzo[a,h]anthracene
+  short_name: DBahA
+  exact_matches:
+  - https://identifiers.org/CHEBI:35299
+  - https://identifiers.org/cas:53-70-3
+  - https://identifiers.org/pubchem.compound:5889
+  - https://identifiers.org/inchikey:LHRCREOYAASXPZ-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dibenzo[a,h]antraceen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_DAHA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbaha
+- id: https://w3id.org/peh/biochementities/2f2285ce6d
+  name: Dibenzo[a,i]pyrene
+  short_name: DBaiP
+  exact_matches:
+  - https://identifiers.org/CHEBI:82314
+  - https://identifiers.org/cas:189-55-9
+  - https://identifiers.org/pubchem.compound:9106
+  - https://identifiers.org/inchikey:TUGYIJVAYAHHHM-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dibenzo[a,i]pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbaip
+- id: https://w3id.org/peh/biochementities/7b1bc2941e
+  name: Dibenzo[a,l]pyrene
+  short_name: DBalP
+  exact_matches:
+  - https://identifiers.org/CHEBI:35861
+  - https://identifiers.org/cas:191-30-0
+  - https://identifiers.org/pubchem.compound:9119
+  - https://identifiers.org/inchikey:JNTHRSHGARDABO-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Dibenzo[a,l]pyreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dbalp
+- id: https://w3id.org/peh/biochementities/f6b667b969
+  name: Fluoranthene
+  short_name: FLA
+  exact_matches:
+  - https://identifiers.org/CHEBI:33083
+  - https://identifiers.org/cas:206-44-0
+  - https://identifiers.org/cas:76774-50-0
+  - https://identifiers.org/pubchem.compound:9154
+  - https://identifiers.org/inchikey:GVEPBJHOBDJJJI-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fluorantheen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_FLT
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fla
+- id: https://w3id.org/peh/biochementities/463f0f2df8
+  name: Fluorene
+  short_name: FLUO
+  exact_matches:
+  - https://identifiers.org/CHEBI:28266
+  - https://identifiers.org/cas:86-73-7
+  - https://identifiers.org/pubchem.compound:6853
+  - https://identifiers.org/inchikey:NIHNNTQXNPWCJQ-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fluoreen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_FLU
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fluo
+- id: https://w3id.org/peh/biochementities/a12a3079e1
+  name: Indeno[1,2,3-cd]pyrene
+  short_name: IP
+  exact_matches:
+  - https://identifiers.org/CHEBI:82335
+  - https://identifiers.org/cas:193-39-5
+  - https://identifiers.org/pubchem.compound:9131
+  - https://identifiers.org/inchikey:SXQBHARYMNFBPS-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Indeno[1,2,3-cd]pyreen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_IP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ip
+- id: https://w3id.org/peh/biochementities/8237ef77e3
+  name: Naphthalene
+  short_name: NAPH
+  exact_matches:
+  - https://identifiers.org/CHEBI:16482
+  - https://identifiers.org/cas:91-20-3
+  - https://identifiers.org/pubchem.compound:931
+  - https://identifiers.org/inchikey:UFWIBTONFRDIAS-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Naftaleen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: naph
+- id: https://w3id.org/peh/biochementities/4cda9c8c72
+  name: Phenanthrene
+  short_name: PHE
+  exact_matches:
+  - https://identifiers.org/CHEBI:28851
+  - https://identifiers.org/cas:85-01-8
+  - https://identifiers.org/pubchem.compound:995
+  - https://identifiers.org/inchikey:YNPNZTXNASCQKK-UHFFFAOYSA-N
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fenantreen
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: phe
+- id: https://w3id.org/peh/biochementities/a4e305ae33
+  name: Phenanthrene-1,2,3,4-tetrol
+  short_name: PHE-tetrol
+  exact_matches:
+  - https://identifiers.org/inchikey:MTKRZWWQDYNZRK-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:23056179
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/4cda9c8c72
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Fenantreen-1,2,3,4-tetrol
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: phetetrol
+- id: https://w3id.org/peh/biochementities/7136ed297b
+  name: Pyrene
+  short_name: PYR
+  exact_matches:
+  - https://identifiers.org/CHEBI:39106
+  - https://identifiers.org/pubchem.compound:31423
+  - https://identifiers.org/inchikey:BBEAQIROQSPTKN-UHFFFAOYSA-N
+  - https://identifiers.org/cas:129-00-0
+  group_labels:
+  - polycyclic aromatic hydrocarbons
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098NDFVH6VFC2XZ0P18FY
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Pyreen
+  - property_name: short_name
+    language: nl-BE
+    translated_value: PAK_PYR
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: pyr
