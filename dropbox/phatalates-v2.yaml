@@ -1,0 +1,1429 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/775d096f14
+  name: 1,4-di-(2-ethylhexyl) trimellitate
+  short_name: 1,4-DEHTM
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ebf3797809
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,4-di-(2-ethylhexyl)trimellitaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: onefourdehtm
+- id: https://w3id.org/peh/biochementities/025beeea01
+  name: 1-mono-(2-carboxyl-methyl-hexyl) benzene-1,4-dicarboxylate
+  short_name: 2cx-MMHTP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cbcefcf7df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-mono-(2-carboxyl-methyl-hexyl)benzeen-1,4-dicarboxylaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 2cx-MMHTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmmhtp
+  remark: 'comments: The INCHIKEY in our DB directs me back to our biomarker list only, so not sure if it is correct. I found nothing online other than: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27750 --> so I gueess this comes from one of the german studies. to contact UBA?'
+- id: https://w3id.org/peh/biochementities/9c547d664a
+  name: 1-mono-(2-ethyl-5-carboxyl-pentyl) benzene-1,4-dicarboxylate
+  short_name: 5cx-MEPTP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:145459123
+  - https://identifiers.org/inchikey:BIQPFHSSQDGFTK-UHFFFAOYSA-N
+  - https://identifiers.org/cas:1684398-42-2
+  - https://identifiers.org/CHEBI:165207
+  aliases:
+  - mono(2-ethyl-5-carboxypentyl) terephthalate
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cbcefcf7df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-mono-(2-ethyl-5-carboxyl-pentyl)benzeen-1,4-dicarboxylaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmeptp
+  remark: 'comments: Can someone check if the long name is correct? The short name directs me to this publication https://pubmed.ncbi.nlm.nih.gov/28407489/ --> and then if I look for the name used there mono(2-ethyl-5-carboxypentyl) terephthalate (which now I put in aliases) then it directs me to the compound I added the exact_matches for. So that needs to be verified'
+- id: https://w3id.org/peh/biochementities/df46295619
+  name: 1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate
+  short_name: 5OH-MEHTP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:155898867
+  - https://identifiers.org/inchikey:ODRKAFOVPBFSIN-UHFFFAOYSA-N
+  aliases:
+  - Mono‑2‑ethylHydroxyhexyl Terephthalate
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cbcefcf7df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-mono-(2-ethyl-5-hydroxy-hexyl)benzeen-1,4-dicarboxylaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 5OH-MEHTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmehtp
+  remark: 'comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867 --> but the compound doesn''t seem to be the same. The short_name seems to come from german studies (see source column) --> maybe we can ask UBA for the keys?.
+    source: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27749'
+- id: https://w3id.org/peh/biochementities/5725e2f31e
+  name: 1-mono-(2-ethyl-5-oxo-hexyl) benzene-1,4-dicarboxylate
+  short_name: 5oxo-MEHTP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cbcefcf7df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-mono-(2-ethyl-5-oxo-hexyl)benzeen-1,4-dicarboxylaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomehtp
+  remark: 'comments: same as the previous ones, to ask UBA? https://www.umweltprobenbank.de/en/documents/profiles/analytes/27748#:~:text=1%2Dmono%2D(2%2Dethyl%2D5%2Doxo%2Dhexyl)%20benzene%2D1%2C4%2Ddicarboxylate%20is%20a%20metabolite%20of%20DEHTP.'
+- id: https://w3id.org/peh/biochementities/132d6edc9b
+  name: 1-mono-(2-ethylhexyl) terephthalate
+  short_name: MEHTP
+  exact_matches:
+  - https://identifiers.org/inchikey:HRUJAEJKCNCOGW-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:154683
+  - https://identifiers.org/cas:155603-50-2
+  - https://identifiers.org/CHEBI:165208
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/cbcefcf7df
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MEHTP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mehtp
+- id: https://w3id.org/peh/biochementities/adc30b8cf9
+  name: 2,4-di-(2-ethylhexyl) trimellitate
+  short_name: 2,4-DEHTM
+  exact_matches:
+  - https://identifiers.org/inchikey:WXSCEQXIHBEPIQ-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:14048412
+  - https://identifiers.org/cas:63468-11-1
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ebf3797809
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-di-(2-ethylhexyl)trimellitaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: twofourdehtm
+  remark: 'source: https://repository.uantwerpen.be/desktop/irua'
+- id: https://w3id.org/peh/biochementities/3648eb0ecc
+  name: 2-OH-Mono-iso-butylphthalate
+  short_name: OH-MiBP
+  exact_matches:
+  - https://identifiers.org/inchikey:LTLINVWNJJAVGH-UHFFFAOYSA-M
+  - https://identifiers.org/pubchem.compound:71371900
+  - https://identifiers.org/cas:64339-39-5
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/72ef88ed5b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2-OH-mono-isobutylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmibp
+- id: https://w3id.org/peh/biochementities/d4c9cba451
+  name: 3-carboxyl-mono-propyl phthalate
+  short_name: 3cx-MPP
+  exact_matches:
+  - https://identifiers.org/inchikey:IYTPMLIWBZMBSL-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:53435015
+  - https://identifiers.org/cas:66851-46-5
+  - https://identifiers.org/CHEBI:132872
+  aliases:
+  - Mono(3-carboxypropyl) phthalate
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ca6f875372
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-carboxyl-monopropylftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3cx-MPP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmpp
+- id: https://w3id.org/peh/biochementities/72ac0e61e7
+  name: 6-OH-mono-propyl-heptyl phthalate
+  short_name: OH-MPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:KNDRVUYMYPIFIU-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:131668311
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 6-OH-Mono-propyl-heptyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6-OH-MPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmphp
+  remark: 'comments: Structurally defined hydroxy metabolite (6-OH-mono-propyl-heptyl phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
+- id: https://w3id.org/peh/biochementities/8e6da31d45
+  name: C10 hydroxy phthalate metabolites
+  short_name: OH-MiDP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3b70545c92
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmidp
+  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple C10 hydroxy phthalate metabolites (MiDP), including the DPHP-derived OH-MPHP.'
+- id: https://w3id.org/peh/biochementities/0689d2fc42
+  name: 6-Oxo-mono-propyl-heptyl phthalate
+  short_name: oxo-MPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:NSGSMZPMFOBAFF-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:131668297
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 6-Oxo-Mono-propyl-heptyl ftalaat (GC-HRMS method, only DPHP metabolites)
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 6-oxo-MPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomphp
+  remark: 'comments: Structurally defined oxo metabolite (6-oxo-mono-propyl-heptyl phthalate), selectively measured by GC-HRMS and specific for DPHP metabolism.'
+- id: https://w3id.org/peh/biochementities/14303a1670
+  name: C10 oxo mono-phtalate metabolites
+  short_name: oxo-MiDP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3b70545c92
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomidp
+  remark: 'comments: Operationally defined LC-MS/MS sum parameter covering multiple C10 oxo mono-phthalate metabolites (MiDP), including the DPHP-derived oxo-MPHP.'
+- id: https://w3id.org/peh/biochementities/8a8a483444
+  name: 7-Carboxy-(mono-methyl-heptyl) phthalate
+  short_name: cx-MiNP
+  exact_matches:
+  - 'INCHIKEY:'
+  - IGGGGTKTEAEHSG-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/015aee8b1a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 7-Carboxy-(mono-methylheptyl)ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: cx-MiNP
+  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1465'
+- id: https://w3id.org/peh/biochementities/c8326b55bf
+  name: 7-OH-(Mono-methyl-octyl) phthalate
+  short_name: OH-MiNP
+  exact_matches:
+  - https://identifiers.org/inchikey:RWCHSWLUPRJYEX-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/015aee8b1a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(7-hydroxy-isononyl) phthalate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: OH-MiNP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mhnp
+  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1451'
+- id: https://w3id.org/peh/biochementities/8bb8e2b93a
+  name: 7-Oxo-(mono-methyl-octyl) phthalate
+  short_name: oxo-MiNP
+  exact_matches:
+  - https://identifiers.org/inchikey:UFUNVAIKYOYYBB-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/015aee8b1a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 7-oxo-(mono-methyloctyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: monp
+- id: https://w3id.org/peh/biochementities/a74bd30e16
+  name: Butyl benzyl phthalate
+  short_name: BBP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34595
+  - https://identifiers.org/cas:85-68-7
+  - https://identifiers.org/pubchem.compound:2347
+  - https://identifiers.org/inchikey:IRIAEXORFWYRCZ-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Butylbenzylftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bbp
+- id: https://w3id.org/peh/biochementities/c1911af20b
+  name: Diethyl phthalate
+  short_name: DEPbis
+  exact_matches:
+  - https://identifiers.org/CHEBI:34698
+  - https://identifiers.org/cas:84-66-2
+  - https://identifiers.org/pubchem.compound:6781
+  - https://identifiers.org/inchikey:FLKPEMZONWLCSK-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Diethylftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: depht
+- id: https://w3id.org/peh/biochementities/a4555a225d
+  name: Diisobutyl phthalate
+  short_name: Diisobutyl phthalate
+  exact_matches:
+  - https://identifiers.org/CHEBI:79053
+  - https://identifiers.org/cas:84-69-5
+  - https://identifiers.org/pubchem.compound:6782
+  - https://identifiers.org/inchikey:MGWAVDBGNNKXQV-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Di-iso-butyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DiBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dibp
+- id: https://w3id.org/peh/biochementities/f3a2cb6b3d
+  name: Mono(2,7-methyl-7-carboxy-heptyl) phthalate
+  short_name: cx-MiDP
+  exact_matches:
+  - https://identifiers.org/inchikey:RELGYNUSJXUKGN-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3b70545c92
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2,7-methyl-7-carboxy-heptyl)ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: cx-MiDP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmidp
+  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1504'
+- id: https://w3id.org/peh/biochementities/2661c0420c
+  name: Mono(2-carboxymethylhexyl) phthalate
+  short_name: MCMHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132874
+  - https://identifiers.org/cas:82975-93-7
+  - https://identifiers.org/pubchem.compound:187353
+  - https://identifiers.org/inchikey:CCNOZWPVQWCJFK-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/95e3fd49d0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-carboxymethylhexyl)ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MCMHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mcmhp
+- id: https://w3id.org/peh/biochementities/3a485ee52c
+  name: Mono(2-ethyl-5-carboxy-pentyl) phthalate
+  short_name: 5cx-MEPP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132611
+  - https://identifiers.org/cas:40809-41-4
+  - https://identifiers.org/pubchem.compound:148386
+  - https://identifiers.org/inchikey:XFGRNAPKLGXDGF-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/95e3fd49d0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-ethyl-5-carboxypentyl) ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 5cx-MEPP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmepp
+- id: https://w3id.org/peh/biochementities/08f1047c01
+  name: Mono(2-ethyl-5-hydroxyhexyl) adipate
+  short_name: OH-MEHA
+  exact_matches:
+  - https://identifiers.org/inchikey:GUWFIYHOYMKEJE-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:154455
+  - https://identifiers.org/cas:134998-71-3
+  aliases:
+  - 6-(2-Ethyl-5-hydroxy-hexoxy)-6-oxo-hexanoic acid
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/69630c70b5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-ethyl-5-hydroxyhexyl) adipate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: OH-MEHA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmeha
+- id: https://w3id.org/peh/biochementities/6e7c8aa4e5
+  name: Mono(2-ethyl-5-hydroxy-hexyl) phthalate
+  short_name: 5OH-MEHP
+  exact_matches:
+  - https://identifiers.org/inchikey:RYPQSGURZSTFSX-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:170295
+  - https://identifiers.org/cas:40321-99-1
+  - https://identifiers.org/CHEBI:132607
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/95e3fd49d0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-(2-ethyl-5-hydroxyhexyl)ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 5OH-MEHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmehp
+- id: https://w3id.org/peh/biochementities/75ae56105e
+  name: Mono(2-ethyl-5-oxohexyl) adipate
+  short_name: oxo-MEHA
+  exact_matches:
+  - https://identifiers.org/inchikey:XLMWFRRVVDGMRV-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:148780
+  - https://identifiers.org/cas:134998-72-4
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/69630c70b5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-ethyl-5-oxohexyl) adipate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: oxo-MEHA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomeha
+- id: https://w3id.org/peh/biochementities/f31f031b8b
+  name: Mono(2-ethyl-5-oxo-hexyl) phthalate
+  short_name: 5oxo-MEHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132606
+  - https://identifiers.org/cas:40321-98-0
+  - https://identifiers.org/pubchem.compound:119096
+  - https://identifiers.org/inchikey:HCWNFKHKKHNSSL-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/95e3fd49d0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-ethyl-5-oxo-hexyl) ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 5oxo-MEHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomehp
+- id: https://w3id.org/peh/biochementities/ec3484db70
+  name: Mono(2-ethylhexyl) adipate
+  short_name: MEHA
+  exact_matches:
+  - https://identifiers.org/inchikey:MBGYSHXGENGTBP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:20342
+  - https://identifiers.org/cas:4337-65-9
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/69630c70b5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Di-2-ethylhexyl adipaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MEHA
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: meha
+- id: https://w3id.org/peh/biochementities/f45af63d2d
+  name: Mono(2-ethylhexyl) phthalate
+  short_name: MEHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:17243
+  - https://identifiers.org/cas:4376-20-9
+  - https://identifiers.org/cas:1276197-22-8
+  - https://identifiers.org/pubchem.compound:20393
+  - https://identifiers.org/inchikey:DJDSLBVSSOQSLW-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/95e3fd49d0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-2-ethylhexyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MEHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mehp
+- id: https://w3id.org/peh/biochementities/a66f6d84b3
+  name: Mono(2-propyl-6-carboxyhexyl) phthalate
+  short_name: Cx-MPHxP
+  exact_matches:
+  - https://identifiers.org/inchikey:DPQMLPCFIOCYFY-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:139036037
+  - https://identifiers.org/cas:1412411-10-9
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-propyl-6-carboxyhexyl)ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: Cx-MPHxP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmphxp
+- id: https://w3id.org/peh/biochementities/d08cd35574
+  name: Mono-(2-propyl-6-carboxyhexyl) phthalate
+  short_name: cx-MPHP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2,7-methyl-7- carboxy-heptyl) ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: cx-MPHP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: cxmphp
+  remark: 'comments: The name is incorrect (is the same name as Cx-MPHxP) or do we have this twice with two short names??)) This should be checked carefully!!'
+- id: https://w3id.org/peh/biochementities/826cf27cba
+  name: Mono(2-propyl-6-hydroxyheptyl) phthalate
+  short_name: OH-MPrHpP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-propyl-6-hydroxyheptyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: ohmprhpp
+  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers'
+- id: https://w3id.org/peh/biochementities/300948c878
+  name: Mono(2-propyl-6-oxoheptyl) phthalate
+  short_name: oxo-MPrHpP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-propyl-6-oxoheptyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: oxomprhpp
+  remark: 'comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers'
+- id: https://w3id.org/peh/biochementities/440b1000aa
+  name: Mono(2-propylheptyl) phthalate
+  short_name: MPHP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/527f5ba7b6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono(2-propylheptyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mphp
+  remark: 'comments: I don''t find this compound anywhere'
+- id: https://w3id.org/peh/biochementities/525daf5394
+  name: Mono-(4-hydroxypentyl) phthalate
+  short_name: MHPP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:71750801
+  - https://identifiers.org/inchikey:PDIKFAUTXCJYHZ-UHFFFAOYSA-N
+  - https://identifiers.org/cas:1334312-05-8
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/331ffb7642
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-(4-hydroxypentyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mhpp
+- id: https://w3id.org/peh/biochementities/ec27ef7355
+  name: Mono-(5-carboxy-n-pentyl) phthalate
+  short_name: MCPeP
+  exact_matches:
+  - https://identifiers.org/inchikey:QRHRDZGROXTDDX-UHFFFAOYSA-M
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/129871092c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-(5-carboxy-n-pentyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mcpep
+- id: https://w3id.org/peh/biochementities/9abec1643c
+  name: Mono-(5-hydroxyhexyl) phthalate
+  short_name: MHHxP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:169444275
+  - https://identifiers.org/inchikey:VTFFQWBJJSPWPK-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/129871092c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-(5-hydroxyhexyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mhhxp
+- id: https://w3id.org/peh/biochementities/8f0a006a01
+  name: Mono-(7-carboxy-n-hexyl) phthalate
+  short_name: MCHxP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3924979385
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-(7-carboxy-n-hexyl)ftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mchxp
+  remark: 'comments: I cannot find this compound anywhere online'
+- id: https://w3id.org/peh/biochementities/99a7c707c1
+  name: Mono-benzyl phthalate
+  short_name: MBzP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132612
+  - https://identifiers.org/cas:2528-16-7
+  - https://identifiers.org/pubchem.compound:31736
+  - https://identifiers.org/inchikey:XIKIUQUXDNHBFR-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/a74bd30e16
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-benzyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MBzP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mbzp
+- id: https://w3id.org/peh/biochementities/8cfbb7ead7
+  name: Mono-cyclo-hexyl phthalate
+  short_name: MCHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132609
+  - https://identifiers.org/cas:7517-36-4
+  - https://identifiers.org/pubchem.compound:165618
+  - https://identifiers.org/inchikey:PMDKYLLIOLFQPO-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3c60285fb2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-cyclo-hexylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mchp
+- id: https://w3id.org/peh/biochementities/3bbc4c2033
+  name: Mono-ethyl phthalate
+  short_name: MEP
+  exact_matches:
+  - https://identifiers.org/inchikey:YWWHKOHZGJFMIE-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:75318
+  - https://identifiers.org/cas:2306-33-4
+  - https://identifiers.org/CHEBI:70973
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/c1911af20b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-ethyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MEP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mep
+- id: https://w3id.org/peh/biochementities/4846d9f21c
+  name: Mono-hydroxyheptyl phthalate
+  short_name: MHHpP
+  exact_matches:
+  - https://identifiers.org/inchikey:XNUWLZUVKWYOGR-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3924979385
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monohydroxyheptylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mhhpp
+- id: https://w3id.org/peh/biochementities/d60439fd3f
+  name: Mono-isobutyl phthalate
+  short_name: MiBP
+  exact_matches:
+  - https://identifiers.org/CHEBI:90038
+  - https://identifiers.org/cas:30833-53-5
+  - https://identifiers.org/pubchem.compound:92272
+  - https://identifiers.org/inchikey:RZJSUWQGFCHNFS-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/72ef88ed5b
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-isobutyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MiBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mibp
+- id: https://w3id.org/peh/biochementities/8de042c989
+  name: Mono-isopentyl phthalate
+  short_name: MiPeP
+  exact_matches:
+  - https://identifiers.org/inchikey:BTUUJXBKBIRHPP-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9500cb3705
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-isopentylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mipep
+  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1519'
+- id: https://w3id.org/peh/biochementities/a54fa2c623
+  name: Mono-iso-propyl phthalate
+  short_name: MiPrP
+  exact_matches:
+  - https://identifiers.org/pubchem.compound:118770
+  - https://identifiers.org/inchikey:CXJOEMLCEGZVPL-UHFFFAOYSA-N
+  - https://identifiers.org/cas:35118-50-4
+  - https://identifiers.org/CHEBI:132587
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/c7be1cc2b3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-isopropylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: miprp
+- id: https://w3id.org/peh/biochementities/6fe606670c
+  name: Mono-methyl phthalate
+  short_name: MMP
+  exact_matches:
+  - https://identifiers.org/CHEBI:89749
+  - https://identifiers.org/cas:4376-18-5
+  - https://identifiers.org/pubchem.compound:20392
+  - https://identifiers.org/inchikey:FNJSWIPFHMKRAT-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/55e4e1b391
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-methyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MMP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mmp
+- id: https://w3id.org/peh/biochementities/6b9673d664
+  name: Mono-methyl-octyl phthalate
+  short_name: MiNP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/015aee8b1a
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monomethyloctylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: minp
+  remark: a group of metabolic breakdown products formed in the human body after exposure to Di-isononyl phthalate (DINP)
+- id: https://w3id.org/peh/biochementities/604e243b71
+  name: Mono-n-butyl phthalate
+  short_name: MnBP
+  exact_matches:
+  - https://identifiers.org/CHEBI:88522
+  - https://identifiers.org/cas:131-70-4
+  - https://identifiers.org/pubchem.compound:8575
+  - https://identifiers.org/inchikey:YZBOVSFWWNVKRJ-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ca6f875372
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-butyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MnBP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mnbp
+- id: https://w3id.org/peh/biochementities/c2687ae1b4
+  name: Mono-n-heptyl phthalate
+  short_name: MnHpP
+  exact_matches:
+  - https://identifiers.org/inchikey:NTIWNFLUZQSLDR-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3924979385
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-n-heptylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mnhpp
+  remark: 'comments: According to chatGPT, this is an isomer of https://pubchem.ncbi.nlm.nih.gov/compound/Mono-2-heptyl-phthalate --> which is also the INCHIKEY in our DB. But is it the same compound?'
+- id: https://w3id.org/peh/biochementities/7af197e8a2
+  name: Mono-n-hexyl phthalate
+  short_name: MnHxP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132604
+  - https://identifiers.org/cas:24539-57-9
+  - https://identifiers.org/pubchem.compound:90532
+  - https://identifiers.org/inchikey:XOSNGXNHDRYFEF-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/129871092c
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-n-hexylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mnhxp
+- id: https://w3id.org/peh/biochementities/8254a63933
+  name: Mono-n-octyl phthalate
+  short_name: MnOP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132583
+  - https://identifiers.org/cas:5393-19-1
+  - https://identifiers.org/pubchem.compound:79362
+  - https://identifiers.org/inchikey:PKIYFBICNICNGJ-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/ef94d1bbcb
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-n-octylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mop
+- id: https://w3id.org/peh/biochementities/81a7c893af
+  name: Mono-n-pentyl phthalate
+  short_name: MnPeP
+  exact_matches:
+  - https://identifiers.org/CHEBI:132578
+  - https://identifiers.org/cas:24539-56-8
+  - https://identifiers.org/pubchem.compound:90531
+  - https://identifiers.org/inchikey:FPGPRAKRYDSZAW-UHFFFAOYSA-N
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/331ffb7642
+  parent_biochementities:
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-n-pentylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mnpep
+- id: https://w3id.org/peh/biochementities/1193cba352
+  name: Mono-propyl phthalate
+  short_name: MnPrP
+  exact_matches:
+  - https://identifiers.org/inchikey:NFOQRIXSEYVCJP-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:100503
+  - https://identifiers.org/cas:4376-19-6
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/9a21bd8746
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Monopropylftalaat
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: mprp
+- id: https://w3id.org/peh/biochementities/d0a30700ec
+  name: Mono-propyl-heptyl phthalate
+  short_name: MiDP
+  group_labels:
+  - phthalates
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/3b70545c92
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Mono-propyl-heptyl ftalaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: MiDP
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: midp
+
+# FROM HERE PARENT COMPOUNDS
+- id: https://w3id.org/peh/biochementities/ebf3797809
+  name: Tri-(2-ethylhexyl) trimellitate
+  short_name: TOTM
+  exact_matches:
+  - https://identifiers.org/CHEBI:184113
+  aliases:
+  - TEHTM
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tri-(2-ethylhexyl)trimellitaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/cbcefcf7df
+  name: Di-2-ethylhexyl terephthalate
+  short_name: DEHTP
+  exact_matches:
+  - https://identifiers.org/inchikey:RWPICVVBGZBXNA-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-2-ethylhexyltereftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/72ef88ed5b
+  name: Di-isobutyl phthalate
+  short_name: DiBP
+  exact_matches:
+  - https://identifiers.org/CHEBI:79053
+  - https://identifiers.org/cas:84-69-5
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-isobutylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/527f5ba7b6
+  name: Di(2-propylheptyl) phthalate
+  short_name: DPHP
+  exact_matches:
+  - https://identifiers.org/inchikey:MTYUOIVEVPTXFX-UHFFFAOYSA-N
+  aliases:
+  - DPrHpP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-2-propylheptyl ftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/3b70545c92
+  name: Di-isodecyl phthalate (all C10 phthalates including DPHP)
+  short_name: DiDP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34709
+  - https://identifiers.org/cas:26761-40-0
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-isodecylftalaat (alle C10-ftalaten inclusief DPHP)
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/015aee8b1a
+  name: Di-isononyl phthalate
+  short_name: DiNP
+  exact_matches:
+  - https://identifiers.org/inchikey:HBGGXOJOCNVPFY-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Diisononylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/95e3fd49d0
+  name: Di(2-ethylhexyl) phthalate
+  short_name: DEHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:17747
+  - https://identifiers.org/cas:117-81-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-2-ethylhexyl ftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/69630c70b5
+  name: Di-2-ethylhexyl adipate
+  short_name: DEHA
+  exact_matches:
+  - https://identifiers.org/CHEBI:34675
+  - https://identifiers.org/cas:103-23-1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-2-ethylhexyladipaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/331ffb7642
+  name: Di-n-pentyl phthalate
+  short_name: DnPeP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34680
+  - https://identifiers.org/cas:131-18-0
+  aliases:
+  - DPP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-n-pentylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/129871092c
+  name: Di-n-hexyl phthalate
+  short_name: DnHxP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34678
+  - https://identifiers.org/cas:84-75-3
+  aliases:
+  - DHxP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-n-hexylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/3924979385
+  name: Di-n-heptyl phthalate
+  short_name: DnHpP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34677
+  - https://identifiers.org/cas:3648-21-3
+  aliases:
+  - DHpP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-n-heptylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/3c60285fb2
+  name: Dicyclohexyl phthalate
+  short_name: DCHP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34693
+  - https://identifiers.org/cas:84-61-7
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Dicyclohexylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/9500cb3705
+  name: Di-isopentyl phthalate
+  short_name: DiPeP
+  exact_matches:
+  - https://identifiers.org/inchikey:JANBFCARANRIKJ-UHFFFAOYSA-N
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-isopentylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/c7be1cc2b3
+  name: Di-isopropyl phthalate
+  short_name: DiPrP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-isopropylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/55e4e1b391
+  name: Dimethyl phthalate
+  short_name: DMP
+  exact_matches:
+  - https://identifiers.org/CHEBI:4609
+  - https://identifiers.org/cas:131-11-3
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Dimethyl ftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/ef94d1bbcb
+  name: Di-n-octyl phthalate
+  short_name: DnOP
+  exact_matches:
+  - https://identifiers.org/CHEBI:34679
+  - https://identifiers.org/cas:117-84-0
+  aliases:
+  - DOP
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-n-octylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates
+- id: https://w3id.org/peh/biochementities/9a21bd8746
+  name: Di-n-propyl phthalate
+  short_name: DnPrP
+  exact_matches:
+  - https://identifiers.org/CHEBI:60069
+  - https://identifiers.org/cas:131-16-8
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Di-n-propylftalaat
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  - https://w3id.org/peh/biochementities/01KRB098ND3W1PTM3655D42ZRS
+  group_labels:
+  - phthalates

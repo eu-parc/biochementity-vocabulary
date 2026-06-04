@@ -19,6 +19,6 @@
             schema1:alternateName "ohmnbp" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "aprotic solvents" ;
+    pehterms:hasGroupLabel "aprotic solvents",
+        "phthalates" ;
     pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/ca6f875372> .
-

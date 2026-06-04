@@ -20,6 +20,6 @@
             schema1:alternateName "dep" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "pesticides" ;
+    pehterms:hasGroupLabel "pesticides",
+        "phthalates" ;
     pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/d98d8688ed> .
-
