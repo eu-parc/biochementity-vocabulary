@@ -1,0 +1,466 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/2835f7b907
+  name: 2,3,4 trihydroxybenzophenone
+  short_name: THB
+  exact_matches:
+  - https://identifiers.org/CHEBI:176813
+  - https://identifiers.org/cas:1143-72-2
+  - https://identifiers.org/pubchem.compound:70837
+  - https://identifiers.org/inchikey:HTQNYBBTZSBWKL-UHFFFAOYSA-N
+  aliases:
+  - alizarin yellow A
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/96d4cdff8e
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,3,4 trihydroxybenzofenon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: thb
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/2bd60f44db
+  name: 2,4-dihydroxybenzophenone
+  short_name: DHB
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1d33716ea1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 2,4-dihydroxybenzofenon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dhb
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/b4df89f991
+  name: 2-Ethylhexyl 4-(dimethylamino)benzoate
+  short_name: 2-Ethylhexyl 4-(dimethylamino)benzoate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:135932
+  - https://identifiers.org/cas:21245-02-3
+  - https://identifiers.org/pubchem.compound:30541
+  - https://identifiers.org/inchikey:WYWZRNAHINYAEF-UHFFFAOYSA-N
+  aliases:
+  - padimate-O
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Octyl dimethyl PABA
+  - property_name: short_name
+    language: nl-BE
+    translated_value: DABI
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dabi
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/80d84ddde6
+  name: 3-benzylidene camphor
+  short_name: 3-benzylidene camphor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/inchikey:OIQXFRANQVWXJF-ACCUITESSA-N
+  - https://identifiers.org/pubchem.compound:5901612
+  - https://identifiers.org/cas:15087-24-8
+  - https://identifiers.org/cas:36275-29-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 3-benzylidene camfor
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 3-BC
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: threebc
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/4da419e712
+  name: 4-hydroxy-benzophenone
+  short_name: 4OH-BP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:34421
+  - https://identifiers.org/cas:1137-42-4
+  - https://identifiers.org/pubchem.compound:14347
+  - https://identifiers.org/inchikey:NPFYZDNDJHZQKY-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-hydroxybenzofenon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourhbp
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/6e137790dc
+  name: 4-methyl-benzophenone
+  short_name: 4-MBP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/inchikey:WXPWZZHELZEVPO-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:8652
+  - https://identifiers.org/cas:134-84-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-methyl-benzofenon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: fourmbp
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/819dcc44c6
+  name: 4-methylbenzylidene camphor
+  short_name: 4-methylbenzylidene camphor
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:135937
+  - https://identifiers.org/cas:36861-47-9
+  - https://identifiers.org/cas:1782069-81-1
+  - https://identifiers.org/pubchem.compound:6434217
+  - https://identifiers.org/inchikey:HEOCBCNFKCOKBX-SDNWHVSQSA-N
+  aliases:
+  - Enzacamene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 4-methylbenzylidene camfor
+  - property_name: short_name
+    language: nl-BE
+    translated_value: 4-MBC
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: enzacamene
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/96d4cdff8e
+  name: Benzophenone
+  short_name: BP
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:41308
+  - https://identifiers.org/pubchem.compound:3102
+  - https://identifiers.org/inchikey:RWCCWEUUXYIKHB-UHFFFAOYSA-N
+  - https://identifiers.org/cas:119-61-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bp
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/b83a156631
+  name: Benzophenone 1
+  short_name: BP-1
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:34240
+  - https://identifiers.org/cas:131-56-6
+  - https://identifiers.org/inchikey:ZXDDPOHVAMWLBH-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:8572
+  aliases:
+  - 2,4-Dihydroxybenzophenone
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1d33716ea1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 1
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-1
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bpone
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/e65f135c61
+  name: Benzophenone 2
+  short_name: BP-2
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/inchikey:WXNRYSGJLQFHBR-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:8571
+  - https://identifiers.org/cas:131-55-5
+  aliases:
+  - 2,2',4,4'-Tetrahydroxybenzophenone
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 2
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-2
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bptwo
+  remark: 'comments: According to this ECHA doc (https://health.ec.europa.eu/latest-updates/sccs-preliminary-opinion-benzophenone-2-bp-2-and-benzophenone-5-bp-5-deadline-comments-17-june-2025-2025-04-22_en) BP-2 corresponds to compound https://pubchem.ncbi.nlm.nih.gov/compound/2_2_4_4_-Tetrahydroxybenzophenone. I have added all information accordingly but please double check that it is correct!'
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/1d33716ea1
+  name: Benzophenone 3
+  short_name: BP-3
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:34283
+  - https://identifiers.org/cas:131-57-7
+  - https://identifiers.org/pubchem.compound:4632
+  - https://identifiers.org/inchikey:DXGLGDHPHMLXJC-UHFFFAOYSA-N
+  aliases:
+  - 2-Hydroxy-4-methoxybenzophenone
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 3
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-3
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bpthree
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/f73c422f8c
+  name: Benzophenone 4
+  short_name: BP-4
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:135312
+  - https://identifiers.org/cas:4065-45-6
+  - https://identifiers.org/pubchem.compound:19988
+  - https://identifiers.org/inchikey:CXVGEDCSTKKODG-UHFFFAOYSA-N
+  aliases:
+  - Sulisobenzone
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 4
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-4
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bpfour
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/1a17edee80
+  name: Benzophenone 6
+  short_name: BP-6
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/inchikey:SODJJEXAWOSSON-UHFFFAOYSA-N
+  - https://identifiers.org/pubchem.compound:8570
+  - https://identifiers.org/cas:131-54-4
+  - https://identifiers.org/CHEBI:229993
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 6
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-6
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bpsix
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/b2d01864e2
+  name: Benzophenone 7
+  short_name: BP-7
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/inchikey:OMWSZDODENFLSV-UHFFFAOYSA-N
+  - https://identifiers.org/cas:85-19-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 7
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-7
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: bpseven
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/5e0484e089
+  name: Benzophenone 8
+  short_name: BP-8
+  exact_matches:
+  - https://identifiers.org/CHEBI:34208
+  - https://identifiers.org/pubchem.compound:8569
+  - https://identifiers.org/inchikey:MEZZCSHVIGVWFI-UHFFFAOYSA-N
+  - https://identifiers.org/cas:131-53-3
+  is_metabolite_of:
+  - https://w3id.org/peh/biochementities/1d33716ea1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Benzofenon 8
+  - property_name: short_name
+    language: nl-BE
+    translated_value: BP-8
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: dhmb
+  remark: 'source: 2,2''-Dihydroxy-4-methoxybenzophenone'
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/f98e90d185
+  name: Homosalate
+  short_name: Homosalate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:91642
+  - https://identifiers.org/cas:118-56-9
+  - https://identifiers.org/pubchem.compound:8362
+  - https://identifiers.org/inchikey:WSSJONWNBBTCMG-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Homosalate
+  - property_name: short_name
+    language: nl-BE
+    translated_value: HMS
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: hosa
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/a3690c90a0
+  name: Isoamyl p-methoxycinnamate
+  short_name: Isoamyl p-methoxycinnamate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:135982
+  - https://identifiers.org/cas:71617-10-2
+  - https://identifiers.org/pubchem.compound:92386
+  - https://identifiers.org/inchikey:UBNYRXMKIIGMKK-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Isoamyl p-methoxycinnamaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: IMZ
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: imz
+  group_labels:
+  - uv filters
+  - benzophenones
+- id: https://w3id.org/peh/biochementities/a4a3369787
+  name: Octyl methoxycinnamate
+  short_name: Octyl methoxycinnamate
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_73335
+  exact_matches:
+  - https://identifiers.org/CHEBI:88667
+  - https://identifiers.org/CHEBI:134750
+  - https://identifiers.org/pubchem.compound:5355130
+  - https://identifiers.org/inchikey:YBGZDTIWKVFICR-JLHYYAGUSA-N
+  aliases:
+  - Octinoxate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: Octyl methoxycinnamaat
+  - property_name: short_name
+    language: nl-BE
+    translated_value: OMC
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: omc
+  group_labels:
+  - uv filters
+  - benzophenones
