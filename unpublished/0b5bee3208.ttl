@@ -21,5 +21,5 @@
             schema1:alternateName "tphp" ;
             schema1:identifier "short_name" ;
             pehterms:hasContext <https://ror.org/04gq0w522> ] ;
-    pehterms:hasGroupLabel "flame retardants" .
-
+    pehterms:hasGroupLabel "flame retardants",
+        "phthalates" .
