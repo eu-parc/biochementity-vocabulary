@@ -9,7 +9,8 @@
         "Lineair Perfluoro-n-nonaansulfonzuur"@nl-be ;
     schema1:alternateName "PFNS",
         "PFNS"@nl-be ;
-    rdfs:subClassOf pehterms:BioChemEntity ;
+    rdfs:subClassOf pehterms:BioChemEntity , 
+        <https://w3id.org/peh/biochementities/976f77f289> ;
     skos:exactMatch <https://identifiers.org/cas:68259-12-1>,
         <https://identifiers.org/inchikey:MNEXVZFQQPKDHC-UHFFFAOYSA-N>,
         <https://identifiers.org/pubchem.compound:86998> ;
