@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/dbc94af2a2> a owl:Class ;
+    rdfs:label "1,1,1,3,3,3-Hexafluoro-2-(fluoromethoxy)propane",
+        "1,1,1,3,3,3-hexafluoro-2-(fluormethoxy)propaan"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_38867> ;
+    schema1:alternateName "sevoflurane" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:9130>,
+        <https://identifiers.org/cas:28523-86-6>,
+        <https://identifiers.org/inchikey:DFEYYRMXOJXZRJ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:5206> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "sevoflurane" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "volatile anaesthetics" .
+

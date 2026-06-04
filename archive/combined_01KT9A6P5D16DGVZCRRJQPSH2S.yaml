@@ -1,4 +1,26 @@
 biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/dbc94af2a2
+  name: 1,1,1,3,3,3-Hexafluoro-2-(fluoromethoxy)propane
+  short_name: sevoflurane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_38867
+  exact_matches:
+  - https://identifiers.org/CHEBI:9130
+  - https://identifiers.org/cas:28523-86-6
+  - https://identifiers.org/pubchem.compound:5206
+  - https://identifiers.org/inchikey:DFEYYRMXOJXZRJ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,1,1,3,3,3-hexafluoro-2-(fluormethoxy)propaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sevoflurane
+  group_labels:
+  - volatile anaesthetics
 - id: https://w3id.org/peh/biochementities/b33a87a4d2
   name: Mercapturic acid
   short_name: Mercapturic acid
@@ -17,7 +39,10 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: ma
-  remark: "comments: CHEBI keys in our DB refer to N-acetyl-L-cysteine https://www.ebi.ac.uk/chebi/CHEBI:28939. I think it's not 100% correct? \nAccording to this article https://pubmed.ncbi.nlm.nih.gov/31944156/#:~:text=Mercapturic%20acids%20(N%2Dacetyl%2D,%2Dconjugates%2C%20and%20mercapturic%20acids; --> there is not a single  Mercapturic acid so I don't think we can link this to a key? Is this a sum parameter?"
+  remark: "comments: CHEBI keys in our DB refer to N-acetyl-L-cysteine https://www.ebi.ac.uk/chebi/CHEBI:28939.\
+    \ I think it's not 100% correct? \nAccording to this article https://pubmed.ncbi.nlm.nih.gov/31944156/#:~:text=Mercapturic%20acids%20(N%2Dacetyl%2D,%2Dconjugates%2C%20and%20mercapturic%20acids;\
+    \ --> there is not a single  Mercapturic acid so I don't think we can link this\
+    \ to a key? Is this a sum parameter?"
 - id: https://w3id.org/peh/biochementities/c790960115
   name: T,t-muconic acid
   short_name: T,t-muconic acid
