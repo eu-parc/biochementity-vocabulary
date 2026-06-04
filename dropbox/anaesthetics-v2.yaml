@@ -1,0 +1,23 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/dbc94af2a2
+  name: 1,1,1,3,3,3-Hexafluoro-2-(fluoromethoxy)propane
+  short_name: sevoflurane
+  has_role:
+  - https://purl.obolibrary.org/obo/CHEBI_38867
+  exact_matches:
+  - https://identifiers.org/CHEBI:9130
+  - https://identifiers.org/cas:28523-86-6
+  - https://identifiers.org/pubchem.compound:5206
+  - https://identifiers.org/inchikey:DFEYYRMXOJXZRJ-UHFFFAOYSA-N
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  translations:
+  - property_name: name
+    language: nl-BE
+    translated_value: 1,1,1,3,3,3-hexafluoro-2-(fluormethoxy)propaan
+  context_aliases:
+  - property_name: short_name
+    context: https://ror.org/04gq0w522
+    alias: sevoflurane 
+  group_labels:
+  - volatile anaesthetics

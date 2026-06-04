@@ -8,6 +8,6 @@
     rdfs:label "volatile organic compounds" ;
     schema1:alternateName "VOCs" ;
     rdfs:subClassOf pehterms:BioChemEntity ;
-    skos:exactMatch <CHEBI:134179> ;
+    skos:exactMatch <https://identifiers.org/CHEBI:134179> ;
     pehterms:hasGroupLabel "volatile organic compounds" .
 
