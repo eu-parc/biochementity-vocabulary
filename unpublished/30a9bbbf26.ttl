@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/30a9bbbf26> a owl:Class ;
+    rdfs:label "Linear Perfluoro-n-decanesulfonamide",
+        "Lineair Perfluoro-n-decaansulfonamide"@nl-be ;
+    schema1:alternateName "PFDSA",
+        "PFDSA"@nl-be ;
+    schema1:comment "comments: Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Perfluoro-1-decanesulfonamide" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "pfdsa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] .
+

@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f8034a86c7> a owl:Class ;
+    rdfs:label "Bisphenol AP" ;
+    schema1:alternateName "BPAP" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:165234>,
+        <https://identifiers.org/cas:1571-75-1>,
+        <https://identifiers.org/inchikey:VOWWYDCFAISREI-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:623849> .
+

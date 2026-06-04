@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/f779ea9ed0> a owl:Class ;
+    rdfs:label "N-acetyl-β-D glucosaminidase" ;
+    schema1:alternateName "NAG" ;
+    rdfs:subClassOf pehterms:BioChemEntity .
+

@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/e86f24d83c> a owl:Class ;
+    rdfs:label "Dimethylalkylphosphates",
+        "Dimethylalkylphosphates"@nl-be ;
+    schema1:alternateName "Dimethylalkylphosphates",
+        "DMAP"@nl-be ;
+    schema1:comment "comments: again this seems to be a group of compounds. Can this be linked to any key?" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dmap" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] .
+

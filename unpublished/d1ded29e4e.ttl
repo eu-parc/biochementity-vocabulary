@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/d1ded29e4e> a owl:Class ;
+    rdfs:label "Dioxin-like PCBs",
+        "Dioxine-achtige PCBs (dl-PCBs) (CALUX)"@nl-be ;
+    schema1:alternateName "Dioxin-like PCBs" ;
+    schema1:comment "comments: I'm not sure if this can be linked to any key…" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dlpcb" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] .
+

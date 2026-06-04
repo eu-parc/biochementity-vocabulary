@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/59c72babd3> a owl:Class ;
+    rdfs:label "Active Vitamin B12",
+        "Actief vitamine B12"@nl-be ;
+    schema1:alternateName "Holo-transcobalamin II",
+        "VitB12" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://loinc.org/LP156140-8> .
+

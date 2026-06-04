@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/b960657391> a owl:Class ;
+    rdfs:label "DEHP metabolites",
+        "alle DEHP metabolieten"@nl-be ;
+    schema1:alternateName "dehp" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "dehp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "phthalates" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/95e3fd49d0> .
+

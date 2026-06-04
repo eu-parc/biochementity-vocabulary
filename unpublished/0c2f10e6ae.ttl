@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/0c2f10e6ae> a owl:Class ;
+    rdfs:label "LDL cholesterol",
+        "LDL cholesterol"@nl-be ;
+    schema1:alternateName "LDL cholesterol" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:47774>,
+        <https://loinc.org/LP15491-1> .
+

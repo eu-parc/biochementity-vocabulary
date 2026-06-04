@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/114e8d43ec> a owl:Class ;
+    rdfs:label "Cholesterol",
+        "Cholesterol"@nl-be ;
+    schema1:alternateName "CHOL" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:16113>,
+        <https://identifiers.org/cas:57-88-5>,
+        <https://identifiers.org/pubchem.compound:5997>,
+        <https://loinc.org/LP15493-7> .
+

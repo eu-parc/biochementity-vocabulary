@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/01KT9ERZ6AQ9GVTE6P0ZP28QF3> a owl:Class ;
+    rdfs:label "Histone-lysine N-methyltransferase" ;
+    schema1:alternateName "SUV39H1" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <NCBIGene:6839> .
+

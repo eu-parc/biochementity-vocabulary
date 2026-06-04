@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/4509930a20> a owl:Class ;
+    rdfs:label "9,10-DHP",
+        "9,10-DHP"@nl-be ;
+    schema1:alternateName "9,10-DHP" ;
+    schema1:comment "comments: Can this be 9,10-Dihydrophenanthrene? Please confirm and add keys and name accordingly: https://pubchem.ncbi.nlm.nih.gov/compound/9_10-Dihydrophenanthrene" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "ninetendhp" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] .
+

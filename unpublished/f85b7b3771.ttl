@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/f85b7b3771> a owl:Class ;
+    rdfs:label "black carbon particles",
+        "Zwarte koolstofdeeltjes"@nl-be ;
+    schema1:alternateName "BC particles" ;
+    rdfs:subClassOf pehterms:BioChemEntity .
+

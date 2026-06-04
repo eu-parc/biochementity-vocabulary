@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/26a3eda73a> a owl:Class ;
+    rdfs:label "Interleukin 12",
+        "Interleukine 12"@nl-be ;
+    schema1:alternateName "IL12" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://loinc.org/LP18174-0> .
+

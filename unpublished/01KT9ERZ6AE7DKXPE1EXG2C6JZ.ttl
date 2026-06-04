@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/01KT9ERZ6AE7DKXPE1EXG2C6JZ> a owl:Class ;
+    rdfs:label "Deoxyribonucleic acid",
+        "Desoxyribonucleïnezuur"@nl-be ;
+    schema1:alternateName "DNA" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:16991> .
+

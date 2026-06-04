@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/peh/biochementities/c8943e1416> a owl:Class ;
+    rdfs:label "Dioxins/furans and related compounds",
+        "Dioxins/furans and related compounds"@nl-be ;
+    schema1:alternateName "Dioxins/furans and related compounds" ;
+    rdfs:subClassOf pehterms:BioChemEntity .
+

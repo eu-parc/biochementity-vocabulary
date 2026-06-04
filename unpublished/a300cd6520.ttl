@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/a300cd6520> a owl:Class ;
+    rdfs:label "Estradiol",
+        "Oestradiol"@nl-be ;
+    schema1:alternateName "Estradiol" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:23965>,
+        <https://identifiers.org/pubchem.compound:5757>,
+        <https://loinc.org/LP14497-9> .
+

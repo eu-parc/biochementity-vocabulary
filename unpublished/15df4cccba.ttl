@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/15df4cccba> a owl:Class ;
+    rdfs:label "Follicle-stimulating hormone",
+        "Follikelstimulerend hormoon"@nl-be ;
+    schema1:alternateName "FSH",
+        "Follitropin" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:81569>,
+        <https://loinc.org/LP14499-5> .
+
