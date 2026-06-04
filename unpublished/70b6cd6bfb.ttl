@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/70b6cd6bfb> a owl:Class ;
+    rdfs:label "4-fluoro-3-phenoxybenzoic acid",
+        "4-fluor-3-fenoxybenzoëzuur"@nl-be ;
+    schema1:alternateName "F-3-PBA",
+        "F-3-PBA"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:165196>,
+        <https://identifiers.org/cas:77279-89-1>,
+        <https://identifiers.org/inchikey:VLXNXMTVRWIUJZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:157032> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "fpba" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides",
+        "pyrethroid pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/68cb3faf20> .
+

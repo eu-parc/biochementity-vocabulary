@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/68cb3faf20> a owl:Class ;
+    rdfs:label "Cyfluthrin",
+        "Cyfluthrine"@nl-be ;
+    schema1:alternateName "Cyfluthrin" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:4034>,
+        <https://identifiers.org/cas:68359-37-5> ;
+    pehterms:hasGroupLabel "pesticides",
+        "pyrethroid pesticides" .
+

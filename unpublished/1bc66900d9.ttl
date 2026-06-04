@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/1bc66900d9> a owl:Class ;
+    rdfs:label "3-phenoxybenzoic acid",
+        "Fenoxybenzoëzuur"@nl-be ;
+    schema1:alternateName "3PBA",
+        "3PBA"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:72631>,
+        <https://identifiers.org/cas:3739-38-6>,
+        <https://identifiers.org/inchikey:NXTDJHZGHOFSQG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:19539> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "threepba" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides",
+        "pyrethroid pesticides" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/18031c15c9>,
+        <https://w3id.org/peh/biochementities/262083d9ef>,
+        <https://w3id.org/peh/biochementities/4d8f49f24e>,
+        <https://w3id.org/peh/biochementities/66d1da7d87>,
+        <https://w3id.org/peh/biochementities/6c4eee9eae>,
+        <https://w3id.org/peh/biochementities/c8f604e8f0> .
+

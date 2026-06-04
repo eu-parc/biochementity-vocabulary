@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f72cdc1be8> a owl:Class ;
+    rdfs:label "trans-Permethrinic acid (racemic)" ;
+    schema1:alternateName "(+/-)-trans-Permethrinic acid",
+        "rac-trans-Permethrinic acid",
+        "trans-DCCA",
+        "trans-DCCA (rac)" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/5477e6723f>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/pubchem.compound:41539> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "tdcca" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "pesticides",
+        "pyrethroid pesticides" ;
+    pehterms:isIsomerOf <https://w3id.org/peh/biochementities/b3529f6420> .
+

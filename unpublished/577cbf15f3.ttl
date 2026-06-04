@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/577cbf15f3> a owl:Class ;
+    rdfs:label "Carbofuran",
+        "Carbofuran"@nl-be ;
+    schema1:alternateName "Carbofuran" ;
+    rdfs:subClassOf <https://w3id.org/peh/biochementities/01KRB098NDAQY9HFW96RR8WCR5>,
+        pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:34611>,
+        <https://identifiers.org/cas:1563-66-2> ;
+    pehterms:hasGroupLabel "carbamate pesticides",
+        "pesticides" .
+

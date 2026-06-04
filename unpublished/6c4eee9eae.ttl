@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/6c4eee9eae> a owl:Class ;
+    rdfs:label "Fenvalerate",
+        "Fenvaleraat"@nl-be ;
+    schema1:alternateName "Fenvalerate" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:5014>,
+        <https://identifiers.org/cas:51630-58-1> ;
+    pehterms:hasGroupLabel "pesticides",
+        "pyrethroid pesticides" .
+
