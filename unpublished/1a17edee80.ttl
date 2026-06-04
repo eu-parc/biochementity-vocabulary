@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/1a17edee80> a owl:Class ;
+    rdfs:label "Benzophenone 6",
+        "Benzofenon 6"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+    schema1:alternateName "BP-6",
+        "BP-6"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:229993>,
+        <https://identifiers.org/cas:131-54-4>,
+        <https://identifiers.org/inchikey:SODJJEXAWOSSON-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:8570> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bpsix" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "benzophenones",
+        "uv filters" .
+

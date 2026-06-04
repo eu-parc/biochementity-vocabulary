@@ -247,7 +247,9 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: bptwo
-  remark: 'comments: According to this ECHA doc (https://health.ec.europa.eu/latest-updates/sccs-preliminary-opinion-benzophenone-2-bp-2-and-benzophenone-5-bp-5-deadline-comments-17-june-2025-2025-04-22_en) BP-2 corresponds to compound https://pubchem.ncbi.nlm.nih.gov/compound/2_2_4_4_-Tetrahydroxybenzophenone. I have added all information accordingly but please double check that it is correct!'
+  remark: 'comments: According to this ECHA doc (https://health.ec.europa.eu/latest-updates/sccs-preliminary-opinion-benzophenone-2-bp-2-and-benzophenone-5-bp-5-deadline-comments-17-june-2025-2025-04-22_en)
+    BP-2 corresponds to compound https://pubchem.ncbi.nlm.nih.gov/compound/2_2_4_4_-Tetrahydroxybenzophenone.
+    I have added all information accordingly but please double check that it is correct!'
   group_labels:
   - uv filters
   - benzophenones

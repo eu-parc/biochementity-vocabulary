@@ -1,0 +1,26 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/e65f135c61> a owl:Class ;
+    rdfs:label "Benzophenone 2",
+        "Benzofenon 2"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+    schema1:alternateName "2,2',4,4'-Tetrahydroxybenzophenone",
+        "BP-2",
+        "BP-2"@nl-be ;
+    schema1:comment "comments: According to this ECHA doc (https://health.ec.europa.eu/latest-updates/sccs-preliminary-opinion-benzophenone-2-bp-2-and-benzophenone-5-bp-5-deadline-comments-17-june-2025-2025-04-22_en) BP-2 corresponds to compound https://pubchem.ncbi.nlm.nih.gov/compound/2_2_4_4_-Tetrahydroxybenzophenone. I have added all information accordingly but please double check that it is correct!" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:131-55-5>,
+        <https://identifiers.org/inchikey:WXNRYSGJLQFHBR-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:8571> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "bptwo" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "benzophenones",
+        "uv filters" .
+

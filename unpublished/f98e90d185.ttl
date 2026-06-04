@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/f98e90d185> a owl:Class ;
+    rdfs:label "Homosalate",
+        "Homosalate"@nl-be ;
+    ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+    schema1:alternateName "Homosalate",
+        "HMS"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:91642>,
+        <https://identifiers.org/cas:118-56-9>,
+        <https://identifiers.org/inchikey:WSSJONWNBBTCMG-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:8362> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "hosa" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "benzophenones",
+        "uv filters" .
+

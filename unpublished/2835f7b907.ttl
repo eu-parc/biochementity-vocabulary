@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/peh/biochementities/2835f7b907> a owl:Class ;
+    rdfs:label "2,3,4 trihydroxybenzophenone",
+        "2,3,4 trihydroxybenzofenon"@nl-be ;
+    schema1:alternateName "THB",
+        "alizarin yellow A" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/CHEBI:176813>,
+        <https://identifiers.org/cas:1143-72-2>,
+        <https://identifiers.org/inchikey:HTQNYBBTZSBWKL-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:70837> ;
+    pehterms:hasContextAlias [ a pehterms:ContextAlias ;
+            schema1:alternateName "thb" ;
+            schema1:identifier "short_name" ;
+            pehterms:hasContext <https://ror.org/04gq0w522> ] ;
+    pehterms:hasGroupLabel "benzophenones",
+        "uv filters" ;
+    pehterms:isMetaboliteOf <https://w3id.org/peh/biochementities/96d4cdff8e> .
+
