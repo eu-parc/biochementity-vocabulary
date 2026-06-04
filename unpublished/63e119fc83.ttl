@@ -10,7 +10,8 @@
     schema1:alternateName "Heptafluorobutyric acid",
         "PFBA",
         "PFBA"@nl-be ;
-    rdfs:subClassOf pehterms:BioChemEntity ;
+    rdfs:subClassOf pehterms:BioChemEntity,
+        <https://w3id.org/peh/biochementities/a85dc0f98d> ;
     skos:exactMatch <https://identifiers.org/CHEBI:39426>,
         <https://identifiers.org/cas:375-22-4>,
         <https://identifiers.org/inchikey:YPJUNDFVDDCYIH-UHFFFAOYSA-N>,

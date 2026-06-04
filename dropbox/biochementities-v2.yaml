@@ -1,0 +1,990 @@
+biochementity_subclasses:
+- id: https://w3id.org/peh/biochementities/86823d9b21
+  short_name: BDNF
+  name: Brain-Derived Neurotrophic Factor
+  exact_matches:
+  - https://identifiers.org/mesh:D019208
+  - https://identifiers.org/uniprot:P23560
+  aliases:
+  - bdnf
+  - BDNF
+  - ANON2
+  - BULN2
+  - Brain-derived neurotrophic factor
+  - brain derived neurotrophic factor
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/cc88737307
+  short_name: KP54
+  name: Kisspeptine 54
+  exact_matches:
+  - https://identifiers.org/CHEBI:80304
+  - https://identifiers.org/uniprot:Q15726
+  aliases:
+  - kp54
+  - Metastin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/172a9f0c0f
+  short_name: Hemoglobin
+  name: Hemoglobin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Hemoglobine
+  exact_matches:
+  - https://loinc.org/LP14449-0
+  - https://identifiers.org/mesh:D006454
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/c2657af297
+  short_name: APOA
+  name: Apolipoprotein A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne A
+  exact_matches:
+  - https://loinc.org/LP15410-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/800a7a5069
+  short_name: APOB
+  name: Apolipoprotein B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne B
+  exact_matches:
+  - https://loinc.org/LP15400-2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/836956d7ac
+  short_name: APOA1
+  name: Apolipoprotein A-I
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Apolipoproteïne A-I
+  exact_matches:
+  - https://loinc.org/LP15395-4
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/114e8d43ec
+  short_name: CHOL
+  name: Cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cholesterol
+  exact_matches:
+  - https://loinc.org/LP15493-7
+  - https://identifiers.org/CHEBI:16113
+  - https://identifiers.org/cas:57-88-5
+  - https://identifiers.org/pubchem.compound:5997
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/8a43cb03ae
+  short_name: HDL cholesterol
+  name: HDL cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: HDL cholesterol
+  exact_matches:
+  - https://identifiers.org/CHEBI:47775
+  - https://loinc.org/LP15489-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/0c2f10e6ae
+  short_name: LDL cholesterol
+  name: LDL cholesterol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: LDL cholesterol
+  exact_matches:
+  - https://identifiers.org/CHEBI:47774
+  - https://loinc.org/LP15491-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/5210c7434f
+  short_name: LPa
+  name: Lipoprotein a
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Lipoproteïne a
+  exact_matches:
+  - https://loinc.org/LP14886-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/29144220d7
+  short_name: Triglyceride
+  name: Triglyceride
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Triglyceride
+  exact_matches:
+  - https://identifiers.org/CHEBI:17855
+  - https://loinc.org/LP15275-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/f85b7b3771
+  short_name: BC particles
+  name: black carbon particles
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Zwarte koolstofdeeltjes
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: DNA
+  short_name: DNA
+  name: Deoxyribonucleic acid
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Desoxyribonucleïnezuur
+  exact_matches:
+  - https://identifiers.org/CHEBI:16991
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/529dd7010a
+  short_name: MTDNA
+  name: Mitochondrial DNA
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Mitochondriaal DNA
+  exact_matches:
+  - https://identifiers.org/mesh:D004272
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/e5806eaacc
+  short_name: Telomere
+  name: Telomere
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Telomeer
+  exact_matches:
+  - https://identifiers.org/mesh:D016615
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/4db9597ef3
+  short_name: CEA
+  name: Carcinoembryonic Ag
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Carcino-embryonaal antigen
+  exact_matches:
+  - https://loinc.org/LP28643-2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/880178ac17
+  short_name: PSA
+  name: Prostate specific Ag
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Prostaat Specifiek Antigeen
+  exact_matches:
+  - https://loinc.org/LP18193-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/374936489c
+  short_name: p53 Ab
+  name: p53 Ab
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: p53 Ab
+  exact_matches:
+  - https://loinc.org/LP266571-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: AR
+  name: androgen receptor
+  exact_matches:
+  - NCBIGene:367
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ESR1
+  name: estrogen receptor alpha
+  exact_matches:
+  - NCBIGene:2099
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ESR2
+  name: estrogen receptor beta
+  exact_matches:
+  - NCBIGene:2100
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: NR3C1
+  name: glucocorticoid receptor
+  exact_matches:
+  - NCBIGene:2908
+  aliases:
+  - nuclear receptor subfamily 3, group C, member 1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: OGG1
+  name: 8-Oxoguanine glycosylase
+  exact_matches:
+  - NCBIGene:4968
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: PPARA
+  name: Peroxisome proliferator-activated receptor alpha
+  exact_matches:
+  - NCBIGene:5465
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: PPARG
+  name: Peroxisome proliferator-activated receptor gamma
+  exact_matches:
+  - NCBIGene:5468
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: SUV39H1
+  name: Histone-lysine N-methyltransferase
+  exact_matches:
+  - NCBIGene:6839
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: TERT
+  name: Telomerase reverse transcriptase
+  exact_matches:
+  - NCBIGene:7015
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: RPLP0
+  name: 60S acidic ribosomal protein P0
+  exact_matches:
+  - NCBIGene:6175
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: LINE1
+  name: Long interspersed nuclear element-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/e1421a10bd
+  short_name: fer
+  name: Ferritine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Ferritine
+  exact_matches:
+  - https://loinc.org/LP15568-6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/898fb7162a
+  short_name: 8-oxo-dG
+  name: 8-hydroxy-2'-deoxyguanosine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 8-Oxo-2'-deoxyguanosine
+  - property_name: short_name
+    language: nl-be
+    translated_value: 8-oxodG
+  exact_matches:
+  - https://identifiers.org/CHEBI:40304
+  - https://identifiers.org/cas:88847-89-6
+  - https://identifiers.org/pubchem.compound:73318
+  aliases:
+  - DGUA
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/d20296e515
+  short_name: iod
+  name: Iodine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: jodium
+  exact_matches:
+  - https://identifiers.org/CHEBI:24859
+  - https://loinc.org/LP15157-8
+  - https://identifiers.org/pubchem.compound:807
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/1559aa234a
+  short_name: CRP
+  name: C reactive protein
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: C reactief proteïne
+  exact_matches:
+  - https://loinc.org/LP15023-2
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: false
+  name: Nitric oxide
+  exact_matches:
+  - https://identifiers.org/CHEBI:16480
+  - https://identifiers.org/cas:10102-43-9
+  - https://identifiers.org/pubchem.compound:145068
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: stikstofmonoxide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/3be3073f25
+  short_name: IgA
+  name: Immunoglobulin A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline A
+  exact_matches:
+  - https://identifiers.org/CHEBI:5883
+  - https://loinc.org/LP14669-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2615093cbc
+  short_name: IgE
+  name: Immunoglobulin E
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline E
+  exact_matches:
+  - https://loinc.org/LP14671-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/159a060627
+  short_name: IgM
+  name: Immunoglobulin M
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline M
+  exact_matches:
+  - https://loinc.org/LP14674-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/847b40fff5
+  short_name: IL1B
+  name: Interleukin 1 beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 1 beta
+  exact_matches:
+  - https://loinc.org/LP18509-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/a669eea2f2
+  short_name: IFN-gamma
+  name: Interferon gamma
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interferon gamma
+  exact_matches:
+  - https://loinc.org/LP18171-6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/3ba8fb255d
+  short_name: IL10
+  name: Interleukin 10
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 10
+  exact_matches:
+  - https://loinc.org/LP21163-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/26a3eda73a
+  short_name: IL12
+  name: Interleukin 12
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 12
+  exact_matches:
+  - https://loinc.org/LP18174-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/5b93dce3b9
+  short_name: IL2
+  name: Interleukin 2
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 2
+  exact_matches:
+  - https://identifiers.org/CHEBI:5940
+  - https://loinc.org/LP16470-4
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2276d5cdfb
+  short_name: IL-4
+  name: Interleukin 4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 4
+  exact_matches:
+  - https://loinc.org/LP16472-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/ed2162ba3c
+  short_name: IL6
+  name: Interleukin 6
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 6
+  exact_matches:
+  - https://loinc.org/26881-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/06d1bd67c8
+  short_name: IL8
+  name: Interleukin 8
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Interleukine 8
+  exact_matches:
+  - https://loinc.org/LP30829-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/8298f2548f
+  short_name: TNF alpha
+  name: Tumor necrosis factor alfa
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Tumor necrosis factor alfa
+  exact_matches:
+  - https://loinc.org/LP18480-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/4371321ab9
+  short_name: Cortisone
+  name: Cortisone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cortisone
+  exact_matches:
+  - https://identifiers.org/CHEBI:16962
+  - https://identifiers.org/cas:53-06-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/98dafd8b67
+  short_name: A1 Microglob
+  name: Alpha-1-Microglobulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alfa1-microglobuline
+  exact_matches:
+  - https://loinc.org/LP40499-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/015855cb32
+  short_name: CYSTATC
+  name: Cystatin C
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cystatine C
+  exact_matches:
+  - https://loinc.org/LP31553-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2aa970c3de
+  short_name: Adiponectin
+  name: Adiponectin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Adiponectine
+  exact_matches:
+  - https://loinc.org/LP61813-9
+  - https://identifiers.org/CHEBI:81572
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2c35c1a8a4
+  short_name: Glu
+  name: Glucose
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Glucose
+  exact_matches:
+  - https://identifiers.org/CHEBI:17234
+  - https://loinc.org/LP14635-4
+  - https://identifiers.org/pubchem.compound:5793
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ACADM
+  name: acyl-CoA dehydrogenase medium chain
+  aliases:
+  - MCAD
+  - Medium-chain acyl-CoA dehydrogenase
+  exact_matches:
+  - NCBIGene:34
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ETFA
+  name: electron transfer flavoprotein subunit alpha
+  exact_matches:
+  - NCBIGene:2108
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ETFB
+  name: electron transfer flavoprotein subunit beta
+  exact_matches:
+  - NCBIGene:2109
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: ETFDH
+  name: electron transfer flavoprotein dehydrogenase
+  exact_matches:
+  - NCBIGene:2110
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/69e65497f0
+  short_name: Alkaline Phosphatase
+  name: Alkaline Phosphatase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alkalische fosfatase
+  exact_matches:
+  - https://loinc.org/LP15346-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/c18f126f50
+  short_name: Gamma-GT
+  name: Gamma glutamyl transferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: gamma-glutamyltransferase
+  exact_matches:
+  - https://loinc.org/LP15590-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/1703f91c5c
+  short_name: GPT
+  name: Alanine aminotransferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alanine aminotransferase
+  aliases:
+  - Transaminase ALT
+  exact_matches:
+  - https://loinc.org/LP15333-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/f212b94058
+  short_name: GOT
+  name: Aspartate aminotransferase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Transaminase AST
+  aliases:
+  - Transaminase AST
+  exact_matches:
+  - https://loinc.org/LP15426-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/38ef854e1e
+  short_name: Insulin
+  name: Insulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Insuline
+  exact_matches:
+  - https://identifiers.org/CHEBI:145810
+  - https://loinc.org/LP14676-8
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/13b61e33ed
+  short_name: Leptin
+  name: Leptin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Leptine
+  exact_matches:
+  - https://identifiers.org/inchikey:NRYBAZVQPHGZNS-ZSOCWYAHSA-N
+  - https://loinc.org/LP19488-3
+  - https://identifiers.org/CHEBI:81571
+  - https://identifiers.org/pubchem.compound:90470904
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: KISS1
+  name: KiSS-1 metastasis suppressor
+  exact_matches:
+  - NCBIGene:3814
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/4413ea2050
+  short_name: Estradiol-17-beta
+  name: Estradiol-17-beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: oestradiol-17-beta
+  exact_matches:
+  - https://identifiers.org/CHEBI:23965
+  - https://identifiers.org/pubchem.compound:5757
+  - https://loinc.org/LP14497-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/e56f7fac35
+  short_name: 17-Hydroxyprogesterone
+  name: 17-Hydroxyprogesterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 17-hydroxyprogesteron
+  exact_matches:
+  - https://loinc.org/LP14974-7
+  - https://identifiers.org/CHEBI:17252
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/28ef4246ce
+  short_name: Aromatase
+  name: Aromatase
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Aromatase
+  exact_matches:
+  - https://identifiers.org/uniprot:P11511
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/a300cd6520
+  short_name: Estradiol
+  name: Estradiol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Oestradiol
+  exact_matches:
+  - https://identifiers.org/CHEBI:23965
+  - https://identifiers.org/pubchem.compound:5757
+  - https://loinc.org/LP14497-9
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/15df4cccba
+  short_name: FSH
+  name: Follicle-stimulating hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Follikelstimulerend hormoon
+  exact_matches:
+  - https://loinc.org/LP14499-5
+  - https://identifiers.org/CHEBI:81569
+  aliases:
+  - Follitropin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/b0dfbe5096
+  short_name: Inhibin B
+  name: Inhibin B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Inhibine B
+  exact_matches:
+  - https://loinc.org/LP29072-3
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2b9645dc7a
+  short_name: LH
+  name: Luteinizing hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Luteïniserend hormoon
+  exact_matches:
+  - https://loinc.org/LP14683-4
+  - https://identifiers.org/CHEBI:81568
+  aliases:
+  - lutropin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/0414e57c6a
+  short_name: Progesterone
+  name: Progesterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Progesteron
+  exact_matches:
+  - https://identifiers.org/CHEBI:17026
+  - https://identifiers.org/pubchem.compound:5994
+  - https://loinc.org/LP14041-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/3227a87369
+  short_name: SHBG
+  name: Sex hormone binding globulin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: geslachtshormoonbindend globuline
+  exact_matches:
+  - https://loinc.org/LP15863-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/33d7480557
+  short_name: Testosterone
+  name: Testosterone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Testosteron
+  exact_matches:
+  - https://identifiers.org/CHEBI:17347
+  - https://identifiers.org/cas:58-22-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/a10038c486
+  short_name: Cortisol
+  name: Cortisol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Cortisol
+  exact_matches:
+  - https://identifiers.org/CHEBI:17650
+  - https://identifiers.org/pubchem.compound:5754
+  - https://loinc.org/LP14161-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: THRA
+  name: Thyroid hormone receptor alpha
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroid hormone receptor alpha
+  exact_matches:
+  - https://identifiers.org/uniprot:P10827
+  - https://identifiers.org/mesh:D037021
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: null
+  short_name: THRB
+  name: Thyroid hormone receptor beta
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroid hormone receptor beta
+  exact_matches:
+  - https://identifiers.org/uniprot:P10828
+  - https://identifiers.org/mesh:D037042
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/fd77cfa3ba
+  short_name: TSH
+  name: Thyroid-stimulating hormone
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Thyroïd stimulerend hormoon
+  aliases:
+  - Thyrotropin
+  exact_matches:
+  - https://loinc.org/LP14487-0
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/fea12ccdd3
+  short_name: Thyroxine
+  name: Thyroxine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: thyroxine
+  aliases:
+  - Total Thyroxine
+  exact_matches:
+  - https://loinc.org/LP15900-1
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/e2c63c8320
+  short_name: Triiodothyronine
+  name: Triiodothyronine
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Trijoodthyronine
+  aliases:
+  - total triiodothyronine
+  exact_matches:
+  - https://loinc.org/LP15922-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/ec7b99591e
+  short_name: VitA
+  name: Vitamin A
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vitamine A
+  exact_matches:
+  - https://identifiers.org/CHEBI:12777
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/1329d0ec01
+  short_name: VitB
+  name: Vitamin B
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Vitamine B
+  exact_matches:
+  - https://identifiers.org/mesh:D014803
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/59c72babd3
+  short_name: VitB12
+  name: Active Vitamin B12
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Actief vitamine B12
+  exact_matches:
+  - https://loinc.org/LP156140-8
+  aliases:
+  - Holo-transcobalamin II
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/2b75edef33
+  short_name: VitD
+  name: 25-hydroxyvitamin D3
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: 25-hydroxyvitamine D3
+  exact_matches:
+  - https://loinc.org/LP15455-6
+  aliases:
+  - calcidiol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/681c9ff0f5
+  short_name: VitE
+  name: Alpha tocopherol
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Alpha tocopherol
+  exact_matches:
+  - https://loinc.org/LP15369-9
+  aliases:
+  - vitamin E
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/dff6986f8f
+  short_name: albumin
+  name: albumin
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: albumine
+  exact_matches:
+  - https://loinc.org/LP6118-6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/a71551a66b
+  short_name: IL1
+  name: Interleukin 1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: interleukine 1
+  exact_matches:
+  - https://loinc.org/LP16469-6
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/1ca15dae91
+  short_name: IgG
+  name: Immunoglobulin G
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Immunoglobuline Gamma
+  exact_matches:
+  - https://loinc.org/LP14672-7
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/eeb18819be
+  short_name: Kim-1
+  name: kidney injury molecule 1
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: kidney injury molecule 1
+  aliases:
+  - Hepatitis A virus cellular receptor 1
+  exact_matches:
+  - https://identifiers.org/uniprot:Q96D42
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/94ba99b53e
+  short_name: LTB4
+  name: Leukotriene B4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Leukotrieen B4
+  exact_matches:
+  - https://loinc.org/LP440922-5
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/f779ea9ed0
+  short_name: NAG
+  name: N-acetyl-β-D glucosaminidase
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+- id: https://w3id.org/peh/biochementities/0a2788662e
+  short_name: RBP4
+  name: Retinol-binding protein 4
+  translations:
+  - property_name: name
+    language: nl-be
+    translated_value: Retinol-binding protein 4
+  exact_matches:
+  - https://identifiers.org/uniprot:P02753
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
