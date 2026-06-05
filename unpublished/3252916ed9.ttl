@@ -7,9 +7,9 @@
 <https://w3id.org/peh/biochementities/3252916ed9> a owl:Class ;
     rdfs:label "2,6-Toluenediisocyanate",
         "2,6-Tolueendiisocyanaat"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "2,6TDI" ;
     skos:exactMatch <https://identifiers.org/CHEBI:53557>,
         <https://identifiers.org/cas:91-08-7> ;
     pehterms:hasGroupLabel "anilines and MOCA",
         "diisocyanates" .
-

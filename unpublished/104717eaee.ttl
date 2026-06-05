@@ -7,8 +7,8 @@
 <https://w3id.org/peh/biochementities/104717eaee> a owl:Class ;
     rdfs:label "Bis(2-ethoxyethyl) ether",
         "Bis(2-ethoxyethyl)ether"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "DEGDEE" ;
     skos:exactMatch <https://identifiers.org/CHEBI:44664>,
         <https://identifiers.org/cas:112-36-7> ;
     pehterms:hasGroupLabel "glycol ethers" .
-
