@@ -7,8 +7,8 @@
 <https://w3id.org/peh/biochementities/b6ce6ae047> a owl:Class ;
     rdfs:label "2-methoxyethanol",
         "2-methoxyethanol"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "EGME" ;
     skos:exactMatch <https://identifiers.org/CHEBI:46790>,
         <https://identifiers.org/cas:109-86-4> ;
     pehterms:hasGroupLabel "glycol ethers" .
-

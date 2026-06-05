@@ -7,8 +7,8 @@
 <https://w3id.org/peh/biochementities/764622386d> a owl:Class ;
     rdfs:label "2-ethoxyethanol",
         "2-ethoxyethanol"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "EGEE" ;
     skos:exactMatch <https://identifiers.org/CHEBI:46788>,
         <https://identifiers.org/cas:110-80-5> ;
     pehterms:hasGroupLabel "glycol ethers" .
-

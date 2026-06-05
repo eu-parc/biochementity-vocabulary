@@ -7,7 +7,7 @@
 <https://w3id.org/peh/biochementities/baa2725345> a owl:Class ;
     rdfs:label "2-(2-(2-butoxyethoxy)ethoxy)ethanol",
         "2-(2-(2-butoxyethoxy)ethoxy)ethanol"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "TEGBE" ;
     skos:exactMatch <https://identifiers.org/inchikey:COBPKKZHLDDMTB-UHFFFAOYSA-N> ;
     pehterms:hasGroupLabel "glycol ethers" .
-

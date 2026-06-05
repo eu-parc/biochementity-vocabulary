@@ -7,8 +7,8 @@
 <https://w3id.org/peh/biochementities/d2fc6259e9> a owl:Class ;
     rdfs:label "2-(2-(2-methoxyethoxy)ethoxy)ethanol",
         "2-(2-(2-methoxyethoxy)ethoxy)ethanol"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "TEGME" ;
     skos:exactMatch <https://identifiers.org/CHEBI:84233>,
         <https://identifiers.org/cas:112-35-6> ;
     pehterms:hasGroupLabel "glycol ethers" .
-

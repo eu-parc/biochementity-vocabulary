@@ -7,8 +7,8 @@
 <https://w3id.org/peh/biochementities/38ed851d16> a owl:Class ;
     rdfs:label "Bis(2-methoxyethyl) ether",
         "Bis(2-methoxyethyl)ether"@nl-be ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
     schema1:alternateName "DEGDME" ;
     skos:exactMatch <https://identifiers.org/CHEBI:46784>,
         <https://identifiers.org/cas:111-96-6> ;
     pehterms:hasGroupLabel "glycol ethers" .
-
