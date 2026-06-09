@@ -11,7 +11,7 @@
     ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
     schema1:alternateName "EH-TBB" ;
     rdfs:subClassOf pehterms:BioChemEntity ;
-    skos:exactMatch <PUBCHEN:71316600>,
+    skos:exactMatch <https://identifiers.org/pubchem.compound:71316600>,
         <https://identifiers.org/cas:183658-27-7>,
         <https://identifiers.org/inchikey:HVDXCGSGEQKWGB-UHFFFAOYSA-N> ;
     pehterms:hasContextAlias [ a pehterms:ContextAlias ;
