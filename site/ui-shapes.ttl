@@ -10,6 +10,8 @@
 <#BioChemEntityTable>
     a sh:NodeShape ;
     sh:targetClass pehterms:BioChemEntity ;
+    ui:hierarchyEnabled true ;
+    ui:hierarchyPath rdfs:subClassOf ;
     sh:property [
         sh:path rdfs:label ;
         sh:name "Label" ;
