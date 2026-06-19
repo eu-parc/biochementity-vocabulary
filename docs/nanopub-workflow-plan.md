@@ -250,16 +250,24 @@ issues:
 
 **biochementity-vocabulary (this repo):**
 - **B1:** dropbox YAML template + `suggester` field; real dropbox JSON schema; README fixes.
-- **B2:** folder model — drop committed `unpublished/`; single `published/`; Make/CI scaffolding.
+- **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth) and
+  `assertions/` (per-term `.ttl` regenerated from `published/`); repoint Make/CI/site at them.
+  **Keep `unpublished/` in place for now** — it is the only committed copy of the 879
+  assertions and the site still builds from it until migration runs (see B7).
 - **B3:** GitHub Action — PR validation (unsigned build + optional test-registry dry-run),
   no secrets.
 - **B4:** GitHub Action — on-merge bot publish (secret key) → `published/` + id-map; commit/push.
 - **B5:** site builds from `assertions/` regenerated from `published/`.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
+- **B7:** drop committed `unpublished/`. **Depends on B6 having run** — only once the 879
+  assertions exist as nanopubs in `published/` and the site builds from regenerated
+  `assertions/` can the old folder be removed without losing data or breaking the site.
 
 Each PR should be independently reviewable. N1/N2 and the full P-series (P1–P4) have landed, so
 the remaining work is the B-series in this repo; B1/B2 are independent and B3/B4 are now
-unblocked (P1–P3 exist).
+unblocked (P1–P3 exist). Ordering note: `unpublished/` cannot be dropped standalone — B2
+introduces the new folders alongside it, the B6 migration repopulates the data as nanopubs,
+and only then does B7 remove the old folder.
 
 ## 8. Out of scope / later
 
