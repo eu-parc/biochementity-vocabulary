@@ -262,8 +262,9 @@ issues:
 - **P4 — ✅ DONE (`8f30f51`).** id-mapping / transition helpers.
 
 **biochementity-vocabulary (this repo):**
-- **B1:** dropbox YAML template + `suggester` field; real dropbox JSON schema; README fixes.
-  **Mostly done.** Landed: `schema/dropbox-biochementity.schema.json` + `…example.yaml`, README
+- **B1 — ✅ DONE** (one follow-up: pin pubmate back to a tag, see below). dropbox YAML template +
+  `suggester` field; real dropbox JSON schema; README fixes.
+  Landed: `schema/dropbox-biochementity.schema.json` + `…example.yaml`, README
   fixes, and the upstream `suggester` slot — merged to `eu-parc/parco-hbm` and served under tag
   `v0.6.1` (the tag was moved to include it; schema `version:` stayed `0.6.1`, our 0.6.2 bump was
   dropped). `PEH_SCHEMA_TAG` bumped `v0.6.0 → v0.6.1` and the schema re-fetched, so a **per-entry**
@@ -284,6 +285,8 @@ issues:
 - **B3:** GitHub Action — PR validation (unsigned build + optional test-registry dry-run),
   no secrets.
 - **B4:** GitHub Action — on-merge bot publish (secret key) → `published/` + id-map; commit/push.
+  **Prerequisite:** pin `pubmate` back to a published `eu-parc/pubmate` tag (B1 left it tracking
+  `knowledgepixels/pubmate` HEAD); a moving branch is unacceptable for reproducible live publishing.
 - **B5:** Pages job regenerates `assertions/` from `published/` (build artifact) and builds the
   site from it; `serves-me-right` stays `.ttl`-only.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
@@ -291,11 +294,15 @@ issues:
   assertions exist as nanopubs in `published/` and the site builds from regenerated
   `assertions/` can the old folder be removed without losing data or breaking the site.
 
-Each PR should be independently reviewable. N1/N2 and the full P-series (P1–P4) have landed, so
-the remaining work is the B-series in this repo; B1/B2 are independent and B3/B4 are now
-unblocked (P1–P3 exist). Ordering note: `unpublished/` cannot be dropped standalone — B2
-introduces the new folders alongside it, the B6 migration repopulates the data as nanopubs,
-and only then does B7 remove the old folder.
+Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), and B1 have landed,
+so the remaining work is B2–B7 in this repo; B2 is independent and B3/B4 are unblocked (P1–P3
+exist, available via the temporary `knowledgepixels/pubmate` HEAD pin). Ordering note:
+`unpublished/` cannot be dropped standalone — B2 introduces the new folders alongside it, the B6
+migration repopulates the data as nanopubs, and only then does B7 remove the old folder.
+
+Cross-cutting follow-up: pubmate (P-series + `yamlconcat --inherit`) lives only on
+`knowledgepixels/pubmate`; this repo tracks its HEAD as a stopgap. Land it in `eu-parc/pubmate`
+under a tag and pin back before B4 (reproducible publishing). See B1/B4.
 
 ## 8. Out of scope / later
 
