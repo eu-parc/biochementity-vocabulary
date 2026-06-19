@@ -2,7 +2,7 @@
 
 > Status: **planning only — nothing implemented yet.** This document records the
 > agreed direction so work can proceed as small, reviewable pull requests.
-> Last updated: 2026-06-17.
+> Last updated: 2026-06-19.
 
 ## 1. Background & goal
 
@@ -91,14 +91,13 @@ These are authoritative.
    Verified end-to-end against that commit (foreign-namespace thing URI, default nanopub
    URI): thing code == nanopub code, placeholder gone, other references preserved, valid
    trusty **and** signature.
-7. **The placeholder is still not in the shared spec/testsuite, and nanopub-js covers only
-   the base-scoped variant.** `nanopub-testsuite` contains no `~~~ARTIFACTCODE~~~` case;
-   nanopub-js substitutes the placeholder only when it sits in the nanopub's own base URI
-   (scheme B), not in a foreign concept namespace (scheme A). So implementations: **Java ✅,
-   nanopub-py ✅ (commit `a909047`, unreleased), nanopub-js ⛔ (base-scoped only)**. Our
-   scheme A is therefore
-   not yet cross-implementation-pinned; N2/N3 track adding a testsuite case (+ Java/Python
-   parity) and generalizing nanopub-js.
+7. **Scheme A is now pinned in the shared testsuite for the Java/Python implementations.**
+   `nanopub-testsuite` gained a `transform/` case for the foreign-namespace
+   `~~~ARTIFACTCODE~~~` placeholder (PR #4, merge `cfe9630`, 2026-06-17), verifying Java/Python
+   parity. So implementations: **Java ✅, nanopub-py ✅ (commit `a909047`, unreleased)**.
+   (nanopub-js still substitutes the placeholder only when it sits in the nanopub's own base
+   URI — scheme B — not in a foreign concept namespace; generalizing it is out of scope here,
+   relevant only to future Nanodash/JS consumers.)
 
 > ✅ **Spike resolved & implemented (N0/N1).** The custom-namespace artifact-code thing URI
 > works in nanopub-py as of commit `a909047` (unreleased). Until 2.2.0 is on PyPI, consume it by
@@ -224,11 +223,10 @@ Estimated volume: ~879 defining + ~a few hundred superseding nanopubs.
 **Decision: scheme A (global placeholder substitution).** The artifact code goes on the
 *thing* URI in our namespace while the nanopub URI stays the default `w3id.org/np`. This is
 the strict generalization of the base-scoped placeholder (scheme A ⊇ B): substitute
-`~~~ARTIFACTCODE~~~` wherever it appears, not only in the nanopub's own base URI. Currently
-only the Java implementation does this; nanopub-py has no placeholder support and nanopub-js
-supports only the base-scoped variant. Tracking issues:
+`~~~ARTIFACTCODE~~~` wherever it appears, not only in the nanopub's own base URI. The Java and
+nanopub-py implementations do this and are now pinned by a shared testsuite case. Tracking
+issues:
 [nanopub-py#232](https://github.com/Nanopublication/nanopub-py/issues/232),
-[nanopub-js#11](https://github.com/Nanopublication/nanopub-js/issues/11),
 [nanopub-testsuite#3](https://github.com/Nanopublication/nanopub-testsuite/issues/3).
 
 **nanopub upstream changes:**
@@ -236,12 +234,9 @@ supports only the base-scoped variant. Tracking issues:
 - **N1 (nanopub-py, #232) — ✅ DONE (merged, commit `a909047`; not yet released).** Global
   `~~~ARTIFACTCODE~~~` substitution in `get_trustyuri`. Consume via git-pin until 2.2.0 is on
   PyPI, then `nanopub>=2.2.0`. **No longer blocks the pubmate builder.**
-- **N2 (nanopub-testsuite, #3) — open.** Contribute a `transform/` case covering a
-  foreign-namespace artifact-code thing URI; verify Java/Python parity. Not blocking, but
-  needed so scheme A is cross-implementation-pinned.
-- **N3 (nanopub-js, #11) — open.** Generalize its placeholder handling from base-scoped to
-  global (keeps existing behavior; adds the foreign-namespace case). Not blocking the
-  GitHub/dropbox flow (Python-only); needed for Nanodash/JS consumers.
+- **N2 (nanopub-testsuite, #3) — ✅ DONE (merged, PR #4, commit `cfe9630`, 2026-06-17).**
+  `transform/` case covering a foreign-namespace artifact-code thing URI; verifies Java/Python
+  parity. Scheme A is now cross-implementation-pinned for the implementations we use.
 
 **pubmate:**
 - **P1:** defining-nanopub builder — assertion/term → unsigned nanopub via nanopub-py with
@@ -261,9 +256,8 @@ supports only the base-scoped variant. Tracking issues:
 - **B5:** site builds from `assertions/` regenerated from `published/`.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
 
-Each PR should be independently reviewable. N1 has landed, so the P-series (pubmate) is
-unblocked and can proceed in parallel with the B-series; B3/B4 depend on P1–P3. N2/N3 are
-parallel hardening (cross-implementation parity), not blockers for the Python flow.
+Each PR should be independently reviewable. N1 and N2 have landed, so the P-series (pubmate) is
+unblocked and can proceed in parallel with the B-series; B3/B4 depend on P1–P3.
 
 ## 8. Out of scope / later
 
