@@ -263,12 +263,19 @@ issues:
 
 **biochementity-vocabulary (this repo):**
 - **B1:** dropbox YAML template + `suggester` field; real dropbox JSON schema; README fixes.
-  **Partially done:** `schema/dropbox-biochementity.schema.json` + `…example.yaml` and README
-  fixes landed; the `suggester` slot is added upstream in `knowledgepixels/parco-hbm` (v0.6.2,
-  fork `main`). **Remaining:** once that change is merged+tagged on `eu-parc/parco-hbm`, bump
-  `PEH_SCHEMA_TAG` here and wire file-level-`suggester` expansion (top-level default → each
-  entry) before `linkml-convert`, so `make pipeline` emits `prov:wasAttributedTo`. Until then a
-  dropped `suggester` file would fail conversion against the older pinned schema.
+  **Mostly done.** Landed: `schema/dropbox-biochementity.schema.json` + `…example.yaml`, README
+  fixes, and the upstream `suggester` slot — merged to `eu-parc/parco-hbm` and served under tag
+  `v0.6.1` (the tag was moved to include it; schema `version:` stayed `0.6.1`, our 0.6.2 bump was
+  dropped). `PEH_SCHEMA_TAG` bumped `v0.6.0 → v0.6.1` and the schema re-fetched, so a **per-entry**
+  `suggester` now flows through `make pipeline` to `prov:wasAttributedTo` (verified end-to-end).
+  **File-level default — done (on a temporary pin).** Implemented as `pubmate-yamlconcat
+  --inherit suggester` (pushes a top-level `suggester:` into entries that omit it; no key leak, no
+  cross-file bleed; tests in `knowledgepixels/pubmate`). The Makefile `aggregate` step now passes
+  `--inherit suggester`, and `make pipeline` produces `prov:wasAttributedTo` for both file-level
+  and per-entry suggesters (verified end-to-end). **Temporary pin:** `[tool.uv.sources] pubmate`
+  now tracks `knowledgepixels/pubmate` `main` (HEAD), since `eu-parc/pubmate` `v0.0.2` has neither
+  this option nor the P-series. **Follow-up:** once pubmate lands in `eu-parc/pubmate` under a tag,
+  pin back to that tag.
 - **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth);
   add a `make assertions` target that extracts per-term `.ttl` from `published/` into an
   **uncommitted** build dir; repoint Make/CI/site at `published/` + generated `assertions/`.

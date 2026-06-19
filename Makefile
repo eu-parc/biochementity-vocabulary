@@ -5,7 +5,7 @@ ARCHIVE_FOLDER ?= archive
 REDIRECT_FOLDER ?= redirect
 SCHEMA ?= schema/peh.yaml
 PEH_SCHEMA_REPO ?= eu-parc/parco-hbm
-PEH_SCHEMA_TAG ?= v0.6.0
+PEH_SCHEMA_TAG ?= v0.6.1
 PEH_SCHEMA_SOURCE_PATH ?= linkml/schema/peh.yaml
 PEH_SCHEMA_DEST ?= schema/peh.yaml
 PEH_SCHEMA_URL ?= https://raw.githubusercontent.com/$(PEH_SCHEMA_REPO)/$(PEH_SCHEMA_TAG)/$(PEH_SCHEMA_SOURCE_PATH)
@@ -56,6 +56,7 @@ aggregate: prepare
 	else \
 		uv run pubmate-yamlconcat \
 			--target $(TARGET_CLASS) \
+			--inherit suggester \
 			$(COMBINED_DATA) \
 			$(DATA_FILES); \
 	fi
