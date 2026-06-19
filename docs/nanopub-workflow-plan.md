@@ -197,10 +197,14 @@ non-existent `schema/dropbox-biochementity.schema.json`).
 | `is_isomer_of` | `pehterms:isIsomerOf` | ⚠️ internal link (symmetric → cycles) |
 | `parent_biochementities` | `rdfs:subClassOf` | usually `…/terms/BioChemEntity`; may be another biochementity (⚠️, multiple allowed) |
 
-**Proposed additions** (template change, per the call):
-- `suggester` (ORCID) — for `prov:wasAttributedTo`. (Per-entry, or a per-file/batch default.)
-- Fix the README example (`parent_biochementity` → `parent_biochementities`, a list) and
-  add/point to a real dropbox JSON schema.
+**Additions** (template change, per the call):
+- `suggester` (ORCID) — for `prov:wasAttributedTo`. **Per-entry, with an optional file-level
+  default** that applies to entries omitting their own. The slot is defined upstream in
+  `knowledgepixels/parco-hbm` (`schema/peh.yaml`, `suggester` → `prov:wasAttributedTo`, v0.6.2;
+  on fork `main`, PR to `eu-parc/parco-hbm` pending). **DONE** as a dropbox contract in this
+  repo (JSON schema + example); pipeline wiring still pending the upstream tag (see B1).
+- Fixed the README example (`parent_biochementity` → `parent_biochementities`, a list; parent
+  IRI `…/terms/BioChemEntity`) and added a real dropbox JSON schema. **DONE.**
 
 ## 6. Identifier transition / migration (plan now, run later)
 
@@ -250,6 +254,12 @@ issues:
 
 **biochementity-vocabulary (this repo):**
 - **B1:** dropbox YAML template + `suggester` field; real dropbox JSON schema; README fixes.
+  **Partially done:** `schema/dropbox-biochementity.schema.json` + `…example.yaml` and README
+  fixes landed; the `suggester` slot is added upstream in `knowledgepixels/parco-hbm` (v0.6.2,
+  fork `main`). **Remaining:** once that change is merged+tagged on `eu-parc/parco-hbm`, bump
+  `PEH_SCHEMA_TAG` here and wire file-level-`suggester` expansion (top-level default → each
+  entry) before `linkml-convert`, so `make pipeline` emits `prov:wasAttributedTo`. Until then a
+  dropped `suggester` file would fail conversion against the older pinned schema.
 - **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth) and
   `assertions/` (per-term `.ttl` regenerated from `published/`); repoint Make/CI/site at them.
   **Keep `unpublished/` in place for now** — it is the only committed copy of the 879

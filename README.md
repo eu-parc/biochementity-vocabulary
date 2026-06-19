@@ -4,22 +4,28 @@ This repository implements a staged vocabulary workflow for matrices:
 
 ## Proposing a new biochementity
 
-1. All new biochementity info can be added to one or more `*.yaml` files following this structure. This is a minimal example for such a `*.yaml`. A json-schema can be found in [schema/dropbox-biochementity.schema.json](schema/dropbox-biochementity.schema.json).
+1. All new biochementity info can be added to one or more `*.yaml` files following this structure. This is a minimal example for such a `*.yaml`. The full contract is the json-schema in [schema/dropbox-biochementity.schema.json](schema/dropbox-biochementity.schema.json), with a worked example in [schema/dropbox-biochementity.example.yaml](schema/dropbox-biochementity.example.yaml).
 
-```{json}
+```yaml
+# Optional file-level default suggester (ORCID); applied to entries without their own.
+suggester: https://orcid.org/0000-0002-1825-0097
 biochementity_subclasses:
 - id: environmentalbiochementity
   name: "environmental biochementity"
   description: All abiotic environmental compartments in which chemicals can be measured
-  parent_biochementity: https://w3id.org/peh/terms/biochementity
+  parent_biochementities:
+    - https://w3id.org/peh/terms/BioChemEntity
   group_labels:
     - 'pesticides'
 - id: bioticbiochementity
   name: "biotic biochementity"
   description: All biological organisms and their tissues
-  parent_biochementity: https://w3id.org/peh/terms/biochementity
+  parent_biochementities:
+    - https://w3id.org/peh/terms/BioChemEntity
 ```
 Note that the identifier field does not need to be provided, identifiers are minted on the fly.
+
+The optional `suggester` field (an ORCID) records who proposed the term; it becomes the `prov:wasAttributedTo` provenance of the resulting nanopublication. Set it once at the top of the file as a default, or per entry to override.
 
 2. Open a PR with these *.yaml files added to the dropbox
 
