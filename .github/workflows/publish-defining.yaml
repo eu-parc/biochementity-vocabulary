@@ -1,0 +1,62 @@
+name: Publish defining nanopubs (test registry)
+
+# B4 (test-registry stage). Manual trigger: mint the dropbox proposal on the
+# selected branch into signed defining nanopublications and publish them to the
+# nanopub TEST server using nanopub-testsuite keys (no repo secrets). Results are
+# uploaded as artifacts, not committed -- these are throwaway test nanopubs.
+#
+# Going live (the B4 activation step, not done here): switch to the real bot key
+# (a GitHub secret) + intro nanopub, pin pubmate back to an eu-parc tag, trigger
+# on merge to main, and commit published/ + the id-map. Seeding the id-map for
+# the existing 879 terms is the migration (B6).
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry-run (offline, ephemeral key) or test-publish (nanopub test server)"
+        type: choice
+        options:
+          - dry-run
+          - test-publish
+        default: dry-run
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v8.2.0
+
+      - name: Install dependencies
+        run: uv sync
+
+      # Build the dropbox proposal on this branch into an isolated assertion set,
+      # so we mint only the proposed terms (not the committed unpublished/ backlog).
+      - name: Build proposed term assertions
+        run: make validate-pipeline UNPUBLISHED_FOLDER=build/pr-assertions
+
+      - name: Install test-server signing support
+        if: ${{ inputs.mode == 'test-publish' }}
+        run: uv pip install nanopub-testsuite-connector
+
+      - name: Mint defining nanopubs (dry-run)
+        if: ${{ inputs.mode == 'dry-run' }}
+        run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS= DRY=--dry-run
+
+      - name: Mint and publish defining nanopubs (test server)
+        if: ${{ inputs.mode == 'test-publish' }}
+        run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions
+
+      - name: Upload nanopubs and id-map
+        uses: actions/upload-artifact@v4
+        with:
+          name: defining-nanopubs-${{ inputs.mode }}
+          path: |
+            published/
+            redirect/id-map.tsv
+          if-no-files-found: warn

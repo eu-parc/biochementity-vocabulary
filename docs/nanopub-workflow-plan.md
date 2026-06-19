@@ -296,9 +296,21 @@ issues:
   fork PRs); **not** `pull_request_target` (would expose secrets to untrusted PR content).
   *Deferred (optional):* a live dry-run against the **test registry** (needs the testsuite
   connector / network) — left out to keep the gate fully offline and fork-safe.
-- **B4:** GitHub Action — on-merge bot publish (secret key) → `published/` + id-map; commit/push.
-  **Prerequisite:** pin `pubmate` back to a published `eu-parc/pubmate` tag (B1 left it tracking
-  `knowledgepixels/pubmate` HEAD); a moving branch is unacceptable for reproducible live publishing.
+- **B4 — test-registry stage ✅ DONE; live activation remaining.** The publish path exists:
+  `pubmate-mint-publish` drives the P2 sequential minter (re-keying assertions onto the
+  artifact-code placeholder, lifting the suggester into provenance), writes `published/<code>.trig`
+  + the merged `redirect/id-map.tsv` (old-id → thing/np URI), and skips already-minted terms.
+  `make publish-defining` wires it; `publish-defining.yaml` (`workflow_dispatch`) mints the dropbox
+  proposal on a branch and publishes to the **nanopub test server** via testsuite keys (no
+  secrets), uploading nanopubs + id-map as artifacts. Verified end-to-end offline (dry-run): codes
+  land on the thing URI (scheme A), suggester in provenance, id-map correct, re-runs idempotent.
+  **Live activation (remaining):** (1) provision the **bot keypair** as a GitHub secret + an
+  **introduction nanopub**; (2) pin `pubmate` back from `knowledgepixels/pubmate` HEAD to an
+  `eu-parc/pubmate` **tag** (a moving branch is unacceptable for reproducible publishing); (3)
+  switch the trigger to **on-merge to `main`** and **commit** `published/` + id-map. Note: the
+  incremental "publish only new terms" relies on the id-map already holding the 879 existing terms
+  — that seeding is the migration (B6). Inter-term link/cycle **superseding** (P3) is also deferred
+  to B6.
 - **B5 — ✅ DONE (folded into B2).** Pages job regenerates `assertions/` from `published/`
   (build artifact) and builds the site from it; `serves-me-right` stays `.ttl`-only.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
@@ -306,9 +318,10 @@ issues:
   assertions exist as nanopubs in `published/` and the site builds from regenerated
   `assertions/` can the old folder be removed without losing data or breaking the site.
 
-Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), B1, B2, B3, and B5
-have landed, so the remaining work is B4, B6, and B7 in this repo; B4 is unblocked (P1–P3 exist,
-available via the temporary `knowledgepixels/pubmate` HEAD pin). Ordering note:
+Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), B1, B2, B3, B5, and
+the test-registry stage of B4 have landed. Remaining: B4 live activation (bot secret + eu-parc tag
+pin-back + on-merge commit), B6 (migration — also seeds the id-map and adds inter-term links by
+superseding), and B7 (drop `unpublished/`). Ordering note:
 `unpublished/` cannot be dropped standalone — B2 introduced the new folders alongside it, the B6
 migration repopulates the data as nanopubs, and only then does B7 remove the old folder.
 

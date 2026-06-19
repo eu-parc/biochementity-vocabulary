@@ -19,13 +19,19 @@ TERM_PARENT_CLASS ?= https://w3id.org/peh/terms/BioChemEntity
 MINT_NAMESPACE ?= https://w3id.org/peh/biochementities/
 ENTITY_LIST_PREDICATE ?= https://w3id.org/peh/terms/hasBioChemEntitySubclass
 COMBINED_DATA ?= $(OUT_FOLDER)/combined.yaml
+ID_MAP_FILE ?= $(REDIRECT_FOLDER)/id-map.tsv
+# Signing material for `publish-defining`. Default: nanopub-testsuite keys
+# (test server, no repo secret). For live publishing set, e.g.:
+#   PUBLISH_KEY_ARGS="--private-key key.priv --public-key key.pub --orcid-id ... --name ... --intro-nanopub-uri ..."
+PUBLISH_KEY_ARGS ?= --use-testsuite-keys
 DRY ?=
 
 DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
-	publish-nanopubs mark-published publish-pipeline pipeline assertions test-flow clean
+	publish-nanopubs mark-published publish-pipeline publish-defining pipeline assertions \
+	test-flow clean
 
 help:
 	@echo "Targets:"
@@ -36,6 +42,8 @@ help:
 	@echo "  make publish-pipeline          # publish unpublished assertions + move to published"
 	@echo "  make publish-pipeline DRY=--dry-run"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
+	@echo "  make publish-defining          # mint unpublished assertions -> published/*.trig + id-map (test server)"
+	@echo "  make publish-defining DRY=--dry-run"
 	@echo "  make test-flow                 # local end-to-end dry-run test"
 
 print-data:
@@ -190,6 +198,22 @@ mark-published: prepare
 
 publish-pipeline: publish-nanopubs mark-published
 pipeline: process-dropbox
+
+# B4: mint the unpublished assertions into signed defining nanopublications
+# (artifact code on the thing URI) in $(PUBLISHED_FOLDER), and write/merge the
+# old-id -> nanopub id-map. Already-minted terms (per the id-map) are skipped.
+# Defaults to the nanopub test server via testsuite keys; override
+# PUBLISH_KEY_ARGS for live publishing, and pass DRY=--dry-run for an offline
+# sign-only preview. Inter-term link/cycle superseding is handled by migration.
+publish-defining: prepare
+	@set -e; \
+	uv run pubmate-mint-publish \
+		--assertion-folder $(UNPUBLISHED_FOLDER) \
+		--namespace "$(MINT_NAMESPACE)" \
+		--output-dir $(PUBLISHED_FOLDER) \
+		--id-map-file $(ID_MAP_FILE) \
+		$(PUBLISH_KEY_ARGS) \
+		$(DRY)
 
 # Site-facing projection: extract the assertion graph of each published
 # nanopublication (.trig) into plain .ttl. This is a build artifact (under
