@@ -138,9 +138,15 @@ Operational notes:
 - `dropbox/` — incoming YAML (unchanged contract + new suggester field).
 - `archive/` — minted/combined YAML snapshots (kept for provenance/audit).
 - `published/` — **all** nanopubs as signed `.trig` (single source of truth).
-- `assertions/` — plain `.ttl` per term for the Pages site (regenerated from
-  `published/`; `serves-me-right` only reads `.ttl`). *(Folder name TBD; could also be a
-  build artifact rather than committed.)*
+- `assertions/` — plain `.ttl` per term for the Pages site, **extracted from `published/` as a
+  build artifact (not committed); the Pages job is its only consumer.** Required because
+  `serves-me-right` (v0.0.1) cannot read nanopubs: it globs only `*.ttl`
+  (`data_dir.rglob("*.ttl")`) — so `.trig` is silently skipped — and parses each as
+  `format="turtle"` into a single flat `rdflib.Graph`, which can neither read TriG named graphs
+  nor separate the assertion graph from provenance/pubinfo/signature. So the assertion graph
+  must be projected out to plain `.ttl` for it. *(Name TBD. Generated into a temp dir inside the
+  build, e.g. `make assertions`; teaching `serves-me-right` to read nanopubs directly would
+  remove this folder, but that's an upstream change to a repo we don't pin here.)*
 - `id-map/` (or `redirect/`) — old-minted-id → nanopub-id map + term→nanopub redirects.
 - No committed `unpublished/`.
 
@@ -167,9 +173,11 @@ Operational notes:
   (and optionally a dry-run against the **test registry**).
 - **On merge to `main` (bot secret available):** build → sequentially sign+publish defining
   nanopubs (live network) → supersede for any cyclic/forward links → write/append the
-  id-map and redirects → regenerate `assertions/` for the site → commit `published/`,
-  `archive/`, `assertions/`, id-map. (Single bot-run; no keyless serialize step needed.)
-- **Site (`pages.yaml`):** build from `assertions/`.
+  id-map and redirects → commit `published/`, `archive/`, id-map. (Single bot-run; no keyless
+  serialize step needed.) `assertions/` is **not** committed here — it is regenerated inside the
+  Pages job.
+- **Site (`pages.yaml`):** extract `assertions/` from `published/` at build time, then build
+  from it.
 
 ## 5. Dropbox input format
 
@@ -218,7 +226,8 @@ after the new flow is proven on the test registry.
    `old-minted-id → new RA-thing-URI`.
 4. For terms with links (incl. the cyclic `isIsomerOf` pairs), publish **superseding**
    nanopubs adding the link triples with all references resolved to new IRIs.
-5. Emit the full id-map; rewrite the site source (`assertions/`) and any redirects.
+5. Emit the full id-map and any redirects. (The site source `assertions/` is not persisted —
+   it is regenerated from `published/` in the Pages job.)
 6. Keep the old→new map permanently so old IDs remain resolvable.
 
 Estimated volume: ~879 defining + ~a few hundred superseding nanopubs.
@@ -260,14 +269,16 @@ issues:
   `PEH_SCHEMA_TAG` here and wire file-level-`suggester` expansion (top-level default → each
   entry) before `linkml-convert`, so `make pipeline` emits `prov:wasAttributedTo`. Until then a
   dropped `suggester` file would fail conversion against the older pinned schema.
-- **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth) and
-  `assertions/` (per-term `.ttl` regenerated from `published/`); repoint Make/CI/site at them.
+- **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth);
+  add a `make assertions` target that extracts per-term `.ttl` from `published/` into an
+  **uncommitted** build dir; repoint Make/CI/site at `published/` + generated `assertions/`.
   **Keep `unpublished/` in place for now** — it is the only committed copy of the 879
   assertions and the site still builds from it until migration runs (see B7).
 - **B3:** GitHub Action — PR validation (unsigned build + optional test-registry dry-run),
   no secrets.
 - **B4:** GitHub Action — on-merge bot publish (secret key) → `published/` + id-map; commit/push.
-- **B5:** site builds from `assertions/` regenerated from `published/`.
+- **B5:** Pages job regenerates `assertions/` from `published/` (build artifact) and builds the
+  site from it; `serves-me-right` stays `.ttl`-only.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
 - **B7:** drop committed `unpublished/`. **Depends on B6 having run** — only once the 879
   assertions exist as nanopubs in `published/` and the site builds from regenerated
