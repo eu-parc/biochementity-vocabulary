@@ -3,6 +3,9 @@ _temp/*.ttl
 _temp/*
 _scripts/*
 
+# build artifacts (combined YAML, ontology, extracted site assertions)
+build/
+
 # virtual environments
 venv/*
 .venv/*

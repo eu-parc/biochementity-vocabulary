@@ -10,6 +10,7 @@ PEH_SCHEMA_SOURCE_PATH ?= linkml/schema/peh.yaml
 PEH_SCHEMA_DEST ?= schema/peh.yaml
 PEH_SCHEMA_URL ?= https://raw.githubusercontent.com/$(PEH_SCHEMA_REPO)/$(PEH_SCHEMA_TAG)/$(PEH_SCHEMA_SOURCE_PATH)
 OUT_FOLDER ?= build
+ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/assertions
 ONTOLOGY_LABEL ?= biochementities.ttl
 TARGET_CLASS ?= biochementity_subclasses
 BASE_NAMESPACE ?= https://w3id.org/peh/terms/
@@ -23,7 +24,7 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline process-dropbox archive-dropbox publish-nanopubs mark-published \
-	publish-pipeline pipeline test-flow clean
+	publish-pipeline pipeline assertions test-flow clean
 
 help:
 	@echo "Targets:"
@@ -32,6 +33,7 @@ help:
 	@echo "  make validate-pipeline         # process dropbox -> build + unpublished, without archive/publish"
 	@echo "  make publish-pipeline          # publish unpublished assertions + move to published"
 	@echo "  make publish-pipeline DRY=--dry-run"
+	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
 	@echo "  make test-flow                 # local end-to-end dry-run test"
 
 print-data:
@@ -173,6 +175,15 @@ mark-published: prepare
 
 publish-pipeline: publish-nanopubs mark-published
 pipeline: process-dropbox
+
+# Site-facing projection: extract the assertion graph of each published
+# nanopublication (.trig) into plain .ttl. This is a build artifact (under
+# $(OUT_FOLDER), gitignored) consumed only by the Pages build; not committed.
+assertions: prepare
+	@set -e; \
+	uv run pubmate-extract-assertions \
+		--nanopub-folder $(PUBLISHED_FOLDER) \
+		--out $(ASSERTIONS_FOLDER)
 
 test-flow:
 	$(MAKE) validate-pipeline

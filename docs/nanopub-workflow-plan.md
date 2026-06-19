@@ -277,27 +277,32 @@ issues:
   now tracks `knowledgepixels/pubmate` `main` (HEAD), since `eu-parc/pubmate` `v0.0.2` has neither
   this option nor the P-series. **Follow-up:** once pubmate lands in `eu-parc/pubmate` under a tag,
   pin back to that tag.
-- **B2:** folder model — introduce `published/` (signed nanopub `.trig`, source of truth);
-  add a `make assertions` target that extracts per-term `.ttl` from `published/` into an
-  **uncommitted** build dir; repoint Make/CI/site at `published/` + generated `assertions/`.
-  **Keep `unpublished/` in place for now** — it is the only committed copy of the 879
-  assertions and the site still builds from it until migration runs (see B7).
+- **B2 — ✅ DONE.** folder model — `published/` is now the home for signed nanopub `.trig`
+  (source of truth). New `make assertions` target runs `pubmate-extract-assertions` to project
+  each `published/*.trig` assertion graph to plain `.ttl` under `$(OUT_FOLDER)/assertions`
+  (gitignored build artifact, not committed). The Pages workflow now runs `make assertions`
+  and builds the site from `build/assertions` + `unpublished` (`serves-me-right` stays
+  `.ttl`-only). **`unpublished/` kept in place** — still the only committed copy of the 879
+  assertions and the live site source until migration runs (dropped in B7). During the
+  transition `published/` is empty, so the extraction is a no-op and the site builds from
+  `unpublished` as before. Verified end-to-end against a sample signed nanopub (assertion-only,
+  artifact code on the thing URI). Folds B5 (site-from-`assertions/`) into this change.
 - **B3:** GitHub Action — PR validation (unsigned build + optional test-registry dry-run),
   no secrets.
 - **B4:** GitHub Action — on-merge bot publish (secret key) → `published/` + id-map; commit/push.
   **Prerequisite:** pin `pubmate` back to a published `eu-parc/pubmate` tag (B1 left it tracking
   `knowledgepixels/pubmate` HEAD); a moving branch is unacceptable for reproducible live publishing.
-- **B5:** Pages job regenerates `assertions/` from `published/` (build artifact) and builds the
-  site from it; `serves-me-right` stays `.ttl`-only.
+- **B5 — ✅ DONE (folded into B2).** Pages job regenerates `assertions/` from `published/`
+  (build artifact) and builds the site from it; `serves-me-right` stays `.ttl`-only.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
 - **B7:** drop committed `unpublished/`. **Depends on B6 having run** — only once the 879
   assertions exist as nanopubs in `published/` and the site builds from regenerated
   `assertions/` can the old folder be removed without losing data or breaking the site.
 
-Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), and B1 have landed,
-so the remaining work is B2–B7 in this repo; B2 is independent and B3/B4 are unblocked (P1–P3
+Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), B1, B2, and B5 have
+landed, so the remaining work is B3, B4, B6, and B7 in this repo; B3/B4 are unblocked (P1–P3
 exist, available via the temporary `knowledgepixels/pubmate` HEAD pin). Ordering note:
-`unpublished/` cannot be dropped standalone — B2 introduces the new folders alongside it, the B6
+`unpublished/` cannot be dropped standalone — B2 introduced the new folders alongside it, the B6
 migration repopulates the data as nanopubs, and only then does B7 remove the old folder.
 
 Cross-cutting follow-up: pubmate (P-series + `yamlconcat --inherit`) lives only on
