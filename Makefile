@@ -11,6 +11,7 @@ PEH_SCHEMA_DEST ?= schema/peh.yaml
 PEH_SCHEMA_URL ?= https://raw.githubusercontent.com/$(PEH_SCHEMA_REPO)/$(PEH_SCHEMA_TAG)/$(PEH_SCHEMA_SOURCE_PATH)
 OUT_FOLDER ?= build
 ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/assertions
+PR_ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/pr-assertions
 ONTOLOGY_LABEL ?= biochementities.ttl
 TARGET_CLASS ?= biochementity_subclasses
 BASE_NAMESPACE ?= https://w3id.org/peh/terms/
@@ -23,14 +24,15 @@ DRY ?=
 DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
-	validate-pipeline process-dropbox archive-dropbox publish-nanopubs mark-published \
-	publish-pipeline pipeline assertions test-flow clean
+	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
+	publish-nanopubs mark-published publish-pipeline pipeline assertions test-flow clean
 
 help:
 	@echo "Targets:"
 	@echo "  make fetch-peh-schema          # download schema/peh.yaml from a tagged parco-hbm release"
 	@echo "  make pipeline                  # process dropbox -> unpublished + archive"
 	@echo "  make validate-pipeline         # process dropbox -> build + unpublished, without archive/publish"
+	@echo "  make validate-pr               # PR gate: build proposed terms + validate as defining nanopubs (keyless)"
 	@echo "  make publish-pipeline          # publish unpublished assertions + move to published"
 	@echo "  make publish-pipeline DRY=--dry-run"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
@@ -103,6 +105,19 @@ graph2assertions: build
 	fi
 
 validate-pipeline: graph2assertions
+
+# Keyless PR gate: build the proposed terms' assertions into an isolated folder
+# and confirm each one forms a valid, signable defining nanopub (ephemeral key,
+# no secrets, no network). Final URIs/publishing happen later with the bot key.
+validate-nanopubs:
+	@set -e; \
+	uv run pubmate-validate-defining \
+		--assertion-folder $(PR_ASSERTIONS_FOLDER) \
+		--namespace "$(MINT_NAMESPACE)"
+
+validate-pr:
+	$(MAKE) validate-pipeline UNPUBLISHED_FOLDER=$(PR_ASSERTIONS_FOLDER)
+	$(MAKE) validate-nanopubs
 
 archive-dropbox: graph2assertions
 	@set -e; \
