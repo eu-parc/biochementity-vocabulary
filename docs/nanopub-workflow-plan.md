@@ -1,7 +1,8 @@
 # Biochementity Vocabulary — Nanopublication Workflow Plan
 
-> Status: **planning only — nothing implemented yet.** This document records the
-> agreed direction so work can proceed as small, reviewable pull requests.
+> Status: **upstream (N0–N2) and the pubmate library (P1–P4) are done; the B-series in this
+> repo is the remaining work.** This document records the agreed direction so work can proceed
+> as small, reviewable pull requests.
 > Last updated: 2026-06-19.
 
 ## 1. Background & goal
@@ -15,9 +16,9 @@ themselves nanopub-based (trusty artifact codes), while keeping a low-friction
 "drop a YAML file, open a PR" contribution path. The work is split across two repos and
 delivered as incremental PRs to both:
 
-- **`eu-parc/biochementity-vocabulary`** (this repo): the vocabulary-specific glue —
+- **`knowledgepixels/biochementity-vocabulary`** (this repo): the vocabulary-specific glue —
   dropbox YAML contract, folder layout, CI/Make wiring, site build, migration data.
-- **`eu-parc/pubmate`**: the reusable library logic — building/signing/publishing
+- **`knowledgepixels/pubmate`**: the reusable library logic — building/signing/publishing
   nanopubs, sequential minting, id mapping.
 
 ## 2. Decisions from the 17 June 2026 project call
@@ -238,14 +239,14 @@ issues:
   `transform/` case covering a foreign-namespace artifact-code thing URI; verifies Java/Python
   parity. Scheme A is now cross-implementation-pinned for the implementations we use.
 
-**pubmate:**
-- **P1:** defining-nanopub builder — assertion/term → unsigned nanopub via nanopub-py with
-  thing URI `…/~~~ARTIFACTCODE~~~`, intrinsic props only, `prov:wasAttributedTo` suggester,
-  pubinfo (label/license/introduces).
-- **P2:** sequential mint+publish over a term set in dependency order; returns
-  handle→thing-URI and term→nanopub-URI maps; nanopub-py sign+publish (test/live).
-- **P3:** supersede-to-add-links helper for cyclic/forward references.
-- **P4:** id-mapping / transition helpers.
+**pubmate** (all merged to `knowledgepixels/pubmate` `main`):
+- **P1 — ✅ DONE (`00cc0f3`).** defining-nanopub builder — assertion/term → unsigned nanopub
+  via nanopub-py with thing URI `…/~~~ARTIFACTCODE~~~`, intrinsic props only,
+  `prov:wasAttributedTo` suggester, pubinfo (label/license/introduces).
+- **P2 — ✅ DONE (`0b4671d`).** sequential mint+publish over a term set in dependency order;
+  returns handle→thing-URI and term→nanopub-URI maps; nanopub-py sign+publish (test/live).
+- **P3 — ✅ DONE (`cb348e5`).** supersede-to-add-links helper for cyclic/forward references.
+- **P4 — ✅ DONE (`8f30f51`).** id-mapping / transition helpers.
 
 **biochementity-vocabulary (this repo):**
 - **B1:** dropbox YAML template + `suggester` field; real dropbox JSON schema; README fixes.
@@ -256,8 +257,9 @@ issues:
 - **B5:** site builds from `assertions/` regenerated from `published/`.
 - **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
 
-Each PR should be independently reviewable. N1 and N2 have landed, so the P-series (pubmate) is
-unblocked and can proceed in parallel with the B-series; B3/B4 depend on P1–P3.
+Each PR should be independently reviewable. N1/N2 and the full P-series (P1–P4) have landed, so
+the remaining work is the B-series in this repo; B1/B2 are independent and B3/B4 are now
+unblocked (P1–P3 exist).
 
 ## 8. Out of scope / later
 
