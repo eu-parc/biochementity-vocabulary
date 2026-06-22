@@ -3,7 +3,7 @@
 > Status: **upstream (N0–N2) and the pubmate library (P1–P4) are done; the B-series in this
 > repo is the remaining work.** This document records the agreed direction so work can proceed
 > as small, reviewable pull requests.
-> Last updated: 2026-06-19.
+> Last updated: 2026-06-22.
 
 ## 1. Background & goal
 
@@ -81,12 +81,14 @@ These are authoritative.
    identifier = content hash, a cycle is unresolvable in a single pass — hence
    "mint first, add links by superseding afterwards."
 
-6. **nanopub-py now supports custom-namespace artifact-code minting (scheme A) — DONE.**
+6. **nanopub-py now supports custom-namespace artifact-code minting (scheme A) — DONE & RELEASED.**
    Originally it did not (its vendored `trustyuri` only rewrote URIs inside the dummy
    namespace; a placeholder in another namespace was passed through verbatim). This was
    fixed upstream in `nanopub/trustyuri/rdf/RdfUtils.py::get_trustyuri` (commit `a909047`,
-   "Support `~~~ARTIFACTCODE~~~` placeholder in custom namespaces (#232)"; **not yet
-   released** — the commit bumps the pyproject version toward 2.2.0):
+   "Support `~~~ARTIFACTCODE~~~` placeholder in custom namespaces (#232)"). It first shipped
+   in **nanopub-py `v2.2.1` (released 2026-06-22)** — note **not** `v2.2.0` (tagged 2026-04-21,
+   six commits before `a909047`, so 2.2.0 has no placeholder support). Consume via
+   `nanopub>=2.2.1` from PyPI:
    substitute `~~~ARTIFACTCODE~~~` → `hashstr` in any URI, and on verify blank this
    nanopub's own `RA…` code in out-of-namespace URIs, leaving other trusty URIs intact.
    Verified end-to-end against that commit (foreign-namespace thing URI, default nanopub
@@ -100,10 +102,10 @@ These are authoritative.
    URI — scheme B — not in a foreign concept namespace; generalizing it is out of scope here,
    relevant only to future Nanodash/JS consumers.)
 
-> ✅ **Spike resolved & implemented (N0/N1).** The custom-namespace artifact-code thing URI
-> works in nanopub-py as of commit `a909047` (unreleased). Until 2.2.0 is on PyPI, consume it by
-> **git-pinning** nanopub to that commit (workspace-root `[tool.uv.sources]`); switch to
-> `nanopub>=2.2.0` once released. This unblocks the pubmate builder (P1).
+> ✅ **Spike resolved, implemented & released (N0/N1).** The custom-namespace artifact-code thing
+> URI works in nanopub-py as of commit `a909047`, released in **`v2.2.1` (2026-06-22)**. Consume via
+> `nanopub>=2.2.1` from PyPI — the earlier git-pin to nanopub-py `main` is no longer needed and has
+> been dropped in pubmate. This unblocks the pubmate builder (P1).
 
 ### nanopub-py capability audit — everything needed is present
 
@@ -245,14 +247,15 @@ issues:
 
 **nanopub upstream changes:**
 - **N0 (spike) — done.**
-- **N1 (nanopub-py, #232) — ✅ DONE (merged, commit `a909047`; not yet released).** Global
-  `~~~ARTIFACTCODE~~~` substitution in `get_trustyuri`. Consume via git-pin until 2.2.0 is on
-  PyPI, then `nanopub>=2.2.0`. **No longer blocks the pubmate builder.**
+- **N1 (nanopub-py, #232) — ✅ DONE & RELEASED (commit `a909047`, shipped in `v2.2.1`, 2026-06-22).**
+  Global `~~~ARTIFACTCODE~~~` substitution in `get_trustyuri`. Consume via `nanopub>=2.2.1` from
+  PyPI (NOT 2.2.0 — that release predates the change). **No longer blocks the pubmate builder.**
 - **N2 (nanopub-testsuite, #3) — ✅ DONE (merged, PR #4, commit `cfe9630`, 2026-06-17).**
   `transform/` case covering a foreign-namespace artifact-code thing URI; verifies Java/Python
   parity. Scheme A is now cross-implementation-pinned for the implementations we use.
 
-**pubmate** (all merged to `knowledgepixels/pubmate` `main`):
+**pubmate** (all merged to `knowledgepixels/pubmate` `main`; bundled in
+**[`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1)**, awaiting merge + tag):
 - **P1 — ✅ DONE (`00cc0f3`).** defining-nanopub builder — assertion/term → unsigned nanopub
   via nanopub-py with thing URI `…/~~~ARTIFACTCODE~~~`, intrinsic props only,
   `prov:wasAttributedTo` suggester, pubinfo (label/license/introduces).
@@ -306,7 +309,8 @@ issues:
   land on the thing URI (scheme A), suggester in provenance, id-map correct, re-runs idempotent.
   **Live activation (remaining):** (1) provision the **bot keypair** as a GitHub secret + an
   **introduction nanopub**; (2) pin `pubmate` back from `knowledgepixels/pubmate` HEAD to an
-  `eu-parc/pubmate` **tag** (a moving branch is unacceptable for reproducible publishing); (3)
+  `eu-parc/pubmate` **tag** (a moving branch is unacceptable for reproducible publishing) — gated on
+  merging + tagging [`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1); (3)
   switch the trigger to **on-merge to `main`** and **commit** `published/` + id-map. Note: the
   incremental "publish only new terms" relies on the id-map already holding the 879 existing terms
   — that seeding is the migration (B6). Inter-term link/cycle **superseding** (P3) is also deferred
@@ -325,9 +329,12 @@ superseding), and B7 (drop `unpublished/`). Ordering note:
 `unpublished/` cannot be dropped standalone — B2 introduced the new folders alongside it, the B6
 migration repopulates the data as nanopubs, and only then does B7 remove the old folder.
 
-Cross-cutting follow-up: pubmate (P-series + `yamlconcat --inherit`) lives only on
-`knowledgepixels/pubmate`; this repo tracks its HEAD as a stopgap. Land it in `eu-parc/pubmate`
-under a tag and pin back before B4 (reproducible publishing). See B1/B4.
+Cross-cutting follow-up: pubmate (P-series + the four new CLIs) lives on `knowledgepixels/pubmate`;
+this repo tracks its HEAD as a stopgap. It is now bundled in
+**[`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1)** (which also drops pubmate's
+own nanopub-py git-pin in favour of released `nanopub>=2.2.1`). **Remaining:** merge + tag that PR,
+then pin this repo's `pubmate` source back from `knowledgepixels` HEAD to the eu-parc tag before B4
+goes live (reproducible publishing). See B1/B4.
 
 ## 8. Out of scope / later
 
