@@ -10,6 +10,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-# Temporary: track knowledgepixels/pubmate HEAD until the P-series and the
-# yamlconcat --inherit option land in eu-parc/pubmate under a tag, then pin back.
-pubmate = { git = "https://github.com/knowledgepixels/pubmate.git", branch = "main" }
+pubmate = { git = "https://github.com/eu-parc/pubmate.git", tag = "v0.1.0" }

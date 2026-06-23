@@ -254,8 +254,9 @@ issues:
   `transform/` case covering a foreign-namespace artifact-code thing URI; verifies Java/Python
   parity. Scheme A is now cross-implementation-pinned for the implementations we use.
 
-**pubmate** (all merged to `knowledgepixels/pubmate` `main`; bundled in
-**[`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1)**, awaiting merge + tag):
+**pubmate** (merged to `eu-parc/pubmate` via
+**[PR #1](https://github.com/eu-parc/pubmate/pull/1)** and released as **`v0.1.0`**; this repo now
+pins that tag — the `knowledgepixels` HEAD stopgap is gone):
 - **P1 — ✅ DONE (`00cc0f3`).** defining-nanopub builder — assertion/term → unsigned nanopub
   via nanopub-py with thing URI `…/~~~ARTIFACTCODE~~~`, intrinsic props only,
   `prov:wasAttributedTo` suggester, pubinfo (label/license/introduces).
@@ -265,7 +266,7 @@ issues:
 - **P4 — ✅ DONE (`8f30f51`).** id-mapping / transition helpers.
 
 **biochementity-vocabulary (this repo):**
-- **B1 — ✅ DONE** (one follow-up: pin pubmate back to a tag, see below). dropbox YAML template +
+- **B1 — ✅ DONE.** dropbox YAML template +
   `suggester` field; real dropbox JSON schema; README fixes.
   Landed: `schema/dropbox-biochementity.schema.json` + `…example.yaml`, README
   fixes, and the upstream `suggester` slot — merged to `eu-parc/parco-hbm` and served under tag
@@ -276,10 +277,9 @@ issues:
   --inherit suggester` (pushes a top-level `suggester:` into entries that omit it; no key leak, no
   cross-file bleed; tests in `knowledgepixels/pubmate`). The Makefile `aggregate` step now passes
   `--inherit suggester`, and `make pipeline` produces `prov:wasAttributedTo` for both file-level
-  and per-entry suggesters (verified end-to-end). **Temporary pin:** `[tool.uv.sources] pubmate`
-  now tracks `knowledgepixels/pubmate` `main` (HEAD), since `eu-parc/pubmate` `v0.0.2` has neither
-  this option nor the P-series. **Follow-up:** once pubmate lands in `eu-parc/pubmate` under a tag,
-  pin back to that tag.
+  and per-entry suggesters (verified end-to-end). **Pin:** `[tool.uv.sources] pubmate` is pinned to
+  `eu-parc/pubmate` **`v0.1.0`** (the release carrying these CLIs + the P-series). The earlier
+  `knowledgepixels/pubmate` HEAD stopgap has been retired.
 - **B2 — ✅ DONE.** folder model — `published/` is now the home for signed nanopub `.trig`
   (source of truth). New `make assertions` target runs `pubmate-extract-assertions` to project
   each `published/*.trig` assertion graph to plain `.ttl` under `$(OUT_FOLDER)/assertions`
@@ -308,9 +308,8 @@ issues:
   secrets), uploading nanopubs + id-map as artifacts. Verified end-to-end offline (dry-run): codes
   land on the thing URI (scheme A), suggester in provenance, id-map correct, re-runs idempotent.
   **Live activation (remaining):** (1) provision the **bot keypair** as a GitHub secret + an
-  **introduction nanopub**; (2) pin `pubmate` back from `knowledgepixels/pubmate` HEAD to an
-  `eu-parc/pubmate` **tag** (a moving branch is unacceptable for reproducible publishing) — gated on
-  merging + tagging [`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1); (3)
+  **introduction nanopub**; (2) ✅ **DONE** — `pubmate` is pinned to `eu-parc/pubmate` **`v0.1.0`**
+  (reproducible release; the `knowledgepixels` HEAD stopgap is gone); (3)
   switch the trigger to **on-merge to `main`** and **commit** `published/` + id-map. Note: the
   incremental "publish only new terms" relies on the id-map already holding the 879 existing terms
   — that seeding is the migration (B6). Inter-term link/cycle **superseding** (P3) is also deferred
@@ -323,18 +322,17 @@ issues:
   `assertions/` can the old folder be removed without losing data or breaking the site.
 
 Each PR should be independently reviewable. N1/N2, the full P-series (P1–P4), B1, B2, B3, B5, and
-the test-registry stage of B4 have landed. Remaining: B4 live activation (bot secret + eu-parc tag
-pin-back + on-merge commit), B6 (migration — also seeds the id-map and adds inter-term links by
-superseding), and B7 (drop `unpublished/`). Ordering note:
+the test-registry stage of B4 have landed. Remaining: B4 live activation (bot secret + on-merge
+commit — the eu-parc tag pin-back is done), B6 (migration — also seeds the id-map and adds inter-term
+links by superseding), and B7 (drop `unpublished/`). Ordering note:
 `unpublished/` cannot be dropped standalone — B2 introduced the new folders alongside it, the B6
 migration repopulates the data as nanopubs, and only then does B7 remove the old folder.
 
-Cross-cutting follow-up: pubmate (P-series + the four new CLIs) lives on `knowledgepixels/pubmate`;
-this repo tracks its HEAD as a stopgap. It is now bundled in
-**[`eu-parc/pubmate` PR #1](https://github.com/eu-parc/pubmate/pull/1)** (which also drops pubmate's
-own nanopub-py git-pin in favour of released `nanopub>=2.2.1`). **Remaining:** merge + tag that PR,
-then pin this repo's `pubmate` source back from `knowledgepixels` HEAD to the eu-parc tag before B4
-goes live (reproducible publishing). See B1/B4.
+Cross-cutting follow-up: ✅ **RESOLVED.** pubmate (P-series + the four new CLIs) landed in
+`eu-parc/pubmate` via **[PR #1](https://github.com/eu-parc/pubmate/pull/1)** and is released as
+**`v0.1.0`** (depending on released `nanopub>=2.2.2`, which carries the object-blank-node sign fix).
+This repo's `pubmate` source is pinned to that tag, so publishing is reproducible — the
+`knowledgepixels` HEAD stopgap and the nanopub-py git-pin are both gone. See B1/B4.
 
 ## 8. Out of scope / later
 
