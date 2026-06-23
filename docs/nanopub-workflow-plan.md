@@ -158,11 +158,14 @@ Operational notes:
 - The nanopub's own URI stays the default `https://w3id.org/np/RA<artifactcode>`.
 - Mechanism: defining nanopub built with the thing URI as
   `…/biochementities/~~~ARTIFACTCODE~~~` (requires the nanopub-py change N1; see §3 #6).
-- **Sequential minting:** process terms in dependency order so references resolve to
-  already-minted IRIs. References to other *new* same-batch terms use a temporary handle
-  until that term is minted.
-- **Cycles:** publish the defining nanopub first (intrinsic props only), then **supersede**
-  it to add the cyclic/forward link triples once both endpoints have IRIs.
+- **Sequential minting with inline cross-ref resolution:** process terms in topological order;
+  rewrite each term's inter-term references to the **new** thing URIs via the id-map *before*
+  signing (the nanopub-java `np sign -r` pattern — a `Resource→IRI` rewrite; reimplemented in
+  pubmate). An acyclic link can be baked into the defining nanopub because its target is already
+  minted (fixed artifact code).
+- **Cycles** (symmetric `isIsomerOf`) have no single-pass fixed point — including the link changes
+  the artifact code, which changes what the counterpart points to. So the cyclic link is **omitted**
+  from the defining nanopub and added afterwards by **superseding**, once both endpoints have IRIs.
 
 ### Signing & provenance (GitHub/dropbox flow)
 - Sign with the **bot keypair** (private key from a GitHub secret); the bot needs an
@@ -218,21 +221,36 @@ non-existent `schema/dropbox-biochementity.schema.json`).
 
 ## 6. Identifier transition / migration (plan now, run later)
 
-The 879 existing terms carry minted ULID/hash IDs and reference each other by them.
+The 879 existing terms carry minted ULID/hash IDs and reference each other by them
+(`isMetaboliteOf` 267, `subClassOf`→biochementity 201, `isIsomerOf` 42 — symmetric, cyclic).
 Migrating them to nanopub-based IDs is a **one-time** operation, executed deliberately
 after the new flow is proven on the test registry.
 
-1. Build a dependency graph of the 879 terms (handles = current minted IDs).
-2. Topologically order (defining content excludes inter-biochementity links).
-3. Sequentially sign+publish each **defining** nanopub (live) → record
-   `old-minted-id → new RA-thing-URI`.
-4. For terms with links (incl. the cyclic `isIsomerOf` pairs), publish **superseding**
-   nanopubs adding the link triples with all references resolved to new IRIs.
+**Approach: resolve non-cyclic links inline, supersede only the cycles.** Inter-term references
+are rewritten to the *new* thing URIs at mint time via the id-map (the nanopub-java `np sign -r`
+"resolve cross-nanopub references" pattern — a `Resource→IRI` rewrite over each assertion before
+signing; reimplemented in pubmate since nanopub-py has no `-r`). A reference can be baked into a
+term's defining nanopub **iff the referenced term is already minted** (its new URI is known and its
+artifact code is fixed); topological order guarantees this for all **acyclic** links. **Cycles
+cannot** be resolved in one pass — including the link changes the artifact code, which changes what
+the counterpart points to (no fixed point) — so cyclic links are omitted from the defining nanopub
+and added afterwards by **superseding**.
+
+1. Build a dependency graph of the 879 terms (handles = current minted IDs); detect cycles
+   (the symmetric `isIsomerOf` pairs).
+2. Topologically order. Defining content includes **acyclic** inter-term links (resolved to new
+   IRIs via the id-map); **cyclic** links are held back for step 4.
+3. Sequentially sign+publish each **defining** nanopub (live), rewriting acyclic references to
+   already-minted new IRIs as it goes → record `old-minted-id → new RA-thing-URI` in the id-map.
+4. For the held-back cyclic links (`isIsomerOf`, ~42), publish **superseding** nanopubs (P3)
+   adding the link triples once both endpoints have new IRIs.
 5. Emit the full id-map and any redirects. (The site source `assertions/` is not persisted —
    it is regenerated from `published/` in the Pages job.)
 6. Keep the old→new map permanently so old IDs remain resolvable.
 
-Estimated volume: ~879 defining + ~a few hundred superseding nanopubs.
+Estimated volume: ~879 defining nanopubs + ~42 superseding (cyclic `isIsomerOf` only). Resolving
+the ~468 acyclic links inline drops the superseding count from "every linked term" to just the
+cyclic subset.
 
 ## 7. Incremental PR breakdown
 
@@ -257,9 +275,11 @@ issues:
 **pubmate** (merged to `eu-parc/pubmate` via
 **[PR #1](https://github.com/eu-parc/pubmate/pull/1)** and released as **`v0.1.0`**; this repo now
 pins that tag — the `knowledgepixels` HEAD stopgap is gone):
-- **P1 — ✅ DONE (`00cc0f3`).** defining-nanopub builder — assertion/term → unsigned nanopub
-  via nanopub-py with thing URI `…/~~~ARTIFACTCODE~~~`, intrinsic props only,
-  `prov:wasAttributedTo` suggester, pubinfo (label/license/introduces).
+- **P1 — ✅ DONE (`00cc0f3`).** defining-nanopub builder — wraps the given assertion graph into an
+  unsigned nanopub via nanopub-py with thing URI `…/~~~ARTIFACTCODE~~~`,
+  `prov:wasAttributedTo` suggester, pubinfo (label/license/introduces). (What goes *into* the
+  assertion — which inter-term links are resolved vs held back for superseding — is decided upstream
+  by the B6 migration, not here.)
 - **P2 — ✅ DONE (`0b4671d`).** sequential mint+publish over a term set in dependency order;
   returns handle→thing-URI and term→nanopub-URI maps; nanopub-py sign+publish (test/live).
 - **P3 — ✅ DONE (`cb348e5`).** supersede-to-add-links helper for cyclic/forward references.
@@ -312,11 +332,17 @@ pins that tag — the `knowledgepixels` HEAD stopgap is gone):
   (reproducible release; the `knowledgepixels` HEAD stopgap is gone); (3)
   switch the trigger to **on-merge to `main`** and **commit** `published/` + id-map. Note: the
   incremental "publish only new terms" relies on the id-map already holding the 879 existing terms
-  — that seeding is the migration (B6). Inter-term link/cycle **superseding** (P3) is also deferred
-  to B6.
+  — that seeding is the migration (B6). Inline cross-ref resolution (acyclic links) and cycle
+  **superseding** (P3, `isIsomerOf`) are part of B6.
 - **B5 — ✅ DONE (folded into B2).** Pages job regenerates `assertions/` from `published/`
   (build artifact) and builds the site from it; `serves-me-right` stays `.ttl`-only.
-- **B6:** migration tooling (Section 6) wired but **not executed**; live run is a separate, deliberate step.
+- **B6:** migration (Section 6) — **not yet built or executed.** Primitives exist (P2 sequential
+  minter, P3 supersession, id-map, `mint-publish`), but `mint-publish` currently mints assertions
+  *as given* (inter-term references keep their old ids — see the dry-run preview). B6 adds: (a) the
+  term **dependency graph + topological sort**, (b) **inline cross-ref resolution** — rewrite acyclic
+  inter-term references to new thing URIs via the id-map before signing (the `np sign -r` pattern,
+  reimplemented in pubmate; nanopub-py has no `-r`), and (c) **cycle detection** → defer the ~42
+  cyclic `isIsomerOf` links to a P3 **superseding** pass. Then a live run over the 879. Test-registry-testable.
 - **B7:** drop committed `unpublished/`. **Depends on B6 having run** — only once the 879
   assertions exist as nanopubs in `published/` and the site builds from regenerated
   `assertions/` can the old folder be removed without losing data or breaking the site.
