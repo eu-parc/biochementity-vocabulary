@@ -30,7 +30,7 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
-	publish-nanopubs mark-published publish-pipeline publish-defining pipeline assertions \
+	publish-defining pipeline assertions \
 	test-flow clean
 
 help:
@@ -39,8 +39,6 @@ help:
 	@echo "  make pipeline                  # process dropbox -> unpublished + archive"
 	@echo "  make validate-pipeline         # process dropbox -> build + unpublished, without archive/publish"
 	@echo "  make validate-pr               # PR gate: build proposed terms + validate as defining nanopubs (keyless)"
-	@echo "  make publish-pipeline          # publish unpublished assertions + move to published"
-	@echo "  make publish-pipeline DRY=--dry-run"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
 	@echo "  make publish-defining          # mint unpublished assertions -> published/*.trig + id-map (test server)"
 	@echo "  make publish-defining DRY=--dry-run"
@@ -156,47 +154,6 @@ archive-dropbox: graph2assertions
 
 process-dropbox: archive-dropbox
 
-publish-nanopubs: prepare
-	@set -e; \
-	files=$$(ls -1 $(UNPUBLISHED_FOLDER)/*.ttl 2>/dev/null || true); \
-	if [ -z "$$files" ]; then \
-		echo "No assertions found in $(UNPUBLISHED_FOLDER). Skipping nanopub publish."; \
-		exit 0; \
-	fi; \
-	publish_ts=$$(date -u +%Y%m%dT%H%M%SZ); \
-	redirect_file="$(REDIRECT_FOLDER)/term-to-nanopub_$${publish_ts}.tsv"; \
-	echo "Writing redirect mappings to $$redirect_file"; \
-	uv run pubmate-publish \
-		--assertion-folder $(UNPUBLISHED_FOLDER) \
-		--private-key "$$NANOPUB_PRIVATE_KEY" \
-		--public-key "$$NANOPUB_PUBLIC_KEY" \
-		--intro-nanopub-uri "$$INTRO_NANOPUB_URI" \
-		--redirect-output-file "$$redirect_file" \
-		$(DRY)
-
-mark-published: prepare
-	@if [ -n "$(DRY)" ]; then \
-		echo "DRY mode enabled. Keeping assertions in $(UNPUBLISHED_FOLDER)."; \
-		exit 0; \
-	fi
-	@set -e; \
-	files=$$(ls -1 $(UNPUBLISHED_FOLDER)/*.ttl 2>/dev/null || true); \
-	if [ -z "$$files" ]; then \
-		echo "No assertions found in $(UNPUBLISHED_FOLDER). Nothing to move."; \
-		exit 0; \
-	fi; \
-	for src in $$files; do \
-		name=$$(basename "$$src"); \
-		dest="$(PUBLISHED_FOLDER)/$$name"; \
-		if [ -e "$$dest" ]; then \
-			ts=$$(date -u +%Y%m%d%H%M%S); \
-			dest="$(PUBLISHED_FOLDER)/$${name%.ttl}_$$ts.ttl"; \
-		fi; \
-		mv "$$src" "$$dest"; \
-		echo "Moved $$src -> $$dest"; \
-	done
-
-publish-pipeline: publish-nanopubs mark-published
 pipeline: process-dropbox
 
 # B4: mint the unpublished assertions into signed defining nanopublications
@@ -226,7 +183,6 @@ assertions: prepare
 
 test-flow:
 	$(MAKE) validate-pipeline
-	$(MAKE) publish-pipeline DRY=--dry-run
 
 clean:
 	rm -f $(OUT_FOLDER)/* $(UNPUBLISHED_FOLDER)/*.ttl
