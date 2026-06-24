@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAi4XKkbzXcESugd2RBSnCQPtoA9z7vuqj9pGrP5v5Rhs> .
+@prefix sub: <https://w3id.org/np/RAi4XKkbzXcESugd2RBSnCQPtoA9z7vuqj9pGrP5v5Rhs/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    sub:keydecl npx:declaredBy sub:biochementity-bot ;
+        npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Zu/t8kkMRf1AKBPWteF8KhLNGBNfmkIrp17ygsjBRyA+sXtcT8cULH0lYhUNPmC0288Ej6nU+KJfWhy0gdUOXQqNVgRUypFeYKj+amTxuSO+jQqc69FeKtUYOhIkm1LmAhU8sWiLiXNPMBcIf0Nw1C2JmxU7sNwbPP34DXIW+nLPiRWrTw81hUU6p90QKZAxopLRiY0DLZa2rdy4sCtfKfpFz5z19uTvGlQB3A2y0p3vorZeaP+DpcWEWAHSOoqZM8uMWhQNMCcIUo7CJjaUX/QCCEq3q6//mw3xvxTcgZFJwkB8RHR/s1wqVKvhIcXJVm9jrDHR+SQWmbCpr5XawIDAQAB" .
+    sub:biochementity-bot a npx:Bot,
+            npx:SoftwareAgent ;
+        frbr:owner orcid:0000-0002-1267-0234 ;
+        foaf:name "Biochementity bot (THROW-AWAY)" .
+}
+
+sub:provenance {
+    sub:assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+    orcid:0000-0002-1267-0234 foaf:name "Tobias Kuhn" .
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Zu/t8kkMRf1AKBPWteF8KhLNGBNfmkIrp17ygsjBRyA+sXtcT8cULH0lYhUNPmC0288Ej6nU+KJfWhy0gdUOXQqNVgRUypFeYKj+amTxuSO+jQqc69FeKtUYOhIkm1LmAhU8sWiLiXNPMBcIf0Nw1C2JmxU7sNwbPP34DXIW+nLPiRWrTw81hUU6p90QKZAxopLRiY0DLZa2rdy4sCtfKfpFz5z19uTvGlQB3A2y0p3vorZeaP+DpcWEWAHSOoqZM8uMWhQNMCcIUo7CJjaUX/QCCEq3q6//mw3xvxTcgZFJwkB8RHR/s1wqVKvhIcXJVm9jrDHR+SQWmbCpr5XawIDAQAB" ;
+        npx:hasSignature "jY4jMqQTF+QM6u8SjNllymwkZhykIYW0jCOcM9OXp6czYBPVtHSH7Fy9R5UDIOlqhzpW8YX6W/xPvzzHw7YEjqByEkzlPZGCk/KhS0qjQmobllRJWPivxZC+g7ly5i9Yw5XZeDyKGeEswWZuI7n9XjXrwfkXNs7eVvRNCEyCHW1dhlcOuPpZ4FkaGpENuQCc87T9GoQ7FKG6ibAsrUqF1r92lGU+iREWVt9WbFiFRCjuLWy8IAATX7lEeDLGoCg45TRznBW1h6RI+9CNAHl8DKpOed6hnZ3zVYTiwsFR2I0f3mZgyF7v3ge9U3ioaDmcERxImWLJLoM6lw3dXEz+mw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy sub:biochementity-bot .
+    this: dcterms:creator sub:biochementity-bot ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType npx:declaredBy ;
+        npx:introduces sub:biochementity-bot ;
+        prov:generatedAtTime "2026-06-24T11:31:53.297177+02:00"^^xsd:dateTime ;
+        nt:wasCreatedFromTemplate <https://w3id.org/np/RAbn04KkfbV5PK2UDGkp-j7RUghs_y75DL4qWl_8zQQ3w> .
+}
