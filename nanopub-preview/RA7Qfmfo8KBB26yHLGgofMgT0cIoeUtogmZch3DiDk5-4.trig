@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RA7Qfmfo8KBB26yHLGgofMgT0cIoeUtogmZch3DiDk5-4> .
+@prefix sub: <https://w3id.org/np/RA7Qfmfo8KBB26yHLGgofMgT0cIoeUtogmZch3DiDk5-4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA7Qfmfo8KBB26yHLGgofMgT0cIoeUtogmZch3DiDk5-4 a owl:Class ;
+        rdfs:label "Linear 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid",
+            "Lineair 11-chlooreicosafluor-3-oxaundecaan-1-sulfonzuur"@nl-be ;
+        schema:alternateName "11Cl-PF3OUdS",
+            "11Cl-PF3OUdS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:763051-92-9>,
+            <https://identifiers.org/inchikey:SZVGIJOITCPDPM-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfouds" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:59.901296+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "omoN/L9KMX+phYWbUbOAoMwOoaLNVvyk3p5S4HAj8dpXg5SH5MCukiF+DcZazCqfHBXP9xgydz6NQILga9OusbuuCBSLEEoosrnlvQCYUvO7l/ZWkwbaG45TF6gEUbmEuNq30DMU8JgZqAQnpoLzZgf67sKXlD7gydL8XQRpL89UfQrtOO7FD5yPknRz7nXF0jsKAmittt/JmDt2dql8FW7sLIrxtc2Ra1cwo5k6FdftoweoJuw04oAipxXnrYqTRPpfUJi2ZzGAqIueMKr6w5We+CXNr9siWcqN9Qnup8YOSCLdlWJ+X2G4RFFpoiZWmNngaPe18jKFiYTlevQLRA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA7Qfmfo8KBB26yHLGgofMgT0cIoeUtogmZch3DiDk5-4 ;
+        prov:generatedAtTime "2026-06-24T11:19:59.901296+02:00"^^xsd:dateTime .
+}

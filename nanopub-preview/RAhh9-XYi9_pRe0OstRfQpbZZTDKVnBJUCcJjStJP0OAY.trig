@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAhh9-XYi9_pRe0OstRfQpbZZTDKVnBJUCcJjStJP0OAY> .
+@prefix sub: <https://w3id.org/np/RAhh9-XYi9_pRe0OstRfQpbZZTDKVnBJUCcJjStJP0OAY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAhh9-XYi9_pRe0OstRfQpbZZTDKVnBJUCcJjStJP0OAY a owl:Class ;
+        rdfs:label "Chlordane",
+            "Chloordaan"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Chlordane" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34623>,
+            <https://identifiers.org/cas:57-74-9> ;
+        pehterms:hasGroupLabel "organochlorine compounds",
+            "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:03.756523+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "rcwplU9BEhj0mRbnXKJdXn3fUqHfpUa+aIG9cBz/D8nTccXJ7KjzdSw9KLV3Lu8yrMJ42pnRDrfLcU82Qpx+h+PcP2E1CA20n9EOKixImGZ5FAPiqvfVUwf4XMhsA06e7AmZN/pZwv40JnfzVgvVqfd9Buj52QPlw1fb8tctoqlLHRsETw87mvnsO9/7Sgfz9SYJ3Cjjse3b9MzpPPWZfdn15rZ0fcB1hq5hFNtxx8ffaccFdG1NAYnyk0l4K84BSDrBVmAYuYsjHxzrADpTmB2kJXHldwm/5znwX00Ly4W6WHjv2+wAONk/ckkbaEahZNTBpUbvlbLLMKXQwwzySw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Chlordane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAhh9-XYi9_pRe0OstRfQpbZZTDKVnBJUCcJjStJP0OAY ;
+        prov:generatedAtTime "2026-06-24T11:20:03.756523+02:00"^^xsd:dateTime .
+}

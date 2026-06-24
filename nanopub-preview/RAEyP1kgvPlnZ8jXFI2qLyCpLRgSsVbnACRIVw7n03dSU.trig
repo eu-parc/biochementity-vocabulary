@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAEyP1kgvPlnZ8jXFI2qLyCpLRgSsVbnACRIVw7n03dSU> .
+@prefix sub: <https://w3id.org/np/RAEyP1kgvPlnZ8jXFI2qLyCpLRgSsVbnACRIVw7n03dSU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAdexa2eAk1msEWERF8ALoO6BcCfmwA5NI8o6DQcjN-q0 a owl:Class ;
+        rdfs:label "cis-Permethrinic acid (racemic)" ;
+        schema:alternateName "(+/-)-cis-Permethrinic acid",
+            "cis-DCCA",
+            "cis-DCCA (rac)",
+            "rac-cis-Permethrinic acid" ;
+        rdfs:subClassOf biochementity:RACtY3rpfIowwtmoBrI0BJvqgI-oVfi3BYWGnSFgspaos,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/pubchem.compound:41507> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" ;
+        pehterms:isIsomerOf biochementity:RAtlHnBGjHuG8oiZjd54VNCJ1XuMEoYNSqsV4fo3twPDc .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "cdcca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:53.156147+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvT4GZsm6UC6E8Crd34Ch+bm6IzuJMZp/9uEyPbwCr2M9gYhUzjpxno2zhnLHEym4wa6RuA07dGwxjumX0uzQlpBFp/OBX4ysD0JIoTgHjkurGW9zNGKyXdj57JUlYEu7uOx4p/IEzaDwNXjDzQsAvPQtNZ5CBEUQKZ0KatDws0YnmisMVglZq/b57N0ATFIPZWcQa0pY8M69BMyzk/Lu4JmxFUNjuIb88/wB3hKo/QlT6qYcpYDbxAwyE7lSri4Rs4arNYH2k4BH1IaOIGJ9Jup4r7R8Y/nxbVixk10YdwEpVB7/Ft7zrlPTPgarqmFmRNPHA3SSroMQHgAFY/v2zwIDAQAB" ;
+        npx:hasSignature "ZEo/p/oNbyEVIv37SOY15qkE0ksdgHosphlVsMfeAIV/or5MhWf4wD2lzje5mLAVOjbRHsDlngv4ILyNJHHUvTdt9f6t2XDbjtDmZAs5Mx/pVwzBWbrWvtCW2qTKrKtTdj23eeXCGfJnE04Va7ILG78CaNY7xqOjc3Oe4mbdqeZbsqB+x+Dk/eiEB8kxEjV0RXAqxFFd50A7rdrC5RDxRn2iQzsBFy9JybArpEwf8+dr49ZJruTrA+I6KCVLMVGbaHOcfG0jAxt9EFLXF9ZWI7v491uuKhENtGnVv4gRzocx7AD5JqMXFfe/2NXZffat3KgxIUohfbEcnVsYv+vjLQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "cis-Permethrinic acid (racemic)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RAdexa2eAk1msEWERF8ALoO6BcCfmwA5NI8o6DQcjN-q0> ;
+        prov:generatedAtTime "2026-06-24T11:20:53.156147+02:00"^^xsd:dateTime .
+}

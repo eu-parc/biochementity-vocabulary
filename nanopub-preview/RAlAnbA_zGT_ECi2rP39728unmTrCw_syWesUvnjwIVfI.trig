@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAlAnbA_zGT_ECi2rP39728unmTrCw_syWesUvnjwIVfI> .
+@prefix sub: <https://w3id.org/np/RAlAnbA_zGT_ECi2rP39728unmTrCw_syWesUvnjwIVfI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAlAnbA_zGT_ECi2rP39728unmTrCw_syWesUvnjwIVfI a owl:Class ;
+        rdfs:label "4-Ethylaniline",
+            "4-Ethylaniline"@nl-be ;
+        schema:alternateName "EtA" ;
+        rdfs:subClassOf biochementity:RAvjjce1KdRiRZErlfC725I4hFX4zHzAvQaFJJBC4Uepk,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:589-16-2>,
+            <https://identifiers.org/inchikey:HRXZRAXKKNUKRF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11504> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "eta" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:18.181427+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "QBU7iTFeN3ZHTYW7qgMf4NxL141PIaZfnsytFHUUtsieLlydHHZs6PJKyS2h7fzEr+Biruf9ad2dMtI59/UGCQDzBG2YVhldsqPEn0/qXraIubv+1fP7199HBeDYKBl0gBDydWCRX/9VVN90G9Of+aifnnfjf9SYjzXINbmBnj5+P0D86jbQqftLWcGbBhuStGvnEX6jZ4rBUuf9lv4glpozC3wlsICRZFNQMyGAXhV771VLVZw5RR7lbp1OHWUH+005YC7j2ekTDjnfKANzJWXmittdtB67GUDqS4uGPxv3bdbfvAOI1Ys+3PYOKfsmHdpBQDEtqPPXHejnYlhKCQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-Ethylaniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAlAnbA_zGT_ECi2rP39728unmTrCw_syWesUvnjwIVfI ;
+        prov:generatedAtTime "2026-06-24T11:20:18.181427+02:00"^^xsd:dateTime .
+}

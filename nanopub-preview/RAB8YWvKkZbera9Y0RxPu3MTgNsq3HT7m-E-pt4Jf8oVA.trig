@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAB8YWvKkZbera9Y0RxPu3MTgNsq3HT7m-E-pt4Jf8oVA> .
+@prefix sub: <https://w3id.org/np/RAB8YWvKkZbera9Y0RxPu3MTgNsq3HT7m-E-pt4Jf8oVA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAB8YWvKkZbera9Y0RxPu3MTgNsq3HT7m-E-pt4Jf8oVA a owl:Class ;
+        rdfs:label "Cesium",
+            "Cesium"@nl-be ;
+        schema:alternateName "Cs",
+            "Cs"@nl-be ;
+        rdfs:subClassOf biochementity:RAqChJ0w3Ns1B9ZHX9yEYZ-Kr81AY63gLArrE2zWjGoSY,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:30514>,
+            <https://identifiers.org/cas:7440-46-2>,
+            <https://identifiers.org/inchikey:TVFDJXOCXUVLDH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5354618> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "cs" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:25.545326+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "o8yE34/92J8vq+0cHnZI+ocnNMJThh4PcrSmuS2MVExdZX6Ue8c1GMTYK89eKdRzVQumghItwgPSelwqKTXFWf/b+w0gi42w77pS71nygo5pm9W6qPkND3/oWgimzdL69zD2zFmhGWk6y+R4y7Y1vnCPqbVXKqfcE+VA+a9JgTLauO7C7ghsPk0CjfWyAzzL8yU6ZoanzAdqAAdmOsbrpodotEV6mDBRr+PdibD5v0WfQJ6wfjyqvwOMGfPRLla3v0g57HqvOi8NxE6/F8w5GGjOcmbkr51UgUxHj07BvMBL6H35DfL/vtPyT1Nyoirwv2NbqtQB7ohsRGgfRK50tg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cesium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAB8YWvKkZbera9Y0RxPu3MTgNsq3HT7m-E-pt4Jf8oVA ;
+        prov:generatedAtTime "2026-06-24T11:20:25.545326+02:00"^^xsd:dateTime .
+}

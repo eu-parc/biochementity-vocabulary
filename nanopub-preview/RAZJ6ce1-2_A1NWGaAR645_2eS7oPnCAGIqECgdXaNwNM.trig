@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAZJ6ce1-2_A1NWGaAR645_2eS7oPnCAGIqECgdXaNwNM> .
+@prefix sub: <https://w3id.org/np/RAZJ6ce1-2_A1NWGaAR645_2eS7oPnCAGIqECgdXaNwNM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAZJ6ce1-2_A1NWGaAR645_2eS7oPnCAGIqECgdXaNwNM a owl:Class ;
+        rdfs:label "Interleukin 8",
+            "Interleukine 8"@nl-be ;
+        schema:alternateName "IL8" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP30829-3> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:40.325128+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "ImO3qM8722NNP8QkhQMOG4qsEr9SRZLxjUbvDdkGHiHveQXKbRoiAQ+m1G8jGpZeGyJDko2pCXiyW8phhuNOlTwVDfY6tHM6ud8qqhVtGV8vewMO0eBiDYTvpEVw5czpMOCpqDZ0Gp9Xi7gkctg8BOZDcudbrwfmUSYkh3hn4B5lXpKjAkh7UCAoEP7TPfFsS6KAfelS33/qmUpGd9y1eFWYwonWD8y165XbcNGGkEoHFNr8DVxgmRl0YdGyX0W/MtfH7W1h5pd2y/x+rT2ecz9k+E71f5wS3OEiMpARrVCHYndVJw8TGdpP5DBmKXXCaf0bxD6cJRV54rzhHYXRqw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Interleukin 8" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAZJ6ce1-2_A1NWGaAR645_2eS7oPnCAGIqECgdXaNwNM ;
+        prov:generatedAtTime "2026-06-24T11:19:40.325128+02:00"^^xsd:dateTime .
+}

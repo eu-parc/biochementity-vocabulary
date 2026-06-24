@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAw511PVwiIDEnGp4GPXKg6IlP-mO5WmJY8ArRvyieAqI> .
+@prefix sub: <https://w3id.org/np/RAw511PVwiIDEnGp4GPXKg6IlP-mO5WmJY8ArRvyieAqI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAw511PVwiIDEnGp4GPXKg6IlP-mO5WmJY8ArRvyieAqI a owl:Class ;
+        rdfs:label "Methyl (2Z)-2-methoxyimino-2-[2-[[(Z)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetate",
+            "Methyl (2Z)-2-methoxyimino-2-[2-[[(Z)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetate"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Trifloxystrobin",
+            "Trifloxystrobin"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:ONCZDRURRATYFI-JCLPZYRYSA-N> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:57.795976+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "qLhtsKqfq8Sn1s1923FR9QzagZsbwldZvUfa/Z7NSQzzg04nBMwmKNfbH09rYRg+kBcGGzxUVH0tCzzQywn1w0kFRsPBTDdk5+s5hIoLDBBbWVLLnC+QgZsrCuDzKuSild5hTKzCMq2KDxuc3wSodA06KqfhyVMcE+EvTOg6u5dyK4PmqUdnZNO0iZrq74ANe4MEwaeFXcUpbKynWVMrt25MMEgDkPcIS3JRHs5JxSQtD7mBIzmruvXNmglQY9b9Hj2cI+1tVp1KwTPDkQegU+0UCxkZcSFTahWdA8FLmx4Db1MKhU2sVrXOeKmIjVNEHha/bopp3Lf1xGrGx/J4gw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Methyl (2Z)-2-methoxyimino-2-[2-[[(Z)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAw511PVwiIDEnGp4GPXKg6IlP-mO5WmJY8ArRvyieAqI ;
+        prov:generatedAtTime "2026-06-24T11:19:57.795976+02:00"^^xsd:dateTime .
+}

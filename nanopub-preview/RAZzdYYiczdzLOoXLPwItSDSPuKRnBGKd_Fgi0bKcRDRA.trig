@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAZzdYYiczdzLOoXLPwItSDSPuKRnBGKd_Fgi0bKcRDRA> .
+@prefix sub: <https://w3id.org/np/RAZzdYYiczdzLOoXLPwItSDSPuKRnBGKd_Fgi0bKcRDRA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAZzdYYiczdzLOoXLPwItSDSPuKRnBGKd_Fgi0bKcRDRA a owl:Class ;
+        rdfs:label "Tebuconazole-OH (hydroxytebuconazole)",
+            "Tebuconazool-OH (hydroxytebuconazool)"@nl-be ;
+        schema:alternateName "OH-TEBUCONAZOLE" ;
+        schema:comment "comments: It seems to be a metabolite of this compound https://pubchem.ncbi.nlm.nih.gov/compound/Tebuconazole and this company seems to have a CAS number for it: https://www.schd-shimadzu.com/en/metabolites/2726-167445-Hydroxy-tebuconazole.html but then I also find that CAS number for this other company's compound https://www.lgcstandards.com/LB/en/search?text=212267-64-6" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAFLc6QzTiTPJLsTFQ5mOXa9oRukmbU1km5xHVGOe-JPA .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "tebuconazoleoh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:17.402315+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "Odf1M0cdxzMemZF5rlRizm+lBoU4xXkHKwn1Jks0en/Ryt6tkuSt20igB/WkPVQjI8yQvl3+fjUIHB1ZHVSYtZDzCoGzEVieM4pCXLXwkdc8ubtVvq2zwi4KncUdOTHbMvCClIyZQeIASLDrnaAhFnHEscRy6ti4t/fhyaT3R9wtopgf1nP+T/yWk56HC/JSyLbi4X/o/9iCmWyDtIO0u51QOrIH2fJkhTmS7BrszdEw8Tov0xRNLR8VHfBFiagBuSXqxdrWZz6ibXGEb1wBD49uJtnZSmZGRRnhRstej/fpQQy8Pg0HmWiW2o0RUWRoG7FdRPnSeebFiMstR2HNNg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tebuconazole-OH (hydroxytebuconazole)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAZzdYYiczdzLOoXLPwItSDSPuKRnBGKd_Fgi0bKcRDRA ;
+        prov:generatedAtTime "2026-06-24T11:20:17.402315+02:00"^^xsd:dateTime .
+}

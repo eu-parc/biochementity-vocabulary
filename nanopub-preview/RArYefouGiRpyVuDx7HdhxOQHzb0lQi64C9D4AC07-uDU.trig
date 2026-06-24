@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RArYefouGiRpyVuDx7HdhxOQHzb0lQi64C9D4AC07-uDU> .
+@prefix sub: <https://w3id.org/np/RArYefouGiRpyVuDx7HdhxOQHzb0lQi64C9D4AC07-uDU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArYefouGiRpyVuDx7HdhxOQHzb0lQi64C9D4AC07-uDU a owl:Class ;
+        rdfs:label "Mono(2-propyl-6-oxoheptyl) phthalate",
+            "Mono(2-propyl-6-oxoheptyl)ftalaat"@nl-be ;
+        schema:alternateName "oxo-MPrHpP" ;
+        schema:comment "comments: I also only find this in a pub of Covaci (https://www.sciencedirect.com/science/article/abs/pii/S0039914019301602) --> to ask him about identifiers" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAZbcvwmgKhgLNKbAI9mSzXxvPF-8QMl6ZABfgmm6igfA .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "oxomprhpp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:41.360545+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "AQ2ruxRVm2YeTO5YZzIQ/g+46bFe4eCCy5vOTLecXVgCMtAC7c7JGhIiTBf2TpNL3KLE9Dg2V0DvHAaaGyTwQwdUCKzFkkvDYgQ2+NzL1sVaaJ68pUzbztnm3FTpxVArnftIEHSZi1K7cLRe+32KZ0CQisVhHoJTgh4Se1Tao1XiZDJU+9pLcgl63uNSefrJoV5VHvIJR3x80WwYa4ME48xjl2Ow4ZcBej/wXXgd5ypMIyLCeeJMVB4H5fUSh2OwnGp+hrC+1G5Ej7+nbmK7QErM1v3rpUSGNRRUhP+iQexT7FBgHhsX3y11hAn+mOkOz8bdKjP1hZw0SwbElvU+gw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono(2-propyl-6-oxoheptyl) phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArYefouGiRpyVuDx7HdhxOQHzb0lQi64C9D4AC07-uDU ;
+        prov:generatedAtTime "2026-06-24T11:20:41.360545+02:00"^^xsd:dateTime .
+}

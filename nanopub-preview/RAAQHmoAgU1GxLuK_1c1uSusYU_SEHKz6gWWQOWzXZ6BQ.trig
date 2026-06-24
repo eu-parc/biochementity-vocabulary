@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAAQHmoAgU1GxLuK_1c1uSusYU_SEHKz6gWWQOWzXZ6BQ> .
+@prefix sub: <https://w3id.org/np/RAAQHmoAgU1GxLuK_1c1uSusYU_SEHKz6gWWQOWzXZ6BQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAAQHmoAgU1GxLuK_1c1uSusYU_SEHKz6gWWQOWzXZ6BQ a owl:Class ;
+        rdfs:label "1,2-diethoxyethane",
+            "1,2-diethoxyethaan"@nl-be ;
+        schema:alternateName "EGDEE" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/incikey:LZDKZFUFMNSQCJ-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:48.889906+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "kiWn00fWXk5i45Dr+weNMX+HD6ved8HuCVJgRhcKnEf7tqPjzZlUhjZQaVJAOAaVj9yG72nJl5DKHUWnsxbxjFonOeVAMFdbFLnsdEnmvsqIPFiOyCMK9Qmdn5w7gC5FYu82pL6AnRg1/GaYjKgnCPTFtLYiLuT9zppW8QowTyPjDeEUgr+FVi8Sk4D6KCovDPaYCCU/h559aad2kg3AYlYZBWh3LYFOJ36DeZ7rFNuzuoaP8MGEuJxpFsYLRSPp+6la+amMITwUxzZ8AiLLadlWxxx3ws6DmGfMOfQpf1/Or4Mgk1SZ8QnizCh+AHceL5OBLkF7hkP/DK3jlF/Adw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2-diethoxyethane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAAQHmoAgU1GxLuK_1c1uSusYU_SEHKz6gWWQOWzXZ6BQ ;
+        prov:generatedAtTime "2026-06-24T11:19:48.889906+02:00"^^xsd:dateTime .
+}

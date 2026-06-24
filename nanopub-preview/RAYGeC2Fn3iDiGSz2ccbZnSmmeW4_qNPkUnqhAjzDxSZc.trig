@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RAYGeC2Fn3iDiGSz2ccbZnSmmeW4_qNPkUnqhAjzDxSZc> .
+@prefix sub: <https://w3id.org/np/RAYGeC2Fn3iDiGSz2ccbZnSmmeW4_qNPkUnqhAjzDxSZc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAYGeC2Fn3iDiGSz2ccbZnSmmeW4_qNPkUnqhAjzDxSZc a owl:Class ;
+        rdfs:label "Progesterone",
+            "Progesteron"@nl-be ;
+        schema:alternateName "Progesterone" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:17026>,
+            <https://identifiers.org/pubchem.compound:5994>,
+            <https://loinc.org/LP14041-5> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:39.995571+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "ZTuX5jaarvbwNLoVNGf7oYaO5hvEGGmGXUck+t6GQKjDdEGFRbUcTKEcQPEFsqMSrNLaVsygTTs+i1OBGoTD9m8mBG7yzl7OzQETjHf+Z97dh6hdlEp00CVbU6Iub6fpDJWHqongK8pFKMv6xV+AwItU+2RwnWtKV7INKXmaL0P5nwetFll+cCyNCMYChVI3O44Varfi3IFUpzeL2FWA0b/fPRrpdmNYLjHiypqPdjS/t+egCwjGyPDbHw4MyR99S9V5N4BSs3NCKuAQ5jkw/BD/w9yLl1Q8O1knW/muIjrE3OL/Qvn2y/7HTnMOPX2E8i5a8MBdl18daHuPMdsO6g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Progesterone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAYGeC2Fn3iDiGSz2ccbZnSmmeW4_qNPkUnqhAjzDxSZc ;
+        prov:generatedAtTime "2026-06-24T11:19:39.995571+02:00"^^xsd:dateTime .
+}

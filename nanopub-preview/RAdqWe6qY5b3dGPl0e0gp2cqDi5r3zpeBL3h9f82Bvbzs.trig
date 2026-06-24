@@ -1,0 +1,43 @@
+@prefix this: <https://w3id.org/np/RAdqWe6qY5b3dGPl0e0gp2cqDi5r3zpeBL3h9f82Bvbzs> .
+@prefix sub: <https://w3id.org/np/RAdqWe6qY5b3dGPl0e0gp2cqDi5r3zpeBL3h9f82Bvbzs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAdqWe6qY5b3dGPl0e0gp2cqDi5r3zpeBL3h9f82Bvbzs a owl:Class ;
+        rdfs:label "Branched N-Ethylperfluoro-1-octanesulphonamide" ;
+        schema:alternateName "betpfosa" ;
+        rdfs:subClassOf biochementity:RAezTLC0Rc_OtJtlFBozWv7kFpASESSk-hcUt7KNK88c0 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:47.566007+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "kw9H2doJMSqmWoX+wUd7+W5rH4tOnfIUx/7V7UtYm+WKzA2UZqyg/R1W5L9syavY29ywdWf5HHU8F3Q47ihxaptBj/Frpafn7IZBgw2s5vYGJK/9ELcWGHOzvHThuP2kggk/PlGU1TIqnSJ6cPYeJO3g0FxlgcN+ZWsGaw5DQcIeICjqDQzEdSezVQxfLUdee1VmTwrIj9e9u/RPPvK0uhBRYNpZ6EooxNq9ZSjELJkJnyFw9nSFk2kgH8fCdZsXIs7VbFiB/Y/kPffZVewCFYjqFWn0a7uijpMaKMmoccl4NNANa2xLH+cwP82/XTJu2JqJQ7AOvY96ADcybv/j+g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched N-Ethylperfluoro-1-octanesulphonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAdqWe6qY5b3dGPl0e0gp2cqDi5r3zpeBL3h9f82Bvbzs ;
+        prov:generatedAtTime "2026-06-24T11:20:47.566007+02:00"^^xsd:dateTime .
+}

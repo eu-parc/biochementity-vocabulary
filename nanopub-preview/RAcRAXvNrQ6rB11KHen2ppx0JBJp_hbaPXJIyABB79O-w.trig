@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAcRAXvNrQ6rB11KHen2ppx0JBJp_hbaPXJIyABB79O-w> .
+@prefix sub: <https://w3id.org/np/RAcRAXvNrQ6rB11KHen2ppx0JBJp_hbaPXJIyABB79O-w/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcRAXvNrQ6rB11KHen2ppx0JBJp_hbaPXJIyABB79O-w a owl:Class ;
+        rdfs:label "3-Aminobiphenyl",
+            "3-Aminobifenyl"@nl-be ;
+        schema:alternateName "3ABPH" ;
+        schema:comment "comments: * This one has two CAS numbers according to PUBCHEM --> How to handle this?" ;
+        rdfs:subClassOf biochementity:RAvjjce1KdRiRZErlfC725I4hFX4zHzAvQaFJJBC4Uepk,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:2243-47-2>,
+            <https://identifiers.org/cas:41674-04-8>,
+            <https://identifiers.org/inchikey:MUNOBADFTHUUFG-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:16717> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "threeabph" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:37.821425+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "IYWM9MJEFMKEE10l0JGSLQBegbkZd92iq5aIBdLjI8SHuM/SpdiD/FlRx0e08hmnxuCwE/h97vFSnzzvP7314v7oTBdYixASTlEA/Wq4QnVl2j7oHWQMfVHCTPfGjpubZc4pHkhhHjAaQPAvoJqXyditWUttt3oWWkV9ai7q5TgD5qQ8k1iHlQ+tEa0CBdp6W/BcT+uUfqtTbjN5bjU2dOg5N66e+yKzQVCkhd4M6/Y8sWm+SbWkLdg3Bzg78uE8GhN6uW3//eW2hqOtWG3D1v6vqnG1lzww3gFrkKnu7T0mCUFIAK/tOx3CmBMed4aYa6tMqztAFfSQK0+4TZB8NA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-Aminobiphenyl" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcRAXvNrQ6rB11KHen2ppx0JBJp_hbaPXJIyABB79O-w ;
+        prov:generatedAtTime "2026-06-24T11:20:37.821425+02:00"^^xsd:dateTime .
+}

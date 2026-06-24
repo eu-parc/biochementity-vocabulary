@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAArXrqBeQL92AvDGI3s3FwBIkj2zzVF3E5cfHPpqD3hw> .
+@prefix sub: <https://w3id.org/np/RAArXrqBeQL92AvDGI3s3FwBIkj2zzVF3E5cfHPpqD3hw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAArXrqBeQL92AvDGI3s3FwBIkj2zzVF3E5cfHPpqD3hw a owl:Class ;
+        rdfs:label "Interleukin 12",
+            "Interleukine 12"@nl-be ;
+        schema:alternateName "IL12" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP18174-0> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:44.012011+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "bkGZYsPZe1rv+TvwuGyXYMiuyjtmwYJGxx1YJOCVmYH9QPGBGqM6Liszw+pveq2pcXMG7AsTEbwRmU3xq6p5XnchbXQvQksFYxI8mrfTJtuYruNSOm2vXbujYu5MnMj4I/ikt8nAkZoiT4j2uMz5yeJ+7BZXeudGo787/bdNlTCX4vjU+DIi38tAXYSMkgqSdgMSRzjF1eOnDwCQe14DS5w0evnarsfzNTgz0ZvQst3/P0qAHEDjcoKHge27nrDvnAh7lX9fEmNUwbuVY+6oqi8Zqv9fAQisKd5YCZTfYBMPDBjblo3hLk4fuQZRADCrRlPo6JUR6l339IPWIRBE3g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Interleukin 12" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAArXrqBeQL92AvDGI3s3FwBIkj2zzVF3E5cfHPpqD3hw ;
+        prov:generatedAtTime "2026-06-24T11:19:44.012011+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAje67k7Lt7Gev7Up8eaCwFUiknq6hnMWDI0Iv31KGwMI> .
+@prefix sub: <https://w3id.org/np/RAje67k7Lt7Gev7Up8eaCwFUiknq6hnMWDI0Iv31KGwMI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAje67k7Lt7Gev7Up8eaCwFUiknq6hnMWDI0Iv31KGwMI a owl:Class ;
+        rdfs:label "Bis(1,3-dichloro-2-propyl) phosphate",
+            "Bis-1,3-dichloro-2-propyl-fosfaat"@nl-be ;
+        schema:alternateName "BDCIPP",
+            "BDCIPP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:166469>,
+            <https://identifiers.org/cas:72236-72-7>,
+            <https://identifiers.org/inchikey:NNKRUBFJSSBFSS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:188119> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "flame retardants" ;
+        pehterms:isMetaboliteOf biochementity:RAHMHAcW87mVHX63HQHwaaJyVHJiBV-Syn6nIqWQJog7w .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "bdcippms" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:31.242887+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "AjeCEvd9LAmKcVlkQVrKFg3DlE79JXFbg1kO6Or2SJoSI2omy7COlgKZfPCdN42Thdg+NSJXuA37l3SKkA//gkCf9dlHESXJMSPjCaGxScIAknIHFesouMuXB09zoS3hFfaiYYNimlFBgtVvav6fPBemzCk5Xc7DxhZ+62Sw720KnqRsGEwCFKxA2pRqUzvbTTKQqIjfKv8zO+IZPNSwIYLlYcWKlh4fIDdb3tLhmmK/M6b15TsTRWUQPeXjttRCHuPm2ZPRBHuBfSVImx6x5jLMKMgSiyCvfiHNAZjmA1eZcOZnsraHgDNiwiIfi2zcG9QrneNM6h52cFRgpCmV3Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Bis(1,3-dichloro-2-propyl) phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAje67k7Lt7Gev7Up8eaCwFUiknq6hnMWDI0Iv31KGwMI ;
+        prov:generatedAtTime "2026-06-24T11:20:31.242887+02:00"^^xsd:dateTime .
+}

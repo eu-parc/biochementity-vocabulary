@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RARHHHKfCTKqW0NXuj3dLtjRAKmzDR9fjuk9Pi2Fa99W0> .
+@prefix sub: <https://w3id.org/np/RARHHHKfCTKqW0NXuj3dLtjRAKmzDR9fjuk9Pi2Fa99W0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RARHHHKfCTKqW0NXuj3dLtjRAKmzDR9fjuk9Pi2Fa99W0 a owl:Class ;
+        rdfs:label "5-hydroxy-N-methyl-2-pyrrolidone",
+            "5-hydroxy-N-methyl-2-pyrrolidon"@nl-be ;
+        schema:alternateName "5-HNMP" ;
+        schema:comment "comments: * Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/5-Hydroxy-1-methylpyrrolidin-2-one" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:RMBHYULORNYSOB-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "aprotic solvents" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "hnmp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:57.510829+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "XptMr1OqCAn4GPyNXkCo1LSTRvr1/Al5ZkCFYLwfkBL2PYLsD19IGPP7XDOKvCtNQDfnobhBVCVPvHSv9hlVohCEse1RrZv6FlKFzFQEjjnxoIC7T3pNMFgSuKmFsyh+LX4/I37nmsgEypSSH1CalQeHWgQZTL0LclQK4P2v6gvowgGMao/bkEbYg0Rv/7fF0O34s5udFlWtkuWSvCAsRTAjvUy/wBXmvcUyd8l8XZn5usoJjqhNP7yYhjYJiMNlKS+51qNDT3bjiyemmbBDXsf+sVpk0n8dl5j6+ptUpEczbtnqbd2dE8zAcqOHm/6OUNrUbDBuhmZxLjmZtbYAHg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "5-hydroxy-N-methyl-2-pyrrolidone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RARHHHKfCTKqW0NXuj3dLtjRAKmzDR9fjuk9Pi2Fa99W0 ;
+        prov:generatedAtTime "2026-06-24T11:19:57.510829+02:00"^^xsd:dateTime .
+}

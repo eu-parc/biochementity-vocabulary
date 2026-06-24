@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAkzIJTK9SKGY4uwq8mi1w_CxiEVRLpzHbUuWU_T0bZoo> .
+@prefix sub: <https://w3id.org/np/RAkzIJTK9SKGY4uwq8mi1w_CxiEVRLpzHbUuWU_T0bZoo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAkzIJTK9SKGY4uwq8mi1w_CxiEVRLpzHbUuWU_T0bZoo a owl:Class ;
+        rdfs:label "3-Trifluormethoxyaniline",
+            "3-Trifluormethoxyaniline"@nl-be ;
+        schema:alternateName "3TFMA" ;
+        schema:comment "comments: * I do not find any info about this compound. Maybe is this one? https://de.hsp-pharma.com/apis-and-intermediates/3-trifluoromethoxyaniline-cas-1535-73-5.html#:~:text=Wir%20sind%20professionelle%203%2DTrifluormethoxyaniline%20cas%201535%2D73%2D5%20Hersteller,China%2C%20spezialisiert%20auf%20die%20Bereitstellung%20von%20qualitativ" ;
+        rdfs:subClassOf biochementity:RAvjjce1KdRiRZErlfC725I4hFX4zHzAvQaFJJBC4Uepk,
+            pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "threetfma" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:17.331631+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "W43dZ33RZLnF2q3S7MLbGoY6FmiwIrmsW9GI+yJ9OelD4u3BoOzH2v8YMdYBUo4oNFU9YaRWIqcA5vZqdJtrw9O82FC9CDSAZgcqjyV3zn/yVTWvwU9AohY0Qn/Xfj9cejUF6t6Qgsd3+aFU+8YosDURhCXBWMNsBSZiojJE4soYGdKax9Mlp4hzjJH0LB5J4/jpHYUkAdHPGINwvNZZf1Qakc4nSyPyJ8a3Ir7B96Rw7pxI9Q2+fvkZc5je713VYjX4//YvZyO98pTHtiNlaRBZPRKj1v5yqsVOOEblcmK/zS72kzBFGSGwnahoBWyOn+E6HWbo4DlGnelj0UhDJw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-Trifluormethoxyaniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAkzIJTK9SKGY4uwq8mi1w_CxiEVRLpzHbUuWU_T0bZoo ;
+        prov:generatedAtTime "2026-06-24T11:20:17.331631+02:00"^^xsd:dateTime .
+}

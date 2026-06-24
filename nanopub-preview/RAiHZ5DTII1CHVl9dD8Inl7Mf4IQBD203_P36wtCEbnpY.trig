@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAiHZ5DTII1CHVl9dD8Inl7Mf4IQBD203_P36wtCEbnpY> .
+@prefix sub: <https://w3id.org/np/RAiHZ5DTII1CHVl9dD8Inl7Mf4IQBD203_P36wtCEbnpY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiHZ5DTII1CHVl9dD8Inl7Mf4IQBD203_P36wtCEbnpY a owl:Class ;
+        rdfs:label "Beta-hexachlorocyclohexane",
+            "Beta hexachlorocyclohexaan"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "bHCH",
+            "bHCH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28428>,
+            <https://identifiers.org/cas:319-85-7>,
+            <https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-CDRYSYESSA-N>,
+            <https://identifiers.org/pubchem.compound:483937258> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds",
+            "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAvU9Ja0I8kL0OjtxJEHXA7GuO2YFmUwv5VfEJK9F0l9c .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "bhch" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:38.538274+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "YR4+36hlnY82Yqq/NIgThjnX32zx8QF0H7mM2T0BOhNpZXF1o2pbL+vUvVgrGNRPe9pO/+WKfK+azcnum8c2ynV3ylWO1F4lAq+8qykzfmaOYFku3OIjPsNKRym+tmyKhlg8zmBsq8C3tsS79teX/pSKQlDSbTTv0j1q897ncy45i5nZpVSwVB86aFdrmxGG82IUXATB6oQaGcxV/HNHrbgCHLm6VjMnubx88gHV3q+u71HvDP8pTz8a4eXyTarUMlCd5Yk8xm9fywx/XzWCyiqScGvkMXtOxtyTFMQRwkCNAiH/eUvb57pubM4Y2/OE+oIQZyjhB0jGj9gtjXR0hg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Beta-hexachlorocyclohexane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAiHZ5DTII1CHVl9dD8Inl7Mf4IQBD203_P36wtCEbnpY ;
+        prov:generatedAtTime "2026-06-24T11:20:38.538274+02:00"^^xsd:dateTime .
+}

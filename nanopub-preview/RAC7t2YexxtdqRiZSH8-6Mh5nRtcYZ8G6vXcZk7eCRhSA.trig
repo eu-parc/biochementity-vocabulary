@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAC7t2YexxtdqRiZSH8-6Mh5nRtcYZ8G6vXcZk7eCRhSA> .
+@prefix sub: <https://w3id.org/np/RAC7t2YexxtdqRiZSH8-6Mh5nRtcYZ8G6vXcZk7eCRhSA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAKehVcstOLPIVkxB40YuVI95xUhOVECLZDgVbUOb5xo8 a owl:Class ;
+        rdfs:label "Branched N-ethyl-perfluorooctane sulfonamidoacetate" ;
+        schema:alternateName "betpfosaa" ;
+        rdfs:subClassOf biochementity:RA6Tw1WDT_dLNLwX4pmIBbB-OkH5GrZCTVvyL0UR9s70Q ;
+        pehterms:isIsomerOf biochementity:RAIXCTfxpdSUPIMfY_w8eLFn_Ig8_FbPd-4GOMjSPX2Lw .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:51.786324+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvT4GZsm6UC6E8Crd34Ch+bm6IzuJMZp/9uEyPbwCr2M9gYhUzjpxno2zhnLHEym4wa6RuA07dGwxjumX0uzQlpBFp/OBX4ysD0JIoTgHjkurGW9zNGKyXdj57JUlYEu7uOx4p/IEzaDwNXjDzQsAvPQtNZ5CBEUQKZ0KatDws0YnmisMVglZq/b57N0ATFIPZWcQa0pY8M69BMyzk/Lu4JmxFUNjuIb88/wB3hKo/QlT6qYcpYDbxAwyE7lSri4Rs4arNYH2k4BH1IaOIGJ9Jup4r7R8Y/nxbVixk10YdwEpVB7/Ft7zrlPTPgarqmFmRNPHA3SSroMQHgAFY/v2zwIDAQAB" ;
+        npx:hasSignature "gnCtffAmTp6qWifLVinDGmcDp6rUQTGp+7lJzlkELR1UddBoXCaycxFJy/utbzbrOOaB0Q7fLXAaOwGQjYg4FXf+tXBcxOAQcSOwQWcAB+DVIzl1suUcPB4fqT9EXzZHH2ah5LgUY6jdcWG153zUJ+UA56/UBHVw/e8GtV0CopqJ6jN+HMh4nPnk3P7xxFSVdRroOTYqiNbR8JbOui44tfLmnNH5EanXMFOyupRBG1ZNyvaLohwhpJ+XoJXq67Gv0APbxJ/2vGq6L+6esKNtEIOEu5g+EZI15RN7qEZRX2RzjCyK8SzPt7MfJF4qqkt+SdrqWKFGeHmKyUdTlGDl4Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched N-ethyl-perfluorooctane sulfonamidoacetate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RAKehVcstOLPIVkxB40YuVI95xUhOVECLZDgVbUOb5xo8> ;
+        prov:generatedAtTime "2026-06-24T11:20:51.786324+02:00"^^xsd:dateTime .
+}

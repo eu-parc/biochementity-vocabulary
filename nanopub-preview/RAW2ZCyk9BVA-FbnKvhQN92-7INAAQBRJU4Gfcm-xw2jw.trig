@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAW2ZCyk9BVA-FbnKvhQN92-7INAAQBRJU4Gfcm-xw2jw> .
+@prefix sub: <https://w3id.org/np/RAW2ZCyk9BVA-FbnKvhQN92-7INAAQBRJU4Gfcm-xw2jw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAW2ZCyk9BVA-FbnKvhQN92-7INAAQBRJU4Gfcm-xw2jw a owl:Class ;
+        rdfs:label "Cyclopenta[c,d]pyrene",
+            "Cyclopenta[c,d]pyreen"@nl-be ;
+        schema:alternateName "CPP" ;
+        rdfs:subClassOf biochementity:RA3hIqGP2SKJ4aGu1z8ajPGbCvzHZUw-nkXjZpc6d_NXM,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:82279>,
+            <https://identifiers.org/cas:27208-37-3>,
+            <https://identifiers.org/inchikey:BZCXQYVNASLLQO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:33743> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "cpp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:17.893097+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "uqwgwn6IAE5e2dXIk7ldW+YMSlX9WIz+hmIAmC3u1hid0hKroLWeTxk9wfK5ecbbm5LysXHY+ANZGcwVsWj9UcEN2UH3S2A3xRFFGPjkDomzh+DB4USY8R8ZGMMetR9ujtXiJViRCLYvabVHjxIQ2pstGASUQ7QhYJAfK4uI9iWrXch1U1QS5fdBOh0pLd0F9DVjf3oBlrBSM124AraOgRUy0/Ga9pWJpHft+K+wtEAr76VEzIW3RR2aAD/iEIDSrj2KCpN+GkuoSGu7czWNk4HhMAg15x0gsVuKtTT0TAXWzOuewae+3IuICRlQtyFRwFBQfVFujrLhS9lENPkgxw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cyclopenta[c,d]pyrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAW2ZCyk9BVA-FbnKvhQN92-7INAAQBRJU4Gfcm-xw2jw ;
+        prov:generatedAtTime "2026-06-24T11:20:17.893097+02:00"^^xsd:dateTime .
+}

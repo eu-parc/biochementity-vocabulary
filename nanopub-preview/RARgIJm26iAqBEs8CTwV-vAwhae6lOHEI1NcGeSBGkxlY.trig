@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RARgIJm26iAqBEs8CTwV-vAwhae6lOHEI1NcGeSBGkxlY> .
+@prefix sub: <https://w3id.org/np/RARgIJm26iAqBEs8CTwV-vAwhae6lOHEI1NcGeSBGkxlY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RARgIJm26iAqBEs8CTwV-vAwhae6lOHEI1NcGeSBGkxlY a owl:Class ;
+        rdfs:label "acyl-CoA dehydrogenase medium chain" ;
+        schema:alternateName "ACADM",
+            "MCAD",
+            "Medium-chain acyl-CoA dehydrogenase" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:34> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:39.228997+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "Da5fmd2xQECNP5S0d7GHPHGa9Is3lYsfc34Me7VuHPdWFdYx7IOJC+Y96ax+aXrBr6LMlsDWMgPkowRh0XmG6FGkMA055Bt5xgT3eoQsjgunTaP95UcPpfkn9EQJPqVFQSFVYJMGPlSmYTEhYW4imcJYjPJxBPKTWqpaUYuZ75VN5BnteXXbIsHgG8ZoNPZHEK6kPQtyUO8pU7HS6EfqRC1O8sExL56wHr6/zJ2hI0kboF+eN5ZEFPNzBNwP5Sq3N6kdsH+YtOzbtnNDpbFHxjD6tT8eLNWubrHtF36rFQdOOhMuT4+dtwjPrjlCWEi4bQ993xbhMVPThz2OENXK+A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "acyl-CoA dehydrogenase medium chain" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RARgIJm26iAqBEs8CTwV-vAwhae6lOHEI1NcGeSBGkxlY ;
+        prov:generatedAtTime "2026-06-24T11:19:39.228997+02:00"^^xsd:dateTime .
+}

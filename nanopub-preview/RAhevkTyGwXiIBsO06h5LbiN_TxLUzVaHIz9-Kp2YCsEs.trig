@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAhevkTyGwXiIBsO06h5LbiN_TxLUzVaHIz9-Kp2YCsEs> .
+@prefix sub: <https://w3id.org/np/RAhevkTyGwXiIBsO06h5LbiN_TxLUzVaHIz9-Kp2YCsEs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAhevkTyGwXiIBsO06h5LbiN_TxLUzVaHIz9-Kp2YCsEs a owl:Class ;
+        rdfs:label "Linear Hexafluoropropylene Oxide Dimer Acid",
+            "Lineair Perfluor-2-propoxypropaanzuur"@nl-be ;
+        schema:alternateName "2,3,3,3-Tetrafluoro-2-(heptafluoropropoxy)propionic acid",
+            "HFPO-DA",
+            "HFPO-DA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:143205>,
+            <https://identifiers.org/cas:13252-13-6>,
+            <https://identifiers.org/inchikey:CSEBNABAWMZWIF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:114481> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "hfpoda" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:06.946617+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "V/BO8a+vbwy8Vmh5PmE4wejdRjQgZ4lulb7/w8TTHLaC/3k7ABi1Vb655SzuSrPvaLjStfKI0BNctzfUbc2Eh747h9k2cU/3i4SO8qQNM0pTkZMDWrZCyvKnhi3azlJCTRBYQ1KfmKOt/5S99yl8YI2m3jm7lHSrEHDrn0us+H0za4mnTJ7ci5l5bb5KF7hXKBCoWATUY4dbt61cWdwuYRKLgf1YlNq7p/SF0hpueYnqg4DRPZtlzUu1ktmt8XejFs2HgMoDMv3FdSeKgacaImSOhQuU3DLZQ7lBWSaQ1pldSrR5LYLm8WwVSB5MpfcGTgCwOy2LA5OU1YSvm0kZIA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Hexafluoropropylene Oxide Dimer Acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAhevkTyGwXiIBsO06h5LbiN_TxLUzVaHIz9-Kp2YCsEs ;
+        prov:generatedAtTime "2026-06-24T11:20:06.946617+02:00"^^xsd:dateTime .
+}

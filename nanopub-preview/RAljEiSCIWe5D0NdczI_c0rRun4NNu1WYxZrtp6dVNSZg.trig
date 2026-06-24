@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAljEiSCIWe5D0NdczI_c0rRun4NNu1WYxZrtp6dVNSZg> .
+@prefix sub: <https://w3id.org/np/RAljEiSCIWe5D0NdczI_c0rRun4NNu1WYxZrtp6dVNSZg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAljEiSCIWe5D0NdczI_c0rRun4NNu1WYxZrtp6dVNSZg a owl:Class ;
+        rdfs:label "3-(3-Chloro-4-methylphenyl)-1,1-dimethylurea",
+            "3-(3-chloor-4-methylfenyl)-1,1-dimethylureum"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+        schema:alternateName "Chlortoluron" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81981>,
+            <https://identifiers.org/cas:15545-48-9>,
+            <https://identifiers.org/inchikey:JXCGFZXSOMJFOA-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:27375> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "herbicides" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "chltr" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:47.316051+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "JhYZ9rJp4ALr4wEkzZ7e61eRVWUM5fWegbxCSMqvdyNSF+HNTKKQTKwCIUr/X7baX6rdAf546s8+vyAsAwAxdLC6dyVCH46FQhw6GReDc7+hNaOw9pmdnWmfHTyoJU5MwXorRDgd37nQKPGp17rWZcJlheQGaB62o06ODIi9zXlQwWQ2KkAKS2QRElb9OgwSPR4YtB5VtFR2BiZtBoH+UvEbdr/u78Gs/m7vHoJENGxt0TTR0CxMnz0TxlmTlDM2V9TBOO/pdSXdIF0B/P3cGeGuRx+6mxnRhwLKkve7kf5IGfmxLS61Dy4/RnnYBS3ZAUnpdmplspr6z+YhbUYVOQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-(3-Chloro-4-methylphenyl)-1,1-dimethylurea" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAljEiSCIWe5D0NdczI_c0rRun4NNu1WYxZrtp6dVNSZg ;
+        prov:generatedAtTime "2026-06-24T11:19:47.316051+02:00"^^xsd:dateTime .
+}

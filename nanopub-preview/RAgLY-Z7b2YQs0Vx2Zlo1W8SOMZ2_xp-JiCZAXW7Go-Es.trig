@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAgLY-Z7b2YQs0Vx2Zlo1W8SOMZ2_xp-JiCZAXW7Go-Es> .
+@prefix sub: <https://w3id.org/np/RAgLY-Z7b2YQs0Vx2Zlo1W8SOMZ2_xp-JiCZAXW7Go-Es/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAs8Lo_wkMLZtq8YDgxCpn5bBhTiJiQ3uelKo237Skx9k a owl:Class ;
+        rdfs:label "Branched Perfluorooctanoic acid" ;
+        schema:alternateName "bpfoa" ;
+        rdfs:subClassOf biochementity:RAw3ePa0nJGrUgljJrcUeZucinFZoV-PyY0V3dZvFQbcE ;
+        pehterms:isIsomerOf biochementity:RAcKnzxtkEpjpj-8FlflCxphOXknR8GBde6EhkU8p-G5s .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:51.718399+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvT4GZsm6UC6E8Crd34Ch+bm6IzuJMZp/9uEyPbwCr2M9gYhUzjpxno2zhnLHEym4wa6RuA07dGwxjumX0uzQlpBFp/OBX4ysD0JIoTgHjkurGW9zNGKyXdj57JUlYEu7uOx4p/IEzaDwNXjDzQsAvPQtNZ5CBEUQKZ0KatDws0YnmisMVglZq/b57N0ATFIPZWcQa0pY8M69BMyzk/Lu4JmxFUNjuIb88/wB3hKo/QlT6qYcpYDbxAwyE7lSri4Rs4arNYH2k4BH1IaOIGJ9Jup4r7R8Y/nxbVixk10YdwEpVB7/Ft7zrlPTPgarqmFmRNPHA3SSroMQHgAFY/v2zwIDAQAB" ;
+        npx:hasSignature "VjZGu7ffUE10NBnW8b9s4tQ7VGGUP5dk2Vq3Hm4Dq4Fujl+jQjULHJzlJcsbJ6R+r5Bid7JMBzfyX12dNQPW+xgv0avKrcUjGxPvIAu+6J2GzYmnCTySuYUa+0s/Il+ON99rQpF+RAts0WiWUtMRRr1gnR6g7ugHk1Hg9gKGf9UQ4yNP+w0lMkstU++QJPzXbloJZbSCvWdljpoo4rRCBDLJOiUHB8QDM+yiS2bPNvANB/PdHbPiFZVyGkYKFEj6MFJw9NhJQadQoo5iSApXOl9LijLiaDd4d4XhsQUgh6Kby1/RMl4pWT0xx4y9bGtQgLrqUvD3BjvGSBddbNvopw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched Perfluorooctanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RAs8Lo_wkMLZtq8YDgxCpn5bBhTiJiQ3uelKo237Skx9k> ;
+        prov:generatedAtTime "2026-06-24T11:20:51.718399+02:00"^^xsd:dateTime .
+}

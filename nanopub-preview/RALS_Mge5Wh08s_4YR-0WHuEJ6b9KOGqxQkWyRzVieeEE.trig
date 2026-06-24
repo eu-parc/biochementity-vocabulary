@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RALS_Mge5Wh08s_4YR-0WHuEJ6b9KOGqxQkWyRzVieeEE> .
+@prefix sub: <https://w3id.org/np/RALS_Mge5Wh08s_4YR-0WHuEJ6b9KOGqxQkWyRzVieeEE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALS_Mge5Wh08s_4YR-0WHuEJ6b9KOGqxQkWyRzVieeEE a owl:Class ;
+        rdfs:label "Copper",
+            "Koper"@nl-be ;
+        schema:alternateName "Cu",
+            "Cu"@nl-be ;
+        rdfs:subClassOf biochementity:RAqChJ0w3Ns1B9ZHX9yEYZ-Kr81AY63gLArrE2zWjGoSY,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28694>,
+            <https://identifiers.org/cas:7440-50-8>,
+            <https://identifiers.org/inchikey:RYGMFSIKBFXOCR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23978> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "cu" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:30.434729+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "Nz94hLeL/QkApIKrjFXEjITe+0DIh04eitLCfsicp51zlyeVF3iUlsGST380i4S3y+vB8T4Wu3uG08dmv5wl5TBccWxYADjkhF9kAokx/Yt4Cqy3pZpfzUkFEkbu3+M8tg5wFLzeqXGqYwAQ3X07Xascrp1kW+fRi1MZw923rNdQXic1BuQqIFwwv7wcm44oxvDb+ET7/r7GF2uqFg/6sNG/HgzuAcZ8d/a0B8y4YPWzEntJ97YppbNCRUenwU3X5TvG6sDe7MUcss/WJbFZyd3WB32fj6b4jOPndTbg8lHhzCA8BipFnlJ3QSOqgGai+KXu9fIuQaHmUt4d85EdxA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Copper" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RALS_Mge5Wh08s_4YR-0WHuEJ6b9KOGqxQkWyRzVieeEE ;
+        prov:generatedAtTime "2026-06-24T11:20:30.434729+02:00"^^xsd:dateTime .
+}

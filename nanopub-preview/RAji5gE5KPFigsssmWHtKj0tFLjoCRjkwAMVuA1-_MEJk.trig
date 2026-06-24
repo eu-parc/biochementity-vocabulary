@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAji5gE5KPFigsssmWHtKj0tFLjoCRjkwAMVuA1-_MEJk> .
+@prefix sub: <https://w3id.org/np/RAji5gE5KPFigsssmWHtKj0tFLjoCRjkwAMVuA1-_MEJk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAji5gE5KPFigsssmWHtKj0tFLjoCRjkwAMVuA1-_MEJk a owl:Class ;
+        rdfs:label "Diphenyltin",
+            "Difenyltin"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "DPhT",
+            "Diphenylstannane" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:1011-95-6>,
+            <https://identifiers.org/cas:6381-06-2>,
+            <https://identifiers.org/inchikey:KUCPUSUXIGWHFB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:70535> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "dpht" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:06.362472+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "odjZsYs/UzOVkYsHY/c4NOjajlZr/Ki4cE6iTQ698reyc2STv9g1JQwcDyB2pfuv5ukDITkqT3cWcU9MQIgWnTIGd53XXbOCjOp0NnEUeS/p8OlX7EMkGE/uuHliAzHSSlXSyH0sAfz8Od7SLUTfTyVIFxbT70eFTWic3ulRbupB6wlo7dl36teJRdLcD7HeunjsOhHmsqrmssF5ae3L8ePtU7IwipY64qREPrrijebAniLuRWEhb8IJ9fHD0NVSh2a3P0iFVoYVwnzEDhQKvnoIHfERHe3CO5kxWiBg3k6cFnJMBHGa6iytTG+TSmED4EyxdB75UK1Nl7xiXS1ctA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Diphenyltin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAji5gE5KPFigsssmWHtKj0tFLjoCRjkwAMVuA1-_MEJk ;
+        prov:generatedAtTime "2026-06-24T11:20:06.362472+02:00"^^xsd:dateTime .
+}

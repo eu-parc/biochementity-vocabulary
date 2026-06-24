@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAsLQHuC8x9hXO1gjZJapWdkF_d5D-Gs-fdmqdEcXxrj4> .
+@prefix sub: <https://w3id.org/np/RAsLQHuC8x9hXO1gjZJapWdkF_d5D-Gs-fdmqdEcXxrj4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsLQHuC8x9hXO1gjZJapWdkF_d5D-Gs-fdmqdEcXxrj4 a owl:Class ;
+        rdfs:label "Tris(2chloroisopropyl)phosphate",
+            "Tris(2chloorisopropyl)fosfaat"@nl-be ;
+        schema:alternateName "TCIPP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:KVMPUXDNESXNOH-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "flame retardants" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:45.193402+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "QVg8DejLTaBkmRIU6EYAbzgQ8cMl48xAqEYQBny9VqFp08rF+iRiYGLnM+g8l47heYFE+adWBiugkkX79QGHdcOTTuI2SWJuLLASZLHdsUUFArRqs93kbJBPFr2sH5Ox5NcSyd7I2aIwd/ppqLQX5VHLqPHXYd7SFfeh5EEI9Dq1NoKLYDfO874coH93ZoLX/uHMg5vk+xk//LXbv/Gh37zp5o8Zza6g43tWc3jW5wK9JQpVdmSMPxkJ/5kl67lrUZqouCKsGSiSHhsawermyGNX+ERpguRb/KCBqEsjeDAlA9b+q3R0PwFyUAxW0RZ3v7173ofzx258b2oAKAf9wg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tris(2chloroisopropyl)phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsLQHuC8x9hXO1gjZJapWdkF_d5D-Gs-fdmqdEcXxrj4 ;
+        prov:generatedAtTime "2026-06-24T11:19:45.193402+02:00"^^xsd:dateTime .
+}

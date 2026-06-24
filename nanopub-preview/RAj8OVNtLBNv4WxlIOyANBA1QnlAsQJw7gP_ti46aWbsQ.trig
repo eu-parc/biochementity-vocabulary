@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAj8OVNtLBNv4WxlIOyANBA1QnlAsQJw7gP_ti46aWbsQ> .
+@prefix sub: <https://w3id.org/np/RAj8OVNtLBNv4WxlIOyANBA1QnlAsQJw7gP_ti46aWbsQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAj8OVNtLBNv4WxlIOyANBA1QnlAsQJw7gP_ti46aWbsQ a owl:Class ;
+        rdfs:label "cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid" ;
+        schema:alternateName "cis-DBCA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:63597-73-9>,
+            <https://identifiers.org/inchikey:MDIQXIJPQWLFSD-INEUFUBQSA-N>,
+            <https://identifiers.org/pubchem.compound:12525241> ;
+        pehterms:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:40.555379+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "SRwjcEuKlWTetGJpVD8+zxIsYwKwdPTs8SyJJL7PlfD/Ko2b01F2j58jfcNDsuUS8SAZlw8Fy3w+k5rWjrl9c8laaowRhHjWOU/Jn6QntpRYPVZWP1pbw60JQ6s3dWd16ek7FAC5CD8Hburjp/0yImxnL61BxpB0ORo0KpgA7x0hderecw3B/fYrO8Ef3Cmm4sCvJg9CySHkAu2QCLfiHLMoK1eJtAsFcpHOurgtbAQZfXvtBweM4u/3gZlcC+gvZm9BN1w4TXWvHAiziFgrc816SroiYC82WVfy/d+o5K2z63zBoOTBLrkaWmm0/uKQU86uvA3kl1Eq2Ni7Bekx8g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "cis-3-(2,2-Dibromovinyl)-2,2-dimethylcyclopropane-1-carboxylic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAj8OVNtLBNv4WxlIOyANBA1QnlAsQJw7gP_ti46aWbsQ ;
+        prov:generatedAtTime "2026-06-24T11:19:40.555379+02:00"^^xsd:dateTime .
+}

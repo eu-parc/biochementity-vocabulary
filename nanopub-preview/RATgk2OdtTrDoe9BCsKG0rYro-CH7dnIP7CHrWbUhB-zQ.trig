@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RATgk2OdtTrDoe9BCsKG0rYro-CH7dnIP7CHrWbUhB-zQ> .
+@prefix sub: <https://w3id.org/np/RATgk2OdtTrDoe9BCsKG0rYro-CH7dnIP7CHrWbUhB-zQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RATgk2OdtTrDoe9BCsKG0rYro-CH7dnIP7CHrWbUhB-zQ a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 110",
+            "Polychloorbifenyl 110"@nl-be ;
+        schema:alternateName "PCB 110",
+            "PCB 110"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:38380-03-9>,
+            <https://identifiers.org/inchikey:ARXHIJMGSIYYRZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:38015> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAR4keVMcSOwXImoYsFp7e_8Gw-gqiwpkXtH-zYJGUYy0 .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb110" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:38.979896+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "lfKqPrf1eXpoOu07OFcsLorr3AgC2GGeqwbIuRLyH6s0HhhLFyaiRdRNN5h4p+JlL6+w8dDPp5j0qIw+JaMUCYqWWVXXYUMDc77T5q8Jz5U7M/bPpdrMGZGmV1L/1gYoV7pHmsbdbkUUXi36Z2kWYXlZTqC0D3bwzMwIWpWXxIrWUfrogIGi/+0jHiOfuoQo5PqOFbH/HorgjQw0NPVEwAk2tEYwkQ2LkM3Fk4UoAAEeJQxKBYqI7Y7Yy5kg3Yt8h8uBxnRN4wdAVjlM3Zn5wXSq4wY+TSxGqbUrKNZbOb1dv4WGLkB2dht8pnUAstLVOcXH1RdwO3i5TjAz0CsVBQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 110" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RATgk2OdtTrDoe9BCsKG0rYro-CH7dnIP7CHrWbUhB-zQ ;
+        prov:generatedAtTime "2026-06-24T11:20:38.979896+02:00"^^xsd:dateTime .
+}

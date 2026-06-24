@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RA3RbcLIVm_Z5gIjLnsbZedIR-QwPNrAlLPEDmnSgiZhQ> .
+@prefix sub: <https://w3id.org/np/RA3RbcLIVm_Z5gIjLnsbZedIR-QwPNrAlLPEDmnSgiZhQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA3RbcLIVm_Z5gIjLnsbZedIR-QwPNrAlLPEDmnSgiZhQ a owl:Class ;
+        rdfs:label "Immunoglobulin M",
+            "Immunoglobuline M"@nl-be ;
+        schema:alternateName "IgM" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP14674-3> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:42.369655+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "vB/Q6MzayPoHpKsmDQlyC2Q6W2xxmx99ZdW5bpy3q6OvU5skQE6WayrDtwYp2zCZhLbHnYa0XtPaayW5u0TE/4mcCcL+lKtgWuNUaeKeQ9aeaM7w77toOY03BSeRt7fHciARWpaCc23KyVC9BnffswGPv4uQbwlD0Jpdvkzhmb7QKaa4q+JxvZ/V1F6dZQrFyYU0twM7XoK9N3rBfMvA/aD1ZrKcb3YFrdNVp7MmxnHR5ERu61rwkXjYDu2L8QbK1+DF6McNbqFtvbtH15SfpoCiiOuDXvM+d/Cly0a+pGIOd5p9LSUZxjW2jvFrVTOMkchDnjK8Slkp9hwqTo2qkQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Immunoglobulin M" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA3RbcLIVm_Z5gIjLnsbZedIR-QwPNrAlLPEDmnSgiZhQ ;
+        prov:generatedAtTime "2026-06-24T11:19:42.369655+02:00"^^xsd:dateTime .
+}

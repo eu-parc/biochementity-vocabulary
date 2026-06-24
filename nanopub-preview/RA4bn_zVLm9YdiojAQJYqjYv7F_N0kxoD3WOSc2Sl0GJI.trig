@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RA4bn_zVLm9YdiojAQJYqjYv7F_N0kxoD3WOSc2Sl0GJI> .
+@prefix sub: <https://w3id.org/np/RA4bn_zVLm9YdiojAQJYqjYv7F_N0kxoD3WOSc2Sl0GJI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA4bn_zVLm9YdiojAQJYqjYv7F_N0kxoD3WOSc2Sl0GJI a owl:Class ;
+        rdfs:label "2-(N-Methylperfluorooctanesulfonamido)acetic acid",
+            "Lineair + vertakt 2-(n-methylperfluorooctaansulfonamido) azijnzuur"@nl-be ;
+        schema:alternateName "MePFOSAA",
+            "L+B MePFOSAA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "lbnmepfosaa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:51.279023+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "UyP+QEtOaMMztyZXmATn73UXpkBVQsnfBACzOFKOWaprS6LCQ9gi7e6juU38Z/9tpR0E/nwT9ORRMbk07vBCzt890Zl/LSigDUo8W62YMIIPAnWFDLurQzBNOAAuXIiErMDzBkSUBtc03f80NHsXd2kHjwxiSgpYllkPeFPOVcetb63QGclub+TeOOELd05nr2gTdtsBb1Jd6n1HpM9hHXZc5MC6MG2E5kPNJMxrZny9iUwAVJT6VS7KGsCx+vP/qtULguxDKuCp6GJzt49YdojF7B06lphZiosYpyzAZiN3LkJvoaOdtNzuOCd/8bMpr8xDf2H1w5dlq43rWEHLTQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-(N-Methylperfluorooctanesulfonamido)acetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA4bn_zVLm9YdiojAQJYqjYv7F_N0kxoD3WOSc2Sl0GJI ;
+        prov:generatedAtTime "2026-06-24T11:19:51.279023+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAbKzTkFwJAKXbk_0_8yyAVVPL0VoZ0jXrqU7-jPwRKKQ> .
+@prefix sub: <https://w3id.org/np/RAbKzTkFwJAKXbk_0_8yyAVVPL0VoZ0jXrqU7-jPwRKKQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbKzTkFwJAKXbk_0_8yyAVVPL0VoZ0jXrqU7-jPwRKKQ a owl:Class ;
+        rdfs:label "Triiodothyronine",
+            "Trijoodthyronine"@nl-be ;
+        schema:alternateName "Triiodothyronine",
+            "total triiodothyronine" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15922-5> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:05.726632+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "N6DRLWXq4UDMbpUS0bDQ2zZpz0n5aNVdxjr+I6u2Ct/gOhFdShnKcqo1kkjILmrAP1z0xR31O1K7iAbk3SvioBxmA48OY7lFURloC0A+stTkHQwjxNC7JREXQ4p+QZXcelSytJu/lXZ7kvJoFk1u4KxCYH7sfWz6i8OsWAaQTDcIAnRFs7L3IuWaNhDnHqk5HpvV59duhSaRdIIriefOBArlIRM/+Wme0kWCNUU9XzoXaLQlrMacXFyPkTl+qvmTZ5gRw7bjRYezO0hg0WAEC4YRi/do1xG2tTTqOXo06WZ2eSThgUvsCz/QaijHyUVGzly/eb0MCZ6SbiMxEtqsfg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Triiodothyronine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbKzTkFwJAKXbk_0_8yyAVVPL0VoZ0jXrqU7-jPwRKKQ ;
+        prov:generatedAtTime "2026-06-24T11:20:05.726632+02:00"^^xsd:dateTime .
+}

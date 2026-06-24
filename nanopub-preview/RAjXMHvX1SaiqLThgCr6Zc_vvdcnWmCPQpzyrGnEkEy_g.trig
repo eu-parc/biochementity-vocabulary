@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAjXMHvX1SaiqLThgCr6Zc_vvdcnWmCPQpzyrGnEkEy_g> .
+@prefix sub: <https://w3id.org/np/RAjXMHvX1SaiqLThgCr6Zc_vvdcnWmCPQpzyrGnEkEy_g/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjXMHvX1SaiqLThgCr6Zc_vvdcnWmCPQpzyrGnEkEy_g a owl:Class ;
+        rdfs:label "Iron",
+            "Ijzer"@nl-be ;
+        schema:alternateName "Fe",
+            "FE"@nl-be ;
+        rdfs:subClassOf biochementity:RAqChJ0w3Ns1B9ZHX9yEYZ-Kr81AY63gLArrE2zWjGoSY,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:18248>,
+            <https://identifiers.org/cas:33485-98-2>,
+            <https://identifiers.org/cas:7439-89-6>,
+            <https://identifiers.org/inchikey:XEEYBQQBJWHFJM-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23925> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "fe" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:34.837002+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "LYqTdzjSMkqPHh/po2HsFJsOqeBj8gSSGx4H9q74XzKfdt19Hd3TjI7RWND2QCM1Nx4cykKRtO7rsq6OwRYCkdi3KrmiXhWJ1DCYq+mdLRRLtu9PhUIHJ8gMNHsOWHW9dKteQKrTqM5w7nml+tfgsRymDM0RXtQrz2ePQPYzfv09JaJP8ET1uGYo5xL6pul+uVUSiZSKhQWygJVHLY1N9/uETqEwRQEgh9tFy2AhmCbTIosyRH57pH+ol24pwBDpba+yjPYetNXgZEczsD06pJqdXWislXLULknIjgH6CAullaDi8njBpa+/jRWo7D9igDLNqc50RnsdENi+7Ga98Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Iron" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAjXMHvX1SaiqLThgCr6Zc_vvdcnWmCPQpzyrGnEkEy_g ;
+        prov:generatedAtTime "2026-06-24T11:20:34.837002+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAEV47MEotLCHsPLyWBtd2KrukPxBig8Tb3ekMVj8MRSE> .
+@prefix sub: <https://w3id.org/np/RAEV47MEotLCHsPLyWBtd2KrukPxBig8Tb3ekMVj8MRSE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAEV47MEotLCHsPLyWBtd2KrukPxBig8Tb3ekMVj8MRSE a owl:Class ;
+        rdfs:label "1,2-DHP",
+            "1,2-DHP"@nl-be ;
+        schema:alternateName "1,2-DHP" ;
+        schema:comment "comments: ?" ;
+        rdfs:subClassOf biochementity:RA3hIqGP2SKJ4aGu1z8ajPGbCvzHZUw-nkXjZpc6d_NXM,
+            pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "onetwodhp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:36.666267+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "lXrQ9vG+RUsdn0OZHED4hdehhfOs/zxC8uQAiY25e+cpYpO/9yTRWIOuBYOi9V0/0ErnBRVaClUUlVINlcZjJgnXhGPP6WIfK3MuQI2SF0O98quNRMJpYeJI9mUf/OyOSQbCGNRATZUYVktFBsH7yA+CB4jdIMWM7yS91qYqAIbeUyhubDx5L3ZdRNgjIXEeGdCVWT3SamrRhHRgmNUWWDleyBFMAPA7gcPR2vXBDfUPT5k3ePGDOj3XfyYIXEGUiIJOzM3TA9UZ6B8dRFDG5DH6ipCTdyTCCxGLbwQuxLYzT/zk6r9yvlO30yj2Xeknc/UjcAgoJDM2lyXYb1VqxA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2-DHP" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAEV47MEotLCHsPLyWBtd2KrukPxBig8Tb3ekMVj8MRSE ;
+        prov:generatedAtTime "2026-06-24T11:20:36.666267+02:00"^^xsd:dateTime .
+}

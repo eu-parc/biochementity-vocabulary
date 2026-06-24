@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RASZWkyd2wgkk_TzoxtFwY3z2_bVWibswI_G9xNNtOZO4> .
+@prefix sub: <https://w3id.org/np/RASZWkyd2wgkk_TzoxtFwY3z2_bVWibswI_G9xNNtOZO4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RASZWkyd2wgkk_TzoxtFwY3z2_bVWibswI_G9xNNtOZO4 a owl:Class ;
+        rdfs:label "Glucose",
+            "Glucose"@nl-be ;
+        schema:alternateName "Glu" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:17234>,
+            <https://identifiers.org/pubchem.compound:5793>,
+            <https://loinc.org/LP14635-4> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:19:44.902062+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "B2RN5V6kMLTYGpdPXjJdg82fPIb/JuLKhvpbKtd/zyfMngLxRdqwmByXcNZ5FRYYxGJqFG08iuqShz4ujCu8nSJePwfouf1YjjzalAVwyhZo3dHMyij0DaatjN7RPFJ+0yDtb9b6D6APnZ46wfi4VvK0Df9yjKZNRJcHQgaQws2Wep+dAo9hbKSB1KMiEYFVoY+OwW8N5BxjMQhDysnCI8HFcpK5klebtxshOX9d8TAG503whk9iVwB5xpou/zLVvHczcsBwl5PGSW5Cp2Dp01n7p2tu+FTVHxvX22tN4Roxw2MblsCxwlSK3/YscVjuQ4f2bT6z/MiT6VIN7s6TkQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Glucose" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RASZWkyd2wgkk_TzoxtFwY3z2_bVWibswI_G9xNNtOZO4 ;
+        prov:generatedAtTime "2026-06-24T11:19:44.902062+02:00"^^xsd:dateTime .
+}

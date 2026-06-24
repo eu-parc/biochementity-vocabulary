@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RA9QA07eJTgBInNGpnxkfMbu16uQ8mnTSrEXtYcarQ7Hg> .
+@prefix sub: <https://w3id.org/np/RA9QA07eJTgBInNGpnxkfMbu16uQ8mnTSrEXtYcarQ7Hg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9QA07eJTgBInNGpnxkfMbu16uQ8mnTSrEXtYcarQ7Hg a owl:Class ;
+        rdfs:label "Dimethylalkylphosphates",
+            "Dimethylalkylphosphates"@nl-be ;
+        schema:alternateName "Dimethylalkylphosphates",
+            "DMAP"@nl-be ;
+        schema:comment "comments: again this seems to be a group of compounds. Can this be linked to any key?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "dmap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:06.505053+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "JlNt4P5B/XM46GaIczIVy1oMxayisXrFY197XxsqHoeEO8qpUVZ7dSODWqPy6GhA5Q5nx1uxwrAgZ2ABMLrui21BJBN22INYRnxTN1bHO4I/wKWlleSxTZXc8tXit3a5CGR/GjXDrZDVRtredD4Shjfz/jV21GOqWfGjPJ/h3PPlWlWSUvjUzwPeCxak9O1CpXbfTObX819xfk5uDq6Dk2Rs7WzXgzWXo8M4j72iANqP6rC798VZ5RoFnOit+sAgqUTJZmKvuZGhg6Vk8PIWumjAJRVE9RxXd+YIJ8b+3jYMua7aT9tjwsMG8AUK6CYhYE+qi6hd+wcNQ/cMUe14LA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dimethylalkylphosphates" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9QA07eJTgBInNGpnxkfMbu16uQ8mnTSrEXtYcarQ7Hg ;
+        prov:generatedAtTime "2026-06-24T11:20:06.505053+02:00"^^xsd:dateTime .
+}

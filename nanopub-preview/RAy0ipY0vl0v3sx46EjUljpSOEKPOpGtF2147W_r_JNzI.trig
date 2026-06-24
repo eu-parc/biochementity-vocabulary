@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAy0ipY0vl0v3sx46EjUljpSOEKPOpGtF2147W_r_JNzI> .
+@prefix sub: <https://w3id.org/np/RAy0ipY0vl0v3sx46EjUljpSOEKPOpGtF2147W_r_JNzI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAy0ipY0vl0v3sx46EjUljpSOEKPOpGtF2147W_r_JNzI a owl:Class ;
+        rdfs:label "DEHP metabolites",
+            "alle DEHP metabolieten"@nl-be ;
+        schema:alternateName "dehp" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAFuPXIOXvYdA1Lr9ja_UWDMsCL9CyqNft8KfZbB8ajmU .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "dehp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:20:44.944198+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgRcrArblx7LalAujY0kqM3BWUHDLpTgjlETsaj5D1DSsynxLelP+0VC0hMHtoUKxDL4YTZahqzKTOiYKzZhPrGk9whyhLPmZHm+dmOiYSYvOn3PLad/1kht8TinQOidQ5sjDzYdyTCJEJ8mxTTTogeaS3DF+ims76dOI2UVO8A+o+ejtp/lf8ZIKLbaCFH7JxBaPvbl6hH1LXSe0b6xQr2l3I57l8NvNHIzyOjZqiU/8LDhIlkcVvl2EZK10ScGQ3OkwnChpg8ZNTgBQRRm7msSi429J1tU8vn4+8M5AXRIRR1AHXefEY02oJQJqbjRPSG83hCKa73bO+FgBVRtzQIDAQAB" ;
+        npx:hasSignature "nUBr+Bp/Ot+SvgPwIeL2yBgUjq+Upc1jmPUv3Zsue0gVf7aAyCuh1rboye/kqKzuEzYnbgSMczfm8LgomnZY4AirnsFMkTglwLvo2T1w1er2oYVH865Aow++HKv+sa3cQaLXZSfFb6pyJAKGPZoYVPmnZ0gmDrx0morS/W1HtFTm9RvWYD+SWJsjCL2lLDHZOxq4W6LqKWn9CwuskZx5k/QqMe71EXHcvxvU+wO0K7TLldaTwE4xZdkhDHqU85ZAViiYU6bmxnDJo6DsccHSwDBBCCvza5oB36x2eyO/KaDL41klYLggdEA32vF54TASQQ9kOHLQTFGj0jzFFKDLJw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "DEHP metabolites" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAy0ipY0vl0v3sx46EjUljpSOEKPOpGtF2147W_r_JNzI ;
+        prov:generatedAtTime "2026-06-24T11:20:44.944198+02:00"^^xsd:dateTime .
+}
