@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RADnqPHWuTrbqrtMxFe3nEG1isBxu6-H7xNh4M5D5Hlvg> .
+@prefix sub: <https://w3id.org/np/RADnqPHWuTrbqrtMxFe3nEG1isBxu6-H7xNh4M5D5Hlvg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADnqPHWuTrbqrtMxFe3nEG1isBxu6-H7xNh4M5D5Hlvg a owl:Class ;
+        rdfs:label "1H,1H,2H,2H-Perfluorohexanesulphonic acid" ;
+        schema:alternateName "4:2 FTSA",
+            "4:2 Fluorotelomer sulfonic acid" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:757124-72-4>,
+            <https://identifiers.org/inchikey:TXGIGTRUEITPSC-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:20734543> ;
+        pehterms:hasGroupLabel "PFAS" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:28.746934+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "iahMgtzhBkiStMCd7QUg6HtfOgNVmPNIUvopLGvxeUa6ENjCHt3An1vgyyvATlO6TZIVtv0LzE/kF+ZP2ru6JVi1JNGfgHu7izktoyM7NZcbG1V8AZOrmlhvD1g2InTbwavbiQnIieNXa9VfPMW7fsu5XbMRrmUZoqeCEFRicWX5RdRRNDwUcslaXLw8LhTyjg8V7t2vKStudXhIxeZWshWc1hkB1NABKkiNcMFtIhTuQmRpx4+6YDNyHJi3KLT+PdLHCrUXfruYK9j2C7hY0B7XUJPxIoCA0eLQwxrsE0TTOJMyeCdzdXEv4jltZdCWxUzwqFQubO879b9+DCjv1A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1H,1H,2H,2H-Perfluorohexanesulphonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADnqPHWuTrbqrtMxFe3nEG1isBxu6-H7xNh4M5D5Hlvg ;
+        prov:generatedAtTime "2026-06-24T11:01:28.746934+02:00"^^xsd:dateTime .
+}

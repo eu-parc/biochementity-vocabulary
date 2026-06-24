@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RA5Jf6IPgAuyflSCzgXWP9lOs4z2FoJdqtxL_0RaA_Xzo> .
+@prefix sub: <https://w3id.org/np/RA5Jf6IPgAuyflSCzgXWP9lOs4z2FoJdqtxL_0RaA_Xzo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5Jf6IPgAuyflSCzgXWP9lOs4z2FoJdqtxL_0RaA_Xzo a owl:Class ;
+        rdfs:label "Deoxyribonucleic acid",
+            "Desoxyribonucleïnezuur"@nl-be ;
+        schema:alternateName "DNA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:16991> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:01.414676+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "pD4+S781XKZCgklxDH/qSqEoFBTWRCSKw3Q3IRjtIyIYe+NKhMc4o0DTwzffusAT96siGc37pKOT4f1fcpGSUHlqvk3sFIFKMfHficwexeNScxNXYfeWvuChCB50T52C3RDttd5gt+60X/JESZzJYBg7bB5BHk0jdy1LiATxLDuL6AhYmW2AS5z8cqVID81wdPF58nzWYktDt/h8BiReIifZCpSb5PCcLf1o2FQpU1Ps+jtSV/vXiyEdWPlRoWCihzOl64xOHZH1t7/rV7mLoZYMDe64Naq1jQh99cQFD2KFuwOfCWiqEkunlzrPUll3jHy31V9saDCuo05WgLfO5w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Deoxyribonucleic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5Jf6IPgAuyflSCzgXWP9lOs4z2FoJdqtxL_0RaA_Xzo ;
+        prov:generatedAtTime "2026-06-24T11:01:01.414676+02:00"^^xsd:dateTime .
+}

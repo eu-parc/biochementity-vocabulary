@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RA28J6gzEdnvFsnbclHg1JAylzPARe-i9BKP-idqmrYh8> .
+@prefix sub: <https://w3id.org/np/RA28J6gzEdnvFsnbclHg1JAylzPARe-i9BKP-idqmrYh8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA28J6gzEdnvFsnbclHg1JAylzPARe-i9BKP-idqmrYh8 a owl:Class ;
+        rdfs:label "KiSS-1 metastasis suppressor" ;
+        schema:alternateName "KISS1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:3814> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:02.472643+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "S8z8CvUJ+G4Vx/4IRizJ8mrh5sjtlal3v+DrUI7EZFJjc2nc6pY17gkl/Im3IevhdzmsRGk932NXDTCQ9elmkubDUl0NDvZ7ikI8ZKNSUSplk8j23caQBQYpKHzhenKqNVCciycje5qzGujaME8r4vd8rp6FaIyI3w90HNEE9IbHBrbja4MxP76twPWWj1Ho3pJj2EEND/D6YMZwtzn6PA4HrJSdgVTyHPb0P3lMUyvOSxsBUgrBKYoT9qqhiWGOfF7+ordtEcpH1wPVKt6znVjyWZz0KTZAPseoR94hGyhTqiuTJXqztDkAyWZL3HrrKwNHhKZvM2kXOYOF5Cctng==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "KiSS-1 metastasis suppressor" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA28J6gzEdnvFsnbclHg1JAylzPARe-i9BKP-idqmrYh8 ;
+        prov:generatedAtTime "2026-06-24T11:01:02.472643+02:00"^^xsd:dateTime .
+}

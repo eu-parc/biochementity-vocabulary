@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAoShenXDdeya5X1eaXTIIDvxt0wpEfDeUNIQc6wwMDa0> .
+@prefix sub: <https://w3id.org/np/RAoShenXDdeya5X1eaXTIIDvxt0wpEfDeUNIQc6wwMDa0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAoShenXDdeya5X1eaXTIIDvxt0wpEfDeUNIQc6wwMDa0 a owl:Class ;
+        rdfs:label "polycyclic aromatic hydrocarbons" ;
+        schema:alternateName "PAHs" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <CHEBI:33848> ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:00.661592+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "j5bZ2xlw90bbTBiRS1mGqLE6QI9rQwVofWtxlTussh35vZqjU7gn4F0H12ROdnx/IbrP7L+hj4DSaw4jAqUOE+vQOkAWUOk+PsNoJw920e8atvXeayTKzHwir+PN/DIjpQsMRt4BpVaE1rgWr57MQamvWHgzjyU1LkqDymLtZennWdORiRB2/XHVxwzhnMt8ZS4AFvJ4H6RR3TMGlGxSr0zDud07+PjHBhEzBycVNCoRpbUuuEFyEyhvg3UIg6V7tgKVj9a67jD6CUhpbkzAl7abQsjD3yu36GvKZAgK0UTHdJxIyPdEDGMz7IuKpPudo9xw2zdIpXElvD0g6uPe8Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "polycyclic aromatic hydrocarbons" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAoShenXDdeya5X1eaXTIIDvxt0wpEfDeUNIQc6wwMDa0 ;
+        prov:generatedAtTime "2026-06-24T11:01:00.661592+02:00"^^xsd:dateTime .
+}

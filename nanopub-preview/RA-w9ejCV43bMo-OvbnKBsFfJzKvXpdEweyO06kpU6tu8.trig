@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RA-w9ejCV43bMo-OvbnKBsFfJzKvXpdEweyO06kpU6tu8> .
+@prefix sub: <https://w3id.org/np/RA-w9ejCV43bMo-OvbnKBsFfJzKvXpdEweyO06kpU6tu8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-w9ejCV43bMo-OvbnKBsFfJzKvXpdEweyO06kpU6tu8 a owl:Class ;
+        rdfs:label "2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic acid" ;
+        schema:alternateName "MeFHxSAA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:715646-50-7>,
+            <https://identifiers.org/inchikey:YGKAWLSSJSOXNM-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:87481295> ;
+        pehterms:hasGroupLabel "PFAS" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:15.480026+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "pj6eryXrNocNIPTZAXaJKZ65ttg76Xp2N7s6pMrTNm+jUp7J/0LQfFN71KbflaLG53Wy+Q1PVGAtYgf7Y8Loiy72aqoHFDlvw5z526irJ5fMOoH/bpctwYdrUYudDt0dGDR/+VcglQjUJ0R3Fch4Y1mblfQev5zGiQAUaEmna2zzFejk6+FXvCBDAfoUCLo/ZBqTZUTrm+uZPHUvSYLbED1lu71e3SkmqCDnKbfnnZ+TLXrUnn03Obrv+sgJTXseD80akZiu9uPZLTjYA+pCV6SIvwfkapwBkS4bq1lfvvbUkFPjXREcfFUWtdJxKW3IbiWhOMMshESI9KftztWfMw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-[methyl(1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluorohexylsulfonyl)amino]acetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA-w9ejCV43bMo-OvbnKBsFfJzKvXpdEweyO06kpU6tu8 ;
+        prov:generatedAtTime "2026-06-24T11:01:15.480026+02:00"^^xsd:dateTime .
+}

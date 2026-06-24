@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAeknAwNxow8wuktPAdDkPS2Oay1Eg38DybBlQkK0gseE> .
+@prefix sub: <https://w3id.org/np/RAeknAwNxow8wuktPAdDkPS2Oay1Eg38DybBlQkK0gseE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeknAwNxow8wuktPAdDkPS2Oay1Eg38DybBlQkK0gseE a owl:Class ;
+        rdfs:label "Perfluorooctanoic acid",
+            "Lineair + vertakt Perfluoro-n-octaanzuur"@nl-be ;
+        schema:alternateName "PFOA",
+            "L+B PFOA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "lbpfoa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:35.930934+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "VDL5IM7OXVrKD+JcxgLUdv5DHB+/XH0Ksh2dLJOeGwBSrLeJosJV/X2Tp1JHH6WUFh/ur3DSabwCZHHddx7tY9A9spBkex4CcB/WPzoBYLSQNz3mGT4npmh90AJvg9/udWwfJw219DXh2MYEUqgOoWDL9VjVb36NOPOTZZ7gQ2o/GNfUS2Adhz2wP7UMqH0RbaCsgi8sWU5ZFqZ5PUBu6fQ6yX3s0pWdzFSJljO+XgNEj7g60WYVk847+iP/NUGuVA9YH1AEywNTLfc2NaXpaNMR85Um+V9esquFt+O5NN87Lb/AA0oWZsxqPt72uBP7Ldw8fmft4UimkqohX6V8yQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Perfluorooctanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeknAwNxow8wuktPAdDkPS2Oay1Eg38DybBlQkK0gseE ;
+        prov:generatedAtTime "2026-06-24T11:01:35.930934+02:00"^^xsd:dateTime .
+}

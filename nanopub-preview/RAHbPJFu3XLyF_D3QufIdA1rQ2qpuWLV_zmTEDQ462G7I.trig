@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAHbPJFu3XLyF_D3QufIdA1rQ2qpuWLV_zmTEDQ462G7I> .
+@prefix sub: <https://w3id.org/np/RAHbPJFu3XLyF_D3QufIdA1rQ2qpuWLV_zmTEDQ462G7I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAHbPJFu3XLyF_D3QufIdA1rQ2qpuWLV_zmTEDQ462G7I a owl:Class ;
+        rdfs:label "albumin",
+            "albumine"@nl-be ;
+        schema:alternateName "albumin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP6118-6> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:31.789407+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "028OAz2bGOpAKx6t0/wLqq0NieKwONbBjEo6wlQUKtFt0G4s1a8SJQDlQwoLsMoNDhanEsKcBaWfBnV5UU2dlWdKDUxkWqAumUM1LFTw1kPQbLyBmQw7Kazq6lbOyaYMzV0UXS1VLr6EbTqknMaiwWr/7RhAUHgeaLkZA0IPmopjmc2qoHZTm1Usnq6Oy0RRB7w3+fWfBLFL5E+2HKBu5xkbHk51t2DIg4qtHlEcDUgSRih8GPv8JVGpLqszqb/Ny/bgBLaG72tYEx63KChrP0tiJHE+54Ag43Mfa+nR5nf0u1R1nqqHyOT0j/3SIh94hTnYbN/tq0gCp+faPWBi/Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "albumin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAHbPJFu3XLyF_D3QufIdA1rQ2qpuWLV_zmTEDQ462G7I ;
+        prov:generatedAtTime "2026-06-24T11:01:31.789407+02:00"^^xsd:dateTime .
+}

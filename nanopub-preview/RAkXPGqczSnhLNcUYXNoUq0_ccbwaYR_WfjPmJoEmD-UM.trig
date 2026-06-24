@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAkXPGqczSnhLNcUYXNoUq0_ccbwaYR_WfjPmJoEmD-UM> .
+@prefix sub: <https://w3id.org/np/RAkXPGqczSnhLNcUYXNoUq0_ccbwaYR_WfjPmJoEmD-UM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAkXPGqczSnhLNcUYXNoUq0_ccbwaYR_WfjPmJoEmD-UM a owl:Class ;
+        rdfs:label "electron transfer flavoprotein subunit beta" ;
+        schema:alternateName "ETFB" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:2109> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:02.334665+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "mdSw/06kk1cgQlKhwMjr42blUGCreTYliN9PvuDv2WBbKiQqOp6inERwTW5X8wJnQIgQFMZL24NkhxJAJL4DJWLgmipl+XGtie1o+SUA+GmYOsJhRBVLtPl5wDZ+CkJmq0Yb32ZNloDhB1j7R2VXXM8dxRhbtAstTq35f14ddMebrBCya7JcOyrcouNVaBlSyVFytRTaxGBzmxrh1FwDgPzUfehc+nglA3stCgL59Dq0qzaPEaRWtNl/tzmMyZc/NjJY5mLXeMHp7QDauG4WN/3emBvNxQIIy5JyNLWB/yaKY1yqU6rSihLBUxnAgzelu4aIzhDDcDzm6mL00UMlbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "electron transfer flavoprotein subunit beta" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAkXPGqczSnhLNcUYXNoUq0_ccbwaYR_WfjPmJoEmD-UM ;
+        prov:generatedAtTime "2026-06-24T11:01:02.334665+02:00"^^xsd:dateTime .
+}

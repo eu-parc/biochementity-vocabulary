@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RArQaRyHylZEKldbT3IKwQ3ggMg6krtauFtSaAPNpgNA4> .
+@prefix sub: <https://w3id.org/np/RArQaRyHylZEKldbT3IKwQ3ggMg6krtauFtSaAPNpgNA4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArQaRyHylZEKldbT3IKwQ3ggMg6krtauFtSaAPNpgNA4 a owl:Class ;
+        rdfs:label "1-hydroxybenz[a]anthracene",
+            "1-hydroxybenz[a]antraceen"@nl-be ;
+        schema:alternateName "1-BaA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132369>,
+            <https://identifiers.org/cas:69847-26-3>,
+            <https://identifiers.org/inchikey:PBPCCBLJHAAYFD-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:135458> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RALlWmCvizKmaGm0PfmOL2wf1WYdmqX-PuNE1nRn9xk0c .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "hbaa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:02:11.056639+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "dXbcd+TsoJP2l1WsWAxut1T6L3NrrHRbsSdXrK6+kmVHIkeAodFas+s39hAal0OCwgmWnVXLU8Ea2/D5U+4OTVKAyVic9RpL7jcT55m3vBUe9Yzz+00NEVXv3GYodnln9IzLbw/oKFkWLbukax0PyecsIqvRh28xY5oXSTP7CHRzTzJu162K99JnPbXQu7yS+fPl1iYhTpQyOe2gf2m/Vi4PEntFxLMHnZD3SGuL19vh7dy7BJnIbjuqLkEj/uA8S4raoJjWBVJzrWeF4DunR+jlSKT43nNwKLTJ0HsHADj2GWpLGhx4q4rrpuEoHKNvHd+N7NYsSOQT8drm1y41zw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-hydroxybenz[a]anthracene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArQaRyHylZEKldbT3IKwQ3ggMg6krtauFtSaAPNpgNA4 ;
+        prov:generatedAtTime "2026-06-24T11:02:11.056639+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAcSTCExQksD9WSZfTCh46Ycay06BmXtUN1CzAIe3No9c> .
+@prefix sub: <https://w3id.org/np/RAcSTCExQksD9WSZfTCh46Ycay06BmXtUN1CzAIe3No9c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcSTCExQksD9WSZfTCh46Ycay06BmXtUN1CzAIe3No9c a owl:Class ;
+        rdfs:label "Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)",
+            "Chloorpyrifos-methyl (en andere dimethylorganofosfaatinsecticiden)"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:HRBKVYFZANMGRE-UHFFFAOYSA-N> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:30.769297+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "bPbKj/crTLgE6XRIe2wGu7vVFxvpYkOnWkPYsXUWsbBTdhs0OOCMegHX5U70U3ltTOCZJycv+1rMPSxEAxFo5VAK/hEcO9LHFPVoB/IUPMoixyycdp8h5ItnH5M+jc4aELdnIBEo77afLY9MoJE69hVw8jgueh1YZBLLJ3kJBAcs+gZkgTUXSJYHUUdAUMoZJxmF3aZ6wwiByvBTAqsttBELLj/zRlmSoVofnzsxcR3uNncYTNPkAwNCtpPK4vzs3G6mRqLKMf+vfFwT2hazXf+9b9IJ96ofgTV3KbLG77TNpdz/Z9oeABuL+aalT3Pdii5ScgQBRUI1Ac6ZitWcKg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Chlorpyrifos-methyl (and other dimethyl organophosphate insecticides)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcSTCExQksD9WSZfTCh46Ycay06BmXtUN1CzAIe3No9c ;
+        prov:generatedAtTime "2026-06-24T11:01:30.769297+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAE_52yRxpL17h1OsDU2GBiZyzkQfz3kB1gsPnIy24lx4> .
+@prefix sub: <https://w3id.org/np/RAE_52yRxpL17h1OsDU2GBiZyzkQfz3kB1gsPnIy24lx4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAE_52yRxpL17h1OsDU2GBiZyzkQfz3kB1gsPnIy24lx4 a owl:Class ;
+        rdfs:label "glycol ethers" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <CHEBI:172390> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:00.757952+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "ZNFk726S2eKIRLzzv5I1TeuaGgCAdtTS81RUxZAQhU49WADqM2hbyzoywaKVPn92+bx0/4YsZL6ovBYnCthtjj78sxDmcFo7MjumybZgkkXuFd7knF6DWr4sSkmaf5msC+UvPal0dNRAJfpjUBVg/cKhKTMzPVoS5NOIpGX/EVxI/uw8KisT7673rLEk07XbyFh5x/zFoQIYEDZ1/kwIZrgc2EHnefeUfgv1JZsvYLO8xofdsRsiCg05gWfqc3d9bLu2bQueUZRNIwacm/s2Mf3T17BOPMzM0odLv9i8G7Uve5QzOnluNDYpCKh4SCgX9ifrlPtDqy5w5+3RhJ7acQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "glycol ethers" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAE_52yRxpL17h1OsDU2GBiZyzkQfz3kB1gsPnIy24lx4 ;
+        prov:generatedAtTime "2026-06-24T11:01:00.757952+02:00"^^xsd:dateTime .
+}

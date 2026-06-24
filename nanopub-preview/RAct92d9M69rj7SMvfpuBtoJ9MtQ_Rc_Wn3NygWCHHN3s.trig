@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAct92d9M69rj7SMvfpuBtoJ9MtQ_Rc_Wn3NygWCHHN3s> .
+@prefix sub: <https://w3id.org/np/RAct92d9M69rj7SMvfpuBtoJ9MtQ_Rc_Wn3NygWCHHN3s/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAct92d9M69rj7SMvfpuBtoJ9MtQ_Rc_Wn3NygWCHHN3s a owl:Class ;
+        rdfs:label "Pyrene",
+            "Pyreen"@nl-be ;
+        schema:alternateName "PYR",
+            "PAK_PYR"@nl-be ;
+        rdfs:subClassOf biochementity:RAoShenXDdeya5X1eaXTIIDvxt0wpEfDeUNIQc6wwMDa0,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:39106>,
+            <https://identifiers.org/cas:129-00-0>,
+            <https://identifiers.org/inchikey:BBEAQIROQSPTKN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:31423> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "pyr" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:49.568597+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "JooJX1e5xt+ELcIrkueqwok/od4hEZwslj4qgtsfSstgEneBF74eu4/XMOIDNvO/zg1Jl/H3Hmi1RkGTamGWNMuF3NvDDhHdzpFrSGeXnWqG3EOnPmk7Fc3SaJ63R50+tm1ejUq0Tlo2YTElyidgjXKGFvXJ9o4ZI1X4ZqbWZftj8A2dSvEPFfZRQqHz6E8/crkHCk2v01SuJ6PEveeafIkYVxn6ZgejDysKRRRxRIDqFjzcLbFM9Z52Yjq7jo9KVkZyDnbFNo9bp0Gihp4t93YwRfek1CfYN14Dv3VlOqzTrmD3w7bYxxcZL6ozvrpYBP23QuWnGJCUmMpql8M6zA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Pyrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAct92d9M69rj7SMvfpuBtoJ9MtQ_Rc_Wn3NygWCHHN3s ;
+        prov:generatedAtTime "2026-06-24T11:01:49.568597+02:00"^^xsd:dateTime .
+}

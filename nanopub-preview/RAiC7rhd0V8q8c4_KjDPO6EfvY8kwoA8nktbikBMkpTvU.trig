@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAiC7rhd0V8q8c4_KjDPO6EfvY8kwoA8nktbikBMkpTvU> .
+@prefix sub: <https://w3id.org/np/RAiC7rhd0V8q8c4_KjDPO6EfvY8kwoA8nktbikBMkpTvU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiC7rhd0V8q8c4_KjDPO6EfvY8kwoA8nktbikBMkpTvU a owl:Class ;
+        rdfs:label "Di-isopentyl phthalate",
+            "Di-isopentylftalaat"@nl-be ;
+        schema:alternateName "DiPeP" ;
+        rdfs:subClassOf biochementity:RAJmbHqTPS19KOtFXGxFeRRZKeVssCrTlK9K-f-owJLsQ,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:JANBFCARANRIKJ-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:53.450182+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "RT58kWIf0KBqHt7UCJ4soFg8RFMMnewtEWPCmxoNN5j5tTeKnDqwl8aX/8lDZphd/rZsZsCgqKLak6CIP3L+vRfBMZLSZ8FWrDTEHfHnUL9YEJOqy3GyjxvA47BH3px5ckimZYlP/5GG0O+eZrqOUYagYdkp8OwVOeWMvYGH2l1B50MXZzq+BgfIex6L8DpYx3pDVaQCn5WYH1R0ZN7L0E4E8XxXIyo16pZgRhjDIu+SWGF1r6VazRHR95B2qXZhr1bPzWwKwmm0DGA7sU7wjSobqcGJc0vdgsRB6gZrT/OrOXM3NxNUb1IfHzKgZyV8zKVODO96CwzmmQt4XwsNpw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di-isopentyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAiC7rhd0V8q8c4_KjDPO6EfvY8kwoA8nktbikBMkpTvU ;
+        prov:generatedAtTime "2026-06-24T11:01:53.450182+02:00"^^xsd:dateTime .
+}

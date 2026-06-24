@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAz9R5ef8sxcKcL11qTJyJVHf0uX9-Xwl4ZyJKQneQ7wM> .
+@prefix sub: <https://w3id.org/np/RAz9R5ef8sxcKcL11qTJyJVHf0uX9-Xwl4ZyJKQneQ7wM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAz9R5ef8sxcKcL11qTJyJVHf0uX9-Xwl4ZyJKQneQ7wM a owl:Class ;
+        rdfs:label "Dimethoate",
+            "Dimethoaat"@nl-be ;
+        schema:alternateName "Dimethoate" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34714>,
+            <https://identifiers.org/cas:60-51-5> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:08.550236+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "vTiZmDLafHdDsC0YqL+C9T6R5RY+r7BKzvSMsAnXgpbUlmymcFLFdG402nX9fjFGkbUYkOX3vl7hbIv7igousTOjpSmSVMAvuY+AO5gAVgsgJRPU8Kd3Tf0ydP8dhUdvq6ZM87Cl9vYAxo1YVPJ5jXTt4C1FY6J60cdAM+/JfVOpf/TbYYvpqWZ7bZpC/qDnkya4xoVlyB2WGsoh70ixs1plqYjZZqeUdVRKwzyWEJEDRgr53PXVxQYxPl8kW8M3vfwT0w0OiLdX6fYEUBOTtir7mu3Z1ozlllTv23Pd6l3lXLqEFcEfM+lOTD2dhvFHzm+n7cxDoUJJ5qtg831LZQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dimethoate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAz9R5ef8sxcKcL11qTJyJVHf0uX9-Xwl4ZyJKQneQ7wM ;
+        prov:generatedAtTime "2026-06-24T11:01:08.550236+02:00"^^xsd:dateTime .
+}

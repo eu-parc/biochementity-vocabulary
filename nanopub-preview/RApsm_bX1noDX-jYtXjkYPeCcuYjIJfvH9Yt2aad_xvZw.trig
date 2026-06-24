@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RApsm_bX1noDX-jYtXjkYPeCcuYjIJfvH9Yt2aad_xvZw> .
+@prefix sub: <https://w3id.org/np/RApsm_bX1noDX-jYtXjkYPeCcuYjIJfvH9Yt2aad_xvZw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApsm_bX1noDX-jYtXjkYPeCcuYjIJfvH9Yt2aad_xvZw a owl:Class ;
+        rdfs:label "Benzene",
+            "Benzene"@nl-be ;
+        schema:alternateName "Benzene" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:16716>,
+            <https://identifiers.org/cas:71-43-2> ;
+        pehterms:hasGroupLabel "volatile organic compounds" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:03.554602+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "by5OfDPIEin/5acXhCZLq+tWJPIc8XinFJTCd8T+FIaffik2dXYtR1MJX7XMN1iaxyjrCnrsbAJQ5A6SkpaSwKbCiVaVBF6ZkoPkL+L5TCEmLdAnrSYoo9MLPWIcDBZubiJjvPfej8NAV3YQIOz4F0i28j6MRSFjOCWqrpORULnE47CaUTKqNfwWpPZIlM7IAhT8lJfkcmmfCCOeAeNShQvdv4+hTyLVLjilWKIfxoA+ZpKnUjiMfqM8T9pE2js7bubaz7iiOduW4NsGLq7U1AHdnBAAX3mHyy3ct6iUSG3q+bt7U1WWPqEzwvLMvrs+nWqQfGMN56nJpGTDsq0x2Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApsm_bX1noDX-jYtXjkYPeCcuYjIJfvH9Yt2aad_xvZw ;
+        prov:generatedAtTime "2026-06-24T11:01:03.554602+02:00"^^xsd:dateTime .
+}

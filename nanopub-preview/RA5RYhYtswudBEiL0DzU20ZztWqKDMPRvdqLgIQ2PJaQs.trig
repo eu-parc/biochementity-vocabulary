@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RA5RYhYtswudBEiL0DzU20ZztWqKDMPRvdqLgIQ2PJaQs> .
+@prefix sub: <https://w3id.org/np/RA5RYhYtswudBEiL0DzU20ZztWqKDMPRvdqLgIQ2PJaQs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5RYhYtswudBEiL0DzU20ZztWqKDMPRvdqLgIQ2PJaQs a owl:Class ;
+        rdfs:label "Di(2-propylheptyl) phthalate",
+            "Di-2-propylheptyl ftalaat"@nl-be ;
+        schema:alternateName "DPHP",
+            "DPrHpP" ;
+        rdfs:subClassOf biochementity:RAJmbHqTPS19KOtFXGxFeRRZKeVssCrTlK9K-f-owJLsQ,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:MTYUOIVEVPTXFX-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:45.929816+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "vCxXpFVLNXLWOHXliwEG1et94zsJ0KZqpf1SU0fwocpL8R0DnK1vjThtUu4d7z4BLnFEf5W7qm913j9eBWOQMAQ6wBBqS/gtz+esQKZFJXpYZyr7XGFRm+CUujVipW7WtT5Z7j1PiiILtwg+4LTGMGpOviyP6/h57oxt2Aj6nlX1huU9cbKWcSz3qStP32WfOjGjdZKbfkPb08acamrCe1oTACAhnJ56f/CZUOpWhHPZdwlEwSW2qLV9GB3HZ6NsE3WyJq/hoy8w9jZrZnMzsufCKXD5Tm6OXnAfDCIC/uFNz6dTFzYOy22BdtCNCTwIaY2hpHGVq0FxuXfOWJzggA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di(2-propylheptyl) phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5RYhYtswudBEiL0DzU20ZztWqKDMPRvdqLgIQ2PJaQs ;
+        prov:generatedAtTime "2026-06-24T11:01:45.929816+02:00"^^xsd:dateTime .
+}

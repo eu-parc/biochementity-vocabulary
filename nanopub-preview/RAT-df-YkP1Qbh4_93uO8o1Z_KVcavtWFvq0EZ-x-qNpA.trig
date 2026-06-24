@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAT-df-YkP1Qbh4_93uO8o1Z_KVcavtWFvq0EZ-x-qNpA> .
+@prefix sub: <https://w3id.org/np/RAT-df-YkP1Qbh4_93uO8o1Z_KVcavtWFvq0EZ-x-qNpA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAT-df-YkP1Qbh4_93uO8o1Z_KVcavtWFvq0EZ-x-qNpA a owl:Class ;
+        rdfs:label "Fumonisin B1",
+            "Fumonisine B1"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+        schema:alternateName "FB1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:38221>,
+            <https://identifiers.org/cas:116355-83-0>,
+            <https://identifiers.org/inchikey:UVBUBMSSQKOIBE-DSLOAKGESA-N>,
+            <https://identifiers.org/pubchem.compound:2733487> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "mycotoxins" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "fbone" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:30.622494+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "en2P+pzT7vh5EQGwrJy01R5ikbJK9FKxWbqWDndvAJBM7vGWI8yF1sP6ecfEm4F6Ku/2jtTVm1xQKJ0GEWle7XAxijZQgU9bOVZC2t8G/9a6gMQeid1ttlX09wZG7bYUm62PYtXksPtoL7rhrFhxPy7luTaC2nv3uKQjWJ0lEfciJ9956Y558bZW7g4xCOyTEOZAikFSAosF7r5PU061wyhcFra7qTNc9ryw//bZv9/5cNqaF7Ro39oBmyGao0Tfc5rJL3Vbyr7/0wJgkmuIQ9zoP/KpnrWBO9OTkteQxf0Db9LkUDWSIDsDYFbyD4yi2w8/rdtxRE2rs+R5dfzYsA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Fumonisin B1" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAT-df-YkP1Qbh4_93uO8o1Z_KVcavtWFvq0EZ-x-qNpA ;
+        prov:generatedAtTime "2026-06-24T11:01:30.622494+02:00"^^xsd:dateTime .
+}

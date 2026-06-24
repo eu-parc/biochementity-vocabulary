@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAPhmTlodMpUjU9O5FsHL-4UFYBYwgJ7snuk_DYPxSJC4> .
+@prefix sub: <https://w3id.org/np/RAPhmTlodMpUjU9O5FsHL-4UFYBYwgJ7snuk_DYPxSJC4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAPhmTlodMpUjU9O5FsHL-4UFYBYwgJ7snuk_DYPxSJC4 a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 203",
+            "Polychloorbifenyl 203"@nl-be ;
+        schema:alternateName "2,2',3,4,4',5,5',6-Octachlorobiphenyl",
+            "PCB 203",
+            "PCB 203"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:52663-76-0>,
+            <https://identifiers.org/inchikey:DCPDZFRGNJDWPP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:40483> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAdvGgPzsIo_nkfPMsrxiOs-WE_jYRQLbEjEioI-96zcw .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb203" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:56.789944+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "VbubNT8zGjKSQAsx7imlDAwAZsoWw7NdQAYOURDojOxOMnwxcEVMbCO/BvWkMS6uH16he3WbFy0U1kbEPqhk2ssNkhCV8iL86ha3mdah6UeSoZ3dkAf1C1b78zkZ5P9JsZmNnGjqc/QU3zSorEh/mIxxo5+6RmzLam/BkTd2kjqidXVW+Dk6Z3OB2rmlvc8w8cNUuufCwjkus4S4jGA4adbQaUF5BmUVh0bvh0y7PghHIgDwB1tvPIk+ByuJC7eVol9tlHJ3+FhPQOC1AaovE2BZWWUzLMdMWv4qN4PZSuYUkDIW1rK9/6BLRnd5v01lA2Uo6eJLqQx/5j07PMS12Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 203" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAPhmTlodMpUjU9O5FsHL-4UFYBYwgJ7snuk_DYPxSJC4 ;
+        prov:generatedAtTime "2026-06-24T11:01:56.789944+02:00"^^xsd:dateTime .
+}

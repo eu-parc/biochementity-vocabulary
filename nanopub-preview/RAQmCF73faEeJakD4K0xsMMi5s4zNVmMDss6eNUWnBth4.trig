@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAQmCF73faEeJakD4K0xsMMi5s4zNVmMDss6eNUWnBth4> .
+@prefix sub: <https://w3id.org/np/RAQmCF73faEeJakD4K0xsMMi5s4zNVmMDss6eNUWnBth4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQmCF73faEeJakD4K0xsMMi5s4zNVmMDss6eNUWnBth4 a owl:Class ;
+        rdfs:label "2,6-Dichloroaniline",
+            "2,6-dichlooraniline"@nl-be ;
+        schema:alternateName "2,6DChA" ;
+        schema:comment "comments: The Short name structure was not consistent with other 3, so removed the space" ;
+        rdfs:subClassOf biochementity:RADCVejdGXkRzdQsBivCaPhLl2rec7jqZicGVY7bwOmzw,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:46630>,
+            <https://identifiers.org/cas:608-31-1>,
+            <https://identifiers.org/inchikey:JDMFXJULNGEPOI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11846> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" ;
+        pehterms:isMetaboliteOf biochementity:RACkMj_xcleNBup5rDZiTshbgv1i5Fo_v8BgxTIrRL7GQ .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "twosixdcha" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:43.959995+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "Shj9wBbDzaZ0QhWYw4Xj5GbU1cpW1DvnISdu6uiXOIq8w6G0hIIIfS7ZEREbgkvzwOG9cG6EH4XNwQaOHavDalQBDshwW3YRWlZQhl8MZIUIo+3jIuH6TOCgMa/AvFHlsNI0/zJaa5Lr2Zj0MiqR9hkf4E9crQNQk+I7ijNep+j3JGakN4mQQuNakcEhUNDgWd+rTutqzjM0FyIn1nhE4MUtRDyMy31bblW5zeWBw2Jv4XSk2DHl/ro0E9XqVFCch6mCo0LNkwuzHkz5g0elb3a/Ndf2VOYKbCGrf+hvjGS8KAFdTenHR9xM6rLa8qkh6MLykK89WcZilDOri5Zl3A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,6-Dichloroaniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAQmCF73faEeJakD4K0xsMMi5s4zNVmMDss6eNUWnBth4 ;
+        prov:generatedAtTime "2026-06-24T11:01:43.959995+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAjKIbE8MYHWW1Jvy1R9cFIx6yTr2u9DjXkgTUXlzK_RU> .
+@prefix sub: <https://w3id.org/np/RAjKIbE8MYHWW1Jvy1R9cFIx6yTr2u9DjXkgTUXlzK_RU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjKIbE8MYHWW1Jvy1R9cFIx6yTr2u9DjXkgTUXlzK_RU a owl:Class ;
+        rdfs:label "2,3,5,6-tetrabromo-p-xylene",
+            "2,3,5,6-tetrabroom-p-xyleen"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "1,2,4,5-tetrabromo-3,6-dimethyl-Benzene",
+            "TBX" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:23488-38-2>,
+            <https://identifiers.org/inchikey:RXKOKVQKECXYOT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:31952> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "flame retardants",
+            "volatile organic compounds" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "tbx" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:02.816667+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "y89TP0OIGCjvXxQBpQHJC6wwf4MBtURf7Bv7NOTD9NhuA13xMbWY1+UiOl949WZha4B0JpnONfamtDygKz6T+32CUbwY3h9GyrGmFkFpofw+mT5whWWucMcvcLSafl2g/H5UqMJLNpnxEcQ/53TtYgZLJK4XW0kMAVhsNu2Ei7emMsuCaZv7uQ58rPv2BW9X6KNpp0EnjJxzs8h8m1bTFn+psRd1wxj9rYUOSoguT9KtGC+Lk2ogdg/4ApmmHwg4lRZbVBvnCB8phnpmhosqJioJvoHLIt21rI14vXzIfGTHOfOcNIZoBnzHk3QBiLu7fOq3H45W/fcpICn6pbLccg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,3,5,6-tetrabromo-p-xylene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAjKIbE8MYHWW1Jvy1R9cFIx6yTr2u9DjXkgTUXlzK_RU ;
+        prov:generatedAtTime "2026-06-24T11:01:02.816667+02:00"^^xsd:dateTime .
+}

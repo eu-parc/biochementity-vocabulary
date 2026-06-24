@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAbWLFtGU2FyjKE-7M3fPal4jTwOVEoQtFSnFH3544CGE> .
+@prefix sub: <https://w3id.org/np/RAbWLFtGU2FyjKE-7M3fPal4jTwOVEoQtFSnFH3544CGE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbWLFtGU2FyjKE-7M3fPal4jTwOVEoQtFSnFH3544CGE a owl:Class ;
+        rdfs:label "2,6 diethyl aniline",
+            "2,6 diethylaniline"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+        schema:alternateName "2,6 diethyl aniline" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:579-66-8>,
+            <https://identifiers.org/inchikey:FOYHNROGBXVLLX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11369> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RAD6KNB86e-k9EJMPNhzwkC_Y4DZHpy7pS4MhVSHUqF0Q .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "da26" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:49.950222+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "Th8SwPGHCSAXp7T2alj/rOBze6QC1yPF8IVQxEIElrA/0M2ydzNob0LXcveLVn19Qna+B6Q44HjBBawSLo06P60eEc3Ug8DX4dRINr/GSFJP0ZtXn8PTzpFNRdmZRhTf476YzyNddvNWcEn48YDYk0n+MeY9EmS2iCRKG6VTI0vlt78bxRb+74tcr2g3thaimJGInT2iW57Q0ieyMok17LgXzKYusUfpssio25PjE/TC9byLAkui2+vNRPhAlBBQ9X7zvvf6uQvKpACaIsG4JQF0BymWoN10VynVHEdhoqHZk/RLUyus9S7iHVm/s+vNcdb/AknULhT95k0/FesYrQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,6 diethyl aniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbWLFtGU2FyjKE-7M3fPal4jTwOVEoQtFSnFH3544CGE ;
+        prov:generatedAtTime "2026-06-24T11:01:49.950222+02:00"^^xsd:dateTime .
+}

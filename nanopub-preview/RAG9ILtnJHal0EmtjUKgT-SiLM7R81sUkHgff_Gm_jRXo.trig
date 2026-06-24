@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAG9ILtnJHal0EmtjUKgT-SiLM7R81sUkHgff_Gm_jRXo> .
+@prefix sub: <https://w3id.org/np/RAG9ILtnJHal0EmtjUKgT-SiLM7R81sUkHgff_Gm_jRXo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAG9ILtnJHal0EmtjUKgT-SiLM7R81sUkHgff_Gm_jRXo a owl:Class ;
+        rdfs:label "HCH",
+            "HCH"@nl-be ;
+        schema:alternateName "HCHbis" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:24536>,
+            <https://identifiers.org/cas:608-73-1> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:09.352001+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "1D1q17cQs1TIF03z3VbGRO35L/5oacImnmhdPvh9c+QDr1aP4efmYbvTtr6MUYn+d2urMRM6Q2hvMa10D9nXhOmyE/gHRoi133IWyuOWAsGYirHsNAReG8Rw0v+NOslH4SEuPpLmVVi5kk05hzKKU4PY6FM0DyP7AqSKaTqKM5/zVWGH3ZV24ZmNOvovXiK2ty9VTL2FYkMWLKTMZxMSRxoRHoY1RhugPFoc8+IeQml+kfHq6jvkc4FrMP/g2KsA6PPysvpuzALr764lGkc6NbxpOJvuRR9ZNWcfWXh+bfkmkCwMB7gb+JltzO/LrWtewZIcfEWh4Evbf3CxgT/Wtw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "HCH" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAG9ILtnJHal0EmtjUKgT-SiLM7R81sUkHgff_Gm_jRXo ;
+        prov:generatedAtTime "2026-06-24T11:01:09.352001+02:00"^^xsd:dateTime .
+}

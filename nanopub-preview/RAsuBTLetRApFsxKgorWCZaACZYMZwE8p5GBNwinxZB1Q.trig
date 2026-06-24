@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAsuBTLetRApFsxKgorWCZaACZYMZwE8p5GBNwinxZB1Q> .
+@prefix sub: <https://w3id.org/np/RAsuBTLetRApFsxKgorWCZaACZYMZwE8p5GBNwinxZB1Q/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsuBTLetRApFsxKgorWCZaACZYMZwE8p5GBNwinxZB1Q a owl:Class ;
+        rdfs:label "Oxychlordane",
+            "Oxychlordaan"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "OXC",
+            "OXC"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81541>,
+            <https://identifiers.org/cas:27304-13-8>,
+            <https://identifiers.org/inchikey:VWGNQYSIWFHEQU-KGEUUOKHSA-N>,
+            <https://identifiers.org/pubchem.compound:13785700> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds",
+            "pesticides" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "oxc" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:18.975866+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "aHg1VfWJyTmSPrimE5C4eLg3ON/MbNqE1v2MP5QEV7uD6lC/MS/8l/o0mwn7s3HgsN0F8Ep7qEnaYY2bBEPp7M8rBiJWvZKusZ7o/x5QE4ge5MxgtQjfOKaholcEEqUo8YpkadV6NTeFV/9arC6Rucr12wvz3slnF/B8vrkoC2nzr8ruJ8UGuaCaENGyy60c1DtA4tv8BFqesSYldtpVY1VS54avhQ7ZFAiiFsiebaSmtFm1GI4Pq3/XhS7PNBKzExh7xl2ttseGpbYJbQnViZHk/B+alc9J0G/xiSyt+npg/fdxvGkw/WiitkdxKTICiD7y+PRmjGzfX0ThbxTxdQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Oxychlordane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsuBTLetRApFsxKgorWCZaACZYMZwE8p5GBNwinxZB1Q ;
+        prov:generatedAtTime "2026-06-24T11:01:18.975866+02:00"^^xsd:dateTime .
+}

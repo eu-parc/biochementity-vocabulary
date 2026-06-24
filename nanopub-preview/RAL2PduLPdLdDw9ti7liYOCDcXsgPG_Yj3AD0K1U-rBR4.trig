@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAL2PduLPdLdDw9ti7liYOCDcXsgPG_Yj3AD0K1U-rBR4> .
+@prefix sub: <https://w3id.org/np/RAL2PduLPdLdDw9ti7liYOCDcXsgPG_Yj3AD0K1U-rBR4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAL2PduLPdLdDw9ti7liYOCDcXsgPG_Yj3AD0K1U-rBR4 a owl:Class ;
+        rdfs:label "O,p'-Dichlorodiphenyldichloroethylene",
+            "O,p'-dichloordifenyldichloorethyleen"@nl-be ;
+        schema:alternateName "o,p'-DDE" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34211>,
+            <https://identifiers.org/cas:3424-82-6>,
+            <https://identifiers.org/inchikey:ZDYJWDIWLRZXDB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:246598> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAiNqFNM04VcM5lkqXIRusseGuZbBkwk8OpCTtS68RWnc .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "opdde" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:57.082991+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "eQYAWrrt59FMvEghZ7Kg+AhhMF/iLICWP//oA+wmaS6Su3wQSwIZ3uslju1jsTEHWW7G0f9yqnqj0SyoxDHL+kBuLdX1/Zkp7nn0sj4O2rjs7jpqxti9djmJoH183UbxWHCUwXV393XZ0egL0aEsMSjjzhcg0mLSmZEIx1ORIqkvHrUjc41A7UFNxmlVBNvNlM8lL0gWS1O7o9vs9zqCw6rXtjRmhFV/qjLy2PRGyA0X9YpRSiIAofJyimDQs3ba8nqUls0J+MWDe31wMgEnzulek0Onjc5gyyR+rP9mw1JQWU+MHj3sIk9HYl2wdTzbl6urqlP2U0Ee8Ex+vBNxqg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "O,p'-Dichlorodiphenyldichloroethylene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAL2PduLPdLdDw9ti7liYOCDcXsgPG_Yj3AD0K1U-rBR4 ;
+        prov:generatedAtTime "2026-06-24T11:01:57.082991+02:00"^^xsd:dateTime .
+}

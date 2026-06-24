@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAyAgKkwbZI9hBHHGFBPwWs0cIxQvV8yyoeZsWL6aFb6c> .
+@prefix sub: <https://w3id.org/np/RAyAgKkwbZI9hBHHGFBPwWs0cIxQvV8yyoeZsWL6aFb6c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAyAgKkwbZI9hBHHGFBPwWs0cIxQvV8yyoeZsWL6aFb6c a owl:Class ;
+        rdfs:label "Benzylparaben",
+            "Benzylparaben"@nl-be ;
+        schema:alternateName "Benzyl 4-Hydroxybenzoate",
+            "Benzylparaben" ;
+        rdfs:subClassOf biochementity:RAkcYKcQQEUEp8r5AFmzvq01Gbeci-oe3XDspQ6PxI480,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34571>,
+            <https://identifiers.org/cas:94-18-8>,
+            <https://identifiers.org/inchikey:MOZDKDIOPSPTBH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:7180> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "benpar" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:41.163114+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "Oi6TVgDHFes/nHo7NItSwG/CT9xzaJMZ6N5YJ/7N7C5oefNKA/f8fG5EopPvFjVWmLXBA093WfPk4BzD0espVt7GPt+W1nMYrINcD9NoDIQB/LqH3EVnP5aJL4e3RS5UUbRmtcfArWKWhSTX7eF72EIxVEZCvrhrischxs6L1n47D5rRwftJYS0EwNaADac6pf84KEtpPDYueBucfAqCPezSglz7lyjPJYlbr/oRGwfJ8wpB6MYCLT9agLm7NuLbXL3Y04SWs10EWOELnxiBgAD7BeKkHYSZDcBkAEBDcXicTVJ/A/9dJ3pKMu/xpMc+Usp768R3mPxqO/tV3RWfOA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzylparaben" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAyAgKkwbZI9hBHHGFBPwWs0cIxQvV8yyoeZsWL6aFb6c ;
+        prov:generatedAtTime "2026-06-24T11:01:41.163114+02:00"^^xsd:dateTime .
+}

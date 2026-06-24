@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RApVfJF32TNNXkPII4QkOEC6PKSat8I8umwL1iGE8OyNA> .
+@prefix sub: <https://w3id.org/np/RApVfJF32TNNXkPII4QkOEC6PKSat8I8umwL1iGE8OyNA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApVfJF32TNNXkPII4QkOEC6PKSat8I8umwL1iGE8OyNA a owl:Class ;
+        rdfs:label "Polybrominated diphenylether 209",
+            "Deca bromodiphenyl ether"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "BDE-209",
+            "Decabromodiphenyl ether",
+            "bde 209",
+            "bde-209",
+            "bde209",
+            "BDE-209"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:82436>,
+            <https://identifiers.org/cas:1163-19-5>,
+            <https://identifiers.org/inchikey:WHHGLZMJPXIBIX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:14410> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "bdeh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:30.173932+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "W2TT1rMd4qmQ3FQ8gY3jA/rOzPiAKy9zQMlJMwxWtJXfDb/g3ah2FI9OgIn7BMCWC2Pnk9ndXECnT63L2RRHsR9hBxuCSWv+8E7Hb4Xg7FERL4HzSRknZ/TYMmO2O+kIaBCcbTKsS7WYdL5rPzpsEgVKJ9fN0DZ+PMQ2SdjTwTA7zAs35c0WHKGip4ig8U9xpLAiCQfnuGgxrdgEfS+o5PE9mXojbi1n1zCJqsEKh6fXTFTdvnsnWyxw1cP8VDc37PwJkOkhUNlUcJNH5WzeYkf+WsS030vGVJWxqHdHQuVaUqfNfbxeUrYrC8WCH6EmwRJ/PtpH5S0ywvWByUV4tw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polybrominated diphenylether 209" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApVfJF32TNNXkPII4QkOEC6PKSat8I8umwL1iGE8OyNA ;
+        prov:generatedAtTime "2026-06-24T11:01:30.173932+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAQGFhnYX7zLT4K01O5newVhGou7VBe39EtNCLEHL6N_c> .
+@prefix sub: <https://w3id.org/np/RAQGFhnYX7zLT4K01O5newVhGou7VBe39EtNCLEHL6N_c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQGFhnYX7zLT4K01O5newVhGou7VBe39EtNCLEHL6N_c a owl:Class ;
+        rdfs:label "S-(acetamidomethyl) mercapturic acid",
+            "S-(acetamidomethyl) mercapturic acid"@nl-be ;
+        schema:alternateName "AMMA" ;
+        schema:comment """comments: * I did not find anything except the source for this compound…
+    source: https://www.sciencedirect.com/science/article/abs/pii/S1570023210002710""" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "aprotic solvents" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "amma" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:17.440772+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "hnD8zenzmQnBzf44dzxmRWRO+MELdI+ok+hD3kp5Eg6KsjkSGnaWf9upjCll4l+S+DPhJHk3uVIXxGfbxM0ZFnIUw6EbOVm2GRz2KeZ7/HzXoZ0zt/vuVGbgnO5HVXw0oTq4qcbh6rcSf8/Q2B+qKr2NoEq6NymNHIjZWFqnG5FtmliT6j5vL6iPNDMzEP11i/615YAgL2O/TKNJM/x9tdO3I/fAI001V0KHwCzyb8702GzpyG56QHVJoxjsK9prynPxX6JQXa1yN51fpE4711ZzLW9pLBMYfKyWsUBd0Z56pYNV6jfqs+jaJ/qe8mN7lzORHKUBDxWGTn2jShcuDQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "S-(acetamidomethyl) mercapturic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAQGFhnYX7zLT4K01O5newVhGou7VBe39EtNCLEHL6N_c ;
+        prov:generatedAtTime "2026-06-24T11:01:17.440772+02:00"^^xsd:dateTime .
+}

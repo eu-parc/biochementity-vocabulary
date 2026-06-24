@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAMqdn1zHFc9WLRtzXaPCxaFeQH5nt2_VikEw1HhxgZGY> .
+@prefix sub: <https://w3id.org/np/RAMqdn1zHFc9WLRtzXaPCxaFeQH5nt2_VikEw1HhxgZGY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMqdn1zHFc9WLRtzXaPCxaFeQH5nt2_VikEw1HhxgZGY a owl:Class ;
+        rdfs:label "Apolipoprotein A",
+            "Apolipoproteïne A"@nl-be ;
+        schema:alternateName "APOA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15410-1> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:28.069618+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "GliednQ6h16x7wfOluXsXvYVXCn8gcwWJa0IjKk0qiUA7uEsA4xX1Ey2rnbhslB0Fk1ZNdqZ6Nzzmi+KE+Hd5u0lLUvlVWuNW4/V0aZspwXUp8aOY5DhheMFVGegZc29Ernoy9KgbQtTmKJlfjTyx0XHiCWyi9KnEe8gKugBDtOXsLagQbYwSbi4s8Z75eA07T8X5QOQFvqoqju+Q2mQ/HOVkUaum7W+fd8IbzutR/i86Z061FcavMDoKCpRDTiHOL79l6sd8N/MNmXPXg+nrGTkNc+1LfOSm9rU/D17z7+x2trNNGXnK3wVQEca+GSnCErFpkVCMn27uPU0RnEI/Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Apolipoprotein A" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAMqdn1zHFc9WLRtzXaPCxaFeQH5nt2_VikEw1HhxgZGY ;
+        prov:generatedAtTime "2026-06-24T11:01:28.069618+02:00"^^xsd:dateTime .
+}

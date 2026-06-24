@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAwPBJFA0LH7hodufLOTztvgTxqz4ixsMEHWRMGWMpXgw> .
+@prefix sub: <https://w3id.org/np/RAwPBJFA0LH7hodufLOTztvgTxqz4ixsMEHWRMGWMpXgw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwPBJFA0LH7hodufLOTztvgTxqz4ixsMEHWRMGWMpXgw a owl:Class ;
+        rdfs:label "Interferon gamma",
+            "Interferon gamma"@nl-be ;
+        schema:alternateName "IFN-gamma" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP18171-6> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:24.250173+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "WBaVinfkY9pd4iaOgEjC6tUVYjhEKRVhF/0pqJlyBeB8Qyf8pLkQa5ZglNbXO74DUnne9lgtbeLwXHPzWx0s6bUV+diMJSw3wrtX6MwSkbVhykVcmGTKjQdIsUR30aNhlYO7uE6eksfFo6MQiWNuiIfnizLMqAB2z1YkQe28Y1MAOItQbIDEvkoZ7tIqrqHEnaeAb7IYYXOTX6JsPVzqVMFwIxZFBjXXrIK9A2dRhTdFTWTWkbgf/t5PWBwHT3k35tbpayfGwQX35UtnrSRZs9WgUPLiQjkdvBg+2TkUcZOHyQ+902SMPM5rfWisVLNCRWaqq8FlKMfaN3oz1EcY4g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Interferon gamma" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwPBJFA0LH7hodufLOTztvgTxqz4ixsMEHWRMGWMpXgw ;
+        prov:generatedAtTime "2026-06-24T11:01:24.250173+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAeC1HktYVQuR5vU4Zg6IpBH7UCQsQfoP9988QD3jRxew> .
+@prefix sub: <https://w3id.org/np/RAeC1HktYVQuR5vU4Zg6IpBH7UCQsQfoP9988QD3jRxew/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeC1HktYVQuR5vU4Zg6IpBH7UCQsQfoP9988QD3jRxew a owl:Class ;
+        rdfs:label "Ethylenebisdithiocarbamates",
+            "Ethyleenbisdithiocarbamaten"@nl-be ;
+        schema:alternateName "EBDCs" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:QRNATDQRFAUDKF-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:27.515320+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "sBmm0f1Q3pyZA/ttvqoeHz+k1z/PKmKB9dzcuoqOfdH8i0MYe1EBXcRxX0mrCTOqeUo3MB5Ur31IZrpI8eimlmOS0VF2TWGUCk9P0xDL4VoRDdUAttIeeqELZYjyWVx9na0fB0NUialhWtMGCn6/oO+angLeq+kqPeB68oaoHHrs9+7yjlNSCD3zX9AMaihmEZm2+fJ7dhF4/SK3LYOKq+4qRrNBUtvSGOWhuCiEwP2yhzMQMOPjWvxBJnbXy5isKsVB1zKMt/lAwUPyOeaS6u7teiKnb5lfxDVygx6SflOemoEI/8bKUpWOHe3jL2SV9V6kfbh/uJkcuAjun3esog==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Ethylenebisdithiocarbamates" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeC1HktYVQuR5vU4Zg6IpBH7UCQsQfoP9988QD3jRxew ;
+        prov:generatedAtTime "2026-06-24T11:01:27.515320+02:00"^^xsd:dateTime .
+}

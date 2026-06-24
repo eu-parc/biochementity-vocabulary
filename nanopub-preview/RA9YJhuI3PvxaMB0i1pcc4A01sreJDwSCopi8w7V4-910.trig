@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RA9YJhuI3PvxaMB0i1pcc4A01sreJDwSCopi8w7V4-910> .
+@prefix sub: <https://w3id.org/np/RA9YJhuI3PvxaMB0i1pcc4A01sreJDwSCopi8w7V4-910/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9YJhuI3PvxaMB0i1pcc4A01sreJDwSCopi8w7V4-910 a owl:Class ;
+        rdfs:label "Linear Perfluorotridecanesulfonic acid",
+            "Lineair Perfluoro-n-tridecaansulfonzuur"@nl-be ;
+        schema:alternateName "PFTrDS",
+            "PFTrDS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:791563-89-8>,
+            <https://identifiers.org/inchikey:JMIXTHMPTMXARZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:21964789> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "pftrds" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:12.088435+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "M20PBlYqq//7ObXgeD4L4ZeeBEu9qPD5IPbOR0h55hiljHQRj31PSj73dKUBcUWtHtzRtz/G4EkF+q4HAAhEckcFwAbFQ3j83Kto22xC8zavuxOnXAgjq1YH+cmmQG9l0bq3qgDjTHSAy8IT/PuZnsiVOhAd26utRSKXPItTVKGlpeHl8dbPZWLdAh0nSQdnULDcODwOpwz1Othpykso4rjG7srft9GDGv0bgiGH0n/nb+adJFDigdnVLM2oHNxti9BG30gZTvTiRYdEWKDBZGLD4Y51r6tDmHCjwi41bgD37aX9sP+xVS2x7/+BgA9dljHUOUkMar4SOAEspSPbCg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluorotridecanesulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9YJhuI3PvxaMB0i1pcc4A01sreJDwSCopi8w7V4-910 ;
+        prov:generatedAtTime "2026-06-24T11:01:12.088435+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAQV1GtiuZmMJaFyII5qcWxC52TNGlhFeZHqKSnTLTyYI> .
+@prefix sub: <https://w3id.org/np/RAQV1GtiuZmMJaFyII5qcWxC52TNGlhFeZHqKSnTLTyYI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQV1GtiuZmMJaFyII5qcWxC52TNGlhFeZHqKSnTLTyYI a owl:Class ;
+        rdfs:label "Difenoconazole CGA205375",
+            "Difenoconazole CGA205375"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Difenoconazole CGA-205375",
+            "Difenoconazole-alcohol",
+            "Difenoconazole CGA-205375"@nl-be ;
+        schema:comment "comments: I added the exact matches and the aliases but still not 100% sure that it is the correct compound…" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:117018-19-6>,
+            <https://identifiers.org/inchikey:NBYSKMWDHCZSIP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:20070433> ;
+        pehterms:hasContextAlias sub:_b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_b1 a pehterms:ContextAlias ;
+        schema:alternateName "difenoconazolecga" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T11:01:08.845241+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4tE7pMoEqr+dpqZCWLDa+LQKa95OB2a1MBVArjuLaooYqJfTICHncVWsAWYJXGaOZJgjnXZ6/WpG6THmCJh2XZLw7z8osjD2SiQZBWkHj8fEpfpJrfhy/9hub4eh9bIr4nuUmAfwOeU4QrkcAFVQDy8Qig7GT734aY6ZcTfBsKJJAXvNVKA8qUhteegYtB/07D8LQAL7aHTA5rV2gVYLsIyfeAr6LYa/qsNiGsghx1IOYH4k2VjhPCjn9p7/IoZ3h6mm7bfI5BVD9gHnynYVn719K07Y7Yjz3fM+rJ9Lgvvujyj01N6fbU+vQH/wGc2dQfVFOUVoy2nsy7Lns0LsRQIDAQAB" ;
+        npx:hasSignature "wTvRAym+IqG6vD2JKgvkiaeqDWXaRlRJ8LleqNBip3h1iI6Pvh6ITnU+CUAYfDg6PqrG9JYQcgSO8APv165UDqGng/AlLfsH1Vyu1x/XPIHBJtA5RKTLkUHisLJO30weph1h6LDNOcmFLHv5LTZATTtsdQh3Tx1az7oQQJluuy6ZvNNZZ1jWUVVV/hx2uI3I1YyY6Pg9w74KA09VM9lrzMbAllTJip7ZynR8SWft6OSf9FX7C7ChDLm9X1yzN+oTQs5opMArojuT1KI9txL3dlcZpIwA2oSmfmSXB6iimYa+xc0VG5Bj5cWZAM3KJi0Wu3wRJwaPdt9fzriPZDfN3A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Difenoconazole CGA205375" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAQV1GtiuZmMJaFyII5qcWxC52TNGlhFeZHqKSnTLTyYI ;
+        prov:generatedAtTime "2026-06-24T11:01:08.845241+02:00"^^xsd:dateTime .
+}
