@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAY5knf48CWG3EJvhdq4W9mkR8NEw3ieyLIdkG-lN6z2U> .
+@prefix sub: <https://w3id.org/np/RAY5knf48CWG3EJvhdq4W9mkR8NEw3ieyLIdkG-lN6z2U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAY5knf48CWG3EJvhdq4W9mkR8NEw3ieyLIdkG-lN6z2U a owl:Class ;
+        rdfs:label "N-acetyl-4-aminophenol",
+            "N-acetyl-4-aminofenol"@nl-be ;
+        schema:alternateName "NA4AP",
+            "Paracetamol|N-(4-hydroxyphenyl)acetamide" ;
+        schema:comment """comments: * Is this just not paracetamol?
+    * PUBCHEM: https://pubchem.ncbi.nlm.nih.gov/compound/1983
+    source: https://www.sciencedirect.com/science/article/abs/pii/S1438463913001557""" ;
+        rdfs:subClassOf biochementity:RANaCoLhynCuEFiT1iaAh24IhYrlamx1dPuixX-tMDOJo,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:46195>,
+            <https://identifiers.org/cas:103-90-2>,
+            <https://identifiers.org/inchikey:RZVAJINKPMORJF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/1983> ;
+        pehterms:hasContextAlias sub:_n434d4a5d509f47ba8c1db9530f97e319b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_n434d4a5d509f47ba8c1db9530f97e319b1 a pehterms:ContextAlias ;
+        schema:alternateName "nafourap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:12.578743+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "nuFBBkVgyAKX6oRtDdTZNCdvAVSyPcak09o86MVukfmQj4RR0oXHl8LZMfPq+yx8EWG205nNqinohwJM2GIdXSgQE2eguqxMis2noUwYi1lFchf8ksc1ETJBY7GgkvPTrce8aDB/pL/kU7p/9LCwtS1gLahXTountVKqD3pOVSZl4rk3LxIAt0xTRiu6MVXrR3LX2BLf/pmI5jrvsnqMgYt2sEhYu1DXxVDHEPMLzF8VTcgzQmvcFLfbd1h/0UcXp1uvhXvVQO2MWF+Ot/31DJPYH00MbqWYVfoUP9HBTH72WK4M0tb13zMID3Ul+VwSc4G0HdbMLSXdPbqMykvtSA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-acetyl-4-aminophenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAY5knf48CWG3EJvhdq4W9mkR8NEw3ieyLIdkG-lN6z2U ;
+        prov:generatedAtTime "2026-06-24T10:48:12.578743+02:00"^^xsd:dateTime .
+}

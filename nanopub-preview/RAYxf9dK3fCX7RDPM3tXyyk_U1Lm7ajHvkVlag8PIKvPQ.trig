@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAYxf9dK3fCX7RDPM3tXyyk_U1Lm7ajHvkVlag8PIKvPQ> .
+@prefix sub: <https://w3id.org/np/RAYxf9dK3fCX7RDPM3tXyyk_U1Lm7ajHvkVlag8PIKvPQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAYxf9dK3fCX7RDPM3tXyyk_U1Lm7ajHvkVlag8PIKvPQ a owl:Class ;
+        rdfs:label "Desisopropyl atrazine",
+            "Desisopropylatrazine"@nl-be ;
+        schema:alternateName "Deisopropylatrazine",
+            "Desisopropyl atrazine" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27399>,
+            <https://identifiers.org/cas:1007-28-9>,
+            <https://identifiers.org/inchikey:IVENSCMCQBJAKW-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:13878> ;
+        pehterms:hasContextAlias sub:_n4ef56042d69e40358366017dadea3f2db1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RABfN0Yv8r5oDlgtXtGWKFEY1MC6PEUCpUQVpIk7-L6j0 .
+    sub:_n4ef56042d69e40358366017dadea3f2db1 a pehterms:ContextAlias ;
+        schema:alternateName "desisoat" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:07.588825+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "NZ3pjh8b8O1IGwJsWFlkjrL9YIYgIu9iwr2j/+AxaDxk+eaxyyxT8e9YhMszck+/4LwzWu0+XC6FnUO31W7+QbrD0t5S//Z23VEpotPM+DvPyE11+XLxQervVrEpuFUKjCScyu3ZbBsqaiVmsA6ZtIHGXIxjd/KEDhx8qiIU3x0d/muzcA6+2A/hbLY37RaKwTFu0XRNu2uYY2d3JMvlvENveT4UJwBe2/JKzqoDGMOj2TfP2/NQm6Yo2FY1z/QCJ2A6zFt5iiP76kfaUTF0vyhoHujUIFOJ1HWcL7nxZRodUDLztVN9XC9v4CECmM4uTxS288l8r/tpU4g7Fzd4rA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Desisopropyl atrazine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAYxf9dK3fCX7RDPM3tXyyk_U1Lm7ajHvkVlag8PIKvPQ ;
+        prov:generatedAtTime "2026-06-24T10:48:07.588825+02:00"^^xsd:dateTime .
+}

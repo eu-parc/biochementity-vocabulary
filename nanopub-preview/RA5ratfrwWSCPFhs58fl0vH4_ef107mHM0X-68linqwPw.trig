@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA5ratfrwWSCPFhs58fl0vH4_ef107mHM0X-68linqwPw> .
+@prefix sub: <https://w3id.org/np/RA5ratfrwWSCPFhs58fl0vH4_ef107mHM0X-68linqwPw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5ratfrwWSCPFhs58fl0vH4_ef107mHM0X-68linqwPw a owl:Class ;
+        rdfs:label "3-Acetyldeoxynivalenol",
+            "3-Acetyldeoxynivalenol"@nl-be ;
+        schema:alternateName "3-ADON" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:146195>,
+            <https://identifiers.org/cas:50722-38-8>,
+            <https://identifiers.org/inchikey:ADFIQZBYNGPCGY-HTJQZXIKSA-N>,
+            <https://identifiers.org/pubchem.compound:5458510> ;
+        pehterms:hasContextAlias sub:_n3b8c96095c0646e49238544096c82274b1 ;
+        pehterms:hasGroupLabel "mycotoxins" ;
+        pehterms:isMetaboliteOf biochementity:RAlvXNN6xODZM0_UWo6WKk-Y6LK63di60I8JoOIN4J1_c .
+    sub:_n3b8c96095c0646e49238544096c82274b1 a pehterms:ContextAlias ;
+        schema:alternateName "tacetyldon" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:21.062188+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "NRAFcQC9zHQTX9oudyYv9FRquE94zM5c/vGx4B7c/t6bnmZ86+/9vyPZAekP1uAqY+o49NqvtW2tvpon7WYTahBrp9Hp2+wPx59a32roL6ePHSjyoQEha8kQOxozRPP8FTAFb2VMmB2HFiO6nGmvFyntdkgZD8rblvQ+Iy63XU29w7Yf3GfWwaRPKBUAm7jkbMDm8sT5265ZNb8N3ca3dptOROhXR9VSORRC7Ogy4b5LawGIZPNSSD1MAK/MZIUrFAUPUAr+IU9OJxfJMfVoIZ1l6kojKh2P+cjBVxCBfsuZHxJxj0C+LpbPMlkXKFNtEHFIGDgrRyFFVoYynRfnoQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-Acetyldeoxynivalenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5ratfrwWSCPFhs58fl0vH4_ef107mHM0X-68linqwPw ;
+        prov:generatedAtTime "2026-06-24T10:48:21.062188+02:00"^^xsd:dateTime .
+}

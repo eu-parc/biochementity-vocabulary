@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA0I_JiC8JMSNFfSDktskqjmnBM2kVLNEp-01WimvpVyo> .
+@prefix sub: <https://w3id.org/np/RA0I_JiC8JMSNFfSDktskqjmnBM2kVLNEp-01WimvpVyo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA0I_JiC8JMSNFfSDktskqjmnBM2kVLNEp-01WimvpVyo a owl:Class ;
+        rdfs:label "Benzophenone 7",
+            "Benzofenon 7"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+        schema:alternateName "BP-7",
+            "BP-7"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:85-19-8>,
+            <https://identifiers.org/inchikey:OMWSZDODENFLSV-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_n0fd885a7ff804b4a994dd35b6de242bbb1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" .
+    sub:_n0fd885a7ff804b4a994dd35b6de242bbb1 a pehterms:ContextAlias ;
+        schema:alternateName "bpseven" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:51.490612+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "V2CPrDJcogX6RMTi1H9gzEuB/scE8s9T2p2U9Y588iY/wRAwQR0909FaFNvecPCTXo01lEyZPWHvhMVa3HgGyG3feRyofNjkVY4NqjYhsxbm/yXUkVkhNBLyyLMuHRhqt9aEiZeNfPhLReB9ZCu9seYyZEACAK9X+Zq6frRlTdmN8Qni1gUF3lWhqulBNNGvuScNXD4vdRfHNdvr0+AKtnqKLDmM1gRK43lYFnqAtl6pg77CspnMMqfpHwlIPxyJM+KdeGK8U/+WXlcUCas+/lVUj4L2kBzOho1zmbIxbXnUKJlBTS5x/cZ/AXpiSHqk10R2jq9d5h6bjE3/zMZ+yQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzophenone 7" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA0I_JiC8JMSNFfSDktskqjmnBM2kVLNEp-01WimvpVyo ;
+        prov:generatedAtTime "2026-06-24T10:47:51.490612+02:00"^^xsd:dateTime .
+}

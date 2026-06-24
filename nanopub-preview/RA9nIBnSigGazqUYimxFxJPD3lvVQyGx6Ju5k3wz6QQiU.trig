@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA9nIBnSigGazqUYimxFxJPD3lvVQyGx6Ju5k3wz6QQiU> .
+@prefix sub: <https://w3id.org/np/RA9nIBnSigGazqUYimxFxJPD3lvVQyGx6Ju5k3wz6QQiU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9nIBnSigGazqUYimxFxJPD3lvVQyGx6Ju5k3wz6QQiU a owl:Class ;
+        rdfs:label "2-methylnaphthalene",
+            "2-methylnaftaleen"@nl-be ;
+        schema:alternateName "2-MN" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:50720>,
+            <https://identifiers.org/cas:7419-61-6>,
+            <https://identifiers.org/cas:91-57-6>,
+            <https://identifiers.org/inchikey:QIMMUPPBPVKWKM-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:7055> ;
+        pehterms:hasContextAlias sub:_ned8b1fc939bb47e4bb7c6ecd3f907a4fb1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RAkuS6621x_zdl3vgJNxJ3lH3KfHbQT12Yz1BKfew-cEI .
+    sub:_ned8b1fc939bb47e4bb7c6ecd3f907a4fb1 a pehterms:ContextAlias ;
+        schema:alternateName "twomnap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:35.939838+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "SMZhDFICxJtiR27mnqwpvDEHoQ5OQGD/hPhW9SpYzvrbGedr/Hf7TA7PG0+B/20TEiK/LJfYh8GYIGkdnI/L3llhMU23JIH4tpwy3rY96qadqfJm5G+NZNjkcXVnfAzlroqewZ4qDx8jrCwWAN673HftxvgZJGHSA4sNZnQh/C5JzSGo7plMrKy+NuxhRRMNAOpe2hDz5Ax1XLAzwedSh100QYxwCgoetIv891qpFNSi2dKnGcobH7QARN4HzTd6IitjNNKb0z9iq5f/M64/WIVeMjIAa4Gml7ypyJyxS4ILKGsUtEX05vFz41becGpidIBw3kGp6qbFdXOdQffmhA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-methylnaphthalene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9nIBnSigGazqUYimxFxJPD3lvVQyGx6Ju5k3wz6QQiU ;
+        prov:generatedAtTime "2026-06-24T10:48:35.939838+02:00"^^xsd:dateTime .
+}

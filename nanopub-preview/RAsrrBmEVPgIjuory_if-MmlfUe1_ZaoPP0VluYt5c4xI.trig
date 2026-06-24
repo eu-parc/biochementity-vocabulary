@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAsrrBmEVPgIjuory_if-MmlfUe1_ZaoPP0VluYt5c4xI> .
+@prefix sub: <https://w3id.org/np/RAsrrBmEVPgIjuory_if-MmlfUe1_ZaoPP0VluYt5c4xI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsrrBmEVPgIjuory_if-MmlfUe1_ZaoPP0VluYt5c4xI a owl:Class ;
+        rdfs:label "Methylparaben",
+            "Methylparabeen"@nl-be ;
+        schema:alternateName "Methyl 4-hydroxybenzoate",
+            "Methylparaben",
+            "MeP"@nl-be ;
+        rdfs:subClassOf biochementity:RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:31835>,
+            <https://identifiers.org/cas:99-76-3>,
+            <https://identifiers.org/inchikey:LXCFILQKKLGQFO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:7456> ;
+        pehterms:hasContextAlias sub:_n0725c943f48c4f3c90b118943578526eb1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n0725c943f48c4f3c90b118943578526eb1 a pehterms:ContextAlias ;
+        schema:alternateName "metpar" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:04.373028+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mjKZJ3QJ94IQc07zXaGfSRWNvY52OPerDQ7bl3NMr81RVqBzzqOOQuH5EsxYiK0yK/L1ydboIdv2Az1QYy8JpOS58sI4ce8dazl8jKPvuJKxd6bhRYotjcT6jh0ebVf5Kyxs2CX3LfZOQjjQvoJwrJMfPFsGM37XLJEMUnj4aAtkcujV0iwPSSYCVGZmuBKX60iltpozdbrvvc+uRhoDwNW/ZRBkkFQJuwuqF5xJT97PlYfxk6sV8Nl//lDnQdSkBey7l5YuKOFeGUEmqONbBpLx2rE62RYTJB5c1HiYvDbzK2mj1oCLRBo0tOH6OqEUPKBNNUqInSHRTDevqZJxIA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Methylparaben" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsrrBmEVPgIjuory_if-MmlfUe1_ZaoPP0VluYt5c4xI ;
+        prov:generatedAtTime "2026-06-24T10:48:04.373028+02:00"^^xsd:dateTime .
+}

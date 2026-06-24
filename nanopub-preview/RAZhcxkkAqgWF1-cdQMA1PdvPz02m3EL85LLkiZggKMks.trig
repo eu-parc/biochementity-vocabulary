@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAZhcxkkAqgWF1-cdQMA1PdvPz02m3EL85LLkiZggKMks> .
+@prefix sub: <https://w3id.org/np/RAZhcxkkAqgWF1-cdQMA1PdvPz02m3EL85LLkiZggKMks/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAZJ3pdT_7MZs1rtdkXcyP-DbJP-NilQrxRshG-eHh9Qs a owl:Class ;
+        rdfs:label "Branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid" ;
+        schema:alternateName "bmepfosaa" ;
+        rdfs:subClassOf biochementity:RA8raMoQ8V9RLwSeItaerVuzy5u9lHamIJ4T1kyX4ByaI ;
+        pehterms:isIsomerOf biochementity:RARa6jLRRpcS4nhuRAf97HrdMe8cAPL15meQUk23jqt5w .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:41.127872+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApkLCMXBSVzIoWyH8FgGL7vGZOUhJ+7ZFRWTY7WsCi/eoV7uQlfWVdNhmm7iQ4yGcTqnpzzRlrq6n2NED2AWfo/tUmRJWLHXhF7eeJs8lLFRKqVD54sBhbUTon91dkREJCqe/XhIBNwVSQf4GLUudeO/e/ZIungSzte6lkoLS1mcaIwqxLF8YEmZgC3fKuD8jSqjsMqENqaPtWP/rHexZUSyFm0jCmvGoJ0DC+WhjhmGSwx9jLt1Fw2jZmlLT4Wbx00xZk3+ikUPx0piF0i1xslc0j17U1tJ55v1sjlApWj+ghIYW1+6fctGJjLST3KYm+t4ddrNiGKZewz7VbchJRQIDAQAB" ;
+        npx:hasSignature "hZUhS62ZS1szL/lnrm5zyLVKPJXDTz+M2nqYNyKwcMoM0yM40sQJHC9EQXH4JC3PNE/gvB7lCQnuONTAUEmahWsHaA48P5aFqa7fzVk2oa92yE2/FoUkndM+fCsIqwF8bIZrjIGPIob9BmMc3l0BSGvDNIYPI346rXlndDRi7Mjqykt8qiyqvRjJSpDjI7MlgUTWgER+Wp4MdeMm2lEaNz8FpeA4faEYPrFQfNt03YgAdcjgBIYtPhntkyi+sRylX/9pWMmacA/LcqkO5KvaWT6Q95xpEZ0njEdaKrqNEZB5atfLlsvb44ShUtk4cpHosEPQg0c4xhmiI6WF11x5Cw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RAZJ3pdT_7MZs1rtdkXcyP-DbJP-NilQrxRshG-eHh9Qs> ;
+        prov:generatedAtTime "2026-06-24T10:48:41.127872+02:00"^^xsd:dateTime .
+}

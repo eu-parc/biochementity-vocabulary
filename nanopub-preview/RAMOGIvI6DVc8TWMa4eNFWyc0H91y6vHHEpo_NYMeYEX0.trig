@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0> .
+@prefix sub: <https://w3id.org/np/RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0 a owl:Class ;
+        rdfs:label "Di-isononyl cyclohexane-1,2-dicarboxylate",
+            "Diisononylcyclohexaan-1,2-dicarboxylaat"@nl-be ;
+        schema:alternateName "DINCH" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:HORIEOQXBKUKGQ-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "DINCH" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:55.145747+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "e0yxgKKEZlyDiwhiT4UGw7nbl5X+TlUjghZksUJbbl6UVBON/V79B6itsxBqttrB21G5pSDzQiiq9R5i763IgyzB+BP4/uXDaEesjLJchClajxWEsL38dTHLqnUlR704KpdUwBASK+g92uz+3EuPhqgKF1m60NWDb17mljVVD2KnJV52qryM25wsjYXXxkZhoElOH1bs3UowmozNlf3YQ/0OIPgtPLoC04ExeXNLXd+/QzU4LNqUkJ+eJ4ANDfBztetTwX6KZvzr7AjSq2oJ7SQpIL+pdrc3D3naPABVueUtFok1bgf0OvkiKuBHIalS9xKHKd5hSnk09Mlsqnhjqw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di-isononyl cyclohexane-1,2-dicarboxylate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0 ;
+        prov:generatedAtTime "2026-06-24T10:47:55.145747+02:00"^^xsd:dateTime .
+}

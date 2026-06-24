@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAJRUEbv9uEhUJj7uvOSwlnuCbVQp_GE1jWXS4tNBQKcI> .
+@prefix sub: <https://w3id.org/np/RAJRUEbv9uEhUJj7uvOSwlnuCbVQp_GE1jWXS4tNBQKcI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAJRUEbv9uEhUJj7uvOSwlnuCbVQp_GE1jWXS4tNBQKcI a owl:Class ;
+        rdfs:label "1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate",
+            "1-mono-(2-ethyl-5-hydroxy-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+        schema:alternateName "5OH-MEHTP",
+            "Mono‑2‑ethylHydroxyhexyl Terephthalate",
+            "5OH-MEHTP"@nl-be ;
+        schema:comment "comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867 --> but the compound doesn't seem to be the same. The short_name seems to come from german studies (see source column) --> maybe we can ask UBA for the keys?. source: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27749" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:ODRKAFOVPBFSIN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:155898867> ;
+        pehterms:hasContextAlias sub:_n1b26a2a8e2a54cd982f4de874dc95c76b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAiQTpuaruG2drnNCUNpmZj06ZANjSX0N1LBoip_Ugq30 .
+    sub:_n1b26a2a8e2a54cd982f4de874dc95c76b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohmehtp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:35.623924+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "fxpnPDxHzLE69vqTQ4UuR3uaLL/dQHpDD30WwGjXfFDYZSO9DNF77WC6rb1OGUVaYxyrH7xnzeV9jOWuC3w1OoGvl6/mmtI2lXI+rexJ0ncHgm8XLcxEpYMeDH0a+Tv6yX9FpCYe8OauusME7X5dxWOi8hRsDnuVR8+jKI9KAe3H0gqKo/RAQeomvHmzdKUwiGXQ28yF2z5Elf/KJhtUOzduDSQPknuzaMIH3N7MOpQF7pqM9eQeiJ/NYZqso6bGhoity18NOB6oY4Km42CVD1HTyqunbg2DlKU2A2H+jrJL5EvksJlm774G5NKx5pEhDrA9S7/naeRs4xiN+ax2Iw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAJRUEbv9uEhUJj7uvOSwlnuCbVQp_GE1jWXS4tNBQKcI ;
+        prov:generatedAtTime "2026-06-24T10:48:35.623924+02:00"^^xsd:dateTime .
+}

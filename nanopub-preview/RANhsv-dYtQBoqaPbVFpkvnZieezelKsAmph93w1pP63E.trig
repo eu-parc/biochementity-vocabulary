@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RANhsv-dYtQBoqaPbVFpkvnZieezelKsAmph93w1pP63E> .
+@prefix sub: <https://w3id.org/np/RANhsv-dYtQBoqaPbVFpkvnZieezelKsAmph93w1pP63E/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RANhsv-dYtQBoqaPbVFpkvnZieezelKsAmph93w1pP63E a owl:Class ;
+        rdfs:label "2-ethylhexyl diphenyl phosphate",
+            "2-ethylhexyldifenylfosfaat"@nl-be ;
+        schema:alternateName "EHDPHP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:188855> ;
+        pehterms:hasGroupLabel "flame retardants" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:00.475874+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "QG2NvH4b98AOaAzLmM+1YHOAPDi0qdNosjBz2G1cLtKHXBk0ZTQhitA7+7NSP2+sTcMwTvWWPUhRreqGQ0Um1W2E5R+PaHcSTOkp3g0HRU0/FYs8dEPw/EJPKMsSwQnC6IBz2Og7Peg4/O1revDEME5O5p0Ar+JkqmIBKhu/cxsiCTRHo0eHKaz1VVfCeH5gaeyvLV1ux9lsHnkdI4Ydh+ILDubQWQBbWJnT73LJ8AFXz/QY18cGzLp274A4z9z2b+o4pfRml7n3zVzve0QeQlMlcnPlm7p1Zl+r2YaOUN5xBRtYnPojuSIl35uVP8VcUdjFCuqeTMEcds+K4zt88Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-ethylhexyl diphenyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RANhsv-dYtQBoqaPbVFpkvnZieezelKsAmph93w1pP63E ;
+        prov:generatedAtTime "2026-06-24T10:48:00.475874+02:00"^^xsd:dateTime .
+}

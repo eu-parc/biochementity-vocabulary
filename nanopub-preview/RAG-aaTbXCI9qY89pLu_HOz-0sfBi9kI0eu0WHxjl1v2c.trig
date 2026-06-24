@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAG-aaTbXCI9qY89pLu_HOz-0sfBi9kI0eu0WHxjl1v2c> .
+@prefix sub: <https://w3id.org/np/RAG-aaTbXCI9qY89pLu_HOz-0sfBi9kI0eu0WHxjl1v2c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAG-aaTbXCI9qY89pLu_HOz-0sfBi9kI0eu0WHxjl1v2c a owl:Class ;
+        rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester",
+            "Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl) heptylester"@nl-be ;
+        schema:alternateName "1,2-Cyclohexanedicarboxylic Acid Mono 4-Methyl-7-carboxy-heptyl Ester",
+            "cx-MINCH",
+            "cx-MINCH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:1637562-51-6>,
+            <https://identifiers.org/inchikey:HGYNPCSGHWFMTB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:102105764> ;
+        pehterms:hasContextAlias sub:_nd19f96d18ffd4d6cb7feb86cb8e04656b1 ;
+        pehterms:hasGroupLabel "DINCH" ;
+        pehterms:isMetaboliteOf biochementity:RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0 .
+    sub:_nd19f96d18ffd4d6cb7feb86cb8e04656b1 a pehterms:ContextAlias ;
+        schema:alternateName "mcoch" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:21.427831+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "i1MMnahQF7nnAIf81UfSQwZblnzTUhGbIbar3ZxUq/wBsF5Jn0zLpNA/8S2R66AzlgNIhDZkVsPjlF5q7+L6VJptG4UFJpL7SjRVZMnmQ8ahvLmMNoa2m/o+YNTHo1FoOQ7LKwP0vfiU9OHT3erpv/2EokOrfozTguvVmdlOzOWDvQ8hNgdtlxZMHjvvOjx9t3U0Pw3bZM0mdQLx0ukOyamkb/PapCCVQYx/kKDyQPAFg1KtZo67NASByE+Pb3qw/Nq7D6VLyoSyT1eLuelrcYt4bwvNdvxeeFzBMUaFkNdGjhrI7Wvtlpagpt9WEV75iWr18xkZ76iaAxT2SGIgQA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(7-carboxylate-4-methyl)heptyl ester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAG-aaTbXCI9qY89pLu_HOz-0sfBi9kI0eu0WHxjl1v2c ;
+        prov:generatedAtTime "2026-06-24T10:48:21.427831+02:00"^^xsd:dateTime .
+}

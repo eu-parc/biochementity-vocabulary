@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RA5LYT7Kn7lpez_38McHez1uXWLiGeKJyIP-HeqPo8nLM> .
+@prefix sub: <https://w3id.org/np/RA5LYT7Kn7lpez_38McHez1uXWLiGeKJyIP-HeqPo8nLM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5LYT7Kn7lpez_38McHez1uXWLiGeKJyIP-HeqPo8nLM a owl:Class ;
+        rdfs:label "Tris(chloroethyl) phosphate",
+            "Tris-chloroethyl-fosfaat"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "TCEP",
+            "Tris(2-chloroethyl) phosphate",
+            "TCEP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:35037>,
+            <https://identifiers.org/cas:115-96-8>,
+            <https://identifiers.org/inchikey:HQUQLFOMPYWACS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:8295> ;
+        pehterms:hasContextAlias sub:_n4b20e8bbc833457eaee0388374dad418b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n4b20e8bbc833457eaee0388374dad418b1 a pehterms:ContextAlias ;
+        schema:alternateName "tcep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:52.286915+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "YFYmjDsPuvYd/5GY9IrnJJHl9wEbOFBqGuic1/cEKHNgQH98mmYU6XI/pzQkoGInjcNTzDRrRkEFI8PiCbmDIEIzQRiiW5VDZ2Yg2KK/uXASYJhZMd+ZVMlB0rhFhKUcI2BbAJmGRm2T0Z/2zFgk87jmMq9DeNh1KY7dNOM2Exgy2n0hjsu8YLL61BVQUN2FCx9CCh5Hx7le3bFSoijIEZ6VZstA/UXRKSrBv3VFEHWtY2B2tBnZDw+19vFG2AH2PkMMcSARZRX09zfhGI8gXSxdSNvnW/kuCJTGyJifJX8R5NO8fILHgswzcLtLKz5gYbajJv5c3KPds+kIwF0/Vg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tris(chloroethyl) phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5LYT7Kn7lpez_38McHez1uXWLiGeKJyIP-HeqPo8nLM ;
+        prov:generatedAtTime "2026-06-24T10:47:52.286915+02:00"^^xsd:dateTime .
+}

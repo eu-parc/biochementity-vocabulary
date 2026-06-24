@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAgaLk_jR0-dlpEeAnF3hhev2jocP9cMHYn6H4qTzyZIo> .
+@prefix sub: <https://w3id.org/np/RAgaLk_jR0-dlpEeAnF3hhev2jocP9cMHYn6H4qTzyZIo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAgaLk_jR0-dlpEeAnF3hhev2jocP9cMHYn6H4qTzyZIo a owl:Class ;
+        rdfs:label "Trioctyltin",
+            "Trioctyltin"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "TOT",
+            "Tri-N-octyltin",
+            "hydride" ;
+        schema:comment "comments: Please confirm that Tri-N-octyltin hydride and TOT are the same" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:869-59-0>,
+            <https://identifiers.org/inchikey:XMHKTINRBAKEDS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5360423> ;
+        pehterms:hasContextAlias sub:_n8c988deb2e3c4d83a931590267bc7df1b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_n8c988deb2e3c4d83a931590267bc7df1b1 a pehterms:ContextAlias ;
+        schema:alternateName "tot" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:47.800247+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "QfdHsQ+KK81hxbUJlfOceacYtWjZdnEmfg0vyYBtYVwyCXKSLWmsmOAtW6zaVvs8kr84CnztyXFxoyJk97sv3ASjVro5IrjXrEVFc107TotwgxrQ6lBecTBj9RHQsv9ogttmyMbAz0ba+qFEYYX5CXumOzvJG7w9bp8XhKSJHXhMZBK4fuFiWXtpBsUMrurBu6xHKZVqhSYJTalG+Ti9wmH3WdMPF5iS/VNow6FOOccHYIhPp2WOws9PftxDOSucYjdQYFmrr1rUf5dqdGWRhlllURsj71rC+bqXvyv3tO/BdIrd8NWRzsfvSuMNXmRcWk26t2oBLE7lmWntNwoLLA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Trioctyltin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAgaLk_jR0-dlpEeAnF3hhev2jocP9cMHYn6H4qTzyZIo ;
+        prov:generatedAtTime "2026-06-24T10:47:47.800247+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RArEV5-RiSeTrobtuDyPWu-Qp2adQZziwEx7zt-qa1XPE> .
+@prefix sub: <https://w3id.org/np/RArEV5-RiSeTrobtuDyPWu-Qp2adQZziwEx7zt-qa1XPE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArEV5-RiSeTrobtuDyPWu-Qp2adQZziwEx7zt-qa1XPE a owl:Class ;
+        rdfs:label "Endrin",
+            "Endrin"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "endrin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81526>,
+            <https://identifiers.org/cas:72-20-8>,
+            <https://identifiers.org/inchikey::DFBKLUNHFCTMDC-GKRDHZSOSA-N>,
+            <https://identifiers.org/pubchem.compound:12358480> ;
+        pehterms:hasContextAlias sub:_nb661feede219414db15a33810ee0e6a8b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_nb661feede219414db15a33810ee0e6a8b1 a pehterms:ContextAlias ;
+        schema:alternateName "endrin" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:00.315464+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "l07i+AW9FFQ7Q2rS2jknU0I9PuoBcw1or/gOcn+uND1MLipIEiMcgENtW/rALnZkWOle6KvbbKVvX3/Z6eMSwIQD8jg6qP6dLfUxnOPfvInYNW5pUwa7TjWFiFfeoAMYth+TLCIDctXpJMBkSKL0KwBnGmuCnsK57nAIXjimlqt91hIhxpL7lpTJViTD5i1C9KTiSPGjzkgkgKoidO74fTWSilsKZ/KUkKCJbFFybHeotkuOSDRiVWCy8FcoC57ipssLc7cHjGx8/s46AmWzc39bjsR39XjVP3IO713tpY1uBXINEvifMwYPkPFGuHGRK/8CNtDwKnJzzJ0S27O2Ng==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Endrin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArEV5-RiSeTrobtuDyPWu-Qp2adQZziwEx7zt-qa1XPE ;
+        prov:generatedAtTime "2026-06-24T10:48:00.315464+02:00"^^xsd:dateTime .
+}

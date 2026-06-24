@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RADAixf8K6XRr0KhRnLxAf4y6fJpnAURBUCmgOYJOaG18> .
+@prefix sub: <https://w3id.org/np/RADAixf8K6XRr0KhRnLxAf4y6fJpnAURBUCmgOYJOaG18/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADAixf8K6XRr0KhRnLxAf4y6fJpnAURBUCmgOYJOaG18 a owl:Class ;
+        rdfs:label "electron transfer flavoprotein dehydrogenase" ;
+        schema:alternateName "ETFDH" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:2110> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:30.289425+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "MKrZrHNsUzjMFTeMEMaHaLCC9B8sqJsc8fFjyfjulI18dJwZ0xTUqr4vOiOESWXm715P6/4Tsvdhzdpoi8+6LOhgXoSdmvkclkrNVsRQH5reUJ9KyU1SxJHnrBNxB3RwTFe0F32+TRbTOjw4Gr/8UexBRb6/9tyLbZ9SssGzJjzEXwNDbhOYajLfPdK7EwLIYy/Dse1YG23j1J0+FwE6ICliHzDFFuwpMdxNSEFCfOxEE/AnQqnlx1wBe1/DX/0Id93oZbqW/MS9do1Wr/D6EQuPNvbzOgm9iJrF8itIrYRixBL6Z+juW9ixGEgFM4521fFdTkpv1b1no3VPY6xYmg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "electron transfer flavoprotein dehydrogenase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADAixf8K6XRr0KhRnLxAf4y6fJpnAURBUCmgOYJOaG18 ;
+        prov:generatedAtTime "2026-06-24T10:47:30.289425+02:00"^^xsd:dateTime .
+}

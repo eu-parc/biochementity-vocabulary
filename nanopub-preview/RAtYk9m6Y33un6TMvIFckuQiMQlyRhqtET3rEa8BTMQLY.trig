@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAtYk9m6Y33un6TMvIFckuQiMQlyRhqtET3rEa8BTMQLY> .
+@prefix sub: <https://w3id.org/np/RAtYk9m6Y33un6TMvIFckuQiMQlyRhqtET3rEa8BTMQLY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtYk9m6Y33un6TMvIFckuQiMQlyRhqtET3rEa8BTMQLY a owl:Class ;
+        rdfs:label "Peroxisome proliferator-activated receptor alpha" ;
+        schema:alternateName "PPARA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:5465> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:28.992330+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "suHE/oV350w6Hd4jam4MwybgXjWH4LLjRgs2GlAW9eUyQIj5xJnL9CXraUP03Zn3rq9w+lUoBUxV/aZ5+kwEGckEfF+nJ3ZTHjs+zovRc8rGjdG4zTPoAlGRkOC1GYETuG0ksWdYzpGp48fSV07zUuliql7mGPu5Gc7S8EfnPq14br+3YjpmutIcTHbpXv4HEt70az+SaloYpK4qC4EIIjTuXdzQ0hvBiWQSARbh8qxqid6PZlM70jOhQhVRgM1e2v3G1Otmf2zFFyZWxQkICL+3uAKuTPsAhUTSRXPZkAwwYtHGrfaw6SaMhNjSLsbIekARN3Lf4EOlfuthX+kV6A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Peroxisome proliferator-activated receptor alpha" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtYk9m6Y33un6TMvIFckuQiMQlyRhqtET3rEa8BTMQLY ;
+        prov:generatedAtTime "2026-06-24T10:47:28.992330+02:00"^^xsd:dateTime .
+}

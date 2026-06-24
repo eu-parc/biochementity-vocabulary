@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAN3h5XM_uTAENJn-P5vFooKqM4zwPIVmHt1Z-01rzwP0> .
+@prefix sub: <https://w3id.org/np/RAN3h5XM_uTAENJn-P5vFooKqM4zwPIVmHt1Z-01rzwP0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAN3h5XM_uTAENJn-P5vFooKqM4zwPIVmHt1Z-01rzwP0 a owl:Class ;
+        rdfs:label "Mono-n-heptyl phthalate",
+            "Mono-n-heptylftalaat"@nl-be ;
+        schema:alternateName "MnHpP" ;
+        schema:comment "comments: According to chatGPT, this is an isomer of https://pubchem.ncbi.nlm.nih.gov/compound/Mono-2-heptyl-phthalate --> which is also the INCHIKEY in our DB. But is it the same compound?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:NTIWNFLUZQSLDR-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_ncba695ffbcad40199a96a12303490d05b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAnVqpGj_RRwOWclEja32ZjP_4Im0NkzWQTFj4wcaOl5U .
+    sub:_ncba695ffbcad40199a96a12303490d05b1 a pehterms:ContextAlias ;
+        schema:alternateName "mnhpp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:34.397417+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "cz5ygUzJKwnAqHWtgzSK9J/z5SxjXi9UdtYYcOwnjVhcymUSUDb+NJ8Py+uR8VPL6sVA7PaMugzaiscLgP/XGnUSRzXoMTKHpgSTOK1GGrkHTlcxwvfpE0Yu1YSaP6lrzH1pn06zVz4PK+TqOtVuySKM4EFZMHJoMXmFZGg+gQ8F5gIffPLLggyHEt/zgFS7tTQynOoGrcb0VZ/7XQlK+Zl/kVuj/IGvpShpvTwGZyBt8OlIGYZFOJDbb4JlB6hPDDDJa2y7remhLrfT/BNoRsn2KR9AZAX4CdLRnoUDcXJ/ybM2tK3K1x3E1Mnd6MCug4bheVja+YoQ8YKIBrtfSQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono-n-heptyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAN3h5XM_uTAENJn-P5vFooKqM4zwPIVmHt1Z-01rzwP0 ;
+        prov:generatedAtTime "2026-06-24T10:48:34.397417+02:00"^^xsd:dateTime .
+}

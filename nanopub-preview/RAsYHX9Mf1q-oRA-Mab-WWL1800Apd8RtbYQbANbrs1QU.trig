@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAsYHX9Mf1q-oRA-Mab-WWL1800Apd8RtbYQbANbrs1QU> .
+@prefix sub: <https://w3id.org/np/RAsYHX9Mf1q-oRA-Mab-WWL1800Apd8RtbYQbANbrs1QU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsYHX9Mf1q-oRA-Mab-WWL1800Apd8RtbYQbANbrs1QU a owl:Class ;
+        rdfs:label "Mercapturic acid",
+            "Mercaptuurzuur"@nl-be ;
+        schema:alternateName "Mercapturic acid" ;
+        schema:comment """comments: CHEBI keys in our DB refer to N-acetyl-L-cysteine https://www.ebi.ac.uk/chebi/CHEBI:28939. I think it's not 100% correct?
+    According to this article https://pubmed.ncbi.nlm.nih.gov/31944156/#:~:text=Mercapturic%20acids%20(N%2Dacetyl%2D,%2Dconjugates%2C%20and%20mercapturic%20acids; --> there is not a single  Mercapturic acid so I don't think we can link this to a key? Is this a sum parameter?""" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:22198>,
+            <https://identifiers.org/CHEBI:28939> ;
+        pehterms:hasContextAlias sub:_n23d7b2ed94444a9ba7e793cb16e0416eb1 ;
+        pehterms:hasGroupLabel "volatile organic compounds" .
+    sub:_n23d7b2ed94444a9ba7e793cb16e0416eb1 a pehterms:ContextAlias ;
+        schema:alternateName "ma" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:51.636856+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "ISVMVRaL3/ONVKdPe85cJcIjoVM2qORO3W9zvm3dyWoomaA1FsXGULPaqab6DKdEs0dDOfMTCOGurJy8qzjZaHjZeG6YJ+e8CVRWaqJXNkzsQiNMDH/5ReOa3wde7W2V14Ki7k4g8wphC8bQnFAwDlp9tMS+ioXMmlnYF6VQBtMmEgBa9tdObOW8I8JCaW+MrE3hWldx9DP2x96/IxmuaJDhGUbblIX0rwRaU4eHxoBXGZhM+w1jcuk9awQIUtJMdJYTcGdeZRozME2ZAfv7yRWlxPGwA9qKm7N9Zif497rSAJy8nGkiOE8JAVo9GvbMnqF76Scmzx4WP1jwkHVaQg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mercapturic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsYHX9Mf1q-oRA-Mab-WWL1800Apd8RtbYQbANbrs1QU ;
+        prov:generatedAtTime "2026-06-24T10:47:51.636856+02:00"^^xsd:dateTime .
+}

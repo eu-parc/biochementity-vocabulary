@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAuSc3ZrFiDMqOTxobJUPTXF_MaMh_lxgdLxbsY5Jc6Jk> .
+@prefix sub: <https://w3id.org/np/RAuSc3ZrFiDMqOTxobJUPTXF_MaMh_lxgdLxbsY5Jc6Jk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAuSc3ZrFiDMqOTxobJUPTXF_MaMh_lxgdLxbsY5Jc6Jk a owl:Class ;
+        rdfs:label "1-(4-Isopropylphenyl)-3-methylurea",
+            "1-(4-isopropylfenyl)-3-methylureum"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+        schema:alternateName "IPPMU",
+            "Monodesmethylisoproturon" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83468>,
+            <https://identifiers.org/cas:34123-57-4>,
+            <https://identifiers.org/inchikey:DOULWWSSZVEPIN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:182167> ;
+        pehterms:hasContextAlias sub:_n540549c0326241ba926303e3a4e78ae7b1 ;
+        pehterms:hasGroupLabel "herbicides" .
+    sub:_n540549c0326241ba926303e3a4e78ae7b1 a pehterms:ContextAlias ;
+        schema:alternateName "ippmu" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:51.124338+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "RetzEQaT7l8d4xZKf3ENuVzQjl+0hyemUrO4mIpaY/rz+P3Qmk/TZzHBXZIQGEeGI5TWcWWzea23OYVBz/WmhFP5TrdK5NroZulGrrTGDMion6jJYzgT1l0L9HwY/rNVjuE9Q0PpmwOq484XQuHf9hRoacvd4uXYH9kgllMWUusW3U0NUGuC+2+Zzx7adC/sgEeA0HmoPjJoqtCH2IwUWf5P4sHpR9Wpxkgodlug4PvZcyAeEwstJiA5C52Si0sA+W0qWMjyV6Z5/7OeKqvINrdeojdk5IaIrGuHystbCV88s+3mNM1cKIHu/qMfw/NtqJs3bkc1hA9YgmAN8Av3uQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-(4-Isopropylphenyl)-3-methylurea" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAuSc3ZrFiDMqOTxobJUPTXF_MaMh_lxgdLxbsY5Jc6Jk ;
+        prov:generatedAtTime "2026-06-24T10:47:51.124338+02:00"^^xsd:dateTime .
+}

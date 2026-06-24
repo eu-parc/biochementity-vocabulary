@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RA2OlAio9js-oKTbgwkllX6jl0u7ik7X7GqVDtmC0X1dY> .
+@prefix sub: <https://w3id.org/np/RA2OlAio9js-oKTbgwkllX6jl0u7ik7X7GqVDtmC0X1dY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2OlAio9js-oKTbgwkllX6jl0u7ik7X7GqVDtmC0X1dY a owl:Class ;
+        rdfs:label "Tributyltin",
+            "Tributyltin"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "TBT",
+            "Tributylstannanyl" ;
+        schema:comment "comments: Please confirm that Tributylstannanyl and TBT are the same compound, I think they are" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:20763-88-6>,
+            <https://identifiers.org/cas:688-73-3>,
+            <https://identifiers.org/inchikey:PIILXFBHQILWPS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:3032732> ;
+        pehterms:hasContextAlias sub:_na8a7e1d9303d4407a97caeb1aa2a3fd3b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_na8a7e1d9303d4407a97caeb1aa2a3fd3b1 a pehterms:ContextAlias ;
+        schema:alternateName "tbt" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:49.755284+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "OTfNYq4kLYHI9eXGJsGHGJdssjKENBuJUkeXkaUgAvH2e88MCY9o+iAiISqor/lY3qNuaEIOi4Uyai1dCh7QR4zrsrAGkFN+A3iWQ525v4xtguYHdAevDEDRMo+xR0pjZN7PRCSlfDZCbuhGvG3EiwQCP8Nb7Uis6v0E7wfMvv1D9XhzUVXE+SyZo6MMNi5QB4l138p5Cup8lwnbrgi/X5NIqHCAdZ9HbfYrx1WeDj5YuGnzS89IHee72V0TxHfROKqg3XvUxWZtbx0A4rFHlU2NjeT/XKp69mqfrAE73NrpIWVniZhRo3Ravf3nteb3aUuUi1dT8WSplG73pltgSw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tributyltin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA2OlAio9js-oKTbgwkllX6jl0u7ik7X7GqVDtmC0X1dY ;
+        prov:generatedAtTime "2026-06-24T10:47:49.755284+02:00"^^xsd:dateTime .
+}

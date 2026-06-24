@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAHBNiUx0o6bjE0CxLSal__O0p-Y22H51v-UfuzNDZ1oc> .
+@prefix sub: <https://w3id.org/np/RAHBNiUx0o6bjE0CxLSal__O0p-Y22H51v-UfuzNDZ1oc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAHBNiUx0o6bjE0CxLSal__O0p-Y22H51v-UfuzNDZ1oc a owl:Class ;
+        rdfs:label "Antimony",
+            "Antimoon"@nl-be ;
+        schema:alternateName "Sb",
+            "Antimoon"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:30513>,
+            <https://identifiers.org/cas:7440-36-0>,
+            <https://identifiers.org/inchikey:WATWJIUSRGPENY-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5354495> ;
+        pehterms:hasContextAlias sub:_n8945c033df894f1998a95f2453f8d375b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n8945c033df894f1998a95f2453f8d375b1 a pehterms:ContextAlias ;
+        schema:alternateName "sb" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:24.044123+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Rbodm+YjJl50BE/tROD2zEbFnaud58KmMMMRQ9QkXYigCRhenG6xC5VW3rMF6qw1Va1j03Aez4YLD9R84/e/0Gc4kyjAZHH+9nz0LQr9SyM2iA2EqtDuUTLakZ9OFJDFCGxRZ6yuYB2OgLAh5M2/Em9BloxKqz0s4u9vpVqbbYe0fmQYV70BcqRtKpMxaYXeOPlBWdGqnkDpR5i5nqmntKo43Prh2aX+hGViJFMEMFLXjMpbio/HIVGFJonTrUp/SPxyYKyDK12PluZvWtGbgg9idxuuA9b5ht9V+HFPdY6AeQ39wFjViL5QkCr1vvcyXueM1alO4qfgkcZPWpNQmg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Antimony" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAHBNiUx0o6bjE0CxLSal__O0p-Y22H51v-UfuzNDZ1oc ;
+        prov:generatedAtTime "2026-06-24T10:48:24.044123+02:00"^^xsd:dateTime .
+}

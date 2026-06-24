@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAwaOCQnarQP8vKOSx0K5at2ZUKSkKN4dOVk8a5-1B89c> .
+@prefix sub: <https://w3id.org/np/RAwaOCQnarQP8vKOSx0K5at2ZUKSkKN4dOVk8a5-1B89c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwaOCQnarQP8vKOSx0K5at2ZUKSkKN4dOVk8a5-1B89c a owl:Class ;
+        rdfs:label "2-methoxyacetic acid",
+            "2-methoxyazijnzuur"@nl-be ;
+        schema:alternateName "MAA",
+            "Methoxyacetic Acid" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132098>,
+            <https://identifiers.org/cas:625-45-6>,
+            <https://identifiers.org/inchikey:RMIODHQZRUFFFF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:12251> ;
+        pehterms:hasContextAlias sub:_nfb12a8732abb4e77bdccda0cbc728c72b1 ;
+        pehterms:hasGroupLabel "glycol ethers" ;
+        pehterms:isMetaboliteOf biochementity:RA9RFT_JaUNB15phIm-5OCPzw6u9w9q2y-p4zdVViLpoc,
+            biochementity:RAJKT9pr3lpr8yM7s7KaELTsRTECB9nP00acss6OnOmNo,
+            biochementity:RAc1HA47YqqdYqaDw4LfFXNuGwDEptzGXSnnBQsyGBTTA,
+            biochementity:RAhO8yw4EuGeKhCuN5OGB8tIGz7wrialirB-n8PWC86_o,
+            biochementity:RAl3v3Ra9kE-6gNWF91mAQiLBGCeAIAkk0TYL4rS-iEug,
+            biochementity:RAy5ShOZ9hoETt3ALqfMfJ_BKH5UpxVfumx-5hQUqu8gM .
+    sub:_nfb12a8732abb4e77bdccda0cbc728c72b1 a pehterms:ContextAlias ;
+        schema:alternateName "maa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:23.054838+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "QDCAnMD49ofaydsXbCqqbg/8v0WJrYsgYRNkMxzg9GA6bLVh+/PhWLVo508HssHGMVQ1RFSwZK8CC2JAThK7XyLOLuVMayoXm7bsLfV62z6oSD2Po8PAQlDtKDa6yEFaHGHcOGGtPo81vtySbrEkLLlLt1OgqwBJyn9FRcWF1oGDle1f6qbz14fREu8yHao54WV5K0XW+FYIw7B6vxEq8kn2DVsrlD23WRK0K5NpwC/jP54Ci6ZJ5ER2glYNxGmnc+HhKWGuPS7urBdOXzvK5vQzolb5ZfLNj3jx5x2HfianA3NePntsb7HlA9DLUNwKvKXt3RlLXZ+mxRxdf+eOEg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-methoxyacetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwaOCQnarQP8vKOSx0K5at2ZUKSkKN4dOVk8a5-1B89c ;
+        prov:generatedAtTime "2026-06-24T10:48:23.054838+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RA65Skla6V8DnHIxxXsQ2yK_aTO7MuiCWIXEcY1evomjU> .
+@prefix sub: <https://w3id.org/np/RA65Skla6V8DnHIxxXsQ2yK_aTO7MuiCWIXEcY1evomjU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA65Skla6V8DnHIxxXsQ2yK_aTO7MuiCWIXEcY1evomjU a owl:Class ;
+        rdfs:label "17-Hydroxyprogesterone",
+            "17-hydroxyprogesteron"@nl-be ;
+        schema:alternateName "17-Hydroxyprogesterone" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:17252>,
+            <https://loinc.org/LP14974-7> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:58.170822+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "UTnQNgswAELPwX42V4ZKhyEuApBEizSzKVGo6nL6f0G9YNE8k/kRNxNCT0z0qqyZk4ZPnI79bRtivaqrhhFjHHRUeOz0pkXQ5aKMcF0dD3FeWbvdHUCwBuOrptNH0dc/nUDEVT70cOkrAZZ1clos0b76sV85XFXUbGJBrj9URlMVy31CbjphP8Cwg6Q+iIWD6p3g5gV16da84Z/+T8/DUibFIjMgbwaXwBkf1jHf2j8pblhPMvnJOn4TNIeza+QPQYBEsjw5HMdeYESrYtyWvH1FW5l1Ui/q81GHnz151KXZClaezrsXALrrVYCJgLZ/gVjjHxcOwNzgdrboPe30JQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "17-Hydroxyprogesterone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA65Skla6V8DnHIxxXsQ2yK_aTO7MuiCWIXEcY1evomjU ;
+        prov:generatedAtTime "2026-06-24T10:47:58.170822+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RA2nTfXDR5xsaKekCUc70RJYw721fCTscVbmvYausddhU> .
+@prefix sub: <https://w3id.org/np/RA2nTfXDR5xsaKekCUc70RJYw721fCTscVbmvYausddhU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2nTfXDR5xsaKekCUc70RJYw721fCTscVbmvYausddhU a owl:Class ;
+        rdfs:label "Pyrimethanil",
+            "Pyrimethanil"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Pyrimethanil" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:8674>,
+            <https://identifiers.org/cas:53112-28-0> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:48.954114+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "pWr8LV72FVa2lNxgskkUyKXCebbSNkz5bjXJEorulJoF1cs3r4S+Mai3O266WsLaqocHKoJR9JI/xPFEGzpBZvlIs7ZQq+SKQlNdO2hAjlU8FHf+HVM0MtRvugWNZNcWfCvEnbM81zwCgw+VqUa6aDELehSBkwimPiV5uUC84q54dbl+tqqJz0hz/T8vhLm6KgIcqMu6xcBVC6fY2Ok0WcpyK3vGb45XGauAtWay1fE8pchTX0nkcEZRqwYW7lCIEsDiQhZyo8ZTh/3svSx3hPMS/DKKH+ywBeIW+YrFhFogsxw1vatHKlMYsoZUX6DvuFwbycxzua92FzseSF7z5Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Pyrimethanil" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA2nTfXDR5xsaKekCUc70RJYw721fCTscVbmvYausddhU ;
+        prov:generatedAtTime "2026-06-24T10:47:48.954114+02:00"^^xsd:dateTime .
+}

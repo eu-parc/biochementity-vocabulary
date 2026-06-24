@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAqyvHN7fPgmfGSXpz1pZ1TCpmocXgX5xXOOy6bNyUork> .
+@prefix sub: <https://w3id.org/np/RAqyvHN7fPgmfGSXpz1pZ1TCpmocXgX5xXOOy6bNyUork/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAqyvHN7fPgmfGSXpz1pZ1TCpmocXgX5xXOOy6bNyUork a owl:Class ;
+        rdfs:label "2,3,4,5-tetrabromobenzoic acid",
+            "2,3,4,5-tetrabroombenzoëzuur"@nl-be ;
+        schema:alternateName "TBBA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:165216>,
+            <https://identifiers.org/cas:27581-13-1>,
+            <https://identifiers.org/inchikey:KVILQONZZZERSG-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15709948> ;
+        pehterms:hasGroupLabel "flame retardants" ;
+        pehterms:isMetaboliteOf biochementity:RAXYazouPWuZ6uCLRrYt2zLbHT9yWH_o6e9ky3qC4cTA8 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:08.329155+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Neon8f/8g6E+k8kIk/SMxiR5PyqEkkdOQjmFCPmYJVB3qv8rqvThp2/XsAXLyRyJW6sXiZxhpFVO/KMdiZwpRZrIhspUO0eSmRZPbm7yu8Ub6Q/vRcpS7xTIrDLqEOna5ZQKv6Agi+PqSJnP+PtCrafVzYiQcNfrXcDeIUcQktd1eZB4UzEspeIUDURhZs0a9TcFd/WLBsmwzuU+/Ah3NZhBkq68XAZRnz1wYRp+hc8aU3lnmTQTB8x2KGX51UWkr7A1GVMjAsDb6DQyD/Va2YBuX1xcoIjOCeZsFRU7SqIyG2QlbuiMebSVDnijdqDKmGyiXdTki/ixLC59dUkamQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,3,4,5-tetrabromobenzoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAqyvHN7fPgmfGSXpz1pZ1TCpmocXgX5xXOOy6bNyUork ;
+        prov:generatedAtTime "2026-06-24T10:48:08.329155+02:00"^^xsd:dateTime .
+}

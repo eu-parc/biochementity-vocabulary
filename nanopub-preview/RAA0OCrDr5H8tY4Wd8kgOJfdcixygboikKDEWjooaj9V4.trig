@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAA0OCrDr5H8tY4Wd8kgOJfdcixygboikKDEWjooaj9V4> .
+@prefix sub: <https://w3id.org/np/RAA0OCrDr5H8tY4Wd8kgOJfdcixygboikKDEWjooaj9V4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAA0OCrDr5H8tY4Wd8kgOJfdcixygboikKDEWjooaj9V4 a owl:Class ;
+        rdfs:label "1-mono-(2-ethyl-5-oxo-hexyl) benzene-1,4-dicarboxylate",
+            "1-mono-(2-ethyl-5-oxo-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+        schema:alternateName "5oxo-MEHTP" ;
+        schema:comment "comments: same as the previous ones, to ask UBA? https://www.umweltprobenbank.de/en/documents/profiles/analytes/27748#:~:text=1%2Dmono%2D(2%2Dethyl%2D5%2Doxo%2Dhexyl)%20benzene%2D1%2C4%2Ddicarboxylate%20is%20a%20metabolite%20of%20DEHTP." ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n5578f57e337b457ba06a931220eeecabb1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAiQTpuaruG2drnNCUNpmZj06ZANjSX0N1LBoip_Ugq30 .
+    sub:_n5578f57e337b457ba06a931220eeecabb1 a pehterms:ContextAlias ;
+        schema:alternateName "oxomehtp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:31.148967+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "qeYzyL0T5FTGBpwstgY4PtAod7i6XjP30HFQSJPcJJ5PNMv3OYj2DQHI7heCu8J4R+Q1N4ipLDgBlObMRm+qiKjJwz3CmP0Eauqe/9qWEXTHH126Ziqj9fE9zp/Lm5BekB81oZOp2BElg7lo9vloxfNuuNEXgTjA6zs6CmC9ZPTA+qRPBesxXWiDVuDylllnedeLthsRBir7v3f4XYY0fkmoVADX16COC6wCB6Ia+1o5FsT2lk5jMM/R+s3Uok5b0gpqKuftE3q3EuVsUqtbV76SobJ4y2b8w+06vx6d5WpaPiuplWrhF6REETBmpZoepKlJEtB9zVzloxArizlFkg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-mono-(2-ethyl-5-oxo-hexyl) benzene-1,4-dicarboxylate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAA0OCrDr5H8tY4Wd8kgOJfdcixygboikKDEWjooaj9V4 ;
+        prov:generatedAtTime "2026-06-24T10:48:31.148967+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAn8778K3Ey8Br1zUkgehRoP6Iz0T3wyPiQyFxRybWOMs> .
+@prefix sub: <https://w3id.org/np/RAn8778K3Ey8Br1zUkgehRoP6Iz0T3wyPiQyFxRybWOMs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAn8778K3Ey8Br1zUkgehRoP6Iz0T3wyPiQyFxRybWOMs a owl:Class ;
+        rdfs:label "Selenium",
+            "Selenium"@nl-be ;
+        schema:alternateName "Selenium" ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27568>,
+            <https://identifiers.org/cas:7782-49-2>,
+            <https://identifiers.org/cas:7783-07-5>,
+            <https://identifiers.org/inchikey:BUGBHKTXTAQXES-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6326970> ;
+        pehterms:hasContextAlias sub:_nc6f165ed19f649328cbd54c782ded7d4b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_nc6f165ed19f649328cbd54c782ded7d4b1 a pehterms:ContextAlias ;
+        schema:alternateName "se" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:21.717498+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mdrvGl7NxNqVoGIWoQXz8KPEcWjNOaJwj7wTZtJzjmO+HRqbEzlNOheVjFTO/p4At/66meSY7aksgMuYVmwg+wSrRc+TFvMEgCcNoj+MeExIaawynotP2H8KYgUxdhnR6urJUBppbDhD39RhA1Smw28L1+VdsHaA8hJSowUG6cVEwzJ0NBcgx0Fd3pBCTxz6NJhuMlJtDKbnRUVULRxoT4eVWzOM1l7Ibnpp4OjmKLABenChAs1T5IbaKhD8z6BhxJ9TNlVU5arhBjp+2HJKetMPSqVLZojurGzQK9za84MpFBCYeKIZlgGtlXB40mkOUUxKaHc9r95xlNi8NJwpAg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Selenium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAn8778K3Ey8Br1zUkgehRoP6Iz0T3wyPiQyFxRybWOMs ;
+        prov:generatedAtTime "2026-06-24T10:48:21.717498+02:00"^^xsd:dateTime .
+}

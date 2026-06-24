@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RABkekuo0MLkDXk5Z3XIRoDmVAJr-mKA35TLS1WQHhiUQ> .
+@prefix sub: <https://w3id.org/np/RABkekuo0MLkDXk5Z3XIRoDmVAJr-mKA35TLS1WQHhiUQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RABkekuo0MLkDXk5Z3XIRoDmVAJr-mKA35TLS1WQHhiUQ a owl:Class ;
+        rdfs:label "Estradiol",
+            "Oestradiol"@nl-be ;
+        schema:alternateName "Estradiol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:23965>,
+            <https://identifiers.org/pubchem.compound:5757>,
+            <https://loinc.org/LP14497-9> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:50.112573+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "c+AtjCFcytoYUdkdqIEFkPVCQ+LB8xw8xQgxWo1+SMepkrZE8DK87spKNrIbMS9PdEgJ1J/rRwi5Tc6sJ3oUYf+DRGou2l9SfpzzVMLcRTrMRfD4hg46dIArDM1Woh55v+Sl2yVrYI3y52077YKrmMCrj4PBEBrNro+k0xTbjVaFlqPCGshICimpijieUTVC5KJT8VGG3ScONao91/adgWUfcUf0Y0ADxjmq6pc3ZNxyjhPf5x0fb+/KFJBCIk6ZdoJ7uXhY3O3cnr4Y8u9EtNnNDJJAm6QL89E0olC67RtOZG5OSYYT9MvNNXfCsNDzFunEZmsZDEWkDAeltsQZHQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Estradiol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RABkekuo0MLkDXk5Z3XIRoDmVAJr-mKA35TLS1WQHhiUQ ;
+        prov:generatedAtTime "2026-06-24T10:47:50.112573+02:00"^^xsd:dateTime .
+}

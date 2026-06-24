@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RApi4K1koGg6JgbiL993JbfyUqPaba8uR-8qeC41CBDCo> .
+@prefix sub: <https://w3id.org/np/RApi4K1koGg6JgbiL993JbfyUqPaba8uR-8qeC41CBDCo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApi4K1koGg6JgbiL993JbfyUqPaba8uR-8qeC41CBDCo a owl:Class ;
+        rdfs:label "Aniline",
+            "Aniline"@nl-be ;
+        schema:alternateName "Aniline" ;
+        rdfs:subClassOf biochementity:RANaCoLhynCuEFiT1iaAh24IhYrlamx1dPuixX-tMDOJo,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:17296>,
+            <https://identifiers.org/cas:62-53-3>,
+            <https://identifiers.org/inchikey:PAYRUJLWNCNPSJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6115> ;
+        pehterms:hasContextAlias sub:_n4bad5e30bcb24ce4a7335cb0409fae25b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_n4bad5e30bcb24ce4a7335cb0409fae25b1 a pehterms:ContextAlias ;
+        schema:alternateName "aniline" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:28.521151+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Li2MC0yFInfkH5EHZRN66GTNfXrWK0P5G6A06vdB0fBTYANodGNcRAE4GX3vQvRUhsZwPkS3Qt5YAHuRTHXfxhlqPVUfHL/H7+wPqUwI6T62WdX+RmShzcvcK2x4CafHL0i4FM+8jZbDPuIlVg2fVYliZW6g0WGIX3225poTvgbQDIoeFXSwX7G2biI2O4743RQ5P04jFN/BuxysBIomo5Y9NXE3OD3u0oMisAQXX1iWLp8bbabUGN3K98jBF6W2OwHLkUwzeOX+Wt/6sXbNQ665MFt7SWJCp2mByYRHGEU2nVxweMTSwF0PIqbtnaVj3929MAqotxpq9xETiZTM6Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Aniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApi4K1koGg6JgbiL993JbfyUqPaba8uR-8qeC41CBDCo ;
+        prov:generatedAtTime "2026-06-24T10:48:28.521151+02:00"^^xsd:dateTime .
+}

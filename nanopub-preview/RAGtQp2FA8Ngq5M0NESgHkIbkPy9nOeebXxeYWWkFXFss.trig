@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAGtQp2FA8Ngq5M0NESgHkIbkPy9nOeebXxeYWWkFXFss> .
+@prefix sub: <https://w3id.org/np/RAGtQp2FA8Ngq5M0NESgHkIbkPy9nOeebXxeYWWkFXFss/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAGtQp2FA8Ngq5M0NESgHkIbkPy9nOeebXxeYWWkFXFss a owl:Class ;
+        rdfs:label "8-Oxoguanine glycosylase" ;
+        schema:alternateName "OGG1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:4968> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:29.430697+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "nzKXhAXc8+qYqKrGDkIJ/XE8gEZ4+44AagF14TLusNSqNbSu9V6RNJ3Svq7ZVOBF+CpjjIL7hdwafF6fhD5ao4wBVQcMd/yRNW8W1V8dYYgE6RXqEN3TBLS8GFzE3L+I6OOxStWZzp90dZgzCp1D1Mud1BBp3tH7+gFZemabePZeavXBPfzojJ+unq46+Vh8Lq2+l9U94+3IF4SHxI5FLdH7Y89H64yS4GFLXoZE7XZDBHMd+3RzvGdk+q8n1C4aS1DcmRJWY+Qlc3t+IiMGh5C1lIj0W819jh2QZyAFJlwxzVLDWlqThWE1a+awQ1oPm78dA3/khe/s6L2W8K1oiA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "8-Oxoguanine glycosylase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAGtQp2FA8Ngq5M0NESgHkIbkPy9nOeebXxeYWWkFXFss ;
+        prov:generatedAtTime "2026-06-24T10:47:29.430697+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAemWbQN99uAsI2uRVpqX6-IX-8q-ZrFlhuayQBHnyjJ8> .
+@prefix sub: <https://w3id.org/np/RAemWbQN99uAsI2uRVpqX6-IX-8q-ZrFlhuayQBHnyjJ8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAemWbQN99uAsI2uRVpqX6-IX-8q-ZrFlhuayQBHnyjJ8 a owl:Class ;
+        rdfs:label "Flonicamid",
+            "N-(cyanomethyl)-4-(trifluoromethyl)pyridine-3-carboxamide"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Flonicamid",
+            "N-(cyanomethyl)-4-(trifluoromethyl)pyridine-3-carboxamide",
+            "Flonicamid"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:39291>,
+            <https://identifiers.org/cas:158062-67-0>,
+            <https://identifiers.org/inchikey:RLQJEEJISHYWON-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9834513> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:55.714283+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "ouPGRk1rGqaxBKKFK9o4XB/NESped25T6Wqmp6oiiwiA34Dq2S1t6RtgWFIzg3wnl2FjOuxCIKM9SQde5h9suqvks3OmiZvUb+Cs+aalGb04v2h50t9tCOS2UyM+4MWAr7/vINFMlp8nY/uB+xKFDuNBGSDassS50gy4y08m4CVYcfh40w41oIi8CLZtiS3yVy8HVEu0Bx9pENB5hTWL4Umxx3ntN2ccezKJVLALCDTUiPApGPoNP0WSC+Pf6T9elclU1va6pMCHn5Z9cYv08YYFhnGRGTbklpKeE52YL57DRh1W6eyLcfxDPpWKBq1yiB7/DR7FyoDfLunc827Bxw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Flonicamid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAemWbQN99uAsI2uRVpqX6-IX-8q-ZrFlhuayQBHnyjJ8 ;
+        prov:generatedAtTime "2026-06-24T10:47:55.714283+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAcVdWvgmwNm5Biskwy3BAZ9I8CVW3IsCobNIJe2syi7A> .
+@prefix sub: <https://w3id.org/np/RAcVdWvgmwNm5Biskwy3BAZ9I8CVW3IsCobNIJe2syi7A/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcVdWvgmwNm5Biskwy3BAZ9I8CVW3IsCobNIJe2syi7A a owl:Class ;
+        rdfs:label "N-Phenylacetamide",
+            "N-Phenylacetamide"@nl-be ;
+        schema:alternateName "ACA",
+            "Acetanilide" ;
+        rdfs:subClassOf biochementity:RANaCoLhynCuEFiT1iaAh24IhYrlamx1dPuixX-tMDOJo,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28884>,
+            <https://identifiers.org/cas:103-84-4>,
+            <https://identifiers.org/inchikey:FZERHIULMFGESH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:904> ;
+        pehterms:hasContextAlias sub:_nd61e7bc126834f39beeb01f56ce513ccb1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_nd61e7bc126834f39beeb01f56ce513ccb1 a pehterms:ContextAlias ;
+        schema:alternateName "aca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:27.220064+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "L/i2lWqdS6R6iARLLBHQfwo7jfe22h2wCmgJaPg7UDHeDxWiQktqF3xNi/9SnFsqgQkR1nJoj8HiBqvV0KzZsnAo3lqz+5zc/K+KcXaWFiXkCZT06R8zsh48y4DFoTlLcWzhAApI3916mg4afPIdTkydYz8SSQcYW0tQxbXPBELbdrRGVb1Oo/1IjXv233GYtyKDImYPk7Q03xGgBMMuqCO7FZcCpyl1VpmE+grRPVznoRRxGH8ekENXjdgLMvbnJcUSBvrE2tPGXJpS5iZLwcYg3ACm4f3+E6jQJwN70asgz6FKKgvExoSwJFC/7rpEFNj+4YxWgegYq3EC3S3Vjg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-Phenylacetamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcVdWvgmwNm5Biskwy3BAZ9I8CVW3IsCobNIJe2syi7A ;
+        prov:generatedAtTime "2026-06-24T10:48:27.220064+02:00"^^xsd:dateTime .
+}

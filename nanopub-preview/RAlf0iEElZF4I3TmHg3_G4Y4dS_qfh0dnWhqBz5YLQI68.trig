@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68> .
+@prefix sub: <https://w3id.org/np/RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68 a owl:Class ;
+        rdfs:label "phthalates" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <CHEBI:35484> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:27.869227+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "lmRmxJiUD0o0blNsCKo28MVr8UiAYBSF58oxwsy5kXRE05adTJW5BkqyVFYWg63EQAkj4RvpD0HNvcFSV8wzBxnNVqqVIFfoMTo1yht2YimmiWbfe0GahpMxVQYyVwWpPx6nQzdEBwKLHdJAYH6jzsf+wwo1OzBcZPCmdZS+Wr7vLWu9s/Zzig6g/SYQz0ssVen87F1FvPTo3fy8Ufa8MooYOSoaXYQjZbAfzuFFlr3l3vWtudmrA2QUHVDLNiDvep1qdyTjYi1emC/8Q2N9GkW6y4fZOVlvtl4kt5fDwGyEqoCnSZECiWh64sO5Gq2ZJijuVm1vU1OHXcgVLJDNDQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "phthalates" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68 ;
+        prov:generatedAtTime "2026-06-24T10:47:27.869227+02:00"^^xsd:dateTime .
+}

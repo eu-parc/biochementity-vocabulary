@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAwGmM_lOZq-iWq8WbQC9AhNcO7gd2F4tahhgKvnit_EM> .
+@prefix sub: <https://w3id.org/np/RAwGmM_lOZq-iWq8WbQC9AhNcO7gd2F4tahhgKvnit_EM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwGmM_lOZq-iWq8WbQC9AhNcO7gd2F4tahhgKvnit_EM a owl:Class ;
+        rdfs:label "Linear 8:2 polyfluoroalkyl phosphoric acid monoesters",
+            "Lineair 8:2 fluortelomeerfosfaat monoester"@nl-be ;
+        schema:alternateName "8:2 Fluorotelomer phosphate monoester",
+            "8:2 monoPAP",
+            "8:2 monoPAP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83541>,
+            <https://identifiers.org/cas:57678-03-2>,
+            <https://identifiers.org/inchikey:MIABSAQIFYEDJP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:10143739> ;
+        pehterms:hasContextAlias sub:_n2316fb57e70145d88390b195a3eda1b1b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n2316fb57e70145d88390b195a3eda1b1b1 a pehterms:ContextAlias ;
+        schema:alternateName "eightmonopap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:43.906015+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "CcZhsKxE9tKWAzIgEir+e2ZJSpqzS52dqnK3HkI9aTy4a6vHpB6q/dRua4pm/HxKGxloPOPxgMuOWjRRDpdia8G3Xs9ZfZrEDdmLMpBxr6AVn10O/+HNGei1CLzgf+/sfhdUoNjO82RadQpr5Tn/DqLrbnfFRCqUrdvv1M45zExBCt4Q6OmKOB3vibVsm299ze4WmFt80xJSOwbEeMzVJPXWXWMplPZ/1IT/P0eyom1i4Qr0PZYm+e7zfPzNwrzvrgAAS+rL97rk7FyndY3TELaw/gJy4enWRzjoytP34LU7MXwd+DxA69eKPrV804XcelyYpbsNOtL/Qa/AAZMwzw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear 8:2 polyfluoroalkyl phosphoric acid monoesters" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwGmM_lOZq-iWq8WbQC9AhNcO7gd2F4tahhgKvnit_EM ;
+        prov:generatedAtTime "2026-06-24T10:47:43.906015+02:00"^^xsd:dateTime .
+}

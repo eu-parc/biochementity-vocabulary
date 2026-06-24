@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAyYCM8SU4kSekhf8Robm0iN5I5ouep6DX0FVk_9XSaN0> .
+@prefix sub: <https://w3id.org/np/RAyYCM8SU4kSekhf8Robm0iN5I5ouep6DX0FVk_9XSaN0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAyYCM8SU4kSekhf8Robm0iN5I5ouep6DX0FVk_9XSaN0 a owl:Class ;
+        rdfs:label "(3,4-dichlorophenyl)urea",
+            "3,4-dichlorophenylurea fungiciden"@nl-be ;
+        schema:alternateName "(3,4-dichlorophenyl)urea",
+            "DCPU"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83464>,
+            <https://identifiers.org/cas:2327-02-8>,
+            <https://identifiers.org/inchikey:CYESCLHCWJKRKM-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:16854> ;
+        pehterms:hasContextAlias sub:_n5927f9140fd7479d96187ca79edcb446b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RA_sfWLr9VL5dCaAL96I3sn--nyXNBAmHNDRFw_zzmkKs .
+    sub:_n5927f9140fd7479d96187ca79edcb446b1 a pehterms:ContextAlias ;
+        schema:alternateName "dcpu" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:05.014653+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "et64R5tUGJql5zmYGq1i1CMfGde6DfAlEJSYUQKHpSRR2tfskaLTc4Lg7B/d6qcLjR69LIrfCQoGzcJztgzSU7Q68SGLBj7K/DekFm5qz6u4iGGxsUC9Uhd3lPf9ZCPsLdKM0+2xzTT5ipqOjwY2O3j3mDDdCHm+kOr6PHcg0u5cwuz6Xb0al5rXnIUA7ihgWd6jHfb6dqm7jPVhycAgIv/ED21bP4YN0jlzQ1H3oBOolft9lqMfcQDo9Cxg0CHxH5X68v0Ux720E0GAjwyY7LErhSotXYoVkDwLZ5nQKEDT6CU+pFck/hulUrJba8FuoiMFf/YTr1S72sGdcfSEsA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "(3,4-dichlorophenyl)urea" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAyYCM8SU4kSekhf8Robm0iN5I5ouep6DX0FVk_9XSaN0 ;
+        prov:generatedAtTime "2026-06-24T10:48:05.014653+02:00"^^xsd:dateTime .
+}

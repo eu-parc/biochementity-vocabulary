@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAO3_G9f4yYmOzrdvQua69J0GSaGaxqQs_Rg4mtOBXSR4> .
+@prefix sub: <https://w3id.org/np/RAO3_G9f4yYmOzrdvQua69J0GSaGaxqQs_Rg4mtOBXSR4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAO3_G9f4yYmOzrdvQua69J0GSaGaxqQs_Rg4mtOBXSR4 a owl:Class ;
+        rdfs:label "Para-Fluoroaniline",
+            "Para-fluoraniline"@nl-be ;
+        schema:alternateName "4-Fluoroaniline",
+            "para-FA" ;
+        rdfs:subClassOf biochementity:RANaCoLhynCuEFiT1iaAh24IhYrlamx1dPuixX-tMDOJo,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28546>,
+            <https://identifiers.org/cas:371-40-4>,
+            <https://identifiers.org/inchikey:KRZCOLNOCZKSDF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9731> ;
+        pehterms:hasContextAlias sub:_n2725b4db1c584d3c95ab1e7cfa85e1e1b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_n2725b4db1c584d3c95ab1e7cfa85e1e1b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:13.172268+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "sSWdk8CM/isPcZLp12c0xwxByY1LoTWuUZRiVaOScI+6M+pqlSaiaXg9cmNxk306zRFU+v6LP5RzDDvNRI/HKv9oSfT13PN2OYutbtU9hCXFPvlFYmj3l+oTnXogtrq9dH+pMWWttGBGE9YwNDl/XUzvhQJnBzEHuKy9x0PRuKTUzNrgpBNQz3SauE4MTxIzXdU771nxElFDLUsklhBqYGPZRsRfyC/PMA3de34e47xQ6FsLhQr7Gbo3tqC2s1GNk8GwqbK/SbtbiBp9Bp4to3ydk+PcIWi7Y1bD2cfBrmNxqD4mYKc2b/U6+5otfiyb8CZ7xp7JifXdiQ82fv8WvA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Para-Fluoroaniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAO3_G9f4yYmOzrdvQua69J0GSaGaxqQs_Rg4mtOBXSR4 ;
+        prov:generatedAtTime "2026-06-24T10:48:13.172268+02:00"^^xsd:dateTime .
+}

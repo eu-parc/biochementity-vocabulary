@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAR2AC5iygpMrfnwRrkYml3RpD70X3jIHjjiDCfS4I_Hg> .
+@prefix sub: <https://w3id.org/np/RAR2AC5iygpMrfnwRrkYml3RpD70X3jIHjjiDCfS4I_Hg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAR2AC5iygpMrfnwRrkYml3RpD70X3jIHjjiDCfS4I_Hg a owl:Class ;
+        rdfs:label "Propan-2-yl N-(3-chlorophenyl)carbamate",
+            "Propan-2-yl N-(3-chlorophenyl)carbamate"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Chlorpropham",
+            "Chlorpropham"@nl-be ;
+        rdfs:subClassOf biochementity:RArjKEYz3AHRgSAtdn11mrWKDHNFKEQ6lFMZbfjKNfCc4,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:CWJSHJJYOPWUGX-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:25.682678+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "AvmSqYdId4ro6ZeQm+pbNFIbM8UCwTn4ZcX0RtFK/ftl+z5TU9RL7Sg3KP9rfdkaqlYv01wTxrcoEsGjnMe3cM1/1F8oZqAbpCzjBiqP887puIMGsQw4Isc1nT3wt+OMwC3Mcq3JOX2DSxwvmhftuLGrPkvhbM+hsCWmIvB3zNXj23543QM3O0yciZrIEZRCeN0TFMUfq4WM8FvOTr+Sd/W5iSAqebu4oqx6+82JFUoh0ZFRHzQ1U1LlW57lHLe2DxzY6x169WP3Y0VJHvjqfwJ9sJ6EqFnmyWb0/f8x1LWjttm5hWMmkm0nHSHU4pVw6sy8RNiHJsoHX84DhPaLQQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Propan-2-yl N-(3-chlorophenyl)carbamate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAR2AC5iygpMrfnwRrkYml3RpD70X3jIHjjiDCfS4I_Hg ;
+        prov:generatedAtTime "2026-06-24T10:48:25.682678+02:00"^^xsd:dateTime .
+}

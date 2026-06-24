@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAjM4aMBdfMCpdQbzrZNoT0UrVejjcYQn6Yfaw4-AOV70> .
+@prefix sub: <https://w3id.org/np/RAjM4aMBdfMCpdQbzrZNoT0UrVejjcYQn6Yfaw4-AOV70/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjM4aMBdfMCpdQbzrZNoT0UrVejjcYQn6Yfaw4-AOV70 a owl:Class ;
+        rdfs:label "LDL cholesterol",
+            "LDL cholesterol"@nl-be ;
+        schema:alternateName "LDL cholesterol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:47774>,
+            <https://loinc.org/LP15491-1> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:31.633141+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "JLl9AZt7re2k+bVm6vnw7lU6vsJdbLy1xoac7rQm0U3CjViF36R2JrAVONvz288WkHMFLESiNgR5JV2j8FlPPZbQlzujtAHD/2gKD1ZhvCbwoj1koOiSMjhn29K59U+Wd6xI0ZRofb76HY05+xvn31Z7ibsev2jurFinN1mQaNXzlA4t2bPc09KdP7IPOLGLYkzI3n5iai5mEwQeK0U33ZU/Y3OJONiabMtZHiOOo2Zkw7VadaGMhOKVZB6bRA/yFtHuswlk6sDprkQfJSGYIF3csFf+CvJEfwS/9griR0n366C9ZFTam8LQmzu0n8qqBSoQtDPyaglE9yoQyqRpCA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "LDL cholesterol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAjM4aMBdfMCpdQbzrZNoT0UrVejjcYQn6Yfaw4-AOV70 ;
+        prov:generatedAtTime "2026-06-24T10:47:31.633141+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAZLNrANmKHDXAlJju106mg9oFY2TO6-j3oWtSRnGG20o> .
+@prefix sub: <https://w3id.org/np/RAZLNrANmKHDXAlJju106mg9oFY2TO6-j3oWtSRnGG20o/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAZLNrANmKHDXAlJju106mg9oFY2TO6-j3oWtSRnGG20o a owl:Class ;
+        rdfs:label "Isoamyl p-methoxycinnamate",
+            "Isoamyl p-methoxycinnamaat"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+        schema:alternateName "Isoamyl p-methoxycinnamate",
+            "IMZ"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:135982>,
+            <https://identifiers.org/cas:71617-10-2>,
+            <https://identifiers.org/inchikey:UBNYRXMKIIGMKK-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:92386> ;
+        pehterms:hasContextAlias sub:_na53fc00f0a8a4aeb96ddfa4ca3386346b1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" .
+    sub:_na53fc00f0a8a4aeb96ddfa4ca3386346b1 a pehterms:ContextAlias ;
+        schema:alternateName "imz" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:50.181943+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "LiCJf5BTLFk1iRupfHB+pgK6KMO6wWL3ZQzKnZ4MiGmhoXcp71VeE320jKczn7ITH5nlX880f2APxv3vIefbLikS8QwKHkwFhYcw7wGHJ2GPbKee0aO8wr4nPqmi+3ohci7PBnSosLy0FfBfJmnUXN+2ucl43ASJkPDZT5XoIrx+Ajaq5wWF8BiOVNydwhooLB5IG+mAip9/+xC1+h2MN/Ty7CV1wKWFtqPTvlIQnEsDtMzIjbXIKYHr23KsacAnK5xnuv3BV+I2byiFeQxpSQDFvNrOpL9qulF/HwyGXUV0bMFBTYiKc6bxgYmw+NUF06aSzzww0J2u+lsILPUtYQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Isoamyl p-methoxycinnamate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAZLNrANmKHDXAlJju106mg9oFY2TO6-j3oWtSRnGG20o ;
+        prov:generatedAtTime "2026-06-24T10:47:50.181943+02:00"^^xsd:dateTime .
+}

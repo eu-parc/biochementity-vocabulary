@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAtcryq_9rGrfXJI3xNJKyLof3K1bFHxYh_aJO_Zs_whM> .
+@prefix sub: <https://w3id.org/np/RAtcryq_9rGrfXJI3xNJKyLof3K1bFHxYh_aJO_Zs_whM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtcryq_9rGrfXJI3xNJKyLof3K1bFHxYh_aJO_Zs_whM a owl:Class ;
+        rdfs:label "Tetrabromobisphenol A bis(2,3-dibromopropyl ether)",
+            "Tetrabroombisfenol A-bis(2,3-dibroompropylether)"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "TBBPA-DBPE",
+            "TBBPA-DBPE"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:21850-44-2>,
+            <https://identifiers.org/inchikey:LXIZRZRTWSDLKK-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:62753> ;
+        pehterms:hasContextAlias sub:_nc769ca8961734afd88b8bd6d7a163753b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_nc769ca8961734afd88b8bd6d7a163753b1 a pehterms:ContextAlias ;
+        schema:alternateName "tbbpadbpe" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:00.545819+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "VkNSzotfbyWlDWa1319KEUdrfL528uZlpZTUsBsqLSIwi7AZd0k+YnMQ0g3e4d4FW9D2X9jTW5gafdFowbEHF/zPF0IrKld6D65iqB6MHUUTcBfdBoQ0mwfr7Peuo5WmLmsBmuFGSKkjMOJ3lE/SkE2dUvpl4vFl2CH6qwuhchn0EjPKqxTwXTtkw5aRAz295DfcqQAffoUJol0zfaBzrhVt+LqhfiaKv/NeN7tHB36y+BiE6YZh7UoWpjngK0Sb6Ea0FA69urLCbx/VS1sOO78nO2e1wzLojplbbn1RSc/EsfJQN1Sho6rce3Q7lFmda8OLLZm9i3x9E1L0zP+GmA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tetrabromobisphenol A bis(2,3-dibromopropyl ether)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtcryq_9rGrfXJI3xNJKyLof3K1bFHxYh_aJO_Zs_whM ;
+        prov:generatedAtTime "2026-06-24T10:48:00.545819+02:00"^^xsd:dateTime .
+}

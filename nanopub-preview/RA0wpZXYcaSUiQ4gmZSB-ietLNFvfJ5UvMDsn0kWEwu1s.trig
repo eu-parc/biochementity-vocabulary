@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA0wpZXYcaSUiQ4gmZSB-ietLNFvfJ5UvMDsn0kWEwu1s> .
+@prefix sub: <https://w3id.org/np/RA0wpZXYcaSUiQ4gmZSB-ietLNFvfJ5UvMDsn0kWEwu1s/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA0wpZXYcaSUiQ4gmZSB-ietLNFvfJ5UvMDsn0kWEwu1s a owl:Class ;
+        rdfs:label "Chrysen-4-ol",
+            "Chrysen-4-ol"@nl-be ;
+        schema:alternateName "4-CRY",
+            "4-Hydroxychrysene" ;
+        rdfs:subClassOf biochementity:RAKw3PYk2FgtZhCmmRF-SGSgb0qBA4klx8SUd4OuOUK10,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132406>,
+            <https://identifiers.org/cas:63019-40-9>,
+            <https://identifiers.org/inchikey:CZCGRCFUEPALNV-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:44286> ;
+        pehterms:hasContextAlias sub:_n4ac01546c2924ff593a9258422da7324b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_n4ac01546c2924ff593a9258422da7324b1 a pehterms:ContextAlias ;
+        schema:alternateName "fourcry" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:14.047851+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "TZOFBVIyEMgiTjjbq6fgWjplwBTdR6ITECtVjtiIx0VMutFReyel65I7roXNQRi1dln9i3fGsUvaOvs0st7jAY8Vas1M6qgBK5fLhzdZzxpIW846M3Udf0AVoM93OKOzaA5ezBu+e1tb5VZLhOD/yWbKnE9zbx4r+MT0F80drN2XuIlPxY9K4luKSqx7hPhGz7gR01p7CWGUyDsk8UYLWSvh2sdyoZLkpxyLJOYym/HhZ25lnriMu9+/qCPS7673nieFHA+Ugw2/y7nk1qCeX1UXVvFtNQ+C9Jf1swJxno4nF+0iKx18nwZmkDk3Zoq2sfTHj/kK4xXntt5yVmTC9Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Chrysen-4-ol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA0wpZXYcaSUiQ4gmZSB-ietLNFvfJ5UvMDsn0kWEwu1s ;
+        prov:generatedAtTime "2026-06-24T10:48:14.047851+02:00"^^xsd:dateTime .
+}

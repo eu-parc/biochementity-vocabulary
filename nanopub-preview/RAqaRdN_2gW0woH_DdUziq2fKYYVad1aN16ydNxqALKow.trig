@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAqaRdN_2gW0woH_DdUziq2fKYYVad1aN16ydNxqALKow> .
+@prefix sub: <https://w3id.org/np/RAqaRdN_2gW0woH_DdUziq2fKYYVad1aN16ydNxqALKow/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAqaRdN_2gW0woH_DdUziq2fKYYVad1aN16ydNxqALKow a owl:Class ;
+        rdfs:label "Cyclohexane-1,2-dicarboxylic acid mono-isononyl ester",
+            "Cyclohexane-1,2-dicarboxylate-mono-4-methyloctyl ester"@nl-be ;
+        schema:alternateName "MINCH",
+            "MINCH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:HQEIYBJWBXYUOH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:129853628> ;
+        pehterms:hasContextAlias sub:_n78d5f15ec07642e9be2ce5071349428bb1 ;
+        pehterms:hasGroupLabel "DINCH" ;
+        pehterms:isMetaboliteOf biochementity:RAMOGIvI6DVc8TWMa4eNFWyc0H91y6vHHEpo_NYMeYEX0 .
+    sub:_n78d5f15ec07642e9be2ce5071349428bb1 a pehterms:ContextAlias ;
+        schema:alternateName "minch" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:15.950778+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Swq9RKrBzaO3x5ajcZT5iSJm+b1edMW5RmzlrHFfAJyOlIL7dpi5KDa17/eBBh/vJu2WNWtOhvvSkJLoQJpdDntB7hj+AlguqEbj6CtTZVFJSVwPpO3U+V7hyHgNzkLlfvfpeEToB3UQSGJn8EOAPWkqQW92woBn3Px/vjkZYnke+9qHFDVIlJ53MdDahEmtJb2tpRKgCILD7DNmEtjNwL5m25ub92WOAK+eOUCPbYx+Qr++qnTJqlhE3RYo6WfhrC91wlqkN+PfUhKRTz7bNp2uOa41yM7e1MOKMtgqsu+h2P9d8kHuKylBiU5W9cFoPZ3dM1GCIoFZ9lGDUhiVJw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cyclohexane-1,2-dicarboxylic acid mono-isononyl ester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAqaRdN_2gW0woH_DdUziq2fKYYVad1aN16ydNxqALKow ;
+        prov:generatedAtTime "2026-06-24T10:48:15.950778+02:00"^^xsd:dateTime .
+}

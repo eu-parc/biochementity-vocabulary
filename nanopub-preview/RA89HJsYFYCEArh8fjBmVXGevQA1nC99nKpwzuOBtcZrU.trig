@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RA89HJsYFYCEArh8fjBmVXGevQA1nC99nKpwzuOBtcZrU> .
+@prefix sub: <https://w3id.org/np/RA89HJsYFYCEArh8fjBmVXGevQA1nC99nKpwzuOBtcZrU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA89HJsYFYCEArh8fjBmVXGevQA1nC99nKpwzuOBtcZrU a owl:Class ;
+        rdfs:label "5-hydroxy-N-ethyl-2-pyrrolidone",
+            "5-hydroxy-N-ethyl-2-pyrrolidon"@nl-be ;
+        schema:alternateName "5-HNEP" ;
+        schema:comment "comments: * The INCHIKEY takes me to this pubchem link:https://pubchem.ncbi.nlm.nih.gov/compound/1-Ethyl-5-hydroxy-2-pyrrolidinone, but I'm not sure it is the same compound?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:RIOOHZIYIQTLNP-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_n42fe05359b8c4e1ca1ebb276b2156b2bb1 ;
+        pehterms:hasGroupLabel "aprotic solvents" ;
+        pehterms:isMetaboliteOf biochementity:RAqI7bPc5Tl6cFAaiGYOmPtMOpI8vl9XVgtl2eg8swuFo .
+    sub:_n42fe05359b8c4e1ca1ebb276b2156b2bb1 a pehterms:ContextAlias ;
+        schema:alternateName "hnep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:21.863642+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "hdFipUaMuGhW1OoMNpBsTVSjpXaGrmJAameHDqO+SvVslZ90DpR+SFAp2/NgPuTt/EmT2TzfNHzzNe2MPUgG9q+02Dy5xJ0o8nExJbLAiQEHGzm1G899iVoLDLLQeDNsIJzj23ohoMFtLFnC3Nvj2a/HTp2SOyzMS69l7jp/q/2MPvGkQsIYw1I06Hr1voOTs2OdGaicDTkE8scnsHZW1jOnRAez2irdhfjh8FOfcVWaGEaB4nUEScDtIQ3IWS93OFE4NW0nUXEDsB2jsWpo2zr2pYVdWKTNU6Uva15hG9GNcA4l6xTGRp1tKtas8TCKMDhKsZSFN8OuZKCicsRKrA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "5-hydroxy-N-ethyl-2-pyrrolidone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA89HJsYFYCEArh8fjBmVXGevQA1nC99nKpwzuOBtcZrU ;
+        prov:generatedAtTime "2026-06-24T10:48:21.863642+02:00"^^xsd:dateTime .
+}

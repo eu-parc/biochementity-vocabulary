@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAiBuTUaNWwtHJY3tLgduA8zwYOwImWGZSw0jN0di25XY> .
+@prefix sub: <https://w3id.org/np/RAiBuTUaNWwtHJY3tLgduA8zwYOwImWGZSw0jN0di25XY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiBuTUaNWwtHJY3tLgduA8zwYOwImWGZSw0jN0di25XY a owl:Class ;
+        rdfs:label "2-Hydroxyanthracene",
+            "2-Hydroxyantraceen"@nl-be ;
+        schema:alternateName "2-ANT",
+            "2-Anthrol" ;
+        schema:comment """comments: I know put all the keysand the aliases for this compound: https://pubchem.ncbi.nlm.nih.gov/compound/99503
+    Please expert double check""" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:37091>,
+            <https://identifiers.org/cas:613-14-9>,
+            <https://identifiers.org/inchikey:BQBWUVWMUXGILF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:99503> ;
+        pehterms:hasContextAlias sub:_n76c05bddc511408a810082f89d6131a5b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RAL1frukKGR_WppSZG8X7Hw5Tw-589XVGak1JAXYN9dK0 .
+    sub:_n76c05bddc511408a810082f89d6131a5b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohan" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:31.374443+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "rqhWk2HHIbbiN9p6Pfv2wc+ymTXqhCGupABaP8ZAbt4zGbjSHJ42fZ2kELZyl+rP5u/4T7I264YqI5vJ8xpcRNzkKZdysvbVDqDI4gW1PqziG53HE9PZ5VH6eurdvRyM002qEtVAxApZFNy9v2dEBSO/Lbvud3wEwVPn6lH1yHnsRNRq3vCHejMUBgLcEYCV9ji/iqkRzhn3kF2KmbfstdSLsd1jQ+DXJFZn05ObNWhgtSy3ds79J4NTiFVwuwBZ724W3q61daMSSoLKl/BohjqjEtZUpfTdvPLI6+Kbq+MuTt+PvzFKz4bfdbbpDUsh3Es4VpleHUGOSYd54KVhqA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-Hydroxyanthracene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAiBuTUaNWwtHJY3tLgduA8zwYOwImWGZSw0jN0di25XY ;
+        prov:generatedAtTime "2026-06-24T10:48:31.374443+02:00"^^xsd:dateTime .
+}

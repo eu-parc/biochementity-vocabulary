@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RABzKDTc9boLBFZvHUbiUhvt1ML0kMapgy5lsiVUSrKdc> .
+@prefix sub: <https://w3id.org/np/RABzKDTc9boLBFZvHUbiUhvt1ML0kMapgy5lsiVUSrKdc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RABzKDTc9boLBFZvHUbiUhvt1ML0kMapgy5lsiVUSrKdc a owl:Class ;
+        rdfs:label "Hemoglobin",
+            "Hemoglobine"@nl-be ;
+        schema:alternateName "Hemoglobin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/mesh:D006454>,
+            <https://loinc.org/LP14449-0> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:33.383925+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Z6h6cj3k34cwkLoxba5ZAiq19RgPAFUwuhW3SlJNtzivKxxCbm9a+YEjw096lFPq2bNdg5R57WnECYesQGTpLGWqyy7df0KBxvMgKSkm8pb7zBuPiqNOdP3MBjSa3Z/8HGDTujjurpexsI4b7O0i/FmQKH2Q6HOiG+6w9YxIR7RmNK0ehy94I+sm7elHJDyhWvE95W9iFwWFPKJs/iDVyfYtFNGmNLugUqKVAs2MTd2S66RDP276DzYqLBPaxLW80810TQW5erS8gCTXWt9vunScThPfMTdF8GKsb6PO+HYjvnhAozUpgxUkphBCk/NcJiSZRk4unsTl8dQWf/hSag==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Hemoglobin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RABzKDTc9boLBFZvHUbiUhvt1ML0kMapgy5lsiVUSrKdc ;
+        prov:generatedAtTime "2026-06-24T10:47:33.383925+02:00"^^xsd:dateTime .
+}

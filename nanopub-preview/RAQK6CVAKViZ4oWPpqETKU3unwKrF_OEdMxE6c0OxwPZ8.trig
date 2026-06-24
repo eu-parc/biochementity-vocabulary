@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAQK6CVAKViZ4oWPpqETKU3unwKrF_OEdMxE6c0OxwPZ8> .
+@prefix sub: <https://w3id.org/np/RAQK6CVAKViZ4oWPpqETKU3unwKrF_OEdMxE6c0OxwPZ8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQK6CVAKViZ4oWPpqETKU3unwKrF_OEdMxE6c0OxwPZ8 a owl:Class ;
+        rdfs:label "Insulin",
+            "Insuline"@nl-be ;
+        schema:alternateName "Insulin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:145810>,
+            <https://loinc.org/LP14676-8> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:37.239562+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "hLcZWgFGZpKabElj7Kcc/uzd7lc9Zsyc34E8/P5gMEzBcrtzBeX198RPnPSgDNrm9+L+KE0irFwFzxzIw3W4d5YIMAPaTY0GIeh7K56bsWBOaNRSvexam86pcKn2Wnecubo2d9j0h7STextJSzeq+j/YoMqF1djpdjRHsVbzYQH2PPB8bREvhMz/uezAaZ7PRY4VpIbY9Kih4mp6BjsEPZpj3gg0a2POtvEGWu0X48JX1VWKvz/eszF3mkzNdEnrF8L8dXcjLcVkcBAdDVSJzBj08Rvryog2avqVs6SycQKG9V0JuUzhf76T7JP2tWrh2ARdzK92/xLamtID39g33Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Insulin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAQK6CVAKViZ4oWPpqETKU3unwKrF_OEdMxE6c0OxwPZ8 ;
+        prov:generatedAtTime "2026-06-24T10:47:37.239562+02:00"^^xsd:dateTime .
+}

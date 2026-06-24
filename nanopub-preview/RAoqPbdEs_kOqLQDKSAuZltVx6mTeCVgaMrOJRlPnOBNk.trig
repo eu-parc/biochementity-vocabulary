@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAoqPbdEs_kOqLQDKSAuZltVx6mTeCVgaMrOJRlPnOBNk> .
+@prefix sub: <https://w3id.org/np/RAoqPbdEs_kOqLQDKSAuZltVx6mTeCVgaMrOJRlPnOBNk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAoqPbdEs_kOqLQDKSAuZltVx6mTeCVgaMrOJRlPnOBNk a owl:Class ;
+        rdfs:label "Tumor necrosis factor alfa",
+            "Tumor necrosis factor alfa"@nl-be ;
+        schema:alternateName "TNF alpha" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP18480-1> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:47.044393+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "PIsebcv9z2zKigg1WpHlGk74qqXTKVTjqRFzd16tIDrWgj4vBp5pG87/WW0+hJs2xemiVUMQIaW9kbMU7R5UY/OsJPWEKsX9OpFT43MrjAyLvZ6QwosdD+YUncA2tDuAE+jPgyNL+OASyyjCLNOjUoT5OfEfx6Amr+MnfMpUv0bM8Gr4gLMck9i98CCm1rQ13+NsXpAahHEmp3EevYnAMxpzzQGFAO9HLiWFA5+fvxJIrILjdhGJbjWQXwb7LWDoKtfb2kIslIXrflEjJQbs5CuAj/N6/LEsF5OpNaepDtfv43Xzh7uExvOePkbURqvRAFEoFXprwUirrhEJL5DL4w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tumor necrosis factor alfa" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAoqPbdEs_kOqLQDKSAuZltVx6mTeCVgaMrOJRlPnOBNk ;
+        prov:generatedAtTime "2026-06-24T10:47:47.044393+02:00"^^xsd:dateTime .
+}

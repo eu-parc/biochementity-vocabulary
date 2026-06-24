@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RA7ainTJj0uQ4GrybZZjLmOJC50aiZ4XJEKNAfR-jESpo> .
+@prefix sub: <https://w3id.org/np/RA7ainTJj0uQ4GrybZZjLmOJC50aiZ4XJEKNAfR-jESpo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA7ainTJj0uQ4GrybZZjLmOJC50aiZ4XJEKNAfR-jESpo a owl:Class ;
+        rdfs:label "N-hydroxymethyl-N-methylacetamide",
+            "N-hydroxymethyl-N-methylacetamide"@nl-be ;
+        schema:alternateName "DMAC-OH" ;
+        schema:comment "comments: * Is it maybe this  compound? https://pubchem.ncbi.nlm.nih.gov/compound/N-_4-_Hydroxymethyl_phenyl_-N-methylacetamide" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n9e634ca9315b4619aa410d7cf25f2115b1 ;
+        pehterms:hasGroupLabel "aprotic solvents" .
+    sub:_n9e634ca9315b4619aa410d7cf25f2115b1 a pehterms:ContextAlias ;
+        schema:alternateName "dmacoh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:30.866198+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "eWDtTNHM21uQ7aysaP5lO7x6bu1CbX5uMrN/IuOcAQTQuYbEjAuf+0JiOK4xjwfckKKNf0S9R+L6XpWWeyWKvrjC2HmVRzxps/Qd8ltKCotvgD5fWKKNx7Rz97KqRahxuw6NbYR8C8eS00RGgjpECs0Q0nEKn/Msn5XSOlpdFL4LP02+m9FdYKkJ1OBv/nhUqM1MJY32EWYOaXnghLOLP/NIvVlKIY30XGEf93oDsGYY0IhBgHL+rN8G9U5Av1w1+leyJrcvT+nilGbPZzRtnoX1A3oh3T4wWrWiOghWK/wbAUmDTSI7pNabMxJXfkKQWweCtIFT2yZq19+xQzuVSw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-hydroxymethyl-N-methylacetamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA7ainTJj0uQ4GrybZZjLmOJC50aiZ4XJEKNAfR-jESpo ;
+        prov:generatedAtTime "2026-06-24T10:47:30.866198+02:00"^^xsd:dateTime .
+}

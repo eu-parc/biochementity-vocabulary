@@ -1,0 +1,42 @@
+@prefix this: <https://w3id.org/np/RAalDRNUxNWRb1Y1HPt_I8bLa3XGBvU-2KATjR4rFu7zI> .
+@prefix sub: <https://w3id.org/np/RAalDRNUxNWRb1Y1HPt_I8bLa3XGBvU-2KATjR4rFu7zI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAalDRNUxNWRb1Y1HPt_I8bLa3XGBvU-2KATjR4rFu7zI a owl:Class ;
+        rdfs:label "Branched N-Methylperfluoro-1 octanesulphonamide" ;
+        schema:alternateName "bmepfosa" ;
+        rdfs:subClassOf biochementity:RA2EnNEPN6pngEG7zx0ryliD3mdECBujFfjvejaCbZRpk .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:39.994320+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "sLWIrGBoXtF0XTxG0Dn+0ttvFYuJMB+2T2bSQOdtqws/GIQiNLm/9dEoMLyBLkjTMPnPNvgBCx3Yg2I/CC2ND61W4hlJts35srQlwSiT5UhFs/fxARm4i9egUINcWKSVDEKSpcjcaaxaUitLByBMKDVZgsl/1Hltze1Bwz/8kXe47gmTsgcUhZVia4EP7aTgbiiw9wCYBxdGjMQsq78wTsGHkien15J763g56/1IJhdZsWido1yefsof/62BBN56Fu3jz3Xs96I+81mn4vUW5rkn7RnTjbWkND5zdTLGWK6RQ0kFadEWxIaC5rnjT93maCiipgmn8jAoYbpImY2uxA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched N-Methylperfluoro-1 octanesulphonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAalDRNUxNWRb1Y1HPt_I8bLa3XGBvU-2KATjR4rFu7zI ;
+        prov:generatedAtTime "2026-06-24T10:48:39.994320+02:00"^^xsd:dateTime .
+}

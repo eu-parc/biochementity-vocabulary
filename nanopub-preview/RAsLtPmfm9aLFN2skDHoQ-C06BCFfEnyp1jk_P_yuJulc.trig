@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAsLtPmfm9aLFN2skDHoQ-C06BCFfEnyp1jk_P_yuJulc> .
+@prefix sub: <https://w3id.org/np/RAsLtPmfm9aLFN2skDHoQ-C06BCFfEnyp1jk_P_yuJulc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsLtPmfm9aLFN2skDHoQ-C06BCFfEnyp1jk_P_yuJulc a owl:Class ;
+        rdfs:label "Benzo[c]fluorene",
+            "Benzo[c]fluoreen"@nl-be ;
+        schema:alternateName "7H-Benzo(c)fluorene",
+            "BcFL" ;
+        rdfs:subClassOf biochementity:RAKw3PYk2FgtZhCmmRF-SGSgb0qBA4klx8SUd4OuOUK10,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:82403>,
+            <https://identifiers.org/cas:205-12-9>,
+            <https://identifiers.org/cas:30777-20-9>,
+            <https://identifiers.org/inchikey:FRIJWEQBTIZQMD-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9150> ;
+        pehterms:hasContextAlias sub:_nf9254d5549b84fb8a74e2748bd4e47aab1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_nf9254d5549b84fb8a74e2748bd4e47aab1 a pehterms:ContextAlias ;
+        schema:alternateName "bcfl" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:10.608706+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "ldtLqVOhXhbfza80zsjEaDsI6vNq/h3tiyZt6nqvZqgnov3yN2c1A55X/6DO5vPcMc6lFGcdQ7wNRmdNdT3/NBTJpIvVyeoxoJ8crzw2jB8u0/3GN24sKbVce7MqFytPcONXLzR19oIfod3yfwtQ21JXcyZ9CdemLgqWBfYecbPG7YDxOFS/bdahB+dsu4aiuQEs8ubvhqcn9loIRP/E2TRYd8pU02oZBW5hdWEooJLU9+jdnHC4I/RtF0SIcf6o8eyiElUMEGhZAZG8BULYfbBNqONjGTaVht5pDf4GskrSgKLQiEWFvF0iAISxbYuBNr522ulxUNk0oJZsu5Vg6w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzo[c]fluorene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsLtPmfm9aLFN2skDHoQ-C06BCFfEnyp1jk_P_yuJulc ;
+        prov:generatedAtTime "2026-06-24T10:48:10.608706+02:00"^^xsd:dateTime .
+}

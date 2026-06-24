@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RATtT8paw1A-YaLyU_CBucDJdNMWevnQKNlPttyPwtFeo> .
+@prefix sub: <https://w3id.org/np/RATtT8paw1A-YaLyU_CBucDJdNMWevnQKNlPttyPwtFeo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RATtT8paw1A-YaLyU_CBucDJdNMWevnQKNlPttyPwtFeo a owl:Class ;
+        rdfs:label "Glyphosate",
+            "Glyfosaat"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "GLY",
+            "GLY"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27744>,
+            <https://identifiers.org/cas:1071-83-6>,
+            <https://identifiers.org/inchikey:XDDAORKBJWWYJS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:3496> ;
+        pehterms:hasContextAlias sub:_n25b1a7b348844db58a15a122b1173f82b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_n25b1a7b348844db58a15a122b1173f82b1 a pehterms:ContextAlias ;
+        schema:alternateName "glyp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:01.265195+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "WWzyC6mmE0YT+PEEkfjOCzVn6mfDeeTKOR6HTYAwBDCoqPPz8Elspg2PkAfbvwHCHm71+Lyx0VuxoZ1iwuWfQRsjLzp5cV3b4MUahihqNeBxx2/W2dptqcIiiHDHsu/DM+ygChr37BgjS2qnKzFxqKpj8VyMleiuX7Ao9j4JFVDf0pJKk9Js67XuHGLB9+RogDz5WAayaPgtOnDTw6clfO6kzap74sObo4jBZ8ZpmuAYSpBtRkS5lMGrlc7Tyn0OSEOE/MksqiD7J+nEl0bAi02oqgZBjP+BrolbsjY7DNxyOqvo3jKptqTjSFOzua3EWiHDKUgp8ON3ckhsYVJJng==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Glyphosate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RATtT8paw1A-YaLyU_CBucDJdNMWevnQKNlPttyPwtFeo ;
+        prov:generatedAtTime "2026-06-24T10:48:01.265195+02:00"^^xsd:dateTime .
+}

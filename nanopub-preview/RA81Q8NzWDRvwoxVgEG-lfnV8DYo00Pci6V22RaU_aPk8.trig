@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RA81Q8NzWDRvwoxVgEG-lfnV8DYo00Pci6V22RaU_aPk8> .
+@prefix sub: <https://w3id.org/np/RA81Q8NzWDRvwoxVgEG-lfnV8DYo00Pci6V22RaU_aPk8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA81Q8NzWDRvwoxVgEG-lfnV8DYo00Pci6V22RaU_aPk8 a owl:Class ;
+        rdfs:label "Cerium",
+            "Cerium"@nl-be ;
+        schema:alternateName "Ce",
+            "Ce"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33369>,
+            <https://identifiers.org/cas:13864-02-3>,
+            <https://identifiers.org/cas:7440-45-1>,
+            <https://identifiers.org/inchikey:GWXLDORMOJMVQZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23974> ;
+        pehterms:hasContextAlias sub:_n03e6fedae49548788fdaa18e2334d943b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n03e6fedae49548788fdaa18e2334d943b1 a pehterms:ContextAlias ;
+        schema:alternateName "ce" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:07.214912+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "EM4q352O+uGJQK2J3JMCAczITEF+CGY1tEOHZVC8zSr9T7l/vaRaBzCFPJ42+xZANo3/QA6lqH2YLpCFU1jNVePLyAUz0ZRKPIt0QNt8Au5DmM8cnHE26/4Qc4NKWjhP1OgA1Mi26G2puzrh0Iyl6rA1renY76zEOHDmskDQsi+emHF9EnQ1k8BBTCTGOG7rP493W1dvGFEBuN3EJj+aHj2VEj4WnQnRkGAxLrsXzSXaaDlPnhjb5HHqgB4eirJ/qlr8VddO9gXxsARq3vAiplkpyZzKe/mxBoMMCN7FiXi8hJXlE24BW3KbTDvW6ElZc7BXDepnXTzHC4R5P1V1tQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cerium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA81Q8NzWDRvwoxVgEG-lfnV8DYo00Pci6V22RaU_aPk8 ;
+        prov:generatedAtTime "2026-06-24T10:48:07.214912+02:00"^^xsd:dateTime .
+}

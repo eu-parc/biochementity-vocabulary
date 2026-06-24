@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAfFDVgdpnPJLBXFrbYcJQmSNQA_GmSQ7-OHMRX78bnvc> .
+@prefix sub: <https://w3id.org/np/RAfFDVgdpnPJLBXFrbYcJQmSNQA_GmSQ7-OHMRX78bnvc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAfFDVgdpnPJLBXFrbYcJQmSNQA_GmSQ7-OHMRX78bnvc a owl:Class ;
+        rdfs:label "Triclocarban",
+            "Triclocarban"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_64857> ;
+        schema:alternateName "3-(4-Chlorophenyl)-1-(3,4-dichlorophenyl)urea|1-(4-Chlorophenyl)-3-(3,4-dichlorophenyl)urea",
+            "Triclocarban" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:48347>,
+            <https://identifiers.org/cas:101-20-2>,
+            <https://identifiers.org/inchikey:ICUTUKXCWQYESQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:7547> ;
+        pehterms:hasGroupLabel "care products" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:53.272706+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "WMvWz8Ruazoab2IIY0ZFkAS+FI/UDlV+MNH+Ujc+ovbnn+pqsZm6jpJbWpjQGBywzreXNFeOsY7umseDnxgZ38Fos7jidYW8DN8UKL3GwV/t7U91Zrv8E5APAxuzZjan2tirDPgdKfsbHys03W3+Pu7MkhaEAWxL5RV6Be7dHifa9KbMR+nyC9uLUSN8pkAiYHUYf1MnHMH9xf8xMWVucykeA6u81RSEX0/fmrsuo3kfjt833sv4X+iwVl/8NkVP+u4XjM1Q0LBgEwIUGxvM08lzfYSuRCSW2Khp1J45xZWtod/NX+nAPic82mCgQ7tj/DtjZniQWUjPhjhn8QqAmw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Triclocarban" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAfFDVgdpnPJLBXFrbYcJQmSNQA_GmSQ7-OHMRX78bnvc ;
+        prov:generatedAtTime "2026-06-24T10:47:53.272706+02:00"^^xsd:dateTime .
+}

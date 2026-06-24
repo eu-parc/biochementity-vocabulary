@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RATbyzuQj9rQ_6ZfAN-iOent9fwTK3K3xj2Dy6IHRK8Go> .
+@prefix sub: <https://w3id.org/np/RATbyzuQj9rQ_6ZfAN-iOent9fwTK3K3xj2Dy6IHRK8Go/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RATbyzuQj9rQ_6ZfAN-iOent9fwTK3K3xj2Dy6IHRK8Go a owl:Class ;
+        rdfs:label "Gamma-hexachlorocyclohexane",
+            "Gamma hexachlororcyclohexaan"@nl-be ;
+        schema:alternateName "lindane",
+            "gHCH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/pubchem.compound:483925796> ;
+        pehterms:hasContextAlias sub:_n521767346f6f436db1d66c7b1a03212cb1 ;
+        pehterms:hasGroupLabel "organochlorine compounds",
+            "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAv-kBORNBc09m4N1GiagdvXraIjl_D4cyrWRmBLknAzs .
+    sub:_n521767346f6f436db1d66c7b1a03212cb1 a pehterms:ContextAlias ;
+        schema:alternateName "ghch" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:04.658492+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Ih8Zp2nti8h7ixCD7gc9mvVegJ9Tndck7pRgrEyGX83Aty0QJvZaGbFvv6Nr74O2EyqlxopnClS6BxcG4jE2XrUWHO4rA8Fkc98LrMnbpF8BlNj5X6lc2bZ6JXOmTRP5sy4f/HvINCZd1hZ2QbnyosIoWRhLtvrROuFfjMq/zHKr3x7mZePzP2sy+JL6poSxLnq8/R9N85enx0XZL+PUPo9fa48P8O/qela8cLEpXjLrCjpVQ09nrAk2a15+MF9HiQc0UtQX3NSaHb8CCsi8Rl1DrhdblxKQf8thxiac9AjJ7pVbI/gb23QyFIMYHzg3ux6WlrdDI/MTOJvcIZ0Uvw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Gamma-hexachlorocyclohexane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RATbyzuQj9rQ_6ZfAN-iOent9fwTK3K3xj2Dy6IHRK8Go ;
+        prov:generatedAtTime "2026-06-24T10:48:04.658492+02:00"^^xsd:dateTime .
+}

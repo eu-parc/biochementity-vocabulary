@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAl0mzsXygMn1SIfAmCuOnq2GHXeAqUAGerrz1dPHf3OY> .
+@prefix sub: <https://w3id.org/np/RAl0mzsXygMn1SIfAmCuOnq2GHXeAqUAGerrz1dPHf3OY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAl0mzsXygMn1SIfAmCuOnq2GHXeAqUAGerrz1dPHf3OY a owl:Class ;
+        rdfs:label "Palladium",
+            "Palladium"@nl-be ;
+        schema:alternateName "Pd",
+            "Pd"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33363>,
+            <https://identifiers.org/cas:7440-05-3>,
+            <https://identifiers.org/inchikey:KDLHZDBZIXYQEI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23938> ;
+        pehterms:hasContextAlias sub:_n9dc5bb05ea994ec9856580ba29958a85b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n9dc5bb05ea994ec9856580ba29958a85b1 a pehterms:ContextAlias ;
+        schema:alternateName "pd" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:13.404810+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mezvDWrkrMZ2UN6Ypk4G6TLmYDg8V1yb2LZY7BserrRCpMKy8e667fEocElZ/RvI+mDZbVZikriUvp6S4hAuBdsTVW5IjJBF4VHfvDUaN9E+iMC4AWHhwAOiQHVrNBgNGeeLzXh0EfbWJwW0tdFL1wiUE8m74mg+D50vcmmGbTHv3Uy4OKKALWxjPMAmZA+d82PpYYebLDkj9nhUu1wMIPmTv2QnvDGHg9vx+dIjXnUM3ocDZcSvNOSihCkpZduvFUbKZT1MJy1o4T1UPTnacvGptH1U0+QmC3EXEkqEcjU/mRRVaHCs+33L3MXRiSgj4PjjYAbRbPpALKXfonj0jQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Palladium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAl0mzsXygMn1SIfAmCuOnq2GHXeAqUAGerrz1dPHf3OY ;
+        prov:generatedAtTime "2026-06-24T10:48:13.404810+02:00"^^xsd:dateTime .
+}

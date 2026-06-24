@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RA-UJj2aCvAE714Wzkqip-4AqNgdipzvDz1B4T8TK41dY> .
+@prefix sub: <https://w3id.org/np/RA-UJj2aCvAE714Wzkqip-4AqNgdipzvDz1B4T8TK41dY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-UJj2aCvAE714Wzkqip-4AqNgdipzvDz1B4T8TK41dY a owl:Class ;
+        rdfs:label "2-Ethylhexyl 4-(dimethylamino)benzoate",
+            "Octyl dimethyl PABA"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+        schema:alternateName "2-Ethylhexyl 4-(dimethylamino)benzoate",
+            "padimate-O",
+            "DABI"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:135932>,
+            <https://identifiers.org/cas:21245-02-3>,
+            <https://identifiers.org/inchikey:WYWZRNAHINYAEF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:30541> ;
+        pehterms:hasContextAlias sub:_n8952aeda61884512b5259435c92ff921b1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" .
+    sub:_n8952aeda61884512b5259435c92ff921b1 a pehterms:ContextAlias ;
+        schema:alternateName "dabi" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:51.921843+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "F2qS9b5MudZT67NZQShm2VZaQ89EAPvN0AACG+4pkvp149sVMqEDR9g0CpKhK4dxKOhQX3zzNjyG87i/Pp13UmGIjEkiKXQCeEbBqKQvq7cA0xlUjklCu3ktaPM3cbwPr+o4o/PVp3Ir8yz7EF6MQeKsAuVBMHFf3FiAYOxWkIOs7V/bVw3TVPUtXC9wP1iCLCR11w6++p9Mqxh8jvy9j9v7isWuW/+aJ+qjOvzuPmK+dEJxA+lgCCKYFYDrQ6b7lURP6k6GnzYAAAp8QQpb1zU3tIG304K+KazKRJ2ehqLbnZinnK5+8/Ls1EVz+fweZgoQSgbhOgz7raqrWYNk1w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-Ethylhexyl 4-(dimethylamino)benzoate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA-UJj2aCvAE714Wzkqip-4AqNgdipzvDz1B4T8TK41dY ;
+        prov:generatedAtTime "2026-06-24T10:47:51.921843+02:00"^^xsd:dateTime .
+}

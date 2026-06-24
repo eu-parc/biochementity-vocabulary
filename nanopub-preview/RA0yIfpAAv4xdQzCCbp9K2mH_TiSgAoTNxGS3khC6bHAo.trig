@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA0yIfpAAv4xdQzCCbp9K2mH_TiSgAoTNxGS3khC6bHAo> .
+@prefix sub: <https://w3id.org/np/RA0yIfpAAv4xdQzCCbp9K2mH_TiSgAoTNxGS3khC6bHAo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA0yIfpAAv4xdQzCCbp9K2mH_TiSgAoTNxGS3khC6bHAo a owl:Class ;
+        rdfs:label "Zearalanone",
+            "Zearalanon"@nl-be ;
+        schema:alternateName "ZAN" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:35051>,
+            <https://identifiers.org/cas:5975-78-0>,
+            <https://identifiers.org/inchikey:APJDQUGPCJRQRJ-LBPRGKRZSA-N>,
+            <https://identifiers.org/pubchem.compound:108003> ;
+        pehterms:hasContextAlias sub:_na75e43c583cb4e77a1b6a50a22f478eab1 ;
+        pehterms:hasGroupLabel "mycotoxins" ;
+        pehterms:isMetaboliteOf biochementity:RAo9q3u3N4T5T1H8LMigQiZ3LLc1A9erhDYMbO6_cs1Rs .
+    sub:_na75e43c583cb4e77a1b6a50a22f478eab1 a pehterms:ContextAlias ;
+        schema:alternateName "zan" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:22.773397+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "D0LRVsPK4XX06v3fRcc14EwIHmLrbP8TdKH5dkVRibIjcEl/ZemUs3Qim3eTJQJq6nxwZVCghfG6dCuJimXca3pPYY0j5b9bHnjj4yE/MXY+da3Q6Hefa0RLTHgnXv87EeOcub1eiuBL+sDd+qJDJxqP0OeFw4CVDTVDRhE4Y6baUJmxhLLLKSZqbdh1mWjP+TKWGp/dY72ZCwMJqw0vGFYXDBAQryMv6TQev0w9BRlGbKPNEO5R6zeMO8vPoHcigKA0KOq7FNbI9C5G5zfL805HvUgbQ9L2Xud7WMlr+yLgufnYEjhTGmRn5mDvlcl9yRZkGd4+XmyK8V+5aA6+1w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Zearalanone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA0yIfpAAv4xdQzCCbp9K2mH_TiSgAoTNxGS3khC6bHAo ;
+        prov:generatedAtTime "2026-06-24T10:48:22.773397+02:00"^^xsd:dateTime .
+}

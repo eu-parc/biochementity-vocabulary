@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RALJkyEvDi6M4VSgkYnOv4BXEE64nlAB0p_p9mtJIOuCE> .
+@prefix sub: <https://w3id.org/np/RALJkyEvDi6M4VSgkYnOv4BXEE64nlAB0p_p9mtJIOuCE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALJkyEvDi6M4VSgkYnOv4BXEE64nlAB0p_p9mtJIOuCE a owl:Class ;
+        rdfs:label "2-(propyloxy)ethanol",
+            "2-(propyloxy)ethanol"@nl-be ;
+        schema:alternateName "EGnPE" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:YEYKMVJDLWJFOA-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:55.219786+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "ekqcF3kxUOswFuigB6arFmOK3+EcdH8mcJOFqn6awENvchCH6bLxML/bMKyUnBRg8RTKKQQkpIADnZmoLNvi2nRpH2U16023I/g79EsZN0deDhskeu9CF9wpTfMv6JlsjnGjNb62cOxSTMXmUOlVGlmCVoKC185fEWP4jxFpuBGq0f1irm3NPY8Hs2isPyw09LKavxN2QVdoqY++ZDbLAntUNJf/UMlbGLOVtWFIOWVW8eL/Y1V2Dr5X/sQFU5+VzVuBm1AfGmAgbAtWj5SFq8RmtC/BXODrPnKZgZaJXboNiRXMs+RbD3i/cUx7JEI/daaPFlJ+PzwYFkYm3JMIIw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-(propyloxy)ethanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RALJkyEvDi6M4VSgkYnOv4BXEE64nlAB0p_p9mtJIOuCE ;
+        prov:generatedAtTime "2026-06-24T10:47:55.219786+02:00"^^xsd:dateTime .
+}

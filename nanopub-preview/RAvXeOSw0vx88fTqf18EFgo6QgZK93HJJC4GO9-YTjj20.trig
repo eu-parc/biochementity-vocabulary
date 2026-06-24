@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAvXeOSw0vx88fTqf18EFgo6QgZK93HJJC4GO9-YTjj20> .
+@prefix sub: <https://w3id.org/np/RAvXeOSw0vx88fTqf18EFgo6QgZK93HJJC4GO9-YTjj20/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAvXeOSw0vx88fTqf18EFgo6QgZK93HJJC4GO9-YTjj20 a owl:Class ;
+        rdfs:label "2-ethylhexyl phenyl phosphate",
+            "2-ethylhexylfenylfosfaat"@nl-be ;
+        schema:alternateName "EHPHP",
+            "EHPHP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:20403-99-0>,
+            <https://identifiers.org/inchikey:UGIWGFXQNPWKPR-UHFFFAOYSA-M>,
+            <https://identifiers.org/pubchem.compound:18761893> ;
+        pehterms:hasContextAlias sub:_nba2f5fa3a3f247b2a9e15d6724366113b1 ;
+        pehterms:hasGroupLabel "flame retardants" ;
+        pehterms:isMetaboliteOf biochementity:RANhsv-dYtQBoqaPbVFpkvnZieezelKsAmph93w1pP63E .
+    sub:_nba2f5fa3a3f247b2a9e15d6724366113b1 a pehterms:ContextAlias ;
+        schema:alternateName "ehphp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:21.790205+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Ew1ASMsurrloeI7GexvBHEkCxoK1XGFlNk1MiGVtgVOIuDArgRE7zFfmH8kM5FK2NJ6cQse5jCRjL6mJwnxcPxtV8m+DeaDLFWV4VbrRs23mtcKFXPaZS09say+aH+Dwaw+ViAAIOvDTGSqEMpAc4tAKtjoHlZ+1AfeKsKDil4hWGb14WdIRZsPJw+t89Dz7Uy7FmZDadAr3j5Blk7vOsjDXd8vXmd6tF+VWyw6cuVTL5xDy2j4vP5Eh6D7BfOkN+H+8uyqqBIUpijKfy+e+JZhCiLx+hq38VOx4zSS5/RAuPVvN9CgP6IkalrZMVlK97S7RnKjuhmd/y78w0KkaLQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-ethylhexyl phenyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAvXeOSw0vx88fTqf18EFgo6QgZK93HJJC4GO9-YTjj20 ;
+        prov:generatedAtTime "2026-06-24T10:48:21.790205+02:00"^^xsd:dateTime .
+}

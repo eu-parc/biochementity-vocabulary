@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAww_lQJiZ-IQ87ORMV_ET_AlG1_wsDKqxqRV7gqlkzYE> .
+@prefix sub: <https://w3id.org/np/RAww_lQJiZ-IQ87ORMV_ET_AlG1_wsDKqxqRV7gqlkzYE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAww_lQJiZ-IQ87ORMV_ET_AlG1_wsDKqxqRV7gqlkzYE a owl:Class ;
+        rdfs:label "pyrethroids" ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "pesticides pyrethroids" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:28.184486+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mmqGld2GKZLPdTwlORXFGvXdvEhFj0JDMmowKj+ojVTorh96JAsKRtUf8iETS+6i2N9fL/MpGjEyKkdGYQIHo1kR/oWBbhAMy9O+3iM1dtGYu7BUpNosPKpGBC/s5btzP+f3NdAxWYBw8UPBlrsMhTSC1DcBKWUpiA+SzGCTVwHKgIP65EZ6d7dtTnwdHSK0ZOIJGLHz4NMYU4XHBst6TB/Gt4rMY2WbgCjwjyfDZs5WwTaMI5Zte+HM9DSvo/23OKwPV5uOl9nHhZNUKBIAygp1xQb//pJJ1T4x+QKddI6Oyj0kYi+TpsmtRygrY+T83NudTYSt3moF8CCYiknQZg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "pyrethroids" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAww_lQJiZ-IQ87ORMV_ET_AlG1_wsDKqxqRV7gqlkzYE ;
+        prov:generatedAtTime "2026-06-24T10:47:28.184486+02:00"^^xsd:dateTime .
+}

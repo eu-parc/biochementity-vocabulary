@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAl3v3Ra9kE-6gNWF91mAQiLBGCeAIAkk0TYL4rS-iEug> .
+@prefix sub: <https://w3id.org/np/RAl3v3Ra9kE-6gNWF91mAQiLBGCeAIAkk0TYL4rS-iEug/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAl3v3Ra9kE-6gNWF91mAQiLBGCeAIAkk0TYL4rS-iEug a owl:Class ;
+        rdfs:label "2-(2-(2-methoxyethoxy)ethoxy)ethanol",
+            "2-(2-(2-methoxyethoxy)ethoxy)ethanol"@nl-be ;
+        schema:alternateName "TEGME" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:84233>,
+            <https://identifiers.org/cas:112-35-6> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:56.445817+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "NDcQCrgAQC4hvrNsk/tmkiM44nLhW4lgVCS5fkGvSuXi8EIJqY9faBuJRLxpdhuiUVoMNiNKxQmHt2D+a0u3ernWljtCYqR/tXCiwdS6zZft/WHc5+3f77SM9PNaVjMzL1aA/NKq4QiReq65KLaN5Q+jT+l1kx4Rt94c1QUoDn9NqQD3rLazwrWGSkB1Jso+j0pz6lln04X2S6z4YtdY0NtPbvTHjlR7XTKESdNRJLW54ZGbfmEb3yWo1Ie8GWDhKehxe6YrNfH5HgW58bKCJAXidaShusGVCWX88tHOYs1ISzABTurimi0c/P965W8AF3Oxi8y7XVSZhyH4a1vDnw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-(2-(2-methoxyethoxy)ethoxy)ethanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAl3v3Ra9kE-6gNWF91mAQiLBGCeAIAkk0TYL4rS-iEug ;
+        prov:generatedAtTime "2026-06-24T10:47:56.445817+02:00"^^xsd:dateTime .
+}

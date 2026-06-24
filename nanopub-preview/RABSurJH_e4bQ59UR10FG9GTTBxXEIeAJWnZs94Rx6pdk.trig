@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RABSurJH_e4bQ59UR10FG9GTTBxXEIeAJWnZs94Rx6pdk> .
+@prefix sub: <https://w3id.org/np/RABSurJH_e4bQ59UR10FG9GTTBxXEIeAJWnZs94Rx6pdk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RABSurJH_e4bQ59UR10FG9GTTBxXEIeAJWnZs94Rx6pdk a owl:Class ;
+        rdfs:label "cotinine",
+            "cotinine"@nl-be ;
+        schema:alternateName "cotinine",
+            "cotinine"@nl-be ;
+        rdfs:subClassOf biochementity:RAvJG_FQjTittJOxbUqUkiJ8JiwacBtsJvXbnJRRq2-mQ ;
+        skos:exactMatch <https://identifiers.org/CHEBI:68641>,
+            <https://identifiers.org/cas:486-56-6>,
+            <https://identifiers.org/inchikey:UIKROCXWUNQSPJ-VIFPVBQESA-N>,
+            <https://identifiers.org/pubchem.compound:854019> ;
+        pehterms:hasContextAlias sub:_nf0a3c3183baa4413aadefbcfb512172fb1 ;
+        pehterms:hasGroupLabel "alkaloid" .
+    sub:_nf0a3c3183baa4413aadefbcfb512172fb1 a pehterms:ContextAlias ;
+        schema:alternateName "cot" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:18.414806+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "SKw/2x/t6Cx6x1AwqT8qCRSDEG7iExwx2x8/YKJev8LJQJGq4QXG1rlzEYlzu1aXeH9NcjJZmLRTPzOpqsQMhWlwKt4j2cNqXYRrC7ZF0rv9iWBKGF4lQh6/DHipaH6CoSkrrPX20jKe3smohMxzu+kGaNLcFVNDjG5f0GzbqIhhT/dxbSuU6TK+wm4AanlcRzrZU5TxGV93VaPoAQXieAuB/2mfsKEbRevx3aCaSdLJg6c5aJdRbAJeRZgxJYuYNktyNZuSakjNObYrxpP6N1wqB4Nok4kZLWzf/qZLovNiWl58DCppv5LRbtablt7XaEcEMv/OcnA2PlDSBw1UgQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "cotinine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RABSurJH_e4bQ59UR10FG9GTTBxXEIeAJWnZs94Rx6pdk ;
+        prov:generatedAtTime "2026-06-24T10:48:18.414806+02:00"^^xsd:dateTime .
+}

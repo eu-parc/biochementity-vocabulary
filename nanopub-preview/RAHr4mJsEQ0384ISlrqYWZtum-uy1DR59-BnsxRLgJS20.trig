@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAHr4mJsEQ0384ISlrqYWZtum-uy1DR59-BnsxRLgJS20> .
+@prefix sub: <https://w3id.org/np/RAHr4mJsEQ0384ISlrqYWZtum-uy1DR59-BnsxRLgJS20/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAHr4mJsEQ0384ISlrqYWZtum-uy1DR59-BnsxRLgJS20 a owl:Class ;
+        rdfs:label "Linear 8:2 polyfluoroalkyl phosphoric acid diesters",
+            "Lineair 8:2 fluortelomeerfosfaat diester"@nl-be ;
+        schema:alternateName "8:2 Fluorotelomer phosphate diester",
+            "8:2 diPAP",
+            "8:2 diPAP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83540>,
+            <https://identifiers.org/cas:678-41-1>,
+            <https://identifiers.org/inchikey:AFWOYEYXUDHGHF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:3022253> ;
+        pehterms:hasContextAlias sub:_n3f0416d2df734581a92de4b7c8d5ce11b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n3f0416d2df734581a92de4b7c8d5ce11b1 a pehterms:ContextAlias ;
+        schema:alternateName "eightdipap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:51.707203+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "GJy5YBqHTEaBLKFzGxJsP7LpMZGxskCAoeLO3EhVZVxF12a1p9bwuBkJOsDgqcnhj6anooEfbq651CctFWsqrOeBYKvJV0+7jDuuPG8Aq2SFiqFADBVwjKr5QKDZTYqkzg00WYibvY+XKbcZVemtkl0K8dONmMARbkopAP0nN1sFQWOnIjiVtXLaQb3Ube3THjbiLJnDSFZD8vnT6JrqqAcnwEnZtvZtIwW2P8TsEZvDryB4eBXE2Y9hjgb+qCVBNDtLyd0R/YC1OVuL4CPYY/1+/cyxAdLol2K/hEE0pHqy9UBFlaiW3s4JkP+oNLqjN0wy5hIX0pmF+mA958ff6A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear 8:2 polyfluoroalkyl phosphoric acid diesters" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAHr4mJsEQ0384ISlrqYWZtum-uy1DR59-BnsxRLgJS20 ;
+        prov:generatedAtTime "2026-06-24T10:47:51.707203+02:00"^^xsd:dateTime .
+}

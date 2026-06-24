@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAby970M3HO8jD1KSbd2tPWn8hftDzm50bKoQPUaVTtys> .
+@prefix sub: <https://w3id.org/np/RAby970M3HO8jD1KSbd2tPWn8hftDzm50bKoQPUaVTtys/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAby970M3HO8jD1KSbd2tPWn8hftDzm50bKoQPUaVTtys a owl:Class ;
+        rdfs:label "Cis-nonachlor",
+            "Cis-nonachloor"@nl-be ;
+        schema:alternateName "Cis-nonachlor" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:5103-73-1>,
+            <https://identifiers.org/inchikey:OCHOKXCPKDPNQU-MSFPVELZSA-N>,
+            <https://identifiers.org/pubchem.compound:12313426> ;
+        pehterms:hasContextAlias sub:_n4cca20ef6eb04f5a835a7069eb944311b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds",
+            "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RA5jMEzTHztxyjZWh6D9jz68ek-7ykdq3NMOfDJSsYoJs .
+    sub:_n4cca20ef6eb04f5a835a7069eb944311b1 a pehterms:ContextAlias ;
+        schema:alternateName "cisnonac" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:15.661060+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "TRoMJreSFouy3PL70IczlwpboN0qy50UE6rgT0LTxQuZvGyyIKQR9+cpJM4TF+sXb81YBRybq9xOrGiR2CrJOSr4IgtnTaBrzjRaLhbRWg3Ioy0MKOdbhKNLSGURz+Kho5DT9ZEK1yb+9Y6EWnvQGvsS+MYg+MgrPd2mF4tYZf0sTN3FBhhUv9JKnxkwRclFXktno529Inzo0XqXnFNQH4iZXHSoXTb7l8aflfRDT4nucUo2m2WQ3Ug5QmsA4qbajpaBe6f/0FoZUK895IN9Uey/YE7EYKAg5zgEKNvv5meJXgTz2WZC+DVrrwjCBu+9+ugQ1yN8kOXcIH8uyAUz0Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cis-nonachlor" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAby970M3HO8jD1KSbd2tPWn8hftDzm50bKoQPUaVTtys ;
+        prov:generatedAtTime "2026-06-24T10:48:15.661060+02:00"^^xsd:dateTime .
+}

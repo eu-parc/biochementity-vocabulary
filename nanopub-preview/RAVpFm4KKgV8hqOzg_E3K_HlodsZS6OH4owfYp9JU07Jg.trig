@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAVpFm4KKgV8hqOzg_E3K_HlodsZS6OH4owfYp9JU07Jg> .
+@prefix sub: <https://w3id.org/np/RAVpFm4KKgV8hqOzg_E3K_HlodsZS6OH4owfYp9JU07Jg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVpFm4KKgV8hqOzg_E3K_HlodsZS6OH4owfYp9JU07Jg a owl:Class ;
+        rdfs:label "Mono-n-butyl phthalate",
+            "Mono-butyl ftalaat"@nl-be ;
+        schema:alternateName "MnBP",
+            "MnBP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:88522>,
+            <https://identifiers.org/cas:131-70-4>,
+            <https://identifiers.org/inchikey:YZBOVSFWWNVKRJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:8575> ;
+        pehterms:hasContextAlias sub:_n544d41759bc2441ba2c7fb6e5074ddc9b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAFvJiXFBTeG8RKlRSE9oZLRHmx5JGGL1l-P3s90tV9pM .
+    sub:_n544d41759bc2441ba2c7fb6e5074ddc9b1 a pehterms:ContextAlias ;
+        schema:alternateName "mnbp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:31.590678+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "plG9F5fxE2slHti0qI4QXO0vARag3SNXDEb8zXK8QtHDbB0zOz8jC6IemW4wkWvy0OBd/OHr0bGNt96HKJOlGr01/bwN5XNYYjuzSLF885Ak6pgsJM93Mh4wyAvtfX+rzNQrECjIbfWyDOaNF/5vztJ6fVVonk7sC7hfty+I6pRtMJgczYanmEff8aq/zMfuAntjXkv9CEa4xfnX5FY9TVrN8w9NSrzf7xbUk5ohNyNt2Dj8crDhy/CI8JhM7Gc40wdnw5SXGIX7XuSmriJFX7ejD9hDJjb/9jv/QfQP3dOEvvIFHWhXl+mEwad0zfUkcc7t5Z9a1kF/BjuaDb0pXA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono-n-butyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAVpFm4KKgV8hqOzg_E3K_HlodsZS6OH4owfYp9JU07Jg ;
+        prov:generatedAtTime "2026-06-24T10:48:31.590678+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RACVbkkJ46B-cntIu4SbrJBixmdZ2SFbjfu_e5Xe7iBTw> .
+@prefix sub: <https://w3id.org/np/RACVbkkJ46B-cntIu4SbrJBixmdZ2SFbjfu_e5Xe7iBTw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RACVbkkJ46B-cntIu4SbrJBixmdZ2SFbjfu_e5Xe7iBTw a owl:Class ;
+        rdfs:label "Iodine",
+            "jodium"@nl-be ;
+        schema:alternateName "iod" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:24859>,
+            <https://identifiers.org/pubchem.compound:807>,
+            <https://loinc.org/LP15157-8> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:56.292376+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Luw+i0ummze6p01rRWSXGJv2aBh/sQscnQjoDfnHEfdiaOVhVMpZ3kaNI/5OrYzAEeL9QvdlcWlssoBhScSqzv77jKLs7eOalmF7T7Zrnd2eTjueLe1kYcQPf9fGT84mjFfNacBo55lTvfcrz2yGMQRCGjTIvifEMCuMJutkP4EOvHRs424Z9bLuQhvfLwr2yNwBg/Uc84erhBpDTboEIOP7hxqoWilFZS7Dp7tA7S4I6wQ1QvpX6m36mPGNooQgfanMX0fe5bW5qrtrJNW28JCAAWzQ+ALVPWCKRzasxF0YkI3GsxWSHzc+yNC5qw5Vm4BKZzKiZdBsQJGUZp/cHQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Iodine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RACVbkkJ46B-cntIu4SbrJBixmdZ2SFbjfu_e5Xe7iBTw ;
+        prov:generatedAtTime "2026-06-24T10:47:56.292376+02:00"^^xsd:dateTime .
+}

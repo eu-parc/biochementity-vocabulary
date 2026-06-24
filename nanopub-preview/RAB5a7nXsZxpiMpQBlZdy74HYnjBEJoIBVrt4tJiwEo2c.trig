@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAB5a7nXsZxpiMpQBlZdy74HYnjBEJoIBVrt4tJiwEo2c> .
+@prefix sub: <https://w3id.org/np/RAB5a7nXsZxpiMpQBlZdy74HYnjBEJoIBVrt4tJiwEo2c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAB5a7nXsZxpiMpQBlZdy74HYnjBEJoIBVrt4tJiwEo2c a owl:Class ;
+        rdfs:label "Linear Perfluoroundecanoic acid",
+            "Lineair Perfluoro-n-undecaanzuur"@nl-be ;
+        schema:alternateName "lpfunda",
+            "PFUnA"@nl-be ;
+        rdfs:subClassOf biochementity:RAhVsmF67AO_tdQduah8JH-U55wekGXaHBQ8s_D2fyI3c,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83493>,
+            <https://identifiers.org/cas:2058-94-8>,
+            <https://identifiers.org/inchikey:SIDINRCMMRKXGQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:77222> ;
+        pehterms:hasContextAlias sub:_nb3d4e2bd451c40778e4377b0a9c06110b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RA_dYp4bwKPWxhPk1Gi2QsiKmHKnJ_TLnThMLCqZRCN38 .
+    sub:_nb3d4e2bd451c40778e4377b0a9c06110b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfunda" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:39.782661+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "PNRDohqwcjq0ZI+dWypIQFseunxa7nWxGW2D/jkdgGd4YWiPkGwK0hLrCCC/bfjmGS5BMcd/5Zp2NKmZTv85tz/6+G9NXyzlfxngSq0IvKjeiR+eKv1z2mCPV5QljlU44tVdsKGN+WwsEU0YVw0jnpDyq5DKvGpkoRBQO81X+GKJyq/nXNOU95H+A7MsdqeHralKilYwTIRcze/EAtq+CF8O3tWH4riFDqVVtB1NQgjSdW6jwsDvLMnHN7ofi/TRGaDSHKRtNJzij4plI5yA24BHvSPY7oJp+RcJbu2IG2UYpyG717iIpBbiqy3vClAyelvVDcISwheqarxq2ReAXg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluoroundecanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAB5a7nXsZxpiMpQBlZdy74HYnjBEJoIBVrt4tJiwEo2c ;
+        prov:generatedAtTime "2026-06-24T10:48:39.782661+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAh40q7C3nHmWFEXx0WjKtOVGQbhu6ChK9qE4XeWTZ0wY> .
+@prefix sub: <https://w3id.org/np/RAh40q7C3nHmWFEXx0WjKtOVGQbhu6ChK9qE4XeWTZ0wY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAh40q7C3nHmWFEXx0WjKtOVGQbhu6ChK9qE4XeWTZ0wY a owl:Class ;
+        rdfs:label "2-phenoxyethanol",
+            "2-fenoxyethanol"@nl-be ;
+        schema:alternateName "EGPhE" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:64275> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:58.453677+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "kHqIFTkxMNv1qRhu8Idp6pspS75EhXaTXp8BIjcggbUHBEbGroKvoYxji6FMzEjQNoxkyiQUR5IE9LMhHUcEkZB97wsXf3nEascpeDLUW0KOLuNv0LzzHIHSN+IubepLvZGT5vksMAX3jftoFPisF7tkkWw70Fme+NNAcCsFnuGT5RrcmP68oDRDqSAj+YNUwnIcT9YeLAnYISy/LrsHmguoZ/O2dC1pHH5Ki+Lqqc7d3j+02cW+3q7pWJvz7izgxFp3FaxA5ErImNn/yN7vL2OfU7rhRmPMhpcnhNXOK2NcDEIVLG6wLHilwB3ELfmmByHC3zfMxPcsy9NAqH5uHA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-phenoxyethanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAh40q7C3nHmWFEXx0WjKtOVGQbhu6ChK9qE4XeWTZ0wY ;
+        prov:generatedAtTime "2026-06-24T10:47:58.453677+02:00"^^xsd:dateTime .
+}

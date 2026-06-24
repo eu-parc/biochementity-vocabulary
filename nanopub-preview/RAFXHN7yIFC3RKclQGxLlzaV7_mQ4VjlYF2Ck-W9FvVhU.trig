@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAFXHN7yIFC3RKclQGxLlzaV7_mQ4VjlYF2Ck-W9FvVhU> .
+@prefix sub: <https://w3id.org/np/RAFXHN7yIFC3RKclQGxLlzaV7_mQ4VjlYF2Ck-W9FvVhU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAFXHN7yIFC3RKclQGxLlzaV7_mQ4VjlYF2Ck-W9FvVhU a owl:Class ;
+        rdfs:label "Dioxins/furans and related compounds",
+            "Dioxins/furans and related compounds"@nl-be ;
+        schema:alternateName "Dioxins/furans and related compounds" ;
+        rdfs:subClassOf pehterms:BioChemEntity .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:54.825449+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "h5tl3XaejjTzYzVr176qE97Lwg1p8n5+pBGF/vDSxILMpPIdkvPCdPakRhKSg6W05dzvWb4SCeF8WOc8zK9GQHiV0swsINaifxAF2FXtgY5yh2dZ/qOazLQQXcmEiE1hNEB6NN/EzLt9OoYRwu3GfkWH+zUgP5F4Atrw819sBWeQO6h2T/nBHD4Zio0P4qorZXtWwUpRCrnnkcEzyJNgW/lf4d3FB//ZObtGCwbn9c4izc8TlpqJyXM7fIeb6u6W3qtZ8XmKJeOusERmV/jGtE+Hcu6zA3VdTXx9sNEloFtUtUbH3f36Nh6cTa1BCyUIwFZJIyKdaSbG3B0w28pkIQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dioxins/furans and related compounds" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAFXHN7yIFC3RKclQGxLlzaV7_mQ4VjlYF2Ck-W9FvVhU ;
+        prov:generatedAtTime "2026-06-24T10:47:54.825449+02:00"^^xsd:dateTime .
+}

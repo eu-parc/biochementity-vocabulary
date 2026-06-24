@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAtjCYI9zGtguNdjL9DbW-23_H5p_3h5XET1C535PZMYg> .
+@prefix sub: <https://w3id.org/np/RAtjCYI9zGtguNdjL9DbW-23_H5p_3h5XET1C535PZMYg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtjCYI9zGtguNdjL9DbW-23_H5p_3h5XET1C535PZMYg a owl:Class ;
+        rdfs:label "Acetamiprid-N-desmethyl",
+            "Acetamiprid-N-desmethyl"@nl-be ;
+        schema:alternateName "(E)-N-((6-chloropyridin-3-yl)methyl)-N'-cyanoethanimidamide",
+            "Acetamiprid-N-desmethyl",
+            "Acetamiprid-N-desmethyl"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:190604-92-3>,
+            <https://identifiers.org/inchikey:AYEAUPRZTZWBBF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11344811> ;
+        pehterms:hasContextAlias sub:_n0f6a3ec6c84b4a4f8831e0921da1b8d4b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAt8ZMpMQVYHjLLMM9KqANsPdPAwCOKqyi_MyelC_u6_I .
+    sub:_n0f6a3ec6c84b4a4f8831e0921da1b8d4b1 a pehterms:ContextAlias ;
+        schema:alternateName "acetamipridndes" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:26.041461+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "iMWKy8G9temRaqO4b89h4qIwGJ1hZAVTSOtx65P++9BU2vLHGE07Xi1kUI9Ni/UQ5K5A2U4dRzyMtw4DKsOCRKpG6nAkBLnQyzAua711mneldrQG5b4nLNDSVd1jP1LKrMno7273QCmOJQ5G548LY8fsIEikFob/uSEaedo9enZQoJeT/lfvt6lxoNs0T9ZmFn4jP2DJg8Iof2SphrZJ8nyIcMPVG712hzI8zicUGVweP0a6xRCFyoP9O6ZZsKVvAuDpECTVB3JOE2rZfeWNO06HoHr+7HpW3JLU1D4Psof6McHoQ6QvBV1VyZqOU3tMQWIadMYeermHIj/0o1JHdw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Acetamiprid-N-desmethyl" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtjCYI9zGtguNdjL9DbW-23_H5p_3h5XET1C535PZMYg ;
+        prov:generatedAtTime "2026-06-24T10:48:26.041461+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RANpNkbMs5Z3tyrkYq-d0kVh5SDF94hPUrECV-bDOqKPo> .
+@prefix sub: <https://w3id.org/np/RANpNkbMs5Z3tyrkYq-d0kVh5SDF94hPUrECV-bDOqKPo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RANpNkbMs5Z3tyrkYq-d0kVh5SDF94hPUrECV-bDOqKPo a owl:Class ;
+        rdfs:label "2-butoxyacetic acid",
+            "2-butoxyazijnzuur"@nl-be ;
+        schema:alternateName "BAA",
+            "Butoxyacetic acid" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:173542>,
+            <https://identifiers.org/cas:2516-93-0>,
+            <https://identifiers.org/inchikey:AJQOASGWDCBKCJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:41958> ;
+        pehterms:hasContextAlias sub:_nf1fcbb4cd71e4a608c07a54873a35435b1 ;
+        pehterms:hasGroupLabel "glycol ethers",
+            "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RA5dg34H9MfJ1j4fRKM3Bt1fcshI6V0eeaMEfdqbZYswg,
+            biochementity:RAFGmAKCm7VZJ3fId_1PWMWs5mRmHDU4L0gS0zfl1E2zw,
+            biochementity:RAdbaukDKVqAK6V-4W1ZwPlFf8U6OxvlMDsY7jd9AYTLo .
+    sub:_nf1fcbb4cd71e4a608c07a54873a35435b1 a pehterms:ContextAlias ;
+        schema:alternateName "baac" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:23.198979+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "gIBoovkJNjV+bEK3lEYGC3g4asvJQDSr8/aoOpm//V1B/SfHEFr6u/2moH+JmT3vHaQUusbb6iI3gGJ7HHixo8H3VAxgyWZhqhDw/FKVjGDiMy+tfcmngNKUKJGrRuzaqmVHeqgkTS1/MmcWmpSs2vk90amEOPYiXNwnKyd/UVcoArlelGzLsDCQ54zj9x2kCLl4/XofaAwyINNL8A7NZ8e1M8m/HpjokibD6LZZALBXFc1s7pzD1zYMMsqFgxC4jR3C1veRrkXeas7ZnEGKAPeC/GEkjq9qxc1WjYLAc4V/zoDjCApGCFTJNNp/vX3Ii5bLZmFxpqBEU09v28jX4g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-butoxyacetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RANpNkbMs5Z3tyrkYq-d0kVh5SDF94hPUrECV-bDOqKPo ;
+        prov:generatedAtTime "2026-06-24T10:48:23.198979+02:00"^^xsd:dateTime .
+}

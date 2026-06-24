@@ -1,0 +1,42 @@
+@prefix this: <https://w3id.org/np/RA9eHhIrL9BMzlLZROfeojZ01pDKqE3oVHlFyDlr2YQu8> .
+@prefix sub: <https://w3id.org/np/RA9eHhIrL9BMzlLZROfeojZ01pDKqE3oVHlFyDlr2YQu8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9eHhIrL9BMzlLZROfeojZ01pDKqE3oVHlFyDlr2YQu8 a owl:Class ;
+        rdfs:label "dioxins" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "dioxins" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:27.644582+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "YmwB6txNTrm+1EiBRZBaaV68AIMdFAodGsq7Qbtg3D1ceQmzHjM6p7T70pXWY44o7DBKkfLrFIhamf477rnDPsxcHYHOepRIkgkOGtSQ+Qp8puoM9OW8/cJ3wCYAH5ykOIfR0fsQaDyPHVYqUxtiQmgIVhTB66HQAonphXjnczRBl2MHJbLCjg4DL3ibcAPzsLL7zOjYUmJ96UOXAVV/OoHoUpJ6wIidkL+EQRjjLpR/YXQexCtR2BaV5W469uMT/u2L3Q8CShpJsF6jlrrxv8o8cgr+Ziof7d47HhcNXySfEs2+jPYnZJwjAaIfp/hgG+d2XdAI93Hg7SClk8kXhw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "dioxins" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9eHhIrL9BMzlLZROfeojZ01pDKqE3oVHlFyDlr2YQu8 ;
+        prov:generatedAtTime "2026-06-24T10:47:27.644582+02:00"^^xsd:dateTime .
+}

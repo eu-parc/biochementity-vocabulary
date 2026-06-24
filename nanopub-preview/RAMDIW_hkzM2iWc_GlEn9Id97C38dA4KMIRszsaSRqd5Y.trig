@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAMDIW_hkzM2iWc_GlEn9Id97C38dA4KMIRszsaSRqd5Y> .
+@prefix sub: <https://w3id.org/np/RAMDIW_hkzM2iWc_GlEn9Id97C38dA4KMIRszsaSRqd5Y/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMDIW_hkzM2iWc_GlEn9Id97C38dA4KMIRszsaSRqd5Y a owl:Class ;
+        rdfs:label "Perfluorononanoic acid",
+            "Lineair + vertakt Perfluoro-n-nonaanzuur"@nl-be ;
+        schema:alternateName "PFNA",
+            "L+B PFNA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_ne106776a28f34fc19b2c3630d48a4525b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_ne106776a28f34fc19b2c3630d48a4525b1 a pehterms:ContextAlias ;
+        schema:alternateName "lbpfna" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:57.310487+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "WRNFeI9Ka6HeVG48VLAQBKYpfM85oZfOJFzuOR03vzQi+VybzWgPCyU2mRLIM37wRb2nWCDI/ZsIU/vRRosVae7/WQdMAb/P6Djvn8fqtsWmI7NaL5CYu0ffN+B2cq0nhxf+B7sQCQn+uPIe1Js9lswUiWO8mL3IZ9a6Xz65wLBU3INYT7hxQL82vls0ZEc5CAcBLQW6t26s00OHZ0MOXXoWlwKWkvyHJPJa3Y+QywgyuBnC5ZZD11gbjsBW9lNZ07vZkg99vGpjAUUkLs7srGKACcgaBg2jSganLQhrG1kSVVa9NKz0aLNV545FxWU+fVovrqaNoQGUX/MxAj8BQA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Perfluorononanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAMDIW_hkzM2iWc_GlEn9Id97C38dA4KMIRszsaSRqd5Y ;
+        prov:generatedAtTime "2026-06-24T10:47:57.310487+02:00"^^xsd:dateTime .
+}

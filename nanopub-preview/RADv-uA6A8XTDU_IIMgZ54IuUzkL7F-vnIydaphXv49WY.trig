@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RADv-uA6A8XTDU_IIMgZ54IuUzkL7F-vnIydaphXv49WY> .
+@prefix sub: <https://w3id.org/np/RADv-uA6A8XTDU_IIMgZ54IuUzkL7F-vnIydaphXv49WY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADv-uA6A8XTDU_IIMgZ54IuUzkL7F-vnIydaphXv49WY a owl:Class ;
+        rdfs:label "Luteinizing hormone",
+            "Luteïniserend hormoon"@nl-be ;
+        schema:alternateName "LH",
+            "lutropin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81568>,
+            <https://loinc.org/LP14683-4> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:35.765098+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "dgI9LJ40EuUJpgv/FwyX18QMKbkPVk47nWA7BNzX23DVpaDYCb9aAsuYVIzlMVoUUSdl/PAXvPYJxdkOgbdW52sQi32CoaFxMWxlsv0xlUevoQIIPJ1aHBffAAER+6oHoQo4/DiHRLP3a5jsN2kColhr5EPHwQkLAWcXKLCA5mQ4GuFcc4rjEGo0y3muTciqWogtrtev+8NZzh60ptVc1m9/GbukXAXE2YHdZkD/y4WGjfdTsO0glfz1KzfOWRadv1Sab1PmDjcDxSWPvwbqNQOD45SEgYL1ASNisfhtmJXa7bualoeVIE6vEGGPTA90u01Jkhn8/KysmAmoa0L7Uw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Luteinizing hormone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADv-uA6A8XTDU_IIMgZ54IuUzkL7F-vnIydaphXv49WY ;
+        prov:generatedAtTime "2026-06-24T10:47:35.765098+02:00"^^xsd:dateTime .
+}

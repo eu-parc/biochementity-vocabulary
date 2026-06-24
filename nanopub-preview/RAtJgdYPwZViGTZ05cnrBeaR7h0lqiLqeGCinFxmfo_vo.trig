@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RAtJgdYPwZViGTZ05cnrBeaR7h0lqiLqeGCinFxmfo_vo> .
+@prefix sub: <https://w3id.org/np/RAtJgdYPwZViGTZ05cnrBeaR7h0lqiLqeGCinFxmfo_vo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtJgdYPwZViGTZ05cnrBeaR7h0lqiLqeGCinFxmfo_vo a owl:Class ;
+        rdfs:label "Dicyclohexyl phthalate",
+            "Dicyclohexylftalaat"@nl-be ;
+        schema:alternateName "DCHP" ;
+        rdfs:subClassOf biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34693>,
+            <https://identifiers.org/cas:84-61-7> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:07.072912+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "OaAgIKSbR/i2sqZEjBZOgy8sWiSEfrvaRzbC8APimcxA83Kt9BNSKzbp7w2uPBS4+6tAHYFbG/0WJvrzurKLtwfWsCM4e+Q/Ua2hVp2B+2K014gAHv1+xMaNzqwUT6VLOLu/gv1TIfnAWSpdRAs1k+kGoBu212YJRWhNYgfsXdV2h/1vE2qH6nefLOjI+p5absdFB4jzj7xtf1xLM/k/9KIWAEwlVv4SULkvhgDsijV92fLmHWyiLobT+sWRiLLqg7tG4WG4L06DyB2fdRAN+mGnakw/eriAUYb4dkYi2WlBatAxorInJOt+QSElA4duXjw5JYwmQro1wVgy/iZefw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dicyclohexyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtJgdYPwZViGTZ05cnrBeaR7h0lqiLqeGCinFxmfo_vo ;
+        prov:generatedAtTime "2026-06-24T10:48:07.072912+02:00"^^xsd:dateTime .
+}

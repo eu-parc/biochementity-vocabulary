@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAwCnQgRTZKONdN_97Hoyomf1eB4jkU0sfORKvcZqFr4U> .
+@prefix sub: <https://w3id.org/np/RAwCnQgRTZKONdN_97Hoyomf1eB4jkU0sfORKvcZqFr4U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwCnQgRTZKONdN_97Hoyomf1eB4jkU0sfORKvcZqFr4U a owl:Class ;
+        rdfs:label "Fluoranthene",
+            "Fluorantheen"@nl-be ;
+        schema:alternateName "FLA",
+            "PAK_FLT"@nl-be ;
+        rdfs:subClassOf biochementity:RAKw3PYk2FgtZhCmmRF-SGSgb0qBA4klx8SUd4OuOUK10,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33083>,
+            <https://identifiers.org/cas:206-44-0>,
+            <https://identifiers.org/cas:76774-50-0>,
+            <https://identifiers.org/inchikey:GVEPBJHOBDJJJI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9154> ;
+        pehterms:hasContextAlias sub:_nc033ebbbbfd648e393f06948e8ecf780b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_nc033ebbbbfd648e393f06948e8ecf780b1 a pehterms:ContextAlias ;
+        schema:alternateName "fla" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:26.770207+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "MfhKPEoQfbqd5d/+oopAwH1T7oEHHsKRmn060nP7MBQdn7iOwEVkbbwdH1g3NIN9tVw3TQl6Ct2BJ32fjZAYXq6ASn5XEaZlcQxtjpl1oyTDiNVL4IAjuBXDrh8mHh6CTV8IUFYBsMmqHxzG6OGY0OiVvFSO9EF+l0YDlR3LVzzsS4A4FsYDyDzpKl5rFovR7Wkx7AIw5HThd85K7XR2QS4sUMicFj864z/2DK3cdO97NSDl6KICn4EO8CRi232nT0M56MunL81xc5BpNBMqP/tiKP+qJJ9o06DHEhH07slpcUOw0HweR0aB6IHGuIPFuFJ/ZSlsolmXJlYxyWTukg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Fluoranthene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwCnQgRTZKONdN_97Hoyomf1eB4jkU0sfORKvcZqFr4U ;
+        prov:generatedAtTime "2026-06-24T10:48:26.770207+02:00"^^xsd:dateTime .
+}

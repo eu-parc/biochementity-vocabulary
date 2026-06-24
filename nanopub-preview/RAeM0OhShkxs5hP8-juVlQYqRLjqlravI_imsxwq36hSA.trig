@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAeM0OhShkxs5hP8-juVlQYqRLjqlravI_imsxwq36hSA> .
+@prefix sub: <https://w3id.org/np/RAeM0OhShkxs5hP8-juVlQYqRLjqlravI_imsxwq36hSA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeM0OhShkxs5hP8-juVlQYqRLjqlravI_imsxwq36hSA a owl:Class ;
+        rdfs:label "2-methoxypropanol",
+            "2-methoxypropanol"@nl-be ;
+        schema:alternateName "1PG2ME" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:YTTFFPATQICAQN-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:58.529348+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "BbKK4NuJD8g1zv1CUyUJGCjJ2aNtLsIeQgkOoTj+2KETSodhuyJayL3/AOPI4120IDVs7lbDCyk37uZlZAxhQLIBlFDNLwknnF3GIyDsEcKcBdnQKCzyxWPGY+FhzGTemSwecOu3A1A9IFi5U8CFf4YltGw+oQOdnO1J3Eopo0w1AcjnlmF2A6aKQ/mU2yNh/FJmCNmASHclm6Ocsjk2LUFcxGYqGpDB4pY43nnmvQ40wBGjI8hg2RJ876HQo3waaKcB9a15lHGahHQAHLpjMkWSBpIz7W0x7Cb0U0z41MOTUl1Sn7+ufDPSztotnLFj45vHFagbvaQFl5NIjrhy1A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-methoxypropanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeM0OhShkxs5hP8-juVlQYqRLjqlravI_imsxwq36hSA ;
+        prov:generatedAtTime "2026-06-24T10:47:58.529348+02:00"^^xsd:dateTime .
+}

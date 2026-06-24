@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAsNmDHuOeafr_rKxzEAuVb3BorgJk_jG18hg6m6t6idw> .
+@prefix sub: <https://w3id.org/np/RAsNmDHuOeafr_rKxzEAuVb3BorgJk_jG18hg6m6t6idw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5PzmmsRF5Jn1XxWFtDVkXvOm2BLrsS_o0lggKLyzXkk a owl:Class ;
+        rdfs:label "Branched Perfluorooctane sulfonic acid" ;
+        schema:alternateName "bpfos" ;
+        rdfs:subClassOf biochementity:RAauwjZ0_fKNrpNSZe8PEjKP8ojJ7YEKzhnGfo8y4vu14 ;
+        pehterms:isIsomerOf biochementity:RApgUITmIVMacklRhyaHiuA2FTlA4ktHqMni8WI16SL7Q .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:41.943705+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApkLCMXBSVzIoWyH8FgGL7vGZOUhJ+7ZFRWTY7WsCi/eoV7uQlfWVdNhmm7iQ4yGcTqnpzzRlrq6n2NED2AWfo/tUmRJWLHXhF7eeJs8lLFRKqVD54sBhbUTon91dkREJCqe/XhIBNwVSQf4GLUudeO/e/ZIungSzte6lkoLS1mcaIwqxLF8YEmZgC3fKuD8jSqjsMqENqaPtWP/rHexZUSyFm0jCmvGoJ0DC+WhjhmGSwx9jLt1Fw2jZmlLT4Wbx00xZk3+ikUPx0piF0i1xslc0j17U1tJ55v1sjlApWj+ghIYW1+6fctGJjLST3KYm+t4ddrNiGKZewz7VbchJRQIDAQAB" ;
+        npx:hasSignature "WNHCRGjlVXYLtQrtNj0KUM7ziwAeWAemrMUH07y51bNokFQ2zZBGEXKkfU5siUf3/Bei0fx4ESMVGBuqqfk+kD9V7ykx8WYCAKQMxDeIJ2/PlBclLBojAEyfdJmL/8GPEmsQVbbJcA4woIcG8NurKk4nupxJwTzeeCbiqOr4gpw2lFylRtI+ubDSw+TpZBOar6cLEcrcBwiomZfF5rkd1GAANkWcBFGcgER/1X6wMTYUMrTXQKdgzuT+JKKie45iBDFdbwK2prCfbFtTlFnHRhfDc8h+h3luA/2fqCy4C4hqK0c4vR5LRPInTop1PkfVUE/eio31v8F1SGg1jHv61A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched Perfluorooctane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RA5PzmmsRF5Jn1XxWFtDVkXvOm2BLrsS_o0lggKLyzXkk> ;
+        prov:generatedAtTime "2026-06-24T10:48:41.943705+02:00"^^xsd:dateTime .
+}

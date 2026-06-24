@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAGfwC7QA2uTRXGRqNrxG_RNK3wBvb7LJd_dhuvK5EX-Q> .
+@prefix sub: <https://w3id.org/np/RAGfwC7QA2uTRXGRqNrxG_RNK3wBvb7LJd_dhuvK5EX-Q/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAGfwC7QA2uTRXGRqNrxG_RNK3wBvb7LJd_dhuvK5EX-Q a owl:Class ;
+        rdfs:label "Tetrabromoethylcyclohexane",
+            "Tetrabroomethylcyclohexaan"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "TBECH" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:RSNWTYLUIPARFX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:20472541> ;
+        pehterms:hasContextAlias sub:_n04ef77eaf98046eaa9f74972040d8b9eb1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n04ef77eaf98046eaa9f74972040d8b9eb1 a pehterms:ContextAlias ;
+        schema:alternateName "tbech" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:36.054849+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "JBbAEKUTHxqIh1ZlvIpoES7nzNLe5OYdJGNmbX+AL+5wpBQx2R95Ms73V0Lnfxk++hF2n99l+EsGBUm2DKV9JS3yiZHsqbq4IWDSb80S3PYuPmIbMcS9R9FC5dyrpMm0Z07iwGo/0OmYSxZYYohMu8EBvugGaCZAEF3zYcNO88LBh3X0i9xXoLOI9DbN5taUrcmu+/zIoeKzMlRJiJ6+xOEF3OjcjUn22k9Dubx/Lyc8eZxiIhP2+WMGNPS+0RUcnPuhRnsrFrutJHYFH1nkMt9m/L98U+f4YUguVufymxm8GKoCyfdnPRzu8ce0NeFB6DabAaUj8mvA65fMAJP/Pw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tetrabromoethylcyclohexane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAGfwC7QA2uTRXGRqNrxG_RNK3wBvb7LJd_dhuvK5EX-Q ;
+        prov:generatedAtTime "2026-06-24T10:47:36.054849+02:00"^^xsd:dateTime .
+}

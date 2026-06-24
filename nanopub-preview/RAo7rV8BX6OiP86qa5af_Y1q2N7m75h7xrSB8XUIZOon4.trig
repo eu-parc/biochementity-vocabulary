@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAo7rV8BX6OiP86qa5af_Y1q2N7m75h7xrSB8XUIZOon4> .
+@prefix sub: <https://w3id.org/np/RAo7rV8BX6OiP86qa5af_Y1q2N7m75h7xrSB8XUIZOon4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAo7rV8BX6OiP86qa5af_Y1q2N7m75h7xrSB8XUIZOon4 a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 28",
+            "Polychloorbifenyl 28"@nl-be ;
+        schema:alternateName "2,4,4'-Trichlorobiphenyl",
+            "PCB 28",
+            "PCB 28"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:233161>,
+            <https://identifiers.org/cas:7012-37-5>,
+            <https://identifiers.org/inchikey:BZTYNSQSZHARAZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23448> ;
+        pehterms:hasContextAlias sub:_nae418f72a5304bf38673e4fd18f31f73b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAuUi8CDxged5-pGcWJbWzKQKK6eiC3pmZ-iArKpiKgeM .
+    sub:_nae418f72a5304bf38673e4fd18f31f73b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb28" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:06.684752+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "QMjZ/T/El38K6VmJRx105nq56TI+ME1YMNOvcfrzylY2JOwM3aYkMyMm80o+cZO8pbMyY21kP/EeAojTiwcVr1PVcslNVb5AOGW3re2xBG9hZVmnvLblaQNvfAUbdN98q+XSNdUKjoF2X0IUT2/B1bUGhhbCHT9/toFUZtwq+q+Llwq5Q+M/82d9J6vu0W//jR9YYKPY4gqLbp2UT4MHgc0TN/KRnG0nAMLfvH/+LCDThL+doxBC0FVqNeiGHSzpDEtvrlHpGbEPcMukY0Yos6VWtiOEJxjA/TSi0tIMMLHvx5OADD7ytmOjkkyaGVstvNtZanqrzBqZoJQX84kK5Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 28" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAo7rV8BX6OiP86qa5af_Y1q2N7m75h7xrSB8XUIZOon4 ;
+        prov:generatedAtTime "2026-06-24T10:48:06.684752+02:00"^^xsd:dateTime .
+}

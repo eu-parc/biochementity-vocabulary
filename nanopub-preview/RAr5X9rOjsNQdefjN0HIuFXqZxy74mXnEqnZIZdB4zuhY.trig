@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAr5X9rOjsNQdefjN0HIuFXqZxy74mXnEqnZIZdB4zuhY> .
+@prefix sub: <https://w3id.org/np/RAr5X9rOjsNQdefjN0HIuFXqZxy74mXnEqnZIZdB4zuhY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAr5X9rOjsNQdefjN0HIuFXqZxy74mXnEqnZIZdB4zuhY a owl:Class ;
+        rdfs:label "Mono(2-ethyl-5-hydroxy-hexyl) phthalate",
+            "Mono-(2-ethyl-5-hydroxyhexyl)ftalaat"@nl-be ;
+        schema:alternateName "5OH-MEHP",
+            "5OH-MEHP"@nl-be ;
+        rdfs:subClassOf biochementity:RAjQNKtjCweuFR4iyE7sxX9HWLwamjAG1XYc93zZwM7_w,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132607>,
+            <https://identifiers.org/cas:40321-99-1>,
+            <https://identifiers.org/inchikey:RYPQSGURZSTFSX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:170295> ;
+        pehterms:hasContextAlias sub:_n32feeffa4a644d8ebb697bf001a33cc5b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAZvLHYPb3TjDlOggoTP4JAxLZzgnLcFIiD-ooethDvdk .
+    sub:_n32feeffa4a644d8ebb697bf001a33cc5b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohmehp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:36.782722+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "K0dP9G0gHvfA+R+wZBjwjdEeaxayNtJ4ZFyvBYwoCf8Xv27T1JDjl0IefFKEcXeFBpPHQEf+u2EHnhIEnQ6g3zTjj7LxOsRJkrqq/yoc9+5YlF7R27/CTVTy6+TJ/EFoRg7YCkjnW9gPAGIDFaBeEW5HUVssXVIA+XUDCXxn5xXQV8yQ8oOWTl5n/vwGx0o8CmCXwpF5nq55iDFmBi9rqR3ZQnbVsW1YNU4Bl6ij6nkdt3Xr9FaBO05mptbykf5FtoY+qnOdJOorbs4cXalQ6rYp/7V2qTPRCNtBapHR1cbfH2394bhGLgMtfvYbYOnGg+N+Wf3nKF/1bEvhHZTZ0Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono(2-ethyl-5-hydroxy-hexyl) phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAr5X9rOjsNQdefjN0HIuFXqZxy74mXnEqnZIZdB4zuhY ;
+        prov:generatedAtTime "2026-06-24T10:48:36.782722+02:00"^^xsd:dateTime .
+}

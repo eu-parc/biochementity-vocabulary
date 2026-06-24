@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAs_IXKoKInLD5ufZ_ijoAomIE7oHo5PQixK1lxO-3ZNA> .
+@prefix sub: <https://w3id.org/np/RAs_IXKoKInLD5ufZ_ijoAomIE7oHo5PQixK1lxO-3ZNA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAs_IXKoKInLD5ufZ_ijoAomIE7oHo5PQixK1lxO-3ZNA a owl:Class ;
+        rdfs:label "Chromium",
+            "Chroom"@nl-be ;
+        schema:alternateName "Cr",
+            "Cr"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28073>,
+            <https://identifiers.org/cas:16065-83-1>,
+            <https://identifiers.org/cas:7440-47-3>,
+            <https://identifiers.org/inchikey:VYZAMTAEIAYCRO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23976> ;
+        pehterms:hasGroupLabel "metals" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:08.995628+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "IxaDvJglWRYU7iF/haSD/1UQAeF6HkdmIgW6Ekbx2NxyTEFtNYG9LAASPK1U8X6zkV7yWyyNS7o8FYBNJTWpalC2k5W35YzXE3rJ4uzGi9bUDvSPoPd3CXBjAPw+JHZ3RCtN88+m/ewFpfXAke2slVTSuuCS9ybTVV7cb23tL2MguBz8S+oC1ZiMSFbVgpNMcuZwJMwoLdfcQUIr5TrzXJ1eoZ7tivs1ORSZSp4o9JgyAJf4LpRTEg2OBuztLJHufiF9+fVd4YXFIQCkRFcZXaoEZRJGmGrXhUybQiCFX62HOaNkyHV4WGrJVsujyz4LmuZ183ND7U2ZhwPLbnCBJQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Chromium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAs_IXKoKInLD5ufZ_ijoAomIE7oHo5PQixK1lxO-3ZNA ;
+        prov:generatedAtTime "2026-06-24T10:48:08.995628+02:00"^^xsd:dateTime .
+}

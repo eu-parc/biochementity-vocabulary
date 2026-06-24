@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RA3nXmyI7tpY437_Xoxy_PHZ5eU8cfc9_kxm4QR-W4HO0> .
+@prefix sub: <https://w3id.org/np/RA3nXmyI7tpY437_Xoxy_PHZ5eU8cfc9_kxm4QR-W4HO0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAqQ7kIijOwBj4EFqRCfPvroSmtaF71ffOcAQ7q96fiMM a owl:Class ;
+        rdfs:label "Branched Perfluorohexane sulfonic acid" ;
+        schema:alternateName "bpfhxs" ;
+        rdfs:subClassOf biochementity:RADDQXtKhhul1rIjhyjzjkWEYBYUF4gjkHaxWfLXX1dB8 ;
+        pehterms:isIsomerOf biochementity:RAsAv2TE8s1YiVHendyJgWBP7Md8noSOTPS8V46y0Z1g4 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:41.740955+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApkLCMXBSVzIoWyH8FgGL7vGZOUhJ+7ZFRWTY7WsCi/eoV7uQlfWVdNhmm7iQ4yGcTqnpzzRlrq6n2NED2AWfo/tUmRJWLHXhF7eeJs8lLFRKqVD54sBhbUTon91dkREJCqe/XhIBNwVSQf4GLUudeO/e/ZIungSzte6lkoLS1mcaIwqxLF8YEmZgC3fKuD8jSqjsMqENqaPtWP/rHexZUSyFm0jCmvGoJ0DC+WhjhmGSwx9jLt1Fw2jZmlLT4Wbx00xZk3+ikUPx0piF0i1xslc0j17U1tJ55v1sjlApWj+ghIYW1+6fctGJjLST3KYm+t4ddrNiGKZewz7VbchJRQIDAQAB" ;
+        npx:hasSignature "is+5McuefGbTfjhsc9kWJHq9+VoETPTb7BkxXVhU+9scCGPcq9QZHMpo1TPh6COJC5dS4W2ZGYyRhzF+5EFGQjKmn3Z34mwD9CtkW6FIWBsMQvD+Ef/+1CAUzkN3BYpcspPOAPr/QoaCmNmqPPgJthUyVg9HwEnIzr5Wpjq+8Ie6dJeE8uWbR2GgebmRmmajoOLlXrnqhgPAkZanMlYl48+9DIF+PbcNpBPinBlGhW2r3mg6lCMaySjS18dfoiG5yl/O+JML6Pbxr4QlikxfhcgDqsSjt7Ily5iCYXBVtaNaav7z3og3wmt1Vit4WvP1pcf94C0sVXjgQHlHumRcxQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched Perfluorohexane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RAqQ7kIijOwBj4EFqRCfPvroSmtaF71ffOcAQ7q96fiMM> ;
+        prov:generatedAtTime "2026-06-24T10:48:41.740955+02:00"^^xsd:dateTime .
+}

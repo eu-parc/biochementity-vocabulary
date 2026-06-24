@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAAJB38qykJ3hxPsimtadryR7iRGEhBs1hZLfWjY3rS7U> .
+@prefix sub: <https://w3id.org/np/RAAJB38qykJ3hxPsimtadryR7iRGEhBs1hZLfWjY3rS7U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAAJB38qykJ3hxPsimtadryR7iRGEhBs1hZLfWjY3rS7U a owl:Class ;
+        rdfs:label "Hydroxylated Polychlorinated biphenyl 107",
+            "CB107"@nl-be ;
+        schema:alternateName "Hydroxylated Polychlorinated biphenyl 107",
+            "CB107"@nl-be ;
+        schema:comment "comments: Can it be this compound? http://exposome-explorer.iarc.fr/compounds/1306 --> although the INCHI KEY in that website refers me to this compound in pubchem… https://pubchem.ncbi.nlm.nih.gov/compound/2_3_6-trichloro-4-_3_4-dichlorophenyl_phenol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n9c4e0283207e414f861d77111634e9f1b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" .
+    sub:_n9c4e0283207e414f861d77111634e9f1b1 a pehterms:ContextAlias ;
+        schema:alternateName "hocb107" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:33.979987+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "W83XubnceivOC4LWLb3OBjOaEzxaGfgz18AMagxyS8H/GTW/P/f/Wf759+IML4PeUmZwOy5sSyi51H+Ze5/XULrK+vHUsU8NHnwc8PqnBRFy70mLOwsQWPeIBsRHtDPaNJHJqSoJziLAs43HSYC+2jy364zdJ3PIu+yoQfVawf7slLwBwwXWTLR5b7bpV0XaacBCuQyO8ZGQ02U6owC+p1IG7x8kchIsnlJo8eG7Lm6+rWwySmSmWQHapvy/5lpnQuugpUcKKcgakXADMFG/gMjo+a52kqqEtDIM50xpDNc2DOo73gR5JC0a8bXY52FEDIQgksdwqYr3K643qQzikA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Hydroxylated Polychlorinated biphenyl 107" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAAJB38qykJ3hxPsimtadryR7iRGEhBs1hZLfWjY3rS7U ;
+        prov:generatedAtTime "2026-06-24T10:47:33.979987+02:00"^^xsd:dateTime .
+}

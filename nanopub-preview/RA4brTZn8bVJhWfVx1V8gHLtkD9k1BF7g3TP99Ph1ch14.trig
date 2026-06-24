@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RA4brTZn8bVJhWfVx1V8gHLtkD9k1BF7g3TP99Ph1ch14> .
+@prefix sub: <https://w3id.org/np/RA4brTZn8bVJhWfVx1V8gHLtkD9k1BF7g3TP99Ph1ch14/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA4brTZn8bVJhWfVx1V8gHLtkD9k1BF7g3TP99Ph1ch14 a owl:Class ;
+        rdfs:label "Hydroxylated Polychlorinated biphenyl 146",
+            "CB146"@nl-be ;
+        schema:alternateName "Hydroxylated Polychlorinated biphenyl 146",
+            "CB146"@nl-be ;
+        schema:comment "comments: can it be this compound? http://exposome-explorer.iarc.fr/compounds/1307 // no pubchem reference though" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_nd4bad01d0f834944a1f7c08a1e8abb7bb1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" .
+    sub:_nd4bad01d0f834944a1f7c08a1e8abb7bb1 a pehterms:ContextAlias ;
+        schema:alternateName "hocb146" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:47.546904+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "dAp749CK6PfZhS648OkhPT+ySDeWyjPIy0SWCZins2YsdM8c99Vq7iBR875+X1YPvoo+bn0sPRmQtnMZZUpVOYuzpv7QxKrU/rWtjXrwlehnTvUnvq6LwF6oz2skPM1N8yX2gu02eUcvEQ2LZuYqw3r8yIBq1f6NiCmanxcNwn8eNApZkYAs2f1Fm8e5TIARMRyAl3Utx8wXNyrB8yi9DpxzZ0XtOTtyrnpjegBCuy4LoxcbOH1UWCjfosco4MjGXgvRfelFAbIgJBWw/4jEql7v6hR6+3TNvsILoMM8D8gwyC914OKuq+Ec5jXncIKJaVJ3OlO8uN62PVbl6zFVPQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Hydroxylated Polychlorinated biphenyl 146" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA4brTZn8bVJhWfVx1V8gHLtkD9k1BF7g3TP99Ph1ch14 ;
+        prov:generatedAtTime "2026-06-24T10:47:47.546904+02:00"^^xsd:dateTime .
+}

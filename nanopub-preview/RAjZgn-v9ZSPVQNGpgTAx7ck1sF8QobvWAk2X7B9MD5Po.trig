@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAjZgn-v9ZSPVQNGpgTAx7ck1sF8QobvWAk2X7B9MD5Po> .
+@prefix sub: <https://w3id.org/np/RAjZgn-v9ZSPVQNGpgTAx7ck1sF8QobvWAk2X7B9MD5Po/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjZgn-v9ZSPVQNGpgTAx7ck1sF8QobvWAk2X7B9MD5Po a owl:Class ;
+        rdfs:label "Alternariol Monomethyl Ether",
+            "Alternariol monomethylether"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+        schema:alternateName "AME" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:141315>,
+            <https://identifiers.org/cas:23452-05-3>,
+            <https://identifiers.org/cas:26894-49-5>,
+            <https://identifiers.org/inchikey:LCSDQFNUYFTXMT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5360741> ;
+        pehterms:hasContextAlias sub:_n7c6d769333c24e45b38f3c33fb4cc354b1 ;
+        pehterms:hasGroupLabel "mycotoxins" .
+    sub:_n7c6d769333c24e45b38f3c33fb4cc354b1 a pehterms:ContextAlias ;
+        schema:alternateName "ame" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:40.558748+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "dWfYNwS3QaB9XDCuw7GCNezVzA7yK3UymfduXVdkIuKqnbErvlr7HAC4kOmDQS11RqU7bz8h8mJyMsP5YVK1Ux2ao0n0mysAal9mKZSMo9uOZ+XM00w7v31S7vEAzZGnbsY4XYCIq+o6zsRJ3KR6p07dvwUwG2FRSIt2tzw5ZW9Z7X6Rj/I6V4TfYWeEOlz3hXl4YM5AzdGH0+E+2bj7A6Q+ufapIh5sck6J/5Fnqs4k561Rzt8PMKY5W/ArDeDSrPQmXzc2DjnpUvXX6Rap9Hge3zMJhUCLnSFG9eWBxKfWNgfH2ysWAgTzvHe6FMMPQsqMsK8i1pM2zoOgOWDPhw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Alternariol Monomethyl Ether" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAjZgn-v9ZSPVQNGpgTAx7ck1sF8QobvWAk2X7B9MD5Po ;
+        prov:generatedAtTime "2026-06-24T10:47:40.558748+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAonMULgmxbJwPNjASvQK-MErOYdOdc7wSeAAIGRaTM64> .
+@prefix sub: <https://w3id.org/np/RAonMULgmxbJwPNjASvQK-MErOYdOdc7wSeAAIGRaTM64/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAonMULgmxbJwPNjASvQK-MErOYdOdc7wSeAAIGRaTM64 a owl:Class ;
+        rdfs:label "Gamma glutamyl transferase",
+            "gamma-glutamyltransferase"@nl-be ;
+        schema:alternateName "Gamma-GT" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15590-0> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:53.978143+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "gYkKzHHWH0/TB/dbMR0zlJlnnoJV7ok1bc71dpQtZhDqxyKqR6QPjmGriIkVB9Ob0Tx4dwG4NuVMntDC1PeMHYrNoP3Cca0FZZ41EpY2pBoe3e5KpABCVQuNpnguxN/RtQUV+YT+q45a+bYBmIRj8bkZ3yeIiXIA2Y99N1aXtkcOo4BQHJKLbiiUXDNf7TlS2+SZPHB14/MEmbvy/P/p7qfCg4RRCN75rAVijOf/6oJQP5rkLSEN0b2s/c/VoH0v9L6/gMuVPw2ubdoVcIKUX5s7QbFQcbuVllu69XJSy0dh0uREkzRrds6Ac/OOQC/LhpqitUNjWlK1UZb/eiFCzg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Gamma glutamyl transferase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAonMULgmxbJwPNjASvQK-MErOYdOdc7wSeAAIGRaTM64 ;
+        prov:generatedAtTime "2026-06-24T10:47:53.978143+02:00"^^xsd:dateTime .
+}

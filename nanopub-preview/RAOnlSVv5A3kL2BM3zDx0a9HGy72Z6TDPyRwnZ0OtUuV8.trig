@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAOnlSVv5A3kL2BM3zDx0a9HGy72Z6TDPyRwnZ0OtUuV8> .
+@prefix sub: <https://w3id.org/np/RAOnlSVv5A3kL2BM3zDx0a9HGy72Z6TDPyRwnZ0OtUuV8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOnlSVv5A3kL2BM3zDx0a9HGy72Z6TDPyRwnZ0OtUuV8 a owl:Class ;
+        rdfs:label "Heptylparaben",
+            "HeptylP (heptylparabeen)"@nl-be ;
+        schema:alternateName "Heptyl p-hydroxybenzoate",
+            "heptylP" ;
+        rdfs:subClassOf biochementity:RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34788>,
+            <https://identifiers.org/cas:1085-12-7>,
+            <https://identifiers.org/inchikey:ZTJORNVITHUQJA-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:14138> ;
+        pehterms:hasContextAlias sub:_n3731c8b379aa4c2f86959e29d72c9c78b1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n3731c8b379aa4c2f86959e29d72c9c78b1 a pehterms:ContextAlias ;
+        schema:alternateName "hepip" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:13.567573+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "bLRLK1HC/dWC5TtHBL8cUoHZsDbW9ILu4c/iEHUPBcAA9gvNsOPbbNWL4bLCoFKHjSDPRJEgRbw8r22VQf5IjMQvSXl+IB232LHPRPMBe5bRLEsJvQzFiKIcVTLoWvNX7WGf2vLLBwzUdNGoSEtcW+sViFqs/1M1+10fiojXhYakPIzmYqJYFvi9gIqByKHEhJgLXfqx7RWWT4Qjdq/2ul5IrMztRsxa+3H5W5pPqFrFXQSAQj6n79zspn3LufgpC9MW8uQpkZoVYaCK8FrFn8G4Rcbjj/GeQyOMUfblaURavdk2JUYxbcgZZTzUEjsO2bZ/COi6MnWxSN7YZpq4hA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Heptylparaben" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOnlSVv5A3kL2BM3zDx0a9HGy72Z6TDPyRwnZ0OtUuV8 ;
+        prov:generatedAtTime "2026-06-24T10:48:13.567573+02:00"^^xsd:dateTime .
+}

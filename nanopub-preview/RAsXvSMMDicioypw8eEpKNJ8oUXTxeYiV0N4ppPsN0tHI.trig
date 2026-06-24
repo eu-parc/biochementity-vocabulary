@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI> .
+@prefix sub: <https://w3id.org/np/RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI a owl:Class ;
+        rdfs:label "metals" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <CHEBI:33521> ;
+        pehterms:hasGroupLabel "metals" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:27.977753+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "KPC1Qk+ishTKlTM+DFYFqO2iZiH+Ya+Fb1jA5Ux4muTPeTeykVAJyv/AvMkK+1ReIxHIeVG1FSWaXMdfelfbFb0GxpruoqrfyZOy0ezHyDpy+ZvPlJJh9GEL2Q1ONdNUIVdy7GhgkoA/fESWHChiGWNDc+G1lJlDIljf4nWXNp055xIHFeN2qSTaJM2R/ziXUqKPWhwL2+knN/IolWvJzB6lBkK5ZmSaaNLp387vOg/a1WzjwwgPfgLNcv4VV0YX1BZgiR+in4kptoi66HxxovJGGsHWEvUISn19X5JVQNJuptVzw6KMioRZfXrM9kx/G6Ozt6/ZMQzj7mubCMkGBQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "metals" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI ;
+        prov:generatedAtTime "2026-06-24T10:47:27.977753+02:00"^^xsd:dateTime .
+}

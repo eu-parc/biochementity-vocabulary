@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAvV47epAo0g2r3yWsagjH6gP20TsMqlaL74a7N4FrBDU> .
+@prefix sub: <https://w3id.org/np/RAvV47epAo0g2r3yWsagjH6gP20TsMqlaL74a7N4FrBDU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAvV47epAo0g2r3yWsagjH6gP20TsMqlaL74a7N4FrBDU a owl:Class ;
+        rdfs:label "1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole",
+            "1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Difenoconazole",
+            "Difenoconazole"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:BQYJATMQXGBDHF-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:44.537795+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "fyDq6gwXUNmeP3RjKdBUp86dUtSMR1z5Zbaocpt33meDj5Rg2nV6oO88L3eVrgmFLJUzvELXE90BZVvZNVA/e7QFrtLGdXH9VHCe4MqemnMj7cUdGdFGwmcxrV7GOK7i3rilmVSKEh/1P41BPUs9rjtMdtDl2FwFB14SWMc1Uh+TlLGiqGH0Dhmay+hQkz/ClZ6PI6hJ5nkG/FQW7rLXaCRBZOEFtp6T6Nro82yl9tEfOpfOpQ4V5NaKjjYfet5e/xOUon1DmOG2WQM2v+4SFRlbJLEtYz7oFXpYfgHzTadaxw0/GzEiPyDWPNMSX67+D+ezrEBpcDlEuApVMG8Dhw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-[[2-[2-chloro-4-(4-chlorophenoxy)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1,2,4-triazole" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAvV47epAo0g2r3yWsagjH6gP20TsMqlaL74a7N4FrBDU ;
+        prov:generatedAtTime "2026-06-24T10:47:44.537795+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAIGORRX_1VoFD5TwXsaV7SJEjtnYsnFYu7EgAIgGhdyQ> .
+@prefix sub: <https://w3id.org/np/RAIGORRX_1VoFD5TwXsaV7SJEjtnYsnFYu7EgAIgGhdyQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAIGORRX_1VoFD5TwXsaV7SJEjtnYsnFYu7EgAIgGhdyQ a owl:Class ;
+        rdfs:label "Benzophenone 3",
+            "Benzofenon 3"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+        schema:alternateName "2-Hydroxy-4-methoxybenzophenone",
+            "BP-3",
+            "BP-3"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34283>,
+            <https://identifiers.org/cas:131-57-7>,
+            <https://identifiers.org/inchikey:DXGLGDHPHMLXJC-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:4632> ;
+        pehterms:hasContextAlias sub:_ncf0ed1a1b2b74837bf9a8ebe737e2aa9b1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" .
+    sub:_ncf0ed1a1b2b74837bf9a8ebe737e2aa9b1 a pehterms:ContextAlias ;
+        schema:alternateName "bpthree" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:34.225128+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "U9ysyM0lobnxkYs+ZL1terZQM4ziCWgkcjseXjPV+qQyx9oPk9QLOJeqYkukVI28Go1AFmxIAlReC2XjnVwJHMiXjw++akFQHop74jMLZi0rMyLZrtIiQXwO3wfQVT9sN7YDLCWNKkQ/auYVvrOuw+yqd44ARuB8TYdtDfVZ/Bt7oCeKUCNjU12oz49Mf1el45Q2/CP9M+6BTNKC8EHLyzFjUvlQVRUzOT65PB2CvuzmfWMoegYL8ViTqcbVrwmbgH7W8tAmMRg6GRe9yMFCgGVtxd6jSA/b4OsPb1WWf3q3zCeI5j5DuVEU/FJxpOiRN/D2yWse8SOS0GjSSUGcEA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzophenone 3" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAIGORRX_1VoFD5TwXsaV7SJEjtnYsnFYu7EgAIgGhdyQ ;
+        prov:generatedAtTime "2026-06-24T10:47:34.225128+02:00"^^xsd:dateTime .
+}

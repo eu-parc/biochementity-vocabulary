@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RA614vJWsW8msbzoHiBRDTc880_R7-_39Nu8_2k4nQiRQ> .
+@prefix sub: <https://w3id.org/np/RA614vJWsW8msbzoHiBRDTc880_R7-_39Nu8_2k4nQiRQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA614vJWsW8msbzoHiBRDTc880_R7-_39Nu8_2k4nQiRQ a owl:Class ;
+        rdfs:label "Linear N-Methylperfluoro-1 octanesulphonamide",
+            "Lineair N-methylperfluor-1-octaansulfonamide"@nl-be ;
+        schema:alternateName "N-Methylperfluorooctanesulfonamide",
+            "lmepfosa",
+            "MePFOSA"@nl-be ;
+        rdfs:subClassOf biochementity:RA2EnNEPN6pngEG7zx0ryliD3mdECBujFfjvejaCbZRpk,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:31506-32-8>,
+            <https://identifiers.org/inchikey:SRMWNTGHXHOWBT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:3034468> ;
+        pehterms:hasContextAlias sub:_ne2556f2f1d8f46dcb6247f28734965a8b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RAalDRNUxNWRb1Y1HPt_I8bLa3XGBvU-2KATjR4rFu7zI .
+    sub:_ne2556f2f1d8f46dcb6247f28734965a8b1 a pehterms:ContextAlias ;
+        schema:alternateName "nmefosa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:40.062366+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "MauCKcYP+bruFfwlhe3cZ9NfL9zsMRlhExgDzcwbNQ9zjzzKSJ9XEDvnp2RMa84AEGcz3QEzS3J6FtrxPeH9gzGpacVyR5xM1YXEZ00TWAcnNb7I3u60GY0gJcXXPLg3KSx4qCClxAayVjJ3q2mKuGekl+aTNr7VAr6syK+cR2f3kk0+ImyOSN1muKyb0xR3AgeOZpSq9PLeiXuSerLiXhwsmYcBorB8TFYjNMHdK/fPMHxKcsMEZGkxOaqP4edum9n5GssMo8cfQNMAL023iPgFcSwWUhun3DN7GxuxVP06MM61ajrQ/ckukT/e9MlqtH0wQHYwCVldoznwkKq6hA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear N-Methylperfluoro-1 octanesulphonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA614vJWsW8msbzoHiBRDTc880_R7-_39Nu8_2k4nQiRQ ;
+        prov:generatedAtTime "2026-06-24T10:48:40.062366+02:00"^^xsd:dateTime .
+}

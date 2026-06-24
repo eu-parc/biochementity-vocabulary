@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAOX1ArHQ3MBV2Al6Z8JmdA-ZY0KixMJ-FSKXUeo3zmxs> .
+@prefix sub: <https://w3id.org/np/RAOX1ArHQ3MBV2Al6Z8JmdA-ZY0KixMJ-FSKXUeo3zmxs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOX1ArHQ3MBV2Al6Z8JmdA-ZY0KixMJ-FSKXUeo3zmxs a owl:Class ;
+        rdfs:label "7-Carboxy-(mono-methyl-heptyl) phthalate",
+            "7-Carboxy-(mono-methylheptyl)ftalaat"@nl-be ;
+        schema:alternateName "cx-MiNP",
+            "cx-MiNP"@nl-be ;
+        schema:comment "source: http://exposome-explorer.iarc.fr/compounds/1465" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <INCHIKEY:>,
+            <file:///home/runner/work/biochementity-vocabulary/biochementity-vocabulary/build/IGGGGTKTEAEHSG-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAqZdmy1JpuhitxOxNDKDkMNt9as5gxhydiA2EGSQ4NKE .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:32.979321+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "i07u5krM6Hdf8CVT8zoO68leNnTydHK/EVaC2plwjjedeAVGur4e6urT1UVtIQ0/18DsbTAbhli9Xe4RXsIOVeVeubyoN6czj8yrP32dY/MSpMG/p2cL0wdSaRjo34fmontHh1DwF5+aJHfg1oTan0dKG6nTxqIXdcY15EM/BE/LFFsgYPXulK5ynvzXeamP7RHA4CZrQWEUSDf0WpJMxr2gc1Tf+VGoOa+UVhohlC3t8flFM+hf6SM7Nn5x38R4vLViFQUkhoMnlpHW73mJXY6uNpNZYK3pErgSL3tMhCKR183BbMSjzHbeUaJfxeNdhOTThxMME3vpvJ6Qznvgbw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "7-Carboxy-(mono-methyl-heptyl) phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOX1ArHQ3MBV2Al6Z8JmdA-ZY0KixMJ-FSKXUeo3zmxs ;
+        prov:generatedAtTime "2026-06-24T10:48:32.979321+02:00"^^xsd:dateTime .
+}

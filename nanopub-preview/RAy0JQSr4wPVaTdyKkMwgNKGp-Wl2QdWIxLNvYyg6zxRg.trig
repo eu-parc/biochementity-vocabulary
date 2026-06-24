@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAy0JQSr4wPVaTdyKkMwgNKGp-Wl2QdWIxLNvYyg6zxRg> .
+@prefix sub: <https://w3id.org/np/RAy0JQSr4wPVaTdyKkMwgNKGp-Wl2QdWIxLNvYyg6zxRg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAy0JQSr4wPVaTdyKkMwgNKGp-Wl2QdWIxLNvYyg6zxRg a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 183",
+            "Polychloorbifenyl 183"@nl-be ;
+        schema:alternateName "2,2',3,4,4',5',6-Heptachlorobiphenyl",
+            "PCB 183",
+            "PCB 183"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:52663-69-1>,
+            <https://identifiers.org/inchikey:KQBFUDNJKCZEDQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:40476> ;
+        pehterms:hasContextAlias sub:_nb4d711a7683c4faab1e8ad4efdd68fccb1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAuUi8CDxged5-pGcWJbWzKQKK6eiC3pmZ-iArKpiKgeM .
+    sub:_nb4d711a7683c4faab1e8ad4efdd68fccb1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb183" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:14.945507+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "XM+BQGByVKRcVsCVxBZ8nmEh91FqBr0n5CsaRvmD8iHDJPgXZa32zg5XNIHh5FvYpGnah0ZCYU8xeqv5oFgzkhy2agjfisVzCafWbQ7Om7gJotIF3ilou92KcC5Nqg5hr0+lSHcS6EIeKliQb1xzqit9VTCG4DCdXPOvHuBKQ2E2/2nMuPG4SE2qJczCrZLMQ/YPCfwJo6FWydlyFlfxekefw3DQ4xe6D9akdcItYY1RljnsSFe7rHmkOwJokFZj9r/23dFUZTqJr3xo0XOPJkIygt7EO8jTAlpE8wv8G/weBNoMOeJLKImwAtYAr2QkZ5UkL44DRThI6PI8mxXaHw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 183" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAy0JQSr4wPVaTdyKkMwgNKGp-Wl2QdWIxLNvYyg6zxRg ;
+        prov:generatedAtTime "2026-06-24T10:48:14.945507+02:00"^^xsd:dateTime .
+}

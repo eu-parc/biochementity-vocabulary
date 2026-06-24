@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAcRlGfmsnk56ANW7xAhrGlqy_GMtMZpBFpONFcmLq2QQ> .
+@prefix sub: <https://w3id.org/np/RAcRlGfmsnk56ANW7xAhrGlqy_GMtMZpBFpONFcmLq2QQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcRlGfmsnk56ANW7xAhrGlqy_GMtMZpBFpONFcmLq2QQ a owl:Class ;
+        rdfs:label "Perfluorododecanoic acid",
+            "Lineair + vertakt Perfluoro-n-dodecaanzuur"@nl-be ;
+        schema:alternateName "PFDoDA",
+            "L+B PFDoA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n2033caa289644ff8aee99c56a9f49bceb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n2033caa289644ff8aee99c56a9f49bceb1 a pehterms:ContextAlias ;
+        schema:alternateName "lbpfdoda" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:38.314830+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "PY9nSa1SrsEhFEICjXNfxWXM6D7hvLJa2ww/7Vxl+LaG+s10vX2dMqas5Vh3niJZl1pkxOVgRf7J7DvztHTL+weGVx3PwdFuKFLejYDlb0pOEKpZrq9IA7xeop6IEtsbuou1SfR1/+qELIbhIvxVa9/3+SS/9QmP75ocGhErsBZ38qgTt9MC/5PjP+MCO9W5IvLRvttxicQXSQEnEZKSKbCFT45DLHkeGnTetajR9SoxUR4K8scb3VkIaDPqLh8R5N4nZWSrby8ndN6J2tS4kokcejxxE3Ty1VfQsnHtSC/ENAXvVzBuPYhEp7W6VQIW+o7gibTPp4QHHYErshT37w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Perfluorododecanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcRlGfmsnk56ANW7xAhrGlqy_GMtMZpBFpONFcmLq2QQ ;
+        prov:generatedAtTime "2026-06-24T10:47:38.314830+02:00"^^xsd:dateTime .
+}

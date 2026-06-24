@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAllgSysbTF-h7U2GVTnRD-k1XHv0IJ_rCDBWMJZ_zog4> .
+@prefix sub: <https://w3id.org/np/RAllgSysbTF-h7U2GVTnRD-k1XHv0IJ_rCDBWMJZ_zog4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAllgSysbTF-h7U2GVTnRD-k1XHv0IJ_rCDBWMJZ_zog4 a owl:Class ;
+        rdfs:label "Benzo[c]phenanthrene",
+            "Benzo[c]fenantreen"@nl-be ;
+        schema:alternateName "BcPh" ;
+        rdfs:subClassOf biochementity:RAKw3PYk2FgtZhCmmRF-SGSgb0qBA4klx8SUd4OuOUK10,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:82292>,
+            <https://identifiers.org/cas:195-19-7>,
+            <https://identifiers.org/inchikey:TUAHORSUHVUKBD-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9136> ;
+        pehterms:hasContextAlias sub:_ne2fc66ab822a49f1aa67f9b6dec33c3fb1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_ne2fc66ab822a49f1aa67f9b6dec33c3fb1 a pehterms:ContextAlias ;
+        schema:alternateName "bcph" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:08.638253+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "EaZkaKwwlGLamlRBVD7DeNYvRDJmeaRBtgsc2KjSOogNkxpYu11C7mJjdkR2739lIk6oJ1xx0sRZpx54a0dlVMT2QI+e2J0x0WAm69LzvFAc8zdsw4CfJibaxEeDOYUT1rm7/7WL4ahGbNB34nqpneb5lfDdq3vTi6CEAmx6XxnO0loKv+W5/R615ASIEBVH/cclbliInXLUadtpodkci2h0UrQWyPxd4tvHz73Slubl1dGJVRtnVcVVF6SRf7Ea8qx0HGfVL8iRAbOHEtJtW31cMcTakNnx+QAtwr5mZLZupf/KYxuxME6sHFezwNC57yhkxF+aFpj2AJedZZd42A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzo[c]phenanthrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAllgSysbTF-h7U2GVTnRD-k1XHv0IJ_rCDBWMJZ_zog4 ;
+        prov:generatedAtTime "2026-06-24T10:48:08.638253+02:00"^^xsd:dateTime .
+}

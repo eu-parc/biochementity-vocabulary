@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RARMexrZB6n7sBPlbUNVqhOn-AYb3ouK237I7BXDw-j48> .
+@prefix sub: <https://w3id.org/np/RARMexrZB6n7sBPlbUNVqhOn-AYb3ouK237I7BXDw-j48/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RARMexrZB6n7sBPlbUNVqhOn-AYb3ouK237I7BXDw-j48 a owl:Class ;
+        rdfs:label "Linear Perfluorooctylphosphonic acid",
+            "Lineair perfluoroctylfosfonzuur"@nl-be ;
+        schema:alternateName "PFOPA",
+            "PFOPA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:PCEKSCOIHGIBSA-UHFFFAOYSA-M> ;
+        pehterms:hasContextAlias sub:_nae4bb086e5df41b9908752960c4740efb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_nae4bb086e5df41b9908752960c4740efb1 a pehterms:ContextAlias ;
+        schema:alternateName "pfopa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:42.903313+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "YIIm5VGp4tkqM6W6mXyhq+7N09HesXtsYFi4uviTi2tryM9mxLfqsOQWXLrDjHCx3QlRc8D+BQobNe/+0UtcBddL/eqtGf8wFexZ6+NzkTW2z0vdQCwI0O6bF15Wh0wEGkX1ZYEf5NDu1H/1yUotxKoNUix+EJFiA0q1y1/rXnYILG+1QEoatxUQq0sthpCPfnkbOxJrN/nIsInKWOy09Vy+hsAbXoUoz2lXS45p70IQ5UhyhnQW/0ThpHNUJXx9BSV9G+0r1KN0gZX0q9C+++KCjPaSQK9S7V1LD9qKCiou2yMGmmqPrIbeL/sAzj/FK1SlYrwe3jRah786IbIuiA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluorooctylphosphonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RARMexrZB6n7sBPlbUNVqhOn-AYb3ouK237I7BXDw-j48 ;
+        prov:generatedAtTime "2026-06-24T10:47:42.903313+02:00"^^xsd:dateTime .
+}

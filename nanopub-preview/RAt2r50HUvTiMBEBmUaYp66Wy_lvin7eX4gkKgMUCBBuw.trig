@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAt2r50HUvTiMBEBmUaYp66Wy_lvin7eX4gkKgMUCBBuw> .
+@prefix sub: <https://w3id.org/np/RAt2r50HUvTiMBEBmUaYp66Wy_lvin7eX4gkKgMUCBBuw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAt2r50HUvTiMBEBmUaYp66Wy_lvin7eX4gkKgMUCBBuw a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 66",
+            "Polychloorbifenyl 66"@nl-be ;
+        schema:alternateName "2,3',4,4'-Tetrachlorobiphenyl",
+            "PCB 66",
+            "PCB 66"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:32598-10-0>,
+            <https://identifiers.org/inchikey:RKLLTEAEZIJBAU-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:36185> ;
+        pehterms:hasContextAlias sub:_n22b0b73daa754da6b8f3611b89cdd7d8b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAuUi8CDxged5-pGcWJbWzKQKK6eiC3pmZ-iArKpiKgeM .
+    sub:_n22b0b73daa754da6b8f3611b89cdd7d8b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb66" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:24.508855+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "dX+j5sCVeKCv6BZKwRQRcoCcFPuXR+vChVgGiB6ccBNljpJkaVTcix0mSOU/UbuhYCyWQ0o90uEh9fy8Fa/fJRkrz3QzfqVankHJNJN71lVnYdBuuOk6meWtYIiv3h0uhPNVE6bRjMBQKW4b3VMq7G0Lv7B6rJIpymkl53A7J58k7L1z5f6SytUiOKu5fBnQ6HBbfHSKS3NV6rrWCcT+2kZvw+d0AOmlIRdt1NsspTpaCWhlruMYjuyRttzrqTsZQM9aSo0WqivH5vBY7b2LBisblgdSOH21jQ/70YFKNducNge5vIW7ks4sapJQV9kG1PCGgQl4LsI+n7pgElYL/Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 66" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAt2r50HUvTiMBEBmUaYp66Wy_lvin7eX4gkKgMUCBBuw ;
+        prov:generatedAtTime "2026-06-24T10:48:24.508855+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAF0I_1WNbNAg_PnvNQNboScbuQapWympDP9xZcSf5teo> .
+@prefix sub: <https://w3id.org/np/RAF0I_1WNbNAg_PnvNQNboScbuQapWympDP9xZcSf5teo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAF0I_1WNbNAg_PnvNQNboScbuQapWympDP9xZcSf5teo a owl:Class ;
+        rdfs:label "Hexabromocyclododecane beta",
+            "Hexabroomcyclododecaan beta"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "HBCDβ",
+            "beta-Hexabromocyclododecane" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <file:///home/runner/work/biochementity-vocabulary/biochementity-vocabulary/build/13040187>,
+            <https://identifiers.org/cas:134237-51-7>,
+            <https://identifiers.org/inchikey:DEIGXXQKDWULML-UFVWWTPHSA-N> ;
+        pehterms:hasContextAlias sub:_ne473269041d44e0eab25bc9db48e40eab1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_ne473269041d44e0eab25bc9db48e40eab1 a pehterms:ContextAlias ;
+        schema:alternateName "hbcdb" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:33.698885+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "K0IJhWRGN3E+9sMoOu638A+iaI7FMdxVac1jeB5UZvUOUaWDf0yrBXtyUtyLFq2cZBETX8DArVJGwKqu9kIr3etU6Boh18rGgjg52b9qGDGoP+VkM6hiuEpVO/ry2gv/A4xOJOhzNBu0ix9sWN+Z4DeyeEG3unvdSta+np7pJLUcrkD2s6+TPKXQWx8kCMiouxPwT+GjHjeddj+KxOg8Z7qRvUcy/DvTK26SZV6kBu8oJF0LfnTCfnGMYB9HUo3SLkcENR3oCxrYyw72OmP6wc2XoTjTcin6TeiO5vtqe6oSex53knaGvVeKgZj2HJHh8SpqRLiAOxZ9rgyCgK00Pg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Hexabromocyclododecane beta" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAF0I_1WNbNAg_PnvNQNboScbuQapWympDP9xZcSf5teo ;
+        prov:generatedAtTime "2026-06-24T10:47:33.698885+02:00"^^xsd:dateTime .
+}

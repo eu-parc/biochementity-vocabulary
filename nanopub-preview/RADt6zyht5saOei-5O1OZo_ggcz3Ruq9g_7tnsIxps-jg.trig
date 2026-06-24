@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RADt6zyht5saOei-5O1OZo_ggcz3Ruq9g_7tnsIxps-jg> .
+@prefix sub: <https://w3id.org/np/RADt6zyht5saOei-5O1OZo_ggcz3Ruq9g_7tnsIxps-jg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADt6zyht5saOei-5O1OZo_ggcz3Ruq9g_7tnsIxps-jg a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 157",
+            "Polychloorbifenyl 157"@nl-be ;
+        schema:alternateName "2,3,3',4,4',5'-Hexachlorobiphenyl",
+            "PCB 157",
+            "PCB 157"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81523>,
+            <https://identifiers.org/cas:69782-90-7>,
+            <https://identifiers.org/inchikey:YTWXDQVNPCIEOX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:50891> ;
+        pehterms:hasContextAlias sub:_n3490b17c4b26487a9b8223cdf3435536b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RAuUi8CDxged5-pGcWJbWzKQKK6eiC3pmZ-iArKpiKgeM .
+    sub:_n3490b17c4b26487a9b8223cdf3435536b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb157" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:25.396656+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "URJttfgg5JMIGXHU3+wEFmrWyx4SgL7jXePeH4QtQb5yCqJN3nkkSHH5s2ngO7Uyp+acV0TjuQe+T+P/lhOUPqEQSCsvgBvdd3+1xKHHZPnVHTeg/NrLPo5l/4yPcqBJY5oFogXvE85bA0M2mlqKiUygKbVAxjxPhr6r2hyC6wZhfUsiYoPUEppGb1jaB3hHVbrQXWvH8MGmvp0FofVj0CFBERvr6hX7MhbW9+0lJR/dBeSla1gPiNj+6LU5JjoM6Y2tC09K27l8+SNKrsp43DX1+ZxqqO7HS1uvP7fsaCNBYaro8qjIPE1u/uq/KAhbV1NI0bZ6Ll84BlOPKXk7Jw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 157" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADt6zyht5saOei-5O1OZo_ggcz3Ruq9g_7tnsIxps-jg ;
+        prov:generatedAtTime "2026-06-24T10:48:25.396656+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAbrIIwyY5Ggd3CrzQQlRyQjtACvaDGwJvgjZ6RJhHxXM> .
+@prefix sub: <https://w3id.org/np/RAbrIIwyY5Ggd3CrzQQlRyQjtACvaDGwJvgjZ6RJhHxXM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbrIIwyY5Ggd3CrzQQlRyQjtACvaDGwJvgjZ6RJhHxXM a owl:Class ;
+        rdfs:label "(RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide",
+            "(RS)-2-chloor-N-(2-ethyl-6-methyl-fenyl)-N-(1-methoxypropaan-2-yl)aceetamide"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+        schema:alternateName "Dimetachlor" ;
+        schema:comment "comments: * can it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Metolachlor" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n33c77ebebc2c40cfb8602bb23c134afbb1 ;
+        pehterms:hasGroupLabel "herbicides" .
+    sub:_n33c77ebebc2c40cfb8602bb23c134afbb1 a pehterms:ContextAlias ;
+        schema:alternateName "dimetachlor" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:44.115034+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Th1fHTJBQFd8S+EN7tXYTUTnz/AQga18VtE7DbJEpLYOdwFjjUOwod4d/Wi8c+ItRopIX/52HkzIEKUUmSezdxY7y0By3tG9lVfZTt4k7cde/rUlHQUIYbTNPK9d3PuSKhQKOuorpophsTpBgv6/mvZiQuyL95Vxb/FrGpuYVDkl4Fu+DJ37dsHpSOgLJO/JagnSFoClH47Bb7MSg35kYKntZ3LbQOc16o80b+fROvSvtwHZzw6ooDLuK0k1imPwTZ1wKS8rF7zdx/0tT55hiqHsI6Ttvhzcm0Xy0PdtaLWVnZhNb6IqwHXSkyD7fCSTh3KRQSmUWXYc7fvNiw718w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "(RS)-2-Chloro-N-(2-ethyl-6-methyl-phenyl)-N-(1-methoxypropan-2-yl)acetamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbrIIwyY5Ggd3CrzQQlRyQjtACvaDGwJvgjZ6RJhHxXM ;
+        prov:generatedAtTime "2026-06-24T10:47:44.115034+02:00"^^xsd:dateTime .
+}

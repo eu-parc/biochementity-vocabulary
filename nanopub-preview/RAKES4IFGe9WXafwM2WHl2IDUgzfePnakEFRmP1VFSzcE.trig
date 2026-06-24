@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAKES4IFGe9WXafwM2WHl2IDUgzfePnakEFRmP1VFSzcE> .
+@prefix sub: <https://w3id.org/np/RAKES4IFGe9WXafwM2WHl2IDUgzfePnakEFRmP1VFSzcE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAKES4IFGe9WXafwM2WHl2IDUgzfePnakEFRmP1VFSzcE a owl:Class ;
+        rdfs:label "Aflatoxin G1",
+            "Aflatoxine G1"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+        schema:alternateName "AFG1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:80706>,
+            <https://identifiers.org/cas:1165-39-5>,
+            <https://identifiers.org/inchikey:XWIYFDMXXLINPU-WNWIJWBNSA-N>,
+            <https://identifiers.org/pubchem.compound:2724361> ;
+        pehterms:hasContextAlias sub:_n06339e6cf72848518e4a274b9068e62bb1 ;
+        pehterms:hasGroupLabel "mycotoxins" .
+    sub:_n06339e6cf72848518e4a274b9068e62bb1 a pehterms:ContextAlias ;
+        schema:alternateName "afgone" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:00.762695+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mxcD0CX1j8JbRZg6Uf0I43rYkEm/Whn+SK05nMLn21dglwM0zQuG7S7g5Jps5i/ZfQsUkMeEvowsMvNMNpGYZ616NcjhlHkqk2iiWFTXM8QvPnvQ+ylWGU1IwbH7P6RFC+lE0HgoD+qGmqbP7WKGbswjqjyNW/OyTOlfafUblca+ZQ80IV5Bziq8T4JpbPW3hF4gU4myY/zUSM7K2H3ScWhZU0VLV5kdvpqy+7d9u8jJbvaKLhztfeJZLRb9/sSJtQ+WE7Elxx+00ZJIwVYRDYMupcIbiD4m3ezH8elNghi6Wr4ulBVoC0n8OXFF0lG/3H8JA7UeXXP3Ycuf0w7v1A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Aflatoxin G1" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAKES4IFGe9WXafwM2WHl2IDUgzfePnakEFRmP1VFSzcE ;
+        prov:generatedAtTime "2026-06-24T10:48:00.762695+02:00"^^xsd:dateTime .
+}

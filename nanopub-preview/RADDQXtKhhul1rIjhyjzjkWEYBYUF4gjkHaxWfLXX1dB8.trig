@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RADDQXtKhhul1rIjhyjzjkWEYBYUF4gjkHaxWfLXX1dB8> .
+@prefix sub: <https://w3id.org/np/RADDQXtKhhul1rIjhyjzjkWEYBYUF4gjkHaxWfLXX1dB8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADDQXtKhhul1rIjhyjzjkWEYBYUF4gjkHaxWfLXX1dB8 a owl:Class ;
+        rdfs:label "Perfluorohexane sulfonic acid",
+            "Lineair + vertakt Perfluoro-n-hexaansulfonzuur"@nl-be ;
+        schema:alternateName "PFHxS",
+            "L+B PFHxS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n5f274981c58d48a1ad7469cc6fb61646b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n5f274981c58d48a1ad7469cc6fb61646b1 a pehterms:ContextAlias ;
+        schema:alternateName "lbpfhxs" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:59.461822+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "gHS6yh/GD8q+MIARyELVsjVaHQuF3XBOYizM6RJlZeDFABcuap42yR5g1mSA3YP2kHbqmrLk+5ETC8VHmhKx3dbPToIfFC/z6pvDeGctpLUrv8gwleeZ7j0K6CoiQynAuPfSojMHvrq7abaAoPAU4cYkI3Vb0Ok1DuHOO0e1UsfHlo6/QHhtHuwrcnVq3yyPUeV+xWwkv1QgYZvdoXj70+yCBWDDd94eI2Cwkzs72PhaN9V+7EOAU4RSpu/DY9kdNzrbA/Hpjj4hS5emTdI7yhvWoW2E57JjwZWlYhKdXXaysFZf0o/zW8reCDaGe359Jo+LBhnIH2cdlywJNWNdJA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Perfluorohexane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADDQXtKhhul1rIjhyjzjkWEYBYUF4gjkHaxWfLXX1dB8 ;
+        prov:generatedAtTime "2026-06-24T10:47:59.461822+02:00"^^xsd:dateTime .
+}

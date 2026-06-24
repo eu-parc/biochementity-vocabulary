@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RApBq9hP88KECXwGv43szci04bQrF0NmN68uQqlwWTbGI> .
+@prefix sub: <https://w3id.org/np/RApBq9hP88KECXwGv43szci04bQrF0NmN68uQqlwWTbGI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApBq9hP88KECXwGv43szci04bQrF0NmN68uQqlwWTbGI a owl:Class ;
+        rdfs:label "α-zearalenol-glucuronide",
+            "α-zearalenol-glucuronide"@nl-be ;
+        schema:alternateName "α-ZEL-Glc" ;
+        schema:comment "comments: Didn't find this" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n2aa3c29dbc4a4a94a9bc39df33fb5b8cb1 ;
+        pehterms:hasGroupLabel "mycotoxins" ;
+        pehterms:isMetaboliteOf biochementity:RAo9q3u3N4T5T1H8LMigQiZ3LLc1A9erhDYMbO6_cs1Rs .
+    sub:_n2aa3c29dbc4a4a94a9bc39df33fb5b8cb1 a pehterms:ContextAlias ;
+        schema:alternateName "azelglca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:09.352138+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "lhUWMf7OWJ6shTh+GlLNqm3EF0hYUb7D/ZNKKl5R4OowXOB7VHnQXfzExTdTOKTiqKb9hf7lPDsmHgK3DvaxlNC2LFSQRXQxLFmzk55o7g+OeIOd6NcL5eKZRQ86wxwBrWUBB9WWQMzaZ0EngGKEauSEGl9GJOhGCQTE3lQv5GQr+MkOL+j7UaiHGsTSpuORZkp/emx8kPLpQylElfzWstLli3UEsMQOIhi67LtQsynNuEKwjoXCTUUp6B3pGYIIyuNeE6MgxCRxhtpqZFElD15ZTQksMKI03bvNbL0W7PhdzJF95C7QvWf3KTxw/8DhRntlVzbJVICcd2uf+vQXdA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "α-zearalenol-glucuronide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApBq9hP88KECXwGv43szci04bQrF0NmN68uQqlwWTbGI ;
+        prov:generatedAtTime "2026-06-24T10:48:09.352138+02:00"^^xsd:dateTime .
+}

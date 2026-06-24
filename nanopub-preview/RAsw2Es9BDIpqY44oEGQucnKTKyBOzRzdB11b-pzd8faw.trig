@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAsw2Es9BDIpqY44oEGQucnKTKyBOzRzdB11b-pzd8faw> .
+@prefix sub: <https://w3id.org/np/RAsw2Es9BDIpqY44oEGQucnKTKyBOzRzdB11b-pzd8faw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAsw2Es9BDIpqY44oEGQucnKTKyBOzRzdB11b-pzd8faw a owl:Class ;
+        rdfs:label "Tetrabromobisphenol A",
+            "Tetrabromobisphenol A"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "TBBPA",
+            "TBBPA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33217>,
+            <https://identifiers.org/cas:79-94-7>,
+            <https://identifiers.org/inchikey:VEORPZCZECFIRK-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6618> ;
+        pehterms:hasContextAlias sub:_ncf43fe3bfbba4b1eb65c535262e764aeb1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_ncf43fe3bfbba4b1eb65c535262e764aeb1 a pehterms:ContextAlias ;
+        schema:alternateName "tbbpa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:30.654107+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "JzgWPcz07tFR5TF9u6tr1lHPUVp1SEgDyxYwMWdUTwvvSurbFkCfEcbpOLPsfEXq98XOUTyQD11aGyGLzEJRr1fXl5wgqpin7+sq3SMglY3Kx9zicG6ltv3XUELSiupLYQXfOLzGCwbr5m6v+8ZS3P2zLvfHZMqgzyck0nSVxJ7QbBPvhG+Yx4dsnUrPMXsqaGJUFBy4+R+v34lozbfO9FolDfEAf5oilKfpP4gHGtdkJE6C6naJSNnA35AkM2r4FWl2R1rSxKTA6qKA0U58uj3x6CSv//LPQba4+gaw5VcerWQUMqIX6rOq6RHCTh9n9GqkeztWfNeq0BT31jqrCg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tetrabromobisphenol A" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAsw2Es9BDIpqY44oEGQucnKTKyBOzRzdB11b-pzd8faw ;
+        prov:generatedAtTime "2026-06-24T10:47:30.654107+02:00"^^xsd:dateTime .
+}

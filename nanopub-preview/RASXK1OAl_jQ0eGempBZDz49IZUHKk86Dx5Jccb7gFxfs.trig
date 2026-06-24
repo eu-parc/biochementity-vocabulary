@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RASXK1OAl_jQ0eGempBZDz49IZUHKk86Dx5Jccb7gFxfs> .
+@prefix sub: <https://w3id.org/np/RASXK1OAl_jQ0eGempBZDz49IZUHKk86Dx5Jccb7gFxfs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RASXK1OAl_jQ0eGempBZDz49IZUHKk86Dx5Jccb7gFxfs a owl:Class ;
+        rdfs:label "Heptachlor exo-epoxide (trans)",
+            "Heptachloor exo-epoxide (trans)"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "A",
+            "Epoxide",
+            "Heptachlor",
+            "Heptachlor exo-epoxide (trans)" ;
+        schema:comment "comments: Just need somone to double check that pubchem id is correct, since name does not correspond 100%" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:145213-12-3>,
+            <https://identifiers.org/cas:28044-83-9>,
+            <https://identifiers.org/inchikey:ZXFXBSWRVIQKOD-WOBUKFROSA-N>,
+            <https://identifiers.org/pubchem.compound:71317194> ;
+        pehterms:hasContextAlias sub:_n5d513b5321f1489ca6d5afe0b095ffcab1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_n5d513b5321f1489ca6d5afe0b095ffcab1 a pehterms:ContextAlias ;
+        schema:alternateName "transhepexepo" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:31.390447+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "X65kdLS4xIaxD4oHjL6fhBCdzLxAzZUoLfZJROVXJTQOkDVabZoHuVd7dC4JyCU1QQy9dWf9NV2q4+dRcebyxKBKllf6yCgoGnc4xBVN5PhucNPzpsV8U/BF86H5/OYFUNjPdZvQOZzc3CAjV0DtpMCyWtv+lOl9fthcp3krDH+nMK3S7zR9SNDGeFENFo4pKThwMFgLLKlXQYZ71PY1nT31h4bT+S1dKWwdfzcrD3R0MsGA5w+iHVng5GXnbo16Bc4YFQkHh23gkeHe+RKJ2v0/A4/rRo3jYcmTbyctTrBqgNdXWo1hGjrIzjzvwKKEEDOF9K8P+LkVrWQuLy14qg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Heptachlor exo-epoxide (trans)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RASXK1OAl_jQ0eGempBZDz49IZUHKk86Dx5Jccb7gFxfs ;
+        prov:generatedAtTime "2026-06-24T10:47:31.390447+02:00"^^xsd:dateTime .
+}

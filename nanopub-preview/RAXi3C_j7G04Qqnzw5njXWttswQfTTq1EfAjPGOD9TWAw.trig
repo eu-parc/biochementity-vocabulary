@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAXi3C_j7G04Qqnzw5njXWttswQfTTq1EfAjPGOD9TWAw> .
+@prefix sub: <https://w3id.org/np/RAXi3C_j7G04Qqnzw5njXWttswQfTTq1EfAjPGOD9TWAw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAXi3C_j7G04Qqnzw5njXWttswQfTTq1EfAjPGOD9TWAw a owl:Class ;
+        rdfs:label "4-Nitrophenol",
+            "4-Nitrofenol"@nl-be ;
+        schema:alternateName "4-nitrophenol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:16836>,
+            <https://identifiers.org/cas:100-02-7>,
+            <https://identifiers.org/inchikey:BTJIUGUIPKRLHP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:980> ;
+        pehterms:hasContextAlias sub:_n8edc7fc97db44650a3af220eb94b484cb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAtbeTjLZa7LlVHDdra2FvX-dHfrQVw1wOG7wwewOVxaY .
+    sub:_n8edc7fc97db44650a3af220eb94b484cb1 a pehterms:ContextAlias ;
+        schema:alternateName "niphen" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:22.151981+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "hJPtY4unfF1ootaIuR9j0KLldMgHY2pbNDLv6uHoD0ieqdyFgOj9wDsPFng6GBgcGuANFj3OkGvl+SthR8Hp9JAeJRKAxBCzOT0i9yo4cBI+nCTxOC9Ct9o/9WgK2Ku9GJd8xN2fj9dagBMM0siizcT135Mo5UT1pPJuRHYjsdRNJZAw0MyXB5zxYtKYZi+nB4OmNvNEpAmGZT2goyPOrw62pRa0RRKTzaaDR3vNreOUYK95HKg/oE9qD+kegTMk9PYk4gu+3JXKpcM9DGQYMdG6RPn6BohNiTFHjtgga4LdKdqkJSt3uhBB+2HPToFzPad2/uQEdTKX8HKUskj01w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-Nitrophenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAXi3C_j7G04Qqnzw5njXWttswQfTTq1EfAjPGOD9TWAw ;
+        prov:generatedAtTime "2026-06-24T10:48:22.151981+02:00"^^xsd:dateTime .
+}

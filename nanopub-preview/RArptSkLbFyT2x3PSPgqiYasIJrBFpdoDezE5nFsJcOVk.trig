@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RArptSkLbFyT2x3PSPgqiYasIJrBFpdoDezE5nFsJcOVk> .
+@prefix sub: <https://w3id.org/np/RArptSkLbFyT2x3PSPgqiYasIJrBFpdoDezE5nFsJcOVk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArptSkLbFyT2x3PSPgqiYasIJrBFpdoDezE5nFsJcOVk a owl:Class ;
+        rdfs:label "Di-n-pentyl phthalate",
+            "Di-n-pentylftalaat"@nl-be ;
+        schema:alternateName "DPP",
+            "DnPeP" ;
+        rdfs:subClassOf biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34680>,
+            <https://identifiers.org/cas:131-18-0> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:06.165654+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Iz8Z4Z0psPYJIM1AwfB0sMoZIol08QlygYo3dMqLLXd2miRm+xoe0VmzMnl2gSosLOJxYHt3pqgCxbntuPorQQXAePcIvT11EKQXJRqvZ8gndgJmwv8/SMgnUXqCIPiNIvJmNqOXHXEcFhBXQziBEmqPX9hxK3/BwG5z0NEa1kUqzjgrj7EaN7dXfdWE6c3/cqnJKCUjt8yzG8HfZfifyi1UBnSnJ2QU+ULTQ0hkeYti+L8pjjLfrT6IY/CAYnF1xtsDO9PwTpS/guVBMx76+HZsGQfsVqa6ahUFY7u6O3kerSqHKe6D4AiEA+Lpd27O5pZlLoQhtDXOejvJpqix0A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di-n-pentyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArptSkLbFyT2x3PSPgqiYasIJrBFpdoDezE5nFsJcOVk ;
+        prov:generatedAtTime "2026-06-24T10:48:06.165654+02:00"^^xsd:dateTime .
+}

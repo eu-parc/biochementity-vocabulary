@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAOVgG8p0kzM2Lw0yvbbr9I79E468gRPsruHo4Y7LyJmE> .
+@prefix sub: <https://w3id.org/np/RAOVgG8p0kzM2Lw0yvbbr9I79E468gRPsruHo4Y7LyJmE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOVgG8p0kzM2Lw0yvbbr9I79E468gRPsruHo4Y7LyJmE a owl:Class ;
+        rdfs:label "Linear Perfluoro-4-methoxypropanoic acid",
+            "Lineair Perfluor-4-methoxypropaanzuur (ook PF4OPeA)"@nl-be ;
+        schema:alternateName "PFMPA",
+            "PFMPA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:AGIMOOYNBDLMJV-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_nde309133a7d84097882bc648e743648ab1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_nde309133a7d84097882bc648e743648ab1 a pehterms:ContextAlias ;
+        schema:alternateName "pfmpa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:54.544570+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "AEuPio+OAMv4PBWu7646kxNvA3bRa94ILjs8fUDMb36AeMG6Pw18mzerUHXhxZZiSdVZ0ng8BQS/GaXPy/ydUrd4Iyn4AUjtUy8Q6oomsgScMB8doqmxf0zFS5P8moQqepqB7Ika4K1p7UhrKvonBz2v4vI65oN1+EWY41Yyem+yXo25DEn+7CQmjAGVa+/3Sw9dl/v0QAjL48bIJfCWLJV1ArbWkF3KW1zyX+Q8pn0h1aW8vv4mliPPijGJYOOGWz73aGojw1pVF+ClrXuRXrl3+iUW3O3cOn3aAlTy5qdTKTCS3sG6OFWKtrVPiPQKANSmxjWeigKZcqbTNZv1Fg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluoro-4-methoxypropanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOVgG8p0kzM2Lw0yvbbr9I79E468gRPsruHo4Y7LyJmE ;
+        prov:generatedAtTime "2026-06-24T10:47:54.544570+02:00"^^xsd:dateTime .
+}

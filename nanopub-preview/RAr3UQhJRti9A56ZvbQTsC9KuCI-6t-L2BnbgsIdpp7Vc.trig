@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAr3UQhJRti9A56ZvbQTsC9KuCI-6t-L2BnbgsIdpp7Vc> .
+@prefix sub: <https://w3id.org/np/RAr3UQhJRti9A56ZvbQTsC9KuCI-6t-L2BnbgsIdpp7Vc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAr3UQhJRti9A56ZvbQTsC9KuCI-6t-L2BnbgsIdpp7Vc a owl:Class ;
+        rdfs:label "Carbofuran-phenol",
+            "Carbofuran-fenol"@nl-be ;
+        schema:alternateName "carbofuran-phenol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:38474>,
+            <https://identifiers.org/cas:1563-38-8>,
+            <https://identifiers.org/inchikey:WJGPNUBJBMCRQH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15278> ;
+        pehterms:hasContextAlias sub:_n253c2924e4434656830a7e30cba76334b1 ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RADZ65LqsnTA9nPocdFsB9UcsGRlndpDwulizbFfvnvBM .
+    sub:_n253c2924e4434656830a7e30cba76334b1 a pehterms:ContextAlias ;
+        schema:alternateName "carphe" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:36.603685+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "A3qjYyrv3wuHqgjj2d7m06Jcdzqj2BuUZdzxrzU4FeUBTq798W3v3tMIqXbzIYuCq3LgLp1GGS4u6c/XxyeGI6mvdLdA+UXp3aFXQhz0ICu7WDw5iOwqHkU9Ub5skD316DejOeuZsbehYTtRIFdmlpAOZ1uiSG5Ktd5pbmLBm4EzaN9lll4nfalYH3VWSJfLDH+Z/L7JKvV9rMp7MCcJRebLO2gCXdjwTo+G1evHGDXOT/zyPlIdFFcsjVZ5eUwLtuaR2HbVtxoi9D85aRlCapbFRS4GUL5fJgyhBfAb1Pcfmjs3bIwFIER2wELWbY4xYNkoCQVhMrdlkVDbH+Czvg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Carbofuran-phenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAr3UQhJRti9A56ZvbQTsC9KuCI-6t-L2BnbgsIdpp7Vc ;
+        prov:generatedAtTime "2026-06-24T10:48:36.603685+02:00"^^xsd:dateTime .
+}

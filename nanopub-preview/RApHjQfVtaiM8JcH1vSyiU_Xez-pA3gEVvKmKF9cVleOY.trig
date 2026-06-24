@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RApHjQfVtaiM8JcH1vSyiU_Xez-pA3gEVvKmKF9cVleOY> .
+@prefix sub: <https://w3id.org/np/RApHjQfVtaiM8JcH1vSyiU_Xez-pA3gEVvKmKF9cVleOY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApHjQfVtaiM8JcH1vSyiU_Xez-pA3gEVvKmKF9cVleOY a owl:Class ;
+        rdfs:label "Phenanthrene-1,2,3,4-tetrol",
+            "Fenantreen-1,2,3,4-tetrol"@nl-be ;
+        schema:alternateName "PHE-tetrol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:MTKRZWWQDYNZRK-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23056179> ;
+        pehterms:hasContextAlias sub:_n32acc35d577540718674e5bd6313e79fb1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RACJfC6XeKWLRDEyiCcdulobMqoECwl1TNl0leZZOF3Rc .
+    sub:_n32acc35d577540718674e5bd6313e79fb1 a pehterms:ContextAlias ;
+        schema:alternateName "phetetrol" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:33.879053+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Ha3ZlGIknG4kDVrultq689u2eBCQ46B93h4mnjf7jW88w7Beil+GOuVVy+y2OPzkOksA2H0+MuKVX3RKUAyArL7i1ptPn9gaKOTi+iFhg16P7Ot9OhfPyq4oWJHZMCjemiaoi9LkPkn+RTGWJudM8vL0y5YO1W0tMGSMk1Wbt0uJxkgxjHTG6ZzGOj3PapixW8xLHZROhLig77bk4fQAko9ZeNMKND1za0feHKHK4HGEum5p9uOGiGW9b0Isxi2PxNIWpi6piYZeGDaEd0N5HPn8GMs4DWOGKfKxR+Z/Q+UL6Uz1i8QHJK2NMvEJYOvhQtm47HJhbGblticnu05ZSA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Phenanthrene-1,2,3,4-tetrol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApHjQfVtaiM8JcH1vSyiU_Xez-pA3gEVvKmKF9cVleOY ;
+        prov:generatedAtTime "2026-06-24T10:48:33.879053+02:00"^^xsd:dateTime .
+}

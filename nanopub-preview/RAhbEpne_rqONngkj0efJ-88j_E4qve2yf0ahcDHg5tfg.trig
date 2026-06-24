@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAhbEpne_rqONngkj0efJ-88j_E4qve2yf0ahcDHg5tfg> .
+@prefix sub: <https://w3id.org/np/RAhbEpne_rqONngkj0efJ-88j_E4qve2yf0ahcDHg5tfg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAhbEpne_rqONngkj0efJ-88j_E4qve2yf0ahcDHg5tfg a owl:Class ;
+        rdfs:label "Mono-n-pentyl phthalate",
+            "Mono-n-pentylftalaat"@nl-be ;
+        schema:alternateName "MnPeP" ;
+        rdfs:subClassOf biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132578>,
+            <https://identifiers.org/cas:24539-56-8>,
+            <https://identifiers.org/inchikey:FPGPRAKRYDSZAW-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:90531> ;
+        pehterms:hasContextAlias sub:_n1735950f755a455bad64a16c20713b25b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RArptSkLbFyT2x3PSPgqiYasIJrBFpdoDezE5nFsJcOVk .
+    sub:_n1735950f755a455bad64a16c20713b25b1 a pehterms:ContextAlias ;
+        schema:alternateName "mnpep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:32.738859+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "XeGd/aZrxKTFGmVtdqHE+w5NHCAVhLIEqWEMmUiHVvrIBthPIC6cOKbIY4e14xpqz+M7Ap/ioTrN43CHeJyAMV6rv4ZeRanJBsIds/PaTW84pSY2PKWlSXf/M0TLFlpHAxH4oAK2N9Hs6kVv9vbuLyh+veIsNjozc4UirkvLZCR5xFrb8OU7VhgF2IGHbnIZzHS4de0JeOB10En32LXe5UcUJs+/LQvIw5fqYVkpfBW2OeG+M3iTgtfCyYtVSqyXPO9a71PNOvm6F56V/+fMOuFr5/KKWeV5koKnpVdSPHjeGa1IJxPkWO5vslG/NreIQYBi85YJUOOMiueliAQywA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono-n-pentyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAhbEpne_rqONngkj0efJ-88j_E4qve2yf0ahcDHg5tfg ;
+        prov:generatedAtTime "2026-06-24T10:48:32.738859+02:00"^^xsd:dateTime .
+}

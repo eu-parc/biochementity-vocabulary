@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAmqu_fmU_j6nIqomex0I2lXxc_j6lBih0yyqUQ2hxwTc> .
+@prefix sub: <https://w3id.org/np/RAmqu_fmU_j6nIqomex0I2lXxc_j6lBih0yyqUQ2hxwTc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmqu_fmU_j6nIqomex0I2lXxc_j6lBih0yyqUQ2hxwTc a owl:Class ;
+        rdfs:label "Linear Perfluorobutane sulfonic acid",
+            "Lineair Perfluoro-n-butaansulfonzuur"@nl-be ;
+        schema:alternateName "lpfbs",
+            "PFBS"@nl-be ;
+        rdfs:subClassOf biochementity:RAuSJNNN076sC_KsuM_SWH6rWbY79f3vw8M43z6n2IMg0,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132446>,
+            <https://identifiers.org/cas:375-73-5>,
+            <https://identifiers.org/cas:59933-66-3>,
+            <https://identifiers.org/inchikey:JGTNAGYHADQMCM-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:67815> ;
+        pehterms:hasContextAlias sub:_n88fa397ac1d848ca9054f479760d36b2b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RAd_gOhoW5eRXoR_fds48O4BsNJTeMqYSeZeUZKB1e28Q .
+    sub:_n88fa397ac1d848ca9054f479760d36b2b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfbs" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:38.439442+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "XZEG7E0fZ/Q1RqP0TqD2dpa7UZfWY+vxo0h9G4H3BsuB24X8tn6/U//GUlBqycAqt3MUIHWE6NSnB83Fj5FbDCGqH12F4IRJrvlgMUqVKWuCbvuq0bwlpX2F/9Ydem+X05iEYVdmNt3ME06Zw10gQFQeJAPNR2AcrHGmenVvo+pKmaIAGtQbYMjDL88K7ydFhFdWnVy7W3C9CqWjpbFNxN365rYxsWyp+mTeLTDjgsQVag2ftjkQp2HvQeyQtBmS/arTSxQbJPZ7+T+SlhPL1SRxKbRYEH/ubW8yq26/zbJ/Talds2MgggojSiCk19zYetU+14i/ZGH4X4VBddpavA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluorobutane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAmqu_fmU_j6nIqomex0I2lXxc_j6lBih0yyqUQ2hxwTc ;
+        prov:generatedAtTime "2026-06-24T10:48:38.439442+02:00"^^xsd:dateTime .
+}

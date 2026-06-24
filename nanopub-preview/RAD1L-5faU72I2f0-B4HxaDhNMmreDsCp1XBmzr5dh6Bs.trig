@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAD1L-5faU72I2f0-B4HxaDhNMmreDsCp1XBmzr5dh6Bs> .
+@prefix sub: <https://w3id.org/np/RAD1L-5faU72I2f0-B4HxaDhNMmreDsCp1XBmzr5dh6Bs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAD1L-5faU72I2f0-B4HxaDhNMmreDsCp1XBmzr5dh6Bs a owl:Class ;
+        rdfs:label "1-hydroxypyrene",
+            "1-hydroxypyreen"@nl-be ;
+        schema:alternateName "1-PYR",
+            "1-OH pyreen"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34093>,
+            <https://identifiers.org/cas:5315-79-7>,
+            <https://identifiers.org/cas:63021-84-1>,
+            <https://identifiers.org/inchikey:BIJNHUAPTJVVNQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:21387> ;
+        pehterms:hasContextAlias sub:_n0e773f31b32b42acb1c83975a3282367b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RArcU7JW6HNDet1gURKIz8VLk761iQHtaSDFljYaTV4fQ .
+    sub:_n0e773f31b32b42acb1c83975a3282367b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohpyr" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:35.550899+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "iWZuotpxk29x1kYVX3r2QftyegyOQ1h+84GsBbmIXTLTV8CdYJ6iETLZ7bbXNHhCUcKJqNhOd1BKdK0jqBpV5YySyw2DfmtuL3KxT1JYRi3vm5YZ0KM2cfHpb85bacPl3Q7xsPSxXGoeyns75hCmNn7uR/pHVAvMdHSE/aMAsg/HX6vkJM8N2t5fnRtWZV+Th+0UJ3DdI/SmPyIx7/QH/Aaw/ucvajmXSM3XZousrs1oDpQvnfWOCCLWCEr17gCzQdcOa8dznTFZ1b/JYp1sOt8g3CZfBRqpUAAnVia3t2QJUD6a7Tao0uNnYiNOQZ4whuABeacCjvXKb763vFgd8w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-hydroxypyrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAD1L-5faU72I2f0-B4HxaDhNMmreDsCp1XBmzr5dh6Bs ;
+        prov:generatedAtTime "2026-06-24T10:48:35.550899+02:00"^^xsd:dateTime .
+}

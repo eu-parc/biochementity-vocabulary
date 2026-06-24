@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAHy9F5QsTeGpiD11NSCcoz_VsSZ0iBtaEQpU_x0NHduc> .
+@prefix sub: <https://w3id.org/np/RAHy9F5QsTeGpiD11NSCcoz_VsSZ0iBtaEQpU_x0NHduc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAHy9F5QsTeGpiD11NSCcoz_VsSZ0iBtaEQpU_x0NHduc a owl:Class ;
+        rdfs:label "Linear Perfluorohexanoic acid",
+            "Lineair Perfluoro-n-hexaanzuur"@nl-be ;
+        schema:alternateName "lpfhxa",
+            "PFHxA"@nl-be ;
+        rdfs:subClassOf biochementity:RA71i-kgCU2JiToQUWYXepjbomdT2xKMWFS-qyxnMHA-w,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83492>,
+            <https://identifiers.org/cas:307-24-4>,
+            <https://identifiers.org/inchikey:PXUULQAPEKKVAH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:67542> ;
+        pehterms:hasContextAlias sub:_n0ff8a1d21a82401f99facc4f66cae060b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RAyEZWA1osRCCMeBbFhPykyV4UAk08lWjYmot1pQTRpq8 .
+    sub:_n0ff8a1d21a82401f99facc4f66cae060b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfhxa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:37.431799+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "hUJZE4l8oalsSmBPMqAnXLp4DcFgpSH4wggxn4T+XPpzR2QKnap8GcibsOLhdAT+dYFUAGVN5hmcLaBSJnPoKRGnKRg+P5G+DxriUKcIQizLkLFubF+F57BHCH29VEEgrXSRJSgH//Vil09q03JEnhNaL7Z607b+5CXB7oF36ChmYyT2C/8phEifLJSoUqEdlp1CEFsCA2zOmIolEg9KhDMu2bjip4W04dcHKOzCsdv+GM7Ed07BaRgjkViLT7Prcs2RSGg1i5uTgsrGkDqwzClBi8oeMvcp3NUSJX1Uu93BJG1gKEVioeXBhAlH+UEcvoX/LYCXPCKgjb1hb1hX7g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluorohexanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAHy9F5QsTeGpiD11NSCcoz_VsSZ0iBtaEQpU_x0NHduc ;
+        prov:generatedAtTime "2026-06-24T10:48:37.431799+02:00"^^xsd:dateTime .
+}

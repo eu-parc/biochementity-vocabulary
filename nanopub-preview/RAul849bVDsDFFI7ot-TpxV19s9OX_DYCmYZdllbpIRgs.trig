@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAul849bVDsDFFI7ot-TpxV19s9OX_DYCmYZdllbpIRgs> .
+@prefix sub: <https://w3id.org/np/RAul849bVDsDFFI7ot-TpxV19s9OX_DYCmYZdllbpIRgs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAul849bVDsDFFI7ot-TpxV19s9OX_DYCmYZdllbpIRgs a owl:Class ;
+        rdfs:label "Dimethyl phosphate",
+            "Dimethylphosphate"@nl-be ;
+        schema:alternateName "DMPbis",
+            "DMP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:166474>,
+            <https://identifiers.org/cas:53396-59-1>,
+            <https://identifiers.org/cas:813-78-5>,
+            <https://identifiers.org/inchikey:KKUKTXOBAWVSHC-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:13134> ;
+        pehterms:hasContextAlias sub:_na6a17f8b59ac4d3ea9bdc0c4972ec434b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAaWZiWDir3HlNxsCpdPrx6dcAr4C33Oce-feuonBNIu0,
+            biochementity:RAev9-5jCG5VagsPhguR_5z5tZuPuOhQg-NWcOkc-EAaQ .
+    sub:_na6a17f8b59ac4d3ea9bdc0c4972ec434b1 a pehterms:ContextAlias ;
+        schema:alternateName "dmp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:04.015749+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "iCfsr52S3ZWN5X5+BEZdtPVvNuFYUlDJeS9LgxybQzd7apXIiqmDL0nMiB2l08QGESw/C5NU2fC8lybq2txaNJOWA/+JYGCK3VoRG5IQC/pO26xjN2MZFQG1IW+Y9yh6kALDNUuUz0CrKFwpKvvqpjDF3nDAa7hbFXK0LFOSJgeb4Bi8GjPSNxUi/AyI+9P88kLtPraqKHjAQUwAGkPi7t2Zmp/vIIAP0zVnIdhC4Z7qDT9tQtkGCaxjihOp7xla4GtoaI7e8UuzuWU/eDgAMX+W+otZeGHZEUJhLM9Kv2oTHBBMSJvB1u+LS4oMJ7u4kRFziZ4kmh36OFsaFhsvYw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dimethyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAul849bVDsDFFI7ot-TpxV19s9OX_DYCmYZdllbpIRgs ;
+        prov:generatedAtTime "2026-06-24T10:48:04.015749+02:00"^^xsd:dateTime .
+}

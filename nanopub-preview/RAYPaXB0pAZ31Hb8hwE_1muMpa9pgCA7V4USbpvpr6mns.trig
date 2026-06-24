@@ -1,0 +1,42 @@
+@prefix this: <https://w3id.org/np/RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns> .
+@prefix sub: <https://w3id.org/np/RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns a owl:Class ;
+        rdfs:label "parabens" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "parabens" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:28.117098+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "L0JOJMl2QotODN1otaCvBDUnZgs6i76MH3F+07PRnc2VJ1UT1rv/i74L1JaBL4L8bT2B/XclX1BYEAIrrVTGCpPoMoeUFtOXivcCVq5rvQpLFF8HjYdpnnGM/ZBFHU5J4AJJC16aUG9amp8z1iWd60QnOYrh9mVVLqlZCz7eXpfuS1fp4lSSklW6Mtgk/SU3XjiURnqsbcnsRki5gz/6G46FNCsNqR8FlFBYu7VE8pPcTesF4KfXgS2KwOVrJxhqyggA2EzNl87N+B/hJiKrfZUsEeGrj7G+WbO/kOHHGiXlFXf2mBZKl2R34ibOTfiT2gODGUU4jknw111/ESZrmg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "parabens" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns ;
+        prov:generatedAtTime "2026-06-24T10:47:28.117098+02:00"^^xsd:dateTime .
+}

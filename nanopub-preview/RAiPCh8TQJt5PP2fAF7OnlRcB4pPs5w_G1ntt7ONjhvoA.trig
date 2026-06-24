@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAiPCh8TQJt5PP2fAF7OnlRcB4pPs5w_G1ntt7ONjhvoA> .
+@prefix sub: <https://w3id.org/np/RAiPCh8TQJt5PP2fAF7OnlRcB4pPs5w_G1ntt7ONjhvoA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiPCh8TQJt5PP2fAF7OnlRcB4pPs5w_G1ntt7ONjhvoA a owl:Class ;
+        rdfs:label "2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid",
+            "2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Haloxyfop",
+            "Haloxyfop"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:136694>,
+            <https://identifiers.org/cas:69806-34-4>,
+            <https://identifiers.org/inchikey:GOCUAJYOYBLQRH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:50895> ;
+        pehterms:hasContextAlias sub:_n517832b988a94f3eba3eca477926713cb1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_n517832b988a94f3eba3eca477926713cb1 a pehterms:ContextAlias ;
+        schema:alternateName "haloxyfop" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:57.814719+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "lVGGAtTCxK63K/XnAO8tRwQmR3CUPzZC9WhRonQUvxTHxnSdj1Or5iKt+5Ry8nebOqt3taQFjFEbl02qHWpIH8Igt8nldKD0PssAYh1jPpxtIQVn5AUu74x2vIGg36KSCoYyqpPRvv1jJ+QGhHlUapVGvKxVSLmo0yiw2YHxvChiR4cg0jjUirGHNIKHZimhDuVew532aW8x08DI6ORiJSZY+vu2tazKd+wnYxilXuqbU5KNDSH0OkAyT7c5iqobaXxONXGh/TnGrt1e2odxIvsdt3LGYuEU9EQk3EtZ5x2IlJG/LT1ZITFwfdnuIYaVMq0hMRXKGJWuPVCVsmUtBg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-[4-[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAiPCh8TQJt5PP2fAF7OnlRcB4pPs5w_G1ntt7ONjhvoA ;
+        prov:generatedAtTime "2026-06-24T10:47:57.814719+02:00"^^xsd:dateTime .
+}

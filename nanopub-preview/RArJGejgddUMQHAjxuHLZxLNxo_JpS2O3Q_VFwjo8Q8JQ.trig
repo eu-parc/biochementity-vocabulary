@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RArJGejgddUMQHAjxuHLZxLNxo_JpS2O3Q_VFwjo8Q8JQ> .
+@prefix sub: <https://w3id.org/np/RArJGejgddUMQHAjxuHLZxLNxo_JpS2O3Q_VFwjo8Q8JQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArJGejgddUMQHAjxuHLZxLNxo_JpS2O3Q_VFwjo8Q8JQ a owl:Class ;
+        rdfs:label "C reactive protein",
+            "C reactief proteïne"@nl-be ;
+        schema:alternateName "CRP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15023-2> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:32.857010+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Fay33aMdH2RokLdBAY5W8QzKFLCCXZFw8kmm3ERmbkzlbWcgpn3i0NZrrlw8PLPEwzz1IkaaKwDIfvL/oRLSaydD4/K2A0jUOkeaXc0G4hkVBqvKlerv0TJq/QNeWX3LQca/mlrYhocvWH16d452QYtIkVd0eM78TtqM2qQSm9HZi9j71s1fN9DoBTLV2DDO5ylTOhxwzBKhQagIkj1gcbLAqRGXYdMe3r2ue8bVu9iatdTcA4BAM2WNAqzUeEokvToOiqE6vE3f3/PzBJS/6i+pjUqJQXpSKveg+S+BRvu54YWtSiGhvlZpVBy7gFoc3f0e2NyA1zrGKqF/kURbdg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "C reactive protein" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArJGejgddUMQHAjxuHLZxLNxo_JpS2O3Q_VFwjo8Q8JQ ;
+        prov:generatedAtTime "2026-06-24T10:47:32.857010+02:00"^^xsd:dateTime .
+}

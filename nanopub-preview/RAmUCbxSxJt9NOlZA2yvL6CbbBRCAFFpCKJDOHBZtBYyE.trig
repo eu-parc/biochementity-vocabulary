@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAmUCbxSxJt9NOlZA2yvL6CbbBRCAFFpCKJDOHBZtBYyE> .
+@prefix sub: <https://w3id.org/np/RAmUCbxSxJt9NOlZA2yvL6CbbBRCAFFpCKJDOHBZtBYyE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmUCbxSxJt9NOlZA2yvL6CbbBRCAFFpCKJDOHBZtBYyE a owl:Class ;
+        rdfs:label "Atrazine mercapturate",
+            "Atrazine-mercapturaat"@nl-be ;
+        schema:alternateName "Atrazine mercapturate" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:138722-96-0>,
+            <https://identifiers.org/inchikey:JYBXBVCDDNBLJW-VIFPVBQESA-N>,
+            <https://identifiers.org/pubchem.compound:178512> ;
+        pehterms:hasContextAlias sub:_nf0accfa406b545a8a789a2a9f85db7c4b1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RABfN0Yv8r5oDlgtXtGWKFEY1MC6PEUCpUQVpIk7-L6j0 .
+    sub:_nf0accfa406b545a8a789a2a9f85db7c4b1 a pehterms:ContextAlias ;
+        schema:alternateName "atmer" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:07.286538+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "PcRSTi9cbgz6QB6Uaft0Yk3tg1H2xYj9ddzMwZkTsJfg2p/VHVqywtUkNRkoffjmyrT65SWQkKjRFFSGoK60Q0gL7S14E/9MRm0GHQyi2EC29ZsA26iRErDNqYnnRus6yjSvHmi3iNZgtTo/STqhan2C3IG+/4wq3qtKuhpuvuIs4FhkGloAKr5Pw07ICxHsYokeOl7tFfrOkC/SVqlvNQLHpE+y1WBHslqTi+EEf4zgbUNgKW3BMCjFlSV9rVwP5FMyMXeSsb+iLg8f6BFskKzEuZHpVvr8YxXpilHtDe1rTjIJffuVnbqiQTtw3yUL/pXwU6MbNBV99fxt4erLgw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Atrazine mercapturate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAmUCbxSxJt9NOlZA2yvL6CbbBRCAFFpCKJDOHBZtBYyE ;
+        prov:generatedAtTime "2026-06-24T10:48:07.286538+02:00"^^xsd:dateTime .
+}

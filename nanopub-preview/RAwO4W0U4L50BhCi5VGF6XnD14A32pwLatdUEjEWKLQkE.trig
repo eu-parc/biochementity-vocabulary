@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAwO4W0U4L50BhCi5VGF6XnD14A32pwLatdUEjEWKLQkE> .
+@prefix sub: <https://w3id.org/np/RAwO4W0U4L50BhCi5VGF6XnD14A32pwLatdUEjEWKLQkE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwO4W0U4L50BhCi5VGF6XnD14A32pwLatdUEjEWKLQkE a owl:Class ;
+        rdfs:label "Iso-butylparaben",
+            "Iso-butylparabeen"@nl-be ;
+        schema:alternateName "isobutylP" ;
+        rdfs:subClassOf biochementity:RAYPaXB0pAZ31Hb8hwE_1muMpa9pgCA7V4USbpvpr6mns,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:178256>,
+            <https://identifiers.org/cas:4247-02-3>,
+            <https://identifiers.org/inchikey:XPJVKCRENWUEJH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:20240> ;
+        pehterms:hasContextAlias sub:_n6fd418c450ac414fbe8e91af82e280ccb1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n6fd418c450ac414fbe8e91af82e280ccb1 a pehterms:ContextAlias ;
+        schema:alternateName "isobip" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:18.969354+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "F9SKOPhkdpqKmWoEIdQvg3JZq8xKucygDuLBVrMOawjPhMRrIYqSpf7ySk2IG5NwXqtHiOuNGdfZsdwYUsRDIY8JlKtR26lLwkjg2V/nRaMUiBC/psuLXY7FnFXDc0Pr97xt02nc05QsO3SXJaOeV1L1YIE11V1Z9fWGkDH59H+eQApW6B6L+Ushf2b45AtKnH0/QavG8VZePJcLRn0O9qcpTHYsF6CveSOb6hKjQ/P7RbbFpCe98/nB3LsU03g4S2Srthvitb1QlF0bMtmra/JNPyhvstCOapu7fQa5FU5Y6AjEpNUPp0AY/stI6di6tsdrOjbyWBrbESNmxStHxw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Iso-butylparaben" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwO4W0U4L50BhCi5VGF6XnD14A32pwLatdUEjEWKLQkE ;
+        prov:generatedAtTime "2026-06-24T10:48:18.969354+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAOGWqMfp94l2JjwrhQDoOghpOqbD163-NRTOsidiQ5kA> .
+@prefix sub: <https://w3id.org/np/RAOGWqMfp94l2JjwrhQDoOghpOqbD163-NRTOsidiQ5kA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOGWqMfp94l2JjwrhQDoOghpOqbD163-NRTOsidiQ5kA a owl:Class ;
+        rdfs:label "Bis(2-chloroethyl) phosphate",
+            "Bis(2-chloorethyl)fosfaat"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "BCEP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:166471>,
+            <https://identifiers.org/cas:3040-56-0>,
+            <https://identifiers.org/inchikey:PMGHIGLOERPWGC-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:76438> ;
+        pehterms:hasContextAlias sub:_n75c42f4e701c4468bd2226a68c97cae0b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n75c42f4e701c4468bd2226a68c97cae0b1 a pehterms:ContextAlias ;
+        schema:alternateName "bcepms" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:39.699742+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "XGNf28WpgYi+LRQE2U/Le/tpZ0aCnE3yZszce3o/lhoeY6WwIliGowZ3b6WDI5obgHzPGA4eTPE9zBP8H6i06RHNn7kkkCleVr4PIZrZk1gjGzqST3kBa3KUW2YVP9ZO7Q7YBaWZlspvahN394tWzoOQF80w5VUaTMdMUVwgnDfZ7RxZ9FsO3tT/jGTlaK5+4xkPk+DebJGhXA83znIcXli57pBqLD8AfMZIQLoyD8h9DyMiDFBeWB3K73yeSEG+2NmIBC3jFRs/vTH1J/EgEvtjXuY32pK+kfHpml04brA8AYvPZyQXQ5NAPuKgq0pI2D3Yx26D3jaXoBnw+w8rhw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Bis(2-chloroethyl) phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOGWqMfp94l2JjwrhQDoOghpOqbD163-NRTOsidiQ5kA ;
+        prov:generatedAtTime "2026-06-24T10:47:39.699742+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RANuLX3lfkF_x0SUeLx5oiKW352pmLzci9p1iciDDxaFY> .
+@prefix sub: <https://w3id.org/np/RANuLX3lfkF_x0SUeLx5oiKW352pmLzci9p1iciDDxaFY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RANuLX3lfkF_x0SUeLx5oiKW352pmLzci9p1iciDDxaFY a owl:Class ;
+        rdfs:label "Alanine aminotransferase",
+            "Alanine aminotransferase"@nl-be ;
+        schema:alternateName "GPT",
+            "Transaminase ALT" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15333-5> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:33.311800+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "JfIn9DQH5h3q5CZeNyHo5kOFTd9VBJk5jmu3sHyxXk3QoQr7rPFzzksnaqwKVnft+8iZ0g0vpE4yo9MTW07cFKOe70LMYyzk2GYTSVCex74wJIdf/mH/DIiNrSHrudM7NtD7oNCoFl+5uHsL1mpRWPz4A8jUOl0E4m5tUDedb5PH0z60zCUTPPM6NoSmwWrtmmYkER8Dz9cFoEo7YIASI9fsuDe/oV+aeymImJahSCWD7IoGFDHrcYxzToa8583GYCsaDCTTXv3xyBaHAEq+Pm+y0iscl75M4pdZk4hKOlCysjWe87Igs3mB4CecvM53CWT+njzWYbEQtiXPucRc6g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Alanine aminotransferase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RANuLX3lfkF_x0SUeLx5oiKW352pmLzci9p1iciDDxaFY ;
+        prov:generatedAtTime "2026-06-24T10:47:33.311800+02:00"^^xsd:dateTime .
+}

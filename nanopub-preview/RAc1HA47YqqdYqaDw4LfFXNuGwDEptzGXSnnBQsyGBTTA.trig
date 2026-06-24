@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAc1HA47YqqdYqaDw4LfFXNuGwDEptzGXSnnBQsyGBTTA> .
+@prefix sub: <https://w3id.org/np/RAc1HA47YqqdYqaDw4LfFXNuGwDEptzGXSnnBQsyGBTTA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAc1HA47YqqdYqaDw4LfFXNuGwDEptzGXSnnBQsyGBTTA a owl:Class ;
+        rdfs:label "1,2-dimethoxyethane",
+            "1,2-dimethoxyethaan"@nl-be ;
+        schema:alternateName "EGDME" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:42263>,
+            <https://identifiers.org/cas:110-71-4> ;
+        pehterms:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:45.171387+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "mhw1Ckq0S/iSbMIcMflYnvoOYBH2NaNNSbyyBCzH69d5xC6x18M6Upz43dWVCjSRSo8+4sGHEkOyqW574g1spqT6pJxQ1DyXbXvrHU/juSxj3pyUCTdGgS7ZX5mtcjqIR8DeydY9MWWgrxHGixVCs9mo0BhBVO1lnuwe6W2b6MroQ6Bp3WHrEi8JQyLG2kV02IozIVlsew8zDFyUlt+SbfwXwmS4U7sBHzYlER/NIyR/zETt/xTcymy5Rp0+1aWkHuyPtacyzAu68RFEEcN3xOMkwxkMqsA/JOlOTgqxQliHkXvzX+014YZJ3TGIbr6bZTC7JYdakTLWzS0g83visQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2-dimethoxyethane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAc1HA47YqqdYqaDw4LfFXNuGwDEptzGXSnnBQsyGBTTA ;
+        prov:generatedAtTime "2026-06-24T10:47:45.171387+02:00"^^xsd:dateTime .
+}

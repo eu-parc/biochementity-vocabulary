@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAQkqjH2hiQ5xL6ApfosKWv2-NoHMUn-Ljlx1aOKHpHeI> .
+@prefix sub: <https://w3id.org/np/RAQkqjH2hiQ5xL6ApfosKWv2-NoHMUn-Ljlx1aOKHpHeI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQkqjH2hiQ5xL6ApfosKWv2-NoHMUn-Ljlx1aOKHpHeI a owl:Class ;
+        rdfs:label "Linear Perfluoroheptane sulfonic acid",
+            "Lineair Perfluoro-n-heptaansulfonzuur"@nl-be ;
+        schema:alternateName "lpfhps",
+            "PFHpS"@nl-be ;
+        rdfs:subClassOf biochementity:RAdzVgSVcMZ1zTTlSi0B53JN7lWVbJBVuXfFyeVTMA1Zg,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:375-92-8>,
+            <https://identifiers.org/inchikey:OYGQVDSRYXATEL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:67820> ;
+        pehterms:hasContextAlias sub:_na4a7277c3eb44aa68c7a0190833c5fd7b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RA3R62tsoMhHXZ1v9zvUD0PUAKzaUe3MXgSMde5qN46Ts .
+    sub:_na4a7277c3eb44aa68c7a0190833c5fd7b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfhps" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:38.806004+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "iGNLw68j5jyXf5xxVay4G1ml28RUkt9c4qG8nVRjQbEcRKodx4P4kw45ADJFprepb8/zgsxGaZ+ojUEPrE3suvBeddm+6YeBVSP+OUmZ+7B+lvT6fh1KGHuUr6hEQwIYOjiZQGAQebISKJ5m4eQJiENkdEtflI2jHK8t34aRXX3Fuc0ezAwbalW6hvKpD56gsnb9dQJd8u03RZtQSJOeTfCHAZLLPpPMV0WrCWwfvs7VkXZ4E2jDVwomicwF8yOam3bsTo0vIH9ix93pK9Xw0fh03qQUTF7oJeQdz75JwDI1J10Vudu3AcQEqHkF8duTN95qKzDdEcggt0r7A64HIQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluoroheptane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAQkqjH2hiQ5xL6ApfosKWv2-NoHMUn-Ljlx1aOKHpHeI ;
+        prov:generatedAtTime "2026-06-24T10:48:38.806004+02:00"^^xsd:dateTime .
+}

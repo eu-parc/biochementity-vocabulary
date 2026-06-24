@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAm1fDsNXeCrxxIeztfUlXT6xJLOXxCRigSZt0feb6P4Y> .
+@prefix sub: <https://w3id.org/np/RAm1fDsNXeCrxxIeztfUlXT6xJLOXxCRigSZt0feb6P4Y/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAm1fDsNXeCrxxIeztfUlXT6xJLOXxCRigSZt0feb6P4Y a owl:Class ;
+        rdfs:label "1-hydroxychrysene",
+            "1-hydroxychryseen"@nl-be ;
+        schema:alternateName "1-CRY",
+            "1-Chrysenol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132391>,
+            <https://identifiers.org/cas:63019-38-5>,
+            <https://identifiers.org/inchikey:ISHBWEUQYFEVES-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:44284> ;
+        pehterms:hasContextAlias sub:_n8025b2bfa7bd4abb977c29c48717745db1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RA60CiDqgdGNDla-4qSr1IAZLhC37c8tF3n4ixp_9GSe0 .
+    sub:_n8025b2bfa7bd4abb977c29c48717745db1 a pehterms:ContextAlias ;
+        schema:alternateName "onehcry" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:32.021391+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "sJrGtz0SdmVw9ttY1/Y4RupldQdcurZavx1L8sK9vFqXNTHG9Pyp5p34HtdGFZu9OVzr0bTBKSTpezH7yTQ1YjitQ/6qo/hSp90K4YEnmqeKPNMP+ByTlFrgMogBWPjB9xS3LefszwYNb/NFOPYEnvIurDEsJdcJsUr4DDKNSwxS6Z1W8Cqk56YK+gGMK8CIf0PX+yQ3oH6sHz9C8mRwu9GkCVTEirP/aHqXRYHSQklyin9T23tTHBSGAGy9w7Lqx1GdIM4Sj8UBDrSW6AwaJM2/RSxxHX8ouhh95xYFpVPH8pG2r8+UVFIlIyMaLeLOYluqBxmx+n7EPHEbRrjLlQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-hydroxychrysene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAm1fDsNXeCrxxIeztfUlXT6xJLOXxCRigSZt0feb6P4Y ;
+        prov:generatedAtTime "2026-06-24T10:48:32.021391+02:00"^^xsd:dateTime .
+}

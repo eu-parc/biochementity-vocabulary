@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RA6yiGXCz7YhJB2N-UMSchGzZmvJeLDHHj2i_nD9t_1wM> .
+@prefix sub: <https://w3id.org/np/RA6yiGXCz7YhJB2N-UMSchGzZmvJeLDHHj2i_nD9t_1wM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA6yiGXCz7YhJB2N-UMSchGzZmvJeLDHHj2i_nD9t_1wM a owl:Class ;
+        rdfs:label "Ochratoxin A",
+            "Ochratoxine A"@nl-be ;
+        schema:alternateName "OTA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:7719>,
+            <https://identifiers.org/cas:303-47-9> ;
+        pehterms:hasGroupLabel "mycotoxins" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:32.169929+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "kRrkdcvcx+VoO2XgiskuOXCkKIreLDTOAQ/5xZ3ZERojhy0UPbZgcYnjDYTuxkDFafIFxADQY1o2dmONA3OjDuBBgVZh8J6xgMTXhpfbMkMsppxKL64Sbcmgaczsw1BobKXn7UWY9MG0qNajd7SYVmkUAaVc92xUuzlmCJVqS/gdGMUngXeeLn6/BAYzi7rDDAG3uPxIzjniMJMZjgaUmelHq/leTQY5gDjxVlgIlrVdcH7JPLqLj3JM9HuewRXmcZ1VUkk0qBdf1AaC6wMZtthBmhyfPmG8uRxWVoRuHbYYBNtNhoTg3JoDZB7ZK9nlq1X/rY9bYdLHhFk0VJNBxg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Ochratoxin A" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA6yiGXCz7YhJB2N-UMSchGzZmvJeLDHHj2i_nD9t_1wM ;
+        prov:generatedAtTime "2026-06-24T10:47:32.169929+02:00"^^xsd:dateTime .
+}

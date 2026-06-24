@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAAMr7Ug8KI8O66CahrcRzm9fe6ZAfCZsb63N6ij0GPzE> .
+@prefix sub: <https://w3id.org/np/RAAMr7Ug8KI8O66CahrcRzm9fe6ZAfCZsb63N6ij0GPzE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAAMr7Ug8KI8O66CahrcRzm9fe6ZAfCZsb63N6ij0GPzE a owl:Class ;
+        rdfs:label "Neosolaniol",
+            "Neosolaniol"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+        schema:alternateName "NEO" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:36519-25-2>,
+            <https://identifiers.org/inchikey:TVZHDVCTOCZDNE-WVJYZQHISA-N>,
+            <https://identifiers.org/pubchem.compound:13818797> ;
+        pehterms:hasContextAlias sub:_ne181e9e9e440472dbd84dd0207abf563b1 ;
+        pehterms:hasGroupLabel "mycotoxins" .
+    sub:_ne181e9e9e440472dbd84dd0207abf563b1 a pehterms:ContextAlias ;
+        schema:alternateName "neo" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:56.941718+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "Pr3wRnqxrNw1cPxqrxdgIpcbNHSwAWAgfH8MTNT06Oh7wbW507oJElhbiwbSG15ldJocAxZnY20v3ze37pkaGR182CFYq2kzeuPo4a13idrvZmTA5zcNzkQL620KQE5rduiaPbyseG29UOyR8ja2v0wvx08vFBuoXOkGOAKfgiuz6X73G7dI9XAkMIt1iXTIl1BlAg/UEU2NkHxy5W27gvrnjDCONb4Ak48Xe0T1QqWNIO3F3KRPoM0LTG5V5Dm3c5wp50cyKHiSWT3EyskvRphyht98RpCL+Gmim7Epx8vFfgIJe76nlKFQKLXjrod0QNGCYDrZm9qXCgp5fZ7m2g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Neosolaniol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAAMr7Ug8KI8O66CahrcRzm9fe6ZAfCZsb63N6ij0GPzE ;
+        prov:generatedAtTime "2026-06-24T10:47:56.941718+02:00"^^xsd:dateTime .
+}

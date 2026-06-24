@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAnkzZRZb_sGrSP0sbEzZvSRIY4BClhbam3guASKZo0OE> .
+@prefix sub: <https://w3id.org/np/RAnkzZRZb_sGrSP0sbEzZvSRIY4BClhbam3guASKZo0OE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAnkzZRZb_sGrSP0sbEzZvSRIY4BClhbam3guASKZo0OE a owl:Class ;
+        rdfs:label "Diethyl phosphate",
+            "Diethylphosphate"@nl-be ;
+        schema:alternateName "DEP",
+            "DEP"@nl-be ;
+        rdfs:subClassOf biochementity:RAlf0iEElZF4I3TmHg3_G4Y4dS_qfh0dnWhqBz5YLQI68,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27708>,
+            <https://identifiers.org/cas:53397-17-4>,
+            <https://identifiers.org/cas:598-02-7>,
+            <https://identifiers.org/inchikey:UCQFCFPECQILOL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:654> ;
+        pehterms:hasContextAlias sub:_n194a1b0d72f34c09b4d1e8c3d55be62ab1 ;
+        pehterms:hasGroupLabel "pesticides",
+            "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAM92oSx9l8QoMM1dUjACokivdRU_nX3g51ybBIZeeQ28 .
+    sub:_n194a1b0d72f34c09b4d1e8c3d55be62ab1 a pehterms:ContextAlias ;
+        schema:alternateName "dep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:19.372344+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "hY70mY1wsIHzBQi+cIaFz1AuX0TO/jrwnvBn040/m3zmFOa3OS2Kldnivp7Mf5bSQxPVgFNYWg1jMfLrOO7Fnp8DI80F6T8oRJ9AZzyBLN+pzwyIyVmPVxHyYFrNwP10E32hAxaZU1+QXN/mQ5GoBU7983iTBIQQ27zKUE9rjFe1p55DBAs1zziI6698e+qc27yNcA+SNxfDsv4Je7RiPHMOGdhu6+M5N7zf8QNmpMMKXcLBsqNu75NJCSx/RPc3XAKiC4T3LKgmA+CRXfxtfl4N1G2+R4UL7D5XWLHdfhXogGScaDngzDsif+ffV7aZNOXrdV8OWKFHTmvIFhoC/A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Diethyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAnkzZRZb_sGrSP0sbEzZvSRIY4BClhbam3guASKZo0OE ;
+        prov:generatedAtTime "2026-06-24T10:48:19.372344+02:00"^^xsd:dateTime .
+}

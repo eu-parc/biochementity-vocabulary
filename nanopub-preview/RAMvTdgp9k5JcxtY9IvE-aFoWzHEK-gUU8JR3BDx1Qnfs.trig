@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAMvTdgp9k5JcxtY9IvE-aFoWzHEK-gUU8JR3BDx1Qnfs> .
+@prefix sub: <https://w3id.org/np/RAMvTdgp9k5JcxtY9IvE-aFoWzHEK-gUU8JR3BDx1Qnfs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMvTdgp9k5JcxtY9IvE-aFoWzHEK-gUU8JR3BDx1Qnfs a owl:Class ;
+        rdfs:label "Desnitro-thiamethoxam",
+            "Desnitro-thiamethoxam"@nl-be ;
+        schema:alternateName "3-[(2-Chloro-5-thiazolyl)methyl]tetrahydro-5-methyl-4H-1,3,5-oxadiazin-4-imine",
+            "Thiamethoxam-desnitro",
+            "Thiamethoxam-desnitro"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:868542-26-1>,
+            <https://identifiers.org/inchikey:JDTUGRDKAOPKRI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:89351742> ;
+        pehterms:hasContextAlias sub:_nea56e3c3b2b24bfb8abc1ed72d53d910b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAMrcXllFgpKICNUuVfmySnG9ojXgtIduDft1U8tleWTo .
+    sub:_nea56e3c3b2b24bfb8abc1ed72d53d910b1 a pehterms:ContextAlias ;
+        schema:alternateName "thiamethdesnitro" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:12.353161+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "JdJQef+wT4dNTP4JJ0FSk39wuFAOR/vCHUAeA3lqm2s0qbAFllNVh8HRFWAnXJY9FzZGlo8c00EpJuhU07nH7UEnBWszD2OnExX0PjpmO3hfRv63TVfNwM6iEugQLWJUp91JPwcrLADaggguTZJt6cnaHmieRWGXT3qTl5UoFnAZ5SrEGa/3YFQp+Ey9XJjdLYt0trffJbkxyoHgHVjArTXxoQAAXwa+CLp3XovNEcP6nOUabRxOoJL0uWotKgXtnhn7WYTWZ1azp9H6YvEJyZuQAP3U6PieybOczBZt3d3Nr2zN9OxnNBt4O5BeD3mPRkBegCsUvXI8esagS2zE/Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Desnitro-thiamethoxam" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAMvTdgp9k5JcxtY9IvE-aFoWzHEK-gUU8JR3BDx1Qnfs ;
+        prov:generatedAtTime "2026-06-24T10:48:12.353161+02:00"^^xsd:dateTime .
+}

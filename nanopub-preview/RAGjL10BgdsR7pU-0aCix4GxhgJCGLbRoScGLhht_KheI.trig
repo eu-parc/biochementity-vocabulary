@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAGjL10BgdsR7pU-0aCix4GxhgJCGLbRoScGLhht_KheI> .
+@prefix sub: <https://w3id.org/np/RAGjL10BgdsR7pU-0aCix4GxhgJCGLbRoScGLhht_KheI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAGjL10BgdsR7pU-0aCix4GxhgJCGLbRoScGLhht_KheI a owl:Class ;
+        rdfs:label "9,10-Phenanthrenediol",
+            "9,10-fenantreendiol"@nl-be ;
+        schema:alternateName "9,10-PHEdiol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:20814>,
+            <https://identifiers.org/cas:604-84-2>,
+            <https://identifiers.org/inchikey:ODUSUXJNDWKJKH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:123074> ;
+        pehterms:hasContextAlias sub:_nba8e682c7df44a029b47f0cfb500e54bb1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RACJfC6XeKWLRDEyiCcdulobMqoECwl1TNl0leZZOF3Rc .
+    sub:_nba8e682c7df44a029b47f0cfb500e54bb1 a pehterms:ContextAlias ;
+        schema:alternateName "phediol" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:36.349117+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "HmzS3iJD3MRAzrP+YUkpn0flkr5XdlLAfHGJWFuB3Vt4GtAsV04Iozpj2lRjlVdie5FN73OIWtmHWIr+fBODSm2aaSC7VoNtZKIBGNmk7SoMhLGHSUFGtmb3hzwOfIomO/C6MOBCEobYtxoYW6f+JkzmAZeP6suu4b1apEwrsE2OTT/wD3D4jTlZJHOjxbQzjyqPevCkMuhHnXulRxvDmmyteYWWfUiIh3n5ziT6D2qmCHRYfH9hzxYZyY+PNt28unlwICzpYwkuN2bx/0S9JPpxffzBUO3BHjxwUZrd9PQfBmq1VVLnIYilXndWFhGNqXkSpd0JT+SyCVbeP2CC1g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "9,10-Phenanthrenediol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAGjL10BgdsR7pU-0aCix4GxhgJCGLbRoScGLhht_KheI ;
+        prov:generatedAtTime "2026-06-24T10:48:36.349117+02:00"^^xsd:dateTime .
+}

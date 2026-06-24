@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RACajlwW69DarUhdCmFtker_Edcd73yHD42mK0R8gZcAw> .
+@prefix sub: <https://w3id.org/np/RACajlwW69DarUhdCmFtker_Edcd73yHD42mK0R8gZcAw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RACajlwW69DarUhdCmFtker_Edcd73yHD42mK0R8gZcAw a owl:Class ;
+        rdfs:label "Dioxin-like compounds",
+            "Totaal dioxine-achtige stoffen"@nl-be ;
+        schema:alternateName "CALUX",
+            "CALUX"@nl-be ;
+        schema:comment "comments: ?" ;
+        rdfs:subClassOf biochementity:RAFXHN7yIFC3RKclQGxLlzaV7_mQ4VjlYF2Ck-W9FvVhU,
+            pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n9e770e8f9bac4fa2a9080163d67f296cb1 .
+    sub:_n9e770e8f9bac4fa2a9080163d67f296cb1 a pehterms:ContextAlias ;
+        schema:alternateName "calux" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:20.917169+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "k5h6MQtF7u2JPPLtp2c8rAvg6Z2NLL/yK3NxkyScUp/Vcq/ubAdAR0zuxJwHTwPOUYKgsx0ownYSuE1luj2srOGyNmaON5s7b9RuBRziOAUzlJTFBGZVECDta0yeZepFmralbyysnN/wUVQIvbElyBxDdltzvI93WN/Tz532KbWImkw3IQo9uN2GooqsMhLKfkuOlJjGq/GBzIg99pAf8EgNrgiF3b591PkWJT4Dm3zd0C1pI9HtUIA6cSNa9DAG9darvxlosIFP9CZ3HcBeJL5ZFpwXACs+On6RJPln7Q2+SIIPtgkPYFDyYKVj1V0EBXJCpqFFBidlU7EODV7xIg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dioxin-like compounds" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RACajlwW69DarUhdCmFtker_Edcd73yHD42mK0R8gZcAw ;
+        prov:generatedAtTime "2026-06-24T10:48:20.917169+02:00"^^xsd:dateTime .
+}

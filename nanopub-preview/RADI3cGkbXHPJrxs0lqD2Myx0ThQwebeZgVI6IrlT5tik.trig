@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RADI3cGkbXHPJrxs0lqD2Myx0ThQwebeZgVI6IrlT5tik> .
+@prefix sub: <https://w3id.org/np/RADI3cGkbXHPJrxs0lqD2Myx0ThQwebeZgVI6IrlT5tik/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RADI3cGkbXHPJrxs0lqD2Myx0ThQwebeZgVI6IrlT5tik a owl:Class ;
+        rdfs:label "Aluminium",
+            "Aluminium"@nl-be ;
+        schema:alternateName "Al",
+            "Al"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33629>,
+            <https://identifiers.org/cas:7429-90-5>,
+            <https://identifiers.org/cas:91728-14-2>,
+            <https://identifiers.org/inchikey:XAGFODPZIPBFFR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5359268> ;
+        pehterms:hasContextAlias sub:_n5b0057dde7b7401590175f3cb7661b45b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n5b0057dde7b7401590175f3cb7661b45b1 a pehterms:ContextAlias ;
+        schema:alternateName "al" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:04.587029+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "PWJi+Nt2XVINgGEtxMobSjAXQxqi9683wMEENTDrNAfoGwYAaqnG/Lpc8LcSWX4SbodPuGoGzBCUw1IK49b8sE4Hxw/KpANHGv3lz2FXqvtEitHPRQh/W/QUu2rDpVyIBV+GXKP/s8zbG7OggOfcb+x7BlRRLBwazM6xVNpJeVNaM/Wktsl3RQWaQqhEx7FMzg4lY1QuPy/fXKchL58oPZ/ZYIsvrwlrIH3ROJ6gI8wW6XhxDy7dsuIziwL9G8tN9zp0PcsX1jDZ7hBZWdpIAZDHVqjNaIuJWaRqTyeTjkVMqlqH8WsmOXFTtAe12V62pEzxGMGC1ycnmV4U9TxM7g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Aluminium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RADI3cGkbXHPJrxs0lqD2Myx0ThQwebeZgVI6IrlT5tik ;
+        prov:generatedAtTime "2026-06-24T10:48:04.587029+02:00"^^xsd:dateTime .
+}

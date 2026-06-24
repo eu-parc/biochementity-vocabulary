@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAXohGgtsytKuEOFdJpzXgJc_WTuIL9ttJawzWfqxG1Jo> .
+@prefix sub: <https://w3id.org/np/RAXohGgtsytKuEOFdJpzXgJc_WTuIL9ttJawzWfqxG1Jo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAXohGgtsytKuEOFdJpzXgJc_WTuIL9ttJawzWfqxG1Jo a owl:Class ;
+        rdfs:label "Immunoglobulin E",
+            "Immunoglobuline E"@nl-be ;
+        schema:alternateName "IgE" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP14671-9> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:34.687594+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "nymfBnoQ3L0YntomJchVObjlwVQ1EkIUvzscqJqnngXKR4/NDpKBIU+xUecPYyWcbxJvX8U+Sk9p0aofaUkKddRwcJtQ+GzyHgSjLFv7DbVgcDB9Gu+DfDnO+YsVna6QhcbL/SlX6zNCxpTKn8iDj218JxJp2cPu9ZCIG1BWQHDX/5AFTvrWRFRo1ydZSF8MxybWbUZPXrooXxJpoP8vpAELg83iu8Z591oV9kxa2jia8neWNp78Smakhg1baY6OwyKiGVCuelwlHGkanABwK5B5+wzQsXphFyzaTYDcXgudX7QV+gwiUjJkVxBvCtQLvx7hJ7CWi1d+OzbRq89u/A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Immunoglobulin E" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAXohGgtsytKuEOFdJpzXgJc_WTuIL9ttJawzWfqxG1Jo ;
+        prov:generatedAtTime "2026-06-24T10:47:34.687594+02:00"^^xsd:dateTime .
+}

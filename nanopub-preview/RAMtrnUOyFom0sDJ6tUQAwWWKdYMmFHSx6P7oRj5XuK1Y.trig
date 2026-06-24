@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAMtrnUOyFom0sDJ6tUQAwWWKdYMmFHSx6P7oRj5XuK1Y> .
+@prefix sub: <https://w3id.org/np/RAMtrnUOyFom0sDJ6tUQAwWWKdYMmFHSx6P7oRj5XuK1Y/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMtrnUOyFom0sDJ6tUQAwWWKdYMmFHSx6P7oRj5XuK1Y a owl:Class ;
+        rdfs:label "Berylium",
+            "Berylium"@nl-be ;
+        schema:alternateName "Be",
+            "Be"@nl-be ;
+        rdfs:subClassOf biochementity:RAsXvSMMDicioypw8eEpKNJ8oUXTxeYiV0N4ppPsN0tHI,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:30501>,
+            <https://identifiers.org/cas:13597-97-2>,
+            <https://identifiers.org/cas:7440-41-7>,
+            <https://identifiers.org/inchikey:ATBAMAFKBVZNFJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5460467> ;
+        pehterms:hasContextAlias sub:_nbc3c14f2e4da4bd995dae437df6e2559b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_nbc3c14f2e4da4bd995dae437df6e2559b1 a pehterms:ContextAlias ;
+        schema:alternateName "be" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:07.141467+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "FWw0Z6q8M1PM4KN2bCmZheoGf0ICodaJlbA34ax4rOHIjmMGWgDeqnlP8Dnt5oZ7F4Bo4ukXJ4cUxhxhpfT9bTENHIYXpoisd6Mez8OOYH5beeQkDxOSs49ACTOST3CboX/45MoMUV3cQnkaFcI0GYjKqz7k2ZjVcMwIR3S9+HITMTzDLrW/bl12oeSLKs79SR8mJ3QShTT5814clwVy9MsDGPqAKxawZ3XlH5ysBPH0J6cDVeobgFpGlXlu/Sp8FWf69+itLP/JZjYW0a8Drp0eHd9+bQqqv7EeRnt9mTiWGe/UMQXr8ZDcWaeON7S2vn9N2GzikaGNmDhvBIX68w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Berylium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAMtrnUOyFom0sDJ6tUQAwWWKdYMmFHSx6P7oRj5XuK1Y ;
+        prov:generatedAtTime "2026-06-24T10:48:07.141467+02:00"^^xsd:dateTime .
+}

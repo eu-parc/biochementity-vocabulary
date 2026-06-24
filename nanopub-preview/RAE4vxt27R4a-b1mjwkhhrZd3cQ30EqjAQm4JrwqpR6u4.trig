@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAE4vxt27R4a-b1mjwkhhrZd3cQ30EqjAQm4JrwqpR6u4> .
+@prefix sub: <https://w3id.org/np/RAE4vxt27R4a-b1mjwkhhrZd3cQ30EqjAQm4JrwqpR6u4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAE4vxt27R4a-b1mjwkhhrZd3cQ30EqjAQm4JrwqpR6u4 a owl:Class ;
+        rdfs:label "Linear Perfluoropentane sulfonate",
+            "Lineair Perfluoro-n-pentaansulfonzuur"@nl-be ;
+        schema:alternateName "PFPeS",
+            "PFPeS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:175905-36-9>,
+            <https://identifiers.org/inchikey:ACEKLXZRZOWKRY-UHFFFAOYSA-M>,
+            <https://identifiers.org/pubchem.compound:22721493> ;
+        pehterms:hasContextAlias sub:_nb033c49fa88b411791d40aa2eaa7d865b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_nb033c49fa88b411791d40aa2eaa7d865b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfpes" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:54.189625+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "s/xdVLTTJVSIuZ/ppaJPEbvmVt2TQmlan/esbOHbVgJ34oRKdhyL1leUVWGzrzuI8LumJiRWH2Y7IB6+uxJEVo6yXZFifCfh1FiCgSsjR23wfDKpAFnr+4qWXL01cDKCWcQtZPeKPAkX2xmoIjE2ezCvmTrLbFUB+XfSfkcvL2Soy2sBW9D6HErn4J1Szm4SQbrugf6VRT42Z9gQmVOEndJUB8VEiV6zT0wOuXPJxtKJeOFIizUFii2ROSRfZjK0S+yuoxn2hOQHA2q7w6J0aagFb455nKn2fiDe+6hp/nSYJqlpH2AXm4AigHgBgBy+xlSWovTj9nkWkEiUMY00ng==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluoropentane sulfonate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAE4vxt27R4a-b1mjwkhhrZd3cQ30EqjAQm4JrwqpR6u4 ;
+        prov:generatedAtTime "2026-06-24T10:47:54.189625+02:00"^^xsd:dateTime .
+}

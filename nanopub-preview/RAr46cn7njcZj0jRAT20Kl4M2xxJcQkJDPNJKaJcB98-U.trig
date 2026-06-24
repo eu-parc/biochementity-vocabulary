@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAr46cn7njcZj0jRAT20Kl4M2xxJcQkJDPNJKaJcB98-U> .
+@prefix sub: <https://w3id.org/np/RAr46cn7njcZj0jRAT20Kl4M2xxJcQkJDPNJKaJcB98-U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAr46cn7njcZj0jRAT20Kl4M2xxJcQkJDPNJKaJcB98-U a owl:Class ;
+        rdfs:label "3-hydroxybenzo[c]-phenanthrene",
+            "3-hydroxybenzo[c]-fenantreen"@nl-be ;
+        schema:alternateName "3-BCP",
+            "Benzo[c]phenanthren-3-ol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132445>,
+            <https://identifiers.org/cas:22717-95-9>,
+            <https://identifiers.org/inchikey:QFFZIWXRRBPSQE-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_n2c0e6c8684704c4f9c58b18dce8b6b9bb1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RAllgSysbTF-h7U2GVTnRD-k1XHv0IJ_rCDBWMJZ_zog4 .
+    sub:_n2c0e6c8684704c4f9c58b18dce8b6b9bb1 a pehterms:ContextAlias ;
+        schema:alternateName "hbcp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:35.460856+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "InWUIU2Xc65kAmDTBeyOsGegAGbSj6V64exU2QAO/ld3SI/Z7gWYX+IgU62zxKMe2vTijLpVTkXwO6yrPwbXrNXokd2DrubUHrgyd94Ur0nGucFt3PlxzoUtOCmUoTMwaA2/BGVzBArUwMC/jef/4SS+uRQVB35Midugbh1J6JI8B3YiQwvz3vOHpbxg7/4WkUIo0T5H1t+NvXInOZ5dgf5viMe/AIbGGHgegwPuZBZBsbF67wEVFscNBHU8vb4SgEs0qoUk7mLO69vrNCzq3Rj/aWeqYB7KdCwHvCXYni4Zzszw8KZZEQeBZbl90cmN7LY2uIZH0vx4Mh1SKJWG1Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-hydroxybenzo[c]-phenanthrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAr46cn7njcZj0jRAT20Kl4M2xxJcQkJDPNJKaJcB98-U ;
+        prov:generatedAtTime "2026-06-24T10:48:35.460856+02:00"^^xsd:dateTime .
+}

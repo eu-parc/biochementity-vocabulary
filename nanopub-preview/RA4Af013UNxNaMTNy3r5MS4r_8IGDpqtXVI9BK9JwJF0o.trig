@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RA4Af013UNxNaMTNy3r5MS4r_8IGDpqtXVI9BK9JwJF0o> .
+@prefix sub: <https://w3id.org/np/RA4Af013UNxNaMTNy3r5MS4r_8IGDpqtXVI9BK9JwJF0o/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA4Af013UNxNaMTNy3r5MS4r_8IGDpqtXVI9BK9JwJF0o a owl:Class ;
+        rdfs:label "Thiabenadazole",
+            "Thiabenadazool"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Thiabenadazole" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:38.456322+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "iONb01EHnCOQ+svg/V+1ghxuKw3AeleiTYOZ1f30lqlscYyAGkbbLfWHYjzZ9sEAlsBUBaPRc/6W3ezygvOHnpbikS5rq8SKVB3Y6CdcW8S1WEw39Ms8xosotm2wHHN5BW6Xvmbiwe088t1G2CWbfNcP4FLJdTTbViFGd/1oTiR0YSv+tbTAkF6MLR/IR9X1vjwF7UIp3WGahF6OQVP6Kcxr3Dvu0cR0RXJn97I7yxqHjdHXFR82vRwd2yyisAKIxcu5N/bUubbjptOOCacqrGQv5cO7XaTWOa0JeVMFpH9AD0viQG1Wt6niVlzvV/CqWoVNiZiq0GPtPi3MgJ5n6g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Thiabenadazole" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA4Af013UNxNaMTNy3r5MS4r_8IGDpqtXVI9BK9JwJF0o ;
+        prov:generatedAtTime "2026-06-24T10:47:38.456322+02:00"^^xsd:dateTime .
+}

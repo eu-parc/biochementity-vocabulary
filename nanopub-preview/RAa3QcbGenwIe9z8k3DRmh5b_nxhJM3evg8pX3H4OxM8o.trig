@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAa3QcbGenwIe9z8k3DRmh5b_nxhJM3evg8pX3H4OxM8o> .
+@prefix sub: <https://w3id.org/np/RAa3QcbGenwIe9z8k3DRmh5b_nxhJM3evg8pX3H4OxM8o/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAa3QcbGenwIe9z8k3DRmh5b_nxhJM3evg8pX3H4OxM8o a owl:Class ;
+        rdfs:label "N-methylformamide",
+            "N-methylformamide"@nl-be ;
+        schema:alternateName "NMF" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <file:///home/runner/work/biochementity-vocabulary/biochementity-vocabulary/build/INCHIKEYLATHHXGZTWNVVOU-UHFFFAOYSA-N>,
+            <https://identifiers.org/CHEBI:7438>,
+            <https://identifiers.org/cas:123-39-7>,
+            <https://identifiers.org/pubchem.compound:31254> ;
+        pehterms:hasContextAlias sub:_n495da338dc9d4c248c54359ca5db8a38b1 ;
+        pehterms:hasGroupLabel "aprotic solvents" .
+    sub:_n495da338dc9d4c248c54359ca5db8a38b1 a pehterms:ContextAlias ;
+        schema:alternateName "nmf" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:47:42.826380+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "OhOraI4ZkHAnzcoEvYKxBQP7ksPTJJDrSCqqf4gjxcZxH6f6Dc0W855od4svg0Rohg7VUwF22x1qQs5Zm8BqJs+JcOKhyIKuF7yyeI4HEqc07//DZLMH0LecRwbTFX0rs+qD6Fd0zy4+Kx3s7MxmQkj38jnl5AQvhO5xrvLWQfHJuToin0y8CBFrJzwx3sUISowI0ExFyCEYX94LJ+ENGLsr1cnvR55kRLczGX5uji3OqKZNxVS4f0TIjupWsN3yKIMxwIRSvTr7sJtu4tLft8+3IQYU7P9URZDxEl1wW6MZAKV/wZm42AugAoy/cQC1ya3tly29XxpQk0mZn/OT0g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-methylformamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAa3QcbGenwIe9z8k3DRmh5b_nxhJM3evg8pX3H4OxM8o ;
+        prov:generatedAtTime "2026-06-24T10:47:42.826380+02:00"^^xsd:dateTime .
+}

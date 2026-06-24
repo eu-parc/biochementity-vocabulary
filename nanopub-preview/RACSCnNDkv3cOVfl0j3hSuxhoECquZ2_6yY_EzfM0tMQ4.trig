@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RACSCnNDkv3cOVfl0j3hSuxhoECquZ2_6yY_EzfM0tMQ4> .
+@prefix sub: <https://w3id.org/np/RACSCnNDkv3cOVfl0j3hSuxhoECquZ2_6yY_EzfM0tMQ4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RACSCnNDkv3cOVfl0j3hSuxhoECquZ2_6yY_EzfM0tMQ4 a owl:Class ;
+        rdfs:label "Mono-ethyl phthalate",
+            "Mono-ethyl ftalaat"@nl-be ;
+        schema:alternateName "MEP",
+            "MEP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:70973>,
+            <https://identifiers.org/cas:2306-33-4>,
+            <https://identifiers.org/inchikey:YWWHKOHZGJFMIE-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:75318> ;
+        pehterms:hasContextAlias sub:_nd5285c4f592141ac9f383e26d88d72e9b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RACjrnN8hQ4kPFd0D7hrHvTNo1rByWokpzRnEqqGaQBHc .
+    sub:_nd5285c4f592141ac9f383e26d88d72e9b1 a pehterms:ContextAlias ;
+        schema:alternateName "mep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:30.308257+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "D2KoNScuZQ76cI8upEIi3D2raH62ISVaqiIFsIK6akPTOIlF9BpHOSpoKzBlEdzxWu5vVAh+jGA2FpgbqT2XxW1kxhIyPJCWKEXZLWQmcbDG8fMRg5Ba/Z9ON4iCs1LqHp2p+ReXCfhyW5vFAtpUa55qSlFfWc08opwLsIz82WMLVbISVdwxYdG80FAaZVLGqj5ZDahYAAPqIjUH5qzYoxXeX8FYyKxKIDJQjr9ieRgG/cNWInB6t03igYFmIhNLDUK8RLw+IwolCppghSt/KTPuE08m2E0zLXCikoWRY5NIG1lCgQmZ+pb8pSE8ZHaZ53xPu4fDXinuYyy/7g2vUw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono-ethyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RACSCnNDkv3cOVfl0j3hSuxhoECquZ2_6yY_EzfM0tMQ4 ;
+        prov:generatedAtTime "2026-06-24T10:48:30.308257+02:00"^^xsd:dateTime .
+}

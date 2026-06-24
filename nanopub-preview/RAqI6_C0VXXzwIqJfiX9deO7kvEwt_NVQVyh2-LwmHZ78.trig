@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAqI6_C0VXXzwIqJfiX9deO7kvEwt_NVQVyh2-LwmHZ78> .
+@prefix sub: <https://w3id.org/np/RAqI6_C0VXXzwIqJfiX9deO7kvEwt_NVQVyh2-LwmHZ78/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAqI6_C0VXXzwIqJfiX9deO7kvEwt_NVQVyh2-LwmHZ78 a owl:Class ;
+        rdfs:label "Boscalid-5-hydroxy",
+            "Boscalid-5-hydroxy"@nl-be ;
+        schema:alternateName "Boscalid-5-OH",
+            "Boscalid-5-OH"@nl-be ;
+        schema:comment "comments: I don't find the INCHI key anywhere online - can someone confirm?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:661463-87-2>,
+            <https://identifiers.org/inchikey:GLTMLPGXPMAIOI-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_n3a484625083e43b6a9852ab620d5468cb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAFwhR4b1xR9d7a4fvJJ5Ol9poa-WdhrKf1SjUP8G59wQ .
+    sub:_n3a484625083e43b6a9852ab620d5468cb1 a pehterms:ContextAlias ;
+        schema:alternateName "boscalid5oh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:48:14.659279+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn9NbPA8ujYf1K6+UnQzcSz0BGGbWjUPF04IssxKu4bJggy6kZnFcmMJclcM0VKdLRzuM2uOWTb6xgCiZa3Mqj8EQjuzCyA7PYxgPKeFSgUqHJL1q9LiQHDWJq7pC0YQH3UvTnU+AxTR7GsciU2hLfOXLUQbTC6clGQ0PLjr28+x89VmZZROwPIuUE8SmpuSYqn3U3CksMXCdpwrEKehTp+UQNLVIWTQe528Hhbg2YVqVW4klODtor5NYPpXxDsr/ozu5veeKqh7yj7cLsgH4BXuUYFAYP6igHtZSqmycTsoUWgbJvZsRidX8IG+NAz/1lbW2wMEqiKMBhDLPj76CQIDAQAB" ;
+        npx:hasSignature "k+62hpVNiiGRfC2pyl05FXKfMz8CoPypTnTOelvLeRZ3YnAG2ZExi1VUZ5C22Prw2+sBU1lmfZayFFlYYFJAcZYuf0H9xCfAJ1u7OsBfzYy5wQ0NFJ/QLiasiJfMVAmKq5c3DTn6pijTOTJRXTZO/sUV+AQ3VKpvG3/9jngPRnPdLl6r6JqdosSXlDdq4ex93EaZMzeh+6YC5zAKVN40o+LnqdLKDpHkmNRCoX6IoQXGVrtYiatukXg4M36aW9zwt62eMMaRugJscVDKz6unph4uFrPbOpHlJ/CzmTYFYG3zU/zoS3BCyB3h1RciMR4SFLl8tYbcrdMEvY2rrS+TfA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Boscalid-5-hydroxy" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAqI6_C0VXXzwIqJfiX9deO7kvEwt_NVQVyh2-LwmHZ78 ;
+        prov:generatedAtTime "2026-06-24T10:48:14.659279+02:00"^^xsd:dateTime .
+}
