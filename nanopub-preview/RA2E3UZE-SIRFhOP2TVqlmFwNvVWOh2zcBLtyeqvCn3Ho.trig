@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA2E3UZE-SIRFhOP2TVqlmFwNvVWOh2zcBLtyeqvCn3Ho> .
+@prefix sub: <https://w3id.org/np/RA2E3UZE-SIRFhOP2TVqlmFwNvVWOh2zcBLtyeqvCn3Ho/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2E3UZE-SIRFhOP2TVqlmFwNvVWOh2zcBLtyeqvCn3Ho a owl:Class ;
+        rdfs:label "Dimethyl thiophosphate",
+            "Dimethylthiophosphate"@nl-be ;
+        schema:alternateName "DMTP",
+            "DMTP"@nl-be ;
+        schema:comment "comments: Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/168140" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:WWJJVKAEQGGYHJ-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_n824079f90c154595af847540bb993458b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RA-nnWyrhL1ABs2aMoWEebFhqDLdxlOSK3t-kded1rmSc,
+            biochementity:RAHoomEiseQMqKnTW905b9A-36dI8-Ph0BN-YKiN0FFIM .
+    sub:_n824079f90c154595af847540bb993458b1 a pehterms:ContextAlias ;
+        schema:alternateName "dmtp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:39.214254+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "SPXNZ6ICeBzWIkSIM4Olw3T32ugx+G+HjjYKAUrM7NMua1fuweSTcQRlU7veuamYgSk3Sco9hE2rf6bspiA85pYcbkZ0PqlRKXbetKs3wbAwE0wLiJFHhxzByaBbycTg24voiNPN3cbf1NMgHp3LoCM9/pFKPCKyXMePeaK1KpgvKJBLdlHi7tvz32vjIexohRXnIJ3jwb+hvGRyCNRxeEjQ7qrY1ugxTEazvrO1p16gQRw8VRdRla4rFr4aGFzXKJg6tT1OHScqR5lhERuGMAJeh3x60+9f3EgBCR+HegvqGOnBls3ngAbzR1h+wD4d2YXuG/jM86Hn1GmK2bNGuQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dimethyl thiophosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA2E3UZE-SIRFhOP2TVqlmFwNvVWOh2zcBLtyeqvCn3Ho ;
+        prov:generatedAtTime "2026-06-24T10:39:39.214254+02:00"^^xsd:dateTime .
+}

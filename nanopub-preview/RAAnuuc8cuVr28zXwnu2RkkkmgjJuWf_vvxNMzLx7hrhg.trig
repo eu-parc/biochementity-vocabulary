@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAAnuuc8cuVr28zXwnu2RkkkmgjJuWf_vvxNMzLx7hrhg> .
+@prefix sub: <https://w3id.org/np/RAAnuuc8cuVr28zXwnu2RkkkmgjJuWf_vvxNMzLx7hrhg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAAnuuc8cuVr28zXwnu2RkkkmgjJuWf_vvxNMzLx7hrhg a owl:Class ;
+        rdfs:label "Benzophenone 8",
+            "Benzofenon 8"@nl-be ;
+        schema:alternateName "BP-8",
+            "BP-8"@nl-be ;
+        schema:comment "source: 2,2'-Dihydroxy-4-methoxybenzophenone" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34208>,
+            <https://identifiers.org/cas:131-53-3>,
+            <https://identifiers.org/inchikey:MEZZCSHVIGVWFI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:8569> ;
+        pehterms:hasContextAlias sub:_n81b29345b55b401ab2a642192cbdb04bb1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" ;
+        pehterms:isMetaboliteOf biochementity:RAgn3uXnrChcr5no3AYTAcRH9NOuRE02GaZytkCdgbYeI .
+    sub:_n81b29345b55b401ab2a642192cbdb04bb1 a pehterms:ContextAlias ;
+        schema:alternateName "dhmb" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:30.966632+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "OCxRy1xvIYrVehAXyBxd8m4/8RKgFg+UtSZakQHnta6NqNXc8QPrsEBEPfv1HPW+77ykYL5VKmPHy69hVWOQjpUzGAD+dN8fXWRuMWOG9YqtDyyRMRN3fF691uV7dFLE1Y58LU8I0FNDMRcgxPB8zxa1HweKLH/QzLGfDPqtLrBLzvMJj2YceLMqmU8wHdTuM6WOwd8VKzjGhaVfzgIDF9zzHe/ya+Ma4BSqfIg5bsXlEQ4e+EVDjTQs98KSHNnvL6tcHLRpiyR+FwTH2PYCggq+TCwxRdsNL+n9iu+81sAt1CFuKe2ZKKqRTYRjX7X4mHm9JSD7bEYWan147n6I7g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzofenon 8" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAAnuuc8cuVr28zXwnu2RkkkmgjJuWf_vvxNMzLx7hrhg ;
+        prov:generatedAtTime "2026-06-24T10:39:30.966632+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAiMfKINj_4fMX2bGfFVlrij7UdglMUjB1LjwDMfWXpVc> .
+@prefix sub: <https://w3id.org/np/RAiMfKINj_4fMX2bGfFVlrij7UdglMUjB1LjwDMfWXpVc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiMfKINj_4fMX2bGfFVlrij7UdglMUjB1LjwDMfWXpVc a owl:Class ;
+        rdfs:label "N-acetyl-S-(2-carbamoyl-ethyl)cysteine",
+            "N-acetyl-S-(2-carbamoyl-ethyl)cysteine"@nl-be ;
+        schema:alternateName "AAMA",
+            "AAMA"@nl-be ;
+        schema:comment "comments: * I found this source for the INCHIKEY but the name does not correspond 100%: https://www.smolecule.com/products/s774818#:~:text=Description-,N%2DAcetyl%2DS%2D(2%2Dcarbamoylethyl)%2DL%2D,detoxification%20and%20antioxidant%20defense%20mechanisms%20. *However, the INCHIKEY in PUBCHEM belongs to this other compound: https://pubchem.ncbi.nlm.nih.gov/compound/N-Acetyl-S-_propionamide_cysteine#section=IUPAC-Name --> I think the INCHIKEY is not correct source: https://www.sciencedirect.com/science/article/pii/S0048969713003616" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:GGBCHNJZQQEQRX-LURJTMIESA-N> ;
+        pehterms:hasContextAlias sub:_ne93c45419b8e41cea450e3d2615827e4b1 ;
+        pehterms:hasGroupLabel "acrylamide" ;
+        pehterms:isMetaboliteOf biochementity:RATIqG0cRpNouZ__uvxQRub5d3gYeK2jOXuCNnNPL5cXM .
+    sub:_ne93c45419b8e41cea450e3d2615827e4b1 a pehterms:ContextAlias ;
+        schema:alternateName "aama" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:21.850731+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "fclm6yt7OBwZXvJqGdCcKCaeK77c49uQB9NtJ9ERsjEAnGDwNu2fwJVJeVrma5yuaAIUgp5yrZfOp1/fPRgu5oGz5cuv6ACHZZbzdSJ7pMwFaDCxO3ukrX85y98M5GQN96xDVXKMlKOvxO7n8ArrM1ayDQZT5lpg8w5xu7uE4yeuuuNIXNCcdO28RrCNDMKEbF9BRaec2MHYgZ6BvNuCMiml+LBXiJCS0beG/fl4p6pIr+5gV5sqGvMPNQkx98nJLiwBtbnP/LrfL+CbjHs/p0EzkKwhS4r1mc2O04b4fCG3oZ3yhEGdJZzeKhPjeLFI/nHgAmCinHDZslUa78nypA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-acetyl-S-(2-carbamoyl-ethyl)cysteine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAiMfKINj_4fMX2bGfFVlrij7UdglMUjB1LjwDMfWXpVc ;
+        prov:generatedAtTime "2026-06-24T10:39:21.850731+02:00"^^xsd:dateTime .
+}

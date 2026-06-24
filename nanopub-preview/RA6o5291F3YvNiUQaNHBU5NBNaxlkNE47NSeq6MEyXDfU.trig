@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RA6o5291F3YvNiUQaNHBU5NBNaxlkNE47NSeq6MEyXDfU> .
+@prefix sub: <https://w3id.org/np/RA6o5291F3YvNiUQaNHBU5NBNaxlkNE47NSeq6MEyXDfU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA6o5291F3YvNiUQaNHBU5NBNaxlkNE47NSeq6MEyXDfU a owl:Class ;
+        rdfs:label "4-methylbenzylidene camphor",
+            "4-methylbenzylidene camfor"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_73335> ;
+        schema:alternateName "4-methylbenzylidene camphor",
+            "Enzacamene",
+            "4-MBC"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:135937>,
+            <https://identifiers.org/cas:1782069-81-1>,
+            <https://identifiers.org/cas:36861-47-9>,
+            <https://identifiers.org/inchikey:HEOCBCNFKCOKBX-SDNWHVSQSA-N>,
+            <https://identifiers.org/pubchem.compound:6434217> ;
+        pehterms:hasContextAlias sub:_n8703ff27f8ed4be0a3c6505934beef13b1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" .
+    sub:_n8703ff27f8ed4be0a3c6505934beef13b1 a pehterms:ContextAlias ;
+        schema:alternateName "enzacamene" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:06.174280+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "O382ogA4YQjs1EP+igMfkCxG3qFEGOPc2mzIHwpSL9ZsPHSn2qY+yemq2UnfMOUW1nHo03pSkp9rehghskvd9RPj7d8kpSeBdH4Wxo66b1dIcxyE/AIoDkR7XmVM3yI7ui6nUhNiu+AnmR4PFWU0Mho6+iJ5m/EdI7sVRUtpLxxGWGpkskTaik5bMQ4Er0GDJnkdiqojjTIfhksJqRMZev4pNOB1hNhbcfTmf5NYeHcyR/aRzFCK6zlCAptRG7CLj2mlM6qX5mF9vZI/Zzg15++YnIAEzyX8j+LktxTw+O3uWlSzyvw2AlOPD7W4FNwgo/U1HQwGheRlvh1ihvofhA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-methylbenzylidene camphor" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA6o5291F3YvNiUQaNHBU5NBNaxlkNE47NSeq6MEyXDfU ;
+        prov:generatedAtTime "2026-06-24T10:39:06.174280+02:00"^^xsd:dateTime .
+}

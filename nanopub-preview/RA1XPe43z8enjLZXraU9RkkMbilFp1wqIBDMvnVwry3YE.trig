@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RA1XPe43z8enjLZXraU9RkkMbilFp1wqIBDMvnVwry3YE> .
+@prefix sub: <https://w3id.org/np/RA1XPe43z8enjLZXraU9RkkMbilFp1wqIBDMvnVwry3YE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA1XPe43z8enjLZXraU9RkkMbilFp1wqIBDMvnVwry3YE a owl:Class ;
+        rdfs:label "glycidamide" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:FMAZQSYXRGRESX-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "acrylamide" ;
+        pehterms:isMetaboliteOf biochementity:RATIqG0cRpNouZ__uvxQRub5d3gYeK2jOXuCNnNPL5cXM .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:37.274650+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "fifaqCil+clztS8PV0bqQU5fWB6bPdDs28guV+k7dzE3N77RlMP28UwMwhRtjFCzfcZXWhfBrtDw8Av7Af8ilq9Ik3QYhPpYSrrqLJ8j/AEj6yyW82dujJfyAqENpj57rLJ2qyCBFQRMLDC6ywJ7PkoWF03UHOI/v2Wo29AM9HKvH9vuRMMVDajkXajpZBm2djsIJ/7Ysr9XPJmu8Kk1TJtmpbkRmXGk9J73Cppb71AbWT8Fo0z9Xvmd6SLvDPcI65cqv7CuaNhrjZLruN0+6DmMvbxYNSRNBi/vWq5bJ+itnaBPLj6Q2i4jHLY94GaNmXuxFWrT04nSG+ByYnWD5Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "glycidamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA1XPe43z8enjLZXraU9RkkMbilFp1wqIBDMvnVwry3YE ;
+        prov:generatedAtTime "2026-06-24T10:39:37.274650+02:00"^^xsd:dateTime .
+}

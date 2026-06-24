@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAnZ1PaR5o8PLqgopgXqJBnbYEk6qCrFabwL_HHkDUmqU> .
+@prefix sub: <https://w3id.org/np/RAnZ1PaR5o8PLqgopgXqJBnbYEk6qCrFabwL_HHkDUmqU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAnZ1PaR5o8PLqgopgXqJBnbYEk6qCrFabwL_HHkDUmqU a owl:Class ;
+        rdfs:label "Myclobutanil hydroxide",
+            "Myclobutanil hydroxide"@nl-be ;
+        schema:alternateName "Myclobutanil-OH",
+            "Myclobutanil-OH"@nl-be ;
+        schema:comment "comments: This is a metabolite of Myclobutanil. Parent compound correctly identified?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:116928-93-9>,
+            <https://identifiers.org/inchikey:HIUOATAFAFIXAL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:189447> ;
+        pehterms:hasContextAlias sub:_n724a41014c4f4aaa9365d14bc16b516ab1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAiKsQiXcQFvCdNTjOkSTQrr1Y-bk9Rhhndn8z_QslKCs .
+    sub:_n724a41014c4f4aaa9365d14bc16b516ab1 a pehterms:ContextAlias ;
+        schema:alternateName "myclobutaniloh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:31.187331+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "jRyqledU5a4lKfCSDSVOQX8b9G2p7y6TnDPQ9Tv7mxljqJX58Wq5l2pe0jk1etOCU42PcunqmXSDjVAiT190aCdQxEKjiTOnjImio/oMbVYZQczjHXZJzgHvc33lm0av4QJes8V5m0ll1WNd2aA7azDkmsFj2OKtoe/wMnxGyly11MQy10qB3N5zg7XVH/UyeyNak6yyHslSk/7hCn5jCQSK0eRTiLkrWdXmL66Ypd/azDImVw58lTJQJhoc9XSMPFrB30LhM8vA7976CymtRFlCD4IRdm1XRHOCTN3S66r0ZWBwLxWX7x50NerNSoIKsom8/J+SE4XUc9T5VLOU7Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Myclobutanil hydroxide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAnZ1PaR5o8PLqgopgXqJBnbYEk6qCrFabwL_HHkDUmqU ;
+        prov:generatedAtTime "2026-06-24T10:39:31.187331+02:00"^^xsd:dateTime .
+}

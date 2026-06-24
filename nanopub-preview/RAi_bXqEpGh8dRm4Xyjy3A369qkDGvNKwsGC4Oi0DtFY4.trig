@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAi_bXqEpGh8dRm4Xyjy3A369qkDGvNKwsGC4Oi0DtFY4> .
+@prefix sub: <https://w3id.org/np/RAi_bXqEpGh8dRm4Xyjy3A369qkDGvNKwsGC4Oi0DtFY4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAi_bXqEpGh8dRm4Xyjy3A369qkDGvNKwsGC4Oi0DtFY4 a owl:Class ;
+        rdfs:label "Desisopropyl 2-hydroxy atrazine",
+            "Desisopropyl 2-hydroxyatrazine"@nl-be ;
+        schema:alternateName "Desisopropyl 2-hydroxy atrazine" ;
+        schema:comment "comments: Can it be this? https://pubchem.ncbi.nlm.nih.gov/compound/Deisopropylhydroxyatrazine" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n6a821daff73443a38a20321c4867ee99b1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RA3P_FgizgxQPqkis9DoFyb5keq8zpNQijl7OHbIt2sNc .
+    sub:_n6a821daff73443a38a20321c4867ee99b1 a pehterms:ContextAlias ;
+        schema:alternateName "desiso2hyat" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:24.928261+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "btLT8Uw2L9sCB2i/3OJgq47CTOEWt6W/9cCLFNYqG8BRhD+slpcMouxl5xTb/kgQtCMCW4RNMM1fFOlRHz1NmAMAkAjiV304QdfYgPTYQ/YcS3Y1B+5vlpgfLOlQR2E6X0Tv/2eu1344gNZc6MZrT++PM+xFlC4TvemnMvRdTbl7beHvBgCsINHaV1Pdpv2G6Mm2rsj+DVaeD6oyLAMiMJK0lw4xqNTJxXzpADicNcrcbnyeOxS7xL4B3xo9AyLEIxq0qFu/L278Knpq9Fv2WK7eAv+7V8JiJ4JtL+XnZsL1C7HX97ik6HhTONcxBUH4Tyn4Yri5EdyqfP6P7/07fg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Desisopropyl 2-hydroxyatrazine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAi_bXqEpGh8dRm4Xyjy3A369qkDGvNKwsGC4Oi0DtFY4 ;
+        prov:generatedAtTime "2026-06-24T10:39:24.928261+02:00"^^xsd:dateTime .
+}

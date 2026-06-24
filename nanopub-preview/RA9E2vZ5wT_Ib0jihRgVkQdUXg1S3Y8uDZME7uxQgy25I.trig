@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RA9E2vZ5wT_Ib0jihRgVkQdUXg1S3Y8uDZME7uxQgy25I> .
+@prefix sub: <https://w3id.org/np/RA9E2vZ5wT_Ib0jihRgVkQdUXg1S3Y8uDZME7uxQgy25I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9E2vZ5wT_Ib0jihRgVkQdUXg1S3Y8uDZME7uxQgy25I a owl:Class ;
+        rdfs:label "Linear Perfluorooctane sulfonic acid",
+            "Lineair Perfluoro-n-octaansulfonzuur"@nl-be ;
+        schema:alternateName "lpfos",
+            "L-PFOS"@nl-be ;
+        rdfs:subClassOf biochementity:RAuIIrqqfvljnJolV3F68h7z148QhqU5nPk8mjxZlfBZ0,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:39421>,
+            <https://identifiers.org/cas:1763-23-1>,
+            <https://identifiers.org/cas:2795-39-3>,
+            <https://identifiers.org/inchikey:YFSUTJLHUFNCNZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:74483> ;
+        pehterms:hasContextAlias sub:_nd290978ed65148dd953ec818040edbf6b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RA7smRJnzXgrPRcBFwGPIXFsySPWFHj7vBpgiwyEdcMq8 .
+    sub:_nd290978ed65148dd953ec818040edbf6b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfos" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:56.763993+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "r/nSBsOEOSgcUfozgX9CkBPV1BL6l9BG9h/NhornvlcXzfuRx3NT++TGLVIvrVGURbg63zYsCy6/Vb5/gpQrX/zubBXaM4a5KwJ6MJL7Xwbr2ofdv7UyGfi+mSQrDzrZBmf2WpUgSZtKZJRYNmYvK2goepjpERLCtuZvp6OZVUJ559Zu+CIC0FK0yyGL3wGcO5+lFG0WTW9mkUhJuIyVQuOOHihGG0jgFe3c5Ceh261ln5UfdUuy06JaJeP7ZtmmjGwPpgQAjf5dNvgLSLUpXTzKw63/NAKgjQmWiiPggTT0rNDsuGfZ5Ertuiqho+M2HwCezQv3mRDzGW/D5P/HwQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Linear Perfluorooctane sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9E2vZ5wT_Ib0jihRgVkQdUXg1S3Y8uDZME7uxQgy25I ;
+        prov:generatedAtTime "2026-06-24T10:39:56.763993+02:00"^^xsd:dateTime .
+}

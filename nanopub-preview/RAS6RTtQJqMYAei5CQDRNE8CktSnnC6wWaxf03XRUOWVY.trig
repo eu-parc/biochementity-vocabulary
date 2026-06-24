@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAS6RTtQJqMYAei5CQDRNE8CktSnnC6wWaxf03XRUOWVY> .
+@prefix sub: <https://w3id.org/np/RAS6RTtQJqMYAei5CQDRNE8CktSnnC6wWaxf03XRUOWVY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAS6RTtQJqMYAei5CQDRNE8CktSnnC6wWaxf03XRUOWVY a owl:Class ;
+        rdfs:label "Fluopyram benzamide",
+            "Fluopyram benzamide"@nl-be ;
+        schema:alternateName "2-(Trifluoromethyl)benzamide",
+            "2-Trifluoromethylbenzamide",
+            "Fluopyram benzamide",
+            "Fluopyram benzamide"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:360-64-5>,
+            <https://identifiers.org/inchikey:QBAYIBZITZBSFO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:67759> ;
+        pehterms:hasContextAlias sub:_n5fbb1c22acf145118fe096169299d290b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAsf3IsZCnpzLLSVXFzwd07Rd77u_W31Tf_BRdxhF-dJ8 .
+    sub:_n5fbb1c22acf145118fe096169299d290b1 a pehterms:ContextAlias ;
+        schema:alternateName "fluopyramben" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:23.489815+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "EThRLXzDnbwURH7+aPTfb+U7qz/7zLuu/dC2eSNIKA/Q3zx6F5IXNqzgnteBWx/MtVjJrdPlK2gw3HGlsntwW411FbbMmiUk+dQZNwLibmHwNLv2520gbjXeTTOUVg1p1LUQZ2I3/Jw4sLd/1a2geAOoHhUtXEn4FxxOS1nA5fg10b30tWLXxyqsSJHvVF/ocXr5Sc8Vflbh4q2dAZcovTbjFTygoW0LUUNSD7PoUcUHu6q5h4Zb70PTxY/PmvItdW6raETFBD+Ep86CgTwlGuu40efvX+jXR2FlHAoe720z4+9j8OIjta6Zvcd+DejAjoGMGJ0v62SJKuslro9Wpg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Fluopyram benzamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAS6RTtQJqMYAei5CQDRNE8CktSnnC6wWaxf03XRUOWVY ;
+        prov:generatedAtTime "2026-06-24T10:39:23.489815+02:00"^^xsd:dateTime .
+}

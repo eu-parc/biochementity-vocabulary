@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RA5d412w4RIZ8XICN7oDj8bGEu9ZKXwgDIZn0CUY9mhk4> .
+@prefix sub: <https://w3id.org/np/RA5d412w4RIZ8XICN7oDj8bGEu9ZKXwgDIZn0CUY9mhk4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5d412w4RIZ8XICN7oDj8bGEu9ZKXwgDIZn0CUY9mhk4 a owl:Class ;
+        rdfs:label "5-ethyl-6-octyl-[1,2,4]triazolo[1,5-a]pyrimidin-7-amine",
+            "5-ethyl-6-octyl-[1,2,4]triazolo[1,5-a]pyrimidin-7-amine"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Ametoctradin",
+            "Ametoctradin"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:GGKQIOFASHYUJZ-UHFFFAOYSA-N> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:59.576195+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "bbVDpcI+A5Gb6k4LXcLt1kMseymt/ZVxjXHMD1M8HcUzPdNorJ2JUZSsvBNxUFHlNYWbH0kG+P0tgxGRh9GJrJ/6VjAdJnN8R4jf3t8lgXYilzVb59MXPsBKkuRVp795ivCSJC5eyU6UIVuQImrrCTGjgYjqaaOeRxuOanAtuPSGOyslp+cmCs3UbkThO5YdKBDWahEIiz9TZGhlVJ61KnkZo+ETalb823pupswBz+C/jTRVG8rPUGi9i2gtZC0KqKremJfsRs0GCtgydk/vQKBZL+Pt46S25Jr1rWtxpnUZuVbRRqgPkS8MHWNjHXvq4bFkNia0Zy4B7B6Ii/COpQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "5-ethyl-6-octyl-[1,2,4]triazolo[1,5-a]pyrimidin-7-amine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5d412w4RIZ8XICN7oDj8bGEu9ZKXwgDIZn0CUY9mhk4 ;
+        prov:generatedAtTime "2026-06-24T10:38:59.576195+02:00"^^xsd:dateTime .
+}

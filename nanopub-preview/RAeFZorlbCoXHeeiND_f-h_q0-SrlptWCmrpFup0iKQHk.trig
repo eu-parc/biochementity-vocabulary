@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAeFZorlbCoXHeeiND_f-h_q0-SrlptWCmrpFup0iKQHk> .
+@prefix sub: <https://w3id.org/np/RAeFZorlbCoXHeeiND_f-h_q0-SrlptWCmrpFup0iKQHk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeFZorlbCoXHeeiND_f-h_q0-SrlptWCmrpFup0iKQHk a owl:Class ;
+        rdfs:label "Perfluoroheptane sulfonic acid",
+            "Lineair + vertakt Perfluoro-n-heptaansulfonzuur"@nl-be ;
+        schema:alternateName "PFHpS",
+            "L+B PFHpS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_ndff00ecf0a95409f90feea64d2e2206fb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_ndff00ecf0a95409f90feea64d2e2206fb1 a pehterms:ContextAlias ;
+        schema:alternateName "lbpfhps" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:04.833191+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "DMPE7bpVR4jZQ51MVjv/YBCj2Q8v69pecSG1zTdbEpvmLkDUWP/Xiu8MoFrPLiz2bu6O+39DmnYnJ210rMJn5as7gGg1L5efIE5K2ZnF8VjBxaHhpKpmOdSpFq+lSqNW15vfFj47YHAEkjDr3U8sHW/snvEgXwoE3N+7oFOmVFhH32WD5bXZvswqPn4UwsXy2qZBQYvpeShb1obf8k7ZrlZL89xP+32+eM+2glz8C7+Z2+bhGHKhLltkTI5HSlEzuUtF9JUUJQZ8iRqAwldqsckRgHxYwOEjt+m38+wxWJGk/Uvc3KnbOcfNZjxupygckcnmAmSEu653efj2fymRgA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair + vertakt Perfluoro-n-heptaansulfonzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeFZorlbCoXHeeiND_f-h_q0-SrlptWCmrpFup0iKQHk ;
+        prov:generatedAtTime "2026-06-24T10:39:04.833191+02:00"^^xsd:dateTime .
+}

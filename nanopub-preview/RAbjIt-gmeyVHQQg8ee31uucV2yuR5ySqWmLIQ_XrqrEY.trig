@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAbjIt-gmeyVHQQg8ee31uucV2yuR5ySqWmLIQ_XrqrEY> .
+@prefix sub: <https://w3id.org/np/RAbjIt-gmeyVHQQg8ee31uucV2yuR5ySqWmLIQ_XrqrEY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbjIt-gmeyVHQQg8ee31uucV2yuR5ySqWmLIQ_XrqrEY a owl:Class ;
+        rdfs:label "Linear Perfluoroundecanesulfonic acid",
+            "Lineair Perfluoro-n-undecaansulfonzuur"@nl-be ;
+        schema:alternateName "PFUnDS",
+            "PFUnDS"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:749786-16-1>,
+            <https://identifiers.org/inchikey:UKHUPOMCGUFNAP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:22141518> ;
+        pehterms:hasContextAlias sub:_n85d759ee26794118a8a496f93f3ef3edb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n85d759ee26794118a8a496f93f3ef3edb1 a pehterms:ContextAlias ;
+        schema:alternateName "pfunds" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:07.022244+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "pEj9BxLHM2cT7qk5s66gf+OoXJQ0wqJ3aOxt7bbDDdQAdR96cYFpptty4vo8xPWSfkPPVJUpHx6NM5TW9ZybQAusgQJEdCJaguvqkpHOTStnNYabmiRSU/E8c8CuTCVyyw/R+cFqOB6qh+7whgQTwg9qA8P54Q/UVKS7fj47x1KqfFCHd/wkTH+QDwATSVBA6HRqfKCOxuCOw8IS5SudizRSiOE4euu3hPS86g4uSrnDnSwjJZFa4NrXFC4AVytfd7TSu34SqUDDMOzH7J0KBFJS+pHndpPf+OtoKd4gepMrsKfI/KYMhNsT1F2wn1OPDVbCVONao9P4ucB31yWftQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair Perfluoro-n-undecaansulfonzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbjIt-gmeyVHQQg8ee31uucV2yuR5ySqWmLIQ_XrqrEY ;
+        prov:generatedAtTime "2026-06-24T10:39:07.022244+02:00"^^xsd:dateTime .
+}

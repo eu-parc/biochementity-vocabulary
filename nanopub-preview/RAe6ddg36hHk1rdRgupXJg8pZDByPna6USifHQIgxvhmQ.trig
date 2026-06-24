@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAe6ddg36hHk1rdRgupXJg8pZDByPna6USifHQIgxvhmQ> .
+@prefix sub: <https://w3id.org/np/RAe6ddg36hHk1rdRgupXJg8pZDByPna6USifHQIgxvhmQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAe6ddg36hHk1rdRgupXJg8pZDByPna6USifHQIgxvhmQ a owl:Class ;
+        rdfs:label "2,4-dihydroxybenzophenone",
+            "2,4-dihydroxybenzofenon"@nl-be ;
+        schema:alternateName "DHB" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n151c877aa1654878a2749c2fc79a2de6b1 ;
+        pehterms:hasGroupLabel "benzophenones",
+            "uv filters" ;
+        pehterms:isMetaboliteOf biochementity:RAgn3uXnrChcr5no3AYTAcRH9NOuRE02GaZytkCdgbYeI .
+    sub:_n151c877aa1654878a2749c2fc79a2de6b1 a pehterms:ContextAlias ;
+        schema:alternateName "dhb" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:25.650909+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "kCD34V+qThLCgP8vKNV3y52WLXHrtSpaWcSsbw/rThsN/wI4lyg+GaBV+rTKZeswnPFG4qCzvDXqzdRQS1kTJZ4ohCaG8rxnd8xuaPPJJouM4ZXlOkTs68HLpsJtV9TAAkbXz5VsdEHO/3+bKdEVzxVche60TzbcvX19UchwcClvF3AQde5JlC8c5hmrjkVeOxzo9ntHNWhS1SVriiMaxIjC0rIOcvqPjUSgRrprksHTJAK2FXmCR6d/a2uWmO8ephiDk6PTD+rOcdcGmZWcIZ0g+k/frK4O7GmPGBQpBDok8NvtGzu+T9igCT1lKWKNSwZ/ohiHvrP9GkG98qQ4tw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,4-dihydroxybenzofenon" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAe6ddg36hHk1rdRgupXJg8pZDByPna6USifHQIgxvhmQ ;
+        prov:generatedAtTime "2026-06-24T10:39:25.650909+02:00"^^xsd:dateTime .
+}

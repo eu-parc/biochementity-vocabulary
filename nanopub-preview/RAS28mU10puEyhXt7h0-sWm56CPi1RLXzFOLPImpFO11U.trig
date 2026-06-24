@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAS28mU10puEyhXt7h0-sWm56CPi1RLXzFOLPImpFO11U> .
+@prefix sub: <https://w3id.org/np/RAS28mU10puEyhXt7h0-sWm56CPi1RLXzFOLPImpFO11U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAS28mU10puEyhXt7h0-sWm56CPi1RLXzFOLPImpFO11U a owl:Class ;
+        rdfs:label "Linear 6:2 polyfluoroalkyl phosphoric acid monoesters",
+            "Lineair 6:2 fluortelomeerfosfaat monoester"@nl-be ;
+        schema:alternateName "3,3,4,4,5,5,6,6,7,7,8,8,8-tridecafluorooctyl dihydrogen phosphate",
+            "6:2 monoPAP",
+            "6:2 monoPAP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83508>,
+            <https://identifiers.org/cas:57678-01-0>,
+            <https://identifiers.org/inchikey:FZTRDYSPWWJCOF-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:14250578> ;
+        pehterms:hasContextAlias sub:_n844e5ef42f2e457e9a3b9b28aaba8f3eb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_n844e5ef42f2e457e9a3b9b28aaba8f3eb1 a pehterms:ContextAlias ;
+        schema:alternateName "sixmonopap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:07.606728+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "rlP3pteHPjfj7VzD4RCEiqpA7KDSbmQBxCd+v0ZZKSliHU+XtcESWvNX7x+0dQM/r1CKwO8syMhV51LLgznDnDGwrRiI9aIQJ8H7h8vlwTr8G+MYF4sovI9n5YdWgfGsStpRwfY9a+j94s8jguKVb2NlxPZsVNeC6OTUGlREQtOVZcJSHYscA6sWZvRbIkVvgGFkORZQcoC7TbGDZaxcxFKrxQskLokhlmgN42hk/AWXcjGw94toc5S3tJbwrkkHQXvxZufnqgYtNGrZu01MEEEM3z0TnkexHN8t9p6QVGwpSmbnde60dm1LIlkw9KvL61oylx+aOT0t0B72egs4KA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair 6:2 fluortelomeerfosfaat monoester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAS28mU10puEyhXt7h0-sWm56CPi1RLXzFOLPImpFO11U ;
+        prov:generatedAtTime "2026-06-24T10:39:07.606728+02:00"^^xsd:dateTime .
+}

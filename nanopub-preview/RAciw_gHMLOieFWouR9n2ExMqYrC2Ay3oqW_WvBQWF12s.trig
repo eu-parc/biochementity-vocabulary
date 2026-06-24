@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAciw_gHMLOieFWouR9n2ExMqYrC2Ay3oqW_WvBQWF12s> .
+@prefix sub: <https://w3id.org/np/RAciw_gHMLOieFWouR9n2ExMqYrC2Ay3oqW_WvBQWF12s/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAciw_gHMLOieFWouR9n2ExMqYrC2Ay3oqW_WvBQWF12s a owl:Class ;
+        rdfs:label "Pentylparaben",
+            "PentylP (pentylparabeen)"@nl-be ;
+        schema:alternateName "Pentyl 4-hydroxybenzoate",
+            "pentylP" ;
+        rdfs:subClassOf biochementity:RAwqdP_7GS3kHLtWZHU4Cf3TBUgb76iya1pZmBZ-RAog8,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:6521-29-5>,
+            <https://identifiers.org/inchikey:ZNSSPLQZSUWFJT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23019> ;
+        pehterms:hasContextAlias sub:_n0744c8ea5cf349079bc1003f058b03d8b1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n0744c8ea5cf349079bc1003f058b03d8b1 a pehterms:ContextAlias ;
+        schema:alternateName "pentip" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:45.198222+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "ALqJZpWndxUV39dHAw5QAv5L274rz7YHsVw2wOR05he7iSbnt19E6PuzJppJqkqIP5o1W6wgPh0e6or2GEVZmgaGEc/DeR4dgEE8XPsI49keR8eVKI8wirL1zTKPkhUx51lIFgZLFlYoc73RG0VKC/t+s6A9IHdnb8lIqGVdbKQL1klByuDmFMeVtQORg0I3E6Hp5IKbBIPnaE8weo+unH2QryFXGx8RRzD+GbB1IwcLPiSQX6V33TaHeC27Clnp9LvteDgQvUPW920UtoKG4acCtb77KdYnOLbtKVxJ1jVeryiEyZzlzO5HaAuiAxHAVLj70JC6TVHKdU79u40q4A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "PentylP (pentylparabeen)" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAciw_gHMLOieFWouR9n2ExMqYrC2Ay3oqW_WvBQWF12s ;
+        prov:generatedAtTime "2026-06-24T10:39:45.198222+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAFOFooyvw81Y99lzg2VgPySK77omEy-lQj6sxiCmDXzc> .
+@prefix sub: <https://w3id.org/np/RAFOFooyvw81Y99lzg2VgPySK77omEy-lQj6sxiCmDXzc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAFOFooyvw81Y99lzg2VgPySK77omEy-lQj6sxiCmDXzc a owl:Class ;
+        rdfs:label "Desethyl 2-hydroxy atrazine",
+            "Desethyl 2-hydroxyatrazine"@nl-be ;
+        schema:alternateName "6-amino-4-(propan-2-ylamino)-1H-1,3,5-triazin-2-one",
+            "Desethyl 2-hydroxy atrazine" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83463>,
+            <https://identifiers.org/cas:19988-24-0>,
+            <https://identifiers.org/inchikey:GCKLGRUZDXSATG-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:135510207> ;
+        pehterms:hasContextAlias sub:_nb298a264596043fcbc79c944dc65111db1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RA3P_FgizgxQPqkis9DoFyb5keq8zpNQijl7OHbIt2sNc .
+    sub:_nb298a264596043fcbc79c944dc65111db1 a pehterms:ContextAlias ;
+        schema:alternateName "des2hyat" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:43.170843+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "HZpD57oMV9eiOlzmGMwWHWOZEaDqAJSa0lR7vt2uF+HvHf2uFgGZOUZofqMKyOgCjALQCo/buU9Ud6j6PdCGGfw4NS4tAUFC/5LgwMAQsvEDSpe0AgyHpFoqUAbxd+exLsVhaWgVz9W9IfcgK6PmQs0WCMKJCLfRkJbhRLkkM+aM9b5GuwcglSCuF3HQRDvOSGOmcB0gY8+X4F/LU9Wud5nPvQ766jXHX82MnmPP2EVJdcOgsmy2CUB7aeR1uc5RvN+Q/rzGteVjA1fssaPPjvGnQcHAMvhTgZN0/Z6Ullmj2J51GPI6co8/Ir0XoreGd1/A1LzH0nrtldIGWID4uw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Desethyl 2-hydroxyatrazine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAFOFooyvw81Y99lzg2VgPySK77omEy-lQj6sxiCmDXzc ;
+        prov:generatedAtTime "2026-06-24T10:39:43.170843+02:00"^^xsd:dateTime .
+}

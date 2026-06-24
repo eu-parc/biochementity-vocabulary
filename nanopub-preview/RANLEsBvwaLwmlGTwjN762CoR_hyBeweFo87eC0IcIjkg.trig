@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RANLEsBvwaLwmlGTwjN762CoR_hyBeweFo87eC0IcIjkg> .
+@prefix sub: <https://w3id.org/np/RANLEsBvwaLwmlGTwjN762CoR_hyBeweFo87eC0IcIjkg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RANLEsBvwaLwmlGTwjN762CoR_hyBeweFo87eC0IcIjkg a owl:Class ;
+        rdfs:label "T-2 tetraol toxin",
+            "T-2 tetraol-toxine"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25442> ;
+        schema:alternateName "T-2 tetraol" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:172528>,
+            <https://identifiers.org/cas:34114-99-3>,
+            <https://identifiers.org/inchikey:ZAXZBJSXSOISTF-LYFQSNBGSA-N>,
+            <https://identifiers.org/pubchem.compound:9904331> ;
+        pehterms:hasContextAlias sub:_n4232fe91382e4c1aa68014de57542eccb1 ;
+        pehterms:hasGroupLabel "mycotoxins" .
+    sub:_n4232fe91382e4c1aa68014de57542eccb1 a pehterms:ContextAlias ;
+        schema:alternateName "ttetraol" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:10.525199+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "YyDM4OMPyJWi7BGU6vKs2CG7iijZNDgn97VGuIlp+umvXx2CuSHWMWwCTHd17DE8/Z0jgkadP7PTjw8hHDi0r35KP+aX+fvdRtHP2pIW41GX9R5Bb5fzV267XaygcJThwkCiIdCeFEM/OSaSttNLGeJaD+HcrkgxzvpTESXuWmFUeTonpNnwsL7vif9yXHzDAyJp3ik9Nj84aSYJYAoEiRdB8M+mfDLw9INBTdoUvgNOeA5+Ziml2xr4SPbuqrBHpuyFYnJtaCop04bgUVl3LRfpAYkWKim79iWuINSWFq03GZfebE/EazwlBmRi0jsk+/NbmjfeHQyacvkAyVKFrw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "T-2 tetraol-toxine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RANLEsBvwaLwmlGTwjN762CoR_hyBeweFo87eC0IcIjkg ;
+        prov:generatedAtTime "2026-06-24T10:39:10.525199+02:00"^^xsd:dateTime .
+}

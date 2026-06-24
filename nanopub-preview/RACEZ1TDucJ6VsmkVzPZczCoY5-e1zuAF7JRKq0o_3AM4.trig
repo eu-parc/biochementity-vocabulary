@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RACEZ1TDucJ6VsmkVzPZczCoY5-e1zuAF7JRKq0o_3AM4> .
+@prefix sub: <https://w3id.org/np/RACEZ1TDucJ6VsmkVzPZczCoY5-e1zuAF7JRKq0o_3AM4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RACEZ1TDucJ6VsmkVzPZczCoY5-e1zuAF7JRKq0o_3AM4 a owl:Class ;
+        rdfs:label "Pentachlorophenol",
+            "Pentachloorfenol"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "PCP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:17642>,
+            <https://identifiers.org/cas:6338-69-8>,
+            <https://identifiers.org/cas:87-86-5>,
+            <https://identifiers.org/inchikey:IZUPBVBPLAPZRR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:992> ;
+        pehterms:hasContextAlias sub:_nd2ae8573e155480c838e1007dbc3da80b1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_nd2ae8573e155480c838e1007dbc3da80b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:52.008097+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "NJg2FDl73GtSY96C8sFEnw7+KFjdInrt/wEIlQs7OnXs2efxt49sTZ9enRAo+/8EaJq907YhOTgTi9snqHNzxKqh8QsPmQDvPtrYxkxi577FU8i4ZcL5Yi8r44QUnDyIkNzRouAXMK90A6Oc1U5o6YPHTUO6Z1LzuE88JgryGf9ox9G1mXS2DR+Eua1MRzi7pqEd+SyJKptHByHI+wzhyI9Mm/CY/aIXoTjmaYHDMev30tSiOaTENEOK92ssBk0BjXlIWj3UltAygi2wN79x1jznMVosAF3WS7Dk+VXPel1gVmGVEYo9B82TRRNZtqbeAHQ9Z434JGKoUGBQAhD1Og==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Pentachloorfenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RACEZ1TDucJ6VsmkVzPZczCoY5-e1zuAF7JRKq0o_3AM4 ;
+        prov:generatedAtTime "2026-06-24T10:38:52.008097+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA-zBEvpfkHiiHD0mJ7lvGJmNwvX5slEbAyWDuw_A7H3w> .
+@prefix sub: <https://w3id.org/np/RA-zBEvpfkHiiHD0mJ7lvGJmNwvX5slEbAyWDuw_A7H3w/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-zBEvpfkHiiHD0mJ7lvGJmNwvX5slEbAyWDuw_A7H3w a owl:Class ;
+        rdfs:label "Iridium",
+            "Iridium"@nl-be ;
+        schema:alternateName "Ir",
+            "Ir"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:49666>,
+            <https://identifiers.org/cas:22542-08-1>,
+            <https://identifiers.org/cas:7439-88-5>,
+            <https://identifiers.org/pubchem.compound:23924> ;
+        pehterms:hasContextAlias sub:_n67c9d063ef1e43ca8ba8f7b99746ef0db1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n67c9d063ef1e43ca8ba8f7b99746ef0db1 a pehterms:ContextAlias ;
+        schema:alternateName "ir" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:37.917834+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Q/W8ruFE6eku+93oZ66Z4NEMJX5iqf1z2jitZbcI4oZZywi99mJZWcwiZ2mmVcVvt0/L7eEG69dbBWCo5uogpyGjhFFJsHC4I0tCQ6FF8q26LU91H+Qv1XGxWNJuPX7DCAO/OR5qz3nE3twRR5iaizxlcuoLti7NEq97DP+DqtUpLexhOLNXKUFDjf+CrP4z0fL/j5m0IHdBC+EkMCZnQw1N5NY3Bayb7m3E/y0QAQ4+PzfZUt2BWWZ0QFUQzOf3XB9CcCQmiOZ9iwZuxj4fCypYNon4IXp/NguJANjTVEd3z3VzNEOnOooSnC9z5WXlZ5wUCsxO9IV2OIKjxInf0A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Iridium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA-zBEvpfkHiiHD0mJ7lvGJmNwvX5slEbAyWDuw_A7H3w ;
+        prov:generatedAtTime "2026-06-24T10:39:37.917834+02:00"^^xsd:dateTime .
+}

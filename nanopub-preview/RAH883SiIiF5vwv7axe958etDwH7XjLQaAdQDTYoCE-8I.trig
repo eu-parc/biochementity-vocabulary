@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAH883SiIiF5vwv7axe958etDwH7XjLQaAdQDTYoCE-8I> .
+@prefix sub: <https://w3id.org/np/RAH883SiIiF5vwv7axe958etDwH7XjLQaAdQDTYoCE-8I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAH883SiIiF5vwv7axe958etDwH7XjLQaAdQDTYoCE-8I a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 99",
+            "Polychloorbifenyl 99"@nl-be ;
+        schema:alternateName "PCB 99",
+            "PCB 99"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:38380-01-7>,
+            <https://identifiers.org/inchikey:LMQJBFRGXHMNOX-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:38013> ;
+        pehterms:hasContextAlias sub:_n872ae315d8484378bb2f05594fb3a2a6b1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RALRfOQwZG4cZAHPKWybx457-oRNgDIvOfUkLrzw1hhqk .
+    sub:_n872ae315d8484378bb2f05594fb3a2a6b1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb99" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:39.755518+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Bf8jDoX/2kZIac4ofrdTDz2VPDb78dPWd+AEoZ3cNuOg2KngCvc+Se1nD0Vy4mgE2fuRQ3o+sTvO/YqhnP4CUb0H8nk84EZSyhGKOH8VxkycX7ryHLcycuB72m3NqLnVnXuYIdGR9nkbp1eOVL2stS5aLVTG7uq2GA9FNta8DSMQ7YsVp1LJY6GsrLCuR4Flxfu180bH16RliPdLmpDiXvmekGETNdVRGG1lm5wYZdIXNy+7E2xvq0gTW8ru9NCXCbVAazggl666av1Hf0iHufK2pVZGpoHSOzfeaI+anHDrr5QB4qfiHnqijYKgHJYdI7zSWtDFOlkqXs+lLONOFA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 99" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAH883SiIiF5vwv7axe958etDwH7XjLQaAdQDTYoCE-8I ;
+        prov:generatedAtTime "2026-06-24T10:39:39.755518+02:00"^^xsd:dateTime .
+}

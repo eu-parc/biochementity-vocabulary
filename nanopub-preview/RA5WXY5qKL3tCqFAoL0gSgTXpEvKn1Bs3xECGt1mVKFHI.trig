@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RA5WXY5qKL3tCqFAoL0gSgTXpEvKn1Bs3xECGt1mVKFHI> .
+@prefix sub: <https://w3id.org/np/RA5WXY5qKL3tCqFAoL0gSgTXpEvKn1Bs3xECGt1mVKFHI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5WXY5qKL3tCqFAoL0gSgTXpEvKn1Bs3xECGt1mVKFHI a owl:Class ;
+        rdfs:label "1,2-cyclohexane dicarboxylic acid diisononyl ester" ;
+        schema:alternateName "DINCH" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "DINCH" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:48.145327+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "m/gfPGIrrJQyxHDygOO4qbMNufYu02SUJnIlkuniWqVxVBTFhjA29OGOKAQjCEHV0S6PpZJQ+c2rrmt1GI5iaMG8+fpSV3ZCPfnv9+q/3ytjptUD+/fMA8aokHuhygLViUBkqXloN111UZa8NjIWdvv459yJMAN/PhDOnrGlIuJaA2b6d0CVO1a9x4gHUst0I9NuLZ7MMYzVzgMag3NrbzjNSatLzLDX1ofQ+xbyE3JUnRoTUyoVvD+9NjFuiI0Ugg+iVkP2by0QkIrCWoEnFtO08Z1el9nHBlc9xU4oOg/QERK/0uErQ00jUwGQi/hCN5oBV790IqFGhvqOk3gEAg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2-cyclohexane dicarboxylic acid diisononyl ester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5WXY5qKL3tCqFAoL0gSgTXpEvKn1Bs3xECGt1mVKFHI ;
+        prov:generatedAtTime "2026-06-24T10:38:48.145327+02:00"^^xsd:dateTime .
+}

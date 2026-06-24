@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA1A_-v_jUc_PqVTljUuYfDqRa1AVHiVtUFufjQk828kw> .
+@prefix sub: <https://w3id.org/np/RA1A_-v_jUc_PqVTljUuYfDqRa1AVHiVtUFufjQk828kw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA1A_-v_jUc_PqVTljUuYfDqRa1AVHiVtUFufjQk828kw a owl:Class ;
+        rdfs:label "2,2',3,4,4',5,5',6-Octabromodiphenyl ether",
+            "2,2',3,4,4',5,5',6-Octabroomdifenylether"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "BDE-203",
+            "BDE-203"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:337513-72-1>,
+            <https://identifiers.org/inchikey:RTUZOQFRIPIWPS-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:36160> ;
+        pehterms:hasContextAlias sub:_n72d53ac8f44e40a78b2b3b437740a82db1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n72d53ac8f44e40a78b2b3b437740a82db1 a pehterms:ContextAlias ;
+        schema:alternateName "bde203" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:03.961251+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "pGGScnhget6GZR9ItJ/8GkQR8037xu1BsSNZ3Lul+39LkDt+4+/z9YutcqfkgEd73eMIO6Cf7D1+9HfGUKMY9btziU8dOiX6IWrhVQ1VyNz/UKVgt3nr4Mfo3h3Nlq1EbC1Upavw/hxxehOhdrARVkWhvH4hsm+kzLGKUvmcklsDvvrdpb+yJfopAFOvwO2yCJl6u4MC9VXhSQ3cNoZemri1I7uCURjboDRcHCtggnoygzfclIPq6iLel6XvvDtfDXzh0CvRRwRHYLSxCs+6Zq0Hcqda4LrOCV9b8otISm1jtLiRj9KlHXmBetY9LMedEKXFSjwK/H71JxvqgZE24w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,2',3,4,4',5,5',6-Octabromodiphenyl ether" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA1A_-v_jUc_PqVTljUuYfDqRa1AVHiVtUFufjQk828kw ;
+        prov:generatedAtTime "2026-06-24T10:39:03.961251+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAYvPYS5twtQ-SVtURYWjUxpVqDTFovCOUMJdkPu9krQo> .
+@prefix sub: <https://w3id.org/np/RAYvPYS5twtQ-SVtURYWjUxpVqDTFovCOUMJdkPu9krQo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAYvPYS5twtQ-SVtURYWjUxpVqDTFovCOUMJdkPu9krQo a owl:Class ;
+        rdfs:label "9,10-DHP",
+            "9,10-DHP"@nl-be ;
+        schema:alternateName "9,10-DHP" ;
+        schema:comment "comments: Can this be 9,10-Dihydrophenanthrene? Please confirm and add keys and name accordingly: https://pubchem.ncbi.nlm.nih.gov/compound/9_10-Dihydrophenanthrene" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_ne798090a0a894cb1a3bf779a94460cddb1 .
+    sub:_ne798090a0a894cb1a3bf779a94460cddb1 a pehterms:ContextAlias ;
+        schema:alternateName "ninetendhp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:57.580592+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "PJs+QacJF8eSs6nPL7P2UbZ10urFe/bL+64Y1XLxBksZ+DIiOERO9czV5T4VFDbLQRcB+cEg79neg93/eOZ90snO0yoFro3gvHXjhMYaTnOTQxhRCTks/P6EdaL3yAyvGdEGb9rRFyeZk10Rf8tAfUwK4fCR3TseZI5un+VD7EwlUB3SxVXJw01rxRT2P214b1WlzWSoY01egnsi9yfg0UhOvcAsN06Ymsw8Ka0j0RspaXziKtAcFgNLznxNw3/cf7n6BFXInqaDogEPuK6mZ0yx6a2Msyn/bfutxDOCR1AvBEG7TuennavjmD4kYy5uDmuly15aoxicwxPZ8O9r1Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "9,10-DHP" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAYvPYS5twtQ-SVtURYWjUxpVqDTFovCOUMJdkPu9krQo ;
+        prov:generatedAtTime "2026-06-24T10:38:57.580592+02:00"^^xsd:dateTime .
+}

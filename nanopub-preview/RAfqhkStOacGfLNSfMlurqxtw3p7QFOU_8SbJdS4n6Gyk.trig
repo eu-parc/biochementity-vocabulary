@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAfqhkStOacGfLNSfMlurqxtw3p7QFOU_8SbJdS4n6Gyk> .
+@prefix sub: <https://w3id.org/np/RAfqhkStOacGfLNSfMlurqxtw3p7QFOU_8SbJdS4n6Gyk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAfqhkStOacGfLNSfMlurqxtw3p7QFOU_8SbJdS4n6Gyk a owl:Class ;
+        rdfs:label "Magnesium",
+            "Magnesium"@nl-be ;
+        schema:alternateName "Mg" ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:25107>,
+            <https://identifiers.org/cas:7439-95-4>,
+            <https://identifiers.org/inchikey:FYYHWMGAXLPEAU-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5462224> ;
+        pehterms:hasContextAlias sub:_nd5b7f5041c3846e682d7f32ee2f8d1eab1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_nd5b7f5041c3846e682d7f32ee2f8d1eab1 a pehterms:ContextAlias ;
+        schema:alternateName "mg" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:39.359949+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "NqBe0S0ZIZjPQB0/vV+L8YM1+zb52n9scPVWM/Tlz/Fu0BeCs9iUmz559J2+X9yniCEEHDYgE6vQsNDMUXG6P6ukrxXV6GFxsX0o+XHdCZmK3OBKB+QN/R//ArXANGKTHmPfOxyfhqIMgLTI0EbTEW9FV2rf/asN9+jXpIVKfaT2GicN8dBt5l/GwZYWmkHZV82H2RGYznNuFA4Tg6rQv4X8T7aygRcvj/QlkdWfXljILw4qsFjAAotllUOU/gA6Z57iTfWoda+i+lDB6v+WKMMenTuJ52M48rCsjALwg23gr+n7/rZl7DaEkQGX+5w0gKOk94AxryASiJSGqXJGVQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Magnesium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAfqhkStOacGfLNSfMlurqxtw3p7QFOU_8SbJdS4n6Gyk ;
+        prov:generatedAtTime "2026-06-24T10:39:39.359949+02:00"^^xsd:dateTime .
+}

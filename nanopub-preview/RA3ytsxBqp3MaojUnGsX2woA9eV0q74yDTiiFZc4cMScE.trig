@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RA3ytsxBqp3MaojUnGsX2woA9eV0q74yDTiiFZc4cMScE> .
+@prefix sub: <https://w3id.org/np/RA3ytsxBqp3MaojUnGsX2woA9eV0q74yDTiiFZc4cMScE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA3ytsxBqp3MaojUnGsX2woA9eV0q74yDTiiFZc4cMScE a owl:Class ;
+        rdfs:label "α-zearalanol",
+            "α-zearalanol"@nl-be ;
+        schema:alternateName "alpha zearalanol",
+            "α-ZAL" ;
+        schema:comment "comments: The CHEBI and the CAS refer me to this other pubchem compound: https://pubchem.ncbi.nlm.nih.gov/compound/Zeranol --> Anthony to check which one is the correct one??" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:35064>,
+            <https://identifiers.org/cas:26538-44-3>,
+            <https://identifiers.org/inchikey:DWTTZBARDOXEAM-TZMCWYRMSA-N>,
+            <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/7048820> ;
+        pehterms:hasContextAlias sub:_n9b07ced58a5b41769047858a0fcb7685b1 ;
+        pehterms:hasGroupLabel "mycotoxins" ;
+        pehterms:isMetaboliteOf biochementity:RAFmN1a1-UgiC_8KvexysdrDKTrakAHOfx-pjUAXQnKDw .
+    sub:_n9b07ced58a5b41769047858a0fcb7685b1 a pehterms:ContextAlias ;
+        schema:alternateName "azal" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:30.820412+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "YHRyH4CnbRkbXUuY9DwRCWC60K+QT5+ku62IyZp/LGrWB1B8s5cHj47+9RQQO04KbUl1NlUaR/pWI9NFo0A90f2EOlqqw2krPPTT7ejajspfx3koRLM3Cg3c3L9BKfq0MRjLK6BEt4LKXmKhuXSDmBglGT1IlMDghlKKQ3Rij77U4jmyC8GW8Jy+VSAPs2DT/QVrDjzz3jLlCOwWncYvkyXNt3N3bMSG3QFNI6w7iwqDov4ezbZa6K6z8OAtcK/+Qqp/NpoUFiamfpgC5IaoaNgES/xDkzYFo6Ot4FJNGp6N3fQqFe6XT4bn5vNhXQO52ZsckabqAxhROV9AAQIMjA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "α-zearalanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA3ytsxBqp3MaojUnGsX2woA9eV0q74yDTiiFZc4cMScE ;
+        prov:generatedAtTime "2026-06-24T10:39:30.820412+02:00"^^xsd:dateTime .
+}

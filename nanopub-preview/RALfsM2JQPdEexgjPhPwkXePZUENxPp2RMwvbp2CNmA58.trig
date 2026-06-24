@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RALfsM2JQPdEexgjPhPwkXePZUENxPp2RMwvbp2CNmA58> .
+@prefix sub: <https://w3id.org/np/RALfsM2JQPdEexgjPhPwkXePZUENxPp2RMwvbp2CNmA58/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALfsM2JQPdEexgjPhPwkXePZUENxPp2RMwvbp2CNmA58 a owl:Class ;
+        rdfs:label "Pentabromotoluene",
+            "Pentabroomtolueen"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "PBT" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:87-83-2>,
+            <https://identifiers.org/inchikey:OZHJEQVYCBTHJT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6906> ;
+        pehterms:hasContextAlias sub:_n446ed2108fef45f197eea01bc9d50216b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n446ed2108fef45f197eea01bc9d50216b1 a pehterms:ContextAlias ;
+        schema:alternateName "pbt" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:05.830137+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "C7q5GDaPVxjs7pPnMb4doaBXieoAa3B3t9IzyeIgCHCPFb8JIIaIq487+66HBCtm/ThoDDRrDSpToynMTECoPDWCKRK9GjL3QWb4HkS2YXf0j4YzVRe9jW7X0Ix9NwD+le55H1JtBwGCkq0aNQAYPR3883luqOXUG1RgilpXW3X/nlHcgUbmgEHLD3iRVsAxj8AdXz7i8SkZWDhY7137xZ3Gthr4rSffwJDttdC8LF5jqjuylGodBNLtBd153LBpruR/SFEuPsSvfBUUQX14047jpT2/q8KKhGdFK/CM00rkcUnkBKZOnqky5N9Cg8IAAIJcFfX3CX6pfhSTNsTgkQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Pentabroomtolueen" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RALfsM2JQPdEexgjPhPwkXePZUENxPp2RMwvbp2CNmA58 ;
+        prov:generatedAtTime "2026-06-24T10:39:05.830137+02:00"^^xsd:dateTime .
+}

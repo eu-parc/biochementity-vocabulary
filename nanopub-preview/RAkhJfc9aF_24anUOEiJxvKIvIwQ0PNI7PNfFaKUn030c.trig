@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAkhJfc9aF_24anUOEiJxvKIvIwQ0PNI7PNfFaKUn030c> .
+@prefix sub: <https://w3id.org/np/RAkhJfc9aF_24anUOEiJxvKIvIwQ0PNI7PNfFaKUn030c/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAkhJfc9aF_24anUOEiJxvKIvIwQ0PNI7PNfFaKUn030c a owl:Class ;
+        rdfs:label "1,2,5,6-tetrabromocyclooctane",
+            "1,2,5,6-tetrabroomcyclooctaan"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "TBCO" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:3194-57-8>,
+            <https://identifiers.org/inchikey:RZLXIANUDLLFHN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:296646> ;
+        pehterms:hasContextAlias sub:_nce0cee278cd34abebbb3182d62094b46b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_nce0cee278cd34abebbb3182d62094b46b1 a pehterms:ContextAlias ;
+        schema:alternateName "tbco" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:57.990200+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "WOcSov/BmpHIrZ1EzIhdFuWsVD7OAua0AiStCvnIKuRm5lNVhGFR2ir6t8sjjE/o00G0bFArIhsqgygx8F9H36T1F4XXzl3tNXsEge8mX4AJJ+lUQ9oJsn7FfV4bYNWDc/WW6tnkUpouo5+BtXd/CcTHAq2v073feFhqOEgtdSh9ohtKBW3j+09PrjFWchQYXrJdn2UJtQ0QoJaHydlnQngLGd4YA9TItQ6OloEJ9g/M2G40c92h/T9bQtMjJLdjmVXg4BDvnmZisUd6ecaXNTQ517tmpSTT8nAC1CyOX3yRBrVMw2EeHBzePM+vr8R8JiWMgmUq1sJ2qKIJm0q5mw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2,5,6-tetrabromocyclooctane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAkhJfc9aF_24anUOEiJxvKIvIwQ0PNI7PNfFaKUn030c ;
+        prov:generatedAtTime "2026-06-24T10:38:57.990200+02:00"^^xsd:dateTime .
+}

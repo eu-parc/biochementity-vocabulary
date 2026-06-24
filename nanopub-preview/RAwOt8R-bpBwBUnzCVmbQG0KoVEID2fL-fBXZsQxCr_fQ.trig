@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAwOt8R-bpBwBUnzCVmbQG0KoVEID2fL-fBXZsQxCr_fQ> .
+@prefix sub: <https://w3id.org/np/RAwOt8R-bpBwBUnzCVmbQG0KoVEID2fL-fBXZsQxCr_fQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAwOt8R-bpBwBUnzCVmbQG0KoVEID2fL-fBXZsQxCr_fQ a owl:Class ;
+        rdfs:label "Imidacloprid-5-OH",
+            "Imidacloprid-5-OH"@nl-be ;
+        schema:alternateName "5-Hydroxyimidacloprid",
+            "Imidacloprid-5-OH",
+            "Imidacloprid-5-OH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:MATMQDMQFSFQHB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:136241533> ;
+        pehterms:hasContextAlias sub:_n1c1087d5ca6645f49f5991638a2e8184b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAZ7z3L1h-JJbevD-l_t-Nc-y0QAGnyrgzAgATwdOyiIU .
+    sub:_n1c1087d5ca6645f49f5991638a2e8184b1 a pehterms:ContextAlias ;
+        schema:alternateName "imidacloprid5oh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:35.937048+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "DVW/xjFJYrtCmPhNN3DbVESZjk1LnfK3L0rXaoW+CPp6fyqJmfo9/YPbWfeCbGGMuR37yWJw3/+ce30mjH5qxStW45XblupDW/Rh0plRaASk8ZPGmszUkqjkxSgpk1qq9hFb1dS1d0Lqe4/Twu7dZ10v6uH+t3YvXsanMxCyM0NmTqUxLVcICMpF8g5bCRX8re3pH+toAEDZigmFWKX/G17DzVTNNvVO99S4Mp4MgpWjNuQS+EX5rEd3rqboo0G/2UxhmAr1hRUoRGD3UEvbqDeJ3xA8cSVGVOagVgy37TqtH6UpBCRa8D5attfUU390RiA2cUsgDDU/apIMNhwmsg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Imidacloprid-5-OH" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAwOt8R-bpBwBUnzCVmbQG0KoVEID2fL-fBXZsQxCr_fQ ;
+        prov:generatedAtTime "2026-06-24T10:39:35.937048+02:00"^^xsd:dateTime .
+}

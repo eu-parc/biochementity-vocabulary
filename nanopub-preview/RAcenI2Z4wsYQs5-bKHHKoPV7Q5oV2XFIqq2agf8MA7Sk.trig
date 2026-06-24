@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAcenI2Z4wsYQs5-bKHHKoPV7Q5oV2XFIqq2agf8MA7Sk> .
+@prefix sub: <https://w3id.org/np/RAcenI2Z4wsYQs5-bKHHKoPV7Q5oV2XFIqq2agf8MA7Sk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcenI2Z4wsYQs5-bKHHKoPV7Q5oV2XFIqq2agf8MA7Sk a owl:Class ;
+        rdfs:label "1,2,3,6,7,8-Hexachlorodibenzofuran",
+            "1,2,3,6,7,8-hexatachloordibenzofuran"@nl-be ;
+        schema:alternateName "1,2,3,6,7,8-HxCDF" ;
+        rdfs:subClassOf biochementity:RA0r-rHeQbw4RSZPxIiF_iECYFacOZ6d2zVh8_6BbXSCo,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81511>,
+            <https://identifiers.org/cas:57117-44-9>,
+            <https://identifiers.org/inchikey:JEYJJJXOFWNEHN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:42140> ;
+        pehterms:hasGroupLabel "furans" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:35.651760+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "SC5jft+BOt9ZHNCe0MAZNot/b5FZJzZOBiQcZZ9/lIjL3fTLgD3eicqKBy5g1ozHe5+a7oEr1KULLlzDQiHhzETRzP/WtDXK4wSXhO/vuwjB2x4cQKUYH9OgRsnl7wI4B+ufFzgsQtWGHGsPwEdsKSskRnRfApKovokr/NsA/n2zV81cYnSj4akGAaogwyrnNc/G8c0Xr6X1kXNsP9Ln3L2TQHX7zxANNKe9WrAtjtVzQN6IKOqNGfwCYGT73SBE/LrlDP5w07v9W6/h5LkM32WQrA78YrC29SapeD/VI5t3D8C4rGb//ilaZ5lsgwlx68GtXUFxckDAbXTxZuU/SQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2,3,6,7,8-Hexachlorodibenzofuran" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcenI2Z4wsYQs5-bKHHKoPV7Q5oV2XFIqq2agf8MA7Sk ;
+        prov:generatedAtTime "2026-06-24T10:39:35.651760+02:00"^^xsd:dateTime .
+}

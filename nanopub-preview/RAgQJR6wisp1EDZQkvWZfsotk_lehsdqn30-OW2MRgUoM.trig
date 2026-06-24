@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAgQJR6wisp1EDZQkvWZfsotk_lehsdqn30-OW2MRgUoM> .
+@prefix sub: <https://w3id.org/np/RAgQJR6wisp1EDZQkvWZfsotk_lehsdqn30-OW2MRgUoM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAgQJR6wisp1EDZQkvWZfsotk_lehsdqn30-OW2MRgUoM a owl:Class ;
+        rdfs:label "Ethylparaben",
+            "Ethylparabeen"@nl-be ;
+        schema:alternateName "EtP",
+            "Ethyl 4-hydroxybenzoate",
+            "EtP"@nl-be ;
+        rdfs:subClassOf biochementity:RAwqdP_7GS3kHLtWZHU4Cf3TBUgb76iya1pZmBZ-RAog8,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:31575>,
+            <https://identifiers.org/cas:120-47-8>,
+            <https://identifiers.org/inchikey:NUVBSKCKDOMJSU-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:8434> ;
+        pehterms:hasContextAlias sub:_n5acc07151bf34d5f86c93a5dbac29090b1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n5acc07151bf34d5f86c93a5dbac29090b1 a pehterms:ContextAlias ;
+        schema:alternateName "etpar" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:39.134711+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "bt/MaQYF2bG+MVl87F5DCV/rbCt9UtXLSd22EXe2ypmsP86rc8Nkb1ZavO5Ng4NqLqNH7h7dfmrQGoIdYVcMGU+6v+ic3sN9ayCauuyVV2YZc599rlMJhHXtSR0gYkv+3xOAfOveDNEhaO+R5VlWs8i0r5vEvoA9zLSQoS6DhiecIA5LJDUqy7jsxP1Md6yNc41Tf6qE7AoXuSXo5dHpcqgccgRvuTg18dVWwHkIs3x2C+WVD/6gRHU6tCgc0HvqAi00UJAS2EPSvQgYc0zdn1jrRc1nVSVwECCIJTjEZu2BZ62UX9yJW5MFuRlvoVKOsOjJSxbrQkYq/rLvNxMrbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Ethylparabeen" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAgQJR6wisp1EDZQkvWZfsotk_lehsdqn30-OW2MRgUoM ;
+        prov:generatedAtTime "2026-06-24T10:39:39.134711+02:00"^^xsd:dateTime .
+}

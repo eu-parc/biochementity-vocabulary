@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAOCQjDLO1Jye0f13YUMLMQ66uC3N6EjoydceJs3_Ck_M> .
+@prefix sub: <https://w3id.org/np/RAOCQjDLO1Jye0f13YUMLMQ66uC3N6EjoydceJs3_Ck_M/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOCQjDLO1Jye0f13YUMLMQ66uC3N6EjoydceJs3_Ck_M a owl:Class ;
+        rdfs:label "2,4-dichlorophenol",
+            "2,4-dichloorfenol"@nl-be ;
+        schema:alternateName "2,4-DCP",
+            "2,4-DCP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:16738>,
+            <https://identifiers.org/cas:120-83-2>,
+            <https://identifiers.org/inchikey:HFZWRUODUSTPEG-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:8449> ;
+        pehterms:hasContextAlias sub:_n3ad1f850221b4a108c06c04aea9cf3acb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAoPqCsWtE1nkmaPGzXLBgkuJdpbIWROuXH5y8KHXYsb0 .
+    sub:_n3ad1f850221b4a108c06c04aea9cf3acb1 a pehterms:ContextAlias ;
+        schema:alternateName "dcp24" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:23.635004+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "f4/TVpt8O9oTBxFjCLePh1Nn+gTWyNJzm9EPGe5FmgOBTcf4xqeAo4ThfrwgPYad1xV7avtTRX994cCoMDK2bMqEYIsiFnFDyLK8Zw0M0EYDP/b6UB27BMDtGCW9WOwUq0Ul8UeTJRjo+cMVRheDVfKbFwYl2IKnVAplDhkQruAPaL/syThnYD1+ZD/AdgC0Ce95EzsPzZUWu0shDFD1fwQTDIrDioVWCTTzpLqyjtJt4W9F2mQTxRDOSFVIdu2YA5Q6mWGftS3f43qP7XTaxSAnozsvZwfH+Osh2Gb6IOWqtQFhFVB4BD1YYDu4zDyKsbRyqvmYmWrWSSY0G1E1Ug==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,4-dichloorfenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOCQjDLO1Jye0f13YUMLMQ66uC3N6EjoydceJs3_Ck_M ;
+        prov:generatedAtTime "2026-06-24T10:39:23.635004+02:00"^^xsd:dateTime .
+}

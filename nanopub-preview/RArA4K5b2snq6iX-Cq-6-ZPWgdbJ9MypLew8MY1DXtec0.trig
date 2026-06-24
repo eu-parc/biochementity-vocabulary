@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RArA4K5b2snq6iX-Cq-6-ZPWgdbJ9MypLew8MY1DXtec0> .
+@prefix sub: <https://w3id.org/np/RArA4K5b2snq6iX-Cq-6-ZPWgdbJ9MypLew8MY1DXtec0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArA4K5b2snq6iX-Cq-6-ZPWgdbJ9MypLew8MY1DXtec0 a owl:Class ;
+        rdfs:label "4-chloro-alpha-isopropyl benzene acetic acid",
+            "4-chloor-alfa-isopropylbenzeenazijnzuur"@nl-be ;
+        schema:alternateName "CPBA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n6e1c5ef336354d38a6e8c8bdd5c85cc5b1 ;
+        pehterms:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAOiQ4JezoF35ucV3duBWsZg8tVTnuR0tgHH_6tMfW_48,
+            biochementity:RAdwEVrIvZNwYc2SZQtgguk6LcAXdS15_QTLXQ37LdELY .
+    sub:_n6e1c5ef336354d38a6e8c8bdd5c85cc5b1 a pehterms:ContextAlias ;
+        schema:alternateName "cpba" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:34.857504+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "n08LTvfj1y+qPsvWHh3o1E7HdO04mnC9SM+kKpaFeh9bBWPrk8c011WYiQR+OP9Do+PGjLgoPu9JHbOOADQpf/UjFsce0LfGBQzNKmKVSJ9kNt8swj43Ec2FUNcANmkg2MokmXRx1CdWN2rQiixNfRGORpnNrX5NN5aDTQXjbq3GmPpLppT/cRhKKGDT2kdHpYmvJUvc0I9gaCoukipA0oWBRuteYsdqG6E1vHauL7nmOxPlsvkB7WPqFTrrkgdf6sPf3Hdqd2NeHweJcMDj+h7e4/q7Zydn7KCSpOWE7IXEvijfEPO9p0fAw5HS2/mxvsEkRIOic2/fcRwC5SEC0Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-chloro-alpha-isopropyl benzene acetic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArA4K5b2snq6iX-Cq-6-ZPWgdbJ9MypLew8MY1DXtec0 ;
+        prov:generatedAtTime "2026-06-24T10:39:34.857504+02:00"^^xsd:dateTime .
+}

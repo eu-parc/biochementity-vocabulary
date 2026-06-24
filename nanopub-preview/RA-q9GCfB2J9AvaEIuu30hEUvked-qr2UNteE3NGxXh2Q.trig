@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RA-q9GCfB2J9AvaEIuu30hEUvked-qr2UNteE3NGxXh2Q> .
+@prefix sub: <https://w3id.org/np/RA-q9GCfB2J9AvaEIuu30hEUvked-qr2UNteE3NGxXh2Q/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-q9GCfB2J9AvaEIuu30hEUvked-qr2UNteE3NGxXh2Q a owl:Class ;
+        rdfs:label "Linear N-Ethylperfluoro-1-octanesulphonamide",
+            "Lineair N-ethylperfluor-1-octaansulfonamide"@nl-be ;
+        schema:alternateName "letpfosa",
+            "volcano|N-ethyl-1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctane-1-sulfonamide",
+            "EtPFOSA"@nl-be ;
+        rdfs:subClassOf biochementity:RAgXLNCoAyBW7ejUUHN4k8G6PQF25-V0ItuqfdktV-b7c,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81945>,
+            <https://identifiers.org/cas:4151-50-2>,
+            <https://identifiers.org/inchikey:CCEKAJIANROZEO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:77797> ;
+        pehterms:hasContextAlias sub:_n4b002d3997a944e6b7d7368e745bb772b1 ;
+        pehterms:hasGroupLabel "PFAS" ;
+        pehterms:isIsomerOf biochementity:RAp6lRnoSGWq7JFB2Skzff14ikP1d4i4Bs1vEpz0uNmIw .
+    sub:_n4b002d3997a944e6b7d7368e745bb772b1 a pehterms:ContextAlias ;
+        schema:alternateName "netfosa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:55.168701+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Wau4MT2JKteoUu43Df8ZfZCDX4HUWx3YIscvF11iiyb0ymYPZsHxRj5QLSEomkBEoSM/7M6EUHO88QvzbVS0jf9l1GyMp5lONDGeJTNTGK20Xb9cw6J7EHRVAiJeWCkla0GpAA/sQTDUOBW/XsYdpcLi1s7kbQTOKm2W6bjkKxsBkvEHiPIMheBZlsKg3s0pgkJ079DkvjC55tSWEQmvPO2ZaskvCjfto7LQkTT4VcbCdu00jU/Szd/RqGT5rguJ1VmtTTQnKG+eKgEtZLqLsFsY62H4DvHvmW2s8TgVJYa6WM18ZzDrgXgpiBOGqVlFciaJWe/6r0ZsVxzuWhx43g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair N-ethylperfluor-1-octaansulfonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA-q9GCfB2J9AvaEIuu30hEUvked-qr2UNteE3NGxXh2Q ;
+        prov:generatedAtTime "2026-06-24T10:39:55.168701+02:00"^^xsd:dateTime .
+}

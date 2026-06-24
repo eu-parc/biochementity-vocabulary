@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAEztW1XFn9ousVJnojwiPAquuFvJUDr3qr3eM55NKZ9Y> .
+@prefix sub: <https://w3id.org/np/RAEztW1XFn9ousVJnojwiPAquuFvJUDr3qr3eM55NKZ9Y/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAEztW1XFn9ousVJnojwiPAquuFvJUDr3qr3eM55NKZ9Y a owl:Class ;
+        rdfs:label "Mono-methyl-octyl phthalate",
+            "Monomethyloctylftalaat"@nl-be ;
+        schema:alternateName "MiNP" ;
+        schema:comment "a group of metabolic breakdown products formed in the human body after exposure to Di-isononyl phthalate (DINP)" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n7deaa4f55f0c451c9d8d1a71b975575ab1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAijb8n7rp9Yti0K9Eh9wIuigYfr-HQQMmQTNO3EdXApM .
+    sub:_n7deaa4f55f0c451c9d8d1a71b975575ab1 a pehterms:ContextAlias ;
+        schema:alternateName "minp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:50.398653+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "iYopSZc3ae0H1KWGX2bWgJAsRgw/x1/VSVxJ/BVGG8isbCNjVkzCrWC1O5Rmh7AniK21m3AQkGtRFGeOXZTuC7iofGAsbEF5BdwiHPCrDOSDH8TJpY0zKWLFNwTv9GULVM35uxh78hsKhXwdcij6RXKJVzrd1RmwXFG5w9drAs7CmjoB7E25eyuCslPRD8YwNoS9Yck1Q5dToZ32Q5ZUW3lO9Qk9dXdx1KekB3qDrzkck8if/FmQu7qdUb5aPL+DWkV//3TMyGAJLNZqer7tM17q38HECO2LC/6zj785C/nqOpvcPfRyvsIF6S9cFKpeS8g9OlHNNm1bm1zueY9H9Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Monomethyloctylftalaat" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAEztW1XFn9ousVJnojwiPAquuFvJUDr3qr3eM55NKZ9Y ;
+        prov:generatedAtTime "2026-06-24T10:39:50.398653+02:00"^^xsd:dateTime .
+}

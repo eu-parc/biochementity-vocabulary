@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAxUndReeEE_FXSupvhqk1nV6OLvbFC58lRTT5BTEmSmo> .
+@prefix sub: <https://w3id.org/np/RAxUndReeEE_FXSupvhqk1nV6OLvbFC58lRTT5BTEmSmo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAxUndReeEE_FXSupvhqk1nV6OLvbFC58lRTT5BTEmSmo a owl:Class ;
+        rdfs:label "Bis(2-ethylhexyl) tetrabromophthalate",
+            "Bis(2-ethylhexyl)-3,4,5,6-tetrabroomftalaat"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "BEH-TEBP",
+            "Bis(2-ethylhexyl)-3,4,5,6-tetrabromophthalate" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:26040-51-7>,
+            <https://identifiers.org/inchikey:UUEDINPOVKWVAZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:117291> ;
+        pehterms:hasGroupLabel "flame retardants" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:51.677800+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "fEfS7XQ98zYQNu9uX90LPGXbpsib/ePC5W4iyVCc3iw2fS4w1wrwOeC2mexUy1GGxgWRaPkUeN1HJ20HdldJ8fZvtKHI+izBMnBdFpefPy3Z6C4xotWkzHr9ykVHvcI3o02PbHYidp6ZmSXpDK04MZgRuG2bop/YzR56jaTAYfN0dUMg6SzV+BXnzTL0CgZdcjmhEI3knI2mB7lhCtoHJriR52pfAPWiVBpzRGiM5v6v0qo0Tr0h2tATTMIqkRjOq8BodLBJQPb0CrPpSnPdIU1Tz9KTV9855mdnhFcSwFn3p2qjomK/z+g9aWqVlD+uxvMQDxFaWElEPCCIC5+Rzg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Bis(2-ethylhexyl) tetrabromophthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAxUndReeEE_FXSupvhqk1nV6OLvbFC58lRTT5BTEmSmo ;
+        prov:generatedAtTime "2026-06-24T10:38:51.677800+02:00"^^xsd:dateTime .
+}

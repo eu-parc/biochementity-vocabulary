@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAVfwVTFsQ6THy6U3iR-vWPz7R6J18gh9f92DA9dXBmnQ> .
+@prefix sub: <https://w3id.org/np/RAVfwVTFsQ6THy6U3iR-vWPz7R6J18gh9f92DA9dXBmnQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVfwVTFsQ6THy6U3iR-vWPz7R6J18gh9f92DA9dXBmnQ a owl:Class ;
+        rdfs:label "Imidacloprid olefin",
+            "Imidacloprid olefin"@nl-be ;
+        schema:alternateName "Imidacloprid olefin",
+            "Imidacloprid olefin"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:233429>,
+            <https://identifiers.org/cas:115086-54-9>,
+            <https://identifiers.org/inchikey:TYLCDJYHUVCRBH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:14626249> ;
+        pehterms:hasContextAlias sub:_n2bfd9e786b974581938c7a88ab480517b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAZ7z3L1h-JJbevD-l_t-Nc-y0QAGnyrgzAgATwdOyiIU .
+    sub:_n2bfd9e786b974581938c7a88ab480517b1 a pehterms:ContextAlias ;
+        schema:alternateName "imidaclopridolefin" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:34.073245+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "gKRDG+otBnXAWobhROFV8qJys+fZNUw1J3mBb/G6YjlQua3t7zRd3GHcqpwvJ5NAJIAQIH4lXCq8HRSTIXdK8OJV4L2E66EKHDAOJPhk3RTTruBSpY3JJWlzmE5a+ImF8VOU/HWVtuFY0N7g9qBga9Rs8G/JIyt7jPUOHX7bLkBzGf7LwAvpMdbsMuhZEjbX9WV4M+F2oC0Z1dXRofpfkjiX874HQ87b4RxZU1VqHFxNfeVo7JryZ0b72DCAcpANXEgRmhaZh1HctDYX9Aj0/6ucVDbYnpRTe+NZbRi7YK5pjnoWlWL5ANB7yfnyvKiQe9PFJKpIbHAViyP8OmLA/g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Imidacloprid olefin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAVfwVTFsQ6THy6U3iR-vWPz7R6J18gh9f92DA9dXBmnQ ;
+        prov:generatedAtTime "2026-06-24T10:39:34.073245+02:00"^^xsd:dateTime .
+}

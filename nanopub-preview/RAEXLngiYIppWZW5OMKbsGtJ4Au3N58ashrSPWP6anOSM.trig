@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAEXLngiYIppWZW5OMKbsGtJ4Au3N58ashrSPWP6anOSM> .
+@prefix sub: <https://w3id.org/np/RAEXLngiYIppWZW5OMKbsGtJ4Au3N58ashrSPWP6anOSM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAEXLngiYIppWZW5OMKbsGtJ4Au3N58ashrSPWP6anOSM a owl:Class ;
+        rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(7-oxo-4-methyl)octyl ester",
+            "Cyclohexane-1,2-dicarboxylate-mono-(oxo-isononyl) ester"@nl-be ;
+        schema:alternateName "oxo-MINCH",
+            "oxo-MINCH"@nl-be ;
+        schema:comment """comments: * INCHIKEY --> when I look for it online, I only see references to VITO
+    * Could it be this compound? https://pubchem.ncbi.nlm.nih.gov/compound/169443862
+    feedback_epi team: Inchikey: GDOQGHAKQNDFFH-UHFFFAOYSA-N
+    https://pubchem.ncbi.nlm.nih.gov/compound/102105766
+    This info was validated by Adrian Covaci before.""" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:GDOQGHAKQNDFFH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:102105766> ;
+        pehterms:hasContextAlias sub:_nb44ccc92ac474490847ea743d4e873c2b1 ;
+        pehterms:hasGroupLabel "DINCH" ;
+        pehterms:isMetaboliteOf biochementity:RAn9PRZY6OsnkhGJqe6NHdIoeXuUYBY9n1lvPeQkZAnAg .
+    sub:_nb44ccc92ac474490847ea743d4e873c2b1 a pehterms:ContextAlias ;
+        schema:alternateName "monch" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:41.741917+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "J5LIDe/x5s2XKL3+hRHTL1up23csh5Y+x8nJD2Iig94u8RKNQhrOndEnD9NpL3mcwPJgm90a6h0PPst1x4T7uUJL1vjKsCcbF/TPkeGzgeHbAooG9Blj2q7R2NE1HlcrgoJ28KXebjQel+nIK/lSrEyV4GttN4nTczelbJ5Tor3skg1aRRf7wuYTfk8pUDiZcUH5tufATNL19NWucfexIor/mhCjfGQDJrjThNlcFF11Pu++tP/9czLYSPkfS0LMtlyiRBeAesK8dGODlFedHzySuPkQiKASZN7r88ZFVshWkLDgBZ9KTzrC4NlKTZr0rvFLS0gd7zZ+EGjaCwNZow==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cyclohexane-1,2-dicarboxylate-mono-(oxo-isononyl) ester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAEXLngiYIppWZW5OMKbsGtJ4Au3N58ashrSPWP6anOSM ;
+        prov:generatedAtTime "2026-06-24T10:39:41.741917+02:00"^^xsd:dateTime .
+}

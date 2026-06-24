@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RASiRgL-kACnUDmwQkvGuN-ZysWS40CVWXVrWHjCGIvdo> .
+@prefix sub: <https://w3id.org/np/RASiRgL-kACnUDmwQkvGuN-ZysWS40CVWXVrWHjCGIvdo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RASiRgL-kACnUDmwQkvGuN-ZysWS40CVWXVrWHjCGIvdo a owl:Class ;
+        rdfs:label "Propoxur",
+            "Propoxur"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Propoxur" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34938>,
+            <https://identifiers.org/cas:114-26-1>,
+            <https://identifiers.org/inchikey:ISRUGXGCCGIOQO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:4944> ;
+        pehterms:hasContextAlias sub:_n7ee438d754b34d958c241f1e0a0fc667b1 ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" .
+    sub:_n7ee438d754b34d958c241f1e0a0fc667b1 a pehterms:ContextAlias ;
+        schema:alternateName "propoxur" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:10.093021+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "JS0+oY42aPwiJbDsv/2dYO1sSmzvF7tt+WtWAZZc89DU2sINUqdUQ/HRaY8xo0DuuRLCXs9lGgCKZX+SMMfLsyZgzE3J1mfszvHL7qdS5ytnAS/57ekRln+WTrPZqwTsZ7bFd7mVcFmAbi5VBn+Mc52mmp3hRHWFM7gjx583zVqFFhK73i2XwX0P4HOVafoU3VZHx6VCFjXmP30m1w0IQZTMpyxttJAWE0Flv3b0igIsuhZEfDLq8M6/LwuH3xYDcaZQh+uOUw7PHJ5zpH6vhC80kBn8aZ+ZgKSKj3U91iuLVM3RMFWFRAWAOwcyMgwYZ2bHliopOys/2wCQoSO3yQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Propoxur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RASiRgL-kACnUDmwQkvGuN-ZysWS40CVWXVrWHjCGIvdo ;
+        prov:generatedAtTime "2026-06-24T10:39:10.093021+02:00"^^xsd:dateTime .
+}

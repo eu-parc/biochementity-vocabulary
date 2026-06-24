@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA2UtwndUfJV6s4LppAbnkKhQAwGPc8ol7nPer1-VWa_I> .
+@prefix sub: <https://w3id.org/np/RA2UtwndUfJV6s4LppAbnkKhQAwGPc8ol7nPer1-VWa_I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2UtwndUfJV6s4LppAbnkKhQAwGPc8ol7nPer1-VWa_I a owl:Class ;
+        rdfs:label "Mono-n-octyl phthalate",
+            "Mono-n-octylftalaat"@nl-be ;
+        schema:alternateName "MnOP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132583>,
+            <https://identifiers.org/cas:5393-19-1>,
+            <https://identifiers.org/inchikey:PKIYFBICNICNGJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:79362> ;
+        pehterms:hasContextAlias sub:_n20b64eb2283f447e8b8dc1ff90cce2adb1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAoMHmN5_pctp3qLzpk5YMBPsR_M31DH3UVwiE8oCLjrw .
+    sub:_n20b64eb2283f447e8b8dc1ff90cce2adb1 a pehterms:ContextAlias ;
+        schema:alternateName "mop" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:51.196508+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "is6tYwpdFPK3cm3bp6a5MUEhiA0dUB6t+2DddHUAC6rD3489mYg8pSkKeIOgtvH2T4NnO8PqmzQUpzSo0wkhGp/Yr1LrKd+0xyF8MyJArvgwBAfIay3+2nAYX4HYur78AGsLhkGkmWdu3759RQngIZb1+fpBzoEKTqO5Nt4FU2kIhXa82ZZDU+zPJmdq8YNPYDMVGHM3zRGCavdJu4g/maXac8LeJzPDPCZOElJFhHb2zlbhXzHinVAqx1b/EzLKxiipJmxOit9SXKplYLZBjdncBTQM8PUL6Oro+9BNH7leUjTgOcZyEqDrwp6KzG4pAXmru8vmhn/Bo3awWYBmZQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono-n-octylftalaat" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA2UtwndUfJV6s4LppAbnkKhQAwGPc8ol7nPer1-VWa_I ;
+        prov:generatedAtTime "2026-06-24T10:39:51.196508+02:00"^^xsd:dateTime .
+}

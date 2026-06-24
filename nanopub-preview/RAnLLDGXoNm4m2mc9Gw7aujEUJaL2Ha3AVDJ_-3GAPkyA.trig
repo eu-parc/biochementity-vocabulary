@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RAnLLDGXoNm4m2mc9Gw7aujEUJaL2Ha3AVDJ_-3GAPkyA> .
+@prefix sub: <https://w3id.org/np/RAnLLDGXoNm4m2mc9Gw7aujEUJaL2Ha3AVDJ_-3GAPkyA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAnLLDGXoNm4m2mc9Gw7aujEUJaL2Ha3AVDJ_-3GAPkyA a owl:Class ;
+        rdfs:label "Cholesterol",
+            "Cholesterol"@nl-be ;
+        schema:alternateName "CHOL" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:16113>,
+            <https://identifiers.org/cas:57-88-5>,
+            <https://identifiers.org/pubchem.compound:5997>,
+            <https://loinc.org/LP15493-7> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:51.932763+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "DZ6VavEVi4TWNKI/7+6rRFeUDqGbUHLHZRyMoRlEkHujobJXjfTQdw69wgJNSjvwLIXQJexVgNBSK6EUlFWosvHQh5xe+W3WkV8zHWayCQX2kITb6P5IXpOTsXHWqIdXXgyRH4M0UbE1FRiOMHnPC+AGLzyGDx+ej7wG1W+hxWQMmpBpLVnp4mrEx6Lp/BXyX0ODKYrCxkwhpw7kVMZFzh8ZW4AFV3qkg3ZH/OAo9pLh2Hk4svS+7YpVRVrKUb4tGc7q0mZfl/EUb48Lyh/ydCHyDc5Pvc+SZMrkn/FSYpb3tAS+8hfC/R/SVT4kbQsDsKxl4vxFTAvkQyWf41Pxvw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cholesterol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAnLLDGXoNm4m2mc9Gw7aujEUJaL2Ha3AVDJ_-3GAPkyA ;
+        prov:generatedAtTime "2026-06-24T10:38:51.932763+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAhIAe4TLATujPrmCYxyLExgfEpoxemBi8faXr9gLxkOo> .
+@prefix sub: <https://w3id.org/np/RAhIAe4TLATujPrmCYxyLExgfEpoxemBi8faXr9gLxkOo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAhIAe4TLATujPrmCYxyLExgfEpoxemBi8faXr9gLxkOo a owl:Class ;
+        rdfs:label "Galaxolide",
+            "Galaxolide"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_48318> ;
+        schema:alternateName "Galaxolide" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83784>,
+            <https://identifiers.org/cas:1222-05-5>,
+            <https://identifiers.org/inchikey:ONKNPOPIGWHAQC-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:91497> ;
+        pehterms:hasContextAlias sub:_ndf86fea2b19d4a46b8f2de12ffd4556db1 ;
+        pehterms:hasGroupLabel "musks" .
+    sub:_ndf86fea2b19d4a46b8f2de12ffd4556db1 a pehterms:ContextAlias ;
+        schema:alternateName "galax" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:53.096581+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "SOGsuwWJJd0oPdFjJT25lLnKSGZ7B1GAfAUAZkwBXIeebRIKoLf41Y3J2y+QwAL1n+HbDsTfHAAE24nh8HjfH04cmueyz3P9GaUEhDAQ3NFlibzlljBd02lcZ/3xGzR3RUdHkAohVXMOJ+bVyg0EytOCnAEZCC0UlTWXRiDP/1DzEJke+fUfeGvPfsu8T7GhxF+1vpisi3+efQJRvYwy7qNN2ixgS1RzoGz3Hxukf2+SqOtxtkaUxSOo6xrjIRgHIc03D/KRD/9Y/Hr7pXqcboRjc+DpQM1Ybm0uUkK6EWqTjs4IA1sg3wKk0D+Wj02JUKdYO/XtuTYwF/Xq4oc+WQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Galaxolide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAhIAe4TLATujPrmCYxyLExgfEpoxemBi8faXr9gLxkOo ;
+        prov:generatedAtTime "2026-06-24T10:38:53.096581+02:00"^^xsd:dateTime .
+}

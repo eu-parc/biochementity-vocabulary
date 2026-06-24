@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAVGxx3EjRD_lkvwpQ18t-oEer3V4hrKLEs7adJrFv0eM> .
+@prefix sub: <https://w3id.org/np/RAVGxx3EjRD_lkvwpQ18t-oEer3V4hrKLEs7adJrFv0eM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVGxx3EjRD_lkvwpQ18t-oEer3V4hrKLEs7adJrFv0eM a owl:Class ;
+        rdfs:label "3-carboxyl-mono-propyl phthalate",
+            "3-carboxyl-monopropylftalaat"@nl-be ;
+        schema:alternateName "3cx-MPP",
+            "Mono(3-carboxypropyl) phthalate",
+            "3cx-MPP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:132872>,
+            <https://identifiers.org/cas:66851-46-5>,
+            <https://identifiers.org/inchikey:IYTPMLIWBZMBSL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:53435015> ;
+        pehterms:hasContextAlias sub:_n77408982e2aa4ada80f476b170f1207cb1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAJNRLVkwcWY-b-Vc6pL2BNViX1sxcm7sIi8Y8AvMKqJw .
+    sub:_n77408982e2aa4ada80f476b170f1207cb1 a pehterms:ContextAlias ;
+        schema:alternateName "cxmpp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:53.325391+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "sTCsGarXE08IF5hU2NlZEEPqVLnrFO3BBiK6XZFCvpv3oPdsUGZZC7ML6qNZHP50cbrIPi/doRI+4raUVP1iUe7jGGZIGlyRh0IRTCi2OzOdn3F+IBiB9758/nltbacLz+JC4bUYyKL8rsP7Pr5uHbRyYVt/tVpnoOfvcwPu6PIwZoTWhxmDDvg2GfGGM1FzxdR/quNOi1cdmFZYB2S9QpiLPPIAwXLAc1yFNzT7Y2D2xJGhgFnUoswCEbIZ1hCSwDeOvEArOypsplfwNSA6fAmuk/bgdyVW7mzics6+G2BxWXCiCoQNrCoO35rFY7fqk7A/IJSy/1oMk2XBAEQD5w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-carboxyl-mono-propyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAVGxx3EjRD_lkvwpQ18t-oEer3V4hrKLEs7adJrFv0eM ;
+        prov:generatedAtTime "2026-06-24T10:39:53.325391+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAXXt1Kdo4BNo-1-Zj1-NsbTuFtIf3b6IeNCW-T0Mnvbc> .
+@prefix sub: <https://w3id.org/np/RAXXt1Kdo4BNo-1-Zj1-NsbTuFtIf3b6IeNCW-T0Mnvbc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAXXt1Kdo4BNo-1-Zj1-NsbTuFtIf3b6IeNCW-T0Mnvbc a owl:Class ;
+        rdfs:label "Polybrominated diphenylether 119",
+            "Polybroomdifenylether 119"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "2,3',4,4',6-Pentabromodiphenyl Ether",
+            "BDE-119",
+            "bde 119",
+            "bde-119",
+            "bde119",
+            "pbde-199" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:189084-66-0>,
+            <https://identifiers.org/inchikey:KXEOYBYEJCRPGB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15509897> ;
+        pehterms:hasContextAlias sub:_n6bf90ba74f2840e1aebd3dc95ef45440b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n6bf90ba74f2840e1aebd3dc95ef45440b1 a pehterms:ContextAlias ;
+        schema:alternateName "bden" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:07.683856+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "EwjRtbERompqtz9yYTnf+f6CaJVQcg7Qcn9jMcUt1hryIuxXnEHVrwkfYsfqXnzXKr9LwsjxC/AAqr+om0wmz23MRlPI66fPdxvAOT0RbUgLrEiWTLzbamdgtZYoWZyElKZtMWPLntVGo3gEJQhTdlDuiYCAAlx+J7ftEC7xKzdjES29jUd+5FaxqPfzcMtwFuSJbmjHCfl4ah0uIwZhjbwiXnXpeBu8DUsHDC+xT6PmLWAK8MuF4dvs7rzEbxWzMSxo8UBhs3rT/m3JVtRk9HHsrVhz/Y/oDAKCWamsHpfxRI+L20vkrN54vZT6cWqcLv5VzBLOhgg4jCB68kle3w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polybrominated diphenylether 119" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAXXt1Kdo4BNo-1-Zj1-NsbTuFtIf3b6IeNCW-T0Mnvbc ;
+        prov:generatedAtTime "2026-06-24T10:39:07.683856+02:00"^^xsd:dateTime .
+}

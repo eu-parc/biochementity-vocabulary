@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAeohGVm0nytogetxOjL72D7XqP7-n4UDe7_gHmDMnvbQ> .
+@prefix sub: <https://w3id.org/np/RAeohGVm0nytogetxOjL72D7XqP7-n4UDe7_gHmDMnvbQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeohGVm0nytogetxOjL72D7XqP7-n4UDe7_gHmDMnvbQ a owl:Class ;
+        rdfs:label "Platinum",
+            "Platina"@nl-be ;
+        schema:alternateName "Pt",
+            "Pt"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33364>,
+            <https://identifiers.org/cas:7440-06-4>,
+            <https://identifiers.org/inchikey:BASFCYQUMIYNBI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23939> ;
+        pehterms:hasContextAlias sub:_nc475a90859ce45c0b1cb6ccfbd93654db1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_nc475a90859ce45c0b1cb6ccfbd93654db1 a pehterms:ContextAlias ;
+        schema:alternateName "pt" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:36.988112+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "WNzIg3lJYxzF8jKzsscWN9gZPJYduyP6xjYduCAK6U/m9Hv0X7InrU0PSNh5WYQss/d/zH/4M3pBxUlFfYuCfnoQaYfAPehTRMV1YXoISZvu52DmPsn5pHR98H/lysFiy1NtoBrZpuwrI8W+flTwrcsCRgK9ryhR0r+pRJcEC7AuiIZMVanEFxkFNjvKsXhPNFM0DgaeYVhnFa7aTfbxH5RCoxhQmpES4qrwAt5EMiaeAMQNRLQkS6xTDOVV4+NN3KuDJ6j4nD4ka3dBSNWzYwM9Vd8UDVyXaw900CA6gSpPXt6VL5A+K+uBxLnKK31FQMdNKZ78jPmtofBiM4S7aQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Platinum" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeohGVm0nytogetxOjL72D7XqP7-n4UDe7_gHmDMnvbQ ;
+        prov:generatedAtTime "2026-06-24T10:39:36.988112+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAOLtGiD5ttaCK9osJ1AcQ2FmflepLVMnji7Q9mkiZM8Q> .
+@prefix sub: <https://w3id.org/np/RAOLtGiD5ttaCK9osJ1AcQ2FmflepLVMnji7Q9mkiZM8Q/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOLtGiD5ttaCK9osJ1AcQ2FmflepLVMnji7Q9mkiZM8Q a owl:Class ;
+        rdfs:label "Pirimiphos-methyl",
+            "Pirimifos-methyl"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Pirimiphos-methyl" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:38843>,
+            <https://identifiers.org/cas:29232-93-7> ;
+        pehterms:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:11.038653+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "qZDhC5iBwfc9RJh3GLFIY62JVERgOLODhd7EmPdJAPxHeyVX/fAI1vcjdDXEHV8pFQVCyxhMeiUjvga34daGbRTHwsgS7mZRmJ3fpgZca2I07/sXfN8CncAxsyD4Sx+2LNC9PRn65UliFkNxVV9F9eX9P7PvvU5iPSOXl1F9ykaqHr2/qd6AsNsLVLou7+LDDBWQXbEcTVBebwkLGce/Ajwl0R+7PsuQQm0BfCIRBJaNL/VZLAKs1wyjuKy4EcKXFD1s+O9iVifhEsVQW4Kd9Twjd57uShh5Vp3ZDWT4B64S+IJ2cqhNfOegE3QZq6OLzfB2urZzFdCrbmGU8qWLbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Pirimifos-methyl" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAOLtGiD5ttaCK9osJ1AcQ2FmflepLVMnji7Q9mkiZM8Q ;
+        prov:generatedAtTime "2026-06-24T10:39:11.038653+02:00"^^xsd:dateTime .
+}

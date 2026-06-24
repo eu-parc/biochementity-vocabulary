@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAavmvHgaMwJFVxnbEDbB60LRCQbvdkMKIGoCyp36u7IU> .
+@prefix sub: <https://w3id.org/np/RAavmvHgaMwJFVxnbEDbB60LRCQbvdkMKIGoCyp36u7IU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAavmvHgaMwJFVxnbEDbB60LRCQbvdkMKIGoCyp36u7IU a owl:Class ;
+        rdfs:label "4-Hydroxy Chlorothalonil",
+            "4-Hydroxy Chlorothalonil"@nl-be ;
+        schema:alternateName "4-Hydroxy-2,5,6-trichloroisophthalonitrile",
+            "Chlorothalonil-4OH",
+            "Chlorothalonil-4OH"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:133542>,
+            <https://identifiers.org/cas:28343-61-5>,
+            <https://identifiers.org/inchikey:MDQKYGOECVSPIW-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:34217> ;
+        pehterms:hasContextAlias sub:_ne8056ad78b444a439f8cbd38bc9b1035b1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAtmJgC6kqtEeeMhDdBtqOdggC_6Pwl5mtO7egAQpBdGo .
+    sub:_ne8056ad78b444a439f8cbd38bc9b1035b1 a pehterms:ContextAlias ;
+        schema:alternateName "chlor4oh" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:24.572836+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "URfw9WgQMLNUHflNbz2KC1Z52CpuvB0U9XT4UfHssTgaOWuZlLII22VSd2vJWOBKcaCIwKN0QzqqNscKbmTd2d7mh/LXrw+NZUd/XIQ198LWI5TPfW4vQqEYqVZDUmZ1h8ccWV5GJexKUnV8SCX5Un7UFmWHWulPOfRXahXIMOwvQeN1Sd1D0tsaX+1ffaPCP1CZTu85j7DhOLQRvnq5/vRCKCqdvy2HPJhaORxVsX4lyyuoWOW1dp8hKM32iugVDi28hxNpZBmTkQjVlryA+PkFXV/v+9+AmeJ/V4CDG/xaUhVhkfc1TDJatG/f+ai7WgOGUMbf9FTIS2X5H7N8OA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-Hydroxy Chlorothalonil" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAavmvHgaMwJFVxnbEDbB60LRCQbvdkMKIGoCyp36u7IU ;
+        prov:generatedAtTime "2026-06-24T10:39:24.572836+02:00"^^xsd:dateTime .
+}

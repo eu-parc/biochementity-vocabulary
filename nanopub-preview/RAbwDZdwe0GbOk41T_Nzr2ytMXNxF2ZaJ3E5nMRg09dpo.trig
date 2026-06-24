@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RAbwDZdwe0GbOk41T_Nzr2ytMXNxF2ZaJ3E5nMRg09dpo> .
+@prefix sub: <https://w3id.org/np/RAbwDZdwe0GbOk41T_Nzr2ytMXNxF2ZaJ3E5nMRg09dpo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbwDZdwe0GbOk41T_Nzr2ytMXNxF2ZaJ3E5nMRg09dpo a owl:Class ;
+        rdfs:label "Ferritine",
+            "Ferritine"@nl-be ;
+        schema:alternateName "fer" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15568-6> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:17.551208+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "jfdOhiTd+5xD5Z9gic5gcakeWnyOJ0eHOM2FYqniBLl0iYFh5p9N0UE6sGLZ+ul3j98VhSnmtAYZlKtadEZM+qme34qHnUBY7lITR/vNHs9AoKgrNxdoGkaj62INXbY+RjR+grkpknW4Qi/rxTcJI87Qyo8eeeLub9zgETnJ/Nth5t22JUkuIDs2vJfmU/mBxFXZ1LzlEKmWLjVKrMQSYhn1Zb7sDnVj8z2kHHbZkrDIc8rPfFK2D3XBYpjJyRTo0vAvGC9tjXtKPypGkhZPMx3/75dcI6RYcISdjWSuY493YfgFf0wZyJ19YscHgnhKHeWeWnHPmS2f/9lRlLMlXw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Ferritine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbwDZdwe0GbOk41T_Nzr2ytMXNxF2ZaJ3E5nMRg09dpo ;
+        prov:generatedAtTime "2026-06-24T10:39:17.551208+02:00"^^xsd:dateTime .
+}

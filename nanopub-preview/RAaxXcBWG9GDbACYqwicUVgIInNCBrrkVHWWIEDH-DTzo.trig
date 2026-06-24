@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAaxXcBWG9GDbACYqwicUVgIInNCBrrkVHWWIEDH-DTzo> .
+@prefix sub: <https://w3id.org/np/RAaxXcBWG9GDbACYqwicUVgIInNCBrrkVHWWIEDH-DTzo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAaxXcBWG9GDbACYqwicUVgIInNCBrrkVHWWIEDH-DTzo a owl:Class ;
+        rdfs:label "3-(2,2-dibromovinyl)-2,2-dimethylcyclopropane carboxylic acid",
+            "3-(2,2-dibroomvinyl)-2,2-dimethylcyclopropaancarbonzuur"@nl-be ;
+        schema:alternateName "DBCA" ;
+        schema:comment "comments: I think it's this compound but not 100% sure. Someone confirm? https://pubchem.ncbi.nlm.nih.gov/compound/181248" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n27439a8622734e3f9f196fcbc32190eab1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAL_ewzOq3VTZSzT_wceTEwNI46c5vJO-9m89o9irt1V4 .
+    sub:_n27439a8622734e3f9f196fcbc32190eab1 a pehterms:ContextAlias ;
+        schema:alternateName "dbca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:34.430403+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "cyQIyen7YSSMaeJlI0m3d6UEQ1VEAR/Y3SV20cD6iPac4ayEOx/nsBsSmf+g7JnV6ReatT02ShlXMc07VJ2ZjowA3erD+XCB5T+1689o2nKg5SuoL/RuoQnQ2OzTXAn/UwUQpN3J2+6m2ePsMRk94Smx4pCCxEzB51g2CLKzMp4LzbYNbetTc+y7asWReS917WKntkYO3Z3eNFBcOnJGvjKRMQpUSjas539pu0YRr5HQQ8ihE23bhX2DCbenFFbaq7xn03wXPcw5MRoaEQGsJCLNozQ1FghgdghxS8E9clbUmVX0b/pPmARQUMT17hTVmYb6ASWv6u+evrIsMiklUA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-(2,2-dibroomvinyl)-2,2-dimethylcyclopropaancarbonzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAaxXcBWG9GDbACYqwicUVgIInNCBrrkVHWWIEDH-DTzo ;
+        prov:generatedAtTime "2026-06-24T10:39:34.430403+02:00"^^xsd:dateTime .
+}

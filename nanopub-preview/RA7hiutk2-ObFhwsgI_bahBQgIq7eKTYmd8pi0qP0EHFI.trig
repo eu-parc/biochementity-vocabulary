@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RA7hiutk2-ObFhwsgI_bahBQgIq7eKTYmd8pi0qP0EHFI> .
+@prefix sub: <https://w3id.org/np/RA7hiutk2-ObFhwsgI_bahBQgIq7eKTYmd8pi0qP0EHFI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA7hiutk2-ObFhwsgI_bahBQgIq7eKTYmd8pi0qP0EHFI a owl:Class ;
+        rdfs:label "Permethrinic acid" ;
+        schema:alternateName "DCCA" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_n5d285fbce25648cd9dd7a20d5119611cb1 ;
+        pehterms:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" .
+    sub:_n5d285fbce25648cd9dd7a20d5119611cb1 a pehterms:ContextAlias ;
+        schema:alternateName "sdcca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:59.925243+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Rhud4yVdlVfBa+XCz/sdJw9xzyD8atQJKabXOyjS3Zlj357FgqeV3lbbD641MCrg8mrpIJrbDLRF4uC++n4y/RC09c7sJozk2awoHVWKuQiiOKbFeLpy1pktat33MYxdjv88YgfDT+jXG5nvzIHZKP/2O3GiRaX8pievc8oqzOkHlZfu7T9OZO5vDSF4kOhXQX5vK4l7qR0PfaJYxghYKfU9aa6RC10TRZuT4F83ap3yWfpaqe8jZDXIg70j3T6/5IEw/fFUyebo0+SHH9JIUazyyaqU/QC/ddFlix8y/OaCMbvKrMzfV3NldnGZiwo/uM6C5s8UOhjpiTbtG2kwww==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Permethrinic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA7hiutk2-ObFhwsgI_bahBQgIq7eKTYmd8pi0qP0EHFI ;
+        prov:generatedAtTime "2026-06-24T10:38:59.925243+02:00"^^xsd:dateTime .
+}

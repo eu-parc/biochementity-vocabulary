@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA6dfbDc_j4Xd_7utwixf7qq1QScSbNaSrEsBRjPY2Vc0> .
+@prefix sub: <https://w3id.org/np/RA6dfbDc_j4Xd_7utwixf7qq1QScSbNaSrEsBRjPY2Vc0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA6dfbDc_j4Xd_7utwixf7qq1QScSbNaSrEsBRjPY2Vc0 a owl:Class ;
+        rdfs:label "Linear Perfluorooctadecanoic acid",
+            "Lineair Perfluoro-n-octadecaanzuur"@nl-be ;
+        schema:alternateName "PFODA",
+            "PFODA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:16517-11-6>,
+            <https://identifiers.org/cas:798556-82-8>,
+            <https://identifiers.org/inchikey:ZTSDOGSKTICNPQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:167547> ;
+        pehterms:hasContextAlias sub:_nf4ca1fa142b34732ae3ca3c43f15ce66b1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_nf4ca1fa142b34732ae3ca3c43f15ce66b1 a pehterms:ContextAlias ;
+        schema:alternateName "pfoda" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:19.401541+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "sV0c8x/7i0Y6bEl9sGKEso1vV3MblUq3ZFl2NeXFpG6STCNA7F4JMxbJNskkOixuDHfRPdPenMskCoeiMpkHl60l3yug10fxlnSI152ErMqjRMA7Lfe2NcTOv/dAlPC8/3H6SbTPOevnPyn+asI7vOAMVOk4+cIcQmgKdvezSwQsTkNr0B+hrUxNNw28OW4UIKE01OTCgU/M3S1lfLAxWvenerQs6Ou2zydj1yrJThMZjnPjTm7I/79b5mL6TkA1YqMe6c1HTyd3c+S9hyzdwYuqJD6xEf29xE5C5HZCHAZgzsw64OwZKXX5Fsa9SWyuzN6AFOEyG3pAUnvZ87+vkw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair Perfluoro-n-octadecaanzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA6dfbDc_j4Xd_7utwixf7qq1QScSbNaSrEsBRjPY2Vc0 ;
+        prov:generatedAtTime "2026-06-24T10:39:19.401541+02:00"^^xsd:dateTime .
+}

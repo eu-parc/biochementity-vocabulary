@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA9dUt_XE5slme5Ojt4LitvNtYth2upbt3V0AddlpTmBU> .
+@prefix sub: <https://w3id.org/np/RA9dUt_XE5slme5Ojt4LitvNtYth2upbt3V0AddlpTmBU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9dUt_XE5slme5Ojt4LitvNtYth2upbt3V0AddlpTmBU a owl:Class ;
+        rdfs:label "Dibenzo[a,h]anthracene",
+            "Dibenzo[a,h]antraceen"@nl-be ;
+        schema:alternateName "DBahA",
+            "PAK_DAHA"@nl-be ;
+        rdfs:subClassOf biochementity:RA3Mq--WA1eTzoVB1x-pb9QXCMytHWoZl6VbWLiVH4hDs,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:35299>,
+            <https://identifiers.org/cas:53-70-3>,
+            <https://identifiers.org/inchikey:LHRCREOYAASXPZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5889> ;
+        pehterms:hasContextAlias sub:_n98e4dc3b965c47dfba025a0437221245b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_n98e4dc3b965c47dfba025a0437221245b1 a pehterms:ContextAlias ;
+        schema:alternateName "dbaha" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:24.134433+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "FH9KmIZoKA07f+4wx4nzxKu91+erOaW6A5J0ZADoFwFj5aXQCc9WtE4nfWsu7se1jMvPs+72761n0lb45wP52YdHB0i5XnxpjOfP+zJ8QXwRLSMxSAoI7VzqL1meJ1OSUtO/GtxD99BQi1ltE2QNExJlEO/69IAFPgdPNtTRLx5yQzkZvM4w1wuux43RMgLv3ArNxesi41AKXD92Oqei8zZbGFQuGue1GgVwi9Fmgbcaq3NcdInKJ9MEms0KYSXs8CVBzQICA907Bb56BhOvAQcxG9yh+XYqCz0yHY7nAejp3JRmcPO84jbkvDWxk4lo2WTdMOF/pq/WUd6SRYLNuQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dibenzo[a,h]antraceen" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9dUt_XE5slme5Ojt4LitvNtYth2upbt3V0AddlpTmBU ;
+        prov:generatedAtTime "2026-06-24T10:39:24.134433+02:00"^^xsd:dateTime .
+}

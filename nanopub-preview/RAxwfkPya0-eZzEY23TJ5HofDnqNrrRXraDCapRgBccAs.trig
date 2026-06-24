@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RAxwfkPya0-eZzEY23TJ5HofDnqNrrRXraDCapRgBccAs> .
+@prefix sub: <https://w3id.org/np/RAxwfkPya0-eZzEY23TJ5HofDnqNrrRXraDCapRgBccAs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAxwfkPya0-eZzEY23TJ5HofDnqNrrRXraDCapRgBccAs a owl:Class ;
+        rdfs:label "Di-2-ethylhexyl adipate",
+            "Di-2-ethylhexyladipaat"@nl-be ;
+        schema:alternateName "DEHA" ;
+        rdfs:subClassOf biochementity:RAFl-2rM_lBluANzZgQ-Xa_4NctrEKov4nz8QL34gwU9U,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34675>,
+            <https://identifiers.org/cas:103-23-1> ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:32.578064+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "pMjs0kjyMeBb4+QImjeLqVxKVoI2gFSgNkHrvuQcLZkYqw7bWWbIn3P5XhUFg5pSzgYYgRHRFvur5s5laW+Xa51EDFkCqQwJAqkpwmJTDgQozYtwmaNmmidzjSJSkVDycUxCAO0jREdVLWjcyQTySI3EOGnJd1LV6XwKQwEEMDXTTGvO6v/ZNeePXFLlR9MtM6vSih7kxXLrJBwrxmEIYgBBeGLw1/BzKgltosG+aMVlOF2P65ITVCMrb31soD/1RwEgCmAFe1Bk4taeHLez+C8swg0Ci9ajATs2NHf5lLc7KEnGh2I+71/gBkuMlwz0dPJZ93+xs6rqbnkLA5jUDg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di-2-ethylhexyladipaat" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAxwfkPya0-eZzEY23TJ5HofDnqNrrRXraDCapRgBccAs ;
+        prov:generatedAtTime "2026-06-24T10:39:32.578064+02:00"^^xsd:dateTime .
+}

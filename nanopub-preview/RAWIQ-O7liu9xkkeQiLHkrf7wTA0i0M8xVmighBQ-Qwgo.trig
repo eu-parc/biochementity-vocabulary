@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/RAWIQ-O7liu9xkkeQiLHkrf7wTA0i0M8xVmighBQ-Qwgo> .
+@prefix sub: <https://w3id.org/np/RAWIQ-O7liu9xkkeQiLHkrf7wTA0i0M8xVmighBQ-Qwgo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAWIQ-O7liu9xkkeQiLHkrf7wTA0i0M8xVmighBQ-Qwgo a owl:Class ;
+        rdfs:label "Histone-lysine N-methyltransferase" ;
+        schema:alternateName "SUV39H1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <NCBIGene:6839> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:48.767110+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "YjOxedN5wTYFuR0KK8a7teB8bMa2+CWkuVy6twYHHm9XQoWca3m6eTCFQb8QbOPL7IUELf9iq04EF2n253UUFO5pvi7jTGYMR4zTbJYQWeRNBj3v2npsalrctcPwEN3vzgsEq6mTB2XSTpzmu/xOQ80zyIBIAv0gpmT3bRw1O3YlJGRD1kdcIGVgv5+TbNRXTyewFS9xC4i8cCm8MgsYMkDXGAAR8ID14rLe4i0nLiriCw+F+RCJEo1QEmo8pHQgdsDkFncr1vQEiM1bACa+vaxjaXnmezgZ35WtcmF856PFMd8kHtMQ5oOlkhBnVfOnxjxLEeo3Lc65XGSkx+F4EQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Histone-lysine N-methyltransferase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAWIQ-O7liu9xkkeQiLHkrf7wTA0i0M8xVmighBQ-Qwgo ;
+        prov:generatedAtTime "2026-06-24T10:38:48.767110+02:00"^^xsd:dateTime .
+}

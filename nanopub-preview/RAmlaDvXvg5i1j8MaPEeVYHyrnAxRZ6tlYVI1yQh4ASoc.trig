@@ -1,0 +1,42 @@
+@prefix this: <https://w3id.org/np/RAmlaDvXvg5i1j8MaPEeVYHyrnAxRZ6tlYVI1yQh4ASoc> .
+@prefix sub: <https://w3id.org/np/RAmlaDvXvg5i1j8MaPEeVYHyrnAxRZ6tlYVI1yQh4ASoc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmlaDvXvg5i1j8MaPEeVYHyrnAxRZ6tlYVI1yQh4ASoc a owl:Class ;
+        rdfs:label "Branched Perfluorododecanoic acid" ;
+        schema:alternateName "bpfdoda" ;
+        rdfs:subClassOf biochementity:RABGRQVYQ1ZHZm1IlH0DiVLBMl1KUsLUvSvxbXenfhHV4 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:55.522241+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "NF0c0zwOwf/Wr8twRMlWCBw32KlaSJ8+GIXKn9EBslx58el1rG3WtrUokn810lWjgS3qm6oyZTyGtfO5TY8KPi2fs0P69KDqSKhoN1flf/Y1Wlm8iY8GrXYLd/9/Pc94Lig+aZoo9zsAhv4pjjt0n64s5ajFnG6CMn11/QUQNxIwtzje0s83CGz7XDsln4ey2v4zVHZgej7U7Vq789clf9y+gYIfDeuv7BrEACjW1wK86mYBgE8Vrw1Jp92zY3W8fMQQeQBRgXOUe+5RyBQJCZQjWG9ZajWH9En5lIn6EeL/ieMT6YllhSDHAKAGGFbm35/atjiwxhAy3/NVKiuTrw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched Perfluorododecanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAmlaDvXvg5i1j8MaPEeVYHyrnAxRZ6tlYVI1yQh4ASoc ;
+        prov:generatedAtTime "2026-06-24T10:39:55.522241+02:00"^^xsd:dateTime .
+}

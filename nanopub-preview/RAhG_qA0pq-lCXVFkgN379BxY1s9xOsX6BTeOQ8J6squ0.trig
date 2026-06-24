@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAhG_qA0pq-lCXVFkgN379BxY1s9xOsX6BTeOQ8J6squ0> .
+@prefix sub: <https://w3id.org/np/RAhG_qA0pq-lCXVFkgN379BxY1s9xOsX6BTeOQ8J6squ0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAhG_qA0pq-lCXVFkgN379BxY1s9xOsX6BTeOQ8J6squ0 a owl:Class ;
+        rdfs:label "Ethylenethiourea",
+            "Ethyleenthioureum"@nl-be ;
+        schema:alternateName "ETU",
+            "ETU"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34750>,
+            <https://identifiers.org/cas:96-45-7>,
+            <https://identifiers.org/inchikey:PDQAZBWRQCGBEV-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:2723650> ;
+        pehterms:hasContextAlias sub:_nb92c0d58baae41b59d06d65e4493f0e8b1 ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAP_Bg8oo2jcb_ZRBdU7zH2U-BM1if9QDCuwtCAiKm52A .
+    sub:_nb92c0d58baae41b59d06d65e4493f0e8b1 a pehterms:ContextAlias ;
+        schema:alternateName "etu" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:40.440407+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "ar7DX4fq+M8yr2HzOvbiKgUafuXs6eOuIiMjRZNCkmcDG5Bzyjr4LMLz/WCRXHUPDiG+0btr7jEky/NVmzNwPOJ/QNAXdJ+b77sbFaf/uDT7FTMaNQXtDkGkyTbHR6dy3M/Tf2fPNtapIWUPJs9f+n4KooPhQqX22aFlXT5WvMbxsq51e4FyG0fyq/EoTG1+4THqKblKAdCj0i4FiUGvnzHPeuA0Ga0aqsJc6TqSHHsn5aPxp5nadioxS7j2gqfppf2cu+2KtBqyMxCWGAWZxwz4lYCBm4SPrPcCaYD0iIk3uyOPKM8/129YiUDJN6e5pzRAMLW8OlrbRP6yqsN37w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Ethyleenthioureum" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAhG_qA0pq-lCXVFkgN379BxY1s9xOsX6BTeOQ8J6squ0 ;
+        prov:generatedAtTime "2026-06-24T10:39:40.440407+02:00"^^xsd:dateTime .
+}

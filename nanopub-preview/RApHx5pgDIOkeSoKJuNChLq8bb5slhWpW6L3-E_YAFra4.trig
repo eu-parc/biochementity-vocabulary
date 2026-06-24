@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RApHx5pgDIOkeSoKJuNChLq8bb5slhWpW6L3-E_YAFra4> .
+@prefix sub: <https://w3id.org/np/RApHx5pgDIOkeSoKJuNChLq8bb5slhWpW6L3-E_YAFra4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApHx5pgDIOkeSoKJuNChLq8bb5slhWpW6L3-E_YAFra4 a owl:Class ;
+        rdfs:label "Cystatin C",
+            "Cystatine C"@nl-be ;
+        schema:alternateName "CYSTATC" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP31553-8> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:46.844787+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "o2MAevHaVusoZ0PtKN8L+KYEkwDVmRN3GduyVffuaZTuOEYdLCY1GJXtZf0I8fMDpx2OFlOrqiC8zbe/p/mFcjTkmTtC31lpXYfk7vNcavYueuidm/bJF1oP0Rt8zz8KIN9lBNrQh/3DpnZqMQBkZK2xvwI9Kuw89ZiPqDSSYF4sEyJB32QvmR5bLjsqAofDVaNbewvBUtmKHw7uhPr9eN5eC2ktMG+ITgP2N8fMsef3r0XLD4iQ5PFyiQmXO4+pqmey4++yPaAlXtcHlIf9CLnXEhF+1zC4VYp97e9icjDKqbdhjcEZSNYgjmTPMqfwkfSWDVtIkvNtl1384/kLZw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Cystatine C" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RApHx5pgDIOkeSoKJuNChLq8bb5slhWpW6L3-E_YAFra4 ;
+        prov:generatedAtTime "2026-06-24T10:38:46.844787+02:00"^^xsd:dateTime .
+}

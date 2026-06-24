@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAVMNU5PqAsRNzyz3gOky03nbsb4X7NjVGN4qcMelPoKY> .
+@prefix sub: <https://w3id.org/np/RAVMNU5PqAsRNzyz3gOky03nbsb4X7NjVGN4qcMelPoKY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVMNU5PqAsRNzyz3gOky03nbsb4X7NjVGN4qcMelPoKY a owl:Class ;
+        rdfs:label "N-methylacetamide",
+            "N-methylacetamide"@nl-be ;
+        schema:alternateName "NMAC" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:87321>,
+            <https://identifiers.org/cas:79-16-3>,
+            <https://identifiers.org/inchikey:OHLUUHNLEMFGTQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6582> ;
+        pehterms:hasContextAlias sub:_n210a45e479034325a2b21d7a202b07a2b1 ;
+        pehterms:hasGroupLabel "aprotic solvents" .
+    sub:_n210a45e479034325a2b21d7a202b07a2b1 a pehterms:ContextAlias ;
+        schema:alternateName "nmac" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:04.680875+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Rnw5IvrSAe5S4y1QKRmkAT+HTWWiuGA9roLS8svI6dn84bso6eakMa7wCsYHLGeWbIT5xMZq3jmMBPu2/6Ccz4CgV9Ed7CrYn6R8FEL+l6yWRFMMaFbmOQ1aBPf1dvpadS4MKpxgSk7zr6cEzLc0ju7pwdfTuJB/UdgjS6FaCGiWljqI11/oN9wviSr9/VVRvcEqqX2DKv9TfxtUqv1mMJcjdXPft4rtNvR9gdvwLp3LNKUMYFmKhlOy/m4hCsXiE/xVhoCPjUklM+ZncW8kYevH8TYftDCWRVpwZ4uKqeQaK6f/yivM6ISManiehG4Oreu8sYyeilTYkYFc50FVwg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "N-methylacetamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAVMNU5PqAsRNzyz3gOky03nbsb4X7NjVGN4qcMelPoKY ;
+        prov:generatedAtTime "2026-06-24T10:39:04.680875+02:00"^^xsd:dateTime .
+}

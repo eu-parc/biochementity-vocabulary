@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAWps_Ul_fUYPU0hEF8I5acnolUzGqfr95puUX7COifsk> .
+@prefix sub: <https://w3id.org/np/RAWps_Ul_fUYPU0hEF8I5acnolUzGqfr95puUX7COifsk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAWps_Ul_fUYPU0hEF8I5acnolUzGqfr95puUX7COifsk a owl:Class ;
+        rdfs:label "Benzo[g,h,i]perylene",
+            "Benzo[g,h,i]peryleen"@nl-be ;
+        schema:alternateName "BghiP",
+            "BghiP"@nl-be ;
+        rdfs:subClassOf biochementity:RA3Mq--WA1eTzoVB1x-pb9QXCMytHWoZl6VbWLiVH4hDs,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34568>,
+            <https://identifiers.org/cas:191-24-2>,
+            <https://identifiers.org/inchikey:GYFAGKUZYNFMBN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9117> ;
+        pehterms:hasContextAlias sub:_n2849e6e4b66b47f4bb4b786c6732c92ab1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_n2849e6e4b66b47f4bb4b786c6732c92ab1 a pehterms:ContextAlias ;
+        schema:alternateName "bghip" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:47.001819+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "YBLI+kuB1uYJE9PYf/EnWWhh74o1LoFzcp7se75BjrkAnnNS4BxtgIcso596p6joyWId6H7o9HH667ulwC7QrmdNRcAC8LIs6vLN4kP+jY0wppLJUfiTIxvPZC9wB3DfGDTRIeB1WEkeH/F5HLyWkcahFnTrNbXHB/15nio4WrhXAs22V2wDjnaAnGkyG3GMJjG0Df0l0KBg/+7CKSnczauOEVcKu+TucccdphNGSrjRXOEbSm3pr3elN5xPs2yQZhWt+emCJVHbUxKu1cdAkIaNBqGJUi0NQ/1pVSjqlP1s+IARnNLPLqGlJ35K49/ImSVYRoBk6agZ+qOPV9J0ag==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Benzo[g,h,i]perylene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAWps_Ul_fUYPU0hEF8I5acnolUzGqfr95puUX7COifsk ;
+        prov:generatedAtTime "2026-06-24T10:39:47.001819+02:00"^^xsd:dateTime .
+}

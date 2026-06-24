@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAEvsWBL1pXAyw-GAbmCEeHAAUFzhTZs1cNnsXCzzQ6hI> .
+@prefix sub: <https://w3id.org/np/RAEvsWBL1pXAyw-GAbmCEeHAAUFzhTZs1cNnsXCzzQ6hI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAEvsWBL1pXAyw-GAbmCEeHAAUFzhTZs1cNnsXCzzQ6hI a owl:Class ;
+        rdfs:label "Calcium",
+            "Calcium"@nl-be ;
+        schema:alternateName "Ca",
+            "Ca"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:22984>,
+            <https://identifiers.org/cas:7440-70-2>,
+            <https://identifiers.org/inchikey:OYPRJOBELJOOCE-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5460341> ;
+        pehterms:hasContextAlias sub:_n50e2c765421348f1932fac2c5c0d3548b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n50e2c765421348f1932fac2c5c0d3548b1 a pehterms:ContextAlias ;
+        schema:alternateName "ca" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:26.072749+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "UqZVDH3I2POOhxkSpxzdhGkBZsIeHITA8KqWK7GmRZHovMufO8s917JWB0zS4zpK2yWUL4ljWrov2fAcecWOx7vOxvz1BwzJSf9RkuoT0J/cizOLyfLaSPaBgyiS+/6gOnREDmIo9rCHYvdV8p5mkRo7wJXVafPs7e9rlhmQpXjJToxrDDYNm+4xYDifJsOpxVXL5F6ROb7ThWJ17W7vUIe06ZyR8ZHJX359mBbN7Qjm+yUTJ1BmYgwu8DL2h8WTXUdXhAt21G6I/oTJdP+4xd2RsfkFnSRAo/SjMcaz0L+dcberI0VzUlvX7YcQqa4k333p97ts+RB33NfZa7xUig==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Calcium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAEvsWBL1pXAyw-GAbmCEeHAAUFzhTZs1cNnsXCzzQ6hI ;
+        prov:generatedAtTime "2026-06-24T10:39:26.072749+02:00"^^xsd:dateTime .
+}

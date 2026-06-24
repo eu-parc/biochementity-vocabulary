@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAcfAS0xsL2jBekbvrX20OYXrEwhtnFaKZc7N2nf-O_tA> .
+@prefix sub: <https://w3id.org/np/RAcfAS0xsL2jBekbvrX20OYXrEwhtnFaKZc7N2nf-O_tA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcfAS0xsL2jBekbvrX20OYXrEwhtnFaKZc7N2nf-O_tA a owl:Class ;
+        rdfs:label "2-hydroxyethyl bis(2-butoxyethyl) phosphate",
+            "Bis(2-butoxyethyl)-(2-hydroxyethyl) fosfaat"@nl-be ;
+        schema:alternateName "BBOEHEP",
+            "BBOEHEP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:1477494-86-2>,
+            <https://identifiers.org/inchikey:UQSRKBXTCXVEJL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:132967161> ;
+        pehterms:hasContextAlias sub:_n6b838dc2a564446f90ac68564293cb56b1 ;
+        pehterms:hasGroupLabel "flame retardants" ;
+        pehterms:isMetaboliteOf biochementity:RA4Kjsycd76Flk1X2Nj2s8hxNg71j8gUrWPf_VAyAXg2A .
+    sub:_n6b838dc2a564446f90ac68564293cb56b1 a pehterms:ContextAlias ;
+        schema:alternateName "bboehep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:46.290332+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "qe+fsqn0cG07wr4B9d+gIaTz93qJzEwGfcHtxeSl/fury9PKG35IhxDDSB7u7yTUsZtaeV8DI9MMkEbZXO6z/inwG/g3JzJgFpiiVEFC54l7qXVIEeT9JvIOp08iBkPl5PUnK4z0UiwQwPaX7v/AcMaJnrfRTDupL0HyT+3fLXG8puH8oKB8meVcbF1Q5hf6e9gJjAWZkWRPaeIlJNS3r6JFm1hDjtcSDhyB9aZ4UFZUZVON38KE9p6wIjo/MU7YdKktNMwQ+MO2XCENbhJQRyESU0Sp7rVoMeQ8mnlLzYqDDDrOWSV59anj6UzS543lbbgtuo3R6zKcqSEx2BJzbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-hydroxyethyl bis(2-butoxyethyl) phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcfAS0xsL2jBekbvrX20OYXrEwhtnFaKZc7N2nf-O_tA ;
+        prov:generatedAtTime "2026-06-24T10:39:46.290332+02:00"^^xsd:dateTime .
+}

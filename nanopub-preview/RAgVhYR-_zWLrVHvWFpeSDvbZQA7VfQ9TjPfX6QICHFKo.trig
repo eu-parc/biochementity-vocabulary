@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAgVhYR-_zWLrVHvWFpeSDvbZQA7VfQ9TjPfX6QICHFKo> .
+@prefix sub: <https://w3id.org/np/RAgVhYR-_zWLrVHvWFpeSDvbZQA7VfQ9TjPfX6QICHFKo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAgVhYR-_zWLrVHvWFpeSDvbZQA7VfQ9TjPfX6QICHFKo a owl:Class ;
+        rdfs:label "Nickel",
+            "Nikkel"@nl-be ;
+        schema:alternateName "Ni",
+            "Ni"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28112>,
+            <https://identifiers.org/cas:14903-34-5>,
+            <https://identifiers.org/cas:7440-02-0>,
+            <https://identifiers.org/inchikey:PXHVJJICTQNCMI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:935> ;
+        pehterms:hasContextAlias sub:_n3c227812871a45d1adbeb8fc5f506f2bb1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n3c227812871a45d1adbeb8fc5f506f2bb1 a pehterms:ContextAlias ;
+        schema:alternateName "ni" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:38.061607+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "mjxB17BPxb7amhFxaSIabXdXwDJnktpZwUAWNiStJWUSGTdCMnKcEil9HNwQqJ60HG6WO3fBeyypdVAiVnD1D93xhKr7VVLb3n1u2z0ETN6MLFjUM2yEh7mbuiTfF0c8/gYF8xetX+yDG7dvXxdV18TpvPFMaAhb+Ut1ZtfXkIsXoMqn9R2uWxhEFpGn6CrEpjOeVRlQLYbfZnE10hujo928pVpn5OJMLbl+d1Za2X5bvyHQdwLPBIMZKO7+yz5TEtXiIiLFSucaYKsPVIZPMCnbyouhhZHqEoxgdAX7GO9p9MZ58M7IhGcvrgjvozmNgdYUIGDdygfPidaX48rVyg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Nickel" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAgVhYR-_zWLrVHvWFpeSDvbZQA7VfQ9TjPfX6QICHFKo ;
+        prov:generatedAtTime "2026-06-24T10:39:38.061607+02:00"^^xsd:dateTime .
+}

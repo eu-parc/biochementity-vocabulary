@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAlTuVssAtbTP8nKgnAGn6wyELnj8Q7zwzTUlAtxi61ys> .
+@prefix sub: <https://w3id.org/np/RAlTuVssAtbTP8nKgnAGn6wyELnj8Q7zwzTUlAtxi61ys/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAlTuVssAtbTP8nKgnAGn6wyELnj8Q7zwzTUlAtxi61ys a owl:Class ;
+        rdfs:label "Thyroid hormone receptor beta",
+            "Thyroid hormone receptor beta"@nl-be ;
+        schema:alternateName "THRB" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/mesh:D037042>,
+            <https://identifiers.org/uniprot:P10828> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:49.591294+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "dRpDnWdv4GQjP9xGvKUeNXptOV1OwC4+EkFA+a90qojkugDB+4OnX9iMmvMzMgiBjQChqDTpw2XUeLqdmRTyJCOru4mHHSOzDeDWb8N1WQuDl2Sh1azo0Y5otfYV58+zFMUBw44py9chkLI50YDtAHmz5RIcmlt++Nafqtys7qPew3oxkYkao6THxgARN4uAkxsRsVFDf5gjT+P5wSZkYZd22LmMoT3FXuicyNNnTI8IFgJWEDheFag5y/xiRCX0Y+GgX/YXVa3IlDI8flughnT8kRzcl2tn9qndrvl8RzLGUk2SWLyYXLaKw6mO4zyDJb3WiGXEAgqXwzhn8PdXnw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Thyroid hormone receptor beta" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAlTuVssAtbTP8nKgnAGn6wyELnj8Q7zwzTUlAtxi61ys ;
+        prov:generatedAtTime "2026-06-24T10:38:49.591294+02:00"^^xsd:dateTime .
+}

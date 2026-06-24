@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAnXJxN33O9EtJwQ0plG1HgGtLBxA1Wv15VWMyOBVcqkI> .
+@prefix sub: <https://w3id.org/np/RAnXJxN33O9EtJwQ0plG1HgGtLBxA1Wv15VWMyOBVcqkI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAnXJxN33O9EtJwQ0plG1HgGtLBxA1Wv15VWMyOBVcqkI a owl:Class ;
+        rdfs:label "Titanium",
+            "Titanium"@nl-be ;
+        schema:alternateName "Ti",
+            "Ti"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33341>,
+            <https://identifiers.org/cas:14902-91-1>,
+            <https://identifiers.org/cas:7440-32-6>,
+            <https://identifiers.org/inchikey:RTAQQCXQSZGOHL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:23963> ;
+        pehterms:hasContextAlias sub:_n689043770b5f4518bc7025c73ba729e7b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n689043770b5f4518bc7025c73ba729e7b1 a pehterms:ContextAlias ;
+        schema:alternateName "ti" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:30.742916+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "CDdPEDwEk7ZP8JM/mVVACF/qP/dj0g5OO9VchI/9k1314eiR6XD5Gd3PiatqPD5C1Czj2TU11J7vd0z88xJLhHrRfQywcBGcaQdccLVPccC2qWEc7PL26nLVSPbs9kSuZ2MqwJ+mdpOOgnYf2OcL9X8YJhphiySQfIFZ2Lo6F6X34y8+1mhXQLokNymvUDcSnuslnEjdAKY8RE8Jg0SQtPvHBU4jNFMuQ7D+gN9CxT/BW0HSGhKEuQeSHo3YUrs3VNJHO1lf4NNAI3TfbCzh3CMt3qxDfAqe4mfFCP+TuspJO52tZeFR4jNAMlnOdmq6PTG+34WkqLsZpE8E80nLtQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Titanium" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAnXJxN33O9EtJwQ0plG1HgGtLBxA1Wv15VWMyOBVcqkI ;
+        prov:generatedAtTime "2026-06-24T10:39:30.742916+02:00"^^xsd:dateTime .
+}

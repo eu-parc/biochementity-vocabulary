@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAtSyoPFYtbEm0h_OR-fDVx5MKKS2-P0GvR3TVzR9yITo> .
+@prefix sub: <https://w3id.org/np/RAtSyoPFYtbEm0h_OR-fDVx5MKKS2-P0GvR3TVzR9yITo/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtSyoPFYtbEm0h_OR-fDVx5MKKS2-P0GvR3TVzR9yITo a owl:Class ;
+        rdfs:label "2-Diethylamino-6-hydroxy-4-methylpyrimidine",
+            "2-Diethylamino-6-hydroxy-4-methylpyrimidine"@nl-be ;
+        schema:alternateName "2-(diethylamino)-6-methyl-1H-pyrimidin-4-one",
+            "DEAMPY" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:38844>,
+            <https://identifiers.org/cas:42487-72-9>,
+            <https://identifiers.org/inchikey:NQCPECCCWDWTJJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:135448147> ;
+        pehterms:hasContextAlias sub:_n18001f46babd4d71a7a4ac90729a7c7cb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAOLtGiD5ttaCK9osJ1AcQ2FmflepLVMnji7Q9mkiZM8Q .
+    sub:_n18001f46babd4d71a7a4ac90729a7c7cb1 a pehterms:ContextAlias ;
+        schema:alternateName "deampy" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:42.956525+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "fR8T/3qZf0339r021Iv8UtJDPrxeZ+KSSPnLAJMkYowxzQWCzDRWsropwuL00aCPkMA8clzJsldw5i5c+J6l2kqAGp+rYINQ+ev5+mIkQW8i5OI4bnRhDJ+i/twPy6np/U51im0IgrRuJfYu2LvkUxxsiMrbhnlEItSnjmNMTMKzEZ2MXanKmuh9J0xXrJKZoNcCIebeK0hav+6P8F72C/YcaXLm+m1JnwllGmlv8u+aT2g7ujeCRwV9DL7JCtH10uuh7Z0LhSYu9fzrC7cW7mDdDxleE04FWFF9A87ZC9c9eamOVw7IthvF9Fg9WhJe+pp6rRqnn8zEd7V7l3466w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-Diethylamino-6-hydroxy-4-methylpyrimidine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtSyoPFYtbEm0h_OR-fDVx5MKKS2-P0GvR3TVzR9yITo ;
+        prov:generatedAtTime "2026-06-24T10:39:42.956525+02:00"^^xsd:dateTime .
+}

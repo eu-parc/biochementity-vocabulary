@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAL_ewzOq3VTZSzT_wceTEwNI46c5vJO-9m89o9irt1V4> .
+@prefix sub: <https://w3id.org/np/RAL_ewzOq3VTZSzT_wceTEwNI46c5vJO-9m89o9irt1V4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAL_ewzOq3VTZSzT_wceTEwNI46c5vJO-9m89o9irt1V4 a owl:Class ;
+        rdfs:label "Deltamethrin",
+            "Deltamethrin"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Deltamethrin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:4388>,
+            <https://identifiers.org/cas:52918-63-5> ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:02.353362+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "XXaLLb7JLXXrMSKqUxeuDfF4Czl2wKsbZbNk0F3fmIK9bGaVhil9jBLsYbI5cj/8t/klC5jyhpnx57UUa8b9RxJeWL+FEM3XvuRVNu7KLoigPbd+CUVpGgQQLL1XlJQ69JHn1jEUUYx3I3Iui0gncAiWMeQFSD+KJaDoYoB6/i6hBQEzj2X/3vIYct2OqxcCd3hP++c2VEC7XYm2Vy+lCma29LHDfXn2ZiODks0aau1kiWAii7HqBrOUaqZsttsRENaHiyj2hyoc/khVff2YaQfIcpFE6equ0jnCH04YYo3KQdE+hBmWykIUj5k0lsDP76LNi3goR3aYmy8zadcaiQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Deltamethrin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAL_ewzOq3VTZSzT_wceTEwNI46c5vJO-9m89o9irt1V4 ;
+        prov:generatedAtTime "2026-06-24T10:39:02.353362+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAfV_WnyYIMKApNNuSYiMYTrmMg_pckbyknowjRtsLuh4> .
+@prefix sub: <https://w3id.org/np/RAfV_WnyYIMKApNNuSYiMYTrmMg_pckbyknowjRtsLuh4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAfV_WnyYIMKApNNuSYiMYTrmMg_pckbyknowjRtsLuh4 a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 156",
+            "Polychloorbifenyl 156"@nl-be ;
+        schema:alternateName "2,3,3',4,4',5-Hexachlorobiphenyl",
+            "PCB 156",
+            "PCB 156"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81522>,
+            <https://identifiers.org/cas:38380-08-4>,
+            <https://identifiers.org/inchikey:LCXMEXLGMKFLQO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:38019> ;
+        pehterms:hasContextAlias sub:_n5e719822355b4de383acf12109a1cabcb1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RALRfOQwZG4cZAHPKWybx457-oRNgDIvOfUkLrzw1hhqk .
+    sub:_n5e719822355b4de383acf12109a1cabcb1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb156" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:22.773166+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Bd6m/lEU4yi6Kdm25h4jX9i7XrE828c4Z1HPJ47SrO/EdjQpHRAWNvRuaUuOqgQCSAOiFFNbxnuS0al4isCTKnLfY4mG6DHYfvoy8/eBghSWcFgcgBa9FFyf9sta4Re/x6UtxQSIJQV89FLef1fvg/+/hAmHe0X9oErT9LMKknDTqi6EDgkN9GOFkCbD0y2l3eJZmeTGO8invxE6yRhpCEWALHFwDR9Hc+vASfxwaxoiygyyVvR7h9dxFLSuknQTQmvgm/p+sbXxrEDaJvewOHIa4VtRjT1kIiGNNkp8KU+KLS/JybEYHkAOtsxhfQs2zqYAJE4CdKDC3bIJMXNTiQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychloorbifenyl 156" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAfV_WnyYIMKApNNuSYiMYTrmMg_pckbyknowjRtsLuh4 ;
+        prov:generatedAtTime "2026-06-24T10:39:22.773166+02:00"^^xsd:dateTime .
+}

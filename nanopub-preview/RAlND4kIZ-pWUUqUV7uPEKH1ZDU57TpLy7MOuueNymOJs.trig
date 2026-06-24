@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAlND4kIZ-pWUUqUV7uPEKH1ZDU57TpLy7MOuueNymOJs> .
+@prefix sub: <https://w3id.org/np/RAlND4kIZ-pWUUqUV7uPEKH1ZDU57TpLy7MOuueNymOJs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAlND4kIZ-pWUUqUV7uPEKH1ZDU57TpLy7MOuueNymOJs a owl:Class ;
+        rdfs:label "4-fluoro-3-phenoxybenzoic acid",
+            "4-fluor-3-fenoxybenzoëzuur"@nl-be ;
+        schema:alternateName "F-3-PBA",
+            "F-3-PBA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:165196>,
+            <https://identifiers.org/cas:77279-89-1>,
+            <https://identifiers.org/inchikey:VLXNXMTVRWIUJZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:157032> ;
+        pehterms:hasContextAlias sub:_n76dca642400141379943abfb42228213b1 ;
+        pehterms:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAq5xAuACzP_pFXRECdZkYqwaLx8guKnnEFwmKYWMO80w .
+    sub:_n76dca642400141379943abfb42228213b1 a pehterms:ContextAlias ;
+        schema:alternateName "fpba" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:32.999881+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "AoBmTt44Y8G6ajJnp5rGPkSOg1v93TfI++q57eqjG7NC9PeZoC7FtcHPIfG6Ztkw8iMnseZC6Tx1XFEyIecrtg2uXv6a8Kv3nLNfo+TSMI69uzSiadRoYc4DbK609zUTpjLSPi6YoMs25rcNFB9QwVPKPmWyIuEqkYTS3KZLaimu0Bc+SRR4twKl/Ay+hFuIV9b1d1jDaJI2IGTAj4wXDDkg8/1kmAHL7HLmTE2Qh7rEmn8E8dSAf3tfo2TzHIB2li0fi6EIwKxZa/fHuPPyDjqkIk6XM/iMjV2LP0FnZIGIFMz95hQpWpCwKGNHzaPYUTL5iRerypeo8GltGE4HSA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-fluoro-3-phenoxybenzoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAlND4kIZ-pWUUqUV7uPEKH1ZDU57TpLy7MOuueNymOJs ;
+        prov:generatedAtTime "2026-06-24T10:39:32.999881+02:00"^^xsd:dateTime .
+}

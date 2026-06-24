@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAxPm3rCHtN14HQ9vHV-ttNFdki5dRO-zYHzUsLvzEWgk> .
+@prefix sub: <https://w3id.org/np/RAxPm3rCHtN14HQ9vHV-ttNFdki5dRO-zYHzUsLvzEWgk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAxPm3rCHtN14HQ9vHV-ttNFdki5dRO-zYHzUsLvzEWgk a owl:Class ;
+        rdfs:label "2-hydroxy simazine",
+            "2-hydroxysimazine"@nl-be ;
+        schema:alternateName "2-hydroxy simazine",
+            "Hydroxysimazine" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83476>,
+            <https://identifiers.org/cas:2599-11-3>,
+            <https://identifiers.org/inchikey:YQIXRXMOJFQVBV-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:135408659> ;
+        pehterms:hasContextAlias sub:_na7817803b5634fb89cbf7f02518f6a5eb1 ;
+        pehterms:hasGroupLabel "herbicides" ;
+        pehterms:isMetaboliteOf biochementity:RAFYF2qLbVZyNt-9Nr3xThoZl82rZIuf9-5AcYqGCfiwg .
+    sub:_na7817803b5634fb89cbf7f02518f6a5eb1 a pehterms:ContextAlias ;
+        schema:alternateName "hs2" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:43.316176+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "TASyebdJki3z/At7Ey7QA4Vko45VQRKYA/gIfOEOF+lTOVyzH3KhX4u9unIdB5u+bQMzxNBNQhmbxs2zEPQsjg9EdZWtYDisxB6yHih24AOkKS9c95EFqBGAp8gQXbJzInZqzm5EA+A1qiNZg0ieR85cvq5WcKfs4Hhieqp5vdRRmxKRH08qer7WZ9yLoSColan5x6J2wvv1L/zNXjUAQeRuwMysIsZv7Q2GupEl4y4ICw+FAHvPajTuHBcw+mN0mK/u40bLEyBrNhnd6I2wPKkyUVFFspLAV7yFNX7j5F9PhuFn649uqUV9guNP5zF1bQe+jsjqWNeUux7XjZfOSw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-hydroxy simazine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAxPm3rCHtN14HQ9vHV-ttNFdki5dRO-zYHzUsLvzEWgk ;
+        prov:generatedAtTime "2026-06-24T10:39:43.316176+02:00"^^xsd:dateTime .
+}

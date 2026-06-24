@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAB3QfaZR0-Yo2OeqpbrnSeZjW-lkxLH8fwrXaLcovXr4> .
+@prefix sub: <https://w3id.org/np/RAB3QfaZR0-Yo2OeqpbrnSeZjW-lkxLH8fwrXaLcovXr4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAB3QfaZR0-Yo2OeqpbrnSeZjW-lkxLH8fwrXaLcovXr4 a owl:Class ;
+        rdfs:label "1-mono-(2-ethyl-5-carboxyl-pentyl) benzene-1,4-dicarboxylate",
+            "1-mono-(2-ethyl-5-carboxyl-pentyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+        schema:alternateName "5cx-MEPTP",
+            "mono(2-ethyl-5-carboxypentyl) terephthalate" ;
+        schema:comment "comments: Can someone check if the long name is correct? The short name directs me to this publication https://pubmed.ncbi.nlm.nih.gov/28407489/ --> and then if I look for the name used there mono(2-ethyl-5-carboxypentyl) terephthalate (which now I put in aliases) then it directs me to the compound I added the exact_matches for. So that needs to be verified" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:165207>,
+            <https://identifiers.org/cas:1684398-42-2>,
+            <https://identifiers.org/inchikey:BIQPFHSSQDGFTK-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:145459123> ;
+        pehterms:hasContextAlias sub:_n07031e137380416d838a160ab25ede2eb1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAkO0BRhjba7GSQzx4V6BccQoj8fqFepIaWS-G-lF30X4 .
+    sub:_n07031e137380416d838a160ab25ede2eb1 a pehterms:ContextAlias ;
+        schema:alternateName "cxmeptp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:52.057322+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "DTtI8UsT+uPjKkK+tpALUl3objn7ejHkM1UBmd80gwuu7DHahWbCY7tk5laW9ACEs92GRQHeLSiaSx5+egf+eaP1XR9lpwHO2LR+bcWv0DXNGRmM65WER1Y2DjlK0DX+CluLN3w0ulGQXyt7y8ux6j3l8Mr/Fkx8ezZrccyipqHbTlkU1dwmTwdyIVdQuohIWfWNSbBX29gaY0GMOAarbiTpJ6JXvI6lI2bQNfKRhwEwLPBq8GdxFXJ/ountmY9GmkTfPqWe5T45Ri+QWjsesHxFlv0wMM+QZYvTdlwK92dWxTea8tun3oK8EigKDUut8cabGMI99NB0E+8QdwhGqg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-mono-(2-ethyl-5-carboxyl-pentyl)benzeen-1,4-dicarboxylaat" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAB3QfaZR0-Yo2OeqpbrnSeZjW-lkxLH8fwrXaLcovXr4 ;
+        prov:generatedAtTime "2026-06-24T10:39:52.057322+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA5cXNiamyg6-0hqJqcOhBLGP2GBw8LeypOLlvQI8G8Ns> .
+@prefix sub: <https://w3id.org/np/RA5cXNiamyg6-0hqJqcOhBLGP2GBw8LeypOLlvQI8G8Ns/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA5cXNiamyg6-0hqJqcOhBLGP2GBw8LeypOLlvQI8G8Ns a owl:Class ;
+        rdfs:label "1-hydroxyphenanthrene",
+            "1-hydroxyfenantreen"@nl-be ;
+        schema:alternateName "1-PHEN" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27528>,
+            <https://identifiers.org/cas:2433-56-9>,
+            <https://identifiers.org/cas:30774-95-9>,
+            <https://identifiers.org/inchikey:GTBXZWADMKOZQJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:98490> ;
+        pehterms:hasContextAlias sub:_ndcb94f204d6e4a198d1821bc8a385907b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RAuh3aiQQ_uPQo8IBgnYnCpBDb4E36YDgkVANPd2CwzQU .
+    sub:_ndcb94f204d6e4a198d1821bc8a385907b1 a pehterms:ContextAlias ;
+        schema:alternateName "onehphe" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:50.316785+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Gh7dMKAzYmZuPLNt42Svw5rSO/p2+GoX706xzF5ecORSP9qlOxdAaSxtYM71AxSlbMUKXinG2vrTv2PDzfGmxx2mVBm0RkDn42ozPSG0hduZT3vtk1Wbmtr3Y4zFcOR98upDkjRJIB+A1sjotvpDnx2R0rvkCHQCcWXNNnMUzVUEuDKARqYChdDou2ArioFl9yFBrbykSWTGUKs7U4Q9n1pYC02iSoHT9WgV5m/xcWRlH6ya3uGlxgiUsaboDpWzB9Jf/Ezjbg/S5WfmAk/YsNvZeBfvoLaeFrEOT7mqfBrzg1EijExvnh0P4EOmBnuPqju21x39J5A8a6yiGr0C/A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-hydroxyphenanthrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA5cXNiamyg6-0hqJqcOhBLGP2GBw8LeypOLlvQI8G8Ns ;
+        prov:generatedAtTime "2026-06-24T10:39:50.316785+02:00"^^xsd:dateTime .
+}

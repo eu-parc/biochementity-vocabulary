@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAeESc_7HbIKMsnQyd_oExEjGlRwPM7JT9mZLKmiL-9ro> .
+@prefix sub: <https://w3id.org/np/RAeESc_7HbIKMsnQyd_oExEjGlRwPM7JT9mZLKmiL-9ro/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAeESc_7HbIKMsnQyd_oExEjGlRwPM7JT9mZLKmiL-9ro a owl:Class ;
+        rdfs:label "4-hydroxyphenyl phenyl phosphate",
+            "4-hydroxyphenyl phenyl phosphate"@nl-be ;
+        schema:alternateName "4-HO-DPHP",
+            "4-HO-DPHP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:TUBVQVOADJADLU-UHFFFAOYSA-M>,
+            <https://identifiers.org/pubchem.compound:21410666> ;
+        pehterms:hasContextAlias sub:_n816df0ed22564cf4a404688dbc5edf7ab1 ;
+        pehterms:hasGroupLabel "flame retardants" ;
+        pehterms:isMetaboliteOf biochementity:RAsrfHrKF__hL82PG8lo9j4LNaZ6hNvBfmfLP-6UPMpQM .
+    sub:_n816df0ed22564cf4a404688dbc5edf7ab1 a pehterms:ContextAlias ;
+        schema:alternateName "fourohdphp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:54.059454+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "PieZRGWNiLDtDzmgy6qQidigXIoYRMghyhopbfNJWPr7Uj48BMKSsYtHyo+dGbsX/jJ4szOOzrZiuCTOpqg0FFb8aahB4rHC+VlInOZFXAlrdfy1Ov7YUGaMuBSrTxeW0I8TjztSa7a5+7/NhSD6eiuubDR8avlSPmYJsYWQc4BEX4EBAfilkPwMCTE8o5K/8e4MdRFyO1+0NvRekMgtCnkAHJNsRwVTw+ktdKm4uDZLq/i+JnBV71mxOCsCa+74fglYq6Fq802W/MyllGJclnr1eblY+/Neqny4jaZYlwfoAX5aoOW8UGVpCo3ypTyLqzdl++qUfjNYZs1q0Mo0Rg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-hydroxyphenyl phenyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAeESc_7HbIKMsnQyd_oExEjGlRwPM7JT9mZLKmiL-9ro ;
+        prov:generatedAtTime "2026-06-24T10:39:54.059454+02:00"^^xsd:dateTime .
+}

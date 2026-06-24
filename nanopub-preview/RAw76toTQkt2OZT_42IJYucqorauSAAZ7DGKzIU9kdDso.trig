@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAw76toTQkt2OZT_42IJYucqorauSAAZ7DGKzIU9kdDso> .
+@prefix sub: <https://w3id.org/np/RAw76toTQkt2OZT_42IJYucqorauSAAZ7DGKzIU9kdDso/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAw76toTQkt2OZT_42IJYucqorauSAAZ7DGKzIU9kdDso a owl:Class ;
+        rdfs:label "alkaloid" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <CHEBI:22315> ;
+        pehterms:hasGroupLabel "alkaloid" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:47.131500+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Sfh/7CM+ysDHCDCgd6Sp+1iL095zuW6fGd8q28LBTYNFh++/yzTV5LsdkW+8NNs+NME+ApcJUgGzJcEQcWT0UdS6tJ4gME0XCYWC5AbzSIgYjID1fV9XH6eFS4TTVVwUFCqEvfSC/+Bpw8EN3aUI9yFAFLcllF39Q/AiVCH1MR/Z36Ci2tt8FzYYY2LCZo/EiENHaHsTzrRhsf55BxRPITYB6Dif7Wd+e661BtCtrl8sRhffi93WYDG4pueZtygUccYr6FSEMTjGCeatpI8EeSjouKW+iprC+9sH9RmeaQ5vWDjW9DaAJKcM2WEDz7pcgYibYC3kJMCpn5lawMVuVg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "alkaloid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAw76toTQkt2OZT_42IJYucqorauSAAZ7DGKzIU9kdDso ;
+        prov:generatedAtTime "2026-06-24T10:38:47.131500+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAGfBa-jvLLoqq9zUUlAlHtwLAwm_o_32Hq0HqZcAP-5A> .
+@prefix sub: <https://w3id.org/np/RAGfBa-jvLLoqq9zUUlAlHtwLAwm_o_32Hq0HqZcAP-5A/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAGfBa-jvLLoqq9zUUlAlHtwLAwm_o_32Hq0HqZcAP-5A a owl:Class ;
+        rdfs:label "2,2',3,3',4,4',6,6'-Octabromodiphenyl ether",
+            "2,2',3,3',4,4',6,6'-octabroomdifenylether"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "BDE-197",
+            "BDE-197"@nl-be ;
+        schema:comment """comments: * For the INCHIKEY I found this: https://pubchemlite.lcsb.uni.lu/e/compound/11967214
+    * For the name, I found this: https://www.lgcstandards.com/CZ/en/2-2-3-3-4-4-6-6-Octabromodiphenyl-ether-13C12-99-BDE-197-50-g-mL-in-Nonane/p/CIL-EO-5337?queryID=487f5e5abfc7286f80bce48183dfe452
+    feedback_epi team: BDE-197 does not have a parent compound, the compound you are exposed to externally is BDE-197 and it doesn't metabolize to anything elso so we still measure BDE-196 in HBM. so it would have itself as parent compound.""" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:AAFUUKPTSPVXJH-UHFFFAOYSA-N> ;
+        pehterms:hasContextAlias sub:_nf573313273bb44ddafe8e77d8a47cc6bb1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_nf573313273bb44ddafe8e77d8a47cc6bb1 a pehterms:ContextAlias ;
+        schema:alternateName "bde197" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:12.342016+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "aMZ3Y5auDQ2fNaWgpW+Fz/kJvcTcQuSZKh0b+Z/392txGJnJ86bEDimV2alCGdXAOVwUAKL7zZj5/thYRLy2UnKE03WOimX9qSE/Gz858CNuUAapeanAunaBqvUnULYDM4Ja84NJCyQ76pYaLLVJCAHyiXz5r5YMUFj6+v1ZtYkoOI1grCTDMbgLR1j5i9eoeLfYYMo9i6qZOQ5tbunC8LW/vJXfe+N8B/HiaQaIxiWL5T3sfwWQDCRdWvthpK7QYyzB1lSq70WcbMKnwehM2Hph3H6tkUO6aTxd4Nd/dNhmlfyWDmZdhcCmSlIVHCrwm37zmaVHGLsNL2qsxIMb7g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,2',3,3',4,4',6,6'-Octabromodiphenyl ether" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAGfBa-jvLLoqq9zUUlAlHtwLAwm_o_32Hq0HqZcAP-5A ;
+        prov:generatedAtTime "2026-06-24T10:39:12.342016+02:00"^^xsd:dateTime .
+}

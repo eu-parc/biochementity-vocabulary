@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAHJZg64pEHskzwuS77RhUpyb059UXUpfb7Cpm_ecDio0> .
+@prefix sub: <https://w3id.org/np/RAHJZg64pEHskzwuS77RhUpyb059UXUpfb7Cpm_ecDio0/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAHJZg64pEHskzwuS77RhUpyb059UXUpfb7Cpm_ecDio0 a owl:Class ;
+        rdfs:label "4-Aminobiphenyl",
+            "4-Aminobifenyl"@nl-be ;
+        schema:alternateName "4ABPH" ;
+        rdfs:subClassOf biochementity:RA2zdEQ0tzhtr5uPzKiX5_cRqEdWjNjhlEr-J04rqsxXg,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:1784>,
+            <https://identifiers.org/cas:92-67-1>,
+            <https://identifiers.org/inchikey:DMVOXQPQNTYEKQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:7102> ;
+        pehterms:hasContextAlias sub:_n7526e5ea637e4294bd1f908236f68b56b1 ;
+        pehterms:hasGroupLabel "anilines and MOCA" .
+    sub:_n7526e5ea637e4294bd1f908236f68b56b1 a pehterms:ContextAlias ;
+        schema:alternateName "fourabph" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:37.555346+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "SYbztKiieFqiSBVSlzRWsTZaOJEAjjjr5hD57SWISDwAYmLg2f9aaSgnI7xrLE1VlnTleKU8RSIrHnDRGnmuj9eF9WVs8YGFT7afy7z4wrp6YMbVQaMBslLvBBLFzvqT+p15TzAkBiNSR0q9n0tsaYTxN/iHc884Bfq0xML9ZNGFI3ny4S2d+3uJctkwQ+YssM5bRLgyzaT4V0Q/oG2g6KOI8di7jI61ZsRanS9J2q9unfO+O6yf5eYfAOyoa5IO2JCl8/EnRDMcLwPh72YnU8Ro+TP25jiEz0e/nhfndZ9NIh3CxAlFd9SjGkwudEum1s//5QsjLphL4keJA+04mw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "4-Aminobiphenyl" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAHJZg64pEHskzwuS77RhUpyb059UXUpfb7Cpm_ecDio0 ;
+        prov:generatedAtTime "2026-06-24T10:39:37.555346+02:00"^^xsd:dateTime .
+}

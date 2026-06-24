@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAmJk0W_9hooqqzB_PXWRMYS8UEO9QwP0I-JI-HBWTke4> .
+@prefix sub: <https://w3id.org/np/RAmJk0W_9hooqqzB_PXWRMYS8UEO9QwP0I-JI-HBWTke4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmJk0W_9hooqqzB_PXWRMYS8UEO9QwP0I-JI-HBWTke4 a owl:Class ;
+        rdfs:label "(NE)-N-[3-[(2-chloro-1,3-thiazol-5-yl)methyl]-5-methyl-1,3,5-oxadiazinan-4-ylidene]nitramide",
+            "(NE)-N-[3-[(2-chloro-1,3-thiazol-5-yl)methyl]-5-methyl-1,3,5-oxadiazinan-4-ylidene]nitramide"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        schema:alternateName "Thiamethoxam",
+            "Thiamethoxam"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:39186>,
+            <https://identifiers.org/cas:153719-23-4>,
+            <https://identifiers.org/inchikey:NWWZPOKUUAIXIW-DHZHZOJOSA-N>,
+            <https://identifiers.org/pubchem.compound:5821911> ;
+        pehterms:hasContextAlias sub:_nb00f23c2d55048b9a034975ab6e07fcdb1 ;
+        pehterms:hasGroupLabel "pesticides" .
+    sub:_nb00f23c2d55048b9a034975ab6e07fcdb1 a pehterms:ContextAlias ;
+        schema:alternateName "thiamethoxam" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:38:57.156921+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "enIEgcEcMWUvF982jt2WojMF8evQFaO7jOzNQciDGXjHpPxvJ1Am3PZ5DJAyKYbMUQ1RZUvJn9H4n37YP4KuA2Xd9G513+bk5Ri4R/vhXZmjXe67BSOfty3CpK8xTSdyE/kR3Hslu9aRQmrMjZSmVWrvpEqQHbUKukEtVr2eIU1JE1u1Rx4ngau9CDE4xtNmGcGorSp2X8O3v07ztawTvBQuwfihFSZhV13yCw/iTjAyT8ObIAN+4LBrYNMVXsnwXmNO/4Y7muEY9X8KcV+ZU7UZiCY16A4zZQ0SsAIF2Ox6+REa9srGtLxS2XIIEGgGjKK9ohhQDDJ02mSDvXRi3w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "(NE)-N-[3-[(2-chloro-1,3-thiazol-5-yl)methyl]-5-methyl-1,3,5-oxadiazinan-4-ylidene]nitramide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAmJk0W_9hooqqzB_PXWRMYS8UEO9QwP0I-JI-HBWTke4 ;
+        prov:generatedAtTime "2026-06-24T10:38:57.156921+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAasQdYwfN9zcxlDqkLRMqgWVAl6AcAHCeezq_97lIifQ> .
+@prefix sub: <https://w3id.org/np/RAasQdYwfN9zcxlDqkLRMqgWVAl6AcAHCeezq_97lIifQ/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAasQdYwfN9zcxlDqkLRMqgWVAl6AcAHCeezq_97lIifQ a owl:Class ;
+        rdfs:label "Dechlorane 602",
+            "Dechloraan 602"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "Dec602" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:31107-44-5>,
+            <https://identifiers.org/inchikey:CDBKZZACXQLFMK-DSCPOPHVSA-N>,
+            <https://identifiers.org/pubchem.compound:131877552> ;
+        pehterms:hasContextAlias sub:_n7a6baee2a7374bc583a7a60f88bf20d9b1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n7a6baee2a7374bc583a7a60f88bf20d9b1 a pehterms:ContextAlias ;
+        schema:alternateName "dectwo" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:19.474457+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "HH80cIWujoy5a+41GmHvKhlCDGl4d38TlXrig3Bv+wLVsaX4qGRnIUkdMAanKjcy3yS/EBPSYq9IKen2QrvmHWAm6Yl8LXv8ZgRUuq8UfE1TS650w9kiWR7JwmVvvVAfx/AG9KXMg4My6jESRcYOoj18mvUPc1wpO1wyVE+NRkpHb4xqKKTyH4LYYuIIl1/LxCGVPuZnkv86gQWW79FSAFY70+kIMHFVQlOJA/Utfzgp0c9LRbHxKmBsGTtYu21515G01BsWzdzDu5OnC9lk2JOUzq8OyfBT1Qk285N2x+Z3C43sngnS5bD9EFS1g+ZtFaRHdU2hFlMNjlYq+xBaQw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dechloraan 602" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAasQdYwfN9zcxlDqkLRMqgWVAl6AcAHCeezq_97lIifQ ;
+        prov:generatedAtTime "2026-06-24T10:39:19.474457+02:00"^^xsd:dateTime .
+}

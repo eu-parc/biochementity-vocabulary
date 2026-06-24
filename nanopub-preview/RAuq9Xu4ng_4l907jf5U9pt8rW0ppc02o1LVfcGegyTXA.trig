@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAuq9Xu4ng_4l907jf5U9pt8rW0ppc02o1LVfcGegyTXA> .
+@prefix sub: <https://w3id.org/np/RAuq9Xu4ng_4l907jf5U9pt8rW0ppc02o1LVfcGegyTXA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAuq9Xu4ng_4l907jf5U9pt8rW0ppc02o1LVfcGegyTXA a owl:Class ;
+        rdfs:label "Linear Trifluoroacetic acid",
+            "Lineair Trifluoro azijnzuur"@nl-be ;
+        schema:alternateName "TFA",
+            "TFA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:45892>,
+            <https://identifiers.org/cas:599-00-8>,
+            <https://identifiers.org/cas:76-05-1>,
+            <https://identifiers.org/inchikey:DTQVDTLACAAQTR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6422> ;
+        pehterms:hasContextAlias sub:_nc25bbfd448b34f09821e4c3552a791ccb1 ;
+        pehterms:hasGroupLabel "PFAS" .
+    sub:_nc25bbfd448b34f09821e4c3552a791ccb1 a pehterms:ContextAlias ;
+        schema:alternateName "tfa" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:01.909315+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Rbxt9bsmhj+5PxLqdPJgZy//dBT3XCJ/sE5lZU0PJebNgTS6t+yHLNZCyxkFSmczVqjMW4uJVnZigAr7ZOUuYJY//DGRDH1r6Mka6+55jbOE2TqsT0v7t07fL0TuNUKV+c4aBlmbKYpVpEAuobnSBBvBEWzLmHDu4GPXqa0GoS3E2PfL5Yp0T27ngdqDrH3UAgl9R953w26y1VC1j8QZp+9qiftRfU60q1js3ayo57/QHpmaWOFad6R4LTiNa3EqvKSsVtv9nyu8qNdMdtniTMerKjoLtlEJ+z6txPoS6Gt74wQGJZQo+H9CM3MvAn+euuqvTfHiRWRJGBXohZ/vDQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Lineair Trifluoro azijnzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAuq9Xu4ng_4l907jf5U9pt8rW0ppc02o1LVfcGegyTXA ;
+        prov:generatedAtTime "2026-06-24T10:39:01.909315+02:00"^^xsd:dateTime .
+}

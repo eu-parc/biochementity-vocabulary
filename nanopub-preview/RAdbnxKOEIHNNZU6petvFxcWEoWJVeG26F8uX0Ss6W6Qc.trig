@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAdbnxKOEIHNNZU6petvFxcWEoWJVeG26F8uX0Ss6W6Qc> .
+@prefix sub: <https://w3id.org/np/RAdbnxKOEIHNNZU6petvFxcWEoWJVeG26F8uX0Ss6W6Qc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAdbnxKOEIHNNZU6petvFxcWEoWJVeG26F8uX0Ss6W6Qc a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 151",
+            "Polychloorbifenyl 151"@nl-be ;
+        schema:alternateName "PCB 151",
+            "PCB 151"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:52663-63-5>,
+            <https://identifiers.org/inchikey:UHCLFIWDCYOTOL-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:40471> ;
+        pehterms:hasContextAlias sub:_n0a2a027cad1a420a9b9bfd2c93f4b21cb1 ;
+        pehterms:hasGroupLabel "organochlorine compounds" ;
+        pehterms:isMetaboliteOf biochementity:RALRfOQwZG4cZAHPKWybx457-oRNgDIvOfUkLrzw1hhqk .
+    sub:_n0a2a027cad1a420a9b9bfd2c93f4b21cb1 a pehterms:ContextAlias ;
+        schema:alternateName "pcb151" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:38.584793+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "VJ5QWUBtjd9X7HU7FfgxtCQ9vJilK/aIBjX9hdGUxZvto9hNuFKShxUjCVtgCHBaZmTArFDsdkf3i/q65roIQalg+mYMybG8YdHe7SNSyehFZdVgOnBK3R84jRV7cY3kQrbX++17+Ww/O3xOYwrQkGRCdXO1MtC12w+jJfzSov3X9Q+YFCvK11bPuVXUexzgNCCoAdbvxTenjwMVGxXKvDAtHvoCiEuB97g2M5AhqUBZZnbFlm2FR9tGXIRM4tXQcxaA6gLOAQpH0Wn+Mk92JpGJPkaEOsdZ8UlD9P+Wmud61ZqY09XqPuImAq6Tj4iv54We2uXCFPEaJLbg65U1MA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polychlorinated biphenyl 151" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAdbnxKOEIHNNZU6petvFxcWEoWJVeG26F8uX0Ss6W6Qc ;
+        prov:generatedAtTime "2026-06-24T10:39:38.584793+02:00"^^xsd:dateTime .
+}

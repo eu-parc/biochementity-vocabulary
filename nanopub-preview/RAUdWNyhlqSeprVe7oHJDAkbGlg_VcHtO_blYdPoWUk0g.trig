@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAUdWNyhlqSeprVe7oHJDAkbGlg_VcHtO_blYdPoWUk0g> .
+@prefix sub: <https://w3id.org/np/RAUdWNyhlqSeprVe7oHJDAkbGlg_VcHtO_blYdPoWUk0g/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAUdWNyhlqSeprVe7oHJDAkbGlg_VcHtO_blYdPoWUk0g a owl:Class ;
+        rdfs:label "Dibenzo[a,e]pyrene",
+            "Dibenzo[a,e]pyreen"@nl-be ;
+        schema:alternateName "DBaeP" ;
+        rdfs:subClassOf biochementity:RA3Mq--WA1eTzoVB1x-pb9QXCMytHWoZl6VbWLiVH4hDs,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:82442>,
+            <https://identifiers.org/cas:192-65-4>,
+            <https://identifiers.org/inchikey:KGHMWBNEMFNJFZ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9126> ;
+        pehterms:hasContextAlias sub:_ndb88db7e79ab44ebb7f97308111cd6e5b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" .
+    sub:_ndb88db7e79ab44ebb7f97308111cd6e5b1 a pehterms:ContextAlias ;
+        schema:alternateName "dbaep" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:41.156908+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "ki8bDd0a2UoBT3z3KYJqU8zpz2hgkkhyXtVvtdnwki9D+M5SPhJYTQLAs3W7ZGmxp48npIEJftj3ekM6sJO6rn4IZwSxLe1h7Jt+SERhqEjvAgHGNrh6fqgYik7MP/XEIM8p2tp8pR8+b5YzJnjVTsN9bMdi6OX++h8LT3dQO8YMuhJf/AkoeJWQzACPzmIICsF+aH2zFENSscdv7T6bqqF3EluXUy3h/fxbvOG9+xM3Campqtzp2Y2WAGW/IYSs2THOBz+oAtjXbFtLVAuOPcgqNFiZ/rRT7FsC0rcWPoflAO5aH06raRibwxXLR27e6m3aZG6iLr0vYZm4q8Hqtw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Dibenzo[a,e]pyrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAUdWNyhlqSeprVe7oHJDAkbGlg_VcHtO_blYdPoWUk0g ;
+        prov:generatedAtTime "2026-06-24T10:39:41.156908+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,46 @@
+@prefix this: <https://w3id.org/np/RArFT9-kPASa3xnVa84WZNLQXgmOJSVljiSce-BdC022I> .
+@prefix sub: <https://w3id.org/np/RArFT9-kPASa3xnVa84WZNLQXgmOJSVljiSce-BdC022I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RArFT9-kPASa3xnVa84WZNLQXgmOJSVljiSce-BdC022I a owl:Class ;
+        rdfs:label "Di-isopropyl phthalate",
+            "Di-isopropylftalaat"@nl-be ;
+        schema:alternateName "DiPrP" ;
+        rdfs:subClassOf biochementity:RAFl-2rM_lBluANzZgQ-Xa_4NctrEKov4nz8QL34gwU9U,
+            pehterms:BioChemEntity ;
+        pehterms:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:41.456483+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "RRPDsYcqiM/joz4JhGg7HUxgDlvFmAguOTFKWL7ehf0PO45wz/0LyFkUokOElTkDVAoEdUaEBG5CjB6SUdXODoGbeUrTc375ajLxpfYs2EBzf/FRrbrcM0t/FbnjP7aRgmZyhidyqr5pq5cYneebMHGuz8TxA804k7zF7DuT8VBaTnxV2s6iU0+5Lz1xrCqJvUVexCgqzoMokebSrzUcXJCrg3XWADa1FeGvGw9pIcEExQ/pmcmJldZzf3E8eB451wb2mOhzqw0rYkF+i3bzkmUmIJCq2hLmTC/Z49LsRo7OLzqDlPpWEH4v/GuZIAFPwzJiYlsOXscDeq6G/12Btw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Di-isopropyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RArFT9-kPASa3xnVa84WZNLQXgmOJSVljiSce-BdC022I ;
+        prov:generatedAtTime "2026-06-24T10:39:41.456483+02:00"^^xsd:dateTime .
+}

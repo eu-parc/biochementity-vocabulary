@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAcJwH3QBIatTSEmPVKKL0iCvVc8amCh9hRJfJrZTKIHs> .
+@prefix sub: <https://w3id.org/np/RAcJwH3QBIatTSEmPVKKL0iCvVc8amCh9hRJfJrZTKIHs/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcJwH3QBIatTSEmPVKKL0iCvVc8amCh9hRJfJrZTKIHs a owl:Class ;
+        rdfs:label "1-mono-(2-carboxyl-methyl-hexyl) benzene-1,4-dicarboxylate",
+            "1-mono-(2-carboxyl-methyl-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+        schema:alternateName "2cx-MMHTP",
+            "2cx-MMHTP"@nl-be ;
+        schema:comment "comments: The INCHIKEY in our DB directs me back to our biomarker list only, so not sure if it is correct. I found nothing online other than: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27750 --> so I gueess this comes from one of the german studies. to contact UBA?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        pehterms:hasContextAlias sub:_nc6c5a63d65be4162a4c2b6840b2798e3b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAkO0BRhjba7GSQzx4V6BccQoj8fqFepIaWS-G-lF30X4 .
+    sub:_nc6c5a63d65be4162a4c2b6840b2798e3b1 a pehterms:ContextAlias ;
+        schema:alternateName "cxmmhtp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:47.483662+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "sXoV2unBCCgYiqtIFun7aJdsgAXQeFsMxJ8vNQa00WI6XRGzlkOy2rFOGGe/l4Fts0g7kDIEJU8/R9NRpFVo6ap8s77mP++myCMWoqgtMdCY1nQD4oYQoS4AomoICL/B76zCAClDgQ7VaCqLoN8Yi//wTwJGFdKMq1uUBZejWNzoeC5s/xxAx1MKZilhKkMRu1PIMnmCXFRlAqo4UplyVipivvnnvsnVpUkeVPF45VmvUBX5NmwfzuuqVd4tnFaD/nZHJlV5WpXQRFZNJz/Vn0YjiykTQt3RN1LrwPhN6dES2zdbq5Kk2bq8/YI0J9lp1HjeZHaFMDcFnxK3KCGGlg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1-mono-(2-carboxyl-methyl-hexyl) benzene-1,4-dicarboxylate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAcJwH3QBIatTSEmPVKKL0iCvVc8amCh9hRJfJrZTKIHs ;
+        prov:generatedAtTime "2026-06-24T10:39:47.483662+02:00"^^xsd:dateTime .
+}

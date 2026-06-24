@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAERozwBh0i2ktU6FulcSKuZUFMDTFhOXjLB8vUqEDsHc> .
+@prefix sub: <https://w3id.org/np/RAERozwBh0i2ktU6FulcSKuZUFMDTFhOXjLB8vUqEDsHc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAERozwBh0i2ktU6FulcSKuZUFMDTFhOXjLB8vUqEDsHc a owl:Class ;
+        rdfs:label "3-hydroxybenzo(a)pyrene",
+            "3-hydroxybenzo(a)pyreen"@nl-be ;
+        schema:alternateName "3-hydroxyBaP" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34337>,
+            <https://identifiers.org/cas:13345-21-6>,
+            <https://identifiers.org/inchikey:SPUUWWRWIAEPDB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:25890> ;
+        pehterms:hasContextAlias sub:_n77f4185204974b38a0936ae4a2c1bfd2b1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RA76-2bHRs20oFNqXWvPizujqXNDOMDvZfPNKZG-Rp2Nk .
+    sub:_n77f4185204974b38a0936ae4a2c1bfd2b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohbap" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:49.595331+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "c/AXGdRk2N4Ch4Xg1tA+P8/VMw0SV4wOvcvUNhO6lZaFf2KWaqptLaSxhmUAMXcLsAhp8AOrRS5h3of1eQ9XPq5Mqy6F/1GhEloxq4vvR/6ViXuaawABjcC4mBhMrbgaUGv6pnCaxBRGUgvnHGnFs4OgRDblTDzR/X/qVx3LDguPr7FIQwkgUeBq2vuVAxyITlH5wVXU0yWjKofRRtldIkbF/B5xZhV0YL4P1s3snS0zhuC35WXtLzl8BKDK1Ptkfi1dvPcUn7GsLVfZuLwwEI/BATYTfUjPmZ344jLfhBRUKk2M7Iw35SI0zzN0cxknAxllO27x4sbfzj0FK7jnHw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "3-hydroxybenzo(a)pyrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAERozwBh0i2ktU6FulcSKuZUFMDTFhOXjLB8vUqEDsHc ;
+        prov:generatedAtTime "2026-06-24T10:39:49.595331+02:00"^^xsd:dateTime .
+}

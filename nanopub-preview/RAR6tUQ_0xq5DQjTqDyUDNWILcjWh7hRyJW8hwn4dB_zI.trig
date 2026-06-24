@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAR6tUQ_0xq5DQjTqDyUDNWILcjWh7hRyJW8hwn4dB_zI> .
+@prefix sub: <https://w3id.org/np/RAR6tUQ_0xq5DQjTqDyUDNWILcjWh7hRyJW8hwn4dB_zI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAR6tUQ_0xq5DQjTqDyUDNWILcjWh7hRyJW8hwn4dB_zI a owl:Class ;
+        rdfs:label "1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin",
+            "1,2,3,6,7,8-hexachloordibenzo-p-dioxine"@nl-be ;
+        schema:alternateName "1,2,3,6,7,8-HxCDD" ;
+        rdfs:subClassOf biochementity:RAphRYeP62DYsLYFMk6pIrkfSiZuytDZyGUTOzSxqnLw4,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81503>,
+            <https://identifiers.org/cas:57653-85-7>,
+            <https://identifiers.org/inchikey:YCLUIPQDHHPDJJ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:42540> ;
+        pehterms:hasContextAlias sub:_n66e4f3e56723474fb30963296ebc61bfb1 ;
+        pehterms:hasGroupLabel "dioxins",
+            "organochlorine compounds" .
+    sub:_n66e4f3e56723474fb30963296ebc61bfb1 a pehterms:ContextAlias ;
+        schema:alternateName "pcdd67" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:32.366052+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "JH6XIcNmWdE4KCxHRDEOnXEliO/QT/uGsuD+6hynI+m/cIdeHxDvWn2Nm+E7JyCpL3HctTCq7hHL13BZwZkxA55gYprqUx4ZDy8xhAn4ZtUbtKtu2qV0TTXz6PR7ZAPYhr90wO3Rxyt1PwZT3OikcTO349QWAGaILXjWhWUvY6DXo97faTNiC9QLbTUvmpTccfX6f31aVgiJcSGNnJR+Nj+dQaqI+OZyZkoe65snvt4EyhycrOhOP6EtmbvqZMeknfPRvyGkOrkQAqYTayOQXjcYoDsDfriivn/JAdQBG1B7JwGLED0u22xP2+8dN9GoUusIOuhh8Ao8qftZ1FMa2A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAR6tUQ_0xq5DQjTqDyUDNWILcjWh7hRyJW8hwn4dB_zI ;
+        prov:generatedAtTime "2026-06-24T10:39:32.366052+02:00"^^xsd:dateTime .
+}

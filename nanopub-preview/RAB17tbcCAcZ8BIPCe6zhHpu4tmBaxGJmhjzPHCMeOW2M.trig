@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAB17tbcCAcZ8BIPCe6zhHpu4tmBaxGJmhjzPHCMeOW2M> .
+@prefix sub: <https://w3id.org/np/RAB17tbcCAcZ8BIPCe6zhHpu4tmBaxGJmhjzPHCMeOW2M/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAB17tbcCAcZ8BIPCe6zhHpu4tmBaxGJmhjzPHCMeOW2M a owl:Class ;
+        rdfs:label "Carbofuran",
+            "Carbofuran"@nl-be ;
+        schema:alternateName "Carbofuran" ;
+        rdfs:subClassOf biochementity:RAPt91aLV2i3c4q3lnwyT2osX8gCQrcMtDerQp8_DOOaU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34611>,
+            <https://identifiers.org/cas:1563-66-2> ;
+        pehterms:hasGroupLabel "carbamate pesticides",
+            "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:30.336947+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "CCAtyXtjvwFP4xUXvlHlhN13nrWv8ZGKPwTJKomlYy6A4UJWTEcJxSfhCgRfOKZtt721VPngfFcvDEMuwDbRJcKNuPQn0viHTTWnVW//W3XOiYgifYS7mopfGPPUKP8ziJdwlBLz1ilA4rp6sXMtOn5VoalmxZFXSCOsVyXjitbUqnIp0Rn+P+SEdbv3ElT3mWrWoorJqtystUcTPPwGXsDRdu7ad43YoeV+AHbovwZZKbpuF0Mmqin0BlnM52trEDenEWfOJ4nwVcn63jBhLqSHS3A6tF7Xj8mzQ+qV1CoHlNV1ShsuXFyUTb2Eo8w4j25RI5Q5lRFRjqpREsvCXg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Carbofuran" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAB17tbcCAcZ8BIPCe6zhHpu4tmBaxGJmhjzPHCMeOW2M ;
+        prov:generatedAtTime "2026-06-24T10:39:30.336947+02:00"^^xsd:dateTime .
+}

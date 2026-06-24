@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA9RIzBXNwY9p0tqwi81qrzJMdspD0KHzVTfhLfUaeV5E> .
+@prefix sub: <https://w3id.org/np/RA9RIzBXNwY9p0tqwi81qrzJMdspD0KHzVTfhLfUaeV5E/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9RIzBXNwY9p0tqwi81qrzJMdspD0KHzVTfhLfUaeV5E a owl:Class ;
+        rdfs:label "2-hydroxyfluorene",
+            "2-hydroxyfluoreen"@nl-be ;
+        schema:alternateName "2-FLUO" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:34289>,
+            <https://identifiers.org/cas:2443-58-5>,
+            <https://identifiers.org/inchikey:ZDOIAPGLORMKTR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:75547> ;
+        pehterms:hasContextAlias sub:_ne854fd033bfa4463bca19fc8641015fab1 ;
+        pehterms:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        pehterms:isMetaboliteOf biochementity:RA5HMcPrYTMl9LBpwu3iqnSAScMzFiFvWFjOqMrM6hSzE .
+    sub:_ne854fd033bfa4463bca19fc8641015fab1 a pehterms:ContextAlias ;
+        schema:alternateName "twohfluo" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:54.672745+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "PVsGSWhzonaa7ior+uj2j71I2LVEDIOsCfFS1lUIdLZbXl2lt91MZp+DjB87Yel26ojNOj6mjdDMPbygCTgguMRulyWmBqkunptdRbi0wC+e0RSbqe9tT2rMLuXD3DVTip0dxnJbfMt2V0HCCjzWqEiI037n/+G+uxpIOdFtEa2FebEuMywpggKVHOQbY9HsqTQ1XmfmbEKQSr6aTf6Z86Nk36xfuOfoBh2F7lnzI3hv9ZxhlJ6EgMyzacWFuDYAX1sCLPm7iTw0zCPIAzjpt6BT8XVyiqwKGNqwHNoIwu0+k2gAzn7+hF4OBze98rsFQ1lXeD0cSfM4gSciO50Syw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2-hydroxyfluoreen" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA9RIzBXNwY9p0tqwi81qrzJMdspD0KHzVTfhLfUaeV5E ;
+        prov:generatedAtTime "2026-06-24T10:39:54.672745+02:00"^^xsd:dateTime .
+}

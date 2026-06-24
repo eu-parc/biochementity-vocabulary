@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA2bJeqVDeB-0KbigQMqM_sKdpYcYida0TzLDDEtIeTsw> .
+@prefix sub: <https://w3id.org/np/RA2bJeqVDeB-0KbigQMqM_sKdpYcYida0TzLDDEtIeTsw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2bJeqVDeB-0KbigQMqM_sKdpYcYida0TzLDDEtIeTsw a owl:Class ;
+        rdfs:label "Mono(2-ethyl-5-hydroxyhexyl) adipate",
+            "Mono(2-ethyl-5-hydroxyhexyl) adipate"@nl-be ;
+        schema:alternateName "6-(2-Ethyl-5-hydroxy-hexoxy)-6-oxo-hexanoic acid",
+            "OH-MEHA",
+            "OH-MEHA"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:134998-71-3>,
+            <https://identifiers.org/inchikey:GUWFIYHOYMKEJE-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:154455> ;
+        pehterms:hasContextAlias sub:_n52a8f65c2dce4ad78768bfd56c1d28d1b1 ;
+        pehterms:hasGroupLabel "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAxwfkPya0-eZzEY23TJ5HofDnqNrrRXraDCapRgBccAs .
+    sub:_n52a8f65c2dce4ad78768bfd56c1d28d1b1 a pehterms:ContextAlias ;
+        schema:alternateName "ohmeha" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:47.781794+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "sWzQ7JmtXFqLR7ISvRCO1gbUUvaUTZOcOcdtieTQhH7BEeOLFKEmyLf5rHz0KkE2+v6HiaRhMnSmH+knMNB38f7jq4MGdFXLBRdkfBdUnYo4RFCAQBYfImpUAL9Mu7LFeCSVhpeQo7jQlUjoIq+uBLfd9OgmmIeZZzHf+y0Id4SJL1g8FQpdKN9E5Wx4xMvXR446VHEFvHSNe4d4SaNPU43QHnIj7iP2Nr2jU6Or5ThJTpTjjMHVyKZFhu8Q6fF8iQUCClDDJjZLCLMe/IPLoofeNZ2PN/OewZYu7PuYPkx++5QL5kprPJQkfGcG3lyYUJiqTWdH8aeyRulwb5eNGA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Mono(2-ethyl-5-hydroxyhexyl) adipate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA2bJeqVDeB-0KbigQMqM_sKdpYcYida0TzLDDEtIeTsw ;
+        prov:generatedAtTime "2026-06-24T10:39:47.781794+02:00"^^xsd:dateTime .
+}

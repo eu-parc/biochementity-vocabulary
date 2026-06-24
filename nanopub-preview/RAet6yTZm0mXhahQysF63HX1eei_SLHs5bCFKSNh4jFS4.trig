@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAet6yTZm0mXhahQysF63HX1eei_SLHs5bCFKSNh4jFS4> .
+@prefix sub: <https://w3id.org/np/RAet6yTZm0mXhahQysF63HX1eei_SLHs5bCFKSNh4jFS4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAet6yTZm0mXhahQysF63HX1eei_SLHs5bCFKSNh4jFS4 a owl:Class ;
+        rdfs:label "Trifloxystrobin acid",
+            "Trifloxystrobin acid"@nl-be ;
+        schema:alternateName "(2E)-2-methoxyimino-2-[2-[[(E)-1-[3-(trifluoromethyl)phenyl]ethylideneamino]oxymethyl]phenyl]acetic",
+            "Trifloxystrobin CGA-321114",
+            "acid",
+            "Trifloxystrobin CGA-321114"@nl-be ;
+        schema:comment "comments: I think the short name is not correct. Can someone double check?" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:252913-85-2>,
+            <https://identifiers.org/inchikey:ISZQNKFXNXQTTF-NACSPRHISA-N>,
+            <https://identifiers.org/pubchem.compound:22899348> ;
+        pehterms:hasContextAlias sub:_n6a1ccbe47c1241e89c7505f9186578bbb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAV3SKfCpcRSuJiTa6Bkk-ZyDdjGueY-RR4Ew7uTl_bOk .
+    sub:_n6a1ccbe47c1241e89c7505f9186578bbb1 a pehterms:ContextAlias ;
+        schema:alternateName "trifloxystrobincga" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:33.858649+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Fd62YWob04sAvP0d0peb+B1aLCjcm/qVmfACHhHxz8F0qbWv466LgegZmpmKjN97fs3aK4Jr8nVEOKk7KQbltbaQQCZUpXWtqNZOgL9l/+fWq12HsR8WGH9gsZaPePdYGOXPBsWnxqDbUZ/wFCwiJo43MTPPfVwOxDMqJ2fSc3ba/COcXlOF5QculMujMFiX6OhC/34SzHgmUwkBc7V4S+Kq1bhVz2n+kUVEvYR+sQcqaUdP6pNFl1KIiftvNaskKvsajgbSEjWL4oPxZDY7xH9WGZ8zSfH4mTdS8Rp4fkyZ1fLNrkmEWzyNYXhF1OWd1FeStp45N7r5YVEJdN4r+w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Trifloxystrobin acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAet6yTZm0mXhahQysF63HX1eei_SLHs5bCFKSNh4jFS4 ;
+        prov:generatedAtTime "2026-06-24T10:39:33.858649+02:00"^^xsd:dateTime .
+}

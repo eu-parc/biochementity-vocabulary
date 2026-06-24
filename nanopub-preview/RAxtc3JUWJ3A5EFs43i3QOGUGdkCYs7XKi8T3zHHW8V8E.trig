@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAxtc3JUWJ3A5EFs43i3QOGUGdkCYs7XKi8T3zHHW8V8E> .
+@prefix sub: <https://w3id.org/np/RAxtc3JUWJ3A5EFs43i3QOGUGdkCYs7XKi8T3zHHW8V8E/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAxtc3JUWJ3A5EFs43i3QOGUGdkCYs7XKi8T3zHHW8V8E a owl:Class ;
+        rdfs:label "Polybrominated diphenylether 85",
+            "Polybroomdifenylether 85"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "2,2',3,4,4'-Pentabromodiphenyl ether",
+            "BDE-85",
+            "bde 85",
+            "bde-85",
+            "bde85" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:138064>,
+            <https://identifiers.org/cas:182346-21-0>,
+            <https://identifiers.org/inchikey:DMLQSUZPTTUUDP-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:177368> ;
+        pehterms:hasContextAlias sub:_n6190d4af41cb44248461d6beb4d1ab5cb1 ;
+        pehterms:hasGroupLabel "flame retardants" .
+    sub:_n6190d4af41cb44248461d6beb4d1ab5cb1 a pehterms:ContextAlias ;
+        schema:alternateName "bdem" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:12.837911+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "ibBIiM1D4Ft3ru06gGRbq3kQbSmxpWcmSP6ijT+TN8dqMTmYlvwDBVaUnjOe8yXCgcCNb6YXSRPPlD5JCCi8P6UxxqkzzK6ynOLcm1YsGvkV3FIah5yZzXxH62vRlltEWP5GP4NIlfoDkz2HHPOEa/qxkzOeUEw5I6G8q/tePGwcHexGfhl+JRMGLROLCz0s66rEtlQpacYgRww56BTXrfmC66e1vh9SsJyjVQy6jO0NrrAa+a2oFoF82makoMLCJHLYx9kPRw4b6FDpWtA2Ul/k1Mq4NGgIfIchv5VCifsReR4V68tDXrEl0Qu22jNdR2askc3VZS9jRparPhKMHg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Polybroomdifenylether 85" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAxtc3JUWJ3A5EFs43i3QOGUGdkCYs7XKi8T3zHHW8V8E ;
+        prov:generatedAtTime "2026-06-24T10:39:12.837911+02:00"^^xsd:dateTime .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RA-MMZdKclQteim6o8hxULilGpleEo-G0fwnN21GNqZ58> .
+@prefix sub: <https://w3id.org/np/RA-MMZdKclQteim6o8hxULilGpleEo-G0fwnN21GNqZ58/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-MMZdKclQteim6o8hxULilGpleEo-G0fwnN21GNqZ58 a owl:Class ;
+        rdfs:label "P-hydroxybenzoic acid",
+            "P-hydroxybenzoëzuur"@nl-be ;
+        schema:alternateName "4-Hydroxybenzoic Acid",
+            "HBA",
+            "HBA"@nl-be ;
+        rdfs:subClassOf biochementity:RAwqdP_7GS3kHLtWZHU4Cf3TBUgb76iya1pZmBZ-RAog8,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:30763>,
+            <https://identifiers.org/cas:99-96-7>,
+            <https://identifiers.org/inchikey:FJKROLUGYXJWQN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:135> ;
+        pehterms:hasContextAlias sub:_n467956f79a434db2afa954219e629222b1 ;
+        pehterms:hasGroupLabel "parabens" .
+    sub:_n467956f79a434db2afa954219e629222b1 a pehterms:ContextAlias ;
+        schema:alternateName "phba" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:22.247165+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "rAuI+OnMumq3q2yC5fE0W5eYq5HXNqv0eBgjtA69Ke7XEroB3og+aiSKavsya2Fq5EMVceVSek9LTdaH9lTsfvSX0AcFL3rf3i5DNPfpu8AkS6UeTqn8aDEo9I6ty/IkIyatiOFDqnivQ2H2tSzbtlXmpv727mSwPFswjeb+swCntDr57jEpLigs0GBgMzOuyirJiI5ENNaGCK29wK8/Ok/uqOV5V1k/MNoTCza0BMxElVw+byMOaaFSniyEgAkIQMxaLrHZdF7kxLuok9l+Hd1AOPeDFrXDDHzuU+Nu5V4S9yvjZ5R0CxxUyGLOqBdqdogppw1NnrWT0msoiNEMFA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "P-hydroxybenzoëzuur" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA-MMZdKclQteim6o8hxULilGpleEo-G0fwnN21GNqZ58 ;
+        prov:generatedAtTime "2026-06-24T10:39:22.247165+02:00"^^xsd:dateTime .
+}

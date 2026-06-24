@@ -1,0 +1,44 @@
+@prefix this: <https://w3id.org/np/RAccv_pzEEv-HMvP6KM7BSoXNYtPn-9fUUDV5-iLZfCnA> .
+@prefix sub: <https://w3id.org/np/RAccv_pzEEv-HMvP6KM7BSoXNYtPn-9fUUDV5-iLZfCnA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALk5btuoHRfbrCbeW5mWRWJQaGY13cc6jVxPEHc4HC1A a owl:Class ;
+        rdfs:label "Branched Perfluorotridecanoic acid" ;
+        schema:alternateName "bpftrda" ;
+        rdfs:subClassOf biochementity:RAbAJDMTeWYyVM1vRLN3ptnc5esnTFfsik3QK5N6vOmSQ ;
+        pehterms:isIsomerOf biochementity:RAr9M7A9-7JiTENIpNqr39bHqtFATKZbc0R0r4Sk02CLs .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:59.424933+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxmfLBtEKaHT3KVp4S9Q+FgvCgCeOH32sydNISrhS5gtjvPBwZ0bO3HYctbVBNQaLdN/b46gFk/udwU2JNem1NcJfsO7JXuCXQeuP2eOiA+iF6lMWlZdWkQyU31hfr9d9m22Ez0u4qghKNPw3C9t0tc7Enpy0B7oYHRkEg71iD9cH6vAfGqe+pPrbwH8hPu7mYnmVFBhZF7udZttotUWt1rYV+WVqkcvGOB/arG1GMs5baDb1dGUsjiK/pC2w8KBymlCkIZIyOxcWH5ru/5uNOkCTDb29bBgT9vyVP48lThcVt2YkLAfB+J8EXx9KYTmmXZXHQCVGKzQroH2kx/bAaQIDAQAB" ;
+        npx:hasSignature "tBfduvpwLshxeqkbWPyAz7NBo+kbqy1m9TBTkOW8axzupsW0hrcY9fGmMYjmEN4GRbyAqY3V7zmdfZHlTREN4CgDjIMDUCkUBzrKvWOWvCPD/uM+eE+R8yV5SuhgTYRTnbIewDDjogVtka8LH8AzXv7bB7ygPLdU2ZT1i37xQonI+2M51sikNrVx/GsZ40aVdC8tLT4bZXORBXsjb34MV4ZsS4O7O9rNySTajT8m1nq/yVIXMgg1Kfh/wAZIvtDJpm5k6he2ZFCwyybi6GUnLJzp6q2zY+JLONzdzAfQ31gSo9mvbTeq5H4vkx7DwQii2Yrh6g1Exf89FVBE1O+HYw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Branched Perfluorotridecanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:supersedes <https://w3id.org/np/RALk5btuoHRfbrCbeW5mWRWJQaGY13cc6jVxPEHc4HC1A> ;
+        prov:generatedAtTime "2026-06-24T10:39:59.424933+02:00"^^xsd:dateTime .
+}

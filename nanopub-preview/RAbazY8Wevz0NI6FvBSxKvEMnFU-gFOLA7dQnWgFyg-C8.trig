@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAbazY8Wevz0NI6FvBSxKvEMnFU-gFOLA7dQnWgFyg-C8> .
+@prefix sub: <https://w3id.org/np/RAbazY8Wevz0NI6FvBSxKvEMnFU-gFOLA7dQnWgFyg-C8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbazY8Wevz0NI6FvBSxKvEMnFU-gFOLA7dQnWgFyg-C8 a owl:Class ;
+        rdfs:label "2,5-dichlorophenol",
+            "2,5-Dichlorophenol"@nl-be ;
+        schema:alternateName "2,5-DCP",
+            "2,5-DCP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:27929>,
+            <https://identifiers.org/cas:583-78-8>,
+            <https://identifiers.org/inchikey:RANCECPPZPIPNO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:66> ;
+        pehterms:hasContextAlias sub:_nd05239028ed746df8ddd47474ae114fab1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAoPqCsWtE1nkmaPGzXLBgkuJdpbIWROuXH5y8KHXYsb0 .
+    sub:_nd05239028ed746df8ddd47474ae114fab1 a pehterms:ContextAlias ;
+        schema:alternateName "dcp" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:22.844954+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "lYEWLCvrYyZrlvGDO39crz8lTT4adcMSJQ1eGioJA4sPB/Wg5lAs3HQOO8E6qo+rrJR7dB1C7V7S3QMKY/z0YWAlRhj3gbqf0LEcGo1i/975k9czfjLzZqINJCWIYAGF+4+kWwvU0366ZLbvIoBpPEJWDnogSngMrsz4ogCBRYzcPL3EisKD90Ox0LU3EcaRaerGHtjCAv+JxDfBG5RoC03nqhDEFKoJucVG3cNphrQxUip3uxSYv6D8+K/SexvLIolxC2d3PDHJDXfBOIjSKqiuypnAsrfv7Yf6AlBmOxf0XLMG5HJKHcuhlAw2Pi/JMs/8QITMe1G36iow/S/YdQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "2,5-dichlorophenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAbazY8Wevz0NI6FvBSxKvEMnFU-gFOLA7dQnWgFyg-C8 ;
+        prov:generatedAtTime "2026-06-24T10:39:22.844954+02:00"^^xsd:dateTime .
+}

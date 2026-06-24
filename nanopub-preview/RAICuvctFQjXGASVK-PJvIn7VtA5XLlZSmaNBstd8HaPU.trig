@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAICuvctFQjXGASVK-PJvIn7VtA5XLlZSmaNBstd8HaPU> .
+@prefix sub: <https://w3id.org/np/RAICuvctFQjXGASVK-PJvIn7VtA5XLlZSmaNBstd8HaPU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAICuvctFQjXGASVK-PJvIn7VtA5XLlZSmaNBstd8HaPU a owl:Class ;
+        rdfs:label "Diphenyl phosphate",
+            "Diphenyl phosphate"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        schema:alternateName "DPHPbis",
+            "DPHP"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:166468>,
+            <https://identifiers.org/cas:838-85-7>,
+            <https://identifiers.org/inchikey:ASMQGLCHMVWBQR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:13282> ;
+        pehterms:hasContextAlias sub:_n0d0a6ffcc83d49da8e512dea8dc030dcb1 ;
+        pehterms:hasGroupLabel "flame retardants",
+            "phthalates" ;
+        pehterms:isMetaboliteOf biochementity:RAsrfHrKF__hL82PG8lo9j4LNaZ6hNvBfmfLP-6UPMpQM .
+    sub:_n0d0a6ffcc83d49da8e512dea8dc030dcb1 a pehterms:ContextAlias ;
+        schema:alternateName "dphpms" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:48.140334+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Od8TztACw8d3R1qyltUGNljk/zP2JTbxGfkmveF9LacnClaj+ykNSbWGrTmwpDFotIhLLozqxFa+qKTIB6zLPk/thjWqtuWWBXBlHM1qeM6gw1bU9LH3zEAAKmB3yWCHkoHk/NO4CJyJ4pa5J9czhmIu3pStjzjjptKBiFJ5F4eok5Znp3cuEL/yBd3NIbNBMBGK5Vx3OQXuaaomZV2DzbmCfitftEfBaBVS5mpFlMEEQrIWk0ZEPSDbGUtthdid/UTGvjbRyHGss61dAKTtEYOdx1Zj58ZV88HQXeu2yi1QEhMx48kmBU2XkHISq0dxNpUTDW+2GXSRwu4V/jfXbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Diphenyl phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAICuvctFQjXGASVK-PJvIn7VtA5XLlZSmaNBstd8HaPU ;
+        prov:generatedAtTime "2026-06-24T10:39:48.140334+02:00"^^xsd:dateTime .
+}

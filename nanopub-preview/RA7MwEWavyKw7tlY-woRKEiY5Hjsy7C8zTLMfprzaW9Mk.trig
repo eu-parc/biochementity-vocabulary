@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RA7MwEWavyKw7tlY-woRKEiY5Hjsy7C8zTLMfprzaW9Mk> .
+@prefix sub: <https://w3id.org/np/RA7MwEWavyKw7tlY-woRKEiY5Hjsy7C8zTLMfprzaW9Mk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA7MwEWavyKw7tlY-woRKEiY5Hjsy7C8zTLMfprzaW9Mk a owl:Class ;
+        rdfs:label "Bismuth",
+            "Bismut"@nl-be ;
+        schema:alternateName "Bi",
+            "Bi"@nl-be ;
+        rdfs:subClassOf biochementity:RAHuqlZyHUiiCRoyOipEqfndsPz7hAXRrj4ggikLsPlJU,
+            pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:33301>,
+            <https://identifiers.org/cas:7440-69-9>,
+            <https://identifiers.org/inchikey:JCXGWMGPZLAOME-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:5359367> ;
+        pehterms:hasContextAlias sub:_n756cbd9085bc41318a24f06757610f69b1 ;
+        pehterms:hasGroupLabel "metals" .
+    sub:_n756cbd9085bc41318a24f06757610f69b1 a pehterms:ContextAlias ;
+        schema:alternateName "bi" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:26.575072+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "p0xfQger9SCWH8iMsfrZ31p8xxjqmJanL06FCu67vTQo9QuHAxcY1PpXK/efgi+F2Pp/pRconkeUcgUQKTvJti98c6e5P2rGync6qtBSFnyZzaxbfZeaCU467ECLykq4JhOQpD/g9Q8+2P0fPM/rTG9G5pcWVZf4sSd26ohteXc7/gjTdrSYnBHDIFAgdcpf+ybhiKRBfVPxFLyuDn3yIdeHmcJJpbmyIW/NgLNEAqCbnFtkQBrfx2g5jj/FGGpqWiPU/MANrLi4evwMRcgAMNl/qUA8yvj5f8//W0yCsyIlF+39eaiSY6vwwxo3rZc8HNDuUAaPaSPE9TD6+JzY/w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Bismut" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RA7MwEWavyKw7tlY-woRKEiY5Hjsy7C8zTLMfprzaW9Mk ;
+        prov:generatedAtTime "2026-06-24T10:39:26.575072+02:00"^^xsd:dateTime .
+}

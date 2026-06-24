@@ -1,0 +1,59 @@
+@prefix this: <https://w3id.org/np/RAtIMToGiy0nKbPzJN4p6dXN-B9hzZWOhDm3VkpTNZmGU> .
+@prefix sub: <https://w3id.org/np/RAtIMToGiy0nKbPzJN4p6dXN-B9hzZWOhDm3VkpTNZmGU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtIMToGiy0nKbPzJN4p6dXN-B9hzZWOhDm3VkpTNZmGU a owl:Class ;
+        rdfs:label "Tonalide",
+            "Tonalide"@nl-be ;
+        obo:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_48318> ;
+        schema:alternateName "AHTN",
+            "AHTN"@nl-be ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:88666>,
+            <https://identifiers.org/cas:1506-02-1>,
+            <https://identifiers.org/cas:21145-77-7>,
+            <https://identifiers.org/inchikey:DNRJTBAOUJJKDY-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:89440> ;
+        pehterms:hasContextAlias sub:_n760890baff214cb697074b8bc41d5d70b1 ;
+        pehterms:hasGroupLabel "musks" .
+    sub:_n760890baff214cb697074b8bc41d5d70b1 a pehterms:ContextAlias ;
+        schema:alternateName "ahtn" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:19.180261+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "Klh3tc9LkTEJES3Y9/NXqfLEaF2t1XnVLxPbnff56DEoVOHlefohaAkywdES1KfxG9ym7XgVh9j/jMOy2mSeTd/ZVOIzTHiiQM64SdQDFa3m4G7LOjO3Hii32SIbSXs+O5A2LVfPmbpTDG2iE69y5Blrf7FT18AQAFLuMPLE/ylvh6H2TiOqMKTIT5B2TiT9k2AwMfI4iz8pczYDUoR1CU5ZUDZPkD9/ZNRWSKKIR3TEIM+x68mdBpHpC62j6XUhTWjZzlA7Mzr7tPN98dXiHDv5w5kQDaxdW5H/lr3nMNuAWr2s8po4Kx3SmqZYXY0sWtt0N85lp2vgFxPuC0A1xQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Tonalide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAtIMToGiy0nKbPzJN4p6dXN-B9hzZWOhDm3VkpTNZmGU ;
+        prov:generatedAtTime "2026-06-24T10:39:19.180261+02:00"^^xsd:dateTime .
+}

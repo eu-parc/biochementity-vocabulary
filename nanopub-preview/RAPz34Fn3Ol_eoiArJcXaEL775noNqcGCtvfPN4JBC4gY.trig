@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAPz34Fn3Ol_eoiArJcXaEL775noNqcGCtvfPN4JBC4gY> .
+@prefix sub: <https://w3id.org/np/RAPz34Fn3Ol_eoiArJcXaEL775noNqcGCtvfPN4JBC4gY/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAPz34Fn3Ol_eoiArJcXaEL775noNqcGCtvfPN4JBC4gY a owl:Class ;
+        rdfs:label "Fipronil sulfone",
+            "Fipronil sulfon"@nl-be ;
+        schema:alternateName "Fipronil sulfone" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83487>,
+            <https://identifiers.org/cas:120068-36-2>,
+            <https://identifiers.org/inchikey:LGHZJDKSVUTELU-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:3078139> ;
+        pehterms:hasContextAlias sub:_n863e3a4eae904be2a832074a168324ebb1 ;
+        pehterms:hasGroupLabel "pesticides" ;
+        pehterms:isMetaboliteOf biochementity:RAE9ZyibKsdc9E4CAZkJnRhzoKjg58hco7OqnIud7WgUo .
+    sub:_n863e3a4eae904be2a832074a168324ebb1 a pehterms:ContextAlias ;
+        schema:alternateName "fipsul" ;
+        schema:identifier "short_name" ;
+        pehterms:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-24T10:39:32.506454+02:00"^^xsd:dateTime .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswkzbLfh3xM8Ys890FKBto+6/imMJ1tfosZesLjME/KqFfUOgFxInbJi9nmkdgedfoyoA1sOmSgl1qcg3SSYo05k5TDmdSJRw/GuA74Z0pdieFOrwnmDwMfbw0WX/R+JICNCeKfNbv7E9PlOwRV8TeHQ0jD/QYnUdRsjeQq3zZeCKN4WFCBUS80bxFqmhuHkFHa7wheyRwJmkaC0tOv5h01bMKkcYHS46w/4tr0AsFNCjJ4JsB2VYxmDsxudxUWA6insAYW+1fO0vGZI6KHS4WfRPdD14CIl5haJ7enRsMUZUPn7jJamEzjkYCsXvUZKdwg67fJQFZB6raYcow00SQIDAQAB" ;
+        npx:hasSignature "ety6c2V83W2eU4c7TXfV3vwfQTdoqIkHBhhMnqN7gJsR0xgZ9J1/6KTef8B8bFNa4L8dVJ25jLp7UpE4dYS4CJDneD3mdsJ5LWjNpz7/SW/BsMt9C38sbKVH75luZKTf3uQrAHjvO68ZD6k0Rki4X4FyqaOKRDG0qRw0WMG8v9OotYSP4tu8BEDDRJaxXzz4PGc9OwsDbnDbxvU9vml3pOaBd6jmkdPn4c8mo1eZeXASIEahYQSJzBPR1O633aXhMY1rWgYI9bgD9J+xLZPnpQD/l3ETAGqrRmdTa0/jfaV9ySGo8R6eOGB7AvlEbibiMVVMotZgEMySNDu23XaYJw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy orcid:0000-0000-0000-0000 .
+    this: rdfs:label "Fipronil sulfone" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:introduces biochementity:RAPz34Fn3Ol_eoiArJcXaEL775noNqcGCtvfPN4JBC4gY ;
+        prov:generatedAtTime "2026-06-24T10:39:32.506454+02:00"^^xsd:dateTime .
+}
