@@ -24,13 +24,16 @@ ID_MAP_FILE ?= $(REDIRECT_FOLDER)/id-map.tsv
 # (test server, no repo secret). For live publishing set, e.g.:
 #   PUBLISH_KEY_ARGS="--private-key key.priv --public-key key.pub --orcid-id ... --name ... --intro-nanopub-uri ..."
 PUBLISH_KEY_ARGS ?= --use-testsuite-keys
+# Suggester (prov:wasAttributedTo) attributed to every existing term during the
+# one-time `migrate`. All current data was contributed by Gertjan Bisschop.
+MIGRATE_SUGGESTER ?= https://orcid.org/0000-0001-8327-0142
 DRY ?=
 
 DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
-	publish-defining pipeline assertions \
+	publish-defining migrate pipeline assertions \
 	test-flow clean
 
 help:
@@ -42,6 +45,8 @@ help:
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
 	@echo "  make publish-defining          # mint unpublished assertions -> published/*.trig + id-map (test server)"
 	@echo "  make publish-defining DRY=--dry-run"
+	@echo "  make migrate                   # B6: one-time id migration of existing terms (+ links) -> published/*.trig + id-map"
+	@echo "  make migrate DRY=--dry-run"
 	@echo "  make test-flow                 # local end-to-end dry-run test"
 
 print-data:
@@ -169,6 +174,27 @@ publish-defining: prepare
 		--namespace "$(MINT_NAMESPACE)" \
 		--output-dir $(PUBLISHED_FOLDER) \
 		--id-map-file $(ID_MAP_FILE) \
+		$(PUBLISH_KEY_ARGS) \
+		$(DRY)
+
+# B6: one-time migration of the existing cross-referencing terms to nanopub
+# identifiers. Mints a defining nanopub per term with inter-term references
+# resolved inline to the new trusty URIs, and superseding nanopubs for cyclic
+# links (e.g. symmetric isIsomerOf). All existing data is attributed to
+# MIGRATE_SUGGESTER. Writes to $(PUBLISHED_FOLDER) and seeds the old-id ->
+# nanopub id-map ($(ID_MAP_FILE)) that `publish-defining` then extends
+# incrementally. Resumable: terms already in the id-map are skipped. Same signing
+# defaults as publish-defining (testsuite keys -> test server); override
+# PUBLISH_KEY_ARGS for live, pass DRY=--dry-run for an offline sign-only preview.
+# Requires a pubmate release that includes pubmate-migrate (see pyproject pin).
+migrate: prepare
+	@set -e; \
+	uv run pubmate-migrate \
+		--assertion-folder $(UNPUBLISHED_FOLDER) \
+		--namespace "$(MINT_NAMESPACE)" \
+		--output-dir $(PUBLISHED_FOLDER) \
+		--id-map-file $(ID_MAP_FILE) \
+		--default-suggester "$(MIGRATE_SUGGESTER)" \
 		$(PUBLISH_KEY_ARGS) \
 		$(DRY)
 
