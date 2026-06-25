@@ -27,6 +27,9 @@ PR is merged** (so the squash-merge nets it out of the upstream history).
   `nt:wasCreatedFromTemplate <…/RAhSlIuuw5…>` — the published "Defining a
   biochementity" assertion template, so Nanodash renders each one with the
   matching form.
+- **Vocabulary membership** (in each `assertion` graph): every class links to the
+  vocabulary via `dcterms:isPartOf
+  <https://w3id.org/spaces/biochementity/r/vocabulary>`.
 - Inter-term links resolved to the new trusty thing URIs; cyclic `isIsomerOf`
   links added by the 21 superseding nanopubs.
 - Short blank-node labels (`sub:_b1`) and readable prefixes.
