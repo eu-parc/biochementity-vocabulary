@@ -13,3 +13,5 @@ uv.lock
 .codex
 
 __pycache__
+# Bot signing identity (private key) — never commit; see docs/bot-identity-setup.md
+bot-identity/

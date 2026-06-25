@@ -35,11 +35,26 @@ NANOPUB_TYPE ?= https://w3id.org/peh/terms/BioChemEntity
 NANOPUB_TEMPLATE ?= https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM
 DRY ?=
 
+# Publishing bot identity (one-time setup; see docs/bot-identity-setup.md).
+BOT_NAME ?= Biochementity bot
+BOT_ID ?= biochementity-bot
+BOT_OWNER_ORCID ?= https://orcid.org/0000-0001-8327-0142
+BOT_OWNER_NAME ?= Gertjan Bisschop
+BOT_IDENTITY_DIR ?= bot-identity
+# Repo the publishing CI runs in (where the signing secret/variables live).
+CI_REPO ?= eu-parc/biochementity-vocabulary
+# Pass BOT_PUBLISH_ARGS=--test-server to introduce the bot on the test registry.
+BOT_PUBLISH_ARGS ?=
+_BOOTSTRAP_ARGS = --bot-name "$(BOT_NAME)" --bot-id "$(BOT_ID)" \
+	--owner-orcid "$(BOT_OWNER_ORCID)" --owner-name "$(BOT_OWNER_NAME)" \
+	--output-dir "$(BOT_IDENTITY_DIR)"
+
 DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
 	publish-defining migrate pipeline assertions \
+	bot-identity publish-bot-introduction bot-ci-secrets \
 	test-flow clean
 
 help:
@@ -53,6 +68,9 @@ help:
 	@echo "  make publish-defining DRY=--dry-run"
 	@echo "  make migrate                   # B6: one-time id migration of existing terms (+ links) -> published/*.trig + id-map"
 	@echo "  make migrate DRY=--dry-run"
+	@echo "  make bot-identity              # one-time: generate bot keypair + introduction to review (offline)"
+	@echo "  make publish-bot-introduction  # one-time: publish the reviewed introduction to the network"
+	@echo "  make bot-ci-secrets            # one-time: push signing key + identity URIs to $(CI_REPO)"
 	@echo "  make test-flow                 # local end-to-end dry-run test"
 
 print-data:
@@ -205,6 +223,39 @@ migrate: prepare
 		--template "$(NANOPUB_TEMPLATE)" \
 		$(PUBLISH_KEY_ARGS) \
 		$(DRY)
+
+# --- Publishing bot identity (one-time setup; see docs/bot-identity-setup.md) ---
+# The bot is a software agent with its own RSA key; an introduction nanopub binds
+# its agent URI to that key so consumers can verify what it signs. Generate the
+# key OFFLINE and review before publishing -- the key IS the identity.
+
+# 1. Generate the keypair + a signed-but-unpublished introduction under
+#    $(BOT_IDENTITY_DIR). Review $(BOT_IDENTITY_DIR)/introduction.trig before
+#    publishing. Refuses to overwrite an existing key (delete the dir to redo).
+bot-identity:
+	uv run pubmate-bootstrap-identity $(_BOOTSTRAP_ARGS) --generate-keys
+
+# 2. Publish the reviewed introduction to the network (production; pass
+#    BOT_PUBLISH_ARGS=--test-server for the test registry). Overwrites
+#    introduction.trig in place with the published (canonical) version.
+publish-bot-introduction:
+	uv run pubmate-bootstrap-identity $(_BOOTSTRAP_ARGS) \
+		--private-key $(BOT_IDENTITY_DIR)/id_rsa --public-key $(BOT_IDENTITY_DIR)/id_rsa.pub \
+		--publish $(BOT_PUBLISH_ARGS)
+
+# 3. Push the signing key (secret) + identity URIs (variables) to the CI repo.
+#    The bot/intro URIs are derived from the published introduction.trig, so run
+#    this after publish-bot-introduction. Needs gh authenticated for $(CI_REPO).
+bot-ci-secrets:
+	@set -e; \
+	intro=$$(grep -oP '@prefix this: <\K[^>]+' $(BOT_IDENTITY_DIR)/introduction.trig); \
+	bot="$$intro/$(BOT_ID)"; \
+	echo "Introduction : $$intro"; echo "Bot agent URI: $$bot"; \
+	gh secret   set NANOPUB_BOT_PRIVATE_KEY --repo $(CI_REPO) < $(BOT_IDENTITY_DIR)/id_rsa; \
+	gh variable set NANOPUB_BOT_PUBLIC_KEY  --repo $(CI_REPO) < $(BOT_IDENTITY_DIR)/id_rsa.pub; \
+	gh variable set NANOPUB_BOT_URI         --repo $(CI_REPO) --body "$$bot"; \
+	gh variable set NANOPUB_BOT_INTRO_URI   --repo $(CI_REPO) --body "$$intro"; \
+	echo "Pushed signing key + identity URIs to $(CI_REPO)."
 
 # Site-facing projection: extract the assertion graph of each published
 # nanopublication (.trig) into plain .ttl. This is a build artifact (under
