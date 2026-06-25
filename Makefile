@@ -33,6 +33,8 @@ MIGRATE_SUGGESTER ?= https://orcid.org/0000-0001-8327-0142
 # the matching form).
 NANOPUB_TYPE ?= https://w3id.org/peh/terms/BioChemEntity
 NANOPUB_TEMPLATE ?= https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM
+# Vocabulary each term links to via dcterms:isPartOf in its assertion.
+NANOPUB_PART_OF ?= https://w3id.org/spaces/biochementity/r/vocabulary
 DRY ?=
 
 # Publishing bot identity (one-time setup; see docs/bot-identity-setup.md).
@@ -198,6 +200,9 @@ publish-defining: prepare
 		--namespace "$(MINT_NAMESPACE)" \
 		--output-dir $(PUBLISHED_FOLDER) \
 		--id-map-file $(ID_MAP_FILE) \
+		--part-of "$(NANOPUB_PART_OF)" \
+		--nanopub-type "$(NANOPUB_TYPE)" \
+		--template "$(NANOPUB_TEMPLATE)" \
 		$(PUBLISH_KEY_ARGS) \
 		$(DRY)
 
@@ -221,6 +226,7 @@ migrate: prepare
 		--default-suggester "$(MIGRATE_SUGGESTER)" \
 		--nanopub-type "$(NANOPUB_TYPE)" \
 		--template "$(NANOPUB_TEMPLATE)" \
+		--part-of "$(NANOPUB_PART_OF)" \
 		$(PUBLISH_KEY_ARGS) \
 		$(DRY)
 
