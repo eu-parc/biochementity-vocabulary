@@ -60,24 +60,13 @@ it somewhere safe (password manager / secret store).
 
 ## Wire it into publishing (B4 live activation)
 
-The publish targets take the signing material through `PUBLISH_KEY_ARGS`; in
-`publish-defining.yaml`, materialize the key from the secret and pass the args:
+The live steps already exist in `.github/workflows/publish-defining.yaml` as
+commented-out blocks marked **`LIVE:`** — uncomment them (and drop/guard the
+test-publish + upload steps) to switch the workflow to the real bot key, the
+production registry, the on-merge trigger, and committing `published/` + the
+id-map back. They consume the secret + variables `make bot-ci-secrets` set above.
 
-```yaml
-- name: Write bot signing key
-  run: |
-    install -m 600 /dev/null bot_id_rsa
-    printf '%s' "${{ secrets.NANOPUB_BOT_PRIVATE_KEY }}" > bot_id_rsa
-    printf '%s' "${{ vars.NANOPUB_BOT_PUBLIC_KEY }}"     > bot_id_rsa.pub
-
-- name: Mint and publish defining nanopubs (production)
-  run: |
-    make publish-defining \
-      PUBLISH_KEY_ARGS="--private-key bot_id_rsa --public-key bot_id_rsa.pub \
-        --orcid-id ${{ vars.NANOPUB_BOT_URI }} --name 'Biochementity bot' \
-        --intro-nanopub-uri ${{ vars.NANOPUB_BOT_INTRO_URI }}"
-```
-
+The publish targets take the signing material through `PUBLISH_KEY_ARGS`, where
 `--orcid-id` is the **bot agent URI** (so `npx:signedBy` resolves to the bot, not
 a person). The same `PUBLISH_KEY_ARGS` drives the one-time `make migrate` (B6), so
 migration and all later incremental publishing share one bot identity.

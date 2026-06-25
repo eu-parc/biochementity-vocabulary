@@ -5,10 +5,13 @@ name: Publish defining nanopubs (test registry)
 # nanopub TEST server using nanopub-testsuite keys (no repo secrets). Results are
 # uploaded as artifacts, not committed -- these are throwaway test nanopubs.
 #
-# Going live (the B4 activation step, not done here): switch to the real bot key
-# (a GitHub secret) + intro nanopub, pin pubmate back to an eu-parc tag, trigger
-# on merge to main, and commit published/ + the id-map. Seeding the id-map for
-# the existing 879 terms is the migration (B6).
+# Going live (the B4 activation step) is staged below as commented-out blocks
+# marked "LIVE:" -- uncomment them (and drop/guard the test-publish + upload
+# steps) to switch this workflow to the real bot key + production registry, the
+# on-merge trigger, and committing published/ + the id-map back to the repo.
+# Prerequisites: the bot identity exists (see docs/bot-identity-setup.md) and
+# pubmate is pinned to the eu-parc v0.2.0 tag. Seeding the id-map for the existing
+# terms is the migration (B6).
 
 on:
   workflow_dispatch:
@@ -20,9 +23,15 @@ on:
           - dry-run
           - test-publish
         default: dry-run
+  # LIVE: publish automatically when accepted terms land on main.
+  # push:
+  #   branches: [main]
+  #   paths: ["dropbox/**"]
 
 permissions:
   contents: read
+  # LIVE: write is needed to commit published/*.trig + the id-map back.
+  # contents: write
 
 jobs:
   publish:
@@ -51,6 +60,33 @@ jobs:
       - name: Mint and publish defining nanopubs (test server)
         if: ${{ inputs.mode == 'test-publish' }}
         run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions
+
+      # LIVE: real bot key -> production registry -> commit the results back.
+      # Uncomment these three steps (and drop the test-publish + upload steps
+      # above, plus the "Build proposed term assertions" override so it mints the
+      # committed unpublished/ backlog incrementally -- already-minted terms are
+      # skipped via the id-map). See docs/bot-identity-setup.md for the secret +
+      # variables these reference.
+      # - name: Write bot signing key
+      #   run: |
+      #     install -m 600 /dev/null bot_id_rsa
+      #     printf '%s' "${{ secrets.NANOPUB_BOT_PRIVATE_KEY }}" > bot_id_rsa
+      #     printf '%s' "${{ vars.NANOPUB_BOT_PUBLIC_KEY }}"     > bot_id_rsa.pub
+      #
+      # - name: Mint and publish defining nanopubs (production)
+      #   run: |
+      #     make publish-defining \
+      #       PUBLISH_KEY_ARGS="--private-key bot_id_rsa --public-key bot_id_rsa.pub \
+      #         --orcid-id ${{ vars.NANOPUB_BOT_URI }} --name 'Biochementity bot' \
+      #         --intro-nanopub-uri ${{ vars.NANOPUB_BOT_INTRO_URI }}"
+      #
+      # - name: Commit published nanopubs + id-map
+      #   run: |
+      #     git config user.name "biochementity-bot"
+      #     git config user.email "noreply@knowledgepixels.com"
+      #     git add published/ redirect/id-map.tsv
+      #     git diff --cached --quiet || git commit -m "Publish defining nanopubs [skip ci]"
+      #     git push
 
       - name: Upload nanopubs and id-map
         uses: actions/upload-artifact@v4
