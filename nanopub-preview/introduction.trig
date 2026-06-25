@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/np/RAulwh714FAWRCH3bYEtPfH9wJOQX5ccZWwMMZl3ZxcEk> .
-@prefix sub: <https://w3id.org/np/RAulwh714FAWRCH3bYEtPfH9wJOQX5ccZWwMMZl3ZxcEk/> .
+@prefix this: <https://w3id.org/np/RAFnBXTMzaT6p-4NanRc4GdJXm-5rfHhjs0XcHBnO6b8s> .
+@prefix sub: <https://w3id.org/np/RAFnBXTMzaT6p-4NanRc4GdJXm-5rfHhjs0XcHBnO6b8s/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
@@ -20,7 +20,7 @@ sub:Head {
 sub:assertion {
     sub:keydecl npx:declaredBy sub:biochementity-bot ;
         npx:hasAlgorithm "RSA" ;
-        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PJWDNPXdImIMK3cDWr27o0p1kZnNXh8illKp1gOVwpt+57R7ZyT8Wy4WlBMgS+KGL2P0TVH3zB/kCp7fUy/pkQaF9t/qO+CNxPAi3VlQzSy+TFWrGFtdYaYEARauLcM/ABbSScOih4qZknGV4Nn2nKxyWRVSBp1jkq2srjQ5WaF27d4UTdCs3W4nN+zZWXo95QXzsYmhLmSFpN9vdlZ0lS5GLkGfpAxUPLJEm5lWFFwCx8Dt+33b/6vjWbc6QxWi91HhCNDVY9YiYuj5MpOpHi7I4RjFrtb4Kg/+T7LlZpJ2HmY2vYLILbYbRht/0d0pP3iTluHHftw9uaPTxRkEwIDAQAB" .
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4kOTq/y5P9RfqzFfW62uGZuRui2l51RzIUx7mOt/+a9aSeRwuS6y9pXh4czzwcIbQOGQIR39yMWzKJBkcXiGczZ//a08m5hrA7V/num06nJSoBMmC7BhcR7vFZzVAiyUKqEujdatFKyLWKcvXCAJcogY8juVQfUF+2V7ULfCzC6G+t3S5DHuiAyDftlkKvfjjWcgwayc3eaAmsXftcZRhUbQZSliCtPs+YEVQuSDhh9V9tI/jUCKldQVNwllP+oIQn2bopQoqtu36LQRlSq6Q0SLWml4PxsfTALZkocxfS+BBmlD0DrnycPhe4ZJunApywfwdntevl8cKwrGCsyrUQIDAQAB" .
     sub:biochementity-bot a npx:Bot,
             npx:SoftwareAgent ;
         frbr:owner orcid:0000-0001-8327-0142 ;
@@ -34,14 +34,14 @@ sub:provenance {
 sub:pubinfo {
     orcid:0000-0001-8327-0142 foaf:name "Gertjan Bisschop" .
     sub:sig npx:hasAlgorithm "RSA" ;
-        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PJWDNPXdImIMK3cDWr27o0p1kZnNXh8illKp1gOVwpt+57R7ZyT8Wy4WlBMgS+KGL2P0TVH3zB/kCp7fUy/pkQaF9t/qO+CNxPAi3VlQzSy+TFWrGFtdYaYEARauLcM/ABbSScOih4qZknGV4Nn2nKxyWRVSBp1jkq2srjQ5WaF27d4UTdCs3W4nN+zZWXo95QXzsYmhLmSFpN9vdlZ0lS5GLkGfpAxUPLJEm5lWFFwCx8Dt+33b/6vjWbc6QxWi91HhCNDVY9YiYuj5MpOpHi7I4RjFrtb4Kg/+T7LlZpJ2HmY2vYLILbYbRht/0d0pP3iTluHHftw9uaPTxRkEwIDAQAB" ;
-        npx:hasSignature "ZUO7X0vgnPRGEhJTvjC2+HblpiVHxpo5PPUgt6DksvieCM7SYxwoVmAwFePH/fJVGXFQB3W6oJV70MllreugAdYgrF3vdOveCDZmFtRC++YIOkK4n7ObmNW260IJDy1sdljrDejEFMkviXeTwCSd0fikoglGOol2nDOXju9IiqLIitOuaLqIFtoMCa2Kea0RzWSd8WLvKiP6c0pZYUMLl5eRlhCEXDxDrFmQt7OGHd73wvAooQ2xhFMoEzajHjZUJ71HbEO+e+89Mfmog6FNuWbk9YjOAGIVeSGuj+LzM4geqrBs1TiEZsG1tESnIeab5a9pHclCMFraSbK9KmExgQ==" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4kOTq/y5P9RfqzFfW62uGZuRui2l51RzIUx7mOt/+a9aSeRwuS6y9pXh4czzwcIbQOGQIR39yMWzKJBkcXiGczZ//a08m5hrA7V/num06nJSoBMmC7BhcR7vFZzVAiyUKqEujdatFKyLWKcvXCAJcogY8juVQfUF+2V7ULfCzC6G+t3S5DHuiAyDftlkKvfjjWcgwayc3eaAmsXftcZRhUbQZSliCtPs+YEVQuSDhh9V9tI/jUCKldQVNwllP+oIQn2bopQoqtu36LQRlSq6Q0SLWml4PxsfTALZkocxfS+BBmlD0DrnycPhe4ZJunApywfwdntevl8cKwrGCsyrUQIDAQAB" ;
+        npx:hasSignature "xQdmM1gBmQxGGPohINez3uSGetF5tbqRAP1P1hUyW1bVRT29hxr/DymxToKbzAQwMtEf5U3NjwALnRrwnBP9EtYzb8Zw/J220Y8bMXUVSBlFiYkB9sn0a1nt+dYZsgY5DiNYXa2cHO4Eu30Jrlnto5yhKjFtCj9h8gjkHrevyrTb9G94no5G8yHfTQwQAyqyLthQVFlFKQjBjI3JP2X1dTVf4RESVa6p9PxIHPj6f7aKXg1KhNVJZPeFBrP8N23ql7z//dyLsSmemm/HH6odG4jGLNK/pGPwMn7mXKWcbdoPDF4R29piO6lXiyi2Y6kM/n3+MQ7/vSJSW2x4/uO1DA==" ;
         npx:hasSignatureTarget this: ;
         npx:signedBy sub:biochementity-bot .
     this: dcterms:creator sub:biochementity-bot ;
         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
         npx:hasNanopubType npx:declaredBy ;
         npx:introduces sub:biochementity-bot ;
-        prov:generatedAtTime "2026-06-24T11:50:30.395881+02:00"^^xsd:dateTime ;
+        prov:generatedAtTime "2026-06-25T08:17:31.592576+02:00"^^xsd:dateTime ;
         nt:wasCreatedFromTemplate <https://w3id.org/np/RAbn04KkfbV5PK2UDGkp-j7RUghs_y75DL4qWl_8zQQ3w> .
 }

@@ -27,6 +27,12 @@ PUBLISH_KEY_ARGS ?= --use-testsuite-keys
 # Suggester (prov:wasAttributedTo) attributed to every existing term during the
 # one-time `migrate`. All current data was contributed by Gertjan Bisschop.
 MIGRATE_SUGGESTER ?= https://orcid.org/0000-0001-8327-0142
+# pubinfo tags stamped on every minted nanopub: npx:hasNanopubType (the kind of
+# thing each nanopub defines) and nt:wasCreatedFromTemplate (the published
+# "Defining a biochementity" assertion template, so Nanodash renders them with
+# the matching form).
+NANOPUB_TYPE ?= https://w3id.org/peh/terms/BioChemEntity
+NANOPUB_TEMPLATE ?= https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM
 DRY ?=
 
 DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
@@ -195,6 +201,8 @@ migrate: prepare
 		--output-dir $(PUBLISHED_FOLDER) \
 		--id-map-file $(ID_MAP_FILE) \
 		--default-suggester "$(MIGRATE_SUGGESTER)" \
+		--nanopub-type "$(NANOPUB_TYPE)" \
+		--template "$(NANOPUB_TEMPLATE)" \
 		$(PUBLISH_KEY_ARGS) \
 		$(DRY)
 

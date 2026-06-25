@@ -22,6 +22,11 @@ PR is merged** (so the squash-merge nets it out of the upstream history).
 - **Signer / publisher** (in each `pubinfo` graph): `npx:signedBy` and
   `prov:wasAttributedTo` point at the throw-away bot agent URI (the same one
   `introduction.trig` declares), so the bot-identity wiring can be checked too.
+- **Pubinfo tags** (in each `pubinfo` graph): `npx:hasNanopubType
+  pehterms:BioChemEntity` (categorizes the nanopub) and
+  `nt:wasCreatedFromTemplate <…/RAhSlIuuw5…>` — the published "Defining a
+  biochementity" assertion template, so Nanodash renders each one with the
+  matching form.
 - Inter-term links resolved to the new trusty thing URIs; cyclic `isIsomerOf`
   links added by the 21 superseding nanopubs.
 - Short blank-node labels (`sub:_b1`) and readable prefixes.
