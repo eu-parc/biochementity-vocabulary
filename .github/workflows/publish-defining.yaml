@@ -1,97 +1,145 @@
-name: Publish defining nanopubs (test registry)
+name: Publish defining nanopubs
 
-# B4 (test-registry stage). Manual trigger: mint the dropbox proposal on the
-# selected branch into signed defining nanopublications and publish them to the
-# nanopub TEST server using nanopub-testsuite keys (no repo secrets). Results are
-# uploaded as artifacts, not committed -- these are throwaway test nanopubs.
+# Mints the dropbox proposal into signed defining nanopublications. One workflow,
+# three real paths selected by `mode` (no commented-out blocks):
 #
-# Going live (the B4 activation step) is staged below as commented-out blocks
-# marked "LIVE:" -- uncomment them (and drop/guard the test-publish + upload
-# steps) to switch this workflow to the real bot key + production registry, the
-# on-merge trigger, and committing published/ + the id-map back to the repo.
-# Prerequisites: the bot identity exists (see docs/bot-identity-setup.md) and
-# pubmate is pinned to the eu-parc v0.2.0 tag. Seeding the id-map for the existing
-# terms is the migration (B6).
+#   dry-run       offline, ephemeral key -- proves each proposed term forms a
+#                 valid, signable nanopub. No secrets, no network. Safe anywhere.
+#   test-publish  signs with nanopub-testsuite keys and publishes to the nanopub
+#                 TEST registry. No repo secrets. Results uploaded as artifacts.
+#   production    signs with the real bot key (repo secret) and publishes to the
+#                 production registry, then commits published/ + the id-map back.
+#
+# The production path is the on-merge default (push to main touching dropbox/**)
+# and is also selectable manually. It is GUARDED, not commented: it only runs when
+# the bot signing key is configured as a repo secret (see docs/bot-identity-setup.md).
+# Until then it skips with a notice, so this workflow is safe to merge as-is and
+# going live needs no edits -- just add the NANOPUB_BOT_* secret/variables.
+#
+# dry-run and test-publish share the same `make publish-defining` invocation as
+# production (differing only in PUBLISH_KEY_ARGS and the commit step), so running
+# the test paths exercises almost all of the production path's logic.
+#
+# Prerequisite for the production path: the bot identity exists and pubmate is
+# pinned to the eu-parc v0.2.1 tag. Seeding the id-map for the existing terms is
+# the one-time migration (B6, `make migrate`).
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "dry-run (offline, ephemeral key) or test-publish (nanopub test server)"
+        description: "dry-run (offline) | test-publish (test registry) | production (real bot key + production registry)"
         type: choice
         options:
           - dry-run
           - test-publish
+          - production
         default: dry-run
-  # LIVE: publish automatically when accepted terms land on main.
-  # push:
-  #   branches: [main]
-  #   paths: ["dropbox/**"]
+  # Production on merge: accepted terms landing on main are published automatically.
+  push:
+    branches: [main]
+    paths: ["dropbox/**"]
 
 permissions:
-  contents: read
-  # LIVE: write is needed to commit published/*.trig + the id-map back.
-  # contents: write
+  # write is needed by the production path to commit published/*.trig + the id-map
+  # back. Only the guarded commit step uses it; the other paths never write.
+  contents: write
 
 jobs:
-  publish:
+  # Expose whether the bot signing key is configured. `if:` cannot read secrets
+  # directly, so we surface it as a job output the production steps gate on.
+  config:
     runs-on: ubuntu-latest
+    outputs:
+      has-bot-key: ${{ steps.check.outputs.has-bot-key }}
+    steps:
+      - id: check
+        env:
+          BOT_KEY: ${{ secrets.NANOPUB_BOT_PRIVATE_KEY }}
+        run: |
+          if [ -n "$BOT_KEY" ]; then
+            echo "has-bot-key=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has-bot-key=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  publish:
+    needs: config
+    runs-on: ubuntu-latest
+    # Effective mode: push to main is always production; manual runs use the input.
+    env:
+      MODE: ${{ github.event_name == 'push' && 'production' || inputs.mode }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          # full history so the production path can commit + push results back.
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v8.2.0
 
       - name: Install dependencies
         run: uv sync
 
-      # Build the dropbox proposal on this branch into an isolated assertion set,
-      # so we mint only the proposed terms (not the committed unpublished/ backlog).
+      # Notice (not failure) when production is requested but no bot key is set:
+      # lets dropbox merges stay green before the bot identity is wired up.
+      - name: Production requested without bot key -- skipping
+        if: ${{ env.MODE == 'production' && needs.config.outputs.has-bot-key != 'true' }}
+        run: |
+          echo "::notice::Production publish requested but NANOPUB_BOT_PRIVATE_KEY is not configured."
+          echo "::notice::Skipping publish. See docs/bot-identity-setup.md to wire up the bot identity."
+
+      # Non-production modes mint only the proposed terms on this branch, built
+      # into an isolated assertion set (not the committed unpublished/ backlog).
       - name: Build proposed term assertions
+        if: ${{ env.MODE != 'production' }}
         run: make validate-pipeline UNPUBLISHED_FOLDER=build/pr-assertions
 
       - name: Install test-server signing support
-        if: ${{ inputs.mode == 'test-publish' }}
+        if: ${{ env.MODE == 'test-publish' }}
         run: uv pip install nanopub-testsuite-connector
 
-      - name: Mint defining nanopubs (dry-run)
-        if: ${{ inputs.mode == 'dry-run' }}
+      - name: Mint defining nanopubs (dry-run, offline)
+        if: ${{ env.MODE == 'dry-run' }}
         run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS= DRY=--dry-run
 
-      - name: Mint and publish defining nanopubs (test server)
-        if: ${{ inputs.mode == 'test-publish' }}
+      - name: Mint and publish defining nanopubs (test registry)
+        if: ${{ env.MODE == 'test-publish' }}
         run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions
 
-      # LIVE: real bot key -> production registry -> commit the results back.
-      # Uncomment these three steps (and drop the test-publish + upload steps
-      # above, plus the "Build proposed term assertions" override so it mints the
-      # committed unpublished/ backlog incrementally -- already-minted terms are
-      # skipped via the id-map). See docs/bot-identity-setup.md for the secret +
-      # variables these reference.
-      # - name: Write bot signing key
-      #   run: |
-      #     install -m 600 /dev/null bot_id_rsa
-      #     printf '%s' "${{ secrets.NANOPUB_BOT_PRIVATE_KEY }}" > bot_id_rsa
-      #     printf '%s' "${{ vars.NANOPUB_BOT_PUBLIC_KEY }}"     > bot_id_rsa.pub
-      #
-      # - name: Mint and publish defining nanopubs (production)
-      #   run: |
-      #     make publish-defining \
-      #       PUBLISH_KEY_ARGS="--private-key bot_id_rsa --public-key bot_id_rsa.pub \
-      #         --orcid-id ${{ vars.NANOPUB_BOT_URI }} --name 'Biochementity bot' \
-      #         --intro-nanopub-uri ${{ vars.NANOPUB_BOT_INTRO_URI }}"
-      #
-      # - name: Commit published nanopubs + id-map
-      #   run: |
-      #     git config user.name "biochementity-bot"
-      #     git config user.email "noreply@knowledgepixels.com"
-      #     git add published/ redirect/id-map.tsv
-      #     git diff --cached --quiet || git commit -m "Publish defining nanopubs [skip ci]"
-      #     git push
+      # --- Production path (guarded on the bot key being configured) ---
+      # Mints the committed unpublished/ backlog incrementally: terms already in
+      # the id-map are skipped, so re-runs only publish what is new.
+      - name: Write bot signing key
+        if: ${{ env.MODE == 'production' && needs.config.outputs.has-bot-key == 'true' }}
+        run: |
+          install -m 600 /dev/null bot_id_rsa
+          printf '%s' "${{ secrets.NANOPUB_BOT_PRIVATE_KEY }}" > bot_id_rsa
+          printf '%s' "${{ vars.NANOPUB_BOT_PUBLIC_KEY }}"     > bot_id_rsa.pub
 
+      - name: Mint and publish defining nanopubs (production)
+        if: ${{ env.MODE == 'production' && needs.config.outputs.has-bot-key == 'true' }}
+        run: |
+          make publish-defining \
+            PUBLISH_KEY_ARGS="--private-key bot_id_rsa --public-key bot_id_rsa.pub \
+              --orcid-id ${{ vars.NANOPUB_BOT_URI }} --name 'Biochementity bot' \
+              --intro-nanopub-uri ${{ vars.NANOPUB_BOT_INTRO_URI }}"
+
+      - name: Commit published nanopubs + id-map
+        if: ${{ env.MODE == 'production' && needs.config.outputs.has-bot-key == 'true' }}
+        run: |
+          rm -f bot_id_rsa bot_id_rsa.pub
+          git config user.name "biochementity-bot"
+          git config user.email "noreply@knowledgepixels.com"
+          git add published/ redirect/id-map.tsv
+          git diff --cached --quiet || git commit -m "Publish defining nanopubs [skip ci]"
+          git push
+
+      # Test paths keep their results as throwaway artifacts (nothing committed).
       - name: Upload nanopubs and id-map
+        if: ${{ env.MODE != 'production' }}
         uses: actions/upload-artifact@v4
         with:
-          name: defining-nanopubs-${{ inputs.mode }}
+          name: defining-nanopubs-${{ env.MODE }}
           path: |
             published/
             redirect/id-map.tsv

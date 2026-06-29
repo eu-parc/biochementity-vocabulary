@@ -29,8 +29,8 @@ The bot publishes to the nanopub **production** registry. Pass
 
 ## Prerequisites
 
-`pubmate >= 0.2.0` (provides `pubmate-bootstrap-identity`), available once this
-repo's `pyproject.toml` is pinned to `eu-parc/pubmate` `v0.2.0`. `gh`
+`pubmate >= 0.2.1` (provides `pubmate-bootstrap-identity`), available once this
+repo's `pyproject.toml` is pinned to `eu-parc/pubmate` `v0.2.1`. `gh`
 authenticated with access to `CI_REPO`.
 
 ## Steps
@@ -60,11 +60,16 @@ it somewhere safe (password manager / secret store).
 
 ## Wire it into publishing (B4 live activation)
 
-The live steps already exist in `.github/workflows/publish-defining.yaml` as
-commented-out blocks marked **`LIVE:`** — uncomment them (and drop/guard the
-test-publish + upload steps) to switch the workflow to the real bot key, the
-production registry, the on-merge trigger, and committing `published/` + the
-id-map back. They consume the secret + variables `make bot-ci-secrets` set above.
+The production path already exists in `.github/workflows/publish-defining.yaml`
+as a real, `mode == production` code path — not commented out. It runs on merges
+to `main` touching `dropbox/**` (and is selectable via the manual `mode` input),
+but is **guarded**: a `config` job checks whether `NANOPUB_BOT_PRIVATE_KEY` is set
+and the publish/commit steps only run when it is. Until then the production path
+skips with a notice, so dropbox merges stay green.
+
+This means activation needs **no workflow edits** — running `make bot-ci-secrets`
+above (which sets the secret + `NANOPUB_BOT_*` variables on `CI_REPO`) is what
+flips the production path from "skip with notice" to live.
 
 The publish targets take the signing material through `PUBLISH_KEY_ARGS`, where
 `--orcid-id` is the **bot agent URI** (so `npx:signedBy` resolves to the bot, not
