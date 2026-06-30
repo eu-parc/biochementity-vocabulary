@@ -1,0 +1,64 @@
+@prefix this: <https://w3id.org/np/RAVvVFWtcFYDbEqLZO7AE1BU_Pia3nlkv7tRA3QKuyI9E> .
+@prefix sub: <https://w3id.org/np/RAVvVFWtcFYDbEqLZO7AE1BU_Pia3nlkv7tRA3QKuyI9E/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVvVFWtcFYDbEqLZO7AE1BU_Pia3nlkv7tRA3QKuyI9E a owl:Class ;
+        rdfs:label "Difenoconazole CGA205374",
+            "Difenoconazole CGA205374"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "1-(2-Chloro-4-(4-chlorophenoxy)phenyl)-2-(1H-1,2,4-triazol-1-yl)ethanone",
+            "Difenoconazole CGA-205374",
+            "Difenoconazole CGA-205374"@nl-be ;
+        ns1:comment "comments: This is a metabolite of Difenoconazole. Parent compound correctly identified?" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:136815-80-0>,
+            <https://identifiers.org/inchikey:HCYKJGWQCCFTNV-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15753778> ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "pesticides" ;
+        ns2:isMetaboliteOf biochementity:RAZw_LDK21-GNOPrZHDy4eXLVcdN3VbZyAHp3QU_-jlt8 .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "difenoconcga" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:00.015973+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "BtQiUSLUHH81mqZMlI1xd+YvN+o/TAgv0qW61ZWeR8hbRgi7LQ+PIdKSsqixUXPecKP15QZNLl2B/GjHX0O+uaBT45xgU9D8iy3AmZEdGeCNYIot/0N8I1Nv7fO0SSDIk8yIdtFb1RBdpIlOWRspawKk9iXjKoEJx941o8YnR0C1VfRt/vWYGCJx9TK0wjQv/p56d+uqgGG525Y5fW9CxqjKqiLvKxlCq7uWlL2XzWZQRJaKpKJBRtbJSwFv88udrZjy6NhRkzPK1zZ4iS6yYKv6A0j+Kp+xT0BfiTLZIOw5dHBzfxOdoQWg/5aTsoE93kR8le+Fh7oU5Nrgj4kYmA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Difenoconazole CGA205374" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAVvVFWtcFYDbEqLZO7AE1BU_Pia3nlkv7tRA3QKuyI9E ;
+        prov:generatedAtTime "2026-06-30T21:06:00.015973+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAruxykFNKFulz_6U9TPWovPM4NsMtjgxZs-fzNgtVQF4> .
+@prefix sub: <https://w3id.org/np/RAruxykFNKFulz_6U9TPWovPM4NsMtjgxZs-fzNgtVQF4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAruxykFNKFulz_6U9TPWovPM4NsMtjgxZs-fzNgtVQF4 a owl:Class ;
+        rdfs:label "Fluazifop",
+            "2-[4-[5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic acid"@nl-be ;
+        ns2:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_25944> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "2-[4-[5-(trifluoromethyl)pyridin-2-yl]oxyphenoxy]propanoic",
+            "Fluazifop",
+            "acid",
+            "Fluazifop"@nl-be ;
+        rdfs:subClassOf ns3:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:83598>,
+            <https://identifiers.org/cas:69335-91-7>,
+            <https://identifiers.org/inchikey:YUVKUEAFAVKILW-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:91701> ;
+        ns3:hasGroupLabel "pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:05.745294+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "egHTpP1iq6FfDZ0ulfCFIbvHH3QePlxIOxr2SbQ2JDbO0GiXPKG+p7SuqEWxeG9++XrP4FFKA32R+yxyG0gvs0xjUC/3eVTaxBHv9bIRYmxmC+JHc1/ouF9uOdgIboqsndoUIaR0E24RUNo7Dh1Ure8USJEb2vz5KEc19NUIq3SL/eNZs29quOMl3BOeq7NmSbxj5OTihYN39grsGODWzVXspJzebxYknfDwiFYsgRyJmMLOLgwA50xXptkcPoheYcqWUVjR4RFF9LrADxw7nHsUmYRRpWLXPpuxjpv3a39Lp+KTxFsfuFc7bJn50ecM7dvRTG9VxHxVJ+nh3fhS2A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Fluazifop" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns3:BioChemEntity ;
+        npx:introduces biochementity:RAruxykFNKFulz_6U9TPWovPM4NsMtjgxZs-fzNgtVQF4 ;
+        prov:generatedAtTime "2026-06-30T21:04:05.745294+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

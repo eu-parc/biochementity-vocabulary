@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAen-hB8w2mKectYqPcFjrNWi9WHUXmw7suM18sK9Zyps> .
+@prefix sub: <https://w3id.org/np/RAen-hB8w2mKectYqPcFjrNWi9WHUXmw7suM18sK9Zyps/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAen-hB8w2mKectYqPcFjrNWi9WHUXmw7suM18sK9Zyps a owl:Class ;
+        rdfs:label "Cypermethrin" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "Cypermethrin" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:4042>,
+            <https://identifiers.org/cas:52315-07-8> ;
+        ns2:hasGroupLabel "pesticides",
+            "pyrethroid pesticides" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:42.962312+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "gGnZ8gPiLTPwyUehphRvqK9d50Uu5S1UUw+hMSf4WtXR1GZGvp1A6Rn9lQZ8KlXGLdHPqVpAf6vBBqsUY2aiF9kI2Sjl6Tr9HZgzZ4Z7ybBlSKhRHab65EabF53G+USot4Zqp1sifwax59eOoJDCzhPNn4jo5Royn8NtXM60K9FEUC5Lc0xVt6vOWHy9mkNHADWeKp56dCgvSoPaESbhXSPbOSo+cdtWl8NAzAB9ZKymN+qP6UoG27UUibh+Uux5+kvmeBdxr2y3AO1y8BuZEOi0Tjwayn6RcFsFanHoLKSce9urOghWrg0etvUjyHKw4rNopz3tWIQDNSfpd+MWaQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Cypermethrin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAen-hB8w2mKectYqPcFjrNWi9WHUXmw7suM18sK9Zyps ;
+        prov:generatedAtTime "2026-06-30T21:03:42.962312+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

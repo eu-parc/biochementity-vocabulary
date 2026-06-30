@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAjQfnRJDZOGRhByaKkmJBFG_FwE_OxrLTmV9kNbEONqc> .
+@prefix sub: <https://w3id.org/np/RAjQfnRJDZOGRhByaKkmJBFG_FwE_OxrLTmV9kNbEONqc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjQfnRJDZOGRhByaKkmJBFG_FwE_OxrLTmV9kNbEONqc a owl:Class ;
+        rdfs:label "Mono-isopentyl phthalate",
+            "Mono-isopentylftalaat"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "MiPeP" ;
+        ns2:comment "source: http://exposome-explorer.iarc.fr/compounds/1519" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:BTUUJXBKBIRHPP-UHFFFAOYSA-N> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "phthalates" ;
+        ns1:isMetaboliteOf biochementity:RA6BlDx2y0SbRbLlCUaM_fYRWPNBiv6r8eylVEPiUw52E .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "mipep" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:42.443716+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "N4Q6Aq1W4K7NFihM/LzFiKct/fybA9XxlURiDw9dUD0E49R4dNNT4oeNx0CEyU/2aFlPsKvyu66xzQcQPm5w8H9420jEJu8UHQOijFwWSVNiIoBEjL1oENl+CEKi74T+Bp9hZSHheJSB1TJkMcLulzD0NxgZPLF/zhVEh0oe6AtyxkFK3EWsMMobyU8rAxx1Xv9xyd+7m0R2W8qkHMmYsxJdN1dG5ROvkcP30THxDAPwri73Wxwqq79eAtbrKqC7hviiKrBYVXn0ve64DNjh9aXKqu/5A+6w9+Mt9IDAS553xJ/aR8Mx6ukSWXqLdPqRQzSwopeL0mKCfUdCcRxoqw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Mono-isopentyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAjQfnRJDZOGRhByaKkmJBFG_FwE_OxrLTmV9kNbEONqc ;
+        prov:generatedAtTime "2026-06-30T21:07:42.443716+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RA6HvlZ7-iGUOqgjSx74Jq9VmhVOt0S-WmmPcQNupPNtg> .
+@prefix sub: <https://w3id.org/np/RA6HvlZ7-iGUOqgjSx74Jq9VmhVOt0S-WmmPcQNupPNtg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA6HvlZ7-iGUOqgjSx74Jq9VmhVOt0S-WmmPcQNupPNtg a owl:Class ;
+        rdfs:label "Active Vitamin B12",
+            "Actief vitamine B12"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "Holo-transcobalamin II",
+            "VitB12" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP156140-8> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:13.870151+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "qAMeEpToXtib5KIdNdjViAgEyEQE6XUaUs3shGLazh7ogG8b2RkF0R+l55ukgZorzDUMTGA0p+W+i27jS/pzTb9/UFBtjX8Sj28Wif+5UpPoTt7y3l1WKI/w6JZJ+vfg1MAISwkg2vwlpdvsu/PtiAkM/sJtDhCM6rROsyhD7akuBCL/HLEPTSzzgo37tUxwAEvpUhFnkP5zsjuyY1HvzNIOO32X/LasWimV1i2o34mYt1NRABjI7RxbxyIJWpJQ/AZIa0VWpTFOoytZcbtDxFW8xW7d2RM76DyVskVO/T9/fFqmm5H1/Q2VzBezz98tSll9atVrJz8F2riGxbixmg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Active Vitamin B12" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType pehterms:BioChemEntity ;
+        npx:introduces biochementity:RA6HvlZ7-iGUOqgjSx74Jq9VmhVOt0S-WmmPcQNupPNtg ;
+        prov:generatedAtTime "2026-06-30T21:04:13.870151+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

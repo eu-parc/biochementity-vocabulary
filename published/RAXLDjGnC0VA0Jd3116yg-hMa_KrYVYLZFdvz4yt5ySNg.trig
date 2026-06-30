@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAXLDjGnC0VA0Jd3116yg-hMa_KrYVYLZFdvz4yt5ySNg> .
+@prefix sub: <https://w3id.org/np/RAXLDjGnC0VA0Jd3116yg-hMa_KrYVYLZFdvz4yt5ySNg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAXLDjGnC0VA0Jd3116yg-hMa_KrYVYLZFdvz4yt5ySNg a owl:Class ;
+        rdfs:label "Deoxynivalenol-3-glucuronide",
+            "Deoxynivalenol-3-glucuronide"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "DON-3-GlcA" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:1000000-13-4>,
+            <https://identifiers.org/inchikey:GRFAWUZMBBQEMX-IJNZYEPRSA-N>,
+            <https://identifiers.org/pubchem.compound:102202100> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "mycotoxins" ;
+        ns1:isMetaboliteOf biochementity:RAP67i9w_15JS6qtLwEWgUHMtNBK9ZoJQDNvVjIb0SxEg .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "dontglca" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:02.068407+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "S3wA8JkrKrPn4gkwNEj18UBqVFgeDMew/huKVnEeroQyrebT7VAULKGXG4hLM/hDomBaxKBU98M+SOANd2tIZZzb6C2uR6d16JgMrPbhAl4/ErHZszNEr/5IPfSHnRnlBXjkwy6oc7rFcYky9bKpqyN6ySoNq89X1B1+uRhisrOsuBCBuOZ2+yuiPUyenoJJpoBByIBo45mP/PiJkpNOmPxGEz5gio5T0+beqgYW3PD55urakazv+H9D00yKhXTVkRgzX6g6dfehDBFcdZm/QzyjZfszV0swM94b5b3dDoMHMooSEgqmF6lvxcQCZkm8Y0QNogvVl5HadFmuYxIq1g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Deoxynivalenol-3-glucuronide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAXLDjGnC0VA0Jd3116yg-hMa_KrYVYLZFdvz4yt5ySNg ;
+        prov:generatedAtTime "2026-06-30T21:07:02.068407+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

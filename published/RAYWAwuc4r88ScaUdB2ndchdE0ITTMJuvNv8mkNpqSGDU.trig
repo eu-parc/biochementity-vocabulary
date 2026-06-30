@@ -1,0 +1,63 @@
+@prefix this: <https://w3id.org/np/RAYWAwuc4r88ScaUdB2ndchdE0ITTMJuvNv8mkNpqSGDU> .
+@prefix sub: <https://w3id.org/np/RAYWAwuc4r88ScaUdB2ndchdE0ITTMJuvNv8mkNpqSGDU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAYWAwuc4r88ScaUdB2ndchdE0ITTMJuvNv8mkNpqSGDU a owl:Class ;
+        rdfs:label "2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide",
+            "2-Chloor-N-(2,6-diethylfenyl)-N-(methoxymethyl)aceetamide"@nl-be ;
+        ns1:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_24527> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "Alachlor" ;
+        rdfs:subClassOf ns3:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:2533>,
+            <https://identifiers.org/cas:15972-60-8>,
+            <https://identifiers.org/inchikey:XCSGPAVHZFQHGE-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:2078> ;
+        ns3:hasContextAlias sub:_b1 ;
+        ns3:hasGroupLabel "herbicides" .
+    sub:_b1 a ns3:ContextAlias ;
+        ns2:alternateName "alchlor" ;
+        ns2:identifier "short_name" ;
+        ns3:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:05:02.352759+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "Kq6G+qHqUYRq2kTk49P51C1t9eCp7t63t3Ahy8Tzw2qRyc8SFaFX0XN9/iBtVoxuMy6usK1yvp2ENzOXa7TspIXrCNcdo8+NhH2CAae3e3XBUFHqCNct+6UkyzUB8rFgLNqI54uHo0qtUk6bjuRYwo9uD1rm0qzMekHtl29gx5+TCwpBo2KakZtyQiOxsDp+2hqmF1ZPbYK0aBGJz+bph66L1h0f0dWW4lDWd/xdeLV9sLH2EMh7mepCe6a+dA52pQ/M/bOQrEnhszzC6QzUtsGQ+waICMNNmFOaOZshOjj3A8ciiFqZjjHHdZpwsn4/+A34zUsL+TRxzOv/jDOVkg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns3:BioChemEntity ;
+        npx:introduces biochementity:RAYWAwuc4r88ScaUdB2ndchdE0ITTMJuvNv8mkNpqSGDU ;
+        prov:generatedAtTime "2026-06-30T21:05:02.352759+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

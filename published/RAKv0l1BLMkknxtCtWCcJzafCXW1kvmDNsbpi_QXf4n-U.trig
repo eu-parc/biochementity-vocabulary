@@ -1,0 +1,65 @@
+@prefix this: <https://w3id.org/np/RAKv0l1BLMkknxtCtWCcJzafCXW1kvmDNsbpi_QXf4n-U> .
+@prefix sub: <https://w3id.org/np/RAKv0l1BLMkknxtCtWCcJzafCXW1kvmDNsbpi_QXf4n-U/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAKv0l1BLMkknxtCtWCcJzafCXW1kvmDNsbpi_QXf4n-U a owl:Class ;
+        rdfs:label "2,3,7,8-tetrachlorodibenzodioxin",
+            "2,3,7,8-tetrachloordibenzo-p-dioxine"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "2,3,7,8-TCDD",
+            "2,3,7,8-Tetrachlorodibenzo-P-Dioxin",
+            "2,3,7,8-TCDD"@nl-be ;
+        rdfs:subClassOf biochementity:RA8BNEE66eIB4Xk1-_MTGMAwIiC0DmhJzA18Jf8whxu-8,
+            ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:28119>,
+            <https://identifiers.org/cas:1746-01-6>,
+            <https://identifiers.org/inchikey:HGUFODBRKLSHSI-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15625> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "dioxins",
+            "organochlorine compounds" .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "tcbd" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:35.139632+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "lFt0rsk3hTazJ3bbfXSB5UXZZKnflwZbEp6H/GeAMVx0edm4HKAoVVpK6GZBeFkSQr1213Pd66YXZriZ8CVj9shGRavyX0IAFiJ6EAGez1Bv8r+lVZCxhpNAVyTFmKs9iCAvv2cicXtvX+qrmYCr9YCKWkrF28JoWu0QZFAhzgfUfKIvv3z8dSywwlZTjOwch+MKI2wsFnaZ3Dn8jYbrh3fXnUjf+pj3qJQXU8peVgPl01QzFxA1wPoC1qM7o7w+ndrJMgZAT8/YbtBRz4ViTYMwduXFl4XfZ/OjP59I65UI2emoFdPdAzf0jDgzHq/FRBj6qUg935S3cu/L7xiahw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2,3,7,8-tetrachlorodibenzodioxin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAKv0l1BLMkknxtCtWCcJzafCXW1kvmDNsbpi_QXf4n-U ;
+        prov:generatedAtTime "2026-06-30T21:06:35.139632+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

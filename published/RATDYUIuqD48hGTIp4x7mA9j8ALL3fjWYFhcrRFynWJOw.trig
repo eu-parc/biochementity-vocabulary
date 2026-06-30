@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RATDYUIuqD48hGTIp4x7mA9j8ALL3fjWYFhcrRFynWJOw> .
+@prefix sub: <https://w3id.org/np/RATDYUIuqD48hGTIp4x7mA9j8ALL3fjWYFhcrRFynWJOw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RATDYUIuqD48hGTIp4x7mA9j8ALL3fjWYFhcrRFynWJOw a owl:Class ;
+        rdfs:label "Alpha tocopherol",
+            "Alpha tocopherol"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "VitE",
+            "vitamin E" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP15369-9> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:22.865724+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "q2YhSdhXIC41jFtVZUuz5KKTI1IVtGanwZD4C1iC5uJKx5iF42Gyz7lwjsX9s0JIX4S+kzfS2R1acN++0QOt6uOdRNCC4K3IgxwV/EYvzVaTaIiEC611JzfDr4z6l4UPRNPCnDD3+FF2bSySMJti5Qdh3AzRTxkiSumII4SO9ZVA71hsdXyDiWgH3XLwBNSV2FuOd+lEDNkuTEEB75zLFwl2Shd2zyq0gaZBfvk1ZYXKcpyl+6XvIANUpaU55xSIrgdbWSghwSrF9fvei5QNPg0UyN9ug0UhBpcrF8EhbxcReyy5HLtJt7D9p8p5hKNoMRZbVmqx52XBhOZNkYuBAQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Alpha tocopherol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType pehterms:BioChemEntity ;
+        npx:introduces biochementity:RATDYUIuqD48hGTIp4x7mA9j8ALL3fjWYFhcrRFynWJOw ;
+        prov:generatedAtTime "2026-06-30T21:04:22.865724+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

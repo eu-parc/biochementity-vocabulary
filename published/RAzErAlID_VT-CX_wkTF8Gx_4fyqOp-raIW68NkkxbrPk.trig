@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAzErAlID_VT-CX_wkTF8Gx_4fyqOp-raIW68NkkxbrPk> .
+@prefix sub: <https://w3id.org/np/RAzErAlID_VT-CX_wkTF8Gx_4fyqOp-raIW68NkkxbrPk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAzErAlID_VT-CX_wkTF8Gx_4fyqOp-raIW68NkkxbrPk a owl:Class ;
+        rdfs:label "Chlorpropham-4-hydroxy-O-sulfonic acid",
+            "Chlorpropham-4-hydroxy-O-sulfonic acid"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "4-HSA",
+            "4-HSA"@nl-be ;
+        ns2:comment "comments: I found the CAS number herE: https://www.carlroth.com/be/en/antimicrobials/chlorpropham-4-hydroxy-o-sulfonic-acid/p/2ayt.5,  but the INCHIKEY that we had in our DB I don't find anywhere. Also the short_name I don't find anywhere" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:28705-88-6>,
+            <https://identifiers.org/inchikey:ZEAREOZFWMROEI-UHFFFAOYSA-N> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "pesticides" ;
+        ns1:isMetaboliteOf biochementity:RAF4YAoBI_Hu0I3SL1GmYOmRMtc8eDg2LcVULpotVduzQ .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "fourhsa" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:26.099555+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "bbcywnMxZCGCA3WJFbquo2x/92UG2siRhlUtkLkrj7EK1yzFDAZxllzNOjEkeWtKSlm9dt2IaAapodIox4Yc978ILIGIEqwdvfSN2Ta71pW8Vs9MRkLxoYSupLDsgWxnD6M1weRiLAf+0XjGybqcx99q3ksyDVJcxNwF5HqqC1fk/E5xk+peEAExkcTnNZlScET7hes5RgMjNfXcqpliTKbIwBHAlC3YXPHhmkEUlBKQQeB3tpOOjaWgL9OEJJJ6XKJQNJUiP2HJjgPNEUmxBM97i14fleVZ+i9ZQtCg37Tae1fchqQNEs+XS9VKjdhXDqm8ugLfqy7CBJ0B4IFGgw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Chlorpropham-4-hydroxy-O-sulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAzErAlID_VT-CX_wkTF8Gx_4fyqOp-raIW68NkkxbrPk ;
+        prov:generatedAtTime "2026-06-30T21:07:26.099555+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

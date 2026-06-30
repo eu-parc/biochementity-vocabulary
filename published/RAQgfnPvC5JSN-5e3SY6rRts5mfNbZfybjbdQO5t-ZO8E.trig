@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAQgfnPvC5JSN-5e3SY6rRts5mfNbZfybjbdQO5t-ZO8E> .
+@prefix sub: <https://w3id.org/np/RAQgfnPvC5JSN-5e3SY6rRts5mfNbZfybjbdQO5t-ZO8E/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ns3: <http://purl.obolibrary.org/obo/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAQgfnPvC5JSN-5e3SY6rRts5mfNbZfybjbdQO5t-ZO8E a owl:Class ;
+        rdfs:label "Hexabromobiphenyl",
+            "Hexabroombifenyl"@nl-be ;
+        ns3:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "PBB-153",
+            "Pbb '153'" ;
+        ns1:comment "comments: * Since there are no identifying keys in our DB.  Is this compound?https://pubchem.ncbi.nlm.nih.gov/compound/42948" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "flame retardants" .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "pbb153" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:45.014286+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "fkOPRTJnY5cWgNnfF5OaSSoyh5pBv/7lfFLUS0PEH+RjwLzPOBmddb9LfikcjndQNYz17vQDmC0stMkAVEq0z4TNdXa9pu2UvZzW6UcIY6+HnxfWThTQKtvIhp7pdmt3jPaDbZsbuiXBDeF5FGAbChmMUHiVyWyOnRCBSKf3VKhY55Fwt0IPxbJKwOlpkU7CaEBXPso7o4JxXULPC/H9x2FNTNEqdqJz8BBURFQyXPKeM7fA/ibag8YV+Mnzdp4q90dxNAppSLaKPx04JTgChH5C6Qozz7ZDPRmfJ9U5dIwetSVp4FiEtJT8Ik6CKMtuTrGjpk68qhcKvntb1mVdbg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Hexabromobiphenyl" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAQgfnPvC5JSN-5e3SY6rRts5mfNbZfybjbdQO5t-ZO8E ;
+        prov:generatedAtTime "2026-06-30T21:04:45.014286+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

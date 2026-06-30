@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAFgUsnKLfWeYUKmLfLeogs7i29gN2o79F590iQj2P1U8> .
+@prefix sub: <https://w3id.org/np/RAFgUsnKLfWeYUKmLfLeogs7i29gN2o79F590iQj2P1U8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAFgUsnKLfWeYUKmLfLeogs7i29gN2o79F590iQj2P1U8 a owl:Class ;
+        rdfs:label "Diethyl thiophosphate",
+            "Diethylthiophosphate"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "DETP",
+            "DETP"@nl-be ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:156216>,
+            <https://identifiers.org/inchikey:PKUWKAXTAVNIJR-UHFFFAOYSA-M>,
+            <https://identifiers.org/pubchem.compound:3683036> ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "pesticides" ;
+        ns2:isMetaboliteOf biochementity:RA_DsjuVybtGX3PRfc5wbhcMCE2J_kDhR8YJWhJ_GsTEs .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "detp" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:47.311128+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "p9/i68QthvwzJX8jhTGTZZn40yy+gF97KrWaH6/2Ztm45Vj5dq4Ls6QZ+ZMW+cUA+j7Vdel2O3GtGm7zQJX5efBqpxSHKHaz8UWbsg310LoJmxuO7qlYB6zB+1MdBPT7X4LCZr8P5pCdhvdBhBS475WeDsaA2b2bIe7ESD2ftbQIm1PIzW36hqoRoyCVKgTUMALzFa17AzH2Wh7Wk381r8ene5THttzA6ZynUgGYwIDcOp0urGLAlZjxSHDsfyv6Db6rQe76lus3Hb9lSgYAPRDDW4eo2FlU0VDLyRZlW0OpscUhoind0oUebz61WkiWCyZT63fVSZTSKPSctkyBFQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Diethyl thiophosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAFgUsnKLfWeYUKmLfLeogs7i29gN2o79F590iQj2P1U8 ;
+        prov:generatedAtTime "2026-06-30T21:06:47.311128+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

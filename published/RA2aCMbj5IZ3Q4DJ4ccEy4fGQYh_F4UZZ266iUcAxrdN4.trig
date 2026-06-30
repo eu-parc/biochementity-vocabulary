@@ -1,0 +1,63 @@
+@prefix this: <https://w3id.org/np/RA2aCMbj5IZ3Q4DJ4ccEy4fGQYh_F4UZZ266iUcAxrdN4> .
+@prefix sub: <https://w3id.org/np/RA2aCMbj5IZ3Q4DJ4ccEy4fGQYh_F4UZZ266iUcAxrdN4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA2aCMbj5IZ3Q4DJ4ccEy4fGQYh_F4UZZ266iUcAxrdN4 a owl:Class ;
+        rdfs:label "1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate",
+            "1-mono-(2-ethyl-5-hydroxy-hexyl)benzeen-1,4-dicarboxylaat"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "5OH-MEHTP",
+            "Mono‑2‑ethylHydroxyhexyl Terephthalate",
+            "5OH-MEHTP"@nl-be ;
+        ns1:comment "comments: the inchi key directs me to this pubchem https://pubchem.ncbi.nlm.nih.gov/compound/155898867 --> but the compound doesn't seem to be the same. The short_name seems to come from german studies (see source column) --> maybe we can ask UBA for the keys?. source: https://www.umweltprobenbank.de/en/documents/profiles/analytes/27749" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:ODRKAFOVPBFSIN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:155898867> ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "phthalates" ;
+        ns2:isMetaboliteOf biochementity:RAuq1lr-1iNRrznRCL5HhmPWoUJ_SJsaeQjS_pQaclRB0 .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "ohmehtp" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:51.166249+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "mtcwP1ROYqZJa8Cnff2eqT+baZXSk7dmEQZ+v+nsl0SL2p6Nouno+LVsM7LUBRuFzKDvlZRw35Q43faBlYkvh4eHSkM2/CZEneCnYrQPLkjeHq3dYBiA3hSpO/62o4FZXX8BfAHpPfY+rGJA45lmAPcdQCaFegNG6RvC5qIx+mx6jRdcED0Cdv3xLDB1u6/SBmVvB5AIn1aaS+ruxFd8pp9YSrn9ZCRjm35sixGS4QfSbtbbvOUZbRMNk33udzyHgQRuuK1HuByNHPTBfhK3AHbLILN7+m5bq1k+M0QpWiYBy1XWy1rTE94wE1vKdTmOIGJfGLZkiOVCTMM0Q90G0w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RA2aCMbj5IZ3Q4DJ4ccEy4fGQYh_F4UZZ266iUcAxrdN4 ;
+        prov:generatedAtTime "2026-06-30T21:07:51.166249+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

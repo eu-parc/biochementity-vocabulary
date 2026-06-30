@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAmr0DKHpXz03Bm6spnGscnNmt8l3qIQIexKqHxReNcMM> .
+@prefix sub: <https://w3id.org/np/RAmr0DKHpXz03Bm6spnGscnNmt8l3qIQIexKqHxReNcMM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmr0DKHpXz03Bm6spnGscnNmt8l3qIQIexKqHxReNcMM a owl:Class ;
+        rdfs:label "2,4-Dichloroaniline",
+            "2,4-dichlooraniline"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "2,4DChA" ;
+        rdfs:subClassOf biochementity:RAjyYX_HMl9eHRIhMuklKHnTl2bCyGU9MDA0LGP776ZxI,
+            ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:46635>,
+            <https://identifiers.org/cas:554-00-7>,
+            <https://identifiers.org/inchikey:KQCMTOWTPBNWDB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11123> ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "anilines and MOCA" .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "twofourdcha" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:16.158730+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "PKMXA/bngHSnDFYx12msia9IwIcNEJIvWGp65U2eeXTn5VAAq8zIS80Q3zpZeuWtPQHJdd4pxO8gVPedO7zHWnQWZMUE7f2Yyf6/1GCLL48QPAsSbbAb4m9Ad/MM6WlcmecAxjbJEYXN18Salynb0zPwdNF516upB8BNj2Ya4EWACCeeXngRSxji+I4wO86We12nEBR4gxkFN9pOHZsp/lvJ81MT9XiP6RohcqDZXUEuusu14EPLNqHr/nI2WeAzpz4a9y7jtUPkB/+WHFqqqwLBIc0mXp3a6Uolrco7M9eveAiOsnNekBOcNk19OvD9sXc/XTZqOs1Df7uHpWymQA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2,4-Dichloroaniline" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAmr0DKHpXz03Bm6spnGscnNmt8l3qIQIexKqHxReNcMM ;
+        prov:generatedAtTime "2026-06-30T21:07:16.158730+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}
