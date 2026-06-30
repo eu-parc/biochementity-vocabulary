@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAPmjGjyYEwd-Zr-DRJVrX3brs9gpZGAZV52t0NeFOz9Y> .
+@prefix sub: <https://w3id.org/np/RAPmjGjyYEwd-Zr-DRJVrX3brs9gpZGAZV52t0NeFOz9Y/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RANJteOIkkCOmPHNIIpQeR269nN_wQQbSm-pa8V8vzsdU a owl:Class ;
+        rdfs:label "Branched N-Ethylperfluoro-1-octanesulphonamide" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "betpfosa" ;
+        rdfs:subClassOf biochementity:RAiNtRqppkFE_5LQYUWoScSjep5BWETkPbJEnoUTZ8Ilc ;
+        ns2:isIsomerOf biochementity:RABT62vDxg0E017EkXROOkUbxIuNW0t9MxNtXLInPfWYM .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:08:10.182045+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "GLpqOwfXuVUfdQSXXxMwFkoS0CLg4mbWcGefpiRxFBIBZuY0JbHmG1nWF0PSeWi/6w1wXWGSOVbQQU+bmKgsY9tdeN1kTXrJLgRP2/n4TCM+zozd9gILybQimArEW7m5/dmlVhoQl9hJPsFNdF/mXquesQm3ZouidrDb0qMtAEtw9r8lravFS79xJJCpZ20BPLl2iqV05h8y7YL51FsVmsAitD12XuosuF6mohLHZufw61Ae59P1qnPZ7iit0Ouvpjw1RGL2BgddEKV/5Lg5rUZ/C84+N7aAcn9BqEB6WqyVCqhdcvAwcHof6PYupIuy61sF+qbZMciYZqJ4SDh9hg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Branched N-Ethylperfluoro-1-octanesulphonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:supersedes <https://w3id.org/np/RANJteOIkkCOmPHNIIpQeR269nN_wQQbSm-pa8V8vzsdU> ;
+        prov:generatedAtTime "2026-06-30T21:08:10.182045+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAoXzoGHXRTvV0JBvF6EIj4THQO91La0bK6N2_SDVY6H4> .
+@prefix sub: <https://w3id.org/np/RAoXzoGHXRTvV0JBvF6EIj4THQO91La0bK6N2_SDVY6H4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAoXzoGHXRTvV0JBvF6EIj4THQO91La0bK6N2_SDVY6H4 a owl:Class ;
+        rdfs:label "α-zearalenol-glucuronide",
+            "α-zearalenol-glucuronide"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "α-ZEL-Glc" ;
+        ns2:comment "comments: Didn't find this" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "mycotoxins" ;
+        ns1:isMetaboliteOf biochementity:RAmIZs7UBwyqAJcMpyo1x-3G-RNIzle8YOVIFEco2EZ3I .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "azelglca" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:10.505373+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "J28gIOVXo0prWWrb87Mm87/HrwYqRel0D0xXd7BRZFOGxLTVlITiaMIAMqH/1Lzrg3kNom0mHmROdro20aRyUjCA0p7X/q5G6+rwW/7Bn9koSZvHSMNwNiZnjFMATumSpkG5unxV0xhtLkz2/YGgWupKm7Ya8fLiCDnsHmI9jZXAK2UrPQgQMBv087MKdg5Z65mk84K1JrAfIh/d0SWq2fExn9rjf0opWPfvg8Lhcej3HbKSUtR3OIGAG44pkPBwt0bZt0m2SWqigOViYpZ15PkaDW23ASqvftyg8IyP9Iz5TUicfAgc1lvYL3dWY5O1MZ8+PZmWfcfz70nM+JUhoA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "α-zearalenol-glucuronide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAoXzoGHXRTvV0JBvF6EIj4THQO91La0bK6N2_SDVY6H4 ;
+        prov:generatedAtTime "2026-06-30T21:06:10.505373+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

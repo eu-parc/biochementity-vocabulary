@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAtprlKdMJh3CqaM1FscRP6Upi30wkwvKfTN9ZWUpYMhw> .
+@prefix sub: <https://w3id.org/np/RAtprlKdMJh3CqaM1FscRP6Upi30wkwvKfTN9ZWUpYMhw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAtprlKdMJh3CqaM1FscRP6Upi30wkwvKfTN9ZWUpYMhw a owl:Class ;
+        rdfs:label "Interleukin 1",
+            "interleukine 1"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "IL1" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://loinc.org/LP16469-6> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:52.095696+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "DnkWty5BwHJIM8PzePkRoiUBT+JH04QCJ3ggURYiWwK5uOSQy3dT0L15vf1xvb67udCM3ThGDxMFv0bZ0rt9pJWidi2k4GsROJAS19fneLckfkQ8MvnaSXAOOmQi6CEdj3fG3KgMySwLpglGbLX/zXToMnn+255e2mTtFbG51IT890F4FkFUPA/cbFamj0/yIKl/DTk65audRU52CQ8Pxo7oUXao/O+TuLa3K6/Xm9SIIaDXj8p2PzBo+q++fZCGsgVgosyDAaqkHRchdjJPxYlDQkesy+tpECKEdEsV9bK01yjhpkwdBJyjmTi5RTK6NJRj4qxQrRuWpNLm6OCLaw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Interleukin 1" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType pehterms:BioChemEntity ;
+        npx:introduces biochementity:RAtprlKdMJh3CqaM1FscRP6Upi30wkwvKfTN9ZWUpYMhw ;
+        prov:generatedAtTime "2026-06-30T21:04:52.095696+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

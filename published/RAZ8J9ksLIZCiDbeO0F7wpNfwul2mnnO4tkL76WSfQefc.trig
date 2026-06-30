@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAZ8J9ksLIZCiDbeO0F7wpNfwul2mnnO4tkL76WSfQefc> .
+@prefix sub: <https://w3id.org/np/RAZ8J9ksLIZCiDbeO0F7wpNfwul2mnnO4tkL76WSfQefc/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <http://purl.obolibrary.org/obo/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAZ8J9ksLIZCiDbeO0F7wpNfwul2mnnO4tkL76WSfQefc a owl:Class ;
+        rdfs:label "Polybrominated diphenylether 33",
+            "Polybroomdifenylether 33"@nl-be ;
+        ns3:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "BDE-33",
+            "bde 33",
+            "bde-33",
+            "bde33" ;
+        ns2:comment "comments: * Since there are no identifiers in our db, is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/tribromodiphenyl%20ether" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "flame retardants" .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "bde33" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:44.569262+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "X6vEt0QZoI4BtQ27XNbtiNNCGSk9qc0zqys9jcIK32XS0pPwFZb/09VLnHGHybKXaZ3HHJJB7L+qrTuWi1Xs0R46BkV4fgwARJ/KrhH2rp3AsQ5zHiQP+JO3d/AwoohyBkSU+IlMzuU7fmxScfi/e8220+dBX1PYIGvUaTW2Ob7kOXfbI0JDkg/uLQUzLCDH5qaQr2SB0Yb+vc53P+nB7b1VbE6ZQHhqs7WhFaFkafPX/MUeA9KlfnFt+MkKmpkA6NebYogO4L869Wp4z0uscnJWIhGOs5voREwxp6sh1ThGRYOtSfg5Efsj8jYHP8wROg2BQ35C7UBLffhaDOnyLA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Polybrominated diphenylether 33" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAZ8J9ksLIZCiDbeO0F7wpNfwul2mnnO4tkL76WSfQefc ;
+        prov:generatedAtTime "2026-06-30T21:03:44.569262+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

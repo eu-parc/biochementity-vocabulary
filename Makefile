@@ -22,8 +22,8 @@ COMBINED_DATA ?= $(OUT_FOLDER)/combined.yaml
 ID_MAP_FILE ?= $(REDIRECT_FOLDER)/id-map.tsv
 # Signing material for `publish-defining`. Default: nanopub-testsuite keys
 # (test server, no repo secret). For live publishing set, e.g.:
-#   PUBLISH_KEY_ARGS="--private-key key.priv --public-key key.pub --orcid-id ... --name ... --intro-nanopub-uri ..."
-PUBLISH_KEY_ARGS ?= --use-testsuite-keys
+PUBLISH_KEY_ARGS ?= --private-key bot-identity/id_rsa --public-key bot-identity/id_rsa.pub --orcid-id https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot --name 'Biochementity bot' --intro-nanopub-uri https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA
+# PUBLISH_KEY_ARGS ?= --use-testsuite-keys
 # Suggester (prov:wasAttributedTo) attributed to every existing term during the
 # one-time `migrate`. All current data was contributed by Gertjan Bisschop.
 MIGRATE_SUGGESTER ?= https://orcid.org/0000-0001-8327-0142

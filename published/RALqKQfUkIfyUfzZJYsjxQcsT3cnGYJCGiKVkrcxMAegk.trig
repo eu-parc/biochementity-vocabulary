@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RALqKQfUkIfyUfzZJYsjxQcsT3cnGYJCGiKVkrcxMAegk> .
+@prefix sub: <https://w3id.org/np/RALqKQfUkIfyUfzZJYsjxQcsT3cnGYJCGiKVkrcxMAegk/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALqKQfUkIfyUfzZJYsjxQcsT3cnGYJCGiKVkrcxMAegk a owl:Class ;
+        rdfs:label "Leptin",
+            "Leptine"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "Leptin" ;
+        rdfs:subClassOf pehterms:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:81571>,
+            <https://identifiers.org/inchikey:NRYBAZVQPHGZNS-ZSOCWYAHSA-N>,
+            <https://identifiers.org/pubchem.compound:90470904>,
+            <https://loinc.org/LP19488-3> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:40.680654+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "pa67YrfVJTfuWpJxByaamA0ZIS2Ckzab/WJCs4vh7vLvQ7hk5kMV3+HTv6bF/aiD3OTxjbsbigYCTfL/yGoO9IPNnwIP6x5TA5KR4WflGCPdT/SK1Yw2tO9m2diXPjFwvva8aUfxnqaOtEeGwoF0pdEfU4nicw3yI3CkVt158T2d4bGIR682ZYdNQ9uIA4xwGatoHhE/lidkAm5OO4sBC7eaKv2hz7JZvkJITWePFyMtQiIEqK5IZuFcJm9uNJnC+2JTrg7XWBOlL4sF23OLiATzavV1QZKDHfhS+vcWb1I7J24QOkYYLnmfHlCF79adQcjc3ZUx/n30+StskXFBJg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Leptin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType pehterms:BioChemEntity ;
+        npx:introduces biochementity:RALqKQfUkIfyUfzZJYsjxQcsT3cnGYJCGiKVkrcxMAegk ;
+        prov:generatedAtTime "2026-06-30T21:03:40.680654+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

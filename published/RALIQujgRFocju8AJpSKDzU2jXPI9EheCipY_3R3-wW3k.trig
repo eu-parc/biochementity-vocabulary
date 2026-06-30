@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RALIQujgRFocju8AJpSKDzU2jXPI9EheCipY_3R3-wW3k> .
+@prefix sub: <https://w3id.org/np/RALIQujgRFocju8AJpSKDzU2jXPI9EheCipY_3R3-wW3k/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALIQujgRFocju8AJpSKDzU2jXPI9EheCipY_3R3-wW3k a owl:Class ;
+        rdfs:label "furans" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        ns1:hasGroupLabel "furans" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:21.889975+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "L3Gk8WiFjLdhsv91XgrnErVaS4DZibntvkKrMh+QhzorW4KcWugd/pCaunjD8Y1J6UaJzzEK2b4fnDY28J/0BH7Wi4KRDj4e7LC/i8NUBthA5yjazT9aUh1lsvZZAZK+bWoWWzUJ5mQ2avmkthuT+njIORAt1FQ/c8nvUCKWwmdSYicC8PrCRcDFDdScE4MrtHtD4BRljpGQ9z95Q1ZzkV4ukpcExoZK/iiMuWR0CubLW2PRWM+cKo2nN2+zGRpw22YzQroNnXtMXvM0JsxXD1hKYZZP+qjYr8HwFqXX6HHfIdCF1sTdAHtJWtprbGMulpDsd0MlbYQ/JyYApr4CNw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "furans" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RALIQujgRFocju8AJpSKDzU2jXPI9EheCipY_3R3-wW3k ;
+        prov:generatedAtTime "2026-06-30T21:03:21.889975+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

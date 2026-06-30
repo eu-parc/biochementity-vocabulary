@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAT51qqve7b1LEJE7ChuYkqGGBVPTsQ0FaK_2ZtJUUcig> .
+@prefix sub: <https://w3id.org/np/RAT51qqve7b1LEJE7ChuYkqGGBVPTsQ0FaK_2ZtJUUcig/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAT51qqve7b1LEJE7ChuYkqGGBVPTsQ0FaK_2ZtJUUcig a owl:Class ;
+        rdfs:label "Hydrolysed-fumonisin B1",
+            "Gehydrolyseerde fumonisine B1"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "HFB1" ;
+        ns1:comment "comments: I think it's this compound but Anthony to confirm before I add exact_matches: https://pubchem.ncbi.nlm.nih.gov/compound/Aminopentol" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "mycotoxins" ;
+        ns2:isMetaboliteOf biochementity:RAFJXD3eNlSiOmKjRhIsCYUqI95h045MRYy96JKDY6-ss .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "hfbone" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:16.140442+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "T2UlwQsX+VZ0UYsDBPznbVj+kFDVXMopRRPR+TMSyDEWGV0tKnP0oyiWRD3CJXdNK9PXyPM1u8/mUJiwZkOLyDefuC/1XYOtw/l5OoY0E0WFcQw1za3iLjVAZyb0is5InwFDBKSn5EjahWfenP5IbLy8du5Emk9CHBSvCGsgS1rIFqkZppB68Fzlcvq/RxVraowpaQ87uqWf71tUc1dwWrn/jNFK2UlTFEIRZ39JREwhjBNoeUacC367Vf1Ot9oAokzYVdOGbqLmn2/gORqxopRWW7es8XfmoWkNhMtWdCsQWNMjtPeAMxHowshOAnDRHR5av0ERNzzBxVF8edUo9Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Hydrolysed-fumonisin B1" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAT51qqve7b1LEJE7ChuYkqGGBVPTsQ0FaK_2ZtJUUcig ;
+        prov:generatedAtTime "2026-06-30T21:06:16.140442+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

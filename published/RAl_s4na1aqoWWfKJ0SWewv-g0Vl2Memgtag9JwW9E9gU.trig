@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAl_s4na1aqoWWfKJ0SWewv-g0Vl2Memgtag9JwW9E9gU> .
+@prefix sub: <https://w3id.org/np/RAl_s4na1aqoWWfKJ0SWewv-g0Vl2Memgtag9JwW9E9gU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAl_s4na1aqoWWfKJ0SWewv-g0Vl2Memgtag9JwW9E9gU a owl:Class ;
+        rdfs:label "Tri-(2-ethylhexyl) trimellitate",
+            "Tri-(2-ethylhexyl)trimellitaat"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "TEHTM",
+            "TOTM" ;
+        rdfs:subClassOf biochementity:RAa-3GCoDVbFzOQVo-EiXU0ixIlx5-eNj8qMrqyLdvizQ,
+            ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:184113> ;
+        ns1:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:16.461198+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "MqXhcz0ofbJbaCS86qo6yRsJrab5tsKGRTy/l25gplJm3uIUV+gMPL5gLWWNDVcl5H5URUKMeR85uJx4CuVLQS3mvc2Co1b73/ck5E8l0Gw6IJHiqgBYPHPz3pINbhooegN+LxwjvENmRL+ws7ewEzSr3rgwL5Y6A6mCTwHG4kDKBznoAEltsLf3IDnS1pUor+PvxpTInvBzXmXqZgw3hOx8VTA5p5ppZDo482E+g51FzzBs5DeFLby9iN9rOPoQWnK4vj32PFxP9MKWDgny1vhyC2L+RcG+LpjH2sZQ6lujMXnutETJAz11B0sSr0bFA+g9CchzncqqvIOLBYH39g==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Tri-(2-ethylhexyl) trimellitate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAl_s4na1aqoWWfKJ0SWewv-g0Vl2Memgtag9JwW9E9gU ;
+        prov:generatedAtTime "2026-06-30T21:07:16.461198+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

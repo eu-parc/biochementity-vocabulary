@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RA3o90XgFx_gbp6k69qT8WA1MaaEFwaILFWnfwEJ4_v7k> .
+@prefix sub: <https://w3id.org/np/RA3o90XgFx_gbp6k69qT8WA1MaaEFwaILFWnfwEJ4_v7k/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA3o90XgFx_gbp6k69qT8WA1MaaEFwaILFWnfwEJ4_v7k a owl:Class ;
+        rdfs:label "N-(2-Carbamoylethyl)valine",
+            "N-(2-Carbamoylethyl)valine"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "AAVal",
+            "AAVal"@nl-be ;
+        ns2:comment "comments: Should parent compound not be acrylamide? INCHIKEY Does not seem to correspond to the correct compound Pubchem link to AAVal: https://pubchem.ncbi.nlm.nih.gov/substance/341427830  vs Pubchem link to related compound with INCHI key specified here: https://pubchem.ncbi.nlm.nih.gov/compound/N-_3-Amino-3-oxopropyl_-L-valine  --> chemical structure is not the same so I don't know if these are the same compounds? feedback_epi team: Yes assigning Acrylamide as parent compound seems correct to me. Because Acrylamide is the substance a human is exposed to, and we can measure GAVAL and AAVAL to reflect that exposure. GA‑Val (GAVAL) and AA‑Val (AAVAL) — are both well‑established biomarkers of exposure to acrylamide and its metabolite glycidamide. These adducts form when the reactive compounds bind to the N‑terminal valine of hemoglobin. Core attribution - AAVAL (N‑(2‑carbamoylethyl)valine) reflects exposure to acrylamide, the parent compound. - GAVAL (N‑(2‑carbamoyl‑2‑hydroxyethyl)valine) reflects exposure to glycidamide, which is the epoxide metabolite formed when acrylamide is metabolized via CYP2E1. This relationship is well documented: acrylamide is converted to glycidamide, and both acrylamide and glycidamide form hemoglobin adducts that can be used to reconstruct exposure. source: https://pmc.ncbi.nlm.nih.gov/articles/PMC5696489/ Moreover, AA and GA react with plasma and other proteins, such as hemoglobin (Hb). Covalent binding to the N-terminal valine (Val) residue of Hb results in formation of N-(2-carbamoylethyl)valine (AAVal) and N-(2-carbamoyl-2-hydroxyethyl)valine (GAVal) Hb adducts that can be specifically cleaved off and derivatized to serve as biomarkers for long-term exposure monitoring (Bergmark et al. 1993; EFSA 2015; Fennell et al. 2005)." ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:BZEVQVJZLREGPF-ZETCQYMHSA-N> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "acrylamide" ;
+        ns1:isMetaboliteOf biochementity:RAzsgNFMlmFl21D1kjAVEf39Z8wXIoed404LTxxTXi4OU .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "aaval" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:05:50.681522+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "gUVwnG2j26ZzBr/bRg2s/E6lLg6thHItHuVDDSaFKMyYZwSPHTk7EqhlsJghtgJnqRZPJsYWs58ZOnVe4nx7+AlDavCYm0r/feFP3WLKCF90UE0CeeRbBitVPtO3xgNokeqj+GyHOCJms7MT2+jzs6U9V0cmu1rZ5+xMrmFQYrEE6glYHDMNnova2aY37taW4zhw5/7ikBoKBIkX0ZvBQxbyP7AjxWaOOvOEhwL7Agt2T0Z6kRYwLyrpC2Vs2JL5NaWcq1b1ENWr3+E0UtR4/M8rGhkiU/rL2kF7WIKWagX8X5Sq8d65ipTvO923ISoACoxVajcOL8puySnSa5H6Aw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "N-(2-Carbamoylethyl)valine" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RA3o90XgFx_gbp6k69qT8WA1MaaEFwaILFWnfwEJ4_v7k ;
+        prov:generatedAtTime "2026-06-30T21:05:50.681522+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

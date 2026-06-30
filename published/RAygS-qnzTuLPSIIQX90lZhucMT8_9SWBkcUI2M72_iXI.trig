@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAygS-qnzTuLPSIIQX90lZhucMT8_9SWBkcUI2M72_iXI> .
+@prefix sub: <https://w3id.org/np/RAygS-qnzTuLPSIIQX90lZhucMT8_9SWBkcUI2M72_iXI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAygS-qnzTuLPSIIQX90lZhucMT8_9SWBkcUI2M72_iXI a owl:Class ;
+        rdfs:label "2-ethylhexyl-2,3,4,5-tetrabromobenzoate",
+            "2-ethylhexyl-2,3,4,5-tetrabroombenzoaat"@nl-be ;
+        ns2:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "EH-TBB" ;
+        rdfs:subClassOf ns3:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:183658-27-7>,
+            <https://identifiers.org/inchikey:HVDXCGSGEQKWGB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:71316600> ;
+        ns3:hasContextAlias sub:_b1 ;
+        ns3:hasGroupLabel "flame retardants" .
+    sub:_b1 a ns3:ContextAlias ;
+        ns1:alternateName "ehtbb" ;
+        ns1:identifier "short_name" ;
+        ns3:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:09.694752+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "l/BGR9YijQGL8sACHj9LsemC6XHMgBZ3fM5XEmdRiuPG0/kvs+t9uqVEXBMrfrBA0cDQwXMf+tlOhTGvXiZS9xddScFnLreG9akdj9+/g4FxKWjZX4ltUYOXwb+FbPa01sJ9gGgq8DrYO09fT/wwXR467LMKMQWY45g8NmnpDNk8PQ3+BQzyQN5/If4d0JedUWfWb6vAXwo9iQ6DhwUfol9RrO6Qev6xpKuJPnTlDcZMK4glM+Dl0tFPGGupPpdx1otw+fcktVORfw2tS79qlWmyK7bZKx4qwcgoZ4XVVGNqsl0cJnelIzA8PiRqCYHcMCMYRA02EoOMENzr1FVt+w==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2-ethylhexyl-2,3,4,5-tetrabromobenzoate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns3:BioChemEntity ;
+        npx:introduces biochementity:RAygS-qnzTuLPSIIQX90lZhucMT8_9SWBkcUI2M72_iXI ;
+        prov:generatedAtTime "2026-06-30T21:04:09.694752+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

@@ -1,0 +1,63 @@
+@prefix this: <https://w3id.org/np/RAUutjPyKlIUgkElmAo4nvhng-KyJcsA6l5rr0NuiRm10> .
+@prefix sub: <https://w3id.org/np/RAUutjPyKlIUgkElmAo4nvhng-KyJcsA6l5rr0NuiRm10/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAUutjPyKlIUgkElmAo4nvhng-KyJcsA6l5rr0NuiRm10 a owl:Class ;
+        rdfs:label "Polychlorinated biphenyl 44",
+            "Polychloorbifenyl 44"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "2,2',3,5'-Tetrachlorobiphenyl",
+            "PCB 44",
+            "PCB 44"@nl-be ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:41464-39-5>,
+            <https://identifiers.org/inchikey:ALDJIKXAHSDLLB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:38875> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "organochlorine compounds" ;
+        ns1:isMetaboliteOf biochementity:RAea3oAjuhRBrpcwnFbkTpX5rtMS3Z5FTDAjkjgTLxotg .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "pcb44" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:18.981072+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "Na+QDVbk90j8dTeIAtAatU21Qy3jzDdQQqdB37q7MFG1dHuum+odazXMFfOEeyFsHT8on45s4o58K32cq74Jo4GrvLINtPObH9jzFVLMbbwREDORJvJ79A0nyLbbfFcmIjGIF7mEIMFF8Kd7WkajrVYID287YQYSOycthpdUKZ9kKyQyVpEWmidf7FM8KOMNaLCcpLDbpl21QPO/HshhmrkRjrAOpGJI5SsGCAZK64Z5Ce4n6cQOZh3IVHK01zFf4nfec0v1WA0IxODexCWT2ue4RuWxUjBqjo+cNkZsHV47AEAae+b6yuIVyXh8ulTVrWcgzjK/DPuoM3UQXvZPsg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Polychlorinated biphenyl 44" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAUutjPyKlIUgkElmAo4nvhng-KyJcsA6l5rr0NuiRm10 ;
+        prov:generatedAtTime "2026-06-30T21:07:18.981072+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

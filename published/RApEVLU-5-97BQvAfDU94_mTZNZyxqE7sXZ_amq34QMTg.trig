@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RApEVLU-5-97BQvAfDU94_mTZNZyxqE7sXZ_amq34QMTg> .
+@prefix sub: <https://w3id.org/np/RApEVLU-5-97BQvAfDU94_mTZNZyxqE7sXZ_amq34QMTg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RApEVLU-5-97BQvAfDU94_mTZNZyxqE7sXZ_amq34QMTg a owl:Class ;
+        rdfs:label "2-(2-methoxyethoxy)ethanol",
+            "2-(2-methoxyethoxy)ethanol"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "DEGME" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:44836>,
+            <https://identifiers.org/cas:111-77-3> ;
+        ns1:hasGroupLabel "glycol ethers" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:04:27.514433+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "XVLrOOUmG+sNWBUTb6X1ASTlQ4jLA4H/lwtZE29mWXqY0arQAm2Ml5zC86/46CEBXHl1Se3csE9ZxEiDt1/p/reXhY96QGfxWgmL2ZVXCUQOzA1J53Kor0Xkamk0y334aZYt74A6fxWgjsU4QryleFrY5kv8JL7MsDmOoll2MbNs7SERA8MVXDHzdnyPXygZcojvy/1IEs2R6FYVbkQlQ18as1CG9ATvnUxX2AoAh9XbjdrgooOm3PyUv02l6pOgHzIcTZQza6Np2uEywHrmHfol7kYas/6gYBK0k+bZZBkhb0ZuXHHICpWl+tzYzANPGuXe9Vtd1hzdb98t7BQmbg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2-(2-methoxyethoxy)ethanol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RApEVLU-5-97BQvAfDU94_mTZNZyxqE7sXZ_amq34QMTg ;
+        prov:generatedAtTime "2026-06-30T21:04:27.514433+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

@@ -1,0 +1,63 @@
+@prefix this: <https://w3id.org/np/RATPS5QZfA5toRishBkDDp0twyAcLnOspV0aTVoGC2kwg> .
+@prefix sub: <https://w3id.org/np/RATPS5QZfA5toRishBkDDp0twyAcLnOspV0aTVoGC2kwg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <http://purl.obolibrary.org/obo/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RATPS5QZfA5toRishBkDDp0twyAcLnOspV0aTVoGC2kwg a owl:Class ;
+        rdfs:label "2,4,6-Tribromophenol",
+            "2,4,6-tribroomfenol"@nl-be ;
+        ns3:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "2,4,6-TBP" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:47696>,
+            <https://identifiers.org/cas:118-79-6>,
+            <https://identifiers.org/inchikey:BSWWXRFVMJHFBN-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:1483> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "flame retardants" .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "tbph" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:05:21.526136+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "my6BUAHOWkZOAJJA5IiOXV1eIC5isQFwD+oF8uPAWw4pgeE5MDpF2PKzN0575KCP2Cx+jwwG5epBWaGFK0vQcAu/jAM3FcnetCkvfwK7iU7bJeZWoGu5o4xBGD4FuMJOD8bqov9hfm+np3zyLtZ9FewLiGIsx+PsURIg/4hlkqMBa5MZqk91KaomrSlXrkzd2EzUQe6C0sR1uYnmnjsZo4fNBfurG6IhBWsoFEi8N4e7KxyYndQGNERo1X3Tk2/OCnwRnBPAsI2foP66lHz3qqApKjlMw+diCvoZW+SaV6jUTW+Iy03RqKaUYC14RW26Pvffq9D70qcx+RUfsohjMg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2,4,6-Tribromophenol" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RATPS5QZfA5toRishBkDDp0twyAcLnOspV0aTVoGC2kwg ;
+        prov:generatedAtTime "2026-06-30T21:05:21.526136+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

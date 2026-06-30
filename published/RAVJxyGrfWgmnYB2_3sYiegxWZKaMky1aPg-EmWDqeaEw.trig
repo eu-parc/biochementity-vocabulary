@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAVJxyGrfWgmnYB2_3sYiegxWZKaMky1aPg-EmWDqeaEw> .
+@prefix sub: <https://w3id.org/np/RAVJxyGrfWgmnYB2_3sYiegxWZKaMky1aPg-EmWDqeaEw/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAVJxyGrfWgmnYB2_3sYiegxWZKaMky1aPg-EmWDqeaEw a owl:Class ;
+        rdfs:label "Linear Perfluoro-n-decanesulfonamide",
+            "Lineair Perfluoro-n-decaansulfonamide"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "PFDSA",
+            "PFDSA"@nl-be ;
+        ns1:comment "comments: Is it this compound? https://pubchem.ncbi.nlm.nih.gov/compound/Perfluoro-1-decanesulfonamide" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        ns2:hasContextAlias sub:_b1 .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "pfdsa" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:54.260968+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "kJNY+Vea5QmRydJOq979QTKXBumZBornVfy4choVJqKyzpe5UChdK3LAGyFqM0a4dXWPB6urdsA+dEPJlh0bbmOaYdfpKRl6mpZRU90ETyqrjmJrPD+yg+oIiWOQYlB/vxUgfwqhSRMF4s4kd01RfgrpbJ7dakh0KRV7ncELnCKcvImGSkXLWHuFhv3XbXRmZORWsKG8177pB3WUFvvjsZ+81NYQEr0RX+DOqZchr7xtZyyfmiHr/pKlzNxMsBfxQcsnCfjfv9K48EHvmLrn8IESbja7mGjskGBzwafg3/Rq/K5cBoK0RlIn/9DMbilZBWxrnqmcT2J2ewih3JQlNw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Linear Perfluoro-n-decanesulfonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAVJxyGrfWgmnYB2_3sYiegxWZKaMky1aPg-EmWDqeaEw ;
+        prov:generatedAtTime "2026-06-30T21:03:54.260968+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

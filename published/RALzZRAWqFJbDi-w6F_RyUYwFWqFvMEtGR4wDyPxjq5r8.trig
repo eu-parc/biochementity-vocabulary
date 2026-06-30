@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RALzZRAWqFJbDi-w6F_RyUYwFWqFvMEtGR4wDyPxjq5r8> .
+@prefix sub: <https://w3id.org/np/RALzZRAWqFJbDi-w6F_RyUYwFWqFvMEtGR4wDyPxjq5r8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RALzZRAWqFJbDi-w6F_RyUYwFWqFvMEtGR4wDyPxjq5r8 a owl:Class ;
+        rdfs:label "Di-isopropyl phthalate",
+            "Di-isopropylftalaat"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "DiPrP" ;
+        rdfs:subClassOf biochementity:RAa-3GCoDVbFzOQVo-EiXU0ixIlx5-eNj8qMrqyLdvizQ,
+            ns2:BioChemEntity ;
+        ns2:hasGroupLabel "phthalates" .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:01.750007+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "oVxZObbfZvDERwYYZdEnor7WvmeeAsEf8f+PaPB8ifn7StVNgvlyXPWzlCunL2Rfmmy4ma02Xy8UpvQd3/8DQzHeYeMDpSrzH8EcZ9DTKnFhRD5uPcCEi3V9qVEkOpOUTfaSmLwagF0vtZtRhM+xKoVjSgSEWJRyC1q9/5F38LGVT5Pq3DPpvRfhsxK1D4nvcPlEqJsio8T8qu+G1IoUnSc4F/AOry0r6Qt94Ffwaef/p97d4+duMTddo+eQ4+8Vfokdwd5e9T87sXUUEBBoEOlT0bRYkbzWGgLnwugXLZD9WJrGe5YHbOmXkNWo7J5v4QKcYjUFSCwKqHXltNPDKg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Di-isopropyl phthalate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RALzZRAWqFJbDi-w6F_RyUYwFWqFvMEtGR4wDyPxjq5r8 ;
+        prov:generatedAtTime "2026-06-30T21:07:01.750007+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

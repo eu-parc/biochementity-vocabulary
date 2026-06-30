@@ -1,0 +1,51 @@
+@prefix this: <https://w3id.org/np/RAcqW1YpCZ1KRG6Wi0CQbT3FNtKK72A5ZXgVDMFdvwGGA> .
+@prefix sub: <https://w3id.org/np/RAcqW1YpCZ1KRG6Wi0CQbT3FNtKK72A5ZXgVDMFdvwGGA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAcqW1YpCZ1KRG6Wi0CQbT3FNtKK72A5ZXgVDMFdvwGGA a owl:Class ;
+        rdfs:label "glycidamide" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/inchikey:FMAZQSYXRGRESX-UHFFFAOYSA-N> ;
+        ns1:hasGroupLabel "acrylamide" ;
+        ns1:isMetaboliteOf biochementity:RAzsgNFMlmFl21D1kjAVEf39Z8wXIoed404LTxxTXi4OU .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:44.383229+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "rv7aKsyM8YPr0O/zehgAw1wpOAHfWMHPlfACXRPkHrX6hRGpiNUPxl3K+PX9nnIJwvXu9vXsPqobKR9qChA1+aY4iTFLeaK5RmRJXwhpdmtn9IwCjbq7kIhdW26GRxgJ7ic2s6RqPZm80kLVnvAekugBMymN9Qqq076WXjdJ1NTMV74WbgB1HJx5yzyWgdzquMqGYN1I/ZiOgvhrx7gXWevwCTivcB70rAl2MAe04MzOfNU6xFSgx+nBfqmDDJoFMVOnFLfw9W9AU+7+VATL6GgixY2IV3LIxm6w83d0vJWlNRMYH+y3eeCSISEc/H2IYiqidRJhhM24YKQUA9+fgw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "glycidamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAcqW1YpCZ1KRG6Wi0CQbT3FNtKK72A5ZXgVDMFdvwGGA ;
+        prov:generatedAtTime "2026-06-30T21:06:44.383229+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

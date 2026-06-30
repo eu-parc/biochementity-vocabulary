@@ -1,0 +1,65 @@
+@prefix this: <https://w3id.org/np/RAiVDs_jj8QbrXBkw6nPOZh1lXuvrjYeKRW17O9-nh_2Q> .
+@prefix sub: <https://w3id.org/np/RAiVDs_jj8QbrXBkw6nPOZh1lXuvrjYeKRW17O9-nh_2Q/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAiVDs_jj8QbrXBkw6nPOZh1lXuvrjYeKRW17O9-nh_2Q a owl:Class ;
+        rdfs:label "Total Hexabromocyclododecane",
+            "Hexabromocyclododecaan"@nl-be ;
+        ns2:RO_0000087 <https://purl.obolibrary.org/obo/CHEBI_79314> ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "total HBCD",
+            "total HBCD"@nl-be ;
+        ns1:comment "comments: *For the CHEBI Key in our DB, I get the link to this compound, but I'm not sure it is the same? https://www.ebi.ac.uk/chebi/CHEBI:134063" ;
+        rdfs:subClassOf ns3:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:134063>,
+            <https://identifiers.org/cas:3194-55-6>,
+            <https://identifiers.org/inchikey:LEOCKULGXOQRTQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:https://pubchem.ncbi.nlm.nih.gov/compound/Hexabromocyclododecane> ;
+        ns3:hasContextAlias sub:_b1 ;
+        ns3:hasGroupLabel "flame retardants" .
+    sub:_b1 a ns3:ContextAlias ;
+        ns1:alternateName "hbcd" ;
+        ns1:identifier "short_name" ;
+        ns3:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:39.053704+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "I0AKcPSNSOFYEMYH73i6ir2/8o0etF4NPYTeSyaFrJUEYxpWmTL2EdGKYWr0LZhY6jho9A0yuYGYqym+FyAgCLrr8FE5CLGARDKq40iSAcjqZUx5Ekh2Voe5IDHHbyA+lcZqC6CxGxLC0SZoiOvsfNMIAJeKhdtZdyX6dcJKMZYvmAKJ/A2dRgBBZU0dnk2E2Kq+xTbK+oVio/gr0f5k+9N9AIRSHUZVCK1CMgd5n2Z3wwUUdeBgWG+Ep+i8PhQri1apvDzbL7kxBjE2c9S2akxm/y3aYz/zyJhZQ6fG7sL+JT2qBC5ZgfziqkO4r2jGXkzdmNIgAJvyKy6FZGvpNA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Total Hexabromocyclododecane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns3:BioChemEntity ;
+        npx:introduces biochementity:RAiVDs_jj8QbrXBkw6nPOZh1lXuvrjYeKRW17O9-nh_2Q ;
+        prov:generatedAtTime "2026-06-30T21:03:39.053704+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

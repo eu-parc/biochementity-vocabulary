@@ -1,0 +1,61 @@
+@prefix this: <https://w3id.org/np/RAbROccwZAAOqfjEgmjxsWyxtTKHkX8973hpglDm7WkOM> .
+@prefix sub: <https://w3id.org/np/RAbROccwZAAOqfjEgmjxsWyxtTKHkX8973hpglDm7WkOM/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbROccwZAAOqfjEgmjxsWyxtTKHkX8973hpglDm7WkOM a owl:Class ;
+        rdfs:label "Linear Perfluorohexanesulfonamide",
+            "Lineair Perfluoro-n-hexaansulfonamide"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "PFHxSA",
+            "PFHxSA"@nl-be ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:41997-13-1>,
+            <https://identifiers.org/inchikey:WDZLGCSJJWEQJO-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:11603678> ;
+        ns2:hasContextAlias sub:_b1 ;
+        ns2:hasGroupLabel "PFAS" .
+    sub:_b1 a ns2:ContextAlias ;
+        ns1:alternateName "pfhxsa" ;
+        ns1:identifier "short_name" ;
+        ns2:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:03:58.466328+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "SY3bf9o6F2xAhIGq+PO6FxvVNCTN+ceB8zFujzK1+3bJJS7gydMcwYOfrsh1acRaJ1NI4Kv96vx5asGUpDxZnlsO+745qKDBPf6yCHEGZv2JqfY+khT6V3P0xT5CS1FxdJ/TtN3uH6eK64qJC2bvQf8n5rbrRYP1i/wfNgGU7LKTs2keFJCvdZKe2n9MsdQ05joY+ll98g5B91OKzHGed5IelAICGCJzikeW5AUyL/eAbDTvbfeH+9FNzEY35m8Qh4bQI87uAY/1uICJezq9rn9X7/Q/40rqQ7Hz/7LPwCxEr1Hf/2BsVbyV+33pE84hiQJ3CWyASeRrobjk+wWmKQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Linear Perfluorohexanesulfonamide" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAbROccwZAAOqfjEgmjxsWyxtTKHkX8973hpglDm7WkOM ;
+        prov:generatedAtTime "2026-06-30T21:03:58.466328+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

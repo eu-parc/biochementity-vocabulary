@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RAmBVzOOwyyuNVIKBD7TjA04ebngEr_xpQboocSbtDipA> .
+@prefix sub: <https://w3id.org/np/RAmBVzOOwyyuNVIKBD7TjA04ebngEr_xpQboocSbtDipA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAmBVzOOwyyuNVIKBD7TjA04ebngEr_xpQboocSbtDipA a owl:Class ;
+        rdfs:label "Deoxynivalenol-15-acetate",
+            "Deoxynivalenol-15-acetaat"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "15-acetyl-DON" ;
+        ns2:comment "comments: Is this compound the same? https://pubchem.ncbi.nlm.nih.gov/compound/15-Acetyldeoxynivalenol" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "mycotoxins" ;
+        ns1:isMetaboliteOf biochementity:RAP67i9w_15JS6qtLwEWgUHMtNBK9ZoJQDNvVjIb0SxEg .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "facetyldon" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:06:28.655157+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "I7eaHz9+AeVXXCNY+R23esDacLJXBUjWadxMy7/4LLvW0oktKS2XIEBQLnAGAHsiyht3u8Cpmr65lYzVU7AjPvK9uPngAOKeVK5qwPce/izody0bPxywNsHLghqknqx7H9+oQQkorY5zjrA6s6iwNeonL93Rrp8ukBC7gZZ7k8UxrIz76p/GC2AdiaxZ08NvYVHHymlWCmWroZbTALpJ0jAxD3D/EJX+Y/VDoUEfT1d3/jE2GOB1Tz+8Ie7iwM9ZT7Q0mf70wgnTHomW4gpUb/WCDuFqYYxwov4N2AKpDTfaKRXqNfMjTPqSeaYcyMIiuLVmw+hrXjGwdQPt0OoVXA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Deoxynivalenol-15-acetate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAmBVzOOwyyuNVIKBD7TjA04ebngEr_xpQboocSbtDipA ;
+        prov:generatedAtTime "2026-06-30T21:06:28.655157+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

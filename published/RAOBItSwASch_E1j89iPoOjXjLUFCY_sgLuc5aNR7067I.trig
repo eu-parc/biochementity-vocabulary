@@ -1,0 +1,62 @@
+@prefix this: <https://w3id.org/np/RAOBItSwASch_E1j89iPoOjXjLUFCY_sgLuc5aNR7067I> .
+@prefix sub: <https://w3id.org/np/RAOBItSwASch_E1j89iPoOjXjLUFCY_sgLuc5aNR7067I/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAOBItSwASch_E1j89iPoOjXjLUFCY_sgLuc5aNR7067I a owl:Class ;
+        rdfs:label "4-hydroxyphenanthrene",
+            "4-hydroxyphenanthrene"@nl-be ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "4-PHEN" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/CHEBI:20469>,
+            <https://identifiers.org/cas:7651-86-7>,
+            <https://identifiers.org/inchikey:SIMYIUXARJLHEA-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:82105> ;
+        ns1:hasContextAlias sub:_b1 ;
+        ns1:hasGroupLabel "polycyclic aromatic hydrocarbons" ;
+        ns1:isMetaboliteOf biochementity:RABteCmC_mqmVYsOOAfFMGhl1B__t9ciBCtfvV3XvQ-sY .
+    sub:_b1 a ns1:ContextAlias ;
+        ns2:alternateName "fourhphe" ;
+        ns2:identifier "short_name" ;
+        ns1:hasContext <https://ror.org/04gq0w522> .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:07:27.083154+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "FCnX9j8UaD6wi/ppHnj39cIQdnhgDsN0rhGEGq3HppaODUZVkGVYOl+/0Gmzs313uB/99yWw4R9I2Wqfq2rUb7QR41v9ZWItQmqQmMey450xtwj9Vh+CBlDvk56H8rQWYyMHBCLO3T/gFONzF4HqtmYrtWY3ECyaoUvadvaeQQOIqULHDvSwJRPvwr78WJqXvqQZtZMQ92veg5Km9bL6/MPEo7ZMXd160tqXly6GxVBRq9DICLFVGRwA09TFyih8imajmdZH6GIblJ9me2uPIy5X5vlQbpdFeUtZmR93WspMgsLyZ3G+vbdgrOvX2Xi/18uGtdmLbSb0lfAF/h2yGQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "4-hydroxyphenanthrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAOBItSwASch_E1j89iPoOjXjLUFCY_sgLuc5aNR7067I ;
+        prov:generatedAtTime "2026-06-30T21:07:27.083154+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

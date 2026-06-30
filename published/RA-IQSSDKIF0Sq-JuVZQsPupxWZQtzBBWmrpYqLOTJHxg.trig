@@ -1,0 +1,49 @@
+@prefix this: <https://w3id.org/np/RA-IQSSDKIF0Sq-JuVZQsPupxWZQtzBBWmrpYqLOTJHxg> .
+@prefix sub: <https://w3id.org/np/RA-IQSSDKIF0Sq-JuVZQsPupxWZQtzBBWmrpYqLOTJHxg/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA-IQSSDKIF0Sq-JuVZQsPupxWZQtzBBWmrpYqLOTJHxg a owl:Class ;
+        rdfs:label "N-acetyl-β-D glucosaminidase" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "NAG" ;
+        rdfs:subClassOf pehterms:BioChemEntity .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:05:35.105095+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "UOFa+QTAzZBAz3eNO0wgco79fZ3Cg5bN1cglg601zlOzu/Nkt+iIsJHFwouMd3vioLZpJ9EAJolL6OicRkf2w8ZfawnLa7dFu4gOt3kiLQbkufr8KGUJiILXyPOLocYtzJVhAMvGKpVmJl92aTF7kyeKEcJ1XIkwVwq29htH0NrEZduBmdEbo50WrGU7UA4btt/Hjjf1PWfrfi/PpwWyxr5kFHXU85WA0CSnGK+GBjv7cLuaGPlVqKxN0p54xqgJ02eXQ8d5RIP9YKmcxbM/09rp4tjpK8BEAyKdeW1xi0yHOPp86RjprKr/olbZu7quschFw0NFO6XbzzUu3pYBbQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "N-acetyl-β-D glucosaminidase" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType pehterms:BioChemEntity ;
+        npx:introduces biochementity:RA-IQSSDKIF0Sq-JuVZQsPupxWZQtzBBWmrpYqLOTJHxg ;
+        prov:generatedAtTime "2026-06-30T21:05:35.105095+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}

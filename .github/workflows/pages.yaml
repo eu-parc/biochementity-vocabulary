@@ -28,7 +28,6 @@ jobs:
         run: |
           uvx --from git+https://github.com/eu-parc/serves-me-right@v0.0.1 serves-me-right-build \
             --data-dir build/assertions \
-            --data-dir unpublished \
             --shapes site/ui-shapes.ttl \
             --out-dir dist
 

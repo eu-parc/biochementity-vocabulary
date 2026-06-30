@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RA0HHj7EKpqmp-2jm9xgyPtNG0uhef886YVRb0qqCXhHE> .
+@prefix sub: <https://w3id.org/np/RA0HHj7EKpqmp-2jm9xgyPtNG0uhef886YVRb0qqCXhHE/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAFEK8H7AHG2D-WjBWwczKRDeQpl0LB4qvtJrnI05oXoU a owl:Class ;
+        rdfs:label "Branched Perfluorononanoic acid" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "bpfna" ;
+        rdfs:subClassOf biochementity:RA4X0hzC0_zjYHoZXMCGtKROw581m1wRzv0EWQvxkQLOU ;
+        ns1:isIsomerOf biochementity:RAuTFY_sxDzgju2DLLSDAqcqSVk89WkgxlxdakO2gcocs .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-06-30T21:08:13.982718+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0001-8327-0142 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "GFIxnmerRnc6/XRFGNejbB1DZm1BS9wN+0RXw3lCb2TSSdYU3v9Ij3cftJlelJsuLdDksRRqASyxBCTaoBrsxViWzdCIsQbyeqqdyP0iIs2y8tZCNSVRlSkXFldI4wF4H02RC58eJhaTKp19NVq9hqT9HzEVN9/fWOKx58StQ43ELbIkFG0kIpAVf0WLdM3B3TE3LzS7KSDTfzuMMnQGaNvTFPAU5oqxDBO7X5za5uPnhtvzJMcRe5Fkl+wGaODFIrbMaz4F0KvfKmgRDs9hD3Y1PD5bY6Q/Uk107NC71Hq0cgV5YC12W/cMGVaPxDAVmp7UV/MLR9ifQWA4L/Wr5A==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Branched Perfluorononanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:supersedes <https://w3id.org/np/RAFEK8H7AHG2D-WjBWwczKRDeQpl0LB4qvtJrnI05oXoU> ;
+        prov:generatedAtTime "2026-06-30T21:08:13.982718+02:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM> .
+}
