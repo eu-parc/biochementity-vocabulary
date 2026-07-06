@@ -32,7 +32,7 @@ MIGRATE_SUGGESTER ?= https://orcid.org/0000-0001-8327-0142
 # "Defining a biochementity" assertion template, so Nanodash renders them with
 # the matching form).
 NANOPUB_TYPE ?= https://w3id.org/peh/terms/BioChemEntity
-NANOPUB_TEMPLATE ?= https://w3id.org/np/RAhSlIuuw5YqmMoyyvmy5GL3qIhs7sp14i6x2y3DCOhXM
+NANOPUB_TEMPLATE ?= https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk
 # Vocabulary each term links to via dcterms:isPartOf in its assertion.
 NANOPUB_PART_OF ?= https://w3id.org/spaces/biochementity/r/vocabulary
 DRY ?=
