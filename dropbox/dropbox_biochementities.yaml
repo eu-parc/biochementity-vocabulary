@@ -1,0 +1,776 @@
+suggester: https://orcid.org/0000-0003-0322-9620
+biochementity_subclasses:
+- name: Perfluoropropanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: PFPrA
+  remark: 'NORMAN SusDat ID: NS00001703'
+  molweight_grampermol: 164.031
+  exact_matches:
+  - https://identifiers.org/cas:422-64-0
+  - https://identifiers.org/pubchem.compound:62356
+  - https://identifiers.org/inchikey:LRMSQVBRUNSOJL-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Perfluoropentanesulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: PFPeS
+  remark: 'NORMAN SusDat ID: NS00011290'
+  molweight_grampermol: 350.1
+  exact_matches:
+  - https://identifiers.org/cas:2706-91-4
+  - https://identifiers.org/pubchem.compound:75922
+  - https://identifiers.org/inchikey:ACEKLXZRZOWKRY-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 3:3 Fluorotelomer carboxylic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00004093'
+  molweight_grampermol: 242.093
+  exact_matches:
+  - https://identifiers.org/cas:356-02-5
+  - https://identifiers.org/pubchem.compound:2774909
+  - https://identifiers.org/inchikey:ISFKSWMQWIRDNC-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 2H,2H,3H,3H-Perfluorooctanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 5:3 FTCA
+  remark: 'NORMAN SusDat ID: NS00011090'
+  molweight_grampermol: 342.108
+  exact_matches:
+  - https://identifiers.org/cas:914637-49-3
+  - https://identifiers.org/pubchem.compound:14632790
+  - https://identifiers.org/inchikey:ABFCFCPCGMHSRX-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 3-Perfluoroheptylpropanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 7:3 FTCA
+  remark: 'NORMAN SusDat ID: NS00008860'
+  molweight_grampermol: 442.124
+  exact_matches:
+  - https://identifiers.org/cas:812-70-4
+  - https://identifiers.org/pubchem.compound:2783376
+  - https://identifiers.org/inchikey:HLBRGVKRZQSQHB-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 2-Perfluorohexyl ethanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 6:2 FTCA
+  remark: 'NORMAN SusDat ID: NS00011084'
+  molweight_grampermol: 378.089
+  exact_matches:
+  - https://identifiers.org/cas:53826-12-3
+  - https://identifiers.org/pubchem.compound:11783764
+  - https://identifiers.org/inchikey:LRWIIEJPCFNNCZ-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 2-Perfluorooctyl ethanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 8:2 FTCA
+  remark: 'NORMAN SusDat ID: NS00011081'
+  molweight_grampermol: 478.105
+  exact_matches:
+  - https://identifiers.org/cas:27854-31-5
+  - https://identifiers.org/pubchem.compound:10994425
+  - https://identifiers.org/inchikey:XTBXSCIWOVSSGB-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 2-Perfluorodecyl ethanoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 10:2 FTCA
+  remark: 'NORMAN SusDat ID: NS00011082'
+  molweight_grampermol: 578.12
+  exact_matches:
+  - https://identifiers.org/cas:53826-13-4
+  - https://identifiers.org/pubchem.compound:11028244
+  - https://identifiers.org/inchikey:IKHNVATUHWDNGI-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 3-(Perfluoropentyl)-3-fluoro-2-propenoic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 6:2 FTUCA
+  remark: 'NORMAN SusDat ID: NS00011103'
+  molweight_grampermol: 358.083
+  exact_matches:
+  - https://identifiers.org/cas:70887-88-6
+  - https://identifiers.org/pubchem.compound:85976247
+  - https://identifiers.org/inchikey:BKOBFLVYTXYFQZ-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 2H-Perfluoro-2-dodecenoate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 10:2 FTUCA
+  remark: 'NORMAN SusDat ID: NS00111432'
+  molweight_grampermol: 558.114
+  exact_matches:
+  - https://identifiers.org/cas:70887-94-4
+  - https://identifiers.org/pubchem.compound:138396354
+  - https://identifiers.org/inchikey:OGNPKTMXAFCAFU-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: N-ethyl-N-[2-(phosphonooxy)ethyl]perfluorooctanesulfonamide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00011111'
+  molweight_grampermol: 651.23
+  exact_matches:
+  - https://identifiers.org/cas:3820-83-5
+  - https://identifiers.org/pubchem.compound:77442
+  - https://identifiers.org/inchikey:JRSUJBJSUYPODE-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Bis(2-{ethyl[(perfluorooctyl)sulfonyl]amino}ethyl) hydrogen phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00010958'
+  molweight_grampermol: 1204.46
+  exact_matches:
+  - https://identifiers.org/cas:2965-52-8
+  - https://identifiers.org/pubchem.compound:102352
+  - https://identifiers.org/inchikey:BZZAKKWGRKFWJJ-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Bis(tridecafluorohexyl)phosphinic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 6:6 PFPi
+  remark: 'NORMAN SusDat ID: NS00011284'
+  molweight_grampermol: 702.07
+  exact_matches:
+  - https://identifiers.org/cas:40143-77-9
+  - https://identifiers.org/pubchem.compound:71363384
+  - https://identifiers.org/inchikey:NKHVPWOARFMIPG-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Perfluorohexylperfluorooctyl phosphinic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 6:8 PFPi
+  remark: 'NORMAN SusDat ID: NS00011285'
+  molweight_grampermol: 802.086
+  exact_matches:
+  - https://identifiers.org/cas:610800-34-5
+  - https://identifiers.org/pubchem.compound:85871532
+  - https://identifiers.org/inchikey:CQORQFOHIKVJET-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Bis(heptadecafluorooctyl)phosphinic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 8:8 PFPi
+  remark: 'NORMAN SusDat ID: NS00011286'
+  molweight_grampermol: 902.101
+  exact_matches:
+  - https://identifiers.org/cas:40143-79-1
+  - https://identifiers.org/pubchem.compound:13528039
+  - https://identifiers.org/inchikey:BELPOXSOCHBAEX-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Ammonium perfluoro[(5-methoxy-1,3-dioxolan-4-yl)oxy]acetate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00108891'
+  molweight_grampermol: 357.085
+  exact_matches:
+  - https://identifiers.org/cas:1190931-27-1
+  - https://identifiers.org/inchikey:JVXDZDPWHUBMPI-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Perfluoro-8-chloro-1-octanesulfonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00074804'
+  molweight_grampermol: 516.58
+  exact_matches:
+  - https://identifiers.org/cas:777011-38-8
+  - https://identifiers.org/pubchem.compound:15564880
+  - https://identifiers.org/inchikey:TXNZTTQBKZRWQR-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 6-Chloroperfluorohexylphosphonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: Cl-PFHxPA
+  remark: 'NORMAN SusDat ID: NS00114383'
+  molweight_grampermol: 416.48
+  exact_matches:
+  - https://identifiers.org/cas:1283087-54-6
+  - https://identifiers.org/pubchem.compound:101545603
+  - https://identifiers.org/inchikey:SSYJCIUXWUSGKG-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Perfluorooctylphosphoric acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: PFOPA
+  remark: 'NORMAN SusDat ID: NS00011280'
+  molweight_grampermol: 500.048
+  exact_matches:
+  - https://identifiers.org/cas:40143-78-0
+  - https://identifiers.org/pubchem.compound:13528037
+  - https://identifiers.org/inchikey:CPRNWMZKNOIIML-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: 8-Chloroperfluorooctylphosphonic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00115797'
+  molweight_grampermol: 516.5
+  exact_matches:
+  - https://identifiers.org/cas:2252239-09-9
+  - https://identifiers.org/pubchem.compound:138395139
+  - https://identifiers.org/inchikey:JTUDXWNBUPNSAX-UHFFFAOYSA-N
+  group_labels:
+  - PFAS
+- name: Diundecyl phthalate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00005379'
+  molweight_grampermol: 474.726
+  exact_matches:
+  - https://identifiers.org/cas:3648-20-2
+  - https://identifiers.org/pubchem.compound:19283
+  - https://identifiers.org/inchikey:QQVHEQUEHCEAKS-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Didecyl phthalate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00019631'
+  molweight_grampermol: 446.672
+  exact_matches:
+  - https://identifiers.org/cas:84-77-5
+  - https://identifiers.org/pubchem.compound:6788
+  - https://identifiers.org/inchikey:PGIBJVOPLXHHGS-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Acetyl tributyl citrate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00010307'
+  molweight_grampermol: 402.484
+  exact_matches:
+  - https://identifiers.org/cas:77-90-7
+  - https://identifiers.org/pubchem.compound:6505
+  - https://identifiers.org/inchikey:QZCLKYGREBVARF-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Tris(2-ethylhexyl) trimellitate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00005625'
+  molweight_grampermol: 546.789
+  exact_matches:
+  - https://identifiers.org/cas:3319-31-1
+  - https://identifiers.org/pubchem.compound:18725
+  - https://identifiers.org/inchikey:KRADHMIOFJQKEZ-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Diisononyl adipate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00004540'
+  exact_matches:
+  - https://identifiers.org/cas:33703-08-1
+  - https://identifiers.org/pubchem.compound:6427097
+  - https://identifiers.org/inchikey:AYWLCKHHUFBVGJ-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Bis(2-ethylhexyl) nonanedioate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00006986'
+  molweight_grampermol: 412.655
+  exact_matches:
+  - https://identifiers.org/cas:103-24-2
+  - https://identifiers.org/pubchem.compound:7642
+  - https://identifiers.org/inchikey:ZDWGXBPVPXVXMQ-UHFFFAOYSA-N
+  group_labels:
+  - Phthalates
+- name: Bisphenol A
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: BPA
+  remark: 'NORMAN SusDat ID: NS00008865'
+  molweight_grampermol: 228.291
+  exact_matches:
+  - https://identifiers.org/cas:80-05-7
+  - https://identifiers.org/pubchem.compound:6623
+  - https://identifiers.org/inchikey:IISBACLAFKSPIT-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: 4,4'-Sulfonyldiphenol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: Bisphenol S
+  remark: 'NORMAN SusDat ID: NS00010610'
+  molweight_grampermol: 250.27
+  exact_matches:
+  - https://identifiers.org/cas:80-09-1
+  - https://identifiers.org/pubchem.compound:6626
+  - https://identifiers.org/inchikey:VPWNQTHUCYMVMZ-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: Bis(4-hydroxyphenyl)methane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: Bisphenol F
+  remark: 'NORMAN SusDat ID: NS00009451'
+  molweight_grampermol: 200.237
+  exact_matches:
+  - https://identifiers.org/cas:620-92-8
+  - https://identifiers.org/pubchem.compound:12111
+  - https://identifiers.org/inchikey:PXKLMJQFEQBVLD-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: Bisphenol AF
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00011437'
+  molweight_grampermol: 336.233
+  exact_matches:
+  - https://identifiers.org/cas:1478-61-1
+  - https://identifiers.org/pubchem.compound:73864
+  - https://identifiers.org/inchikey:ZFVMWEVVKGLCIJ-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: Bisphenol Z
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00014633'
+  molweight_grampermol: 268.356
+  exact_matches:
+  - https://identifiers.org/cas:843-55-0
+  - https://identifiers.org/pubchem.compound:232446
+  - https://identifiers.org/inchikey:SDDLEVPIDBLVHC-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: Bisphenol B
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00007935'
+  molweight_grampermol: 242.318
+  exact_matches:
+  - https://identifiers.org/cas:77-40-7
+  - https://identifiers.org/pubchem.compound:66166
+  - https://identifiers.org/inchikey:HTVITOHKHWFJKO-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: Phenol, 2-[1-(4-hydroxyphenyl)-1-methylethyl]-
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00019384'
+  molweight_grampermol: 228.291
+  exact_matches:
+  - https://identifiers.org/cas:837-08-1
+  - https://identifiers.org/pubchem.compound:70044
+  - https://identifiers.org/inchikey:MLCQXUZZAXKTSG-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: 2,4'-Dihydroxydiphenyl sulfone
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00019381'
+  molweight_grampermol: 250.27
+  exact_matches:
+  - https://identifiers.org/cas:5397-34-2
+  - https://identifiers.org/pubchem.compound:79381
+  - https://identifiers.org/inchikey:LROZSPADHSXFJA-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: 2-[(4-Hydroxyphenyl)methyl]phenol
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00019383'
+  molweight_grampermol: 200.237
+  exact_matches:
+  - https://identifiers.org/cas:2467-03-0
+  - https://identifiers.org/pubchem.compound:75576
+  - https://identifiers.org/inchikey:LVLNPXCISNPHLE-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: 2,2′-Methylenebis[phenol]
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: 2,2'-BPF
+  remark: 'NORMAN SusDat ID: NS00010221'
+  molweight_grampermol: 200.237
+  exact_matches:
+  - https://identifiers.org/cas:2467-02-9
+  - https://identifiers.org/pubchem.compound:75575
+  - https://identifiers.org/inchikey:MQCPOLNSJCWPGT-UHFFFAOYSA-N
+  group_labels:
+  - Bisphenols
+- name: 1R-cis-Permethrinic acid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: DCVA, cis-
+  remark: 'NORMAN SusDat ID: NS00123208'
+  exact_matches:
+  - https://identifiers.org/cas:55667-40-8
+  - https://identifiers.org/inchikey:LLMLSUSAKZVFOA-INEUFUBQSA-N
+  group_labels:
+  - pesticides pyrethroid
+- name: Lindane
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: g-HCH
+  remark: 'NORMAN SusDat ID: NS00002327'
+  molweight_grampermol: 290.81
+  exact_matches:
+  - https://identifiers.org/cas:58-89-9
+  - https://identifiers.org/pubchem.compound:727
+  - https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-GNIYUCBRSA-N
+  group_labels:
+  - Pesticides
+- name: p,p'-DDD
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00007051'
+  molweight_grampermol: 320.03
+  exact_matches:
+  - https://identifiers.org/cas:72-54-8
+  - https://identifiers.org/pubchem.compound:6294
+  - https://identifiers.org/inchikey:AHJKRLASYNVKDZ-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Toxaphene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00021362'
+  exact_matches:
+  - https://identifiers.org/cas:8001-35-2
+  - https://identifiers.org/pubchem.compound:5284469
+  - https://identifiers.org/inchikey:OEJNXTAZZBRGDN-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: DEET
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00000221'
+  molweight_grampermol: 191.274
+  exact_matches:
+  - https://identifiers.org/cas:134-62-3
+  - https://identifiers.org/pubchem.compound:4284
+  - https://identifiers.org/inchikey:MMOXZBCLCQITDF-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Carbendazim
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00010265'
+  molweight_grampermol: 191.19
+  exact_matches:
+  - https://identifiers.org/cas:10605-21-7
+  - https://identifiers.org/pubchem.compound:25429
+  - https://identifiers.org/inchikey:TWFZGCMQGLPBSX-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Tebuconazole
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00000280'
+  molweight_grampermol: 307.82
+  exact_matches:
+  - https://identifiers.org/cas:107534-96-3
+  - https://identifiers.org/pubchem.compound:86102
+  - https://identifiers.org/inchikey:PXMNMQRDXWABCY-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Propiconazole
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00000220'
+  molweight_grampermol: 342.22
+  exact_matches:
+  - https://identifiers.org/cas:60207-90-1
+  - https://identifiers.org/pubchem.compound:43234
+  - https://identifiers.org/inchikey:STJLVHWMYQXCPB-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Azaconazole
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00001037'
+  molweight_grampermol: 300.14
+  exact_matches:
+  - https://identifiers.org/cas:60207-31-0
+  - https://identifiers.org/pubchem.compound:43233
+  - https://identifiers.org/inchikey:AKNQMEBLVAMSNZ-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Endosulfan I
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00008052'
+  molweight_grampermol: 406.9
+  exact_matches:
+  - https://identifiers.org/cas:959-98-8
+  - https://identifiers.org/pubchem.compound:6433227
+  - https://identifiers.org/inchikey:RDYMFSUJUZBWLH-GDSHQCHSSA-N
+  group_labels:
+  - Pesticides
+- name: Endosulfan II
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00114173'
+  molweight_grampermol: 406.9
+  exact_matches:
+  - https://identifiers.org/cas:33213-65-9
+  - https://identifiers.org/pubchem.compound:12309467
+  - https://identifiers.org/inchikey:RDYMFSUJUZBWLH-BRZMKDEISA-N
+  group_labels:
+  - Pesticides
+- name: Methoxychlor
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00003861'
+  molweight_grampermol: 345.64
+  exact_matches:
+  - https://identifiers.org/cas:72-43-5
+  - https://identifiers.org/pubchem.compound:4115
+  - https://identifiers.org/inchikey:IAKOZHOLGAGEJT-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Z-Tetrachlorvinphos
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00073940'
+  molweight_grampermol: 365.95
+  exact_matches:
+  - https://identifiers.org/cas:22248-79-9
+  - https://identifiers.org/pubchem.compound:5284462
+  - https://identifiers.org/inchikey:UBCKGWBNUIFUST-YHYXMXQVSA-N
+  group_labels:
+  - Pesticides
+- name: Tolylfluanid
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00000191'
+  molweight_grampermol: 347.24
+  exact_matches:
+  - https://identifiers.org/cas:731-27-1
+  - https://identifiers.org/pubchem.compound:12898
+  - https://identifiers.org/inchikey:HYVWIQDYBVKITD-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Phenothrin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00099457'
+  molweight_grampermol: 350.458
+  exact_matches:
+  - https://identifiers.org/cas:26002-80-2
+  - https://identifiers.org/pubchem.compound:4767
+  - https://identifiers.org/inchikey:SBNFWQZLDJGRLK-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Piperonyl butoxide
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00011484'
+  molweight_grampermol: 338.444
+  exact_matches:
+  - https://identifiers.org/cas:51-03-6
+  - https://identifiers.org/pubchem.compound:5794
+  - https://identifiers.org/inchikey:FIPWRIJSWJWJAI-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Tetramethrin
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00099485'
+  molweight_grampermol: 331.412
+  exact_matches:
+  - https://identifiers.org/cas:7696-12-0
+  - https://identifiers.org/pubchem.compound:83975
+  - https://identifiers.org/inchikey:CXBMCYHAMVGWJQ-UHFFFAOYSA-N
+  group_labels:
+  - Pesticides
+- name: Biphenyl
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00010251'
+  molweight_grampermol: 154.212
+  exact_matches:
+  - https://identifiers.org/cas:92-52-4
+  - https://identifiers.org/pubchem.compound:7095
+  - https://identifiers.org/inchikey:ZUOUZKKEUPVFJK-UHFFFAOYSA-N
+- name: (1H)-benzo[b]fluorene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00054169'
+  molweight_grampermol: 216.283
+  exact_matches:
+  - https://identifiers.org/cas:14458-76-5
+  - https://identifiers.org/pubchem.compound:84458
+  - https://identifiers.org/inchikey:RZKOXMMPOZMIOS-UHFFFAOYSA-N
+- name: Retene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00008487'
+  molweight_grampermol: 234.342
+  exact_matches:
+  - https://identifiers.org/cas:483-65-8
+  - https://identifiers.org/pubchem.compound:10222
+  - https://identifiers.org/inchikey:NXLOLUFNDSBYTP-UHFFFAOYSA-N
+- name: Benzo[b]naphtho[2,1-d]thiophene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00027512'
+  molweight_grampermol: 234.32
+  exact_matches:
+  - https://identifiers.org/cas:239-35-0
+  - https://identifiers.org/pubchem.compound:9198
+  - https://identifiers.org/inchikey:YEUHHUCOSQOCIX-UHFFFAOYSA-N
+- name: Benzo[ghi]fluoranthene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00041486'
+  molweight_grampermol: 226.278
+  exact_matches:
+  - https://identifiers.org/cas:203-12-3
+  - https://identifiers.org/pubchem.compound:9144
+  - https://identifiers.org/inchikey:YEIHPPOCKIHUQJ-UHFFFAOYSA-N
+- name: Triphenylene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00026961'
+  molweight_grampermol: 228.294
+  exact_matches:
+  - https://identifiers.org/cas:217-59-4
+  - https://identifiers.org/pubchem.compound:9170
+  - https://identifiers.org/inchikey:SLGBZMMZGDRARJ-UHFFFAOYSA-N
+- name: Perylene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00007842'
+  molweight_grampermol: 252.316
+  exact_matches:
+  - https://identifiers.org/cas:198-55-0
+  - https://identifiers.org/pubchem.compound:9142
+  - https://identifiers.org/inchikey:CSHWQDPOILHKBI-UHFFFAOYSA-N
+- name: Dibenz[a,c]anthracene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00041762'
+  molweight_grampermol: 278.354
+  exact_matches:
+  - https://identifiers.org/cas:215-58-7
+  - https://identifiers.org/pubchem.compound:9164
+  - https://identifiers.org/inchikey:RAASUWZPTOJQAY-UHFFFAOYSA-N
+- name: Anthanthrene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00008701'
+  molweight_grampermol: 276.338
+  exact_matches:
+  - https://identifiers.org/cas:191-26-4
+  - https://identifiers.org/pubchem.compound:9118
+  - https://identifiers.org/inchikey:YFIJJNAKSZUOLT-UHFFFAOYSA-N
+- name: Coronene
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00004856'
+  molweight_grampermol: 300.36
+  exact_matches:
+  - https://identifiers.org/cas:191-07-1
+  - https://identifiers.org/pubchem.compound:9115
+  - https://identifiers.org/inchikey:VPUGDVKSAQVFFS-UHFFFAOYSA-N
+- name: 2-Ethylhexyl diphenyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: EHDP
+  remark: 'NORMAN SusDat ID: NS00010020'
+  molweight_grampermol: 362.406
+  exact_matches:
+  - https://identifiers.org/cas:1241-94-7
+  - https://identifiers.org/pubchem.compound:14716
+  - https://identifiers.org/inchikey:CGSLYBDCEGBZCG-UHFFFAOYSA-N
+- name: Tris(1,3-dichloro-2-propyl) phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: TDCIPP
+  remark: 'NORMAN SusDat ID: NS00010388'
+  molweight_grampermol: 430.89
+  exact_matches:
+  - https://identifiers.org/cas:13674-87-8
+  - https://identifiers.org/pubchem.compound:26177
+  - https://identifiers.org/inchikey:ASLWPAWFJZFCKF-UHFFFAOYSA-N
+- name: Triisobutyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: TIBP
+  remark: 'NORMAN SusDat ID: NS00008118'
+  molweight_grampermol: 266.318
+  exact_matches:
+  - https://identifiers.org/cas:126-71-6
+  - https://identifiers.org/pubchem.compound:31355
+  - https://identifiers.org/inchikey:HRKAMJBPFPHCSD-UHFFFAOYSA-N
+- name: Triethyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  short_name: TEP
+  remark: 'NORMAN SusDat ID: NS00009400'
+  molweight_grampermol: 182.156
+  exact_matches:
+  - https://identifiers.org/cas:78-40-0
+  - https://identifiers.org/pubchem.compound:6535
+  - https://identifiers.org/inchikey:DQWPFSLDHJDLRL-UHFFFAOYSA-N
+- name: Tris(4-tert-butylphenyl) phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00007017'
+  molweight_grampermol: 494.612
+  exact_matches:
+  - https://identifiers.org/cas:78-33-1
+  - https://identifiers.org/pubchem.compound:6530
+  - https://identifiers.org/inchikey:LORSVOJSXMHDHF-UHFFFAOYSA-N
+- name: Phosphoric acid, 2,2-bis(chloromethyl)-1,3-propanediyl tetrakis(2-chloroethyl)
+    ester
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00006541'
+  molweight_grampermol: 582.97
+  exact_matches:
+  - https://identifiers.org/cas:38051-10-4
+  - https://identifiers.org/pubchem.compound:92310
+  - https://identifiers.org/inchikey:ZGHUDSLVQAGWEY-UHFFFAOYSA-N
+- name: Phosphoric acid, P,P'-[(1-methylethylidene)di-4,1-phenylene] P,P,P',P'-tetraphenyl
+    ester
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00003720'
+  molweight_grampermol: 692.641
+  exact_matches:
+  - https://identifiers.org/cas:5945-33-5
+  - https://identifiers.org/pubchem.compound:9874825
+  - https://identifiers.org/inchikey:BQPNUOYXSVUVMY-UHFFFAOYSA-N
+- name: Isodecyl diphenyl phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00006121'
+  exact_matches:
+  - https://identifiers.org/cas:29761-21-5
+  - https://identifiers.org/pubchem.compound:34697
+  - https://identifiers.org/inchikey:RYUJRXVZSJCHDZ-UHFFFAOYSA-N
+- name: Tetraphenyl m-phenylene bis phosphate
+  parent_biochementities:
+  - https://w3id.org/peh/terms/BioChemEntity
+  remark: 'NORMAN SusDat ID: NS00008442'
+  molweight_grampermol: 574.462
+  exact_matches:
+  - https://identifiers.org/cas:57583-54-7
+  - https://identifiers.org/pubchem.compound:93311
+  - https://identifiers.org/inchikey:OWICEWMBIBPFAH-UHFFFAOYSA-N
