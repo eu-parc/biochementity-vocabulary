@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAMUfeelgcOIdwYuXXynvOAPEJho_03DxlJiUG582exRU> .
+@prefix sub: <https://w3id.org/np/RAMUfeelgcOIdwYuXXynvOAPEJho_03DxlJiUG582exRU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAMUfeelgcOIdwYuXXynvOAPEJho_03DxlJiUG582exRU a owl:Class ;
+        rdfs:label "Bis(4-hydroxyphenyl)methane" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "Bisphenol F" ;
+        ns1:comment "NORMAN SusDat ID: NS00009451" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:620-92-8>,
+            <https://identifiers.org/inchikey:PXKLMJQFEQBVLD-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:12111> ;
+        ns2:hasGroupLabel "Bisphenols" ;
+        ns2:hasMolecularWeight 200.236999999999994770405464805662631988525390625 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:43.280355+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "jE0UUXyqdW3sQoQZt/V+PNrjjT1horcTAyXZx5jEmApYVGIrtmqsE/V49UD5lXlV4JDY/iV4oWlu1gUUpnbNf41dKfHv6mymphSC65eSKluc7bPBY2kzQRo2leIyRwd0T3i/jUIFU0GZGSHqDAHoSjd/wfShqVDa12UjaqDrDwxrBS6D1ettFf3rQf2g4nN1oaEz0k3u4QIR15GzyEtgqP2MkxLgiae9RBUMa7ItuX76MB8I5NHfi2dAf4bLmI2y0Ha4u/FJPSOQWqZJdBUst5bCai6vaUtXzNevZHWdwYtctVDZUyiO8SYoDQPzm/kWyfNtuTOrxYuzylCjZ1khxA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Bis(4-hydroxyphenyl)methane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAMUfeelgcOIdwYuXXynvOAPEJho_03DxlJiUG582exRU ;
+        prov:generatedAtTime "2026-07-09T14:38:43.280355+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

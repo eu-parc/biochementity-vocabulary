@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAK2wbXTnQAI1-M8G3dcyY3W2LSMCOnLEjbZVDyiCvdOA> .
+@prefix sub: <https://w3id.org/np/RAK2wbXTnQAI1-M8G3dcyY3W2LSMCOnLEjbZVDyiCvdOA/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAK2wbXTnQAI1-M8G3dcyY3W2LSMCOnLEjbZVDyiCvdOA a owl:Class ;
+        rdfs:label "2-Perfluorooctyl ethanoic acid" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "8:2 FTCA" ;
+        ns2:comment "NORMAN SusDat ID: NS00011081" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:27854-31-5>,
+            <https://identifiers.org/inchikey:XTBXSCIWOVSSGB-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:10994425> ;
+        ns1:hasGroupLabel "PFAS" ;
+        ns1:hasMolecularWeight 478.10500000000001818989403545856475830078125 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:22.133760+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "c5DXgU5hD7ylnDkIwwVuGWwN+XV1nYp37/51UUrpYRagzZbOmMma2TSGVq3VJjSMpWYEd+YifHgxKURFjK7ZHKXSLuj36LBBHMsrTr7ZWA6gnDvPBCLmdba6/XIjMMnwdKNVdPlzf6W5tWAGjigCekpRENAPFhga+dS0YCK0Mgr0oYxd2G67g30VpJ/WxMsq1UP2FPO4/vhPsVH7evXCP1/9AQUbG/QTmRIW7U6HVgs7xnrGJaqhfYguFi8zWkrfVPxxNskgiOPv6UO1rCTSOjzEbk7wJLrshpVzsCJE8vWHvxyw0VxoBy5iCMdcjky7LlKv4gLmy72reYC8SUdETg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "2-Perfluorooctyl ethanoic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAK2wbXTnQAI1-M8G3dcyY3W2LSMCOnLEjbZVDyiCvdOA ;
+        prov:generatedAtTime "2026-07-09T14:38:22.133760+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAjTZwONgwguuhsvPOg-4CI_UbTPPr6BymPwhASBj-b0A> .
+@prefix sub: <https://w3id.org/np/RAjTZwONgwguuhsvPOg-4CI_UbTPPr6BymPwhASBj-b0A/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAjTZwONgwguuhsvPOg-4CI_UbTPPr6BymPwhASBj-b0A a owl:Class ;
+        rdfs:label "Perfluoro-8-chloro-1-octanesulfonic acid" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:comment "NORMAN SusDat ID: NS00074804" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:777011-38-8>,
+            <https://identifiers.org/inchikey:TXNZTTQBKZRWQR-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:15564880> ;
+        ns1:hasGroupLabel "PFAS" ;
+        ns1:hasMolecularWeight 516.5800000000000409272615797817707061767578125 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:34.258689+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "YNOukAMzyILISVLkg6OjzLTAmFahVCfL+Wv86riG/dskkzZwCHTTosxcIMJOW+2w21dP3M0G2iB5lCH/1z2oy2SMESbp5mcJRCIC4XB/Dwktgwjo1K6uq973Uau/FE72rBt/3m7IbIzgo5TOV/WIYT92DvhIZWk+/pVv/L7Bkifpj8uCEPrwgujMtLYbRi6Q505a7t5t48Ubd+Epb6XRJFNMOg7pmiZYfBAL39dGvZ7t4mAZLTFILYKwbXR1RZOmZt3HOg+IR0DZZeocVy5ES9nZpkXsw9DJ6XCqqf89Ugfl5SCOVfNlISHa67p+mR0fF/SA45mQB9hIK2caZXZLuA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Perfluoro-8-chloro-1-octanesulfonic acid" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAjTZwONgwguuhsvPOg-4CI_UbTPPr6BymPwhASBj-b0A ;
+        prov:generatedAtTime "2026-07-09T14:38:34.258689+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

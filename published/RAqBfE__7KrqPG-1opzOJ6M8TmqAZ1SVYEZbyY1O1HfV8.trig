@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAqBfE__7KrqPG-1opzOJ6M8TmqAZ1SVYEZbyY1O1HfV8> .
+@prefix sub: <https://w3id.org/np/RAqBfE__7KrqPG-1opzOJ6M8TmqAZ1SVYEZbyY1O1HfV8/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAqBfE__7KrqPG-1opzOJ6M8TmqAZ1SVYEZbyY1O1HfV8 a owl:Class ;
+        rdfs:label "Tetraphenyl m-phenylene bis phosphate" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:comment "NORMAN SusDat ID: NS00008442" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:57583-54-7>,
+            <https://identifiers.org/inchikey:OWICEWMBIBPFAH-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:93311> ;
+        ns1:hasMolecularWeight 574.46199999999998908606357872486114501953125 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:39:03.129557+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "EvfRjJlhdyuQ0t0pmTKh6cciQ/TCGzmmRpC6IubScac4uMptAmveKTSNqC6eLkwq8rybXeH+tJaRwub1ukBrxLSCXRDBFq2ZyEVjVKAN7irgw4IbEfNBCF9LfvmZzWwdb6J67PFVkEdII0OMrh7INk3xPHat8fs9fEacxSdnlAACbyTlkTPk3ldqXcSj08nzM2NRWhtkRNNf8ZCuDb7Epxcqg2stl/mxcDvEPydad3vvSl9fgJ4pkMs/ma5U+mGQUay9MaEIzXN1hEKjAGku1CZH/efrx+icRnj8VO9FgtB8kL/SzKRADK6p4NmItLhvQNazqHrCo/4nWYARse/bsQ==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Tetraphenyl m-phenylene bis phosphate" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RAqBfE__7KrqPG-1opzOJ6M8TmqAZ1SVYEZbyY1O1HfV8 ;
+        prov:generatedAtTime "2026-07-09T14:39:03.129557+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

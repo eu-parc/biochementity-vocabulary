@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RA9AxYQMpl1I_aWvywgsa8_72g8zMj2YrJjfpFv0dBDf4> .
+@prefix sub: <https://w3id.org/np/RA9AxYQMpl1I_aWvywgsa8_72g8zMj2YrJjfpFv0dBDf4/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA9AxYQMpl1I_aWvywgsa8_72g8zMj2YrJjfpFv0dBDf4 a owl:Class ;
+        rdfs:label "Lindane" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:alternateName "g-HCH" ;
+        ns2:comment "NORMAN SusDat ID: NS00002327" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:58-89-9>,
+            <https://identifiers.org/inchikey:JLYXXMFPNIAWKQ-GNIYUCBRSA-N>,
+            <https://identifiers.org/pubchem.compound:727> ;
+        ns1:hasGroupLabel "Pesticides" ;
+        ns1:hasMolecularWeight 290.81000000000000227373675443232059478759765625 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:39.064783+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "lOV8WY0ET/qScn78VaiWpT8TCrgTmS4Zw8DayQZrgd1AGrvkHT3R0DuUX5HmCAQeEOQfvfP9AEGjTGjJeEKHWl2hu2GzF+UQm8lZ1pG3oybHtLvR6G8RsBhDWWZfqTCqtkQQpR6QwT8IOuR0LK+xhxkKGWO1FekwxUMpv3MvPgq1kh7XSk7Aw7/kGSzeV80QvV9OQ9a5c2RGPfR8HzPmE7DRTmyqn6rf9ggDv7j6Ewf/Ia0mQCxpr/Pi7pd2XDDDjPAg3fYMeS82BoYrTsV8EleEYbx/7MQ7Vhp91j68YGKdLIdaCD4z5RwRIA9ThmmBWdQTzQQFOB/pkmofHUEQGw==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Lindane" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RA9AxYQMpl1I_aWvywgsa8_72g8zMj2YrJjfpFv0dBDf4 ;
+        prov:generatedAtTime "2026-07-09T14:38:39.064783+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

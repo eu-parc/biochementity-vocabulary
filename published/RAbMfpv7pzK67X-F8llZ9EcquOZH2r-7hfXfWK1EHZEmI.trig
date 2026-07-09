@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RAbMfpv7pzK67X-F8llZ9EcquOZH2r-7hfXfWK1EHZEmI> .
+@prefix sub: <https://w3id.org/np/RAbMfpv7pzK67X-F8llZ9EcquOZH2r-7hfXfWK1EHZEmI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAbMfpv7pzK67X-F8llZ9EcquOZH2r-7hfXfWK1EHZEmI a owl:Class ;
+        rdfs:label "Bisphenol A" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:alternateName "BPA" ;
+        ns1:comment "NORMAN SusDat ID: NS00008865" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:80-05-7>,
+            <https://identifiers.org/inchikey:IISBACLAFKSPIT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:6623> ;
+        ns2:hasGroupLabel "Bisphenols" ;
+        ns2:hasMolecularWeight 228.29099999999999681676854379475116729736328125 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:38.467178+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "TQc2eCwKQsYnMygdSTx/NhX1/+vMIwpZSCVY8XGi5mvayOfubYuQMkzBAHbM4rqn9Z0HZ62k3vb7NziRv85M4y0bXmowIRD4ARPwAz+IJFWEUlrh+CuWD7rxJvX+4rBM+4UZiF2QuNYYS3p9CA9MgjtmyXUJX8UYKpLJGko2/wk0pQMzIJGbInLuKMQ4WDVD8UKGbE4SxYkXekGFkKJ5hREmCg6Sc0+hegtA4QrtswFzx0xn7Y83J4bN75RpmzaziTtmhNuN+LV/O1UPSAT0XzCRFsjRtIWQhAhWqPZsVPS4q4I3UptsYF0ZXQd2Ec4Q7en95raqb/rak/Xzz1cUAA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Bisphenol A" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAbMfpv7pzK67X-F8llZ9EcquOZH2r-7hfXfWK1EHZEmI ;
+        prov:generatedAtTime "2026-07-09T14:38:38.467178+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

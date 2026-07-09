@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAS1wfl-o-dtzc7BNR9L2IPbCiSI-MEsUM7Ja2Y-dSgUU> .
+@prefix sub: <https://w3id.org/np/RAS1wfl-o-dtzc7BNR9L2IPbCiSI-MEsUM7Ja2Y-dSgUU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <https://w3id.org/peh/terms/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RAS1wfl-o-dtzc7BNR9L2IPbCiSI-MEsUM7Ja2Y-dSgUU a owl:Class ;
+        rdfs:label "Anthanthrene" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns1:comment "NORMAN SusDat ID: NS00008701" ;
+        rdfs:subClassOf ns2:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:191-26-4>,
+            <https://identifiers.org/inchikey:YFIJJNAKSZUOLT-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9118> ;
+        ns2:hasMolecularWeight 276.33800000000002228262019343674182891845703125 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:48.761336+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "TAAna1n02QQE9W4YA+nVnk1SqjUp3klxAWucs1hUtk4GJSgUk8EpNWXeOkejberW9bQgBWF3Gx/ij32lWK2hXTmkZF817xMyl7FJZR2+ZDIir4r6BMBlu+5Ct3TIOJOcdDJ+NR7Wt5UCmIxHGNo4U1aPB+mUunaVX6rglcmKc1exFPv+4AorwTvYVgjD5szdnHuA3owZU6fCAiNeHmP5HOjtqKpox01gstRVqzkacfLUmW1ju/8wJ5Tg32Ehv0w8k6LL0aNM0PsuQk7TYI67atI2o/XiqFgEc9eYKhulHHofckVPck0RuqH8R+PUE72JGQUs7+p9aAegaJDBtVH4VA==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Anthanthrene" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns2:BioChemEntity ;
+        npx:introduces biochementity:RAS1wfl-o-dtzc7BNR9L2IPbCiSI-MEsUM7Ja2Y-dSgUU ;
+        prov:generatedAtTime "2026-07-09T14:38:48.761336+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}
