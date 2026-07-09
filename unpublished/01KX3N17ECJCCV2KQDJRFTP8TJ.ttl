@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17ECJCCV2KQDJRFTP8TJ> a owl:Class ;
+    rdfs:label "4,4'-Sulfonyldiphenol" ;
+    schema1:alternateName "Bisphenol S" ;
+    schema1:comment "NORMAN SusDat ID: NS00010610" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:80-09-1>,
+        <https://identifiers.org/inchikey:VPWNQTHUCYMVMZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:6626> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "Bisphenols" ;
+    pehterms:hasMolecularWeight 250.270000000000010231815394945442676544189453125 .
+

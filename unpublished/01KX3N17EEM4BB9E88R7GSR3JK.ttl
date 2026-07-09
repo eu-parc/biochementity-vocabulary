@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EEM4BB9E88R7GSR3JK> a owl:Class ;
+    rdfs:label "Phosphoric acid, 2,2-bis(chloromethyl)-1,3-propanediyl tetrakis(2-chloroethyl) ester" ;
+    schema1:comment "NORMAN SusDat ID: NS00006541" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:38051-10-4>,
+        <https://identifiers.org/inchikey:ZGHUDSLVQAGWEY-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:92310> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasMolecularWeight 582.970000000000027284841053187847137451171875 .
+

@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EAYEKBP97YFH5WAEC7> a owl:Class ;
+    rdfs:label "2H,2H,3H,3H-Perfluorooctanoic acid" ;
+    schema1:alternateName "5:3 FTCA" ;
+    schema1:comment "NORMAN SusDat ID: NS00011090" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:914637-49-3>,
+        <https://identifiers.org/inchikey:ABFCFCPCGMHSRX-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:14632790> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:hasMolecularWeight 342.10800000000000409272615797817707061767578125 .
+

@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EDGRY9MXZR132353N0> a owl:Class ;
+    rdfs:label "Tolylfluanid" ;
+    schema1:comment "NORMAN SusDat ID: NS00000191" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:731-27-1>,
+        <https://identifiers.org/inchikey:HYVWIQDYBVKITD-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:12898> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "Pesticides" ;
+    pehterms:hasMolecularWeight 347.240000000000009094947017729282379150390625 .
+

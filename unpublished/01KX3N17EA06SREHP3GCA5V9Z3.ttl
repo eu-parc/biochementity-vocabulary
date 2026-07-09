@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EA06SREHP3GCA5V9Z3> a owl:Class ;
+    rdfs:label "3-Perfluoroheptylpropanoic acid" ;
+    schema1:alternateName "7:3 FTCA" ;
+    schema1:comment "NORMAN SusDat ID: NS00008860" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:812-70-4>,
+        <https://identifiers.org/inchikey:HLBRGVKRZQSQHB-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:2783376> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:hasMolecularWeight 442.124000000000023646862246096134185791015625 .
+

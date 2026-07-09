@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17ECNVDPJD6ND06KZ23S> a owl:Class ;
+    rdfs:label "Bisphenol Z" ;
+    schema1:comment "NORMAN SusDat ID: NS00014633" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:843-55-0>,
+        <https://identifiers.org/inchikey:SDDLEVPIDBLVHC-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:232446> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "Bisphenols" ;
+    pehterms:hasMolecularWeight 268.355999999999994543031789362430572509765625 .
+

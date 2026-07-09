@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EDRWGWBJ940R5HCQZE> a owl:Class ;
+    rdfs:label "Biphenyl" ;
+    schema1:comment "NORMAN SusDat ID: NS00010251" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:92-52-4>,
+        <https://identifiers.org/inchikey:ZUOUZKKEUPVFJK-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:7095> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasMolecularWeight 154.21199999999998908606357872486114501953125 .
+

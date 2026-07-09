@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EC1085ZGJD3849GXMG> a owl:Class ;
+    rdfs:label "Tebuconazole" ;
+    schema1:comment "NORMAN SusDat ID: NS00000280" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:107534-96-3>,
+        <https://identifiers.org/inchikey:PXMNMQRDXWABCY-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:86102> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "Pesticides" ;
+    pehterms:hasMolecularWeight 307.81999999999999317878973670303821563720703125 .
+
