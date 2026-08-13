@@ -23,11 +23,25 @@ biochementity_subclasses:
   parent_biochementities:
     - https://w3id.org/peh/terms/BioChemEntity
 ```
-Note that the identifier field does not need to be provided, identifiers are minted on the fly.
+Note that the identifier field does not need to be provided; identifiers are minted on the fly.
 
 The optional `suggester` field (an ORCID) records who proposed the term; it becomes the `prov:wasAttributedTo` provenance of the resulting nanopublication. Set it once at the top of the file as a default, or per entry to override.
 
-2. Open a PR with these *.yaml files added to the dropbox
+### Field reference
+
+| Field | Required | Description |
+| --- | --- | --- |
+| `name` | Yes | Human-readable label for the biochementity. |
+| `id` | No | Identifier for the term. Leave this out for new terms unless you are replacing an existing term. |
+| `description` | No | Free-text description of the `BioChemEntity`. |
+| `group_labels` | No | Free-text labels for grouping biochementities, such as `pesticides` or `PFAS`. Ideally, reuse existing labels. |
+| `has_role` | No | Identifier of a chemical role, such as `https://identifiers.org/CHEBI:25944` for pesticides. |
+| `is_metabolite_of` | No | Identifier of another `BioChemEntity` of which this entity is a metabolite. |
+| `is_isomer_of` | No | Identifier of another `BioChemEntity` of which this entity is an isomer. |
+| `parent_biochementities` | No | List of identifiers for `BioChemEntities` this `BioChemEntity` is a subset or element of. For example, 2-methyl furan is itself a furan. This list should always include `https://w3id.org/peh/terms/BioChemEntity`. |
+| `exact_matches` | No | List of identifiers for already published chemicals that are identical to the term defined here. |
+
+2. Open a PR with these `*.yaml` files added to the dropbox.
 
 ## Under the hood
 
