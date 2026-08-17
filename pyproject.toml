@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "pubmate",
     "linkml",
+    "python-ulid==3.1.0",
 ]
 
 [tool.uv.sources]
