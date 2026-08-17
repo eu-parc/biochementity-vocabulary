@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RA492_Fs1b0uIt3Ofhz5pNnCWHnhCx85C_YoG1kFtQdnU> .
+@prefix sub: <https://w3id.org/np/RA492_Fs1b0uIt3Ofhz5pNnCWHnhCx85C_YoG1kFtQdnU/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RA492_Fs1b0uIt3Ofhz5pNnCWHnhCx85C_YoG1kFtQdnU a owl:Class ;
+        rdfs:label "Phosphoric acid, P,P'-[(1-methylethylidene)di-4,1-phenylene] P,P,P',P'-tetraphenyl ester" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:comment "NORMAN SusDat ID: NS00003720" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:5945-33-5>,
+            <https://identifiers.org/inchikey:BQPNUOYXSVUVMY-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:9874825> ;
+        ns1:hasMolecularWeight 692.6409999999999627107172273099422454833984375 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:39:00.804728+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "dAyWX1BN9ZSJtRLif8nSE5+rKDVNCtJ5icdBmXL0R0u0hCjy9Qa6xBdrwTS6wejSiSi/8cBQbKS5EmJewfBm7306+pmdDhjEjdbRP+ZnZ6JY7OqQGVLjfaouy5zs+F63VyZ566ZxVhYJMd7QCMLRSYei7FmTKe0+9lxAdpU+mXSiP1VK/JSG/Wfr0zig/1GRQA2yVyOXAEHPtDkMv4fpku1CCOmYucVPDBy+k0ZX0fZEj1qUR9wyadvILyhlJidkyTrWaS2+mCtEiAdy1a0Z5LVtMwkGByDw7cis8vXGl06G29wH6PG5hSpfZ98tpEf549hBdvtxEd7n1Mk2t/FHOg==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Phosphoric acid, P,P'-[(1-methylethylidene)di-4,1-phenylene] P,P,P',P'-tetraphenyl ester" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RA492_Fs1b0uIt3Ofhz5pNnCWHnhCx85C_YoG1kFtQdnU ;
+        prov:generatedAtTime "2026-07-09T14:39:00.804728+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

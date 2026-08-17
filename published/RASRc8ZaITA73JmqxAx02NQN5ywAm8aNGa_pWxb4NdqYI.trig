@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RASRc8ZaITA73JmqxAx02NQN5ywAm8aNGa_pWxb4NdqYI> .
+@prefix sub: <https://w3id.org/np/RASRc8ZaITA73JmqxAx02NQN5ywAm8aNGa_pWxb4NdqYI/> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ns1: <https://w3id.org/peh/terms/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+    this: a np:Nanopublication ;
+        np:hasAssertion sub:assertion ;
+        np:hasProvenance sub:provenance ;
+        np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+    biochementity:RASRc8ZaITA73JmqxAx02NQN5ywAm8aNGa_pWxb4NdqYI a owl:Class ;
+        rdfs:label "Tetramethrin" ;
+        dcterms:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary> ;
+        ns2:comment "NORMAN SusDat ID: NS00099485" ;
+        rdfs:subClassOf ns1:BioChemEntity ;
+        skos:exactMatch <https://identifiers.org/cas:7696-12-0>,
+            <https://identifiers.org/inchikey:CXBMCYHAMVGWJQ-UHFFFAOYSA-N>,
+            <https://identifiers.org/pubchem.compound:83975> ;
+        ns1:hasGroupLabel "Pesticides" ;
+        ns1:hasMolecularWeight 331.41199999999997771737980656325817108154296875 .
+}
+
+sub:provenance {
+    sub:assertion prov:generatedAtTime "2026-07-09T14:38:53.223367+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo orcid:0000-0003-0322-9620 .
+}
+
+sub:pubinfo {
+    sub:sig npx:hasAlgorithm "RSA" ;
+        npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArwKYgWZTyvZqlmCnnhp2LFM62fX6ZMq4EJ92Oea5H7vHoPOftYej+zS3Vi95eMLZ+RCGd0mNZ0x2+n2rYdGqf/R+9VesqVAjrhGECXLwF3t84VbysGYgiOd5m4YPpzzcgRHpBjYjK86+hR7hqc+y0ai36tYp165WhuaXbnWY5apw8aUN9Q5e1Daid70PST0Hri9dV/Eq4mxbogXlzJbgduIVOwQMyYlGLrb+NyLDpFT+8VpPs+vblnFTF0xwIrcA11O0Mv/WqCfyrtA77nxtc4gY9RkES+2vaEUuCzxbDleUL/JmxOxSI8Cl0LtgBcRZpD7wppe4sIp3CsuK4a5J2QIDAQAB" ;
+        npx:hasSignature "nU/FDb5iDW9Spjlaka1hBP4L0yAP+ajr7BnmkJ//kH3S/0KUhD4Selb6BxCW+0YN9ueBOlVrlIqmT/YBWzWSmtb2Dj7wyl8gLAIOwyh+A42HNIz7V0MO7FxoWOPYa1xPSuxOgQucArj6kYLuTyyfaMr0BmFZyP0jUCnVeRuJBbQijmOdKNQu42mmatqb1V25nZkfY86SqABf3hH4L26sCw/IcWLyQqOX/ozcLMt7HHtohZ/QE197oy73eEKcpW8Ct5Zybdt8W0u5R/3Jz9w8YPg5unuuPwuJaBy9A0JRWNely3XBf6FqW2AzZScmRSsHXrqK5B4vuW0i/GXEwPMo3Q==" ;
+        npx:hasSignatureTarget this: ;
+        npx:signedBy <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> .
+    this: rdfs:label "Tetramethrin" ;
+        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+        npx:hasNanopubType ns1:BioChemEntity ;
+        npx:introduces biochementity:RASRc8ZaITA73JmqxAx02NQN5ywAm8aNGa_pWxb4NdqYI ;
+        prov:generatedAtTime "2026-07-09T14:38:53.223367+00:00"^^xsd:dateTime ;
+        prov:wasAttributedTo <https://w3id.org/np/RAWDFdbuQxoc9NE7suv9ZPpGeQJ4h_QVL67iJy5ZFaCYA/biochementity-bot> ;
+        ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RALm3XedpEbjtQy1nPJEQpOdsV0hPm5APkvvym-7P1Vpk> .
+}

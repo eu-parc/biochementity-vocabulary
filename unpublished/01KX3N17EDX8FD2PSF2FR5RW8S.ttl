@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EDX8FD2PSF2FR5RW8S> a owl:Class ;
+    rdfs:label "(1H)-benzo[b]fluorene" ;
+    schema1:comment "NORMAN SusDat ID: NS00054169" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:14458-76-5>,
+        <https://identifiers.org/inchikey:RZKOXMMPOZMIOS-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:84458> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasMolecularWeight 216.282999999999987039700499735772609710693359375 .
+

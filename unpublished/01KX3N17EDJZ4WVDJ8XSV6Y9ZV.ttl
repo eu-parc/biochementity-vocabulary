@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EDJZ4WVDJ8XSV6Y9ZV> a owl:Class ;
+    rdfs:label "Benzo[b]naphtho[2,1-d]thiophene" ;
+    schema1:comment "NORMAN SusDat ID: NS00027512" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:239-35-0>,
+        <https://identifiers.org/inchikey:YEUHHUCOSQOCIX-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:9198> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasMolecularWeight 234.31999999999999317878973670303821563720703125 .
+

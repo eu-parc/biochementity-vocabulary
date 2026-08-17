@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EB85CGCYNJWXBGF09K> a owl:Class ;
+    rdfs:label "N-ethyl-N-[2-(phosphonooxy)ethyl]perfluorooctanesulfonamide" ;
+    schema1:comment "NORMAN SusDat ID: NS00011111" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:3820-83-5>,
+        <https://identifiers.org/inchikey:JRSUJBJSUYPODE-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:77442> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "PFAS" ;
+    pehterms:hasMolecularWeight 651.23000000000001818989403545856475830078125 .
+

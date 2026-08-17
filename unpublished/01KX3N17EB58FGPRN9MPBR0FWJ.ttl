@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/peh/biochementities/01KX3N17EB58FGPRN9MPBR0FWJ> a owl:Class ;
+    rdfs:label "Tris(2-ethylhexyl) trimellitate" ;
+    schema1:comment "NORMAN SusDat ID: NS00005625" ;
+    rdfs:subClassOf pehterms:BioChemEntity ;
+    skos:exactMatch <https://identifiers.org/cas:3319-31-1>,
+        <https://identifiers.org/inchikey:KRADHMIOFJQKEZ-UHFFFAOYSA-N>,
+        <https://identifiers.org/pubchem.compound:18725> ;
+    prov:wasAttributedTo <https://orcid.org/0000-0003-0322-9620> ;
+    pehterms:hasGroupLabel "Phthalates" ;
+    pehterms:hasMolecularWeight 546.788999999999987267074175179004669189453125 .
+
