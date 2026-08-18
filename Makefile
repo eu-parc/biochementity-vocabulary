@@ -1,5 +1,4 @@
 DROPBOX_FOLDER ?= dropbox
-UNPUBLISHED_FOLDER ?= unpublished
 PUBLISHED_FOLDER ?= published
 ARCHIVE_FOLDER ?= archive
 REDIRECT_FOLDER ?= redirect
@@ -10,6 +9,7 @@ PEH_SCHEMA_SOURCE_PATH ?= linkml/schema/peh.yaml
 PEH_SCHEMA_DEST ?= schema/peh.yaml
 PEH_SCHEMA_URL ?= https://raw.githubusercontent.com/$(PEH_SCHEMA_REPO)/$(PEH_SCHEMA_TAG)/$(PEH_SCHEMA_SOURCE_PATH)
 OUT_FOLDER ?= build
+PENDING_ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/pending-assertions
 ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/assertions
 PR_ASSERTIONS_FOLDER ?= $(OUT_FOLDER)/pr-assertions
 ONTOLOGY_LABEL ?= biochementities.ttl
@@ -64,12 +64,12 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 help:
 	@echo "Targets:"
 	@echo "  make fetch-peh-schema          # download schema/peh.yaml from a tagged parco-hbm release"
-	@echo "  make pipeline                  # process dropbox -> unpublished + archive"
-	@echo "  make validate-pipeline         # process dropbox -> build + unpublished, without archive/publish"
+	@echo "  make pipeline                  # process dropbox -> build/pending-assertions + archive"
+	@echo "  make validate-pipeline         # process dropbox -> build artifacts, without archive/publish"
 	@echo "  make validate-pr               # PR gate: build proposed terms + validate as defining nanopubs (keyless)"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
 	@echo "  make published-assertions-yaml # serialize published nanopub assertions -> $(PUBLISHED_ASSERTIONS_YAML)"
-	@echo "  make publish-defining          # mint unpublished assertions -> published/*.trig + id-map (test server)"
+	@echo "  make publish-defining          # mint pending assertions -> published/*.trig + id-map (test server)"
 	@echo "  make publish-defining DRY=--dry-run"
 	@echo "  make migrate                   # B6: one-time id migration of existing terms (+ links) -> published/*.trig + id-map"
 	@echo "  make migrate DRY=--dry-run"
@@ -82,7 +82,7 @@ print-data:
 	@echo "$(DATA_FILES)"
 
 prepare:
-	mkdir -p $(OUT_FOLDER) $(UNPUBLISHED_FOLDER) $(PUBLISHED_FOLDER) $(ARCHIVE_FOLDER) $(REDIRECT_FOLDER)
+	mkdir -p $(OUT_FOLDER) $(PENDING_ASSERTIONS_FOLDER) $(PUBLISHED_FOLDER) $(ARCHIVE_FOLDER) $(REDIRECT_FOLDER)
 
 fetch-peh-schema:
 	@if [ -z "$(PEH_SCHEMA_TAG)" ]; then \
@@ -140,7 +140,7 @@ graph2assertions: build
 		uv run pubmate-cleanrdf \
 			--input-ontology-path $(OUT_FOLDER)/$(ONTOLOGY_LABEL) \
 			--base-namespace $(BASE_NAMESPACE) \
-			--term-output-path $(UNPUBLISHED_FOLDER) \
+			--term-output-path $(PENDING_ASSERTIONS_FOLDER) \
 			--subjects-from-predicate $(ENTITY_LIST_PREDICATE); \
 	fi
 
@@ -156,7 +156,7 @@ validate-nanopubs:
 		--namespace "$(MINT_NAMESPACE)"
 
 validate-pr:
-	$(MAKE) validate-pipeline UNPUBLISHED_FOLDER=$(PR_ASSERTIONS_FOLDER)
+	$(MAKE) validate-pipeline PENDING_ASSERTIONS_FOLDER=$(PR_ASSERTIONS_FOLDER)
 	$(MAKE) validate-nanopubs
 
 archive-dropbox: graph2assertions
@@ -190,7 +190,7 @@ process-dropbox: archive-dropbox
 
 pipeline: process-dropbox
 
-# B4: mint the unpublished assertions into signed defining nanopublications
+# B4: mint the pending assertions into signed defining nanopublications
 # (artifact code on the thing URI) in $(PUBLISHED_FOLDER), and write/merge the
 # old-id -> nanopub id-map. Already-minted terms (per the id-map) are skipped.
 # Defaults to the nanopub test server via testsuite keys; override
@@ -199,7 +199,7 @@ pipeline: process-dropbox
 publish-defining: prepare
 	@set -e; \
 	uv run pubmate-mint-publish \
-		--assertion-folder $(UNPUBLISHED_FOLDER) \
+		--assertion-folder $(PENDING_ASSERTIONS_FOLDER) \
 		--namespace "$(MINT_NAMESPACE)" \
 		--output-dir $(PUBLISHED_FOLDER) \
 		--id-map-file $(ID_MAP_FILE) \
@@ -222,7 +222,7 @@ publish-defining: prepare
 migrate: prepare
 	@set -e; \
 	uv run pubmate-migrate \
-		--assertion-folder $(UNPUBLISHED_FOLDER) \
+		--assertion-folder $(PENDING_ASSERTIONS_FOLDER) \
 		--namespace "$(MINT_NAMESPACE)" \
 		--output-dir $(PUBLISHED_FOLDER) \
 		--id-map-file $(ID_MAP_FILE) \
@@ -291,4 +291,4 @@ test-flow:
 	$(MAKE) validate-pipeline
 
 clean:
-	rm -f $(OUT_FOLDER)/* $(UNPUBLISHED_FOLDER)/*.ttl
+	rm -rf $(OUT_FOLDER)/*

@@ -65,7 +65,7 @@ jobs:
 
       # PR/manual validation path: build the proposal exactly as the merge path
       # would, but into isolated folders. This avoids touching committed
-      # unpublished/ or archive/ and keeps the result disposable.
+      # archive/ and keeps the result disposable.
       - name: Seed example proposal when no dropbox files changed
         if: ${{ env.MODE != 'production' }}
         run: |
@@ -77,7 +77,7 @@ jobs:
 
       - name: Build proposed term assertions
         if: ${{ env.MODE != 'production' }}
-        run: make validate-pipeline UNPUBLISHED_FOLDER=build/pr-assertions
+        run: make validate-pipeline PENDING_ASSERTIONS_FOLDER=build/pr-assertions
 
       - name: Validate expected processing effects
         if: ${{ env.MODE != 'production' }}
@@ -97,11 +97,11 @@ jobs:
 
       - name: Mint defining nanopubs (dry-run, offline)
         if: ${{ env.MODE == 'dry-run' }}
-        run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS= DRY=--dry-run
+        run: make publish-defining PENDING_ASSERTIONS_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS= DRY=--dry-run
 
       - name: Mint and publish defining nanopubs (test registry)
         if: ${{ env.MODE == 'test-publish' }}
-        run: make publish-defining UNPUBLISHED_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS=--use-testsuite-keys
+        run: make publish-defining PENDING_ASSERTIONS_FOLDER=build/pr-assertions PUBLISH_KEY_ARGS=--use-testsuite-keys
 
       - name: Upload disposable nanopubs and id-map
         if: ${{ env.MODE != 'production' }}
@@ -125,8 +125,8 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add -A dropbox archive unpublished
-          git diff --cached --quiet || git commit -m "Process dropbox: generate unpublished assertions and archive minted YAML [skip ci]"
+          git add -A dropbox archive
+          git diff --cached --quiet || git commit -m "Process dropbox: archive minted YAML [skip ci]"
 
       - name: Push processed dropbox artifacts
         if: ${{ env.MODE == 'production' }}

@@ -46,17 +46,16 @@ The optional `suggester` field (an ORCID) records who proposed the term; it beco
 ## Under the hood
 
 1. New YAML vocab files are dropped into `dropbox/`.
-2. Processing converts them into RDF assertions in `unpublished/`.
+2. Processing converts them into transient RDF assertions under `build/`.
 3. The minted combined YAML file is copied to `archive/` with a ULID suffix to avoid overwriting earlier submissions, and processed source YAML files are removed from `dropbox/`.
-4. Publishing creates nanopublications from `unpublished/`.
+4. Publishing creates nanopublications from the transient assertions.
 5. Publishing also writes a timestamped term-to-nanopub redirect mapping into `redirect/`.
-6. Successfully published assertion files move to `published/`.
+6. Successfully published nanopublications are written to `published/`.
 
 ## Folder Semantics
 
 - `dropbox/`: incoming YAML vocabulary files
 - `archive/`: processed combined YAML files with minted identifiers and ULID-labeled filenames
-- `unpublished/`: generated RDF term assertions waiting for publish
 - `redirect/`: timestamped term identifier to nanopub identifier mappings produced during publishing
 - `published/`: assertions already published as nanopublications
 - `build/`: transient build artifacts
@@ -113,11 +112,9 @@ make test-flow
 
 ## GitHub Workflows
 
-- `serialize.yaml`: on push to `main` with `dropbox/**` changes, runs `make pipeline` and commits `archive/` + `unpublished/` updates.
-- `test-serialize.yaml`: on PR with `dropbox/**` changes, validates processing behavior.
-- `publish.yaml`: publishes nanopublications on:
-  - release publish (real publish),
-  - tag push (dry-run),
-  - manual `workflow_dispatch` ("Publish mode" input: `dry-run` or `publish`).
+- `publish.yaml`: validates proposals and publishes nanopublications on:
+  - pull requests with `dropbox/**` changes (test publish),
+  - pushes to `main` with `dropbox/**` changes (production),
+  - manual `workflow_dispatch` runs (`dry-run`, `test-publish`, or `production`).
 
-In manual real publish mode (`workflow_dispatch` with `publish`), published assertion files are moved from `unpublished/` to `published/`, the new redirect mapping file is committed from `redirect/`, and both changes are pushed.
+In production mode, processed source YAML files are archived, published nanopublications are committed under `published/`, and the redirect mapping is committed from `redirect/`.
