@@ -19,6 +19,8 @@ TERM_PARENT_CLASS ?= https://w3id.org/peh/terms/BioChemEntity
 MINT_NAMESPACE ?= https://w3id.org/peh/biochementities/
 ENTITY_LIST_PREDICATE ?= https://w3id.org/peh/terms/hasBioChemEntitySubclass
 COMBINED_DATA ?= $(OUT_FOLDER)/combined.yaml
+PUBLISHED_YAML_FOLDER ?= published-yaml
+PUBLISHED_ASSERTIONS_YAML ?= $(PUBLISHED_YAML_FOLDER)/published-assertions.yaml
 ID_MAP_FILE ?= $(REDIRECT_FOLDER)/id-map.tsv
 # Signing material for `publish-defining`. Default: nanopub-testsuite keys
 # (test server, no repo secret). For live publishing set, e.g.:
@@ -55,7 +57,7 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
-	publish-defining migrate pipeline assertions \
+	publish-defining migrate pipeline assertions published-assertions-yaml \
 	bot-identity publish-bot-introduction bot-ci-secrets \
 	test-flow clean
 
@@ -66,6 +68,7 @@ help:
 	@echo "  make validate-pipeline         # process dropbox -> build + unpublished, without archive/publish"
 	@echo "  make validate-pr               # PR gate: build proposed terms + validate as defining nanopubs (keyless)"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
+	@echo "  make published-assertions-yaml # serialize published nanopub assertions -> $(PUBLISHED_ASSERTIONS_YAML)"
 	@echo "  make publish-defining          # mint unpublished assertions -> published/*.trig + id-map (test server)"
 	@echo "  make publish-defining DRY=--dry-run"
 	@echo "  make migrate                   # B6: one-time id migration of existing terms (+ links) -> published/*.trig + id-map"
@@ -271,6 +274,18 @@ assertions: prepare
 	uv run pubmate-extract-assertions \
 		--nanopub-folder $(PUBLISHED_FOLDER) \
 		--out $(ASSERTIONS_FOLDER)
+
+published-assertions-yaml: assertions
+	uv run python scripts/published_assertions_to_yaml.py \
+		--assertion-folder $(ASSERTIONS_FOLDER) \
+		--output $(PUBLISHED_ASSERTIONS_YAML)
+	uv run linkml-convert \
+		--input-format yaml \
+		--output-format json \
+		--target-class EntityList \
+		-s $(SCHEMA) \
+		-o $(OUT_FOLDER)/published-assertions.json \
+		$(PUBLISHED_ASSERTIONS_YAML)
 
 test-flow:
 	$(MAKE) validate-pipeline
