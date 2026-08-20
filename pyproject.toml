@@ -7,8 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "pubmate",
     "linkml",
-    "python-ulid==3.1.0",
 ]
 
 [tool.uv.sources]
-pubmate = { git = "https://github.com/eu-parc/pubmate.git", tag = "v0.2.2" }
+pubmate = { git = "https://github.com/eu-parc/pubmate.git", tag = "v0.2.4" }

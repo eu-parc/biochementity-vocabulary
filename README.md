@@ -1,6 +1,6 @@
 ## Biochementity Vocabulary Dropbox to Nanopublication Template
 
-This repository implements a staged vocabulary workflow for matrices:
+This repository implements a staged vocabulary workflow for biochementities:
 
 ## Proposing a new biochementity
 
