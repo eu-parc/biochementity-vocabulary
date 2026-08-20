@@ -21,6 +21,9 @@ ENTITY_LIST_PREDICATE ?= https://w3id.org/peh/terms/hasBioChemEntitySubclass
 COMBINED_DATA ?= $(OUT_FOLDER)/combined.yaml
 PUBLISHED_YAML_FOLDER ?= published-yaml
 PUBLISHED_ASSERTIONS_YAML ?= $(PUBLISHED_YAML_FOLDER)/published-assertions.yaml
+PUBLISHED_NANOPUB_MANIFEST ?= $(OUT_FOLDER)/published-nanopubs.tsv
+VOCABULARY_QUERY_URL ?= https://query.knowledgepixels.com/api/RA5rQSjX-6t_ccwhgZhxCpWryxuRjMFeCMXelxJYfxtdw/get-approved-classes-of-an-ontology-from-space-members?ontology=https%3A%2F%2Fw3id.org%2Fspaces%2Fbiochementity%2Fr%2Fvocabulary
+PUBLISHED_NANOPUB_MIN_COUNT ?= 1
 ID_MAP_FILE ?= $(REDIRECT_FOLDER)/id-map.tsv
 # Signing material for `publish-defining`. Default: nanopub-testsuite keys
 # (test server, no repo secret). For live publishing set, e.g.:
@@ -57,7 +60,7 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
-	publish-defining migrate pipeline assertions published-assertions-yaml \
+	publish-defining migrate pipeline sync-published assertions published-assertions-yaml \
 	bot-identity publish-bot-introduction bot-ci-secrets \
 	test-flow clean
 
@@ -67,6 +70,7 @@ help:
 	@echo "  make pipeline                  # process dropbox -> build/pending-assertions + archive"
 	@echo "  make validate-pipeline         # process dropbox -> build artifacts, without archive/publish"
 	@echo "  make validate-pr               # PR gate: build proposed terms + validate as defining nanopubs (keyless)"
+	@echo "  make sync-published            # download current vocabulary nanopubs into $(PUBLISHED_FOLDER)"
 	@echo "  make assertions                # extract published/*.trig -> $(ASSERTIONS_FOLDER) (site build artifact)"
 	@echo "  make published-assertions-yaml # serialize published nanopub assertions -> $(PUBLISHED_ASSERTIONS_YAML)"
 	@echo "  make publish-defining          # mint pending assertions -> published/*.trig + id-map (test server)"
@@ -269,13 +273,24 @@ bot-ci-secrets:
 # Site-facing projection: extract the assertion graph of each published
 # nanopublication (.trig) into plain .ttl. This is a build artifact (under
 # $(OUT_FOLDER), gitignored) consumed only by the Pages build; not committed.
+sync-published: prepare
+	@set -e; \
+	uv run python scripts/sync_published_nanopubs.py \
+		--query-url "$(VOCABULARY_QUERY_URL)" \
+		--output-dir $(PUBLISHED_FOLDER) \
+		--manifest $(PUBLISHED_NANOPUB_MANIFEST) \
+		--min-count $(PUBLISHED_NANOPUB_MIN_COUNT)
+
 assertions: prepare
 	@set -e; \
+	mkdir -p "$(ASSERTIONS_FOLDER)"; \
+	find "$(ASSERTIONS_FOLDER)" -maxdepth 1 -type f -name '*.ttl' -delete; \
 	uv run pubmate-extract-assertions \
 		--nanopub-folder $(PUBLISHED_FOLDER) \
 		--out $(ASSERTIONS_FOLDER)
 
-published-assertions-yaml: assertions
+published-assertions-yaml: sync-published
+	$(MAKE) assertions
 	uv run python scripts/published_assertions_to_yaml.py \
 		--assertion-folder $(ASSERTIONS_FOLDER) \
 		--output $(PUBLISHED_ASSERTIONS_YAML)
