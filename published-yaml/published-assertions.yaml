@@ -800,14 +800,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: pcb77
-- id: https://w3id.org/peh/biochementities/RA2Vej0coDKcR8sTc0uLg3LAP-xhkC20RiQKyZg6xw8ls
-  name: Branched N-Methylperfluoro-1 octanesulphonamide
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAak-Os6noEMYk3HuE3tWNDJvLV51JqNfzmtbU_b4oe5U
-  aliases:
-  - bmepfosa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAhnRLI_ceT_Wa6EjqepVz__ljnyag2Nog32Y0ncFpKUQ
 - id: https://w3id.org/peh/biochementities/RA2aCMbj5IZ3Q4DJ4ccEy4fGQYh_F4UZZ266iUcAxrdN4
   name: 1-mono-(2-ethyl-5-hydroxy-hexyl) benzene-1,4-dicarboxylate
   translations:
@@ -2305,14 +2297,6 @@ biochementity_subclasses:
   - https://w3id.org/peh/terms/BioChemEntity
   group_labels:
   - dioxins
-- id: https://w3id.org/peh/biochementities/RA8DJuDJuuSWoNJdLJtWa1ir8wj_QEoRqcY2MTDd5zh_g
-  name: Branched Perfluorotridecanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAlLxu4Ml9Y4FL4MLIC_MIJYzAEk6Y4rhIUwOzg-QDIVA
-  aliases:
-  - bpftrda
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAWhWO1XK78GfdBNh9IBCh-yjrKkLNBTrlb0gWSKz5WgM
 - id: https://w3id.org/peh/biochementities/RA8IEtJFJ3LThwpaOSO0lD32RsfZ1JJSVsnZmcDL3lZjc
   name: Triphenylene
   parent_biochementities:
@@ -2393,14 +2377,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: mcmhp
-- id: https://w3id.org/peh/biochementities/RA8afG6GWpzzjE_sh3ZKioVSIX7vO5krQawIQep-eap1A
-  name: Branched N-ethyl-perfluorooctane sulfonamidoacetate
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAeDKznd32WBHYApP289H5jDW5bE_2bc6QZVrXx2GjDLE
-  aliases:
-  - betpfosaa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAwv07CfS8iUfWCaLssZS69k6MXIKv_8PSawer3Szm3b8
 - id: https://w3id.org/peh/biochementities/RA8bgNHdQerxcfMKEkY8lcUrJNkMimuDAFMT_RqZ1YhD4
   name: Diethyl phthalate
   translations:
@@ -3498,14 +3474,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: fe
-- id: https://w3id.org/peh/biochementities/RACZLBJi0JDmHwskd7isRyuERLnElmzwQ3NV7mF8lHp_4
-  name: Branched Perfluoroheptanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAvYQSR9J9KAzWkSUQ0Js1n5WgoGT4ahVOoyirpDGyGPU
-  aliases:
-  - bpfhpa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAUkDczOWmXgCw856V3NOAJdISxpZSPyC-_nJV5eArOE0
 - id: https://w3id.org/peh/biochementities/RACZt3C4iGO8Rc7zKE3vwTAOsCfaDf90hogQG-etefk8I
   name: Bis(2-chloroethyl) phosphate
   translations:
@@ -3976,14 +3944,6 @@ biochementity_subclasses:
   - https://identifiers.org/cas:57-88-5
   - https://identifiers.org/pubchem.compound:5997
   - https://loinc.org/LP15493-7
-- id: https://w3id.org/peh/biochementities/RAEB8dtgYwbaTm5Rj9O0oGyWjSkkAoxppZUHUywpshkUQ
-  name: Branched Perfluoro-1-octaperfluoro-1-octanesulphonamide
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RA5EBF3wsczlxa8iqcfUtBfJKeDE4FkcGutqpuczvKL3k
-  aliases:
-  - bpfosa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAzfPV8UB2AJtKqRW3HfO9mZd8VLC3qyFCn9h4Rwo9B-Y
 - id: https://w3id.org/peh/biochementities/RAEG0GEPf2seUPg8r-ZwhXyBLRXmQrjxGtpP6vHyBKvCw
   name: 25-hydroxyvitamin D3
   translations:
@@ -4170,14 +4130,6 @@ biochementity_subclasses:
   - https://identifiers.org/inchikey:CWJSHJJYOPWUGX-UHFFFAOYSA-N
   group_labels:
   - pesticides
-- id: https://w3id.org/peh/biochementities/RAFEK8H7AHG2D-WjBWwczKRDeQpl0LB4qvtJrnI05oXoU
-  name: Branched Perfluorononanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RA4X0hzC0_zjYHoZXMCGtKROw581m1wRzv0EWQvxkQLOU
-  aliases:
-  - bpfna
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAuTFY_sxDzgju2DLLSDAqcqSVk89WkgxlxdakO2gcocs
 - id: https://w3id.org/peh/biochementities/RAFJG8XS1nd7Eg9Y5NHcGoSoEpEh-lG9FFylDL2kXi2no
   name: Iso-butylparaben
   translations:
@@ -4564,30 +4516,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: cpba
-- id: https://w3id.org/peh/biochementities/RAGUKjk8CPLYvMlWh5dfLPa2iBJzdtHTfuZrruSVLKfQE
-  name: cis-Permethrinic acid (racemic)
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAf72SKLfwttyKBAy3T3eJXx8Ho1I-fHnX8zYAKXxH61c
-  - https://w3id.org/peh/terms/BioChemEntity
-  aliases:
-  - (+/-)-cis-Permethrinic acid
-  - cis-DCCA
-  - cis-DCCA (rac)
-  - rac-cis-Permethrinic acid
-  exact_matches:
-  - https://identifiers.org/pubchem.compound:41507
-  group_labels:
-  - pesticides
-  - pyrethroid pesticides
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAN811_GQ9Aj_7Y2rYFGcE2m_aI0ZITRVb9mSCNQhv-PY
-  context_aliases:
-  - property_name: short_name
-    context: https://ror.org/04gq0w522
-    alias: cdcca
-  - property_name: short_name
-    context: https://ror.org/04gq0w522
-    alias: cdcca
 - id: https://w3id.org/peh/biochementities/RAGVL3GGsyTbvnWjR1LtW_REACwQMdJ-IONuSc90Z_lLY
   name: Bis(1-chloro-2-propyl) phosphate
   translations:
@@ -4691,14 +4619,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: hocb107
-- id: https://w3id.org/peh/biochementities/RAGgDZocd5Xjy_mfk5OoFhzwPR5t_ONBIM6bgPy8sthJ8
-  name: Branched Perfluoroundecanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAKEJDatt2Ywo3waWRexXvqP2eFOgF54HHGwpuQH50TiA
-  aliases:
-  - bpfunda
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAAn5sgOsDYI7TkImV--GccdlG_EXMBtXYUrRnr1tmbio
 - id: https://w3id.org/peh/biochementities/RAGhUcRicrd9_d05IVUxLRy9uX0_xVPT2oymChdmB2qt8
   name: Linear Perfluorohexane sulfonic acid
   translations:
@@ -4889,14 +4809,6 @@ biochementity_subclasses:
   - IL6
   exact_matches:
   - https://loinc.org/26881-3
-- id: https://w3id.org/peh/biochementities/RAHB4HKPPMOcyly_szgCUY_uCFx0uvbLdrP7BHjLXEXkE
-  name: Branched Perfluorotetradecanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAyK6sUTRi7iLi5sgRUYMVmjff-NbtIyc5cS-K8Xh5Uyo
-  aliases:
-  - bpfteda
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAv9a1eHbQF31HxY4rbGqmYFi_X812w4NgBXbqnPT8sJQ
 - id: https://w3id.org/peh/biochementities/RAHCwpKpNcOI1k9ZfI2NtNAohx5UUNgjpz1r-XFVhkb58
   name: 1,4-Dichlorobenzene
   translations:
@@ -6177,14 +6089,6 @@ biochementity_subclasses:
   group_labels:
   - Pesticides
   molweight_grampermol: 347.24
-- id: https://w3id.org/peh/biochementities/RAM9mGxB8nyAnLHJf_pXDyeNiFRconhjUVnj9pdZr0DUE
-  name: Branched Perfluorooctanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RA_n2ysIFmO6L6129eCZZEFkZ3cMtfWArt3qbRRH6yplc
-  aliases:
-  - bpfoa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RA6D-Q9wJPmkg24VDkNp9XYkGVKuz1GEN769VmHsiLnSo
 - id: https://w3id.org/peh/biochementities/RAMDUQr6awy2Qt1zf4WtzSZIpwiC0PKy4ypQzyh9MxD2o
   name: 3-benzylidene camphor
   translations:
@@ -6509,14 +6413,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: dmacoh
-- id: https://w3id.org/peh/biochementities/RANJteOIkkCOmPHNIIpQeR269nN_wQQbSm-pa8V8vzsdU
-  name: Branched N-Ethylperfluoro-1-octanesulphonamide
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAiNtRqppkFE_5LQYUWoScSjep5BWETkPbJEnoUTZ8Ilc
-  aliases:
-  - betpfosa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RABT62vDxg0E017EkXROOkUbxIuNW0t9MxNtXLInPfWYM
 - id: https://w3id.org/peh/biochementities/RANLuiYyP7MZriBqi8nPFKm74YuzhL2JKphSHaDq_iKlU
   name: Bismuth
   translations:
@@ -6905,14 +6801,6 @@ biochementity_subclasses:
   group_labels:
   - PFAS
   molweight_grampermol: 902.101
-- id: https://w3id.org/peh/biochementities/RAORABKtGgDzAa3-qUvPG8o8eiqvMBG7Nm-34ljd9WrFw
-  name: Branched 2-(N-Methylperfluorooctanesulfonamido)acetic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAePvYLyYhbKyJ2vdmvUV25S_GrIYpCtKkcFCO4GJM1yo
-  aliases:
-  - bmepfosaa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAoyu4EtSm0Tgt5Z9gUFfeRsywGz0AQMiS9MYZpXS27Ho
 - id: https://w3id.org/peh/biochementities/RAOk5aCxLNL6zR4gM74-Ik2ZdWLoTAkmbxUgQfejtjKEo
   name: Di-2-ethylhexyl adipate
   translations:
@@ -6929,14 +6817,6 @@ biochementity_subclasses:
   - https://identifiers.org/cas:103-23-1
   group_labels:
   - phthalates
-- id: https://w3id.org/peh/biochementities/RAOphpLdillG1WwbhhFa1aqePUib-4tZzt9KfA2eotslY
-  name: Branched Perfluoroheptane sulfonic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAY3NhkCtgJPqfXh7j5Jm87PwnIcgkKnj-knz2GtVTIXU
-  aliases:
-  - bpfhps
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RA8Kv0GaBvyJeQzLMY2AI9wYBNsn4WXQS0rslqWEz3wok
 - id: https://w3id.org/peh/biochementities/RAOpq6O6Ds6oCpv9bi4gDVl76yfibOqiYmTa4WDJw7nRY
   name: Lead
   translations:
@@ -8160,24 +8040,6 @@ biochementity_subclasses:
   group_labels:
   - Pesticides
   molweight_grampermol: 331.412
-- id: https://w3id.org/peh/biochementities/RASXVui9reg0zH4zt7KXf7F9MoS9r0aJtpY5GcrwUDRjQ
-  name: 7-Carboxy-(mono-methyl-heptyl) phthalate
-  translations:
-  - property_name: name
-    language: nl-be
-    translated_value: 7-Carboxy-(mono-methylheptyl)ftalaat
-  parent_biochementities:
-  - https://w3id.org/peh/terms/BioChemEntity
-  remark: 'source: http://exposome-explorer.iarc.fr/compounds/1465'
-  aliases:
-  - cx-MiNP
-  exact_matches:
-  - 'INCHIKEY:'
-  - file:///home/runner/work/biochementity-vocabulary/biochementity-vocabulary/build/IGGGGTKTEAEHSG-UHFFFAOYSA-N
-  group_labels:
-  - phthalates
-  is_metabolite_of:
-  - https://w3id.org/peh/biochementities/RARL_4c0soRw6cBaEL-FgF4GRUIkx0p-iXaLTuHy1S16k
 - id: https://w3id.org/peh/biochementities/RASdBJorMYbiOQVY5h2Wo5OgGvcYxtsSYXVQk5F71YIuA
   name: Polychlorinated biphenyl 153
   translations:
@@ -9391,14 +9253,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: lbpfds
-- id: https://w3id.org/peh/biochementities/RAW_VFweJa3l5omf4xjXrlcQDNn18hbyUnwOhAer7IhSI
-  name: Branched Perfluorododecanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAei-sFHG7xNm16xK-JmqnfIpAbYWyvBtwkCcX7zbSj6M
-  aliases:
-  - bpfdoda
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAMKugtCZv-AkSDdGmXhvhmswJx8gc-NEYhvfPFwAH4I0
 - id: https://w3id.org/peh/biochementities/RAWhWO1XK78GfdBNh9IBCh-yjrKkLNBTrlb0gWSKz5WgM
   name: Linear Perfluorotridecanoic acid
   translations:
@@ -11831,14 +11685,6 @@ biochementity_subclasses:
   - https://identifiers.org/CHEBI:17234
   - https://identifiers.org/pubchem.compound:5793
   - https://loinc.org/LP14635-4
-- id: https://w3id.org/peh/biochementities/RAcqwGSvSw-nlTA84Yphl37wmVTE3uEU5ALYr7vtNi9rs
-  name: Branched Perfluoropentanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAw079li5nH7nf1fQoGVxjEUGGC9ewSAU6hDTvNTXA8rs
-  aliases:
-  - bpfpea
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAGcMnYD6xb6Qdy1wiGMde_xC8Ts-YIJUBfHGSD5dMSjY
 - id: https://w3id.org/peh/biochementities/RActjCMVOP1g4Dhvf0PAKsq2TA50ui2abL7bfvyS-jKDU
   name: Linear Perfluoropentadecanoic acid
   translations:
@@ -12048,14 +11894,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: etfose
-- id: https://w3id.org/peh/biochementities/RAdln5POGmlPMwFu_OOaUkRupCA0uaLmebW38VOcIkAAE
-  name: Branched Perfluorohexane sulfonic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAM27p0XNhkrOwq1H-DlWtGRj4Aa4YoC8Kdp4KV_1zsSU
-  aliases:
-  - bpfhxs
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAGhUcRicrd9_d05IVUxLRy9uX0_xVPT2oymChdmB2qt8
 - id: https://w3id.org/peh/biochementities/RAdn9t8pgrqEbE6uA--rBYTH-mwpDKLBUrHHcFiyFYW0A
   name: Triiodothyronine
   translations:
@@ -14695,14 +14533,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: twofourdehtm
-- id: https://w3id.org/peh/biochementities/RAn160xXGOqhQDJSf3AUI1Vxvm7nGfyKUwxVxPC-d80yw
-  name: Branched Perfluorooctane sulfonic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RA_y2NzbT7PPxApVX6lTkOShxRkh4U07Q8te4DdDyI6NU
-  aliases:
-  - bpfos
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAmk4_wLoi6CMrPblKiwouGulDcv-Io4qmdXpMueHEMns
 - id: https://w3id.org/peh/biochementities/RAn9gMjvFkANNuk9CLJiTOl1zMrSDJxDWvPByxm0x-Fgg
   name: Monophenyltin
   translations:
@@ -14915,14 +14745,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: simzmerc
-- id: https://w3id.org/peh/biochementities/RAoXLAnE3yrIC44C717PYTpuSGunGax42yxaFDOxKgsO4
-  name: Branched Perfluorohexanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RA2wO8D2AfnImfXuJkKAv5NV6St9UrL-mcsGYWa8p9PvI
-  aliases:
-  - bpfhxa
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAw-xrliq8GzrOkyRhtrETDnHSn3XpkqT1pWRUtgpSDOM
 - id: https://w3id.org/peh/biochementities/RAoXzoGHXRTvV0JBvF6EIj4THQO91La0bK6N2_SDVY6H4
   name: α-zearalenol-glucuronide
   translations:
@@ -15629,14 +15451,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: hbcdb
-- id: https://w3id.org/peh/biochementities/RAqY9tCa3duJXZ3_LIC8WwDXlzxWGKzaLLFrhESllPtqk
-  name: Branched Perfluorobutane sulfonic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAL4um_B6ezWBY1MaScTjkHDZd9xT8iWmorPEZ2MoU7ns
-  aliases:
-  - bpfbs
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RAjViLyxSG_dpTpC_Dl82Z6SuPoI6bXp4wp10V1f-A7WI
 - id: https://w3id.org/peh/biochementities/RAqYu9VfLdV183IvxJt0CSUpYdafQHlElF4BBGi_5g6OM
   name: 3-Trifluormethoxyaniline
   translations:
@@ -17680,14 +17494,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: onehcry
-- id: https://w3id.org/peh/biochementities/RAy0mlmUKaiuNFMLtFblehcZOVhF2Jl5CBe9NwQIt9ZEg
-  name: Branched Perfluorodecanoic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAcHlqUwN11VsESdfD1cX7fs-2Xlp45X31yHS_-tth5a4
-  aliases:
-  - bpfda
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RApF3Ua1DTbblm9_T4ttDtAp7srP0sKHy2PPn8yJcVonY
 - id: https://w3id.org/peh/biochementities/RAy4G7Qu7SdipVUcOR9Sn0sRQ5TKZotdqeyjv1C12JNBM
   name: Didecyl phthalate
   parent_biochementities:
@@ -18139,14 +17945,6 @@ biochementity_subclasses:
   - property_name: short_name
     context: https://ror.org/04gq0w522
     alias: minch
-- id: https://w3id.org/peh/biochementities/RAzl8nRxb8MVhZknXr1NuuG8tCdGCdfPXjyP_fbUwxe-o
-  name: Branched Perfluorodecane sulfonic acid
-  parent_biochementities:
-  - https://w3id.org/peh/biochementities/RAWV_P7ppZ8Qe_eehq2RKaHL7hMqE-Y4A4btTmVnCAGj8
-  aliases:
-  - bpfds
-  is_isomer_of:
-  - https://w3id.org/peh/biochementities/RA9eEwbn0J1a_0uhsFli4HldF8JXnrcqzf99x4Gvzj4AM
 - id: https://w3id.org/peh/biochementities/RAzsgNFMlmFl21D1kjAVEf39Z8wXIoed404LTxxTXi4OU
   name: acrylamide
   parent_biochementities:
