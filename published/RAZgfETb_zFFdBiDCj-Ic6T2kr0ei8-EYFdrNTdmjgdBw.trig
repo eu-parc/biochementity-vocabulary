@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAZgfETb_zFFdBiDCj-Ic6T2kr0ei8-EYFdrNTdmjgdBw> .
+@prefix sub: <https://w3id.org/np/RAZgfETb_zFFdBiDCj-Ic6T2kr0ei8-EYFdrNTdmjgdBw/> .
+@prefix schema: <http://schema.org/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  biochementity:RA8DJuDJuuSWoNJdLJtWa1ir8wj_QEoRqcY2MTDd5zh_g a owl:Class;
+    dct:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary>;
+    schema:alternateName "bpftrda";
+    rdfs:label "Branched Perfluorotridecanoic acid";
+    rdfs:subClassOf biochementity:RAlLxu4Ml9Y4FL4MLIC_MIJYzAEk6Y4rhIUwOzg-QDIVA;
+    pehterms:isIsomerOf biochementity:RAWhWO1XK78GfdBNh9IBCh-yjrKkLNBTrlb0gWSKz5WgM .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-1267-0234 foaf:name "Tobias Kuhn" .
+  
+  this: dct:created "2026-11-18T16:23:10.961+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    dct:creator <https://w3id.org/np/RAm5naDB6khIweaMdoHm7BIt3SxgiMmBYBLqFQDz82Ybo/parc-vocabulary-bot>;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:hasNanopubType pehterms:BioChemEntity;
+    npx:introduces biochementity:RA8DJuDJuuSWoNJdLJtWa1ir8wj_QEoRqcY2MTDd5zh_g;
+    rdfs:label "Branched Perfluorotridecanoic acid";
+    skos:changeNote "Re-published with npx:introduces. The previous version (2026-06-30) lacked it, so the term was missing from the vocabulary listings. Content unchanged. (PARC vocabulary clean-up, 2026-11)";
+    prov:wasDerivedFrom <https://w3id.org/np/RAtWb-MxCdjl7jIIEvI7ggo4dsD7qhanghXdXOHEOq0yU>;
+    nt:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RA7lSq6MuK_TIC6JMSHvLtee3lpLoZDOqLJCLXevnrPoU>;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA-N4_kFxcruvBTlo1yJv29E4SLOXsx5KO_th69PprMrA>,
+      <https://w3id.org/np/RA7NZ9N1vb-mbTo6pOyR14fdbQ8PpFtJHTY3UBPb6vMh4>, <https://w3id.org/np/RACJ58Gvyn91LqCKIO9zu1eijDQIeEff28iyDrJgjSJF8>,
+      <https://w3id.org/np/RAKc76yHLDbloE6ObluzYQsfX37v6qrZXbYeIKpe8-YUo>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RA191ipgpFeRmvtTIRkRpN7om6Lgz5GInE1AXMHKnKXY0> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuOFM1Fckms40xQCXJHC/yOnjdXyxMYPvodw4fqEj6SXt6/FIH1NimGbrQhtMBX7RC6za1LFh1QPqyQ1iFYU8SxPAzqzvYI7eVH58+To7olMm7dEANyMTeZQuhJ0+9dip/PUi1xe19FdysS1OQhGydiUcpuDg2hiaeC0sELydZsdrqGMbOaGO5nms4I1+j2cuD/z2hbwDQhCx52ZvrYv3R/OEA7bOpmh7ejbGu0noGDyr8DzB7OmdUeHkvqsl8v7aHAORibJ7rDhNeapBrrSJq/lAZ010gmS3m9dMv3/XYezHEgyBUsw7q5RPNzm3U2KmwUkF2EPmaopXMCl5aBMYWwIDAQAB";
+    npx:hasSignature "TSDkPEzHjS/jGLlFiE4pnAydw9Mvstf1CI9ioFGVsLeZbK8SpFMEbcwzqEJnmMURXibMxDtoUORy61LTV0Y+idVk373IKk+aOmtdTvxm+Ngi8ulj7FoObWcSPVt+PwQYemdxxXa5HsEt8OkhhDIL41iQNPZwn1ydJxLqbUlUJc2rgsUdzEeDdvdLR/VVWsATnqMQMn5Ycv3ltJd6BUowViXk+SPVsGu5D1ypM42I3XyUllsgQSrhfkR6DEqltEkwwl61iUKjU/dcHowtCr6eTqjTXVA/uCMNMQfRBEMCAqz2nnLGenau1ewVeQrdHe2+pDsPSbmq98sjT4VGjIUEsw==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy <https://w3id.org/np/RAm5naDB6khIweaMdoHm7BIt3SxgiMmBYBLqFQDz82Ybo/parc-vocabulary-bot> .
+}
+

@@ -1,0 +1,65 @@
+@prefix this: <https://w3id.org/np/RAS25400fUeN0wleATCZCfJCXs1F5adYJKTjloNhmSLKE> .
+@prefix sub: <https://w3id.org/np/RAS25400fUeN0wleATCZCfJCXs1F5adYJKTjloNhmSLKE/> .
+@prefix schema: <http://schema.org/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix biochementity: <https://w3id.org/peh/biochementities/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix pehterms: <https://w3id.org/peh/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  biochementity:RAokP-npVNJHa4MH4hbAtyu_zPNx_LNchr5WZ3XIzDffM a owl:Class;
+    dct:isPartOf <https://w3id.org/spaces/biochementity/r/vocabulary>;
+    schema:alternateName "EHDP", "EHDPHP";
+    schema:comment "NORMAN SusDat ID: NS00010020";
+    rdfs:label "2-ethylhexyl diphenyl phosphate", "2-ethylhexyldifenylfosfaat"@nl-be;
+    rdfs:subClassOf pehterms:BioChemEntity;
+    skos:exactMatch <https://identifiers.org/CHEBI:188855>, <https://identifiers.org/cas:1241-94-7>,
+      <https://identifiers.org/inchikey:CGSLYBDCEGBZCG-UHFFFAOYSA-N>, <https://identifiers.org/pubchem.compound:14716>;
+    pehterms:hasGroupLabel "flame retardants";
+    pehterms:hasMolecularWeight "362.40600000000000591171556152403354644775390625"^^xsd:decimal .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-1267-0234 foaf:name "Tobias Kuhn" .
+  
+  this: dct:created "2026-11-18T16:23:57.205+01:00"^^xsd:dateTime;
+    dct:creator <https://w3id.org/np/RAm5naDB6khIweaMdoHm7BIt3SxgiMmBYBLqFQDz82Ybo/parc-vocabulary-bot>;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:hasNanopubType pehterms:BioChemEntity;
+    npx:introduces biochementity:RAokP-npVNJHa4MH4hbAtyu_zPNx_LNchr5WZ3XIzDffM;
+    rdfs:label "2-ethylhexyl diphenyl phosphate";
+    skos:changeNote "Merged in the identifiers and annotations of the duplicate https://w3id.org/peh/biochementities/RAIbnLUT8lV1i_Omve_qfaLAiBs6-lP9liYlqnTJzGPqo, which is withdrawn in favour of this term. (PARC vocabulary clean-up, 2026-11)";
+    prov:wasDerivedFrom <https://w3id.org/np/RAokP-npVNJHa4MH4hbAtyu_zPNx_LNchr5WZ3XIzDffM>;
+    nt:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RA7lSq6MuK_TIC6JMSHvLtee3lpLoZDOqLJCLXevnrPoU>;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA-N4_kFxcruvBTlo1yJv29E4SLOXsx5KO_th69PprMrA>,
+      <https://w3id.org/np/RA7NZ9N1vb-mbTo6pOyR14fdbQ8PpFtJHTY3UBPb6vMh4>, <https://w3id.org/np/RACJ58Gvyn91LqCKIO9zu1eijDQIeEff28iyDrJgjSJF8>,
+      <https://w3id.org/np/RAKc76yHLDbloE6ObluzYQsfX37v6qrZXbYeIKpe8-YUo>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RA191ipgpFeRmvtTIRkRpN7om6Lgz5GInE1AXMHKnKXY0> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuOFM1Fckms40xQCXJHC/yOnjdXyxMYPvodw4fqEj6SXt6/FIH1NimGbrQhtMBX7RC6za1LFh1QPqyQ1iFYU8SxPAzqzvYI7eVH58+To7olMm7dEANyMTeZQuhJ0+9dip/PUi1xe19FdysS1OQhGydiUcpuDg2hiaeC0sELydZsdrqGMbOaGO5nms4I1+j2cuD/z2hbwDQhCx52ZvrYv3R/OEA7bOpmh7ejbGu0noGDyr8DzB7OmdUeHkvqsl8v7aHAORibJ7rDhNeapBrrSJq/lAZ010gmS3m9dMv3/XYezHEgyBUsw7q5RPNzm3U2KmwUkF2EPmaopXMCl5aBMYWwIDAQAB";
+    npx:hasSignature "QRF4oAHw/RUGSQR7OCRmIHgPFlRmJHGMHwlOd6iz4aZ9NsYL9GuzJ3pHcJrfXbMR1XsWEbRAuUfKbU66Qqnj4V662je1Iaahp+XlTM50f0qWVGD8SGXIkjTpX0AM/tu0Zxy/r3gAd9re8wzcG/xTd4OIZ7j7ZyFd56YwsqAUmpttZWJoXgcSX4uSFGJ4pY25kqpCjGlUhU5wRg/YBFvgoE8l/PmPn78P8GJItxNfVtsHvC3bJpApYdVn7qpIXCw7n3AnB6P7C0HJ//4DsiHfqNX40WI9vt/vGXX/FL1C0AC4t7FuzSR6EpVwAGiattTZfODmeKa28WkoKkoWAb1gmQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy <https://w3id.org/np/RAm5naDB6khIweaMdoHm7BIt3SxgiMmBYBLqFQDz82Ybo/parc-vocabulary-bot> .
+}
+
