@@ -45,8 +45,11 @@ DRY ?=
 # Publishing bot identity (one-time setup; see docs/bot-identity-setup.md).
 BOT_NAME ?= Biochementity bot
 BOT_ID ?= biochementity-bot
-BOT_OWNER_ORCID ?= https://orcid.org/0000-0001-8327-0142
-BOT_OWNER_NAME ?= Gertjan Bisschop
+# Owner named in the bot's introduction: the person who sets up the bot. No
+# default; pass both, e.g. make bot-identity BOT_OWNER_ORCID=https://orcid.org/...
+# BOT_OWNER_NAME='...'.
+BOT_OWNER_ORCID ?=
+BOT_OWNER_NAME ?=
 BOT_IDENTITY_DIR ?= bot-identity
 # Repo the publishing CI runs in (where the signing secret/variables live).
 CI_REPO ?= eu-parc/biochementity-vocabulary
@@ -61,7 +64,7 @@ DATA_FILES = $(sort $(wildcard $(DROPBOX_FOLDER)/*.yaml))
 .PHONY: help print-data prepare fetch-peh-schema aggregate mint build graph2assertions \
 	validate-pipeline validate-nanopubs validate-pr process-dropbox archive-dropbox \
 	publish-defining migrate pipeline sync-published assertions published-assertions-yaml \
-	bot-identity publish-bot-introduction bot-ci-secrets \
+	check-bot-owner bot-identity publish-bot-introduction bot-ci-secrets \
 	check-consistency test-flow clean
 
 help:
@@ -246,13 +249,19 @@ migrate: prepare
 # 1. Generate the keypair + a signed-but-unpublished introduction under
 #    $(BOT_IDENTITY_DIR). Review $(BOT_IDENTITY_DIR)/introduction.trig before
 #    publishing. Refuses to overwrite an existing key (delete the dir to redo).
-bot-identity:
+check-bot-owner:
+	@if [ -z "$(BOT_OWNER_ORCID)" ] || [ -z "$(BOT_OWNER_NAME)" ]; then \
+		echo "Set BOT_OWNER_ORCID and BOT_OWNER_NAME to the ORCID and name of the person setting up the bot."; \
+		exit 1; \
+	fi
+
+bot-identity: check-bot-owner
 	uv run pubmate-bootstrap-identity $(_BOOTSTRAP_ARGS) --generate-keys
 
 # 2. Publish the reviewed introduction to the network (production; pass
 #    BOT_PUBLISH_ARGS=--test-server for the test registry). Overwrites
 #    introduction.trig in place with the published (canonical) version.
-publish-bot-introduction:
+publish-bot-introduction: check-bot-owner
 	uv run pubmate-bootstrap-identity $(_BOOTSTRAP_ARGS) \
 		--private-key $(BOT_IDENTITY_DIR)/id_rsa --public-key $(BOT_IDENTITY_DIR)/id_rsa.pub \
 		--publish $(BOT_PUBLISH_ARGS)

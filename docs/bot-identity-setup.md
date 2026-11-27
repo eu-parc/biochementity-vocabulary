@@ -17,7 +17,7 @@ These are pinned as `make` variables (override on the command line if needed):
 |---|---|
 | `BOT_NAME` | `Biochementity bot` |
 | `BOT_ID` | `biochementity-bot` (→ `…/np/RA<code>/biochementity-bot`) |
-| `BOT_OWNER_ORCID` | `https://orcid.org/0000-0001-8327-0142` (Gertjan Bisschop) |
+| `BOT_OWNER_ORCID`, `BOT_OWNER_NAME` | none: the ORCID and name of the person who sets up the bot (the current Biochementity bot's introduction names Gertjan Bisschop) |
 | `CI_REPO` | `eu-parc/biochementity-vocabulary` |
 
 The bot publishes to the nanopub **production** registry. Pass
