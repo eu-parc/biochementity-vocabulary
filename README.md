@@ -128,5 +128,11 @@ make test-flow
   - pull requests with `dropbox/**` changes (test publish),
   - pushes to `main` with `dropbox/**` changes (production),
   - manual `workflow_dispatch` runs (`dry-run`, `test-publish`, or `production`).
+- `consistency-check.yaml` (weekly, and on demand): checks the vocabulary as
+  Nanodash shows it and as `published/` holds it. It fails on duplicate labels
+  and on links to terms that are not current (withdrawn or not approved), and
+  warns when `published/` is out of date, on links to deprecated terms and on
+  terms that share an InChIKey or CAS number. Run it locally with
+  `make check-consistency`.
 
 In production mode, processed source YAML files are archived, published nanopublications are committed under `published/`, and the redirect mapping is committed from `redirect/`.
